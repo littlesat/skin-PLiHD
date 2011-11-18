@@ -179,8 +179,8 @@
   </screen>
   <screen name="ButtonTemplate_2">
     <panel name="ButtonTemplate_1"/>
-    <widget name="key_green" position="460,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <panel name="ButtonGreen"/>
+    <widget name="key_green" position="460,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
   </screen>
   <screen name="ButtonTemplate_3">
     <panel name="ButtonTemplate_2"/>
@@ -204,12 +204,12 @@
   <screen name="ButtonTemplate_3S">
     <panel name="ButtonTemplate_2S"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_green" render="Label" position="1010,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_yellow" render="Label" position="735,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
   <screen name="ButtonTemplate_4S">
     <panel name="ButtonTemplate_3S"/>
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
     <panel name="ButtonBlue"/>
+    <widget source="key_blue" render="Label" position="1010,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
   <screen name="ButtonTemplate1">
     <panel name="ButtonRed"/>
