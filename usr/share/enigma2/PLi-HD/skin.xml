@@ -165,13 +165,13 @@
     <ePixmap pixmap="PLi-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
   </screen>
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="40,643" size="35,25" />
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="75,643" size="35,25" />
   </screen>	 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="75,643" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,643" size="35,25" />
   </screen>
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="110,643" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,643" size="35,25" />
   </screen>
   <screen name="ButtonTemplate_1">
     <panel name="ButtonRed"/>
@@ -240,7 +240,7 @@
     <widget source="green" render="Label" position="460,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
   <screen name="ButtonTemplate3S">
-    <panel name="ButtonTemplate2S"/>
+    <panel name="ButtonTemplate2S"/> 
     <panel name="ButtonYellow"/>
     <widget source="yellow" render="Label" position="735,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
