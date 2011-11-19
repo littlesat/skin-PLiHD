@@ -323,10 +323,6 @@
     <widget source="session.CurrentService" render="Label" position="1160,620" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="905,586" size="60,24" zPosition="2" alphatest="on">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <ePixmap pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1020,588" size="40,21" zPosition="2" alphatest="on" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1020,588" size="40,21" zPosition="3" alphatest="on">
       <convert type="ServiceInfo">IsWidescreen</convert>
@@ -337,19 +333,23 @@
       <convert type="ValueRange">800,2000</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_txt_on.png" position="973,586" size="40,24" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_txt_on.png" position="983,588" size="33,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_crypt_on.png" position="855,588" size="40,21" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="946,588" size="33,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_crypt_on.png" position="926,588" size="16,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_sub_on.png" position="812,76" size="36,24" zPosition="2" alphatest="on">
-      <convert type="ServiceInfo">SubservicesAvailable</convert>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_hbbtv_on.png" position="876,588" size="46,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_sub_on.png" position="812,586" size="36,24" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_sub_on.png" position="839,588" size="33,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -358,10 +358,6 @@
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1100,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_hbbtv_on.png" position="1100,546" size="46,21" zPosition="2" alphatest="on">
-      <convert type="ServiceInfo">HasHBBTV</convert>
-      <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.TunerInfo" render="FixedLabel" position="1100,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
