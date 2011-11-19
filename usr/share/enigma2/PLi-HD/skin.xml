@@ -279,7 +279,7 @@
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="221,573" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left" />
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="325,573" size="480,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="305,573" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
