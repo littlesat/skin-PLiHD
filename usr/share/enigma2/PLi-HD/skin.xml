@@ -1385,5 +1385,18 @@
     <panel name="PigTemplate"/>
 	<widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
 	<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
-  </screen>   
+  </screen>
+  <!-- CCCam InfoBar -->
+  <screen flags="wfNoBorder" name="EcmInfoScreen" position="40,40" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
+    <widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="seca" position="15,0" size="15,25" font="Regular;16" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="nagra" position="30,0" size="15,25" font="Regular;16" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="via" position="45,0" size="15,25" font="Regular;16" text="V" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="conax" position="60,0" size="30,25" font="Regular;16" text="CO" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="betacrypt" position="90,0" size="25,25" font="Regular;16" text="BC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="crypto" position="115,0" size="35,25" font="Regular;16" text="CW" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="dreamcrypt" position="150,0" size="25,25" font="Regular;16" text="DC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="nds" position="175,0" size="40,25" font="Regular;16" text="NDS" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+    <widget name="ecmInfo" position="225,0" size="530,25" font="Regular;16" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1" />
+  </screen>
 </skin>
