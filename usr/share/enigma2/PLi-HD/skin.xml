@@ -1383,7 +1383,7 @@
 	<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
   </screen>
   <!-- CCCam InfoBar -->
-  <screen flags="wfNoBorder" name="EcmInfoScreen" position="40,40" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
+  <screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
     <widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
     <widget name="seca" position="15,0" size="15,25" font="Regular;16" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
     <widget name="nagra" position="30,0" size="15,25" font="Regular;16" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
