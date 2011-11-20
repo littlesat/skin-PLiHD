@@ -86,14 +86,14 @@
     <color name="WindowTitleForeground" color="foreground"></color>
     <color name="WindowTitleBackground" color="background"></color>
     <borderset name="bsWindow">
-      <pixmap filename="PLi-HD/window/oben_links.png" pos="bpTopLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/oben.png" pos="bpTop"></pixmap>
-      <pixmap filename="PLi-HD/window/oben_rechts.png" pos="bpTopRight"></pixmap>
-      <pixmap filename="PLi-HD/window/links.png" pos="bpLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/rechts.png" pos="bpRight"></pixmap>
-      <pixmap filename="PLi-HD/window/unten_links.png" pos="bpBottomLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/unten.png" pos="bpBottom"></pixmap>
-      <pixmap filename="PLi-HD/window/unten_rechts.png" pos="bpBottomRight"></pixmap>
+      <pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"></pixmap>
+      <pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"></pixmap>
+      <pixmap filename="PLi-HD/window/left_edge.png" pos="bpLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/right_edge.png" pos="bpRight"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"></pixmap>
     </borderset>
     <borderset name="bsListboxEntry">
       <pixmap filename="PLi-HD/border/line.png" pos="bpTop"></pixmap>
