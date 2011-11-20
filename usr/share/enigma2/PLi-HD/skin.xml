@@ -119,15 +119,18 @@
     <widget source="session.CurrentService" render="Label" position="870,28" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-  </screen>  
-  <screen name="BasicTemplate">
+  </screen>
+  <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="dark" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" />
-    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
+  </screen>
+  <screen name="BasicTemplate">
+    <panel name="TopTemplate"/>
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
   </screen>
   <screen name="TextTemplate">  
     <widget name="text" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" /> 
@@ -599,12 +602,8 @@
   </screen>
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder">
     <!-- THIS SCREEN DOES NOT USE TEMPLATES -->
-    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" />
-    <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <panel name="TopTemplate"/>
+    <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
     <widget source="Event" render="Label" position="520,90" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%A</convert>
