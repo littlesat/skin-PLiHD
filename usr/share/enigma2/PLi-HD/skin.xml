@@ -283,7 +283,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,546" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
