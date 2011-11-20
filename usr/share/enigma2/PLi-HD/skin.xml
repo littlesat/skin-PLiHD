@@ -86,14 +86,14 @@
     <color name="WindowTitleForeground" color="foreground"></color>
     <color name="WindowTitleBackground" color="background"></color>
     <borderset name="bsWindow">
-      <pixmap filename="PLi-HD/window/oben_links.png" pos="bpTopLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/oben.png" pos="bpTop"></pixmap>
-      <pixmap filename="PLi-HD/window/oben_rechts.png" pos="bpTopRight"></pixmap>
-      <pixmap filename="PLi-HD/window/links.png" pos="bpLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/rechts.png" pos="bpRight"></pixmap>
-      <pixmap filename="PLi-HD/window/unten_links.png" pos="bpBottomLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/unten.png" pos="bpBottom"></pixmap>
-      <pixmap filename="PLi-HD/window/unten_rechts.png" pos="bpBottomRight"></pixmap>
+      <pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"></pixmap>
+      <pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"></pixmap>
+      <pixmap filename="PLi-HD/window/left_edge.png" pos="bpLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/right_edge.png" pos="bpRight"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"></pixmap>
+      <pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"></pixmap>
     </borderset>
     <borderset name="bsListboxEntry">
       <pixmap filename="PLi-HD/border/line.png" pos="bpTop"></pixmap>
@@ -625,21 +625,21 @@
     </widget>
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,335" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,335" size="35,25" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="520,335" size="20,20" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="710,335" size="20,20" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="900,335" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Pli-HD/buttons/red.png" position="520,335" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Pli-HD/buttons/green.png" position="710,335" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Pli-HD/buttons/blue.png" position="900,335" size="20,20" alphatest="on" />
     <widget name="key_red" position="549,335" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="737,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="927,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline1" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline2" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline3" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline4" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline5" pixmap="Magic-HD-Common/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline_now" pixmap="Magic-HD-Common/window/timeline-now.png" position="4,407" size="19,310" zPosition="2" alphatest="on" />
+    <widget name="timeline0" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline1" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline2" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline3" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline4" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline5" pixmap="Pli-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
+    <widget name="timeline_now" pixmap="Pli-HD/window/timeline-now.png" position="4,407" size="19,310" zPosition="2" alphatest="on" />
   </screen>
   <!-- Menus -->
   <screen name="Menu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1099,12 +1099,12 @@
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
-    <widget name="list" position="85,375" size="545,200" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" />
+    <widget name="list" position="85,375" size="545,200" selectionPixmap="Pli-HD/buttons/sel.png" font="Regular;22" />
   </screen>
   <screen name="TimeDateInput" title="Time/Date Input" position="0,0" size="1280,720" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="590,110" font="Regular;22" size="600,500" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Pli-HD/buttons/sel.png" position="590,110" font="Regular;22" size="600,500" transparent="1" />
   </screen>
   <!-- Language selection -->
   <screen name="LanguageSelection" title="Language selection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1152,9 +1152,9 @@
   <screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel position="85,92" size="560,26" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;22" halign="center" />
-    <widget name="filelist" position="85,120" size="560,325" backgroundColor="noTransBG" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="filelist" position="85,120" size="560,325" backgroundColor="noTransBG" scrollbarMode="showOnDemand" selectionPixmap="Pli-HD/buttons/sel.png" />
     <eLabel position="660,92" size="561,26" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;22" halign="center" />
-    <widget name="playlist" position="660,120" size="560,325" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="playlist" position="660,120" size="560,325" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Pli-HD/buttons/sel.png" />
     <widget name="title" position="300,470" size="680,40" backgroundColor="noTransBG" transparent="1" font="Regular;26" valign="top" />
     <eLabel position="289,520" size="700,2" backgroundColor="darkgrey" />
     <widget name="artisttext" position="300,535" size="100,25" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;20" valign="top" />
@@ -1165,14 +1165,14 @@
     <widget name="year" position="400,595" size="580,25" backgroundColor="noTransBG" transparent="1" font="Regular;20" valign="top" />
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="90,470" size="150,150" transparent="1" alphatest="blend" />
     <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="200,649" size="600,16" backgroundColor="noTransBG" zPosition="13" alphatest="on" />
-    <widget name="PositionGauge" position="220,650" size="560,14" transparent="0" zPosition="12" pointer="Magic-HD-Common/dvr/pointer.png:13,3" />
+    <widget name="PositionGauge" position="220,650" size="560,14" transparent="0" zPosition="12" pointer="Pli-HD/dvr/pointer.png:13,3" />
     <widget source="session.CurrentService" render="Label" position="80,645" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="820,645" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget name="repeat" position="1120,645" size=" 70,30" zPosition="10" pixmaps="Magic-HD-Common/buttons/repeat-off.png,Magic-HD-Common/buttons/repeat-on.png" alphatest="blend" />
+    <widget name="repeat" position="1120,645" size=" 70,30" zPosition="10" pixmaps="Pli-HD/buttons/repeat-off.png,Pli-HD/buttons/repeat-on.png" alphatest="blend" />
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
