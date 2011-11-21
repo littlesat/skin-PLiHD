@@ -214,6 +214,11 @@
     <panel name="ButtonBlue"/>
     <widget source="key_blue" render="Label" position="1010,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
+  <screen name="ButtonTemplate_RBS">
+    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonBlue"/>
+    <widget source="key_blue" render="Label" position="1010,645" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
   <screen name="ButtonTemplate1">
     <panel name="ButtonRed"/>
     <widget name="red" position="185,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
@@ -934,7 +939,7 @@
   </screen>
   <screen name="AdapterSetup" title="Network Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RBS"/>
     <widget name="config" position="530,100" size="690,200" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
@@ -950,8 +955,7 @@
     <widget source="Adaptertext" render="Label" position="400,550" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right" />
     <widget source="Adapter" render="Label" position="680,550" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left" />
     <widget source="introduction2" render="Label" position="400,585" size="400,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
-<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />-->
-		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="385,645" size="300,26" transparent="1" zPosition="1" />
+	<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="290,26" transparent="1" zPosition="1" />
     <widget name="HelpWindow" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
   <screen name="NameserverSetup" title="Nameserver Setup" position="0,0" size="1280,720" flags="wfNoBorder">
