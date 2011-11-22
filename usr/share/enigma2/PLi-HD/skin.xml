@@ -94,6 +94,9 @@
     <widget source="session.CurrentService" render="Label" position="420,5" size="450,52" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="245,54" size="100,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="950,59" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -102,7 +105,7 @@
     <widget source="session.CurrentService" render="PositionGauge" position="345,65" size="584,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer.png:572,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="330,28" size="90,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="310,28" size="90,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="870,28" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
