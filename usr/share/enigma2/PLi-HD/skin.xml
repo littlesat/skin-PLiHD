@@ -1365,6 +1365,34 @@
 	<widget name="aTaglist" position="820,170" size="400,440"  scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <!-- CutListEditor -->
+
+  <screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panal name="BasicTemplate"/>
+    <widget source="cutlist" render="Listbox" position="15,82" size="447,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+        {"template": [
+            MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
+            MultiContentEntryText(pos=(190,2),size=(80,20),text = 2,flags = RT_HALIGN_CENTER,backcolor = MultiContentTemplateColor(3))
+          ],
+          "fonts": [gFont("Regular",20)],
+          "itemHeight": 25
+		}
+      </convert>
+    </widget>
+    <widget name="Video" position="510,124" backgroundColor="transparent" size="696,377" zPosition="1" />
+	<widget name="SeekState" position="465,595" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center" />
+    <widget source="session.CurrentService" render="Label" position="470,510" size="790,30" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="470,550" size="790,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" valign="center" halign="center">
+      <convert type="ServicePosition">Position,Detailed</convert>
+    </widget>
+	<widget name="Timeline" position="575,595" size="615,20" backgroundColor="#505555" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
+    <eLabel text="'OK' = Menu" position="970,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
+    <eLabel text="'o' = Mark" position="340,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
+  </screen>
+
   <!-- Classic NetRadio -->
 
   <screen flags="wfNoBorder" name="AboutScreen" position="0,0" size="1280,720" title="NetRadio Classic v.2.2c-Tunisiasat">
