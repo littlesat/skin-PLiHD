@@ -1307,7 +1307,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
     <panel name="ButtonGreen"/>
-    <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="460,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
 
