@@ -181,7 +181,7 @@
   </screen>
 
   <screen name="KeyTextTemplate">
-	<ePixmap pixmap="PLi-HD/buttons/text.png" position="418,643" size="30,30" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/text.png" position="418,643" size="30,30" alphatest="on" />
   </screen>
 
   <screen name="ButtonTemplate_1">
