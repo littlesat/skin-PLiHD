@@ -180,6 +180,10 @@
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,643" size="35,25" />
   </screen>
 
+  <screen name="KeyTextTemplate">
+	<ePixmap pixmap="PLi-HD/buttons/text.png" position="418,643" size="30,30" alphatest="on" />
+  </screen>
+
   <screen name="ButtonTemplate_1">
     <panel name="ButtonRed"/>
     <widget name="key_red" position="185,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
@@ -1032,6 +1036,7 @@
   <screen name="AdapterSetup" title="Network Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RBS"/>
+    <panel name="KeyTextTemplate"/>
     <widget name="config" position="530,100" size="690,200" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
@@ -1047,7 +1052,7 @@
     <widget source="Adaptertext" render="Label" position="400,550" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right" />
     <widget source="Adapter" render="Label" position="680,550" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left" />
     <widget source="introduction2" render="Label" position="400,585" size="400,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
-    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="290,26" transparent="1" zPosition="1" />
+    <eLabel text="Virtual Keyboard" position="460,645" size="300,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="HelpWindow" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
 
