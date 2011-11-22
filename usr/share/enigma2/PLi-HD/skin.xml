@@ -1302,13 +1302,13 @@
   </screen>
 
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
+  
   <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <panel name="ButtonGreen"/>
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
-	<eLabel text="www.openpli.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" title="Release Notes">
@@ -1316,11 +1316,12 @@
     <widget name="list" font="Regular;22" position="530,100" size="690,510" transparent="1" />
   </screen>
 
-  <!--GP2-->
+  <!--GP2 - Where is this used??? -->
 
   <gstyle>
     <gstyles filename="PLi-HD/window/separator.png#cached"></gstyles>
    </gstyle>
+
   <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">
     <widget name="Dishpixmap" pixmap="PLi-HD/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
   </screen>
