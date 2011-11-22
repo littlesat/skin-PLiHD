@@ -1369,7 +1369,7 @@
 
   <screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
     <panal name="BasicTemplate"/>
-    <widget source="cutlist" render="Listbox" position="15,82" size="447,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
+    <widget source="cutlist" render="Listbox" position="15,82" size="447,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
