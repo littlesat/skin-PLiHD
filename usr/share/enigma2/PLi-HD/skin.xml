@@ -1194,6 +1194,7 @@
 
   <screen name="HarddiskSetup" title="Harddisk" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="ButtonRed"/>
     <widget name="model" position="530,100" size="380,25" font="Regular;24" />
     <widget name="capacity" position="530,130" size="380,25" font="Regular;24" />
     <widget name="bus" position="530,160" size="380,25" font="Regular;24" />
