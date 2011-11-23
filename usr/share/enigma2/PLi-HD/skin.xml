@@ -536,7 +536,7 @@
 
   <!-- DVD Player Infobar -->
 
-  <screen name="DVDPlayer" title="InfoBar" position="0,22" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="DVDPlayer" title="InfoBar" position="0,45" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
     <widget name="chapterLabel" position="280,80" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"></widget>
     <eLabel text="Audio:  " position="280,115" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left"></eLabel>
@@ -1589,6 +1589,134 @@
     <panel name="PigTemplate"/>
 	<widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
 	<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
+  </screen>
+
+  <!-- MyTube  -->
+
+  <screen flags="wfNoBorder" name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="MyTubePlayer MainScreen">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3"/>
+    <panel name="KeyMenuInfoTemplate"/>
+    <widget name="thumbnail" position="0,0" size="130,98" alphatest="on" />
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="840,682" size="300,26" transparent="1" zPosition="1" />
+    <widget name="HelpWindow" position="65,500" size="1,1" transparent="1" zPosition="3" alphatest="on" />
+    <widget name="config" position="520,100" size="740,30" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" zPosition="2" />
+    <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="520,130" size="740,480" source="feedlist" transparent="1" zPosition="1">
+      <convert type="TemplatedMultiContent">
+	{"templates":
+	  {"default": (77,[
+	      MultiContentEntryPixmapAlphaTest(pos = (5,1),size = (100,75),png = 4),
+	      MultiContentEntryText(pos = (110,1),size = (800,25),font=0,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),
+	      MultiContentEntryText(pos = (110,27),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 5),
+	      MultiContentEntryText(pos = (110,48),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 6),
+	      MultiContentEntryText(pos = (500,27),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 7),
+	      MultiContentEntryText(pos = (500,48),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 8),
+	    ]),
+	    "state": (77,[
+	      MultiContentEntryText(pos = (20,1),size = (800,40),font=2,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 0),
+	      MultiContentEntryText(pos = (20,43),size = (800,30),font=3,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),
+	    ])
+	  },
+	  "fonts": [gFont("Regular",20),gFont("Regular",16),gFont("Regular",22),gFont("Regular",18)],
+	  "itemHeight": 77
+        }
+      </convert>
+    </widget>
+  </screen>
+
+  <screen name="MyTubePlayer" title="MoviePlayer" position="0,45" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="PlayerTemplate"/>
+  </screen>
+
+  <screen flags="wfNoBorder" name="MyTubeSettingsScreen" position="0,0" size="1280,720" title="MyTube Player settings">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="520,100" size="740,510" transparent="1" />
+  </screen>
+
+  <screen flags="wfNoBorder" name="MyTubeVideoInfoScreen" position="0,0" size="1280,720" title="MyTubePlayerMainScreen">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1"/>
+    <widget alphatest="on" name="thumbnail" position="0,0" size="130,98" />
+    <widget font="Regular;20" foregroundColor="foreground" halign="left" name="title" position="590,100" size="600,50" transparent="1" valign="center" zPosition="5" />
+    <widget position="520,160" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" size="600,450" source="infolist" transparent="1" zPosition="6">
+      <convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (110,[
+							MultiContentEntryPixmapAlphaTest(pos = (0,4),size = (130,98),png = 0),
+							MultiContentEntryPixmapAlphaTest(pos = (130,4),size = (130,98),png = 1),
+							MultiContentEntryPixmapAlphaTest(pos = (260,4),size = (130,98),png = 2),
+							MultiContentEntryPixmapAlphaTest(pos = (390,4),size = (130,98),png = 3),
+						]),
+					"state": (110,[
+							MultiContentEntryText(pos = (10,40),size = (550,38),font=2,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 0),
+						])
+					},
+					"fonts": [gFont("Regular",18),gFont("Regular",14),gFont("Regular",22)],
+					"itemHeight": 110
+				}
+				</convert>
+    </widget>
+    <widget alphatest="on" name="starsbg" pixmap="PLi-HD/dvr/starsbar_empty.png" position="260,520" size="100,20" transparent="1" zPosition="5" />
+    <widget name="stars" pixmap="PLi-HD/dvr/starsbar_filled.png" position="260,520" size="100,20" transparent="1" zPosition="6" />
+    <widget font="Regular;20" halign="left" name="author" position="70,400" size="300,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="duration" position="380,400" size="200,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="published" position="70,460" size="300,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="views" position="380,460" size="200,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="tags" position="70,560" size="500,60" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="detailtext" position="590,150" size="600,250" transparent="1" valign="top" zPosition="10" />
+  </screen>
+
+  <screen backgroundColor="background" flags="wfNoBorder" name="MyTubeSuggestionsListScreen" position="378,218" size="850,260" zPosition="6">
+    <eLabel backgroundColor="secondBG" position="0,0" size="850,260" zPosition="7" />
+    <widget position="0,0" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="850,260" source="suggestionslist" transparent="1" zPosition="8">
+      <convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0,1),size = (610,24),font=0,flags = RT_HALIGN_LEFT,text = 0),
+							MultiContentEntryText(pos = (620,1),size = (180,24),font=1,flags = RT_HALIGN_RIGHT,text = 1),
+						],
+					"fonts": [gFont("Regular",20),gFont("Regular",18)],
+					"itemHeight": 25
+					}
+				</convert>
+    </widget>
+  </screen>
+
+  <screen backgroundColor="background" flags="wfNoBorder" name="MyTubeHistoryScreen" position="378,218" size="850,260" zPosition="6">
+    <eLabel backgroundColor="secondBG" position="0,0" size="850,260" zPosition="7" />
+    <widget position="0,0" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="850,260" source="historylist" transparent="1" zPosition="8">
+      <convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0,1),size = (800,24),font=0,flags = RT_HALIGN_LEFT,text = 0),
+						],
+					"fonts": [gFont("Regular",20),gFont("Regular",18)],
+					"itemHeight": 25
+					}
+				</convert>
+    </widget>
+  </screen>
+
+  <screen flags="wfNoBorder" name="MyTubeVideoHelpScreen" position="0,0" size="1280,720" title="MyTube help">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1"/>
+    <widget name="detailtext" font="Regular;22" position="520,90" size="740,510" valign="top" transparent="1" />
+  </screen>
+
+  <screen flags="wfNoBorder" name="MyTubeTasksScreen" position="0,0" size="1280,720" title="MyTube TasksScreen">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1"/>
+    <widget render="Listbox" source="tasklist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="520,100" size="600,510" transparent="7" />
+      <convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0,1),size = (400,24),font=1,flags = RT_HALIGN_LEFT,text = 1),
+							MultiContentEntryText(pos = (410,1),size = (150,24),font=1,flags = RT_HALIGN_RIGHT,text = 2),
+							MultiContentEntryProgress(pos = (570,1),size = (100,24),percent = -3),
+							MultiContentEntryText(pos = (680,1),size = (120,24),font=1,flags = RT_HALIGN_RIGHT,text = 4),
+						],
+					"fonts": [gFont("Regular",20),gFont("Regular",18)],
+					"itemHeight": 25
+					}
+      </convert>
   </screen>
 
   <!-- CCCam InfoBar -->
