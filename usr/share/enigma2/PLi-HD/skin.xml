@@ -116,9 +116,12 @@
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="dark" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" />
-    <widget source="Title" render="Label" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
-    <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-      <convert type="ClockToText">Full</convert>
+    <widget source="Title" render="Label" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget source="global.CurrentTime" render="Label" position="920,50" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1070,30" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+      <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
   </screen>
 
@@ -329,10 +332,10 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,550" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;18" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,550" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;16" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="430,550" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="430,550" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="220,642" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
