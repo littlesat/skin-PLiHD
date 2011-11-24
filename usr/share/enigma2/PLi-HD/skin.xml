@@ -175,15 +175,15 @@
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="75,643" size="35,25" />
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="75,645" size="35,25" />
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,643" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,645" size="35,25" />
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,643" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,645" size="35,25" />
   </screen>
 
   <screen name="KeyTextTemplate">
