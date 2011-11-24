@@ -1603,23 +1603,23 @@
     <widget name="config" position="520,100" size="740,30" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" zPosition="2" />
     <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="520,130" size="740,480" source="feedlist" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
-	{"templates":
-	  {"default": (77,[
-	      MultiContentEntryPixmapAlphaTest(pos = (5,1),size = (100,75),png = 4),
-	      MultiContentEntryText(pos = (110,1),size = (800,25),font=0,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),
-	      MultiContentEntryText(pos = (110,27),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 5),
-	      MultiContentEntryText(pos = (110,48),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 6),
-	      MultiContentEntryText(pos = (500,27),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 7),
-	      MultiContentEntryText(pos = (500,48),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 8),
-	    ]),
-	    "state": (77,[
-	      MultiContentEntryText(pos = (20,1),size = (800,40),font=2,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 0),
-	      MultiContentEntryText(pos = (20,43),size = (800,30),font=3,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),
-	    ])
-	  },
-	  "fonts": [gFont("Regular",20),gFont("Regular",16),gFont("Regular",22),gFont("Regular",18)],
-	  "itemHeight": 77
-        }
+				{"templates":
+					{"default": (77,[
+							MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
+							MultiContentEntryText(pos = (110, 1), size = (600, 24), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+							MultiContentEntryText(pos = (110, 25), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+							MultiContentEntryText(pos = (110, 47), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+							MultiContentEntryText(pos = (500, 25), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+							MultiContentEntryText(pos = (500, 47), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+						]),
+					"state": (77,[
+							MultiContentEntryText(pos = (10, 1), size = (690, 30), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (10, 29), size = (690, 35), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+						])
+					},
+					"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
+					"itemHeight": 77
+				}
       </convert>
     </widget>
   </screen>
