@@ -805,8 +805,8 @@
   <!-- NumberZap -->
 
   <screen name="NumberZap" title="Channel" position="100,45" size="434,64" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="channel" position="2,2" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
-    <widget name="number" position="150,0" size="280,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+    <widget name="channel" position="0,0" size="120,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+    <widget name="number" position="120,0" size="100,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
   </screen>
 
   <!-- PVR State -->
