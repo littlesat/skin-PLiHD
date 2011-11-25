@@ -1294,6 +1294,58 @@
     <widget name="config" position="530,100" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <!-- ## Satfinder with BIG bars -->
+  <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="TopTemplate"/>
+  <!-- ##SNR## -->
+    <eLabel name="snr" position="18,103" size="95,50" backgroundColor="darkgrey" transparent="1" text="SNR:" font="Regular; 30" />
+    <widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="115,103" size="1000,50" borderWidth="1" borderColor="uncccccc">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="1130,103" size="129,50" backgroundColor="darkgrey" transparent="1" font="Regular; 35">
+     <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="15,220" size="531,210" font="LCD; 180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+     <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <!-- ##AGC## -->
+    <eLabel name="agc" position="18,155" size="95,50" backgroundColor="darkgrey" transparent="1" text="AGC:" font="Regular; 30" />
+    <widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="115,155" size="1000,50" borderWidth="1" borderColor="uncccccc">
+     <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="1130,155" size="130,50" backgroundColor="darkgrey" transparent="1" font="Regular; 35">
+     <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="15,380" size="531,210" backgroundColor="darkgrey" transparent="1" font="LCD; 180"  halign="center" valign="center">
+     <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <!-- ##BER## -->
+    <eLabel name="ber" position="18,210" size="95,50" backgroundColor="darkgrey" transparent="1" text="BER:" font="Regular;30" />
+    <widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="115,210" size="1000,50" borderWidth="1" borderColor="uncccccc">
+     <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="1130,210" size="130,50" backgroundColor="darkgrey" transparent="1" font="Regular;35">
+     <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="15,535" size="531,210" font="LCD; 180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+     <convert type="FrontendInfo">BER</convert>
+    </widget>
+  <!-- ##Lock## -->
+    <eLabel name="lock" position="590,265" size="120,28" backgroundColor="darkgrey" transparent="1" text="Lock:" font="Regular;24" />
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="689,264" size="38,31" alphatest="on">
+     <convert type="FrontendInfo">LOCK</convert>
+     <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="689,264" size="38,31" alphatest="on">
+     <convert type="FrontendInfo">LOCK</convert>
+     <convert type="ConditionalShowHide">Invert</convert>
+    </widget>
+    <eLabel position="550,298" size="660,2" backgroundColor="black" />
+    <eLabel position="550,300" size="660,2" backgroundColor="grey" />
+    <widget name="config" position="550,300" size="660,400" backgroundColor="darkgrey" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="introduction" position="0,0" size="0,0" />
+  </screen>
+ 
   <!--Media-Player-->
 
   <screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder">
