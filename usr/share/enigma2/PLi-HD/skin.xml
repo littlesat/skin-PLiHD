@@ -1287,6 +1287,20 @@
 	</widget>
   </screen>
 
+  <!-- FastScan -->
+
+  <screen name="FastScanScreen" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="530,100" size="690,500" scrollbarMode="showOnDemand" />
+    <widget name="introduction"  position="85,530" size="417,75" font="Regular;20" halign="center" />
+  </screen>
+
+  <screen name="FastScanStatus" position="center,center" size="420,180" title="Fast Scan">
+    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="on" />
+    <widget name="scan_state" position="10,120" zPosition="2" size="400,30" font="Regular;18" />
+    <widget name="scan_progress" position="10,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+  </screen>
+
   <!-- Nim setup -->
 
   <screen name="NimSetup" title="Reception Settings" position="0,0" size="1280,720" flags="wfNoBorder">
