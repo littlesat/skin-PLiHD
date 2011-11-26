@@ -1042,6 +1042,22 @@
     </widget>
   </screen>
 
+  <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget source="list" render="Listbox" position="530,110" size="720,450" scrollbarMode="showOnDemand" selectionDisabled="0">
+		<convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryText(pos = (0, 0), size = (720, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					],
+			"fonts": [gFont("Regular", 20),gFont("Regular", 20)],
+			"itemHeight": 25
+			}
+		</convert>
+    </widget>
+    <widget source="introduction" render="Label" position="530,580" size="720,50" zPosition="10" font="Regular;18" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+  </screen>
+  
   <screen name="AdapterSetupConfiguration" title="Network Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
