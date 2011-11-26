@@ -1806,6 +1806,123 @@
       </convert>
   </screen>
 
+  <!-- MeteoViewer -->
+
+  <screen flags="wfNoBorder" name="meteoViewer" position="0,0" size="1280,720" title="meteoViewer">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <ePixmap position="900,110" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/top.png" zPosition="4" alphatest="on" />
+    <ePixmap position="900,550" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on" />
+    <ePixmap position="600,335" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/left.png" zPosition="4" alphatest="on" />
+    <ePixmap position="1190,335" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/right.png" zPosition="4" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/key_tv.png" position="600,580" size="35,25" alphatest="on" />
+    <eLabel text="- Synaptic" position="640,580" size="200,30" backgroundColor="secondBG" font="Regular;18" halign="left" transparent="1" zPosition="1" />
+    <widget name="frames" position="600,110" size="600,450" zPosition="1" alphatest="blend"/>
+    <widget name="border" position="600,110" zPosition="2" size="600,450" alphatest="blend"/>
+    <widget name="mer" position="600,110" zPosition="3" size="600,450" alphatest="blend"/>
+    <widget name="msg" position="590,608" size="400,20" font="Regular;18" backgroundColor="#31000000" />
+    <widget name="download" position="710,614" zPosition="5" borderWidth="1" size="75,12" backgroundColor="background" />
+    <widget name="slide" position="990,618" zPosition="5" borderWidth="1" size="210,6" backgroundColor="background" />
+  </screen>
+  <screen flags="wfNoBorder" name="meteoViewerCfg" position="0,0" size="1280,720" title="MeteoViewer Configuration">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,470" transparent="1" />
+    <widget name="statusbar" position="590,585" size="600,25" font="Regular;20" backgroundColor="#31000000" />
+  </screen>
+
+  <!-- CSSF plugin -->
+
+  <screen name="CSFD" flags="wfNoBorder" position="0,0" size="1280,720" title="Filmová databáze CSFD">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="titellabel" position="570,100" size="370,28" valign="center" font="Regular;22" foregroundColor="#f0b400" />
+    <widget name="sortlabel" position="570,128" size="370,28" font="Regular;17" foregroundColor="blue" />
+    <widget name="detailslabel" position="740,153" size="500,201" font="Regular;22" />
+    <widget name="contentlabel" position="570,375" size="670,225" font="Regular;22" />
+    <widget name="extralabel"   position="570,153" size="670,425" font="Regular;22" />
+    <widget name="statusbar" position="100,500" size="460,17" font="Regular;15" foregroundColor="#cccccc" />
+    <widget name="poster" position="564,153" size="170,201" alphatest="on" />
+    <widget name="menu" position="570,153" size="585,397" zPosition="3" scrollbarMode="showOnDemand" />
+    <widget name="servicemenuBackG" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/border_menu_380.png" position="670,150" size="380,350" zPosition="4" alphatest="on" />
+    <widget name="servicemenuTop" position="675,155" size="370,25" valign="center" halign="center" backgroundColor="black" foregroundColor="#f0b400" font="Regular;22" zPosition="4" />
+    <widget name="servicemenu" position="675,180" size="370,315" backgroundColor="black" foregroundColor="white" zPosition="4" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" />
+    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_filled.png" transparent="1" />
+    <widget name="pagebg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/select_tv.png" position="742,577" size="240,44" zPosition="1" alphatest="on" />
+    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/key_1.png" position="747,588" size="25,25" zPosition="3" alphatest="on" />
+    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/key_3.png" position="957,588" size="25,25" zPosition="3" alphatest="on" />
+    <widget name="paget1" position="767,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
+    <widget name="paget3" position="932,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
+    <widget name="page" position="742,587" size="240,28" font="Regular;22" valign="center" halign="center" zPosition="2" transparent="1" />
+  </screen>
+
+  <!-- XPower plugin -->
+
+  <screen name="xpower" flags="wfNoBorder" position="0,0" size="1280,720" title="XPower">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget source="config" render="Listbox" position="610,110" size="565,450" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (15, 1), size = (48, 48), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
+				MultiContentEntryText(pos = (90, 9), size = (120, 35), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the Name (for text it is text= )
+				MultiContentEntryPixmapAlphaTest(pos = (220, 5), size = (40, 40), png = 2), # index 2 is the system pixmap
+				MultiContentEntryText(pos = (290, 3), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the IP
+				MultiContentEntryText(pos = (290, 28), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the MAC
+				],
+			"fonts": [gFont("Regular", 30),gFont("Regular", 18)],
+			"itemHeight": 50
+		}
+	</convert>
+    </widget>
+    <widget name="statusbar" position="610,590" size="420,20" font="Regular;18" />
+  </screen>
+  
+  <screen flags="wfNoBorder" name="xpowerHelp" position="0,0" size="1280,720" title="XPower Help">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="HelpScrollLabel" position="630,110" size="520,400" font="Regular;20" scrollbarMode="showOnDemand"/>
+    <ePixmap pixmap="~/img/author.png" position="630,530" zPosition="10" size="25,25" transparent="1" alphatest="on" />
+    <widget name="version" position="670,535" size="420,20" font="Regular;18" />
+    <widget name="statusbar" position="630,600" size="470,20" font="Regular;18" />
+  </screen>
+  
+    <screen flags="wfNoBorder" name="xpowerEdit" position="0,0" size="1280,720" title="XPower Configuration PC">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="config" position="630,110" size="520,175" scrollbarMode="showOnDemand"/>
+    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="statusbar" position="610,300" size="420,20" font="Regular;18" />
+  </screen>
+
+  <!-- HDD Sleep plugin -->
+
+  <screen name="HddSleep" flags="wfNoBorder" position="0,0" size="1280,720" title="HddSleep Configuration">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="config" position="630,110" size="520,200" scrollbarMode="showOnDemand"/>
+    <ePixmap pixmap="skin_default/div-h.png" position="600,320" zPosition="1" size="560,2" />
+    <widget name="devices" position="610,335" size="200,25" font="Regular;20" />
+    <widget name="mounted" position="840,335" size="310,120" font="Regular;20" />
+    <ePixmap pixmap="~/author.png" position="610,375" zPosition="2" size="25,25" />
+    <widget name="version" position="640,380" size="100,20" zPosition="2" foregroundColor="white" font="Regular;16" /> 
+    <widget name="process" position="610,415" size="90,25" font="Regular;20" />
+    <widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="700,419" size="15,16" zPosition="10" transparent="1"/>
+    <widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="700,419" size="15,16" zPosition="10" transparent="1"/>
+    <widget name="statusbar" position="610,450" size="470,20" font="Regular;18" />
+    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="1" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="610,138" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="2" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="610,163" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="3" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="610,188" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="4" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="610,213" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="5" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="610,238" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,263" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+  </screen>
+
   <!-- CCCam InfoBar -->
 
   <screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
