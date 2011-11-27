@@ -471,7 +471,7 @@
     <widget source="session.CurrentService" render="Label" position="50,45" size="679,80" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
-    <eLabel name="snr" position="655,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR" font="Regular;14" />
+    <!--eLabel name="snr" position="655,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/bar_snr.png" position="730,45" size="410,20" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
@@ -500,7 +500,7 @@
     <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="730,130" zPosition="1" size="38,31">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
-    </widget>
+    </widget-->
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
     <eLabel text="Now:" position="60,165" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" backgroundColor="background" />
     <eLabel text="Next:" position="650,165" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" backgroundColor="background" />
