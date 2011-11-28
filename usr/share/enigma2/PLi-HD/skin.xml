@@ -13,9 +13,9 @@
 
   <fonts>
     <font name="Regular" filename="nmsbd.ttf" scale="100"></font>
-    <font name="Crs" filename="/usr/share/fonts/hdi.ttf" scale="100"></font>
-    <font name="LCD" filename="/usr/share/fonts/lcd.ttf" scale="100"></font>
-    <font name="Console" filename="/usr/share/fonts/tuxtxt.ttf" scale="100"></font>
+    <font name="Crs" filename="hdi.ttf" scale="100"></font>
+    <font name="LCD" filename="lcd.ttf" scale="100"></font>
+    <font name="Console" filename="tuxtxt.ttf" scale="100"></font>
     <font name="Fixed" filename="andale.ttf" scale="100"></font>
   </fonts>
 
