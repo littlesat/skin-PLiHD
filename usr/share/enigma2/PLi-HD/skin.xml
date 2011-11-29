@@ -1299,6 +1299,32 @@
     <widget name="long_key" position="1016,605" size="250,20" foregroundColor="yellow" font="Regular;16" halign="center" />
   </screen>
 
+  <!-- PPanel -->
+
+  <screen flags="wfNoBorder" name="ToplevelPPanel" position="0,0" size="1280,720" title="Toplevel PPanel">
+    <panel name="PigTemplate"/>
+    <widget name="nodelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" />
+    <widget name="helptext" position="85,370" size="500,260" valign="center" halign="left" font="Regular;20" />
+  </screen>
+  <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="PPanel">
+    <panel name="PigTemplate"/>
+    <widget name="nodelist" position="590,110" font="Regular;22" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="helptext" position="85,370" size="500,260" valign="center" halign="left" font="Regular;20" />
+  </screen>
+  <screen flags="wfNoBorder" name="File" position="0,0" size="1280,720" title="PPanel File">
+    <panel name="PigTemplate"/>
+    <widget name="progress" position="44,560" size="1194,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="Tarball" position="0,0" size="1280,720" title="PPanel Entry">
+    <panel name="PigTemplate"/>
+    <widget name="progress" position="44,560" size="1194,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="Execute" position="0,0" size="1280,720" title="PPanel Entry">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_YB"/>
+    <widget name="linelist" font="Regular;20" position="560,110" size="655,500" transparent="1" />
+  </screen>
+
   <!-- TextBox -->
 
   <screen name="TextBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
