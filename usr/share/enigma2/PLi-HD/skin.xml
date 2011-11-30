@@ -1066,6 +1066,86 @@
     <widget name="infolist" position="530,100" size="690,500" selectionDisabled="1" />
   </screen>
 
+  <!-- Softwaremanager -->
+
+  <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="0,0" size="1280,720" title="SoftwareManager setup">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget source="introduction" render="Label" position="85,400" size="417,200" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
+  </screen>
+
+  <screen name="BackupScreen" title="Backup is running" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="590,110" size="600,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <screen name="BackupSelection" title="Select files/folders to backup" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <widget name="checkList" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Ipkg installer -->
+
+  <screen name="IpkgInstaller" title="Ipkg Installer" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="list" position="590,110" size="600,450" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
+  </screen>
+
+  <screen name="Ipkg" title="Installing Software" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="package" position="590,110" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
+    <widget name="status" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
+    <widget name="slider" position="594,294" size="592,17" zPosition="2" transparent="1" />
+    <widget name="activityslider" position="84,500" size="1154,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+  </screen>
+
+  <!-- Choose upgrade source -->
+
+  <screen name="IPKGMenu" title="Select IPKG source" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="filelist" position="590,110" size="600,300" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Edit upgrade source -->
+
+  <screen name="IPKGSource" title="IPKG source" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="text" position="85,400" size="1135,30" font="Regular;23" zPosition="3" transparent="1" />
+  </screen>
+
+  <!-- Packet Manager -->
+
+  <screen name="PacketManager" title="IPKG upgrade" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget source="list" render="Listbox" position="590,110" size="600,468" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+	<convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+		MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+		MultiContentEntryPixmapAlphaTest(pos = (500,0), size = (48,48), png = 4), # index 5 is the status pixmap
+		MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (600,2), png = 5), # index 6 is the div pixmap
+		],
+		"fonts": [gFont("Regular",22),gFont("Regular",18)],
+		"itemHeight": 52
+		}
+      </convert>
+    </widget>
+  </screen>
+  <screen name="UpdatePlugin" title="Software Update" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
+    <widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
+    <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
+    <widget name="activityslider" position="85,609" size="1100,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+  </screen>
+  
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
@@ -1089,6 +1169,91 @@
 			}
       </convert>
     </widget>
+  </screen>
+  <screen name="PluginManager" title="Plugin manager" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <widget source="list" render="Listbox" position="590,110" size="600,459" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+				{"templates":
+				{"default": (51,[
+				MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (500,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (600,2), png = 6), # index 6 is the div pixmap
+				]),
+				"category": (40,[
+				MultiContentEntryText(pos = (5,0), size = (595,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,22), size = (595,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (600,2), png = 3), # index 3 is the div pixmap
+				])
+				},
+				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
+				"itemHeight": 52
+				}
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="590,590" size="600,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" />
+  </screen>
+  <screen name="PluginManagerInfo" title="Plugin manager activity" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget source="list" render="Listbox" position="590,110" size="600,450" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+					],
+				"fonts": [gFont("Regular",22),gFont("Regular",17)],
+				"itemHeight": 75
+				}
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="590,560" size="600,28" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
+  </screen>
+  <screen name="PluginManagerHelp" title="Plugin manager help" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget source="list" render="Listbox" position="590,110" size="600,450" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+						MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
+					],
+				"fonts": [gFont("Regular",22),gFont("Regular",17)],
+				"itemHeight": 75
+				}
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="590,560" size="480,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
+  </screen>
+  <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin Details">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="statuspic" position=" 710,635" size=" 48,48" alphatest="on" />
+    <widget source="author" render="Label" position="590,110" size="570,30" zPosition="10" font="Regular;24" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="PLi-HD/buttons/sel.png" position=" 590,140" size="630,30" alphatest="on" />
+    <widget name="detailtext" position=" 590,175" size="630,260" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="screenshot" position="500,450" size="350,150" alphatest="on" halign="left" />
+    <widget name="divpic" position="0,0" size="0,0" />
+  </screen>
+
+  <!-- Restore screen -->
+
+  <screen name="RestoreScreen" title="Restore is running" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="530,100" size="690,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Restore -->
+
+  <screen name="RestoreMenu" title="Restore Backups" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <widget name="config" position="530,100" size="690,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="0,0" size="1280,720" flags="wfNoBorder">
