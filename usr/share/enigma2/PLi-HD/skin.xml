@@ -137,6 +137,9 @@
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="85,320" size="417,20" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
   </screen>
 
   <screen name="PigTemplate">
@@ -918,9 +921,6 @@
     <eLabel backgroundColor="infobarBG" position="85,133" size="417,14" zPosition="0" />
     <widget source="session.CurrentService" render="PositionGauge" position="85,133" size="417,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:417,0">
       <convert type="ServicePosition">Gauge</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="85,88" size="417,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="85,110" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
