@@ -475,38 +475,38 @@
     <panel name="InfoBarTemplate"/>
   </screen>
 
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" flags="wfNoBorder">
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50"/>
-    <widget source="session.CurrentService" render="Label" position="50,45" size="679,80" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
+    <widget source="session.CurrentService" render="Label" position="60,45" size="679,80" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
-    <eLabel name="snr" position="1032,47" size="50,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" halign="left" transparent="1" text="SNR" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transparant" position="1030,45" size="200,20" borderWidth="1" borderColor="grey"> 
+    <eLabel name="snr" position="1022,47" size="50,16" borderWidth="1" borderColor="black" halign="left" transparent="1" text="SNR" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transparant" position="1020,45" size="200,20" borderWidth="1" borderColor="grey"> 
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1128,47" size="100,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
+    <widget source="session.FrontendStatus" render="Label" position="1118,47" size="100,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="agc" position="1032,65" size="40,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" halign="left" transparent="1" text="AGC" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Label" position="1072,65" size="50,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
+    <eLabel name="agc" position="1022,65" size="40,16" borderWidth="1" borderColor="black" halign="left" transparent="1" text="AGC" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Label" position="1062,65" size="50,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel name="ber" position="1138,65" size="40,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" halign="left" transparent="1" text="BER" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Label" position="1178,65" size="50,26" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
+    <eLabel name="ber" position="1128,65" size="40,16" borderWidth="1" borderColor="black" halign="left" transparent="1" text="BER" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Label" position="1168,65" size="50,26" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel text="Now:" position="60,165" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" backgroundColor="background" />
-    <eLabel text="Next:" position="650,165" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" backgroundColor="background" />
-    <widget source="session.Event_Now" render="Label" position="130,165" size="500,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+    <eLabel text="Now:" position="60,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
+    <eLabel text="Next:" position="650,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1"  />
+    <widget source="session.Event_Now" render="Label" position="130,140" size="500,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="720,165" size="500,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="720,140" size="500,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="60,203" size="570,340" font="Regular; 20" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="60,178" size="570,365" font="Regular; 20" zPosition="1" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,203" size="570,340" font="Regular; 20" zPosition="1" backgroundColor="background" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,178" size="570,365" font="Regular; 20" zPosition="1" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
