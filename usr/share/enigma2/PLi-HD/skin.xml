@@ -476,7 +476,7 @@
   </screen>
 
   <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" />
+    <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50"/>
     <widget source="session.CurrentService" render="Label" position="50,45" size="679,80" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
