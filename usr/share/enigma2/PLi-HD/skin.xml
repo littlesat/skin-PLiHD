@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!-- Skin: PLi-HD, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo and others -->
@@ -137,7 +137,7 @@
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="85,320" size="417,20" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="85,88" size="417,20" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
