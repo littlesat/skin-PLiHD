@@ -720,32 +720,35 @@
 
   <!-- Scan setup -->
 
-  <screen name="ScanSetup" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <eLabel text="Service scan" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,100" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="85,550" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <!-- Scan simple -->
 
-  <screen name="ScanSimple" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <eLabel text="Service scan" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,100" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- RecordPathSettings -->
 
-  <screen name="RecordPathsSettings" title="Recording paths" position="0,0" size="1280,720" flags="wfNoBorder">
-
+  <screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <eLabel text="Recording paths" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,100" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Softcam Setup -->
 
-  <screen name="ScSelection" title="Softcam Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
+    <eLabel text="Softcam Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="entries" position="530,100" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
@@ -983,37 +986,43 @@
 
   <!-- Timers -->
 
-  <screen name="TimerEntry" title="Timer entry" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="KeyMenuInfoTemplate"/>
+    <!--panel name="KeyMenuInfoTemplate"/-->
     <panel name="CancelOKTemplate"/>
+    <eLabel text="Timer entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="TimerEditList" title="Timer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="Timer Overview" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="timerlist" position="530,110" size="690,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="TimerLog" title="Timer log" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="Timer log" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="loglist" position="530,100" size="690,275" scrollbarMode="showOnDemand" font="Regular;24" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="logentry" position="85,386" size="1135,225" font="Regular;24" />
   </screen>
 
-  <screen name="TimerSanityConflict" title="Timer sanity error" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerSanityConflict" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="Timer sanity error" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,370" size="600,250" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer1" position="85,365" size="485,260" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer2" position="590,100" size="600,250" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="PluginBrowser" title="Plugin browser" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate2"/>
+    <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,110" size="630,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1028,9 +1037,10 @@
     <widget name="filelist" position="590,110" size="630,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate4"/>
+    <eLabel text="Serviceinfo" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="infolist" position="530,100" size="690,500" selectionDisabled="1" />
   </screen>
 
@@ -1240,9 +1250,10 @@
     <widget source="introduction" render="Label" position="530,580" size="720,50" zPosition="10" font="Regular;18" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
   </screen>
   
-  <screen name="AdapterSetupConfiguration" title="Network Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
+    <eLabel text="Network Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="menulist" position="530,100" size="690,250" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="description" render="Label" position="530,365" size="690,200" transparent="1" font="Regular;21" valign="center" halign="center" />
     <widget source="IFtext" render="Label" position="805,587" size="166,25" transparent="1" zPosition="10" font="Regular;21" halign="right" />
@@ -1251,10 +1262,11 @@
     <widget name="statuspic" position="700,587" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
   </screen>
 
-  <screen name="AdapterSetup" title="Network Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RBS"/>
     <panel name="KeyTextTemplate"/>
+    <eLabel text="Network Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,100" size="690,200" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
@@ -1274,17 +1286,19 @@
     <widget name="HelpWindow" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
 
-  <screen name="NameserverSetup" title="Nameserver Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
+    <eLabel text="Nameserver Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,100" size="690,450" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="145,560" size="800,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
   </screen>
 
-  <screen name="NetworkAdapterSelection" title="Select Network Adapter" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
+    <eLabel text="Select Network Adapter" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="list" render="Listbox" position="530,100" size="690,280" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1403,8 +1417,9 @@
 
   <!-- Harddisk selection -->
 
-  <screen name="HarddiskSelection" title="Select HDD" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <eLabel text="Select HDD" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="hddlist" position="530,100" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1501,8 +1516,9 @@
 
   <!-- Skin Selector -->
 
-  <screen name="SkinSelector" title="Choose your Skin" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
+    <eLabel text="Choose your Skin" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="Preview" position="154,350" size="280,210" alphatest="on"/>
     <widget name="SkinList" position="530,100" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center"/>
@@ -1512,6 +1528,7 @@
 
   <screen name="NimSelection" title="Choose Tuner" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <eLabel text="Choose Tuner" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="nimlist" render="Listbox" position="530,100" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
@@ -1628,10 +1645,11 @@
 
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   
-  <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="KeyMenuInfoTemplate"/>
+    <!--panel name="KeyMenuInfoTemplate"/-->
     <panel name="ButtonGreen"/>
+    <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="460,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
