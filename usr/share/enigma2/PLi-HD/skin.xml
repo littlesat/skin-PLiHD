@@ -1241,7 +1241,7 @@
 
   <screen name="RestoreScreen" title="Restore is running" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="config" position="530,100" size="690,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="530,110" size="690,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Restore -->
@@ -1250,6 +1250,22 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
     <widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- ImageWizard -->
+
+  <screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <eLabel text="Welcome..." position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="text" position="727,102" size="340,330" font="Regular;22" />
+    <widget source="list" render="Listbox" position="576,441" size="490,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="StringList" />
+    </widget>
+    <widget name="config" position="85,437" size="425,180" transparent="1" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="540,320" size="26,26" alphatest="on" />
+    <widget name="languagetext" position="585,324" size="110,24" font="Regular;18" />
+    <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
   </screen>
 
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="0,0" size="1280,720" flags="wfNoBorder">
