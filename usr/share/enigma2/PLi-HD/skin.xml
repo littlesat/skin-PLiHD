@@ -481,7 +481,7 @@
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
     <eLabel name="snr" position="1022,47" size="50,16" borderWidth="1" borderColor="black" halign="left" transparent="1" text="SNR" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transparent" position="1020,45" size="200,20" borderWidth="1" borderColor="grey"> 
+    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transpBlack" position="1020,45" size="200,20" borderWidth="1" borderColor="grey"> 
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1118,47" size="100,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
@@ -549,11 +549,11 @@
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuInfoTemplate"/>
     <widget source="ServiceEvent" render="Label" position="420,415" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
