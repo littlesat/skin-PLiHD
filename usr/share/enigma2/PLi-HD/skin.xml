@@ -595,10 +595,11 @@
 
   <!-- EPG Stuff -->
 
-  <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
+    <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="530,100" size="690,510" itemHeight="30" font="Regular;26" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
