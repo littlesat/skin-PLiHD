@@ -1810,9 +1810,10 @@
 
   <!-- CutListEditor -->
 
-  <screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-    <panal name="BasicTemplate"/>
-    <widget source="cutlist" render="Listbox" position="15,82" size="447,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+  <screen name="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <eLabel text="Cutlist editor" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget source="cutlist" render="Listbox" position="84,124" size="390,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
@@ -1824,7 +1825,7 @@
       </convert>
     </widget>
     <widget name="Video" position="510,124" backgroundColor="transparent" size="696,377" zPosition="1" />
-    <widget name="SeekState" position="465,595" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center" />
+    <widget name="SeekState" position="465,593" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center" />
     <widget source="session.CurrentService" render="Label" position="470,510" size="790,30" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
