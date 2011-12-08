@@ -1708,7 +1708,6 @@
   
   <screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <!--panel name="KeyMenuInfoTemplate"/-->
     <panel name="ButtonGreen"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="460,645" size="220,26" transparent="1" zPosition="1" />
@@ -1789,6 +1788,7 @@
     <eLabel text="Remote Player" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" zPosition="1" size="600,500" font="Regular;20" halign="center" valign="center" />
   </screen>
+
   <screen name="PartnerboxEntryConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -1797,6 +1797,7 @@
     <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
+
   <screen name="PartnerboxEntriesListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -1807,24 +1808,28 @@
     <widget name="type" position="1000,110" size="200,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="entrylist" position="590,160" size="600,300" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
+
   <screen name="PartnerboxSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3"/>
     <eLabel text="Partnerbox Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
+
   <screen name="RemotePlayer" flags="wfNoBorder" position="283,102" size="720,576" title="Partnerbox - RemotePlayer" backgroundColor="#FFFFFFFF">
     <ePixmap position="41,388" zPosition="-1" size="630,130" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/>
     <widget name="ServiceName" zPosition="1" position="50,404" size="610,59" valign="center" halign="center" font="Regular;21" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" />
     <widget name="DateTime" zPosition="1" position="52,473" size="500,30" halign="left" font="Regular;16" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1" />
     <widget name="IP" zPosition="2" position="361,473" size="300,30" halign="right" font="Regular;16" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1" />
   </screen>
+
   <screen name="RemoteTimerBouquetList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose bouquet" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,510" zPosition="1" font="Regular;26" halign="center" valign="center" />
     <widget name="bouquetlist" position="590,110" size="600,510" font="Regular;26"  zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen name="RemoteTimer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -1832,6 +1837,7 @@
     <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="timerlist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen name="RemoteTimerEPGList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -1839,6 +1845,7 @@
     <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="epglist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen name="RemoteTimerChannelList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -1846,6 +1853,7 @@
     <widget name="text" position="590,110" size="600,490" zPosition="1" font="Regular;26" valign="center" halign="center" />
     <widget name="channellist" position="590,110" size="600,490" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen name="RemoteTimerEventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="channel" position="590,110" size="300,30" font="Regular;22" />
@@ -1853,6 +1861,7 @@
     <widget name="duration" position="1050,110" size="150,30" font="Regular;22" />
     <widget name="epg_description" position="590,160" size="600,384" font="Regular;22" />
   </screen>
+
   <screen name="RemoteTimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOkTemplate"/>
@@ -1870,6 +1879,7 @@
     <widget name="thn" position="85,99" size="260,250" alphatest="on" />
     <widget name="filelist" position="520,110" size="760,476" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen name="Pic_Exif" title="Info" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
@@ -1882,11 +1892,13 @@
       </convert>
     </widget>
   </screen>
+
   <screen name="Pic_Setup" title="Settings" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
     <widget name="config" position="590,110" size="600,500" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen flags="wfNoBorder" name="Pic_Full_View" position="0,0" size="1280,720" title="Picture">
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
@@ -2364,19 +2376,14 @@
     <widget name="paget3" position="932,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
     <widget name="page" position="742,587" size="240,28" font="Regular;22" valign="center" halign="center" zPosition="2" transparent="1" />
   </screen>
-  <!-- Screen_CSFDSetup -->
+
   <screen name="CSFDSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="CSFD - Nastavení">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
     <widget name="config" position="570,110" size="640,378" scrollbarMode="showOnDemand" />
     <widget name="info" position="550,500" size="680,26" font="Regular;20" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" /> 
   </screen>
-  <!-- Screen_CSFDInputText -->
-  <!--screen name="CSFDInputText" flags="wfNoBorder" position="0,0" size="1280,720" title="CSFD">
-    <panel name="PigTemplate"/>
-    <widget name="config" position="570,110" size="640,50" />
-  </screen-->
-  <!-- Screen_CSFDAbout -->
+
   <screen name="CSFDAbout" flags="wfNoBorder" position="0,0" size="1280,720" title="Informace o pluginu CSFD">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
