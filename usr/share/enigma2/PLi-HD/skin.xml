@@ -1773,23 +1773,23 @@
 
   <!-- PartnerBox -->
 
-  <screen name="CurrentRemoteTV" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="CurrentRemoteTV" position="0,0" size="1280,720" flags="wfNoBorder"> <!--remote info -->
     <panel name="PigTemplate"/>
     <eLabel text="Remote Player" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" zPosition="1" size="600,500" font="Regular;20" halign="center" valign="center" />
   </screen>
   <screen name="PartnerboxEntryConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Edit Entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="Edit Entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
   <screen name="PartnerboxEntriesListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="List of Entries" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="List of Entries" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="name" position="590,110" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="ip" position="710,110" size="150,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="port" position="860,110" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
@@ -1798,47 +1798,45 @@
   </screen>
   <screen name="PartnerboxSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Partnerbox Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_3"/>
+    <eLabel text="Partnerbox Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
-  <screen name="RemotePlayer" position="0,0" size="1280,720" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <eLabel text="Partnerbox - RemotePlayer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="ServiceName" position="590,110" size="600,72" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Crs;24" valign="center" halign="center" />
-    <widget name="DateTime" position="590,190" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="left" />
-    <widget name="IP" position="590,250" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="right" />
+  <screen name="RemotePlayer" flags="wfNoBorder" position="283,102" size="720,576" title="Partnerbox - RemotePlayer" backgroundColor="#FFFFFFFF">
+    <ePixmap position="41,388" zPosition="-1" size="630,130" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/>
+    <widget name="ServiceName" zPosition="1" position="50,404" size="610,59" valign="center" halign="center" font="Regular;21" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" />
+    <widget name="DateTime" zPosition="1" position="52,473" size="500,30" halign="left" font="Regular;16" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1" />
+    <widget name="IP" zPosition="2" position="361,473" size="300,30" halign="right" font="Regular;16" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1" />
   </screen>
   <screen name="RemoteTimerBouquetList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose bouquet" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,510" zPosition="1" font="Regular;26" halign="center" valign="center" />
-    <widget name="bouquetlist" position="590,110" size="600,510" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" zPosition="2" />
+    <widget name="bouquetlist" position="590,110" size="600,510" font="Regular;26"  zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="RemoteTimer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="RemoteTimer Timerlist" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_4"/>
-    <widget name="text" position="590,110" size="600,500" zPosition="3" font="Regular;20" valign="center" halign="center" />
-    <widget name="timerlist" position="590,110" size="600,500" zPosition="5" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <eLabel text="RemoteTimer Timerlist" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="timerlist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="RemoteTimerEPGList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_4"/>
-    <widget name="text" position="590,110" size="600,500" zPosition="3" font="Regular;20" valign="center" halign="center" />
-    <widget name="epglist" position="590,110" size="600,500" zPosition="5" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="epglist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="RemoteTimerChannelList" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Bouquet List" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_4"/>
+    <eLabel text="Bouquet List" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,490" zPosition="1" font="Regular;26" valign="center" halign="center" />
     <widget name="channellist" position="590,110" size="600,490" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
-  <screen name="RemoteTimerEventView" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="RemoteTimerEventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Eventview" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="channel" position="590,110" size="300,30" font="Regular;22" />
     <widget name="datetime" position="900,110" size="150,30" font="Regular;22" />
     <widget name="duration" position="1050,110" size="150,30" font="Regular;22" />
@@ -1846,9 +1844,37 @@
   </screen>
   <screen name="RemoteTimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Timer entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="CancelOkTemplate"/>
+    <eLabel text="Timer entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="590,110" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- VLC Player -->
+
+  <screen flags="wfNoBorder" name="VlcServerConfigScreen" position="0,0" size="1280,720">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <eLabel text="Edit VLC Server" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="config" position="590,110" size="600,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen flags="wfNoBorder" name="VlcServerListScreen" position="0,0" size="1280,720">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <eLabel text="Select a VLC-Server Profile" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="serverlabel" position="590,110" size="600,36" font="Regular;18" />
+    <widget name="serverlist" position="590,146" size="600,308" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen flags="wfNoBorder" name="VlcMediaListScreen" position="0,0" size="1280,720" title="Select a VLC-Server Profile">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
+    <widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
+    <widget name="filelist_text" position="590,100" size="110,40" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+    <widget name="playlist_text" position="690,100" size="110,40" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+    <widget name="filelist" position="590,150" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="playlist" position="590,150" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" halign="left"/>
+    <widget name="server_name" position="840,100" size="200,40" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="current_dir" position="600,590" size="600,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
   </screen>
 
   <!--GP2 - Where is this used??? -->
