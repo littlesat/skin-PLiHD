@@ -147,6 +147,11 @@
     <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
   </screen>
 
+  <screen name="PigLessTemplate">
+    <panel name="BasicTemplate"/>
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+  </screen>
+
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
     <widget source="title" render="Label" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
