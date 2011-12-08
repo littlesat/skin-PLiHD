@@ -147,6 +147,11 @@
     <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
   </screen>
 
+  <screen name="PigLessTemplate">
+    <panel name="BasicTemplate"/>
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+  </screen>
+
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
     <widget source="title" render="Label" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
@@ -2439,6 +2444,38 @@
     <widget position="0,0" size="1250,90" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="4" font="Regular;24" borderColor="black" valign="center" halign="center" name="RadioText"/>
     <widget position="0,100" size="1250,90" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="4" font="Regular;24" borderColor="black" valign="center" halign="center" name="RtpText"/>
     <widget position="0,0" size="0,0" name="RassLogo"/>
+  </screen>
+
+<!-- Shoutcast -->
+
+  <screen name="ShoutcastTemplate">
+    <panel name="PigLessTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <panel name="OKTemplate"/>
+    <!-- <ePixmap position="580,40" size="120,35" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" /> -->
+    <widget name="cover"      position="85,110" size="417,243" zPosition="2" halign="center" valign="center" alphatest="blend" />
+  </screen>
+
+  <screen flags="wfNoBorder" name="SHOUTcastWidget" position="0,0" size="1280,720" title="SHOUTcast">
+    <panel name="ShoutcastTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="headertext" position="520,100" size="740,23"  zPosition="1" font="Regular;20" transparent="1"/>
+    <widget name="statustext" position="520,340" size="740,90"  zPosition="1" font="Regular;20" halign="center" valign="center" transparent="0"/>
+    <widget name="list"       position="520,140" size="740,490" zPosition="2" font="Regular;20" scrollbarMode="showOnDemand" transparent="0"/>
+    <widget name="titel"      position="10,485" size="500,40"  zPosition="1" font="Regular;18" transparent="1"/>
+    <widget name="station"    position="10,535" size="500,40"  zPosition="1" font="Regular;18" transparent="1"/>
+    <widget name="console"    position="10,585" size="500,40"  zPosition="1" font="Regular;18" transparent="1"/>
+  </screen>
+
+  <screen flags="wfNoBorder" name="SHOUTcastSetup" position="0,0" size="1280,720" title="SHOUTcast Setup" >
+    <panel name="ShoutcastTemplate"/>
+    <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand"  transparent="1" />
+  </screen>
+
+  <screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280,720" title="Select record path for streamripper">
+    <panel name="ShoutcastTemplate"/>
+    <widget name="target"   position="520,100" size="540,22"  valign="center" font="Regular;22" />
+    <widget name="filelist" position="520,140" size="740,490" zPosition="1" scrollbarMode="showOnDemand"/>
   </screen>
 
 </skin>
