@@ -569,7 +569,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="85,420" size="435,170" transparent="1" font="Regular; 18">
-      <convert type="EventName">ExtendedDescription</convert>
+      <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
     <widget source="ServiceEvent" render="NextEpgInfo" position="148,590" size="372,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center"/>
@@ -1847,6 +1847,43 @@
     <panel name="CancelOkTemplate"/>
     <eLabel text="Timer entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="590,110" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Picture-Player -->
+
+  <screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <eLabel text="PicturePlayer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="label" position="85,370" size="260,250" transparent="1" font="Regular;20" />
+    <widget name="thn" position="85,99" size="260,250" alphatest="on" />
+    <widget name="filelist" position="520,110" size="760,476" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="Pic_Exif" title="Info" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget source="menu" render="Listbox" position="520,110" size="760,500" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+				{"template": [  MultiContentEntryText(pos = (5,7),size = (230,30),flags = RT_HALIGN_LEFT,text = 0),
+				MultiContentEntryText(pos = (240,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 35 }
+      </convert>
+    </widget>
+  </screen>
+  <screen name="Pic_Setup" title="Settings" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="config" position="590,110" size="600,500" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen flags="wfNoBorder" name="Pic_Full_View" position="0,0" size="1280,720" title="Picture">
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
+    <widget name="pic" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
+    <eLabel position="40,30" size=" 40,30" zPosition="2" backgroundColor="black" />
+    <widget name="point" position="40,30" size=" 21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
+    <widget name="play_icon" position="42,32" size=" 16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
+    <widget source="file" render="Label" position="70,30" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" backgroundColor="black" />
   </screen>
 
   <!-- VLC Player -->
