@@ -569,7 +569,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="85,420" size="435,170" transparent="1" font="Regular; 18">
-      <convert type="EventName">ExtendedDescription</convert>
+      <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
     <widget source="ServiceEvent" render="NextEpgInfo" position="148,590" size="372,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center"/>
