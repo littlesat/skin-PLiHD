@@ -1771,6 +1771,17 @@
     <widget name="PluginInfo" position="85,380" size="490,200" zPosition="4" font="Regular;18" foregroundColor="uncccccc" />
   </screen>
 
+  <!-- AutoBackup -->
+
+  <screen name="Config" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <eLabel text="AutoBackup Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" />
+    <widget name="status" position="590,320" size="540,130" font="Regular;16" />
+    <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
+  </screen>
+
   <!-- PartnerBox -->
 
   <screen name="CurrentRemoteTV" position="0,0" size="1280,720" flags="wfNoBorder"> <!--remote info -->
