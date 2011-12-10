@@ -2491,8 +2491,8 @@
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
     <panel name="ForecaMlistTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="Titel" render="Label" position="520,100" zPosition="3" size="400,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget source="Titel2" render="Label" position="520,100" zPosition="2" size="400,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unf47d19" />
+    <widget source="Titel" render="Label" position="520,100" zPosition="3" size="700,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget source="Titel2" render="Label" position="520,100" zPosition="2" size="700,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unf47d19" />
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
