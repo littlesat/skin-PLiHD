@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!-- Skin: PLi-HD, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo and others -->
@@ -2482,39 +2482,32 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
     <panel name="OKTemplate"/>
-    <widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="520,140" size="740,490" transparent="1" />
-    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,100" size="740,520" transparent="1" />
-    <widget name="liste" scrollbarMode="showOnDemand" font="Regular;20" position="520,100" size="740,520" transparent="1" />
-    <widget name="Mliste" scrollbarMode="showOnDemand" font="Regular;20" position="520,100" size="740,520" transparent="1" />
+    <widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="liste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="Mliste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
-
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
     <panel name="ForecaMlistTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="Titel" render="Label" position="520,100" zPosition="3" size="700,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget source="Titel2" render="Label" position="520,100" zPosition="2" size="700,25" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="unf47d19" />
+    <widget source="Titel2" render="Label" position="85,375" zPosition="3" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget source="Titel3" render="Label" position="85,375" zPosition="2" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
   </screen>
-
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-
   <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-
   <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-
   <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-
   <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
     <panel name="ForecaMlistTemplate"/>
   </screen>
