@@ -2548,4 +2548,23 @@
     <widget name="filelist" position="520,140" size="740,470" zPosition="1" scrollbarMode="showOnDemand"/>
   </screen>
 
+<!-- unwetterZentrale -->
+  <screen flags="wfNoBorder" name="PictureView" position="0,0" size="1280,720" title="UWZ" >
+    <panel name="PigTemplate"/>
+    <panel name="KeyInfoTemplate"/>
+    <widget name="picture" position="590,110" size="600,500" zPosition="2" />
+  </screen>
+  <screen flags="wfNoBorder" name="HelpPictureView" position="0,0" size="1280,720" title="UWZ" >
+    <panel name="PigTemplate"/>
+    <widget name="picture" position="590,110" size="600,500" zPosition="2" />
+  </screen>
+  <screen flags="wfNoBorder" name="UnwetterMain" position="0,0" size="1280,720" title="UWZ" >
+    <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="hmenu" scrollbarMode="showOnDemand" font="Regular;20" position="590,110" size="600,500" transparent="1" />
+    <widget name="thumbnail" position="200,375" zPosition="2" size="300,200"/>
+    <widget name="statuslabel" position="85,425" zPosition="2" size="100,40" font="Regular;18" halign="left"/>
+    <widget name="thumbland" position="85,375" zPosition="2" size="100,40" />
+  </screen>
+	
 </skin>
