@@ -2566,5 +2566,14 @@
     <widget name="statuslabel" position="85,425" zPosition="2" size="100,40" font="Regular;18" halign="left"/>
     <widget name="thumbland" position="85,375" zPosition="2" size="100,40" />
   </screen>
-	
+
+	<!-- Trafficinfo -->	
+  <screen name="TrafficInfoMain" position="0,0" size="1280,720" title="Verkehrsinformation">
+    <panel name="PigTemplate"/>
+    <widget name="sectionlist" position="590,110" size="600,205" scrollbarMode="showOnDemand" />
+    <widget name="itemlist" position="590,325" size="600,275" scrollbarMode="showOnDemand" />
+    <widget name="itemdetails" position="85,400" size="417,140" font="Regular;20" halign="left" valign="top" />
+    <widget name="statuslabel" position="85,375" size="417,25" font="Regular;16" halign="left" />
+  </screen>
+
 </skin>
