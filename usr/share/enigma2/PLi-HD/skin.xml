@@ -1781,6 +1781,13 @@
     <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
   </screen>
 
+  <screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <eLabel text="Select files/folders to backup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="checkList" position="590,110" size="540,350" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
+
   <!-- PartnerBox -->
 
   <screen name="CurrentRemoteTV" position="0,0" size="1280,720" flags="wfNoBorder"> <!--remote info -->
