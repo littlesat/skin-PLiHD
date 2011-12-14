@@ -137,7 +137,7 @@
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="85,88" size="417,20" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="85,89" size="417,20" zPosition="0" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
@@ -643,6 +643,11 @@
     </widget>
   </screen>
 
+  <screen name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="560,110" size="630,500" transparent="1" />
+  </screen>
+
   <screen name="EPGSelectionMulti" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -822,22 +827,22 @@
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,95" size="630,305" transparent="1"></widget>
-    <widget source="session.Event_Now" render="Label" position="85,95" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"></widget>
+    <widget source="session.Event_Now" render="Label" position="85,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,137" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+    <widget source="session.Event_Now" render="Label" position="85,147" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/window/progress.png" position="165,141" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/window/progress.png" position="165,151" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
     <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="375,137" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="session.Event_Now" render="Label" position="375,147" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,163" size="460,240" transparent="1" foregroundColor="grey" font="Regular; 20">
+    <widget source="session.Event_Now" render="Label" position="85,173" size="460,240" transparent="1" foregroundColor="grey" font="Regular; 20">
     <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -847,7 +852,7 @@
     <widget source="session.CurrentService" render="Label" position="220,70" size="840,32" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="80,125" size="140,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top" halign="right">
+    <widget source="global.CurrentTime" render="Label" position="60,132" size="140,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top" halign="right">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="220,120" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
@@ -1809,10 +1814,10 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <eLabel text="List of Entries" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="name" position="590,110" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="ip" position="710,110" size="150,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="port" position="860,110" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="type" position="1000,110" size="200,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="name" position="590,110" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="ip" position="710,110" size="150,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="port" position="860,110" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="type" position="1000,110" size="200,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="entrylist" position="590,160" size="600,300" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
