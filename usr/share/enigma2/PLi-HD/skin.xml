@@ -778,7 +778,7 @@
   <screen name="ChoiceBox" title="" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
-    <widget name="list" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!--CI Config Menu -->
@@ -1954,7 +1954,7 @@
   </screen>
 
   <!-- Inputbox -->
- 
+
   <screen name="InputBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="590,110" size="550,27" font="Regular;23" />
@@ -1972,6 +1972,39 @@
     <widget name="filelist" position="590,170" zPosition="1" size="540,180" scrollbarMode="showOnDemand" selectionDisabled="1" />
     <widget name="textbook" position="590,360" size="540,26" font="Regular;22" />
     <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" />
+  </screen>
+
+  <!-- Pininput -->
+
+  <screen name="PinInput" position="0,0" size="1280,720" title="Change pin code" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="service" position="590,110" size="480,25" font="Regular;20" />
+    <widget name="text" position="590,140" size="480,25" font="Regular;20" halign="center" />
+    <widget name="tries" position="590,170" size="480,25" font="Regular;20" halign="center" />
+    <widget name="input" position="590,210" size="480,40" font="Regular;50" halign="center" />
+  </screen>
+
+  <!-- Video Fine Tune -->
+
+  <screen name="VideoFinetune" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget source="Canvas" render="Canvas" position="530,55" size="720,576" />
+    <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="2" alphatest="on" position="40,645" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="2" alphatest="on" position="75,645" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" alphatest="on" position="110,645" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_4.png" zPosition="2" alphatest="on" position="145,645" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_5.png" zPosition="2" alphatest="on" position="180,645" size="35,25" />
+  </screen>
+
+  <!-- Parental Control -->
+
+  <screen name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,490" transparent="1" />
+  </screen>
+  <screen name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,480" transparent="1" />
   </screen>
 
   <!-- DVD Backup -->
@@ -2027,6 +2060,7 @@
 	<widget name="freeDiskSpace" position="630,595" size="540,20" font="Regular;19" valign="center" halign="right" />
   </screen>
 
+  <!-- do not remove, is not solved yet
   <screen name="CutlistReader" position="0,0" size="1280,720" flags="wfNoBorder">
     <eLabel position="300,300" size="720,576" zPosition="1" backgroundColor="#000000" />
     <widget name="Video" position="0,0" size="0,0" />
@@ -2043,7 +2077,7 @@
 	</convert>
     </widget>
     <widget name="Timeline" position="0,0" />
-  </screen>
+  </screen-->
 
   <screen name="TitleProperties" position="0,0" size="1280,720" title="Properties of current title" flags="wfNoBorder">
     <panel name="PigTemplate"/>
