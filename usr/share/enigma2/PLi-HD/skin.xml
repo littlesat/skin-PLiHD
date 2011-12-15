@@ -262,6 +262,12 @@
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
+  <screen name="ButtonTemplate_RGBS">
+    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonBlue"/>
+    <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
+
   <screen name="ButtonTemplate1">
     <panel name="ButtonRed"/>
     <widget name="red" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
@@ -740,7 +746,7 @@
   <screen name="Setup" title="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1697,6 +1703,10 @@
     <widget name="album" position="400,565" size="580,25" backgroundColor="noTransBG" transparent="1" font="Regular;20" valign="top" />
     <widget name="yeartext" position="300,595" size="100,25" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;20" valign="top" />
     <widget name="year" position="400,595" size="580,25" backgroundColor="noTransBG" transparent="1" font="Regular;20" valign="top" />
+		<widget name="genretext" position="20,65" size="74,17" font="Regular;16" valign="top" foregroundColor="#cccccc" transparent="1" />
+		<widget name="genre" position="94,65" size="339,17" font="Regular;16" valign="top" transparent="1" />
+		<widget name="currenttext" position="0,0" size="0,0" />
+		<widget name="titletext" position="0,0" size="0,0" />
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="90,470" size="150,150" transparent="1" alphatest="blend" />
     <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="200,649" size="600,16" backgroundColor="noTransBG" zPosition="13" alphatest="on" />
     <widget name="PositionGauge" position="220,650" size="560,14" transparent="0" zPosition="12" pointer="PLi-HD/dvr/pointer.png:13,3" />
@@ -2023,7 +2033,7 @@
   <screen name="DVDBackupScreen" position="0,0" size="1280,720"  title="DVD Backup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="config" position="590,110" size="560,125" scrollbarMode="showOnDemand" />
+    <widget name="config" position="590,110" size="560,125" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
   <!-- DVD Burn -->
@@ -2040,7 +2050,7 @@
   <screen name="ProjectSettings" position="0,0" size="1280,720" title="Collection settings" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
-    <widget name="config" position="590,110" size="600,276" scrollbarMode="showOnDemand" />
+    <widget name="config" position="590,110" size="600,276" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2" />
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center" />
   </screen>
@@ -2089,7 +2099,7 @@
     <panel name="ButtonTemplate_4S"/>
     <widget source="serviceinfo" render="Label" position="590,110" size="400,144" font="Regular;18" />
     <widget name="thumbnail" position="1010,110" size="180,144" alphatest="on" />
-    <widget name="config" position="590,270" size="600,320" scrollbarMode="showOnDemand" />
+    <widget name="config" position="590,270" size="600,320" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
   <screen name="TitleList" position="0,0" size="1280,720" title="DVD Tool" flags="wfNoBorder">
@@ -2131,10 +2141,10 @@
 
   <!-- QuickButton -->
 
-  <screen name="QuickbuttonSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="Quickbutton">
+  <screen name="QuickbuttonSetup" position="0,0" size="1280,720" title="Quickbutton" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
+    <widget name="config" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
   <!-- WebInterface -->
@@ -2147,9 +2157,9 @@
 
   <!-- VPS Plugin -->
 
-  <screen name="VPS_Setup" flags="wfNoBorder" position="0,0" size="1280,720" title="VPS-Plugin">
+  <screen name="VPS_Setup" position="0,0" size="1280,720" title="VPS-Plugin" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGBS"/>
     <widget name="config" font="Regular;22" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
     <widget source="help" render="Label" font="Regular;22" position="85,400" size="417,200" transparent="1" />
   </screen>
@@ -2166,7 +2176,8 @@
 
   <screen name="TempFanControl" position="0,0" size="1280,720" title="Fan Control" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="145,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="420,643" size="26,26" alphatest="on" />
     <widget source="red"  render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <widget source="green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <widget name="config" position="590,110" size="600,120" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
@@ -2688,7 +2699,7 @@
   <screen name="CSFDSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="CSFD - Nastavení">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
-    <widget name="config" position="570,110" size="640,378" scrollbarMode="showOnDemand" />
+    <widget name="config" position="570,110" size="640,378" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <widget name="info" position="550,500" size="680,26" font="Regular;20" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" /> 
   </screen>
 
@@ -2740,7 +2751,7 @@
     <screen flags="wfNoBorder" name="xpowerEdit" position="0,0" size="1280,720" title="XPower Configuration PC">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="config" position="630,110" size="520,175" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="630,110" size="520,175" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
     <widget name="statusbar" position="610,300" size="420,20" font="Regular;18" />
   </screen>
@@ -2750,7 +2761,7 @@
   <screen name="HddSleep" flags="wfNoBorder" position="0,0" size="1280,720" title="HddSleep Configuration">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="config" position="630,110" size="520,200" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="630,110" size="520,200" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="skin_default/div-h.png" position="600,320" zPosition="1" size="560,2" />
     <widget name="devices" position="610,335" size="200,25" font="Regular;20" />
     <widget name="mounted" position="840,335" size="310,120" font="Regular;20" />
