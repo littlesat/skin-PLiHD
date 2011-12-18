@@ -2860,27 +2860,34 @@
     <widget name="liste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
     <widget name="Mliste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
+  
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
     <panel name="ForecaMlistTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="Titel2" render="Label" position="85,375" zPosition="3" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
     <widget source="Titel3" render="Label" position="85,375" zPosition="2" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
   </screen>
+  
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
     <panel name="ForecaMlistTemplate"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
     <panel name="ForecaMlistTemplate"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
     <panel name="ForecaMlistTemplate"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
     <panel name="ForecaMlistTemplate"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
     <panel name="ForecaMlistTemplate"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
     <panel name="ForecaMlistTemplate"/>
   </screen>
@@ -2901,6 +2908,7 @@
     <panel name="OKTemplate"/>
     <widget name="cover" position="85,100" size="350,375" zPosition="2" halign="left" valign="center" alphatest="blend" />
   </screen>
+  
   <screen flags="wfNoBorder" name="SHOUTcastWidget" position="0,0" size="1280,720" title="SHOUTcast">
     <panel name="ShoutcastTemplate"/>
     <panel name="KeyMenuTemplate"/>
@@ -2911,10 +2919,12 @@
     <widget name="station" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
     <widget name="console" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
   </screen>
+  
   <screen flags="wfNoBorder" name="SHOUTcastSetup" position="0,0" size="1280,720" title="SHOUTcast Setup" >
     <panel name="ShoutcastTemplate"/>
     <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand"  transparent="1" />
   </screen>
+  
   <screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280,720" title="Select record path for streamripper">
     <panel name="ShoutcastTemplate"/>
     <widget name="target" position="520,100" size="540,22" valign="center" font="Regular;22" />
@@ -2927,10 +2937,12 @@
     <panel name="KeyInfoTemplate"/>
     <widget name="picture" position="590,110" size="600,500" zPosition="2" />
   </screen>
+  
   <screen flags="wfNoBorder" name="HelpPictureView" position="0,0" size="1280,720" title="UWZ" >
     <panel name="PigTemplate"/>
     <widget name="picture" position="590,110" size="600,500" zPosition="2" />
   </screen>
+
   <screen flags="wfNoBorder" name="UnwetterMain" position="0,0" size="1280,720" title="UWZ" >
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
