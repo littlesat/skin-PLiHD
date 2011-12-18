@@ -256,6 +256,12 @@
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
+  <screen name="ButtonTemplate_RYS">
+    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonYellow"/>
+    <widget source="key_yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
+
   <screen name="ButtonTemplate_RBS">
     <panel name="ButtonTemplate_1S"/>
     <panel name="ButtonBlue"/>
@@ -1445,7 +1451,6 @@
   <screen name="AutoMountManager" title="MountManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <widget source="config" render="Listbox" position="590,110" size="600,480" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1458,6 +1463,74 @@
 				}
 			</convert>
     </widget>
+    <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
+  </screen>
+
+  <screen name="UserManager" title="UserManager" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RYS"/>
+
+    <widget source="config" render="Listbox" position="590,110" size="600,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (80,4),size = (590,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (48,48),png = 3),# index 4 is the status pixmap
+					],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 60
+				}
+      </convert>
+    </widget>
+    <widget source="introduction" render="Label" position="590,590" size="600,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
+  </screen>
+
+  <screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RYS"/>
+    <eLabel text="MountView" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget source="legend1" render="Label" position="590,110" size="130,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="Left" />
+    <widget source="legend2" render="Label" position="720,110" size="345,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
+    <widget source="legend3" render="Label" position="1065,110" size="130,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
+    <widget source="config" render="Listbox" position="590,170" size="600,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+	<convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (15,1),size = (48,48),png = 0),# index 0 is the isMounted pixmap
+					MultiContentEntryText(pos = (100,3),size = (150,25),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
+					MultiContentEntryText(pos = (250,5),size = (230,17),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
+					MultiContentEntryText(pos = (100,29),size = (480,17),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
+					MultiContentEntryPixmapAlphaTest(pos = (500,9),size = (48,48),png = 4),# index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (530,1),size = (48,48),png = 5),# index 4 is the mounttype pixmap
+				],
+				"fonts": [gFont("Regular",20),gFont("Regular",14)],
+				"itemHeight": 50
+			}
+	</convert>
+    </widget>
+    <widget source="introduction" render="Label" position="590,590" size="600,25" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" />
+  </screen>
+
+  <screen name="AutoMountEdit" title="MountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+    <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
+  </screen>
+
+  <screen name="UserDialog" position="0,0" size="1280,720" title="UserDialog" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="introduction" render="Label" position="590,590" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
+    <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+  </screen>
+
+  <screen name="ScanIP" position="0,0" size="1280,720" title="Scan IP" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <widget name="config" position="590,110" size="600,25" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Input Device Configuration -->
@@ -1769,10 +1842,10 @@
     <eLabel text="Delete" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <eLabel text="OK" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <widget source="country" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="650,275" size="542,52" zPosition="-4" alphatest="on" />
-    <widget name="header" position="652,239" size="500,26" transparent="1" noWrap="1" font="Regular;20" />
-    <widget name="text" position="652,274" size="536,34" transparent="1" noWrap="1" font="Regular;26" valign="center" halign="right" />
-    <widget name="list" position="647,380" size="540,225" selectionDisabled="1" transparent="1" />
+    <ePixmap pixmap="skin_default/vkey_text.png" position="588,145" size="542,52" zPosition="-4" alphatest="on" />
+    <widget name="header" position="590,110" size="500,26" transparent="1" noWrap="1" font="Regular;20" valign="top"/>
+    <widget name="text" position="590,150" size="536,34" transparent="1" noWrap="1" font="Regular;26" valign="center" halign="right" />
+    <widget name="list" position="590,250" size="540,225" selectionDisabled="1" transparent="1" />
   </screen>
 
   <!-- AC3LipSyncSetup	-->
@@ -1897,18 +1970,18 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
     <eLabel text="PicturePlayer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="label" position="85,370" size="260,250" transparent="1" font="Regular;20" />
-    <widget name="thn" position="85,99" size="260,250" alphatest="on" />
-    <widget name="filelist" position="520,110" size="760,476" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="thn" position="242,365" size="260,250" alphatest="on" />
+    <widget name="filelist" position="590,110" size="600,448" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="label" position="522,590" size="260,25" transparent="1" font="Regular;20" />
   </screen>
 
   <screen name="Pic_Exif" title="Info" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget source="menu" render="Listbox" position="520,110" size="760,500" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="menu" render="Listbox" position="585,110" size="600,500" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
-				{"template": [  MultiContentEntryText(pos = (5,7),size = (230,30),flags = RT_HALIGN_LEFT,text = 0),
-				MultiContentEntryText(pos = (240,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
+				{"template": [  MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
+				MultiContentEntryText(pos = (260,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 35 }
       </convert>
@@ -1921,14 +1994,14 @@
     <widget name="config" position="590,110" size="600,500" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen flags="wfNoBorder" name="Pic_Full_View" position="0,0" size="1280,720" title="Picture">
+  <screen name="Pic_Full_View" position="0,0" size="1280,720" title="Picture" flags="wfNoBorder">
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
-    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
+    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG" />
     <widget name="pic" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
-    <eLabel position="40,30" size=" 40,30" zPosition="2" backgroundColor="black" />
-    <widget name="point" position="40,30" size=" 21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
-    <widget name="play_icon" position="42,32" size=" 16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
-    <widget source="file" render="Label" position="70,30" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" backgroundColor="black" />
+    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
+    <widget name="point" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
+    <widget name="play_icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
+    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
   </screen>
 
   <!-- VLC Player -->
@@ -2733,12 +2806,12 @@
     <ePixmap pixmap="skin_default/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
     <widget name="titellabel" position="570,100" size="370,28" valign="center" font="Regular;22" foregroundColor="#f0b400" />
     <widget name="sortlabel" position="570,128" size="370,28" font="Regular;17" foregroundColor="blue" />
-    <widget name="detailslabel" position="740,153" size="500,201" font="Regular;22" />
+    <widget name="detailslabel" position="740,153" size="500,200" font="Regular;22" />
     <widget name="contentlabel" position="570,375" size="670,225" font="Regular;22" />
     <widget name="extralabel"   position="570,153" size="670,425" font="Regular;22" />
     <widget name="statusbar" position="84,500" size="460,17" font="Regular;15" foregroundColor="#cccccc" />
     <widget name="poster" position="564,153" size="170,201" alphatest="on" />
-    <widget name="menu" position="570,153" size="585,396" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="menu" position="570,153" size="585,450" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <widget name="servicemenu" position="84,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="black" foregroundColor="white" zPosition="4" transparent="0" scrollbarMode="showOnDemand" />
     <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" />
     <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
