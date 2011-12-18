@@ -1980,8 +1980,8 @@
     <panel name="ButtonTemplate_1S"/>
     <widget source="menu" render="Listbox" position="585,110" size="600,500" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
-				{"template": [  MultiContentEntryText(pos = (5,7),size = (200,30),flags = RT_HALIGN_LEFT,text = 0),
-				MultiContentEntryText(pos = (210,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
+				{"template": [  MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
+				MultiContentEntryText(pos = (260,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 35 }
       </convert>
@@ -1998,10 +1998,10 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG" />
     <widget name="pic" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
-    <eLabel position="15,15" size="25,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
-    <widget name="point" position="17,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
-    <widget name="play_icon" position="20,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
-    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="black" backgroundColor="secondBG"/>
+    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
+    <widget name="point" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
+    <widget name="play_icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
+    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
   </screen>
 
   <!-- VLC Player -->
