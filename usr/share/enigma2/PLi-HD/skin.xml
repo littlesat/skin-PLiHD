@@ -1082,6 +1082,11 @@
     <widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="timerlist" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
   <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate2"/>
