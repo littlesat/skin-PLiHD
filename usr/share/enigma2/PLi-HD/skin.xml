@@ -1621,7 +1621,7 @@
   <screen flags="wfNoBorder" name="Execute" position="0,0" size="1280,720" title="PPanel Entry">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_YB"/>
-    <widget name="linelist" font="Regular;20" position="560,110" size="655,500" transparent="1" />
+    <widget name="linelist" font="Regular;20" position="560,110" size="655,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- TextBox -->
