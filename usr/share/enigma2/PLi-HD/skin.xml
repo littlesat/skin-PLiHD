@@ -562,7 +562,7 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="ServiceEvent" render="Label" position="420,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
+    <widget source="ServiceEvent" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
@@ -584,7 +584,7 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-    <widget source="ServiceEvent" render="NextEpgInfo" position="148,590" size="372,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="148,590" size="372,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -818,7 +818,7 @@
 
   <screen name="Console" title="Command execution" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="530,105" size="690,476" font="Console;21" />
+    <widget name="text" position="530,110" size="690,476" font="Console;21" />
   </screen>
 
   <!-- NumberZap -->
@@ -1001,17 +1001,17 @@
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
-						MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (40, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (300, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+						MultiContentEntryText(pos = (0, 0),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+						MultiContentEntryText(pos = (50, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+						MultiContentEntryText(pos = (120, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (250, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (25, [ 
-						MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (40, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (300, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+						MultiContentEntryText(pos = (0, 0),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+						MultiContentEntryText(pos = (50, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+						MultiContentEntryText(pos = (120, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (250, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
@@ -1320,7 +1320,7 @@
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget source="list" render="Listbox" position="530,110" size="720,450" scrollbarMode="showOnDemand" selectionDisabled="0">
+    <widget source="list" render="Listbox" position="530,110" size="720,450" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="0">
 		<convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (0, 0), size = (720, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1696,7 +1696,7 @@
 
   <screen name="FastScanScreen" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" />
+    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction"  position="85,530" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
@@ -1869,7 +1869,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <eLabel text="AutoBackup Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" />
+    <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="status" position="590,320" size="540,130" font="Regular;16" />
     <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
   </screen>
@@ -1878,7 +1878,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
     <eLabel text="Select files/folders to backup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="checkList" position="590,110" size="540,350" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="checkList" position="590,110" size="540,350" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- PartnerBox -->
@@ -2050,8 +2050,8 @@
 
   <screen name="InputBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="590,110" size="550,27" font="Regular;23" />
-    <widget name="input" position="590,147" size="550,26" font="Regular;20" />
+    <ePixmap pixmap="skin_default/vkey_text.png" position="590,140" size="550,40" zPosition="-4" alphatest="on" />
+    <widget name="input" position="590,147" size="550,26" font="Regular;20" valign="center"/>
   </screen>
 
   <!-- Location Box -->
@@ -2062,9 +2062,9 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="text" position="590,110" size="540,26" font="Regular;22" />
     <widget name="target" position="590,140" size="540,26" valign="center" font="Regular;22" />
-    <widget name="filelist" position="590,170" zPosition="1" size="540,180" scrollbarMode="showOnDemand" selectionDisabled="1" />
+    <widget name="filelist" position="590,170" zPosition="1" size="540,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
     <widget name="textbook" position="590,360" size="540,26" font="Regular;22" />
-    <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" />
+    <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Pininput -->
@@ -2136,7 +2136,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
     <widget name="waitingtext" position="590,115" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center" />
-    <widget name="list" position="590,110" size="600,400" zPosition="2" scrollbarMode="showOnDemand" />
+    <widget name="list" position="590,110" size="600,400" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <widget source="Service" render="Label" position="590,525" zPosition="1" size="410,45" font="Regular;20">
         <convert type="MovieInfo">ShortDescription</convert>
     </widget>
@@ -2185,7 +2185,7 @@
     <panel name="ButtonTemplate_4S"/>
     <widget source="title_label" render="Label" position="600,110" size="540,38" font="Regular;18" transparent="1" />
     <widget source="error_label" render="Label" position="600,110" size="540,296" zPosition="3" font="Regular;20" transparent="1" />
-	<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" position="600,148" size="546,296" zPosition="3" transparent="1" >
+	<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="600,148" size="546,296" zPosition="3" transparent="1" >
 		<convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
@@ -2933,10 +2933,10 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
     <panel name="OKTemplate"/>
-    <widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
-    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
-    <widget name="liste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
-    <widget name="Mliste" scrollbarMode="showOnDemand" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="Mliste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
   
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
@@ -2992,7 +2992,7 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="headertext" position="520,100" size="740,23" zPosition="1" font="Regular;20" transparent="1"/>
     <widget name="statustext" position="520,340" size="740,90" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="0"/>
-    <widget name="list" position="520,140" size="740,470" zPosition="2" font="Regular;20" scrollbarMode="showOnDemand" transparent="0"/>
+    <widget name="list" position="520,140" size="740,470" zPosition="2" font="Regular;20" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="0"/>
     <widget name="titel" position="85,485" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
     <widget name="station" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
     <widget name="console" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
@@ -3000,13 +3000,13 @@
   
   <screen flags="wfNoBorder" name="SHOUTcastSetup" position="0,0" size="1280,720" title="SHOUTcast Setup" >
     <panel name="ShoutcastTemplate"/>
-    <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand"  transparent="1" />
+    <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"  transparent="1" />
   </screen>
   
   <screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280,720" title="Select record path for streamripper">
     <panel name="ShoutcastTemplate"/>
     <widget name="target" position="520,100" size="540,22" valign="center" font="Regular;22" />
-    <widget name="filelist" position="520,140" size="740,470" zPosition="1" scrollbarMode="showOnDemand"/>
+    <widget name="filelist" position="520,140" size="740,470" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
 <!-- unwetterZentrale -->
@@ -3024,7 +3024,7 @@
   <screen flags="wfNoBorder" name="UnwetterMain" position="0,0" size="1280,720" title="UWZ" >
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="hmenu" scrollbarMode="showOnDemand" font="Regular;20" position="590,110" size="600,500" transparent="1" />
+    <widget name="hmenu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="590,110" size="600,500" transparent="1" />
     <widget name="thumbnail" position="200,375" zPosition="2" size="300,200"/>
     <widget name="statuslabel" position="85,425" zPosition="2" size="100,40" font="Regular;18" halign="left"/>
     <widget name="thumbland" position="85,375" zPosition="2" size="100,40" />
@@ -3033,8 +3033,8 @@
 	<!-- Trafficinfo -->	
   <screen name="TrafficInfoMain" position="0,0" size="1280,720" title="Verkehrsinformation">
     <panel name="PigTemplate"/>
-    <widget name="sectionlist" position="590,110" size="600,205" scrollbarMode="showOnDemand" />
-    <widget name="itemlist" position="590,325" size="600,275" scrollbarMode="showOnDemand" />
+    <widget name="sectionlist" position="590,110" size="600,205" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="itemlist" position="590,325" size="600,275" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="itemdetails" position="85,400" size="417,140" font="Regular;20" halign="left" valign="top" />
     <widget name="statuslabel" position="85,375" size="417,25" font="Regular;16" halign="left" />
   </screen>
