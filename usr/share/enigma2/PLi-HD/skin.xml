@@ -1676,7 +1676,7 @@
 
   <!-- Nim selection -->
 
-  <screen name="NimSelection" title="Choose Tuner" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose Tuner" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="nimlist" render="Listbox" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" >
@@ -2967,8 +2967,8 @@
   </screen>
   
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
-    <panel name="ButtonTemplate_2S"/> 
     <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
     <panel name="OKTemplate"/>
     <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
