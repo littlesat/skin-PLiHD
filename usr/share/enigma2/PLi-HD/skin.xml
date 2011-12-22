@@ -2967,7 +2967,10 @@
   </screen>
   
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
-    <panel name="ForecaMlistTemplate"/>
+    <panel name="ButtonTemplate_2S"/> 
+    <panel name="PigTemplate"/>
+    <panel name="OKTemplate"/>
+    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
 
   <!-- RDS InfoDisplay -->
