@@ -2101,8 +2101,10 @@
 
   <screen name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,490" transparent="1" />
   </screen>
+
   <screen name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,480" transparent="1" />
