@@ -684,32 +684,32 @@
     <!-- THIS SCREEN DOES NOT USE TEMPLATES -->
     <panel name="TopTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="Event" render="Label" position="520,90" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="520,110" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="Event" render="Label" position="670,90" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="670,110" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="750,90" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+    <widget source="Event" render="Label" position="750,110" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="830,90" size="380,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="830,110" size="380,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-     <widget source="Event" render="Label" position="520,115" size="755,205" backgroundColor="background" transparent="1" font="Regular;20">
+     <widget source="Event" render="Label" position="520,135" size="740,207" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,335" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,335" size="35,25" />
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="520,335" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="710,335" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="900,335" size="20,20" alphatest="on" />
-    <widget name="key_red" position="549,335" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="737,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_blue" position="927,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="520,355" size="20,20" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="710,355" size="20,20" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="900,355" size="20,20" alphatest="on" />
+    <widget name="key_red" position="547,355" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="737,355" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="927,355" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,355" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,355" size="35,25" />
     <widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
@@ -719,6 +719,17 @@
     <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,407" size="19,310" zPosition="2" alphatest="on" />
+  </screen>
+
+  <screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" title="Electronic Program Guide Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="CancelOKTemplate"/>
+    <widget name="config" position="590,110" size="600,395" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <screen name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="menu" position="590,110" size="600,590" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Menus -->
