@@ -684,22 +684,22 @@
     <!-- THIS SCREEN DOES NOT USE TEMPLATES -->
     <panel name="TopTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="Event" render="Label" position="520,110" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
+    <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="Event" render="Label" position="670,110" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right" valign="top">
+    <widget source="Event" render="Label" position="670,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="750,110" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" valign="top">
+    <widget source="Event" render="Label" position="750,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" valign="top">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="830,110" size="380,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
+    <widget source="Event" render="Label" position="830,110" size="380,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-     <widget source="Event" render="Label" position="520,135" size="740,207" backgroundColor="background" transparent="1" font="Regular;20">
+     <widget source="Event" render="Label" position="520,135" size="740,208" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="PLi-HD/buttons/red.png" position="520,355" size="20,20" alphatest="on" />
