@@ -2973,39 +2973,40 @@
 
   <screen name="ForecaMlistTemplate">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
-    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
-    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
-    <widget name="Mliste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
   
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
-    <panel name="ForecaMlistTemplate"/>
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="Titel2" render="Label" position="85,375" zPosition="3" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
     <widget source="Titel3" render="Label" position="85,375" zPosition="2" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
   
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
     <panel name="ForecaMlistTemplate"/>
+    <panel name="ButtonTemplate_GYB"/>
   </screen>
   
   <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
     <panel name="ForecaMlistTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
   </screen>
   
   <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
     <panel name="ForecaMlistTemplate"/>
+    <panel name="ButtonTemplate_B"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
     <panel name="ForecaMlistTemplate"/>
   </screen>
   
   <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
     <panel name="ForecaMlistTemplate"/>
+    <panel name="ButtonTemplate_B"/>
   </screen>
   
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
