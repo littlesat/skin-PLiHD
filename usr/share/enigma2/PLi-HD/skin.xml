@@ -2970,13 +2970,18 @@
 
   <!-- Foreca Weather forecast -->
 
-  <screen name="ForecaMlistTemplate">
+  <screen name="ForecaTemplate">
     <panel name="PigTemplate"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+  </screen>
+
+  <screen name="ForecaMlistTemplate">
+    <panel name="ForecaTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
   
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
-    <panel name="PigTemplate"/>
+    <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_4S"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="Titel2" render="Label" position="85,375" zPosition="3" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
@@ -3009,9 +3014,8 @@
   </screen>
   
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
-    <panel name="PigTemplate"/>
+    <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <panel name="OKTemplate"/>
     <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
 
