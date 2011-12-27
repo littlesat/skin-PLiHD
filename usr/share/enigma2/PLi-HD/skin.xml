@@ -540,7 +540,7 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-   </screen>
+  </screen>
 
   <!-- DVD Player Infobar -->
 
@@ -1203,6 +1203,7 @@
       </convert>
     </widget>
   </screen>
+
   <screen name="UpdatePlugin" title="Software Update" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
@@ -1235,6 +1236,7 @@
       </convert>
     </widget>
   </screen>
+
   <screen name="PluginManager" title="Plugin manager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
@@ -1260,6 +1262,7 @@
     </widget>
     <widget source="status" render="Label" position="590,590" size="600,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" />
   </screen>
+
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
@@ -1277,6 +1280,7 @@
     </widget>
     <widget source="status" render="Label" position="590,560" size="600,28" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
   </screen>
+
   <screen name="PluginManagerHelp" title="Plugin manager help" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
@@ -1294,6 +1298,7 @@
     </widget>
     <widget source="status" render="Label" position="590,560" size="480,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
   </screen>
+
   <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin Details">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
@@ -1493,7 +1498,6 @@
   <screen name="UserManager" title="UserManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-
     <widget source="config" render="Listbox" position="590,110" size="600,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1624,19 +1628,23 @@
     <widget name="nodelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" />
     <widget name="helptext" position="85,370" size="500,260" valign="center" halign="left" font="Regular;20" />
   </screen>
+
   <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="PPanel">
     <panel name="PigTemplate"/>
     <widget name="nodelist" position="590,110" font="Regular;22" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="helptext" position="85,370" size="500,260" valign="center" halign="left" font="Regular;20" />
   </screen>
+
   <screen flags="wfNoBorder" name="File" position="0,0" size="1280,720" title="PPanel File">
     <panel name="PigTemplate"/>
     <widget name="progress" position="44,560" size="1194,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
+
   <screen flags="wfNoBorder" name="Tarball" position="0,0" size="1280,720" title="PPanel Entry">
     <panel name="PigTemplate"/>
     <widget name="progress" position="44,560" size="1194,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
+
   <screen flags="wfNoBorder" name="Execute" position="0,0" size="1280,720" title="PPanel Entry">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_YB"/>
@@ -2057,6 +2065,7 @@
     <eLabel text="Edit VLC Server" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="590,110" size="600,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen flags="wfNoBorder" name="VlcServerListScreen" position="0,0" size="1280,720">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -2064,6 +2073,7 @@
     <widget name="serverlabel" position="590,110" size="600,36" font="Regular;18" />
     <widget name="serverlist" position="590,146" size="600,308" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
+
   <screen flags="wfNoBorder" name="VlcMediaListScreen" position="0,0" size="1280,720" title="Select a VLC-Server Profile">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -2174,6 +2184,7 @@
     <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2" />
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center" />
   </screen>
+
   <screen name="DVDMovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
@@ -2267,6 +2278,15 @@
     <widget name="config" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
+  <!-- OpenWebIf -->
+
+  <screen name="OpenWebifConfig" position="0,0" size="1280,720" title="OpenWebif Configuration" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="config" position="590,110" size="600,160" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="lab1" position="590,590" halign="center" size="600,28" zPosition="1" font="Regular;24" valign="top" transparent="1" />
+  </screen>
+
   <!-- WebInterface -->
 
   <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2283,10 +2303,12 @@
     <widget name="config" font="Regular;22" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
     <widget source="help" render="Label" font="Regular;22" position="85,400" size="420,200" transparent="1" />
   </screen>
+
   <screen name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" font="Regular;22" position="530,110" size="690,500" transparent="1" />
   </screen>
+
   <screen name="VPS_check_PDC_Screen" position="0,0" size="1280,720" title="VPS-Plugin" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="infotext" render="Label" font="Regular;22" position="530,110" size="690,500" transparent="1" />
@@ -2388,15 +2410,18 @@
     <eLabel text="Bookmarks" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget name="filelist" position="530,110" size="665,500" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
+
   <screen name="vInputBox" position="0,0" size="1280,720" title="Input..." flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="85,400" size="1110,25" font="Regular;20" halign="Left" zPosition="1" />
     <widget name="input" position="85,440" size="1110,30" backgroundColor="#01080911" foregroundColor="#fcc000" font="Regular;24" halign="Left" zPosition="1"/>
   </screen>
+
   <screen name="vEditor" position="0,0" size="1280,720" title="File-Explorer" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="filedata" position="530,110" size="665,500" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" scrollbarMode="showOnDemand" />
   </screen>
+
   <screen name="SoftLinkScreen" position="0,0" size="1280,720" title="Make a softlink..." flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonRed"/>
@@ -2406,6 +2431,7 @@
     <eLabel text="Set name" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <eLabel text="Make a softlink" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
+
   <screen name="CPmaniger" position="0,0" size="1280,720" title="Select Copy/Move location..." flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonRed"/>
@@ -2415,6 +2441,7 @@
     <eLabel text="MOVE" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <eLabel text="COPY" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
+
   <screen name="MusicExplorer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget render="Label" position="530,110" size="100,30" source="session.CurrentService" font="Regular;24" halign="right" transparent="1" valign="center" zPosition="1">
@@ -2424,6 +2451,7 @@
 	<convert type="ServiceName">Name</convert>
     </widget>
   </screen>
+
   <screen name="PictureExplorerII" position="0,0" size="1280,720" title="Picture-Explorer" flags="wfNoBorder">
     <widget name="Picture" position="0,0" size="1280,720" zPosition="1" />
     <widget name="State" position="0,650" size="1280,70"  font="Regular;20" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
@@ -2837,6 +2865,7 @@
     <widget name="download" position="710,614" zPosition="5" borderWidth="1" size="75,12" backgroundColor="background" />
     <widget name="slide" position="990,618" zPosition="5" borderWidth="1" size="210,6" backgroundColor="background" />
   </screen>
+
   <screen flags="wfNoBorder" name="meteoViewerCfg" position="0,0" size="1280,720" title="MeteoViewer Configuration">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
