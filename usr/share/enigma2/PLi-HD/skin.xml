@@ -223,24 +223,7 @@
   <screen name="ButtonTemplate_4">
     <panel name="ButtonTemplate_3"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-  </screen>
-
-  <screen name="ButtonTemplate_B">
-    <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
-  </screen>
-
-  <screen name="ButtonTemplate_YB2">
-    <panel name="ButtonTemplate_B"/>
-    <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
-  </screen>
-
-  <screen name="ButtonTemplate_GYB">
-    <panel name="ButtonTemplate_YB2"/>
-    <panel name="ButtonGreen"/>
-    <widget source="key_green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
  <screen name="ButtonTemplate_YB">
@@ -289,6 +272,23 @@
     <panel name="ButtonTemplate_2S"/>
     <panel name="ButtonBlue"/>
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
+
+  <screen name="ButtonTemplate_BS">
+    <panel name="ButtonBlue"/>
+    <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
+
+  <screen name="ButtonTemplate_YBS">
+    <panel name="ButtonTemplate_BS"/>
+    <panel name="ButtonYellow"/>
+    <widget source="key_yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+  </screen>
+
+  <screen name="ButtonTemplate_GYBS">
+    <panel name="ButtonTemplate_YBS"/>
+    <panel name="ButtonGreen"/>
+    <widget source="key_green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="ButtonTemplate1">
@@ -3072,7 +3072,7 @@
   
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
     <panel name="ForecaMlistTemplate"/>
-    <panel name="ButtonTemplate_GYB"/>
+    <panel name="ButtonTemplate_GYBS"/>
   </screen>
   
   <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
@@ -3082,7 +3082,7 @@
   
   <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
     <panel name="ForecaMlistTemplate"/>
-    <panel name="ButtonTemplate_B"/>
+    <panel name="ButtonTemplate_BS"/>
   </screen>
 
   <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
@@ -3091,7 +3091,7 @@
   
   <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
     <panel name="ForecaMlistTemplate"/>
-    <panel name="ButtonTemplate_B"/>
+    <panel name="ButtonTemplate_BS"/>
   </screen>
   
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
