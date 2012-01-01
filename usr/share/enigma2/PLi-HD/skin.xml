@@ -3049,6 +3049,30 @@
     <widget name="ecmInfo" position="225,0" size="530,25" font="Regular;16" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1" />
   </screen>
 
+  <!-- BitrateViewer -->
+
+  <screen name="BitrateViewer" backgroundColor="transparent" position="0,0" size="1280,720" title="Bitrate viewer" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/hd.png" position="880,340" size="340,190" zPosition="-1" />
+    <eLabel text="Video" position="890,350" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <eLabel text="min" position="890,380" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="vmin" position="890,410" size="80,26" font="Regular;22" transparent="1" />
+    <eLabel text="max" position="960,380" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="vmax" position="960,410" size="80,26" font="Regular;22"  transparent="1" />
+    <eLabel text="avg" position="1040,380" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="vavg" position="1040,410" size="80,26" font="Regular;22"  transparent="1" />
+    <eLabel text="current" position="1140,380" zPosition="1" size="110,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="vcur" position="1140,410" size="80,26" font="Regular;22" transparent="1" />
+    <eLabel text="Audio" position="890,450" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <eLabel text="min" position="890,475" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="amin" position="890,500" size="80,26" font="Regular;22" transparent="1" />
+    <eLabel text="max" position="960,475" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="amax" position="960,500" size="80,26" font="Regular;22" transparent="1" />
+    <eLabel text="avg" position="1040,475" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="aavg" position="1040,500" size="80,26" font="Regular;22" transparent="1" />
+    <eLabel text="current" position="1140,475" zPosition="1" size="110,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
+    <widget name="acur" position="1140,500" size="80,26" font="Regular;22" transparent="1" />
+  </screen>
+
   <!-- Foreca Weather forecast -->
 
   <screen name="ForecaTemplate">
