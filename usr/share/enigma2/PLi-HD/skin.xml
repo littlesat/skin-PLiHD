@@ -2166,16 +2166,6 @@
     <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <!-- Pininput -->
-
-  <screen name="PinInput" position="0,0" size="1280,720" title="Change pin code" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="service" position="590,110" size="480,25" font="Regular;20" />
-    <widget name="text" position="590,140" size="480,25" font="Regular;20" halign="center" />
-    <widget name="tries" position="590,170" size="480,25" font="Regular;20" halign="center" />
-    <widget name="input" position="590,210" size="480,40" font="Regular;50" halign="center" />
-  </screen>
-
   <!-- Video Fine Tune -->
 
   <screen name="VideoFinetune" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2199,6 +2189,14 @@
   <screen name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,480" transparent="1" />
+  </screen>
+
+  <screen name="PinInput" position="0,0" size="1280,720" title="Change pin code" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="service" position="590,110" size="480,25" font="Regular;20" halign="center" />
+    <widget name="text" position="590,140" size="480,25" font="Regular;20" halign="center" />
+    <widget name="tries" position="590,170" size="480,25" font="Regular;20" halign="center" />
+    <widget name="input" position="590,210" size="480,40" font="Regular;50" halign="center" />
   </screen>
 
   <!-- DVD Backup -->
