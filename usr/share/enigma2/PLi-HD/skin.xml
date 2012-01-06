@@ -13,7 +13,6 @@
 
   <fonts>
     <font name="Regular" filename="nmsbd.ttf" scale="100"></font>
-    <font name="Crs" filename="hdi.ttf" scale="100"></font>
     <font name="LCD" filename="lcd.ttf" scale="100"></font>
     <font name="Console" filename="tuxtxt.ttf" scale="100"></font>
     <font name="Fixed" filename="andale.ttf" scale="100"></font>
@@ -610,7 +609,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="list" position="530,110" size="690,510" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="530,110" size="690,510" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition">
       </convert>
@@ -900,7 +899,7 @@
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"></widget>
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"></widget>
     <widget source="session.Event_Now" render="Label" position="85,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
