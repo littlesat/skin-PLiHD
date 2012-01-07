@@ -659,7 +659,7 @@
   </screen>
 
   <!-- Simple channelselection -->
-  
+
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -767,7 +767,7 @@
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,355" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,355" size="35,25" />
     <widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
+    <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
