@@ -658,6 +658,14 @@
     </widget>
   </screen>
 
+  <!-- Simple channelselection -->
+  
+  <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="list" position="560,110" size="660,504" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
   <!-- EPG Stuff -->
 
   <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
