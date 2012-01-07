@@ -1092,11 +1092,11 @@
 
   <!-- Minute input -->
 
-	<screen name="MinuteInput" position="center,center" size="240,55" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="240,55" zPosition="-1" />
-		<eLabel text="Seek" position="20,15" size="100,25" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1" font="Regular;23"/>
-		<widget name="minutes" transparent="1" position="120,15" size="100,25" halign="right" font="Regular;23" zPosition="1" />
-	</screen>
+  <screen name="MinuteInput" position="center,center" size="240,55" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="240,55" zPosition="-1" />
+    <eLabel text="Seek" position="20,15" size="100,25" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1" font="Regular;23"/>
+    <widget name="minutes" transparent="1" position="120,15" size="100,25" halign="right" font="Regular;23" zPosition="1" />
+  </screen>
 
   <!-- MovieContextMenu -->
 
@@ -2931,7 +2931,7 @@
 
   <!-- CSSF plugin -->
 
-  <screen name="CSFD" flags="wfNoBorder" position="0,0" size="1280,720" title="Filmová databáze CSFD">
+  <screen name="CSFD" position="0,0" size="1280,720" title="Filmová databáze CSFD" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
@@ -2941,6 +2941,7 @@
     <widget name="detailslabel" position="740,153" size="500,200" font="Regular;22" />
     <widget name="contentlabel" position="570,375" size="670,225" font="Regular;22" />
     <widget name="extralabel"   position="570,153" size="670,425" font="Regular;22" />
+    <widget name="photolabel" position="570,153" size="670,425" alphatest="on" />
     <widget name="statusbar" position="84,500" size="460,17" font="Regular;15" foregroundColor="#cccccc" />
     <widget name="poster" position="564,153" size="170,201" alphatest="on" />
     <widget name="menu" position="570,153" size="585,450" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
@@ -2955,14 +2956,14 @@
     <widget name="page" position="742,587" size="240,28" font="Regular;22" valign="center" halign="center" zPosition="2" transparent="1" />
   </screen>
 
-  <screen name="CSFDSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="CSFD - Nastavení">
+  <screen name="CSFDSetup" position="0,0" size="1280,720" title="CSFD - Nastavení" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
-    <widget name="config" position="570,110" size="640,378" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="info" position="550,500" size="680,26" font="Regular;20" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" /> 
+    <widget name="config" position="570,110" size="640,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="info" position="570,590" size="625,26" font="Regular;22" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" />
   </screen>
 
-  <screen name="CSFDAbout" flags="wfNoBorder" position="0,0" size="1280,720" title="Informace o pluginu CSFD">
+  <screen name="CSFDAbout" position="0,0" size="1280,720" title="Informace o pluginu CSFD" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
     <widget name="label1" position="570,110" size="500,24" font="Regular;20" valign="center" />
@@ -2973,6 +2974,63 @@
     <widget name="label6" position="570,230" size="500,24" font="Regular;20" valign="center" />
     <widget name="label7" position="570,254" size="500,24" font="Regular;20" valign="center" />
     <widget name="label8" position="570,278" size="500,24" font="Regular;20" valign="center" />
+  </screen>
+
+  <screen name="CSFDVideoInfoScreen" position="0,0" size="1280,720" zPosition="10" title="Video" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="OKTemplate"/>
+    <widget name="label1" position="590,110" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label2" position="590,132" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label3" position="590,154" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label4" position="590,176" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label5" position="590,198" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label6" position="590,220" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label7" position="590,242" size="500,22" font="Regular;20" valign="center" />
+    <widget name="label8" position="590,274" size="500,22" font="Regular;20" valign="center" />
+  </screen>
+
+  <screen name="CSFDPlayer" position="0,525" size="1280,181" title="InfoBar" backgroundColor="#ff000000" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1280,181" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/back-media-dvd.png" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="990,115" size="103,24" font="Regular;18" valign="top" halign="right" backgroundColor="#00333333" foregroundColor="#00cccccc" transparent="1">
+	<convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1074,116" size="45,20" font="Regular;14" valign="top" halign="right" backgroundColor="#00333333" foregroundColor="#00cccccc" transparent="1">
+	<convert type="ClockToText">Format::%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="941,84" size="278,20" font="Regular;18" halign="center" backgroundColor="#353e575e" foregroundColor="#00cccccc" transparent="1">
+	<convert type="ClockToText">Format:%d.%m. %Y</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="50,32" size="1180,30" font="Regular;26" halign="center" backgroundColor="#353e575e" shadowColor="#1A58A6" shadowOffset="-2,-1" transparent="1">
+	<convert type="ServiceName">Name</convert>
+    </widget>
+    <ePixmap position="110,82" size="154,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/csfdplayerlogo.png" zPosition="1" alphatest="on" />
+    <ePixmap position="340,90" size="600,16" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/mpslider.png" zPosition="3" alphatest="on" />
+    <widget source="session.CurrentService" render="PositionGauge" position="360,91" size="560,14" zPosition="2" pointer="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/pointer.png:13,3">
+	<convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="340,118" size="200,20" font="Regular;18" halign="left" valign="center" backgroundColor="#80000000" transparent="1">
+	<convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="740,118" size="200,20" font="Regular;18" halign="right" valign="center" backgroundColor="#80000000" transparent="1">
+	<convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="540,118" size="200,20" font="Regular;18" halign="center" valign="center" backgroundColor="#80000000" transparent="1">
+	<convert type="ServicePosition">Length</convert>
+    </widget>
+  </screen>
+
+  <screen name="CSFDInputText" position="0,0" size="1280,720" zPosition="1" title="CSFD" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="590,110" size="605,50" selectionPixmap="PLi-HD/buttons/sel.png"/>
+  </screen>
+
+  <screen name="VirtualKeyBoardCSFD" position="0,0" size="1280,720" zPosition="2"  backgroundColor="#31000000" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="header" position="590,110" size="605,30" font="Regular;24" transparent="1" noWrap="1" halign="left" />
+    <widget name="text" position="590,150" size="540,46" font="Regular;26" transparent="1" noWrap="1" halign="right" />
+    <widget name="list" position="590,220" size="540,225" selectionDisabled="1" transparent="1" />
+    <widget name="countryFlag" position="830,490" size="60,40" backgroundColor="#31000000" alphatest="on" />
+    <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="590,590" size="540,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" halign="center" transparent="1"/>
   </screen>
 
   <!-- XPower plugin -->
