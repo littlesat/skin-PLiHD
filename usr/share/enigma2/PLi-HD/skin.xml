@@ -697,7 +697,7 @@
     <widget name="channel" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,440" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,485" size="435,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;26" />
+    <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
     <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
     <widget source="session.Event_Next" render="Label" position="148,590" size="435,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">Name</convert>
