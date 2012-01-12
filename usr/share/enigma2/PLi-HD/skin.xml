@@ -603,6 +603,12 @@
     <widget name="angleLabel" position="780,122" size="200,22" font="Regular;21" backgroundColor="black" zPosition="3" transparent="1"></widget>
   </screen>
 
+  <screen name="ChapterZap" position="center,center" size="240,55" title="Chapter" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="240,55" zPosition="-1" />
+    <widget name="chapter" position="20,15" size="120,26" font="Regular;23" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1" />
+    <widget name="number" position="140,15" size="80,26" halign="right" font="Regular;23" zPosition="1" transparent="1" />
+  </screen>
+
   <!-- Channel,EPG,EventInfo -->
 
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
