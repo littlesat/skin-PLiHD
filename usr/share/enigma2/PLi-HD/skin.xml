@@ -698,7 +698,7 @@
     <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="EventName">Description</convert>
     </widget>
-    <widget source="Event" render="Label" position="85,440" size="435,165" transparent="1" font="Regular; 24">
+    <widget source="Event" render="Label" position="85,440" size="435,165" transparent="1" font="Regular; 22">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
