@@ -2170,6 +2170,15 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
 
+   <!-- TagEditor -->
+
+   <screen name="TagEditor" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="list" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
   <!-- Inputbox -->
 
   <screen name="InputBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
@@ -3372,7 +3381,7 @@
     <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
   </screen>
 
-<!-- dont saw this screen, may be later -->
+  <!-- dont saw this screen, may be later -->
   <screen name="AutoTimerOverviewSummary" position="0,0" size="1280,720">
     <widget source="parent.Title" render="Label" position="590,110" size="120,21" font="Regular;18" />
     <widget source="entry" render="Label" position="590,129" size="120,21" font="Regular;16" />
