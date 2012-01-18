@@ -742,6 +742,8 @@
     <widget name="more_text" position="960,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
   </screen>
 
+  <!-- GraphMultiEPG -->
+
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder">
     <!-- THIS SCREEN DOES NOT USE TEMPLATES -->
     <panel name="TopTemplate"/>
@@ -764,23 +766,25 @@
      <widget source="Event" render="Label" position="520,135" size="740,208" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="520,355" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="710,355" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="900,355" size="20,20" alphatest="on" />
-    <widget name="key_red" position="547,355" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="737,355" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_blue" position="927,355" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,355" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,355" size="35,25" />
-    <widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-    <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,407" size="19,310" zPosition="2" alphatest="on" />
+    <widget name="timeline_text" position="20,355" size="1240,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="20,380" size="1240,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
+    <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,377" size="19,310" zPosition="2" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="145,688" size="20,20" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="420,688" size="20,20" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="695,688" size="20,20" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="970,688" size="20,20" alphatest="on" />
+    <widget name="key_red" position="175,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="450,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_yellow" position="725,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="1000,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="75,687" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,687" size="35,25" />
   </screen>
 
   <screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" title="Electronic Program Guide Setup" flags="wfNoBorder">
@@ -3150,6 +3154,16 @@
     <widget name="acur" position="260,160" size="80,26" font="Regular;22" transparent="1" />
   </screen>
 
+  <!-- MPHelp -->
+
+   <screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_YBS"/>
+    <widget render="Label" source="title" position="85,380" size="450,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+  </screen>
+
   <!-- Foreca Weather forecast -->
 
   <screen name="ForecaTemplate">
@@ -3271,7 +3285,7 @@
     <widget name="itemdetails" position="85,400" size="417,140" font="Regular;20" halign="left" valign="top" />
     <widget name="statuslabel" position="85,375" size="417,25" font="Regular;16" halign="left" />
   </screen>
-  
+
   <!-- Auto Timer -->
 
   <screen name="AutoTimerWizard" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3335,12 +3349,12 @@
   <screen name="AutoTimerPreview" title="Preview AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <widget source="timerlist" render="Listbox" position="590,110" size="700,450" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="timerlist" render="Listbox" position="590,110" size="670,450" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=( 10,5),size=(660,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
 						MultiContentEntryText(pos=( 10,32),size=(660,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=(	10,57),size=(420,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=( 10,57),size=(420,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
 						MultiContentEntryText(pos=(430,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
 					],
 				 "fonts": [gFont("Regular",22),gFont("Regular",20)],
@@ -3349,4 +3363,22 @@
       </convert>
     </widget>
   </screen>
+
+   <screen name="AutoTimerHelp" position="0,0" size="1280,720" title="AutoTimerHelp" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_YBS"/>
+    <widget render="Label" source="title" position="85,380" size="450,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+  </screen>
+
+<!-- dont saw this screen, may be later -->
+  <screen name="AutoTimerOverviewSummary" position="0,0" size="1280,720">
+    <widget source="parent.Title" render="Label" position="590,110" size="120,21" font="Regular;18" />
+    <widget source="entry" render="Label" position="590,129" size="120,21" font="Regular;16" />
+    <widget source="global.CurrentTime" render="Label" position="646,152" size="82,18" font="Regular;16" >
+	<convert type="ClockToText">WithSeconds</convert>
+    </widget>
+  </screen>
+
 </skin>
