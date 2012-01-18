@@ -3154,6 +3154,15 @@
     <widget name="acur" position="260,160" size="80,26" font="Regular;22" transparent="1" />
   </screen>
 
+  <!-- MPHelp -->
+
+   <screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_YBS"/>
+    <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+  </screen>
+
   <!-- Foreca Weather forecast -->
 
   <screen name="ForecaTemplate">
