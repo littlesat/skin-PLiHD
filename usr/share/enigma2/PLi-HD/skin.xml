@@ -3309,6 +3309,10 @@
     <widget name="languagetext" position="585,324" size="110,24" font="Regular;18" />
     <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />
     <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
+    <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="110,645" zPosition="1" size="35,25" transparent="1" alphatest="on" >
+	<convert type="ConditionalShowHide" />
+    </widget>
   </screen>
 
   <screen name="AutoTimer" title="Auto Timer" position="0,0" size="1280,720" flags="wfNoBorder">
