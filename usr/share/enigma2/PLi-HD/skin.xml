@@ -3349,26 +3349,27 @@
 
   <screen name="AutoTimerImporter" title="Import AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_2S"/>
     <widget name="list" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="AutoTimerOverview" title="AutoTimer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="ButtonTemplate_GYBS"/>
     <widget name="entries" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="AutoTimerPreview" title="Preview AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
-    <widget source="timerlist" render="Listbox" position="590,110" size="670,450" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <panel name="ButtonTemplate_RYS"/>
+    <widget source="timerlist" render="Listbox" position="590,110" size="660,450" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos=( 10,5),size=(660,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=( 10,32),size=(660,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=( 10,57),size=(420,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=(430,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=( 10,5),size=(630,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=( 10,32),size=(630,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=( 10,57),size=(380,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(400,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
 					],
 				 "fonts": [gFont("Regular",22),gFont("Regular",20)],
 				 "itemHeight": 85
@@ -3377,7 +3378,7 @@
     </widget>
   </screen>
 
-   <screen name="AutoTimerHelp" position="0,0" size="1280,720" title="AutoTimerHelp" flags="wfNoBorder">
+  <screen name="AutoTimerHelp" position="0,0" size="1280,720" title="AutoTimerHelp" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
     <panel name="ButtonTemplate_YBS"/>
