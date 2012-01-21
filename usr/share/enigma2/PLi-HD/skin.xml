@@ -231,7 +231,7 @@
     <panel name="ButtonBlue"/>
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
-  
+
   <screen name="ButtonTemplate_1S">
     <panel name="ButtonRed"/>
    <widget source="key_red" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
@@ -540,7 +540,7 @@
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
     <eLabel name="snr" position="1022,47" size="50,16" borderWidth="1" borderColor="black" halign="left" transparent="1" text="SNR" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transpBlack" position="1020,45" size="200,20" borderWidth="1" borderColor="grey"> 
+    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transpBlack" position="1020,45" size="200,20" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1118,47" size="100,16" borderWidth="1" borderColor="black" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
@@ -763,7 +763,10 @@
     <widget source="Event" render="Label" position="830,110" size="380,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-     <widget source="Event" render="Label" position="520,135" size="740,208" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="740,8" transparent="1" borderWidth="2" borderColor="un33333a">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+     <widget source="Event" render="Label" position="520,145" size="740,198" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="timeline_text" position="20,355" size="1240,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
@@ -1041,7 +1044,7 @@
   </screen>
 
   <!-- NumercalTextInputHelpDialog -->
-  
+
   <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
     <eLabel position="0,0" size="514,164" backgroundColor="yellowtransparent" zPosition="-1" />
     <widget name="key1" position="2,2" size="170,40" font="Regular;20" valign="center" halign="center" />
@@ -1078,14 +1081,14 @@
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="570,240" size="565,360" zPosition="3" transparent="1" >
       <convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (25, [ 
+					{"default": (25, [
 						MultiContentEntryText(pos = (0, 0),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
 						MultiContentEntryText(pos = (50, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
 						MultiContentEntryText(pos = (120, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (250, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
-					"notselected": (25, [ 
+					"notselected": (25, [
 						MultiContentEntryText(pos = (0, 0),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
 						MultiContentEntryText(pos = (50, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
 						MultiContentEntryText(pos = (120, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
@@ -1285,7 +1288,7 @@
     <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
     <widget name="activityslider" position="85,630" size="1100,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
-  
+
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
@@ -1430,7 +1433,7 @@
     </widget>
     <widget source="introduction" render="Label" position="530,580" size="720,50" zPosition="10" font="Regular;18" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
   </screen>
-  
+
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
@@ -1815,7 +1818,7 @@
   </screen>
 
   <!-- Satfinder -->
-  
+
   <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="140,103" size="1000,50" borderWidth="1" borderColor="uncccccc">
@@ -1899,7 +1902,7 @@
   </screen>
 
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
-  
+
   <screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonGreen"/>
@@ -2919,7 +2922,7 @@
 		{"template": [
 				MultiContentEntryText(pos = (10, 1), size = (250, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
 				MultiContentEntryText(pos = (270, 1), size = (110, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-				MultiContentEntryProgress(pos = (390, 1), size = (100, 24), percent = -3), # index 3 should be progress 
+				MultiContentEntryProgress(pos = (390, 1), size = (100, 24), percent = -3), # index 3 should be progress
 				MultiContentEntryText(pos = (500, 1), size = (100, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
 			],
 			"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
@@ -3082,7 +3085,7 @@
     </widget>
     <widget name="statusbar" position="610,590" size="420,20" font="Regular;18" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="xpowerHelp" position="0,0" size="1280,720" title="XPower Help">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -3091,7 +3094,7 @@
     <widget name="version" position="670,535" size="420,20" font="Regular;18" />
     <widget name="statusbar" position="630,600" size="470,20" font="Regular;18" />
   </screen>
-  
+
     <screen flags="wfNoBorder" name="xpowerEdit" position="0,0" size="1280,720" title="XPower Configuration PC">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
@@ -3110,7 +3113,7 @@
     <widget name="devices" position="610,335" size="200,25" font="Regular;20" />
     <widget name="mounted" position="840,335" size="310,120" font="Regular;20" />
     <ePixmap pixmap="~/author.png" position="610,375" zPosition="2" size="25,25" />
-    <widget name="version" position="640,380" size="100,20" zPosition="2" foregroundColor="white" font="Regular;16" /> 
+    <widget name="version" position="640,380" size="100,20" zPosition="2" foregroundColor="white" font="Regular;16" />
     <widget name="process" position="610,415" size="90,25" font="Regular;20" />
     <widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="700,419" size="15,16" zPosition="10" transparent="1"/>
     <widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="700,419" size="15,16" zPosition="10" transparent="1"/>
@@ -3184,7 +3187,7 @@
     <panel name="ForecaTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_4S"/>
@@ -3193,17 +3196,17 @@
     <widget source="Titel3" render="Label" position="85,375" zPosition="2" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
     <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_4S"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
@@ -3212,12 +3215,12 @@
   <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
     <panel name="ForecaMlistTemplate"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="PicSetup" position="0,0" size="1280,720" title="SlideShow Settings">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_2S"/>
@@ -3240,7 +3243,7 @@
     <panel name="OKTemplate"/>
     <widget name="cover" position="85,100" size="350,375" zPosition="2" halign="left" valign="center" alphatest="blend" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SHOUTcastWidget" position="0,0" size="1280,720" title="SHOUTcast">
     <panel name="ShoutcastTemplate"/>
     <panel name="KeyMenuTemplate"/>
@@ -3251,14 +3254,14 @@
     <widget name="station" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
     <widget name="console" position="85,535" size="425,40" zPosition="1" font="Regular;18" transparent="1"/>
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SHOUTcastSetup" position="0,0" size="1280,720" title="SHOUTcast Setup" >
     <panel name="PigLessTemplate"/>
     <panel name="ButtonTemplate_2S"/>
     <panel name="OKTemplate"/>
     <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"  transparent="1" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280,720" title="Select record path for streamripper">
     <panel name="ShoutcastTemplate"/>
     <widget name="target" position="520,100" size="540,22" valign="center" font="Regular;22" />
@@ -3271,7 +3274,7 @@
     <panel name="KeyInfoTemplate"/>
     <widget name="picture" position="590,110" size="600,500" zPosition="2" />
   </screen>
-  
+
   <screen flags="wfNoBorder" name="HelpPictureView" position="0,0" size="1280,720" title="UWZ" >
     <panel name="PigTemplate"/>
     <widget name="picture" position="590,110" size="600,500" zPosition="2" />
