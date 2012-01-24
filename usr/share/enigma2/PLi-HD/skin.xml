@@ -745,8 +745,10 @@
   <!-- GraphMultiEPG -->
 
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder">
-    <!-- THIS SCREEN DOES NOT USE TEMPLATES -->
     <panel name="TopTemplate"/>
+    <widget source="session.CurrentService" render="Label" position="85,89" size="417,20" zPosition="0" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
     <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventTime">StartTime</convert>
@@ -798,7 +800,7 @@
 
   <screen name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="menu" position="590,110" size="600,590" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="menu" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Menus -->
