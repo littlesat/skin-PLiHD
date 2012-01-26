@@ -634,7 +634,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD/window/progress.png" position="155,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,420" size="435,170" transparent="1" font="Regular; 18">
+    <widget source="ServiceEvent" render="Label" position="85,420" size="435,160" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
@@ -693,12 +693,12 @@
     </widget>
     <widget source="Event" render="Label" position="315,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
     <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:- %H:%M</convert>
+    <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
     <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="EventName">Description</convert>
     </widget>
-    <widget source="Event" render="Label" position="85,440" size="435,175" transparent="1" font="Regular; 22">
+    <widget source="Event" render="Label" position="85,440" size="435,188" transparent="1" font="Regular; 20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -766,7 +766,7 @@
     <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="740,8" transparent="1" borderWidth="2" borderColor="un33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-     <widget source="Event" render="Label" position="520,145" size="740,198" backgroundColor="background" transparent="1" font="Regular;20">
+     <widget source="Event" render="Label" position="520,145" size="740,208" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="timeline_text" position="20,355" size="1240,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
