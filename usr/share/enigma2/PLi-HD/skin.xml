@@ -744,11 +744,10 @@
   <!-- GraphMultiEPG -->
 
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-    <panel name="TopTemplate"/>
-    <widget source="session.CurrentService" render="Label" position="85,89" size="417,20" zPosition="0" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="KeyInfoTemplate"/>
     <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Date</convert>
@@ -764,31 +763,21 @@
     <widget source="Event" render="Label" position="830,110" size="380,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="740,8" transparent="1" borderWidth="2" borderColor="un33333a">
+    <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-     <widget source="Event" render="Label" position="520,145" size="740,208" backgroundColor="background" transparent="1" font="Regular;20">
+     <widget source="Event" render="Label" position="520,145" size="710,208" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="20,355" size="1240,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="20,380" size="1240,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,306" zPosition="1" />
-    <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,377" size="19,310" zPosition="2" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="145,688" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="420,688" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="695,688" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="970,688" size="20,20" alphatest="on" />
-    <widget name="key_red" position="175,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="450,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_yellow" position="725,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_blue" position="1000,687" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="75,687" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,687" size="35,25" />
+    <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,377" size="19,250" zPosition="2" alphatest="on" />
   </screen>
 
   <screen name="GraphMultiEpgSetup" position="fill" title="Electronic Program Guide Setup" flags="wfNoBorder">
