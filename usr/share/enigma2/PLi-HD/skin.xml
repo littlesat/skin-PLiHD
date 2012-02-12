@@ -190,6 +190,10 @@
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,645" size="35,25" />
   </screen>
 
+  <screen name="KeyZeroTemplate">
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="40,645" size="35,25" />
+  </screen>
+
   <screen name="KeyOneTemplate">
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,645" size="35,25" />
   </screen>
@@ -995,16 +999,14 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <panel name="KeyOneTemplate"/>
-    <ePixmap pixmap="PLi-HD/dvr/scale1.png" position="85,133" size="417,12" zPosition="1" alphatest="on" />
-    <eLabel backgroundColor="infobarBG" position="85,133" size="417,14" zPosition="0" />
-    <widget source="session.CurrentService" render="PositionGauge" position="85,133" size="417,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:417,0">
+    <panel name="KeyZeroTemplate"/>
+    <widget source="session.CurrentService" render="PositionGauge" position="85,353" size="417,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:417,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="85,110" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="85,333" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="385,110" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="385,333" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <widget name="waitingtext" position="530,110" size="690,484" font="Regular;22" halign="center" valign="center" zPosition="4" />
