@@ -3141,6 +3141,7 @@
     <widget name="picon2p" position="1030,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="message" position="810,390" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" transparent="0" foregroundColor="white" />
     <widget name="path" position="590,430" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" transparent="0" foregroundColor="white" />
+    <widget name="search" position="590,470" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" transparent="0" foregroundColor="white" />
   </screen>
 
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
