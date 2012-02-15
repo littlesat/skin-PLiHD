@@ -3148,7 +3148,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <widget name="config" position="590,110" size="540,300" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="statusbar" position="590,595" size="540,20" font="Regular;18" backgroundColor="black" />
+    <widget name="statusbar" position="590,598" size="540,22" font="Regular;18" backgroundColor="black" />
   </screen>
 
   <!-- CCCam InfoBar -->
