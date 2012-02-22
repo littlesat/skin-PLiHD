@@ -3252,7 +3252,7 @@
   <screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="740,500" transparent="1" />
   </screen>
 
   <!-- RDS InfoDisplay -->
