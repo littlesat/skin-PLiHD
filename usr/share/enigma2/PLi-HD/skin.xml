@@ -1734,6 +1734,8 @@
     <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
   </screen>
 
+  <!-- MessageBox -->
+
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="650,110" size="550,500" font="Regular;22" />
@@ -1742,6 +1744,44 @@
     <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="list" position="85,375" size="545,200" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" />
   </screen>
+
+  <!-- MessageBoxSimple -->
+
+  <screen name="MessageBoxSimpleTemplate">
+    <widget name="text" position="65,8" size="520,0" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="list" position="100,100" size="480,375" />
+	<applet type="onLayoutFinish">
+from enigma import eSize, ePoint
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self[&quot;text&quot;].getSize()
+textsize = (textsize[0] + 50, textsize[1] + 20)
+offset = 0
+if self.type == self.TYPE_YESNO:
+	offset = 60
+wsizex = textsize[0] + 60
+wsizey = textsize[1] + offset
+if (280 &gt; wsizex):
+	wsizex = 280
+wsize = (wsizex, wsizey)
+self.instance.resize(eSize(*wsize))
+self[&quot;text&quot;].instance.resize(eSize(*textsize))
+listsize = (wsizex, 20)
+self[&quot;list&quot;].instance.move(ePoint(0, textsize[1]))
+self[&quot;list&quot;].instance.resize(eSize(*listsize))
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+	</applet>
+  </screen>
+
+  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
+    <panel name= "MessageBoxSimpleTemplate" />
+  </screen>
+
+  <!-- TimeDateInput -->
 
   <screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
@@ -2184,8 +2224,8 @@
 
   <screen name="InputBox" position="fill" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="skin_default/vkey_text.png" position="590,140" size="550,40" zPosition="-4" alphatest="on" />
-    <widget name="input" position="590,147" size="550,26" font="Regular;20" valign="center"/>
+    <ePixmap pixmap="skin_default/vkey_text.png" position="585,140" size="542,40" zPosition="-4" alphatest="on" />
+    <widget name="input" position="590,150" size="532,26" font="Regular;20" valign="center"/>
   </screen>
 
   <!-- Location Box -->
@@ -3396,17 +3436,17 @@
   <screen name="AutoTimerPreview" title="Preview AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-    <widget source="timerlist" render="Listbox" position="590,110" size="660,450" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="timerlist" render="Listbox" position="590,110" size="605,510" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos=( 10,5),size=(630,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=( 10,32),size=(630,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=( 10,57),size=(380,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-						MultiContentEntryText(pos=(400,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					],
-				 "fonts": [gFont("Regular",22),gFont("Regular",20)],
-				 "itemHeight": 85
-				}
+		{"template": [
+				MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=( 10,32),size=(595,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=( 10,57),size=(310,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=(330,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+			],
+		"fonts": [gFont("Regular",22),gFont("Regular",20)],
+		"itemHeight": 85
+		}
       </convert>
     </widget>
   </screen>
