@@ -566,10 +566,10 @@
     <widget source="session.Event_Next" render="Label" position="720,140" size="500,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="60,178" size="570,365" font="Regular; 20" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="60,178" size="570,370" font="Regular; 20" zPosition="1" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,178" size="570,365" font="Regular; 20" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,178" size="570,370" font="Regular; 20" zPosition="1" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
@@ -1003,6 +1003,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
+    <panel name="KeyZeroTemplate"/>
     <widget source="session.CurrentService" render="PositionGauge" position="85,353" size="417,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:417,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
