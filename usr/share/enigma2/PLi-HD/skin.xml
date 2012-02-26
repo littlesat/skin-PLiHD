@@ -2585,9 +2585,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <gstyles filename="PLi-HD/window/separator.png#cached"></gstyles>
    </gstyle>
 
-  <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">
-    <widget name="Dishpixmap" pixmap="PLi-HD/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
-  </screen>
+  <screen name="Dish" flags="wfNoBorder" position="86,100" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent" >
+    <widget name="Dishpixmap" position="0,0"  size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
+    <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;18" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
+    <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
+    <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+  </screen>"""
 
   <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
