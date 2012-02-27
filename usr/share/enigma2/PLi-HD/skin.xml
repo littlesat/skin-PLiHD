@@ -480,7 +480,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1180,593" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="101,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
+    <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
     <widget source="session.FrontendStatus" render="Label" position="1100,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
