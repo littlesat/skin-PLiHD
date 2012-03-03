@@ -1760,6 +1760,8 @@ if self.type == self.TYPE_YESNO:
 	offset = 60
 wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
+if (64 &gt; wsizey):
+	wsizey = 64
 if (280 &gt; wsizex):
 	wsizex = 280
 wsize = (wsizex, wsizey)
