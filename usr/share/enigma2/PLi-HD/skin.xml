@@ -1013,8 +1013,8 @@
     <widget source="session.CurrentService" render="Label" position="385,333" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <widget name="waitingtext" position="530,110" size="690,484" font="Regular;22" halign="center" valign="center" zPosition="4" />
-    <widget name="chosenletter" position="530,110" size="690,484" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
+    <widget name="waitingtext" position="530,110" size="690,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
+    <widget name="chosenletter" position="530,110" size="690,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
     <widget name="list" position="530,110" size="690,510" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
     <widget source="Service" render="Label" position="85,394" size="425,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
@@ -2303,27 +2303,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="590,110" size="600,276" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2" />
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center" />
-  </screen>
-
-  <screen name="DVDMovieSelection" position="fill" title="Select a movie" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
-    <widget name="waitingtext" position="590,115" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center" />
-    <widget name="list" position="590,110" size="600,400" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="590,525" zPosition="1" size="410,45" font="Regular;20">
-        <convert type="MovieInfo">ShortDescription</convert>
-    </widget>
-    <widget source="Service" render="Label" position="1110,525" zPosition="1" size="60,22" font="Regular;18" halign="right">
-        <convert type="ServiceTime">Duration</convert>
-	<convert type="ClockToText">AsLength</convert>
-    </widget>
-    <widget source="Service" render="Label" position="1000,545" zPosition="1" size="170,22" font="Regular;18" halign="right">
-	<convert type="MovieInfo">RecordServiceName</convert>
-    </widget>
-    <widget source="Service" render="Label" position="84,380" zPosition="1" size="420,190" font="Regular;18">
-	<convert type="EventName">ExtendedDescription</convert>
-    </widget>
-	<widget name="freeDiskSpace" position="630,595" size="540,20" font="Regular;19" valign="center" halign="right" />
   </screen>
 
   <!-- do not remove, is not solved yet
