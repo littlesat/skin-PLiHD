@@ -236,6 +236,12 @@
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
+  <screen name="ButtonTemplate_RGB">
+    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonBlue"/>
+    <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+  </screen>
+
   <screen name="ButtonTemplate_1S">
     <panel name="ButtonRed"/>
    <widget source="key_red" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
@@ -682,7 +688,6 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
-    <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="530,110" size="690,510" itemHeight="30" font="Regular;26" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
 	  <convert type="ServiceName">Name</convert>
@@ -734,20 +739,38 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
-    <widget name="list" position="590,165" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Event" render="Label" position="85,370" size="430,240" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget name="date" position="570,90" size="620,24" transparent="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="list" position="570,165" size="620,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="Event" render="Label" position="85,370" size="430,240" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="590,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="now_button_sel" pixmap="PLi-HD/border/epg_now_on.png" position="590,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="now_text" position="590,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NOW" font="Regular;20" valign="center" halign="center" />
-    <widget name="next_button" pixmap="PLi-HD/border/epg_off.png" position="780,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="next_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="780,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="next_text" position="780,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NEXT" font="Regular;20" valign="center" halign="center" />
+    <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="570,115" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="now_button_sel" pixmap="PLi-HD/border/epg_now_on.png" position="570,115" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="now_text" position="570,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NOW" font="Regular;20" valign="center" halign="center" />
+    <widget name="next_button" pixmap="PLi-HD/border/epg_off.png" position="765,115" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="next_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="765,115" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="next_text" position="765,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NEXT" font="Regular;20" valign="center" halign="center" />
     <widget name="more_button" pixmap="PLi-HD/border/epg_off.png" position="960,115" zPosition="2" size="180,40" alphatest="blend" />
     <widget name="more_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="960,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="more_text" position="960,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+    <widget name="more_text" position="960,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+  </screen>
+
+  <!-- EPG Search -->
+
+  <screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="list" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- EPG Search Setup -->
+
+  <screen name="EPGSearchSetup" title="EPGSearch Setup" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget source="help" render="Label" position="85,440" size="435,60" backgroundColor="background" transparent="1" font="Regular;20"/>
+    <widget name="config" position="590,110" size="600,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- GraphMultiEPG -->
@@ -988,19 +1011,9 @@
     </widget>
   </screen>
 
-  <!-- Location Box -->
-
-  <screen name="LocationBox" title="Location Box" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <widget name="target" position="85,600" size="1060,27" font="Regular;24" valign="right" />
-    <widget name="filelist" position="530,110" size="690,500" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="booklist" position="85,405" size="425,112" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-  </screen>
-
   <!-- Movie Selection -->
 
-  <screen name="MovieSelection" title="MovieSelection" position="fill" flags="wfNoBorder">
+  <screen name="MovieSelection" title="Movie Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
