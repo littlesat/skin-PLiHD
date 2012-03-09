@@ -825,9 +825,9 @@
 
   <!-- QuitMainloopScreen -->
 
-  <screen name="QuitMainloopScreen" position="center,center" size="400,160" flags="wfNoBorder">
-    <ePixmap pixmap="skin_default/icons/input_info.png" position="174,0" size="53,53" alphatest="on" />
-    <widget name="text" position="0,60" size="400,100" font="Regular;16" halign="center" />
+  <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
+    <ePixmap pixmap="skin_default/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
+    <widget name="text" position="c-200,c+5" size="400,100" font="Regular;16" halign="center" />
   </screen>
 
   <!-- Menus -->
