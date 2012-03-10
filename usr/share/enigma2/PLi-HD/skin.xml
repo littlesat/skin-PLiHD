@@ -1763,7 +1763,7 @@
 
   <!-- MessageBoxSimple -->
 
-  <screen name="MessageBoxSimpleTemplate" flags="wfNoBorder">
+  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
@@ -1793,10 +1793,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</applet>
-  </screen>
-
-  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
-    <panel name= "MessageBoxSimpleTemplate" />
   </screen>
 
   <!-- TimeDateInput -->
