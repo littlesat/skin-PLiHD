@@ -412,7 +412,7 @@
   <!-- Infobar Template -->
 
   <screen name="InfoBarTemplate">
-    <widget source="session.CurrentService" render="Picon" position="60,635" size="100,60" alphatest="on" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="60,635" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="221,573" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left" />
@@ -1763,7 +1763,7 @@
 
   <!-- MessageBoxSimple -->
 
-  <screen name="MessageBoxSimpleTemplate">
+  <screen name="MessageBoxSimpleTemplate" flags="wfNoBorder">
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
