@@ -1803,13 +1803,6 @@ self.instance.move(ePoint((1280-newwidth)/2,(720-wsize[1])/2))
     <panel name= "MessageBoxSimpleTemplate" />
   </screen>
 
-  <!-- QuitMainloopScreen -->
-
-  <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-    <ePixmap pixmap="skin_default/icons/input_info.png" position="50,c" size="53,53" alphatest="on" />
-    <widget name="text" position="100,c" size="520,200" font="Regular;22" halign="center"/>	
-  </screen>
-
   <!-- TimeDateInput -->
 
   <screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder" >
