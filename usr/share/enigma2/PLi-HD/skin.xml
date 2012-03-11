@@ -199,11 +199,11 @@
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/text.png" position="418,643" size="30,30" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="418,645" size="35,25" />
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-HD/buttons/text.png" position="970,643" size="30,30" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,645" size="35,25" />
   </screen>
 
   <screen name="ButtonTemplate_1">
@@ -826,7 +826,7 @@
   <!-- QuitMainloopScreen -->
 
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-    <ePixmap pixmap="skin_default/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
     <widget name="text" position="c-200,c+5" size="400,100" font="Regular;16" halign="center" />
   </screen>
 
@@ -1631,7 +1631,7 @@
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -1640,7 +1640,7 @@
   <screen name="UserDialog" position="fill" title="UserDialog" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="590,590" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
@@ -1757,7 +1757,7 @@
     <widget name="text" position="650,110" size="550,500" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="590,110" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="list" position="85,375" size="545,200" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" />
   </screen>
 
@@ -1767,7 +1767,7 @@
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="list" position="100,100" size="480,375" />
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
@@ -2119,7 +2119,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_4"/>
     <eLabel text="Edit Entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
 
@@ -3049,48 +3049,78 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <ePixmap pixmap="skin_default/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="titellabel" position="570,100" size="370,28" valign="center" font="Regular;22" foregroundColor="#f0b400" />
-    <widget name="sortlabel" position="570,128" size="370,28" font="Regular;17" foregroundColor="blue" />
-    <widget name="detailslabel" position="740,153" size="500,200" font="Regular;22" />
-    <widget name="contentlabel" position="570,375" size="670,225" font="Regular;22" />
-    <widget name="extralabel"   position="570,153" size="670,425" font="Regular;22" />
-    <widget name="photolabel" position="570,153" size="670,425" alphatest="on" />
-    <widget name="statusbar" position="84,500" size="460,17" font="Regular;15" foregroundColor="#cccccc" />
-    <widget name="poster" position="564,153" size="170,201" alphatest="on" />
-    <widget name="menu" position="570,153" size="585,450" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="servicemenu" position="84,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="black" foregroundColor="white" zPosition="4" transparent="0" scrollbarMode="showOnDemand" />
-    <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" />
-    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
-    <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_filled.png" transparent="1" />
-    <widget name="pageb1" pixmap="skin_default/buttons/key_1.png" position="732,588" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="pageb3" pixmap="skin_default/buttons/key_3.png" position="957,588" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="paget1" position="767,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
-    <widget name="paget3" position="932,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
-    <widget name="page" position="742,587" size="240,28" font="Regular;22" valign="center" halign="center" zPosition="2" transparent="1" />
-  </screen>
-
-  <screen name="CSFDSetup" position="fill" title="CSFD - Nastavení" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
-    <widget name="config" position="570,110" size="640,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="info" position="570,590" size="625,26" font="Regular;22" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="titellabel" position="570,100" size="450,28" valign="center" font="Regular;22" foregroundColor="#ff0000" backgroundColor="black" transparent="1" />
+    <widget name="sortlabel" position="570,128" size="450,28" font="Regular;17" foregroundColor="blue" backgroundColor="black" transparent="1" />
+    <widget name="detailslabel" position="740,153" size="500,200" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="contentlabel" position="570,375" size="670,225" zPosition="1" transparent="1" font="Regular;22"/>
+    <widget name="extralabel"   position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="photolabel" position="570,153" size="670,425" alphatest="blend" backgroundColor="black" />
+    <widget name="statusbar" position="85,460" size="480,20" font="Regular;16" zPosition="3" backgroundColor="black" transparent="1" />
+    <widget name="poster" position="564,153" size="170,201" alphatest="blend" backgroundColor="black" />
+    <widget name="menu" position="570,153" size="670,456" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="servicemenuTop" position="85,360" size="420,20" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;16" zPosition="4" />
+    <widget name="servicemenu" position="85,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" zPosition="4" transparent="0" scrollbarMode="showOnDemand"  enableWrapAround="1" />
+    <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" backgroundColor="black" transparent="1" />
+    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1" />
+    <widget name="starsbg0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_0.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars0" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_0.png" transparent="1" />
+    <widget name="starsbg50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_50.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars50" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1" />
+    <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars100" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1" />
+    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_1.png" position="720,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_3.png" position="935,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_left.png" position="755,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_right.png" position="970,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="page" position="790,587" size="145,28" font="Regular;22" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1" />
+    <widget name="tips_label" position="85,500" size="50,20" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
+    <widget name="tips_detail" position="85,525" size="450,40" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
+    <widget name="tips_icon" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_help.png" position="85,523" alphatest="blend" size="35,25" backgroundColor="black" zPosition="3" />
   </screen>
 
   <screen name="CSFDAbout" position="fill" title="Informace o pluginu CSFD" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
-    <widget name="label1" position="570,110" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label2" position="570,134" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label3" position="570,158" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label4" position="570,182" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label5" position="570,206" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label6" position="570,230" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label7" position="570,254" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label8" position="570,278" size="500,24" font="Regular;20" valign="center" />
+    <widget name="label1" position="570,110" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label2" position="570,134" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label3" position="570,158" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label4" position="570,182" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label5" position="570,206" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label6" position="570,230" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label7" position="570,254" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label8" position="570,278" size="600,24" font="Regular;20" valign="center" />
   </screen>
 
-  <screen name="CSFDVideoInfoScreen" position="fill" zPosition="10" title="Video" flags="wfNoBorder">
+  <screen name="CSFDVirtualKeyBoard" position="fill" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonYellow"/>
+    <widget name="header" position="590,110" size="605,30" font="Regular;24" transparent="1" noWrap="1" halign="left" />
+    <widget name="text" position="590,150" size="540,46" font="Regular;26" transparent="1" noWrap="1" halign="right" />
+    <widget name="list" position="590,220" size="540,225" selectionDisabled="1" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
+    <widget name="countryFlag" position="830,490" size="60,40" backgroundColor="#31000000" alphatest="on" />
+    <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="590,590" size="540,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" halign="center" transparent="1"/>
+  </screen>
+
+  <screen name="CSFDSetup" position="0,0" size="1280,720" title="CSFD - Nastavení" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="config" position="570,135" size="640,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="info" position="570,590" size="625,26" font="Regular;22" halign="center" foregroundColor="blue" transparent="1" />
+    <widget name="tabbar"  position="570,110" size="320,25" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png" />
+    <widget name="config0" position="570,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+    <widget name="config1" position="678,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+    <widget name="config2" position="783,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+  </screen>
+
+  <screen name="CSFDHistoryHD" position="fill" title="Historie změn v pluginu CSFD">
+    <panel name="PigTemplate"/>
+    <panel name="OKTemplate"/>
+    <widget name="text" position="570,110" size="630,500" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
+
+  <screen name="CSFDVideoInfoScreen" position="fill" title="Video" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="OKTemplate"/>
     <widget name="label1" position="590,110" size="500,22" font="Regular;20" valign="center" />
@@ -3138,13 +3168,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="590,110" size="605,50" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
-  <screen name="VirtualKeyBoardCSFD" position="fill" zPosition="2"  backgroundColor="#31000000" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="header" position="590,110" size="605,30" font="Regular;24" transparent="1" noWrap="1" halign="left" />
-    <widget name="text" position="590,150" size="540,46" font="Regular;26" transparent="1" noWrap="1" halign="right" />
-    <widget name="list" position="590,220" size="540,225" selectionDisabled="1" transparent="1" />
-    <widget name="countryFlag" position="830,490" size="60,40" backgroundColor="#31000000" alphatest="on" />
-    <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="590,590" size="540,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" halign="center" transparent="1"/>
+  <screen name="CSFDLCDSummary8000_7020hd" position="0,0" size="132,64">
+    <widget name="headline" position="6,0" size="120,14" font="FdLcD;14"/>
+    <widget name="infomovie" position="6,16" size="120,48" font="FdLcD;12"/>
+  </screen>
+
+  <screen name="CSFDLCDSummary800SE" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" foregroundColor="yellow" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" foregroundColor="white" font="FdLcD;10"/>
+  </screen>
+
+  <screen name="CSFDLCDSummary800" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" font="FdLcD;10"/>
+  </screen>
+
+  <screen name="CSFDLCDSummaryElse" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" font="FdLcD;10"/>
   </screen>
 
   <!-- XPower plugin -->
@@ -3449,8 +3490,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="languagetext" position="585,324" size="110,24" font="Regular;18" />
     <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />
     <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
-    <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="110,645" zPosition="1" size="35,25" transparent="1" alphatest="on" >
+    <widget name="HelpWindow" pixmap="PLi-HD/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="110,645" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 	<convert type="ConditionalShowHide" />
     </widget>
   </screen>
