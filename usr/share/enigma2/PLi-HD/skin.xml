@@ -826,7 +826,7 @@
   <!-- QuitMainloopScreen -->
 
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-    <ePixmap pixmap="skin_default/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
     <widget name="text" position="c-200,c+5" size="400,100" font="Regular;16" halign="center" />
   </screen>
 
@@ -1757,7 +1757,7 @@
     <widget name="text" position="650,110" size="550,500" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="590,110" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="list" position="85,375" size="545,200" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" />
   </screen>
 
@@ -1767,7 +1767,7 @@
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="list" position="100,100" size="480,375" />
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
