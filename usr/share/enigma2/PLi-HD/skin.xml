@@ -1256,7 +1256,7 @@
     <widget name="package" position="590,110" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="status" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="slider" position="594,294" size="592,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="84,500" size="1154,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="activityslider" position="85,500" size="1110,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1300,7 +1300,7 @@
     <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="85,630" size="1100,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="activityslider" position="85,500" size="1100,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
