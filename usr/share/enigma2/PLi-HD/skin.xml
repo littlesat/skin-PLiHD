@@ -3054,13 +3054,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="sortlabel" position="570,128" size="450,28" font="Regular;17" foregroundColor="blue" backgroundColor="black" transparent="1" />
     <widget name="detailslabel" position="740,153" size="500,200" zPosition="1" transparent="1" font="Regular;22" />
     <widget name="contentlabel" position="570,375" size="670,225" zPosition="1" transparent="1" font="Regular;22"/>
-    <widget name="extralabel"   position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="extralabel" position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" />
     <widget name="photolabel" position="570,153" size="670,425" alphatest="blend" backgroundColor="black" />
     <widget name="statusbar" position="85,460" size="480,20" font="Regular;16" zPosition="3" backgroundColor="black" transparent="1" />
     <widget name="poster" position="564,153" size="170,201" alphatest="blend" backgroundColor="black" />
     <widget name="menu" position="570,153" size="670,456" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <widget name="servicemenuTop" position="85,360" size="420,20" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;16" zPosition="4" />
-    <widget name="servicemenu" position="85,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" zPosition="4" transparent="0" scrollbarMode="showOnDemand"  enableWrapAround="1" />
+    <widget name="servicemenu" position="85,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" zPosition="4" transparent="1" scrollbarMode="showOnDemand"  enableWrapAround="1"/>
     <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" backgroundColor="black" transparent="1" />
     <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
     <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1" />
@@ -3118,6 +3118,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="PigTemplate"/>
     <panel name="OKTemplate"/>
     <widget name="text" position="570,110" size="630,500" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="calc_text" position="570,110" size="630,500" zPosition="3" transparent="1" />
   </screen>
 
   <screen name="CSFDVideoInfoScreen" position="fill" title="Video" flags="wfNoBorder">
