@@ -720,7 +720,7 @@
     <widget name="datetime" position="85,440" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,485" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
-    <widget source="session.Event_Now" render="Label" position="125,485" size="120,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
+    <widget source="session.Event_Now" render="Label" position="150,485" size="120,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
