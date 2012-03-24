@@ -116,11 +116,11 @@
     <eLabel position="0,0" size="1280,88" backgroundColor="dark" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" zPosition="2"/>
     <widget source="Title" render="Label" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget source="global.CurrentTime" render="Label" position="920,50" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-      <convert type="ClockToText">Date</convert>
-    </widget>
     <widget source="global.CurrentTime" render="Label" position="1070,30" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="920,50" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+      <convert type="ClockToText">Date</convert>
     </widget>
   </screen>
 
@@ -413,11 +413,11 @@
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="305,573" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,550" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;16" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
+      <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="430,550" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
@@ -2223,6 +2223,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen name="InputBox" position="fill" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <widget name="text" position="590,110" size="532,26" font="Regular;22" />
     <ePixmap pixmap="skin_default/vkey_text.png" position="585,140" size="542,40" zPosition="-4" alphatest="on" />
     <widget name="input" position="590,150" size="532,26" font="Regular;20" valign="center"/>
   </screen>
