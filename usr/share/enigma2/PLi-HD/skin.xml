@@ -199,11 +199,11 @@
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/text.png" position="418,643" size="30,30" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="418,645" size="35,25" />
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-HD/buttons/text.png" position="970,643" size="30,30" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,645" size="35,25" />
   </screen>
 
   <screen name="ButtonTemplate_1">
@@ -232,6 +232,12 @@
  <screen name="ButtonTemplate_YB">
     <panel name="ButtonYellow"/>
     <widget name="key_yellow" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonBlue"/>
+    <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+  </screen>
+
+  <screen name="ButtonTemplate_RGB">
+    <panel name="ButtonTemplate_2"/>
     <panel name="ButtonBlue"/>
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
@@ -406,7 +412,7 @@
   <!-- Infobar Template -->
 
   <screen name="InfoBarTemplate">
-    <widget source="session.CurrentService" render="Picon" position="60,635" size="100,60" alphatest="on" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="60,635" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="221,573" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left" />
@@ -480,7 +486,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1180,593" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="101,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
+    <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
     <widget source="session.FrontendStatus" render="Label" position="1100,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
@@ -682,8 +688,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
-    <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="list" position="530,110" size="690,510" itemHeight="30" font="Regular;26" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
 	  <convert type="ServiceName">Name</convert>
     </widget>
@@ -693,7 +698,7 @@
     </widget>
     <widget source="Event" render="Label" position="235,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText" />
+    <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="Event" render="Label" position="315,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
     <convert type="EventTime">EndTime</convert>
@@ -711,10 +716,11 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuTemplate"/>
+    <widget name="channel"  position="85,395" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,440" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,485" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
-    <widget source="session.Event_Now" render="Label" position="125,485" size="120,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
+    <widget source="session.Event_Now" render="Label" position="150,485" size="120,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -733,20 +739,38 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
-    <widget name="list" position="590,165" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Event" render="Label" position="85,370" size="430,240" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget name="date" position="570,90" size="620,24" transparent="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="list" position="570,165" size="620,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="Event" render="Label" position="85,370" size="430,240" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="590,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="now_button_sel" pixmap="PLi-HD/border/epg_now_on.png" position="590,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="now_text" position="590,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NOW" font="Regular;20" valign="center" halign="center" />
-    <widget name="next_button" pixmap="PLi-HD/border/epg_off.png" position="780,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="next_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="780,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="next_text" position="780,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NEXT" font="Regular;20" valign="center" halign="center" />
+    <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="570,115" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="now_button_sel" pixmap="PLi-HD/border/epg_now_on.png" position="570,115" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="now_text" position="570,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NOW" font="Regular;20" valign="center" halign="center" />
+    <widget name="next_button" pixmap="PLi-HD/border/epg_off.png" position="765,115" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="next_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="765,115" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="next_text" position="765,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NEXT" font="Regular;20" valign="center" halign="center" />
     <widget name="more_button" pixmap="PLi-HD/border/epg_off.png" position="960,115" zPosition="2" size="180,40" alphatest="blend" />
     <widget name="more_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="960,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="more_text" position="960,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+    <widget name="more_text" position="960,118" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+  </screen>
+
+  <!-- EPG Search -->
+
+  <screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="list" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- EPG Search Setup -->
+
+  <screen name="EPGSearchSetup" title="EPGSearch Setup" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <widget source="help" render="Label" position="85,440" size="435,60" backgroundColor="background" transparent="1" font="Regular;20"/>
+    <widget name="config" position="590,110" size="600,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- GraphMultiEPG -->
@@ -987,19 +1011,9 @@
     </widget>
   </screen>
 
-  <!-- Location Box -->
-
-  <screen name="LocationBox" title="Location Box" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <widget name="target" position="85,600" size="1060,27" font="Regular;24" valign="right" />
-    <widget name="filelist" position="530,110" size="690,500" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="booklist" position="85,405" size="425,112" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-  </screen>
-
   <!-- Movie Selection -->
 
-  <screen name="MovieSelection" title="MovieSelection" position="fill" flags="wfNoBorder">
+  <screen name="MovieSelection" title="Movie Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
@@ -1012,8 +1026,8 @@
     <widget source="session.CurrentService" render="Label" position="385,333" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <widget name="waitingtext" position="530,110" size="690,484" font="Regular;22" halign="center" valign="center" zPosition="4" />
-    <widget name="chosenletter" position="530,110" size="690,484" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
+    <widget name="waitingtext" position="530,110" size="690,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
+    <widget name="chosenletter" position="530,110" size="690,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
     <widget name="list" position="530,110" size="690,510" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
     <widget source="Service" render="Label" position="85,394" size="425,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
@@ -1141,34 +1155,30 @@
 
   <!-- Timers -->
 
-  <screen name="TimerEntry" position="fill" flags="wfNoBorder">
+  <screen name="TimerEntry" position="fill" title="Timer entry" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <!--panel name="KeyMenuInfoTemplate"/-->
     <panel name="CancelOKTemplate"/>
-    <eLabel text="Timer entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="TimerEditList" position="fill" flags="wfNoBorder">
+  <screen name="TimerEditList" position="fill" title="Timer Overview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <eLabel text="Timer Overview" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="timerlist" position="530,110" size="690,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <screen name="TimerLog" position="fill" flags="wfNoBorder">
+  <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <eLabel text="Timer log" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="loglist" position="530,110" size="690,275" scrollbarMode="showOnDemand" font="Regular;24" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="logentry" position="85,386" size="1135,225" font="Regular;24" />
   </screen>
 
-  <screen name="TimerSanityConflict" position="fill" flags="wfNoBorder">
+  <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <eLabel text="Timer sanity error" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,370" size="600,250" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer1" position="85,365" size="485,260" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -1239,7 +1249,7 @@
     <widget name="package" position="590,110" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="status" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="slider" position="594,294" size="592,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="84,500" size="1154,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="activityslider" position="85,630" size="1110,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1283,7 +1293,7 @@
     <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="85,630" size="1100,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="activityslider" position="85,630" size="1110,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
@@ -1614,7 +1624,7 @@
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -1623,7 +1633,7 @@
   <screen name="UserDialog" position="fill" title="UserDialog" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
+    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="590,590" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
@@ -1740,18 +1750,18 @@
     <widget name="text" position="650,110" size="550,500" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="590,110" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="list" position="85,375" size="545,200" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" />
   </screen>
 
   <!-- MessageBoxSimple -->
 
-  <screen name="MessageBoxSimpleTemplate">
+  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="list" position="100,100" size="480,375" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
+    <widget name="list" position="100,100" size="480,375" selectionPixmap="PLi-HD/buttons/sel.png"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
@@ -1763,21 +1773,19 @@ if self.type == self.TYPE_YESNO:
 	offset = 60
 wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
+if (64 &gt; wsizey):
+	wsizey = 64
 if (280 &gt; wsizex):
 	wsizex = 280
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex, 20)
+listsize = (wsizex, 50)
 self[&quot;list&quot;].instance.move(ePoint(0, textsize[1]))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</applet>
-  </screen>
-
-  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
-    <panel name= "MessageBoxSimpleTemplate" />
   </screen>
 
   <!-- TimeDateInput -->
@@ -1852,6 +1860,54 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="NimSetup" title="Reception Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Positioner setup -->
+
+  <screen name="PositionerSetup" title="Positioner setup" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyInfoTemplate"/>
+    <widget name="list" position="590,110" size="600,255" backgroundColor="secondBG" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <eLabel text="Frequency:" position="590,380" size="150,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="frequency_value" position="740,380" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <eLabel text="Symbolrate:" position="590,410" size="150,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="symbolrate_value" position="740,410" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <eLabel text="FEC:" position="590,440" size="150,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="fec_value" position="740,440" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="snr_db" position="680,495" size="200,25" backgroundColor="secondBG" foregroundColor="white" transparent="1" font="Regular;20" halign="center" />
+    <eLabel text="SNR:" position="590,520" size="80,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="snr_bar" position="680,520" size="200,25" backgroundColor="secondBG" transparent="1" borderWidth="1" />
+    <widget name="snr_percentage" position="890,520" size="80,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <eLabel text="BER:" position="590,550" size="80,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="ber_bar" position="680,550" size="200,25" backgroundColor="secondBG" transparent="1" borderWidth="1" />
+    <widget name="ber_value" position="890,550" size="80,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <eLabel text="Lock:" position="590,580" size="80,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="lock_state" position="680,580" size="200,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
+    <widget name="status_bar" position="85,450" size="420,25" font="Regular;20" foregroundColor="yellow" halign="center" />
+  </screen>
+
+  <!-- Positioner Setup Log -->
+
+  <screen name="PositionerSetupLog" position="fill" title="Positioner Setup Log" >
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="list" font="Console;16" position="590,110" size="600,340" />
+  </screen>
+
+  <!-- Tuner Screen -->
+
+  <screen name="TunerScreen" position="fill" title="Tune">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="590,110" size="600,350" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="introduction" position="590,470" size="600,30" font="Regular;23" />
+  </screen>
+
+  <!-- Rotor Nim Selection -->
+
+  <screen name="RotorNimSelection" position="fill" title="select Slot">
+    <panel name="PigTemplate"/>
+    <widget name="nimlist" position="590,110" size="600,100" />
   </screen>
 
   <!-- Satfinder -->
@@ -2030,7 +2086,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="Config" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <eLabel text="AutoBackup Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="status" position="590,320" size="540,130" font="Regular;16" />
     <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
@@ -2056,7 +2111,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_4"/>
     <eLabel text="Edit Entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
 
@@ -2193,12 +2248,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_4"/>
     <widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
     <widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
-    <widget name="filelist_text" position="590,110" size="110,40" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
-    <widget name="playlist_text" position="690,110" size="110,40" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
-    <widget name="filelist" position="590,150" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="playlist" position="590,150" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" halign="left"/>
-    <widget name="server_name" position="840,110" size="200,40" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="current_dir" position="600,590" size="600,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="filelist_text" position="590,110" size="110,25" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+    <widget name="playlist_text" position="690,110" size="110,25" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+    <widget name="server_name" position="840,110" size="200,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="current_dir" position="600,140" size="600,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="filelist" position="590,170" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="playlist" position="590,170" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" halign="left"/>
   </screen>
 
    <!-- MovieTagEditor -->
@@ -2274,6 +2329,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="input" position="590,210" size="480,40" font="Regular;50" halign="center" />
   </screen>
 
+  <screen name="PinInputPopup" position="center,center" size="500,160" title="Change pin code" flags="wfNoBorder">
+    <widget name="service" position="10,10" size="480,25" font="Regular;20" halign="center" />
+    <widget name="text" position="10,40" size="480,25" font="Regular;20" halign="center" />
+    <widget name="tries" position="10,70" size="480,25" font="Regular;20" halign="center" />
+    <widget name="input" position="10,110" size="480,40" font="Regular;50" halign="center" />
+  </screen>
+
   <!-- DVD Backup -->
 
   <screen name="DVDBackupProgress" position="fill" title="DVD Backup" flags="wfNoBorder">
@@ -2305,27 +2367,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="590,110" size="600,276" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2" />
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center" />
-  </screen>
-
-  <screen name="DVDMovieSelection" position="fill" title="Select a movie" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
-    <widget name="waitingtext" position="590,115" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center" />
-    <widget name="list" position="590,110" size="600,400" zPosition="2" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="590,525" zPosition="1" size="410,45" font="Regular;20">
-        <convert type="MovieInfo">ShortDescription</convert>
-    </widget>
-    <widget source="Service" render="Label" position="1110,525" zPosition="1" size="60,22" font="Regular;18" halign="right">
-        <convert type="ServiceTime">Duration</convert>
-	<convert type="ClockToText">AsLength</convert>
-    </widget>
-    <widget source="Service" render="Label" position="1000,545" zPosition="1" size="170,22" font="Regular;18" halign="right">
-	<convert type="MovieInfo">RecordServiceName</convert>
-    </widget>
-    <widget source="Service" render="Label" position="84,380" zPosition="1" size="420,190" font="Regular;18">
-	<convert type="EventName">ExtendedDescription</convert>
-    </widget>
-	<widget name="freeDiskSpace" position="630,595" size="540,20" font="Regular;19" valign="center" halign="right" />
   </screen>
 
   <!-- do not remove, is not solved yet
@@ -3008,48 +3049,79 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <ePixmap pixmap="skin_default/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="titellabel" position="570,100" size="370,28" valign="center" font="Regular;22" foregroundColor="#f0b400" />
-    <widget name="sortlabel" position="570,128" size="370,28" font="Regular;17" foregroundColor="blue" />
-    <widget name="detailslabel" position="740,153" size="500,200" font="Regular;22" />
-    <widget name="contentlabel" position="570,375" size="670,225" font="Regular;22" />
-    <widget name="extralabel"   position="570,153" size="670,425" font="Regular;22" />
-    <widget name="photolabel" position="570,153" size="670,425" alphatest="on" />
-    <widget name="statusbar" position="84,500" size="460,17" font="Regular;15" foregroundColor="#cccccc" />
-    <widget name="poster" position="564,153" size="170,201" alphatest="on" />
-    <widget name="menu" position="570,153" size="585,450" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="servicemenu" position="84,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="black" foregroundColor="white" zPosition="4" transparent="0" scrollbarMode="showOnDemand" />
-    <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" />
-    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
-    <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/starsbar_filled.png" transparent="1" />
-    <widget name="pageb1" pixmap="skin_default/buttons/key_1.png" position="732,588" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="pageb3" pixmap="skin_default/buttons/key_3.png" position="957,588" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="paget1" position="767,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
-    <widget name="paget3" position="932,588" size="25,28" font="Regular;19" valign="center" halign="center" zPosition="2" transparent="1" />
-    <widget name="page" position="742,587" size="240,28" font="Regular;22" valign="center" halign="center" zPosition="2" transparent="1" />
-  </screen>
-
-  <screen name="CSFDSetup" position="fill" title="CSFD - Nastavení" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
-    <widget name="config" position="570,110" size="640,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="info" position="570,590" size="625,26" font="Regular;22" foregroundColor="blue" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="titellabel" position="570,100" size="450,28" valign="center" font="Regular;22" foregroundColor="#ff0000" backgroundColor="black" transparent="1" />
+    <widget name="sortlabel" position="570,128" size="450,28" font="Regular;17" foregroundColor="blue" backgroundColor="black" transparent="1" />
+    <widget name="detailslabel" position="740,153" size="500,200" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="contentlabel" position="570,375" size="670,225" zPosition="1" transparent="1" font="Regular;22"/>
+    <widget name="extralabel" position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="photolabel" position="570,153" size="670,425" alphatest="blend" backgroundColor="black" />
+    <widget name="statusbar" position="85,460" size="480,20" font="Regular;16" zPosition="3" backgroundColor="black" transparent="1" />
+    <widget name="poster" position="564,153" size="170,201" alphatest="blend" backgroundColor="black" />
+    <widget name="menu" position="570,153" size="670,456" zPosition="3" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="servicemenuTop" position="85,360" size="420,20" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;16" zPosition="4" />
+    <widget name="servicemenu" position="85,380" size="420,200" selectionPixmap="PLi-HD/buttons/sel.png" zPosition="4" transparent="1" scrollbarMode="showOnDemand"  enableWrapAround="1"/>
+    <widget name="ratinglabel" position="1020,124" size="210,22" halign="center" font="Regular;21" foregroundColor="#f0b400" backgroundColor="black" transparent="1" />
+    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1020,102" zPosition="0" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1" />
+    <widget name="starsbg0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_0.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars0" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_0.png" transparent="1" />
+    <widget name="starsbg50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_50.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars50" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1" />
+    <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1020,102" zPosition="1" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars100" position="1020,102" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1" />
+    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_1.png" position="720,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_3.png" position="935,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_left.png" position="755,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_right.png" position="970,588" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="page" position="790,587" size="145,28" font="Regular;22" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1" />
+    <widget name="tips_label" position="85,500" size="50,20" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
+    <widget name="tips_detail" position="85,525" size="450,40" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
+    <widget name="tips_icon" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_help.png" position="85,523" alphatest="blend" size="35,25" backgroundColor="black" zPosition="3" />
   </screen>
 
   <screen name="CSFDAbout" position="fill" title="Informace o pluginu CSFD" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
-    <widget name="label1" position="570,110" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label2" position="570,134" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label3" position="570,158" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label4" position="570,182" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label5" position="570,206" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label6" position="570,230" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label7" position="570,254" size="500,24" font="Regular;20" valign="center" />
-    <widget name="label8" position="570,278" size="500,24" font="Regular;20" valign="center" />
+    <widget name="label1" position="570,110" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label2" position="570,134" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label3" position="570,158" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label4" position="570,182" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label5" position="570,206" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label6" position="570,230" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label7" position="570,254" size="600,24" font="Regular;20" valign="center" />
+    <widget name="label8" position="570,278" size="600,24" font="Regular;20" valign="center" />
   </screen>
 
-  <screen name="CSFDVideoInfoScreen" position="fill" zPosition="10" title="Video" flags="wfNoBorder">
+  <screen name="CSFDVirtualKeyBoard" position="fill" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonYellow"/>
+    <widget name="header" position="590,110" size="605,30" font="Regular;24" transparent="1" noWrap="1" halign="left" />
+    <widget name="text" position="590,150" size="540,46" font="Regular;26" transparent="1" noWrap="1" halign="right" />
+    <widget name="list" position="590,220" size="540,225" selectionDisabled="1" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/selected-menu.png"/>
+    <widget name="countryFlag" position="830,490" size="60,40" backgroundColor="#31000000" alphatest="on" />
+    <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="590,590" size="540,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" halign="center" transparent="1"/>
+  </screen>
+
+  <screen name="CSFDSetup" position="0,0" size="1280,720" title="CSFD - Nastavení" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="config" position="570,135" size="640,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="info" position="570,590" size="625,26" font="Regular;22" halign="center" foregroundColor="blue" transparent="1" />
+    <widget name="tabbar"  position="570,110" size="320,25" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png" />
+    <widget name="config0" position="570,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+    <widget name="config1" position="678,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+    <widget name="config2" position="783,110" size="108,22" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;18" />
+  </screen>
+
+  <screen name="CSFDHistoryHD" position="fill" title="Historie změn v pluginu CSFD">
+    <panel name="PigTemplate"/>
+    <panel name="OKTemplate"/>
+    <widget name="text" position="570,110" size="630,500" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="calc_text" position="570,110" size="630,500" zPosition="3" transparent="1" />
+  </screen>
+
+  <screen name="CSFDVideoInfoScreen" position="fill" title="Video" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="OKTemplate"/>
     <widget name="label1" position="590,110" size="500,22" font="Regular;20" valign="center" />
@@ -3097,13 +3169,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="590,110" size="605,50" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
-  <screen name="VirtualKeyBoardCSFD" position="fill" zPosition="2"  backgroundColor="#31000000" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="header" position="590,110" size="605,30" font="Regular;24" transparent="1" noWrap="1" halign="left" />
-    <widget name="text" position="590,150" size="540,46" font="Regular;26" transparent="1" noWrap="1" halign="right" />
-    <widget name="list" position="590,220" size="540,225" selectionDisabled="1" transparent="1" />
-    <widget name="countryFlag" position="830,490" size="60,40" backgroundColor="#31000000" alphatest="on" />
-    <eLabel text="Žlutým tlačítkem změníte jazyk pro klávesnici" position="590,590" size="540,25" font="Regular;22" foregroundColor="yellow" backgroundColor="#31000000" halign="center" transparent="1"/>
+  <screen name="CSFDLCDSummary8000_7020hd" position="0,0" size="132,64">
+    <widget name="headline" position="6,0" size="120,14" font="FdLcD;14"/>
+    <widget name="infomovie" position="6,16" size="120,48" font="FdLcD;12"/>
+  </screen>
+
+  <screen name="CSFDLCDSummary800SE" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" foregroundColor="yellow" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" foregroundColor="white" font="FdLcD;10"/>
+  </screen>
+
+  <screen name="CSFDLCDSummary800" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" font="FdLcD;10"/>
+  </screen>
+
+  <screen name="CSFDLCDSummaryElse" position="0,0" size="96,64">
+    <widget name="headline" position="0,0" size="96,14" font="FdLcD;12"/>
+    <widget name="infomovie" position="0,18" size="96,42" font="FdLcD;10"/>
   </screen>
 
   <!-- XPower plugin -->
@@ -3179,20 +3262,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="KeyMenuTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
     <widget name="nowpicon" position="1030,110" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" transparent="0" foregroundColor="white" />
-    <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" transparent="0" foregroundColor="white" />
-    <widget name="reference" position="590,140" zPosition="2" size="430,20" valign="center" halign="left" font="Regular;18" transparent="0" foregroundColor="white" />
-    <widget name="orbital" position="590,170" zPosition="2" size="100,20" valign="center" halign="left" font="Regular;18" transparent="0" foregroundColor="white" />
-    <widget name="text" position="590,280" zPosition="2" size="540,25" valign="center" halign="left" font="Regular;18" transparent="0" foregroundColor="white" />
-    <ePixmap pixmap="~/img/border.png" position="805,315" zPosition="1" size="110,70" transparent="0" />
+    <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" foregroundColor="white" />
+    <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
+    <widget name="reference" position="590,140" zPosition="2" size="430,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <widget name="orbital" position="590,170" zPosition="2" size="100,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <widget name="text" position="590,280" zPosition="2" size="540,25" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <ePixmap pixmap="~/img/border.png" position="805,315" zPosition="1" size="110,70" />
     <widget name="picon2l" position="590,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="picon1l" position="700,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="picon" position="810,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="picon1p" position="920,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="picon2p" position="1030,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="message" position="810,390" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" transparent="0" foregroundColor="white" />
-    <widget name="path" position="590,430" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" transparent="0" foregroundColor="white" />
-    <widget name="search" position="590,470" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" transparent="0" foregroundColor="white" />
+    <widget name="message" position="810,390" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
+    <widget name="path" position="590,430" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
+    <widget name="search" position="590,470" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
   </screen>
 
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
@@ -3200,6 +3283,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_4"/>
     <widget name="config" position="590,110" size="540,300" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="statusbar" position="590,598" size="540,22" font="Regular;18" backgroundColor="black" />
+  </screen>
+
+  <!-- Clear Memory -->
+
+  <screen name="SetupMenu" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="config" position="590,110" size="600,125" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget name="slide" position="1170,510" size="18,100" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop" />
+    <widget name="memory" position="590,590" size="600,25" zPosition="1" valign="center" halign="left" font="Regular;22" transparent="1"/>
+  </screen>
+
+  <screen name="ClearMemInfoScreen" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="memtext" font="Regular;17" position="790,105" size="200,520" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="memvalue" font="Regular;17" position="990,105" size="200,520" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+  </screen>
+
+  <screen name="ClearMemAutoScreen" position="1000,30" zPosition="2" size="250,30" title="ClearMem Status" flags="wfNoBorder" >
+	<widget name="message_label" font="Regular;24" position="0,0" zPosition="2" valign="center" halign="center" size="250,30" backgroundColor="secondBG" transparent="1" />
   </screen>
 
   <!-- CCCam InfoBar -->
@@ -3387,8 +3491,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="languagetext" position="585,324" size="110,24" font="Regular;18" />
     <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />
     <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
-    <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="110,645" zPosition="1" size="35,25" transparent="1" alphatest="on" >
+    <widget name="HelpWindow" pixmap="PLi-HD/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="110,645" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 	<convert type="ConditionalShowHide" />
     </widget>
   </screen>
