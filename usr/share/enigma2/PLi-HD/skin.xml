@@ -2796,7 +2796,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="590,110" size="600,510"  selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
-   <!-- Cross EPG -->
+  <!-- HDMI-CEC Setup -->
+
+  <screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="config" position="590,110" size="600,510" />
+    <widget source="current_address" render="Label" position="85,375" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
+    <widget source="fixed_address" render="Label" position="85,405" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
+  </screen>
+
+  <!-- Cross EPG -->
 
   <screen flags="wfNoBorder" name="CrossEPG_Menu" position="fill" title="CrossEPG Menu">
     <panel name="PigTemplate"/>
