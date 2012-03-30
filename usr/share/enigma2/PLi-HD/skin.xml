@@ -2786,6 +2786,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="previewo" position="590,380" size="600,300" zPosition="2" alphatest="blend"/>
   </screen>
 
+  <!-- EPG Import Sources -->
+
+  <screen name="EPGImportSources" position="fill" title="DVD Backup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="list" position="590,110" size="600,510"  selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+  </screen>
+
    <!-- Cross EPG -->
 
   <screen flags="wfNoBorder" name="CrossEPG_Menu" position="fill" title="CrossEPG Menu">
