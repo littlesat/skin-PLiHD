@@ -1787,6 +1787,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</applet>
   </screen>
 
+  <!-- QuitMainloopScreen -->
+
+  <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="c-70,c-39" size="135,34" alphatest="on" />
+    <widget name="text" position="c-590,c+5" size="1180,100" font="Regular;22" halign="center" />
+  </screen>
+
   <!-- TimeDateInput -->
 
   <screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder" >
