@@ -3238,7 +3238,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="HelpScrollLabel" position="630,110" size="520,400" font="Regular;20" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="~/img/author.png" position="630,530" zPosition="10" size="25,25" transparent="1" alphatest="on" />
     <widget name="version" position="670,535" size="420,20" font="Regular;18" />
-    <widget name="statusbar" position="630,600" size="470,20" font="Regular;18" />
+    <widget name="statusbar" position="630,600" size="470,22" font="Regular;18" />
   </screen>
 
     <screen flags="wfNoBorder" name="xpowerEdit" position="fill" title="XPower Configuration PC">
@@ -3246,7 +3246,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_4"/>
     <widget name="config" position="630,110" size="520,250" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="statusbar" position="610,300" size="420,20" font="Regular;18" />
+    <widget name="statusbar" position="610,300" size="420,22" font="Regular;18" />
   </screen>
 
   <!-- HDD Sleep plugin -->
