@@ -685,32 +685,29 @@
   <!-- EPG Stuff -->
 
   <screen name="EPGSelection" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <panel name="KeyInfoTemplate"/>
-    <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
-	  <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="Event" render="Label" position="85,412" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">ShortDate</convert>
-    </widget>
-    <widget source="Event" render="Label" position="235,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="315,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format: - %H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
-	  <convert type="EventName">Description</convert>
-    </widget>
-    <widget source="Event" render="Label" position="85,440" size="435,188" transparent="1" font="Regular; 20">
-	  <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-  </screen>
+		<panel name="SelectionTemplate"/>
+		<panel name="ButtonTemplate_4"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
+		<widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="85,420" size="435,164" transparent="1" font="Regular; 20">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<eLabel text="When:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
+		<widget source="Event" render="Label" position="155,590" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Event" render="Label" position="305,590" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
 
   <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
