@@ -3226,7 +3226,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		}
 	</convert>
     </widget>
-    <widget name="statusbar" position="610,590" size="420,20" font="Regular;18" />
+    <widget name="statusbar" position="610,590" size="420,22" font="Regular;18" />
   </screen>
 
   <screen flags="wfNoBorder" name="xpowerHelp" position="fill" title="XPower Help">
@@ -3282,6 +3282,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
     <widget name="reference" position="590,140" zPosition="2" size="430,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <widget name="orbital" position="590,170" zPosition="2" size="100,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <widget name="provider" position="590,200" zPosition="2" size="100,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <widget name="text" position="590,280" zPosition="2" size="540,25" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <ePixmap pixmap="~/img/border.png" position="805,315" zPosition="1" size="110,70" />
     <widget name="picon2l" position="590,320" zPosition="2" size="100,60" alphatest="on"/>
