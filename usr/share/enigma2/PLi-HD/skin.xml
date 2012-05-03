@@ -1446,11 +1446,11 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
     <eLabel text="Network Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="menulist" position="530,110" size="690,250" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="menulist" position="530,110" size="690,280" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="description" render="Label" position="530,365" size="690,200" transparent="1" font="Regular;21" valign="center" halign="center" />
-    <widget source="IFtext" render="Label" position="805,587" size="166,25" transparent="1" zPosition="10" font="Regular;21" halign="right" />
+    <widget source="IFtext" render="Label" position="800,587" size="165,25" transparent="1" zPosition="10" font="Regular;21" halign="right" />
     <widget source="IF" render="Label" position="970,587" size="250,25" transparent="1" zPosition="10" font="Regular;21" halign="left" />
-    <widget source="Statustext" render="Label" position="495,587" size="200,26" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="right" />
+    <widget source="Statustext" render="Label" position="495,587" size="200,25" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="right" />
     <widget name="statuspic" position="700,587" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
   </screen>
 
@@ -1459,7 +1459,7 @@
     <panel name="ButtonTemplate_RBS"/>
     <panel name="KeyTextTemplate"/>
     <eLabel text="Network Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="config" position="530,110" size="690,200" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="530,110" size="690,256" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS1" render="Label" position="990,450" size="230,25" transparent="1" zPosition="1" font="Regular;21" valign="center" halign="left" />
@@ -1483,8 +1483,7 @@
     <panel name="ButtonTemplate_3S"/>
     <eLabel text="Nameserver Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,450" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="introduction" render="Label" position="145,560" size="800,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
-    <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
+    <widget source="introduction" render="Label" position="530,590" size="690,25" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
   </screen>
 
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
@@ -1494,17 +1493,17 @@
     <widget source="list" render="Listbox" position="530,110" size="690,280" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (85,6),size = (440,28),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
-					MultiContentEntryText(pos = (85,43),size = (440,20),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2),# index 2 is the description
-					MultiContentEntryPixmapAlphaTest(pos = (2,8),size = (54,54),png = 3),# index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (63,46),size = (15,16),png = 4),# index 4 is the default pixmap
+					MultiContentEntryText(pos = (90,6),size = (440,28),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
+					MultiContentEntryText(pos = (90,43),size = (440,20),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2),# index 2 is the description
+					MultiContentEntryPixmapAlphaTest(pos = (5,8),size = (54,54),png = 3),# index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (70,42),size = (15,16),png = 4),# index 4 is the default pixmap
 				],
 				"fonts": [gFont("Regular",28),gFont("Regular",20)],
 				"itemHeight": 70
 				}
 		</convert>
     </widget>
-    <widget source="introduction" render="Label" position="145,560" size="800,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
+    <widget source="introduction" render="Label" position="530,590" size="690,25" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
   </screen>
 
   <screen name="NetworkAdapterTest" title="Network test" position="fill" flags="wfNoBorder">
@@ -1644,6 +1643,50 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_3S"/>
     <widget name="config" position="590,110" size="600,25" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- WirelessLan -->
+
+  <screen name="WlanStatus" position="fill" title="Wireless Network State" flags="wfNoBorder" >
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1S"/>
+    <widget source="LabelBSSID" render="Label" position="590,110" size="200,25" valign="left" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="LabelESSID" render="Label" position="590,150" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="LabelQuality" render="Label" position="590,190" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="LabelSignal" render="Label" position="590,230" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="LabelBitrate" render="Label" position="590,270" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="LabelEnc" render="Label" position="590,310" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="BSSID" render="Label" position="800,110" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="ESSID" render="Label" position="800,150" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="quality" render="Label" position="800,190" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="signal" render="Label" position="800,230" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="bitrate" render="Label" position="800,270" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+    <widget source="enc" render="Label" position="800,310" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
+
+    <widget source="IFtext" render="Label" position="800,587" size="165,25" zPosition="10" font="Regular;21" halign="right" transparent="1" />
+    <widget source="IF" render="Label" position="970,587" size="250,25" zPosition="10" font="Regular;21" halign="left" transparent="1" />
+    <widget source="Statustext" render="Label" position="495,587" size="200,25" zPosition="10" font="Regular;21" halign="right" transparent="1"/>
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="700,592" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+  </screen>
+
+  <screen name="WlanScan" position="fill" title="Choose a Wireless Network" flags="wfNoBorder" >
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3S"/>
+    <widget source="list" render="Listbox" position="570,110" size="630,350" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+	<convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryText(pos = (10, 2), size = (550, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+				MultiContentEntryText(pos = (10, 26), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+				MultiContentEntryText(pos = (200, 26), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
+				MultiContentEntryText(pos = (400, 2), size = (235, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
+				MultiContentEntryText(pos = (400, 26), size = (235, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
+			],
+		"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+		"itemHeight": 50
+		}
+	</convert>
+    </widget>
+    <widget source="info" render="Label" position="570,590" size="635,25" font="Regular;22" halign="center" valign="center" transparent="1" />
   </screen>
 
   <!-- Input Device Configuration -->
