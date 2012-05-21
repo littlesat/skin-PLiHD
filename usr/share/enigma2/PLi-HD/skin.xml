@@ -3643,4 +3643,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
   </screen>
 
+  <!-- Record Info Bar -->
+
+  <screen name="RecInfoBar" position="240,440" size="800,50" zPosition="-1" title="Records Info" backgroundColor="transparent" flags="wfNoBorder" >
+    <ePixmap pixmap="infinity-hd-full-info/recinfobar-fs8.png" position="0,0" zPosition="-1" size="800,200" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="40,36" zPosition="2" size="14,14" alphatest="on" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget name="chNum" position="208,35" size="40,18" zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="chTuner" position="60,35" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
+    <widget name="chProv" position="90,35" size="118,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+    <widget name="chName" position="260,35" size="191,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="timelen" position="710,35" size="60,18" zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="recName" position="458,35" size="261,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
+ </screen>
+
+
 </skin>
