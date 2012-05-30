@@ -933,8 +933,17 @@
 
   <!-- PVR State -->
 
-  <screen name="PVRState" position="40,115" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
-    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="center"></widget>
+  <screen name="PVRState" position="128,115" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
+    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
+  </screen>
+
+  <!-- Timeshift state -->
+
+  <screen name="TimeshiftState" position="70,70" zPosition="2" size="150,60" backgroundColor="transpBlack" flags="wfNoBorder">
+    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" align="center"/>
+    <widget source="session.CurrentService" render="Label" position="0,30" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" halign="center">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
   </screen>
 
   <!-- Radio Stuff -->
