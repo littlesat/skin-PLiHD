@@ -1835,8 +1835,8 @@ if (280 &gt; wsizex):
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex, 50)
-self[&quot;list&quot;].instance.move(ePoint(0, textsize[1]))
+listsize = (wsizex-4, 50)
+self[&quot;list&quot;].instance.move(ePoint(2, wsizey-52))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
