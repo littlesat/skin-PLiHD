@@ -2971,20 +2971,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="Virtual Keyboard" position="1010,643" size="300,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="HelpWindow" position="65,500" size="1,1" transparent="1" zPosition="3" alphatest="on" />
     <widget name="config" position="520,110" size="740,25" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" zPosition="2" />
-    <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="520,135" size="740,480" source="feedlist" transparent="1" zPosition="1">
+    <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" position="520,135" size="740,480" source="feedlist" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (80,[
 							MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
-							MultiContentEntryText(pos = (110, 1), size = (600, 24), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-							MultiContentEntryText(pos = (110, 25), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-							MultiContentEntryText(pos = (110, 47), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-							MultiContentEntryText(pos = (500, 25), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-							MultiContentEntryText(pos = (500, 47), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+							MultiContentEntryText(pos = (110, 5), size = (600, 24), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+							MultiContentEntryText(pos = (110, 29), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+							MultiContentEntryText(pos = (110, 51), size = (390, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+							MultiContentEntryText(pos = (500, 29), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+							MultiContentEntryText(pos = (500, 51), size = (200, 22), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
 						]),
 					"state": (80,[
-							MultiContentEntryText(pos = (10, 1), size = (690, 30), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (10, 29), size = (690, 35), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+							MultiContentEntryText(pos = (10, 10), size = (690, 30), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (10, 44), size = (690, 35), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
 						])
 					},
 					"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
@@ -3009,7 +3009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_1"/>
     <widget alphatest="on" name="thumbnail" position="0,0" size="130,98" />
     <widget font="Regular;20" foregroundColor="foreground" halign="left" name="title" position="520,100" size="670,50" transparent="1" valign="center" zPosition="5" />
-    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" size="520,106" source="infolist" transparent="1" zPosition="6">
+    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel2.png" selectionDisabled="1" size="520,106" source="infolist" transparent="1" zPosition="6">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (106,[
@@ -3027,13 +3027,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				}
 				</convert>
     </widget>
-    <widget alphatest="on" name="starsbg" pixmap="PLi-HD/dvr/starsbar_empty.png" position="190,555" size="100,20" transparent="1" zPosition="5" />
-    <widget name="stars" pixmap="PLi-HD/dvr/starsbar_filled.png" position="190,555" size="100,20" transparent="1" zPosition="6" />
-    <widget font="Regular;20" halign="left" name="author" position="70,400" size="290,24" transparent="1" valign="top" zPosition="10" />
-    <widget font="Regular;20" halign="right" name="duration" position="360,400" size="120,24" transparent="1" valign="top" zPosition="10" />
-    <widget font="Regular;20" halign="left" name="published" position="70,430" size="290,24" transparent="1" valign="top" zPosition="10" />
-    <widget font="Regular;20" halign="right" name="views" position="360,430" size="120,24" transparent="1" valign="top" zPosition="10" />
-    <widget font="Regular;20" halign="center" name="tags" position="70,460" size="410,100" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="author" position="85,380" size="300,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="right" name="duration" position="385,380" size="120,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="published" position="85,410" size="200,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="right" name="views" position="245,410" size="260,24" transparent="1" valign="top" zPosition="10" />
+    <widget font="Regular;20" halign="left" name="tags" position="85,440" size="415,115" transparent="1" valign="top" zPosition="10" />
+    <widget alphatest="on" name="starsbg" pixmap="PLi-HD/dvr/starsbar_empty.png" position="85,560" size="105,20" transparent="1" zPosition="5" />
+    <widget name="stars" pixmap="PLi-HD/dvr/starsbar_filled.png" position="85,560" size="105,20" transparent="1" zPosition="6" />
     <widget font="Regular;20" halign="left" name="detailtext" position="520,150" size="670,325" transparent="1" valign="top" zPosition="10" />
   </screen>
 
