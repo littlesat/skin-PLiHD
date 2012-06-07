@@ -1884,11 +1884,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="NimSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose Tuner" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget source="nimlist" render="Listbox" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" >
+    <widget source="nimlist" render="Listbox" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
-		    MultiContentEntryText(pos = (10, 5), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-		    MultiContentEntryText(pos = (50, 30), size = (630, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+		    MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+		    MultiContentEntryText(pos = (50, 28), size = (630, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 		  ],
 		  "fonts": [gFont("Regular", 20), gFont("Regular", 15)],
 		  "itemHeight": 80
