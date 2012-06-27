@@ -569,10 +569,10 @@
     </widget>
     <eLabel text="Now:" position="60,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
     <eLabel text="Next:" position="650,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1"  />
-    <widget source="session.Event_Now" render="Label" position="130,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="130,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="720,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Next" render="Label" position="720,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="60,178" size="570,370" font="Regular; 20" zPosition="1" transparent="1">
