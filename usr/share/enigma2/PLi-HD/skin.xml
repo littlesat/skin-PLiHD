@@ -567,13 +567,11 @@
     <widget source="session.FrontendStatus" render="Label" position="1168,65" size="50,26" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel text="Now:" position="60,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-    <eLabel text="Next:" position="650,140" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1"  />
-    <widget source="session.Event_Now" render="Label" position="130,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
-      <convert type="EventName">Name</convert>
+    <widget source="session.Event_Now" render="Label" position="60,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+      <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="720,140" size="500,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
-      <convert type="EventName">Name</convert>
+    <widget source="session.Event_Next" render="Label" position="650,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+      <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="60,178" size="570,370" font="Regular; 20" zPosition="1" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
@@ -650,8 +648,7 @@
     <widget source="ServiceEvent" render="Label" position="85,420" size="435,160" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-    <widget source="ServiceEvent" render="NextEpgInfo" position="148,590" size="372,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="85,590" size="435,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -724,9 +721,8 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <eLabel text="Next:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-    <widget source="session.Event_Next" render="Label" position="148,590" size="435,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
-      <convert type="EventName">Name</convert>
+    <widget source="session.Event_Next" render="Label" position="85,590" size="435,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
+      <convert type="EventName">NameNext</convert>
     </widget>
   </screen>
 
