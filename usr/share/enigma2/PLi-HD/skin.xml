@@ -685,29 +685,29 @@
   <!-- EPG Stuff -->
 
   <screen name="EPGSelection" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
-		<panel name="ButtonTemplate_4"/>
-		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
-		<widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="85,420" size="435,164" transparent="1" font="Regular; 20">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<eLabel text="When:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-		<widget source="Event" render="Label" position="155,590" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="Event" render="Label" position="305,590" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-	</screen>
+    <panel name="SelectionTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyInfoTemplate"/>
+    <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="85,420" size="435,164" transparent="1" font="Regular; 20">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <eLabel text="When:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
+    <widget source="Event" render="Label" position="155,590" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">ShortDate</convert>
+    </widget>
+    <widget source="Event" render="Label" position="305,590" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+  </screen>
 
   <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
@@ -2140,6 +2140,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="Config" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
     <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="status" position="590,320" size="540,130" font="Regular;16" />
     <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
@@ -2429,7 +2430,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="Video" position="0,0" size="0,0" />
     <widget name="SeekState" position="0,0" />
     <widget source="cutlist" position="0,0" render="Listbox" >
-        <convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 	        {"template": [
 				MultiContentEntryText(text = 1),
 				MultiContentEntryText(text = 2)
@@ -2437,7 +2438,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		 "fonts": [gFont("Regular", 18)],
 		 "itemHeight": 20
 		}
-	</convert>
+      </convert>
     </widget>
     <widget name="Timeline" position="0,0" />
   </screen-->
@@ -2674,7 +2675,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="State" position="0,650" size="1280,70"  font="Regular;20" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
   </screen>
 
-
   <!--GP2 - Where is this used??? -->
 
   <gstyle>
@@ -2688,7 +2688,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
     <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
     <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-  </screen>"""
+  </screen>
 
   <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
@@ -3294,7 +3294,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="statusbar" position="630,600" size="470,22" font="Regular;18" />
   </screen>
 
-    <screen flags="wfNoBorder" name="xpowerEdit" position="fill" title="XPower Configuration PC">
+  <screen flags="wfNoBorder" name="xpowerEdit" position="fill" title="XPower Configuration PC">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <widget name="config" position="630,110" size="520,250" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
@@ -3489,7 +3489,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="0,0" size="0,0" name="RassLogo"/>
   </screen>
 
-<!-- Shoutcast -->
+  <!-- Shoutcast -->
 
   <screen name="ShoutcastTemplate">
     <panel name="PigLessTemplate"/>
@@ -3522,7 +3522,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="filelist" position="520,140" size="740,470" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
-<!-- unwetterZentrale -->
+  <!-- unwetterZentrale -->
+
   <screen flags="wfNoBorder" name="PictureView" position="fill" title="UWZ" >
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
@@ -3543,7 +3544,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="thumbland" position="85,375" zPosition="2" size="100,40" />
   </screen>
 
-	<!-- Trafficinfo -->	
+  <!-- Trafficinfo -->	
+
   <screen name="TrafficInfoMain" position="fill" title="Verkehrsinformation">
     <panel name="PigTemplate"/>
     <widget name="sectionlist" position="590,110" size="600,205" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
