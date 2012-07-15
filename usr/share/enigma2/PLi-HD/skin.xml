@@ -1204,7 +1204,7 @@
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="590,110" size="600,50" zPosition="-1" transparent="1" font="Regular;23" valign="center" halign="center" />
-    <widget name="list" position="590,110" size="600,450" zPosition="3" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="590,110" size="600,500" zPosition="3" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
