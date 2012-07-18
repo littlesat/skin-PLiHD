@@ -808,6 +808,22 @@
     <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,377" size="19,250" zPosition="2" alphatest="on" />
   </screen>
 
+  <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="KeyInfoTemplate"/>
+    <widget name="timeline_text" position="50,110" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="50,140" size="1180,490" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,137" size="19,496" zPosition="2" alphatest="on" />
+  </screen>
+
   <screen name="GraphMultiEpgSetup" position="fill" title="Electronic Program Guide Setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
@@ -1227,7 +1243,7 @@
 
   <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_4S"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <widget source="introduction" render="Label" position="85,400" size="417,200" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
   </screen>
@@ -1308,7 +1324,6 @@
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1S"/>
-    <panel name="KeyMenuTemplate"/>
     <widget source="menu" render="Listbox" position="590,110" size="600,500" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 			{"template": [
