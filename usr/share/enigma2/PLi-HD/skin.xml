@@ -2234,8 +2234,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <eLabel text="RemoteTimer Timerlist" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
-    <widget name="timerlist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="590,110" size="600,490" zPosition="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="timerlist" position="590,110" size="600,490" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="RemoteTimerEPGList" position="fill" flags="wfNoBorder">
