@@ -727,13 +727,19 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,440" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="duration" position="85,485" size="450,30" transparent="1" font="Regular;22" halign="left" />
+    <widget name="duration" position="85,485" size="65,30"  transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="150,485" size="120,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="85,590" size="435,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="85,515" size="450,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="left">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="85,545" size="450,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="left">
+      <convert type="EventName">Rating</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="85,590" size="450,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
   </screen>
@@ -806,8 +812,14 @@
     <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,145" size="710,208" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="520,145" size="710,188" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="Event" render="Label" position="520,333" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1130,333" size="90,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18">
+      <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
