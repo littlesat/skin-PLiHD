@@ -1095,6 +1095,7 @@
     <widget source="Service" render="Label" position="255,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
+    <widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="900,60" zPosition="10" size="45,24" transparent="1" alphatest="on"/>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
 
