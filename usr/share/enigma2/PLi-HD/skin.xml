@@ -812,7 +812,7 @@
     <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,145" size="710,188" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="520,145" size="710,184" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="520,333" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18">
