@@ -839,12 +839,12 @@
     <panel name="KeyInfoTemplate"/>
     <widget name="timeline_text" position="50,110" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="50,140" size="1180,490" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
-    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
-    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
-    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
-    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
-    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
+    <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline_now" pixmap="PLi-HD/window/timeline-now.png" position="4,137" size="19,496" zPosition="2" alphatest="on" />
   </screen>
 
