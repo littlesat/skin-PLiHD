@@ -3710,4 +3710,37 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="recName" position="458,5" size="261,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black"  />
   </screen>
 
+  <!-- SystemTools -->
+
+  <screen name="SystemToolsSc" position="fill" title="System Tools Main Menu" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_3"/>
+    <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="SystemToolsConfig" position="fill" title="System Tools Config Screen" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="config" position="590,110" size="650,466" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="SystemToolsInf" position="fill" title="System Tools Info Menu" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="SystemToolsSwap" position="fill" title="System Tools Swapfile Menu" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="SystemToolsTextBox" position="fill" title="System Tools Text Box" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="text" position="510,110" size="760,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+  <screen name="SystemToolsConsole" position="fill" title="System Tools Console" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_2"/>
+    <widget name="text" position="510,110" size="770,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
 </skin>
