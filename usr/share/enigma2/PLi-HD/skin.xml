@@ -815,10 +815,10 @@
     <widget source="Event" render="Label" position="520,145" size="710,185" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,330" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
+    <widget source="Event" render="Label" position="520,335" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="Event" render="Label" position="1130,330" size="100,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
+    <widget source="Event" render="Label" position="1030,335" size="200,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
