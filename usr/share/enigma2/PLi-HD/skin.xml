@@ -710,8 +710,7 @@
     <widget source="Event" render="Label" position="85,420" size="435,164" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <eLabel text="When:" position="85,590" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" />
-    <widget source="Event" render="Label" position="155,590" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="85,590" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
