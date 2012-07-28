@@ -701,7 +701,7 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
+    <widget source="Service" render="Label" position="85,30" size="1000,55" zPosition="1" transparent="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
