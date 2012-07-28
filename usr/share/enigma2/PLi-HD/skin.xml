@@ -573,7 +573,7 @@
     <widget source="session.Event_Now" render="Label" position="60,170" size="470,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="530,170" size="100,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Now" render="Label" position="430,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="60,208" size="570,340" font="Regular; 20" zPosition="1" transparent="1">
@@ -585,7 +585,7 @@
     <widget source="session.Event_Next" render="Label" position="650,170" size="470,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1120,170" size="100,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Next" render="Label" position="1030,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,208" size="570,340" font="Regular; 20" zPosition="1" transparent="1">
@@ -814,10 +814,10 @@
     <widget source="Event" render="Label" position="520,145" size="710,185" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,330" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
+    <widget source="Event" render="Label" position="520,335" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="Event" render="Label" position="1130,330" size="100,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
+    <widget source="Event" render="Label" position="1030,335" size="200,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
