@@ -975,7 +975,7 @@
   <!-- Timeshift state -->
 
   <screen name="TimeshiftState" position="128,115" zPosition="0" size="150,65" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" align="left"/>
+    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
     <widget source="session.CurrentService" render="Label" position="0,35" size="150,30" backgroundColor="transparent" borderWidth="2" font="Regular;25" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
