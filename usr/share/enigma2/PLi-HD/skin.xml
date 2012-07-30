@@ -1090,7 +1090,7 @@
     <widget source="Service" render="Label" position="85,600" size="120,25" transparent="1" foregroundColor="grey" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="205,600" size="325,25" foregroundColor="grey" font="Regular;20" />
+    <widget name="freeDiskSpace" position="175,600" size="325,25" foregroundColor="grey" font="Regular;20" transparent="1" halign="right"/>
     <widget source="Service" render="Label" position="255,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
