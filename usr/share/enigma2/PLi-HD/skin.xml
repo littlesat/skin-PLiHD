@@ -146,12 +146,12 @@
 
   <screen name="PigTemplate">
     <panel name="SelectionTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="120,34" alphatest="on" />
   </screen>
 
   <screen name="PigLessTemplate">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="120,34" alphatest="on" />
   </screen>
 
   <screen name="MenuTemplate">
