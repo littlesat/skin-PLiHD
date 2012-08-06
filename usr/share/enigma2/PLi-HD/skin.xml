@@ -3743,4 +3743,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="text" position="510,110" size="770,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <!-- Videoenhancement -->
+
+  <screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="config" position="590,110" size="610,350" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget source="introduction" render="Label" position="590,590" size="610,23" zPosition="1" font="Regular;20" halign="center"/>
+  </screen>
+
+  <screen name="VideoEnhancementPreview" position="0,0" size="1280,720" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,630" size="1280,90" zPosition="-1" />
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="config" position="590,635" size="610,50" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="#20101010" zPosition="1"/>
+    <widget source="introduction" render="Label" position="590,685" size="610,23" zPosition="1" font="Regular;20" halign="center" transparent="1" />
+  </screen>
 </skin>
