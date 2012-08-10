@@ -66,9 +66,9 @@
     <color name="ListboxSelectedBackground" color="selectedBG"></color>
     <color name="ListboxSelectedForeground" color="selectedFG"></color>
     <color name="ListboxMarkedBackground" color="un40a0aa0"></color>
-    <color name="ListboxMarkedForeground" color="foreground"></color>
+    <color name="ListboxMarkedForeground" color="red"></color>
     <color name="ListboxMarkedAndSelectedBackground" color="un4a00a0a"></color>
-    <color name="ListboxMarkedAndSelectedForeground" color="foreground"></color>
+    <color name="ListboxMarkedAndSelectedForeground" color="red"></color>
     <color name="WindowTitleForeground" color="foreground"></color>
     <color name="WindowTitleBackground" color="background"></color>
     <borderset name="bsWindow">
