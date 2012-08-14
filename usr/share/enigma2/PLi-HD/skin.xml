@@ -146,12 +146,12 @@
 
   <screen name="PigTemplate">
     <panel name="SelectionTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="120,34" alphatest="on" />
   </screen>
 
   <screen name="PigLessTemplate">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="135,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="85,590" size="120,34" alphatest="on" />
   </screen>
 
   <screen name="MenuTemplate">
@@ -701,7 +701,7 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Service" render="Label" position="85,30" size="1000,55" zPosition="1" transparent="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="left">
+    <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
@@ -732,10 +732,10 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,515" size="450,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="85,515" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;22" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,555" size="450,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="85,555" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;22" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="85,590" size="450,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
@@ -3768,6 +3768,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
     <widget name="text" position="510,110" size="770,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <!-- Videoenhancement -->
+
+  <screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="config" position="590,110" size="610,350" itemHeight="25" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget source="introduction" render="Label" position="590,590" size="610,23" zPosition="1" font="Regular;20" halign="center"/>
+  </screen>
+
+  <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,630" size="1280,90" zPosition="-1" />
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
+    <panel name="ButtonTemplate_2S"/>
+    <widget name="config" position="590,635" size="610,50" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="#20000000" zPosition="1"/>
+    <widget source="introduction" render="Label" position="590,685" size="610,23" zPosition="1" font="Regular;20" halign="center" transparent="1" />
   </screen>
 
 </skin>
