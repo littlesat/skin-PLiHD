@@ -3500,27 +3500,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- Foreca Weather forecast -->
 
   <screen name="ForecaTemplate">
-    <panel name="PigTemplate"/>
+    <panel name="BasicTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
   </screen>
 
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="520,110" size="740,426" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1100,426" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_4S"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="Titel2" render="Label" position="85,375" zPosition="3" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget source="Titel3" render="Label" position="85,375" zPosition="2" size="425,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="520,110" size="740,450" transparent="1" />
+    <widget source="Titel2" render="Label" position="80,110" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget source="Titel3" render="Label" position="80,110" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="380,110" size="820,450" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="520,110" size="740,510" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
@@ -3536,7 +3536,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="520,110" size="740,460" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
@@ -3547,7 +3547,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="520,110" size="700,500" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="80,110" size="1120,500" transparent="1" />
   </screen>
 
   <!-- RDS InfoDisplay -->
