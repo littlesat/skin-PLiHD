@@ -1289,6 +1289,9 @@
   <screen name="ServiceInfo" position="fill" flags="wfNoBorder">
     <panel name="ServiceInfoSimple"/>
     <panel name="ButtonTemplate4"/>
+    <widget source="session.CurrentService" render="Label" position="250,600" size="950,20" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="right">
+        <convert type="ServiceInfo">HasHBBTV</convert>
+    </widget>
   </screen>
 
   <!-- Softwaremanager -->
