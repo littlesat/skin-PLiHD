@@ -752,7 +752,7 @@
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="date" position="570,90" size="620,24" transparent="1" font="Regular;20" valign="center" halign="center" />
     <widget name="list" position="570,165" size="620,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="Event" render="Label" position="85,370" size="430,240" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="85,370" size="430,253" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="570,115" zPosition="2" size="180,40" alphatest="blend" />
