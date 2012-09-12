@@ -987,9 +987,10 @@
 
   <!-- NumberZap -->
 
-  <screen name="NumberZap" title="Channel" position="100,45" size="434,64" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="NumberZap" title="Channel" position="100,45" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="channel" position="0,0" size="120,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
     <widget name="number" position="120,0" size="100,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+    <widget name="servicename" position="0,45" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
   </screen>
 
   <!-- PVR State -->
