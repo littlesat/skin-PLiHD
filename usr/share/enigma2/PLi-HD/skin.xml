@@ -889,7 +889,7 @@
     <panel name="ButtonTemplate_2S"/>
     <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="description" position="85,360" size="417,200" font="Regular;20" valign="top" />
+    <widget name="description" position="85,380" size="417,200" font="Regular;20" valign="top" />
   </screen>
 
   <!-- Scan setup -->
