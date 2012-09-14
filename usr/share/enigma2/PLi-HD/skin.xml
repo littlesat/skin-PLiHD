@@ -896,17 +896,18 @@
 
   <screen name="ScanSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Service scan" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="introduction" position="85,360" size="417,75" font="Regular;20" halign="center" />
+    <widget name="introduction" position="85,380" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <!-- Scan simple -->
 
   <screen name="ScanSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Service scan" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="footer" position="85,380" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <!-- Service Scan -->
@@ -930,7 +931,7 @@
     </widget>
     <widget name="network" position="180,30" size="330,20" zPosition="2" font="Regular;20" transparent="1"/>
     <widget name="transponder" position="180,55" size="330,20" zPosition="2" font="Regular;20" transparent="1"/>
-    <widget name="scan_state" position="80,110" zPosition="2" size="400,20" font="Regular;18" />
+    <widget name="scan_state" position="80,110" zPosition="2" size="500,20" font="Regular;18" />
     <widget name="pass" position="80,110" size="400,20" font="Regular;18" />
     <widget name="scan_progress" position="80,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
     <widget name="servicelist" position="80,170" size="400,265" selectionDisabled="1" />
