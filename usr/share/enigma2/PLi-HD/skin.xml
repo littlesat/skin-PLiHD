@@ -90,7 +90,7 @@
   <!-- Templates -->
 
   <screen name="PlayerTemplate">
-    <widget source="session.CurrentService" render="Label" position="224,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="c-416,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="infobarBG" position="120,56" size="1040,14" zPosition="0"/>
@@ -110,7 +110,7 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="128,70" size="145,21" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="left">
+    <widget source="session.CurrentService" render="Label" position="c-123,70" size="146,21" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
   </screen>
