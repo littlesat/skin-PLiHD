@@ -2617,6 +2617,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="infotext" render="Label" font="Regular;22" position="530,110" size="690,500" transparent="1" />
   </screen>
 
+  <screen name="VPS_check_on_instanttimer" position="center,center" size="540,110" title="VPS-Plugin" flags="wfNoBorder">
+    <widget source="infotext" render="Label" position="10,10" size="520,90" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="white" />
+  </screen>
+
   <!-- TempFanControl -->
 
   <screen name="TempFanControl" position="fill" title="Fan Control" flags="wfNoBorder">
