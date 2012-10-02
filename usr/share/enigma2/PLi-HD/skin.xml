@@ -2357,7 +2357,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
 
   <screen name="Pic_Full_View" position="fill" title="Picture" flags="wfNoBorder">
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG" />
     <widget name="pic" position="fill" zPosition="1" alphatest="on" />
     <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
