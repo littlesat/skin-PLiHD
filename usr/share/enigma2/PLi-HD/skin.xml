@@ -2092,7 +2092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
      <convert type="FrontendInfo">LOCK</convert>
      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <widget name="config" position="480,300" size="660,400" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="480,300" size="660,320" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
   </screen>
 
