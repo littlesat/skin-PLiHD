@@ -1122,7 +1122,7 @@
     <widget source="Service" render="Label" position="255,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
+    <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png,PLi-HD/icons/faz.png,PLi-HD/icons/fza.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="movie_off" pixmaps="PLi-HD/icons/ask.png,PLi-HD/icons/movielist.png,PLi-HD/icons/quit.png,PLi-HD/icons/pause.png,PLi-HD/icons/playlist.png,PLi-HD/icons/playlistquit.png,PLi-HD/icons/loop.png" position="865,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
@@ -1373,7 +1373,7 @@
     <panel name="PigTemplate"/>
     <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
-    <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
+    <widget name="slider" position="594,294" size="601,17" zPosition="2" transparent="1" />
     <widget name="activityslider" position="85,630" size="1110,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
@@ -1554,7 +1554,7 @@
     <widget source="Gateway" render="Label" position="560,510" size="200,25" zPosition="1" font="Regular;19" />
     <widget source="Adaptertext" render="Label" position="400,550" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right" />
     <widget source="Adapter" render="Label" position="680,550" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left" />
-    <widget source="introduction2" render="Label" position="400,585" size="400,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
+    <widget source="introduction2" render="Label" position="300,585" size="600,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
     <eLabel text="Virtual Keyboard" position="460,645" size="300,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="HelpWindow" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
@@ -1966,6 +1966,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</widget>
   </screen>
 
+  <!-- AutoDiseqC -->
+
+  <screen name="AutoDiseqc" title="         Auto DiseqC" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <panel name="ButtonTemplate_2S"/>
+    <ePixmap pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
+    <widget source="statusbar" render="Label" position="85,110" zPosition="10" size="400,60" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+    <widget source="tunerstatusbar" render="Label" position="85,170" zPosition="10" size="400,30" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+    <widget name="config" position="85,220" size="400,300" scrollbarMode="showOnDemand" />
+  </screen>
+
   <!-- FastScan -->
 
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -1974,10 +1985,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="introduction"  position="85,530" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
-  <screen name="FastScanStatus" position="center,center" size="420,180" title="Fast Scan">
-    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="on" />
-    <widget name="scan_state" position="10,120" zPosition="2" size="400,30" font="Regular;18" />
-    <widget name="scan_progress" position="10,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+  <screen name="FastScanStatus" title="         Fast Scan" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on" />
+    <widget name="scan_state" position="85,110" zPosition="2" size="400,40" font="Regular;22" />
+    <widget name="scan_progress" position="85,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
   </screen>
 
   <!-- Nim setup -->
@@ -2080,7 +2092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
      <convert type="FrontendInfo">LOCK</convert>
      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <widget name="config" position="480,300" size="660,400" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="480,300" size="660,320" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
   </screen>
 
@@ -2345,13 +2357,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
 
   <screen name="Pic_Full_View" position="fill" title="Picture" flags="wfNoBorder">
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
-    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG" />
+    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
     <widget name="pic" position="fill" zPosition="1" alphatest="on" />
-    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
+    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="black" transparent="1" />
     <widget name="point" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
     <widget name="play_icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
-    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
+    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
   </screen>
 
   <!-- VLC Player -->
@@ -2603,6 +2614,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="VPS_check_PDC_Screen" position="fill" title="VPS-Plugin" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="infotext" render="Label" font="Regular;22" position="530,110" size="690,500" transparent="1" />
+  </screen>
+
+  <screen name="VPS_check_on_instanttimer" position="center,center" size="540,110" title="VPS-Plugin" flags="wfNoBorder">
+    <widget source="infotext" render="Label" position="10,10" size="520,90" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="white" />
   </screen>
 
   <!-- TempFanControl -->
@@ -3444,11 +3459,38 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="ClearMemInfoScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="memtext" font="Regular;17" position="790,105" size="200,520" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="memvalue" font="Regular;17" position="990,105" size="200,520" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="memtext" font="Regular;14" position="790,95" size="200,530" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="memvalue" font="Regular;14" position="990,95" size="200,530" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
   </screen>
 
   <screen name="ClearMemAutoScreen" position="1000,30" zPosition="2" size="250,30" title="ClearMem Status" flags="wfNoBorder" >
+	<widget name="message_label" font="Regular;24" position="0,0" zPosition="2" valign="center" halign="center" size="250,30" backgroundColor="secondBG" transparent="1" />
+  </screen>
+
+  <!-- Cache Flush -->
+
+  <screen name="CacheFlushSetupMenu" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="config" position="590,110" size="600,250" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget name="min_free_kb" position="590,475" size="600,25" font="Regular;18" zPosition="1" valign="center" transparent="1" />
+    <widget name="slide" position="1170,510" size="18,100" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop" />
+    <widget name="memory" position="590,590" size="600,25" zPosition="1" valign="center" halign="left" font="Regular;22" transparent="1"/>
+  </screen>
+
+  <screen name="CacheFlushInfoScreen" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="lmemtext" font="Regular;16" position="570,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="lmemvalue" font="Regular;16" position="720,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemtext" font="Regular;16" position="970,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemvalue" font="Regular;16" position="1120,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pfree" position="815,232" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pused" position="815,489" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="slide" position="890,105" size="18,515" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
+  </screen>
+
+  <screen name="CacheFlushAutoScreen" position="1000,30" zPosition="2" size="250,30" title="CacheFlush Status" flags="wfNoBorder" >
 	<widget name="message_label" font="Regular;24" position="0,0" zPosition="2" valign="center" halign="center" size="250,30" backgroundColor="secondBG" transparent="1" />
   </screen>
 
@@ -3729,16 +3771,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <!-- Record Info Bar -->
 
-  <screen name="RecInfoBar" position="240,540" size="800,20" zPosition="1" backgroundColor="transpBlack" title="Records Info"  flags="wfNoBorder" >
-    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="15,8" zPosition="1" size="14,14" alphatest="on" >
+  <screen name="RecInfoBar" position="40,40" size="1280,30" zPosition="1"  backgroundColor="transparent" title="Records Info"  flags="wfNoBorder" >
+    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget name="chNum"   position="208,5"  size="40,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"  />
-    <widget name="chTuner"  position="60,5" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black"  />
-    <widget name="chProv"  position="90,5" size="118,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black"  />
-    <widget name="chName"  position="260,5" size="225,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"  />
-    <widget name="timelen" position="735,5" size="60,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"  />
-    <widget name="recName" position="458,5" size="261,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black"  />
+    <widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="transparent" borderColor="black" borderWidth="3" />
+    <widget name="chProv" position="50,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="transparent" borderColor="black" borderWidth="3" />
+    <widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="transparent" borderColor="black" borderWidth="3" />
+    <widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" borderColor="black" borderWidth="3" />
+    <widget name="chName" position="600,2" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="transparent" borderColor="black" borderWidth="3" />
+    <widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="transparent" borderColor="black" borderWidth="3" />
+    <widget name="recName" position="930,2" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="transparent" borderColor="black" borderWidth="3" />
   </screen>
 
   <!-- SystemTools -->
