@@ -819,7 +819,7 @@
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
