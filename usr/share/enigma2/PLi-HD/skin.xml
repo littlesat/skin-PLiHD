@@ -1109,7 +1109,7 @@
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="85,444" size="425,145"  font="Regular;21" valign="center">
-      <convert type="EventName">ExtendedDescription</convert>
+      <convert type="MovieInfo">MetaDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="85,366" size="80,24" foregroundColor="grey" font="Regular;20" halign="left" transparent="1">
       <convert type="ServiceTime">Duration</convert>
