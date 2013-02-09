@@ -576,7 +576,7 @@
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="60,200" size="570,345" font="Regular; 20" zPosition="1" transparent="1">
-          <convert type="EventName">ExtendedDescription</convert>
+          <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNext</convert>
@@ -588,7 +588,7 @@
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,200" size="570,345" font="Regular; 20" zPosition="1" transparent="1">
-          <convert type="EventName">ExtendedDescription</convert>
+          <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
   </screen>
@@ -819,7 +819,7 @@
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
@@ -834,8 +834,12 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget name="timeline_text" position="50,110" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,140" size="1180,490" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget source="Event" render="Label" position="50,100" size="1180,22" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget name="timeline_text" position="50,122" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="50,152" size="1180,478" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
@@ -1207,8 +1211,9 @@
 
   <screen name="MovieContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_YB"/>
     <eLabel text="Movielist menu" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="menu" position="575,110" size="600,480"  itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="menu" position="575,110" size="600,510"  itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- MovieBrowserConfig -->
@@ -1968,10 +1973,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <!-- AutoDiseqC -->
 
-  <screen name="AutoDiseqc" title="         Auto DiseqC" position="fill" flags="wfNoBorder">
+  <screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <ePixmap pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
+    <ePixmap pixmap="skin_default/icons/scan-s.png" position="240,17" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
     <widget source="statusbar" render="Label" position="85,110" zPosition="10" size="400,60" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
     <widget source="tunerstatusbar" render="Label" position="85,170" zPosition="10" size="400,30" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
     <widget name="config" position="85,220" size="400,300" scrollbarMode="showOnDemand" />
@@ -1985,9 +1990,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="introduction"  position="85,530" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
-  <screen name="FastScanStatus" title="         Fast Scan" position="fill" flags="wfNoBorder">
+  <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on" />
+    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="200,17" size="64,64" zPosition="2" transparent="1" alphatest="on" />
     <widget name="scan_state" position="85,110" zPosition="2" size="400,40" font="Regular;22" />
     <widget name="scan_progress" position="85,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
   </screen>
@@ -2772,9 +2777,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="Dish" flags="wfNoBorder" position="86,100" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent" >
     <widget name="Dishpixmap" position="0,0"  size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
     <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;18" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
+    <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From :" />
     <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
+    <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto :" />
     <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
   </screen>
 
