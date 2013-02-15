@@ -902,12 +902,7 @@
     <panel name="PigTemplate"/>
     <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="introduction" position="0,0" size="0,0" />
-
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="introduction" position="85,380" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <!-- Scan simple -->
@@ -916,12 +911,7 @@
     <panel name="PigTemplate"/>
     <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="footer" position="0,0" size="0,0" />
-
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="footer" position="85,380" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <!-- Service Scan -->
@@ -1997,12 +1987,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="introduction"  position="0,0" size="0,0" />
-
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="introduction"  position="85,530" size="417,75" font="Regular;20" halign="center" />
   </screen>
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -2111,12 +2096,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</widget>
 
 	<widget name="config" position="480,225" size="660,396" itemHeight="36" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-	<widget name="introduction" position="0,0" size="0,0" zPosition="0" />
-
-	<panel name="ButtonRed"/>
-	<eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-	<panel name="ButtonGreen"/>
-	<eLabel text="Scan" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+	<widget name="introduction" position="145,643" size="1000,26" zPosition="1" font="Regular;20" halign="center" />
 </screen>
 
   <screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
