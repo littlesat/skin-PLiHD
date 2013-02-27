@@ -1910,19 +1910,19 @@ textsize = self[&quot;text&quot;].getSize()
 textsize = (textsize[0] + 50, textsize[1] + 20)
 wsizex = textsize[0] + 60
 wsizey = textsize[1]
-lenlist = len(self.list)
+lenlist = len(self.list)*25
 if (64 &gt; wsizey):
 	wsizey = 64
 if self.type == self.TYPE_YESNO:
-	wsizey += 25*lenlist+10
+	wsizey += lenlist+10
 if (280 &gt; wsizex):
 	wsizex = 280
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 if self.type == self.TYPE_YESNO:
-	listsize = (wsizex-4, 25 *lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(2, wsizey-25*lenlist-2))
+	listsize = (wsizex-4, lenlist)
+	self[&quot;list&quot;].instance.move(ePoint(2, wsizey-lenlist-2))
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
