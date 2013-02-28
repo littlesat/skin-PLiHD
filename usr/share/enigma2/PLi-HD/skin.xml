@@ -2182,25 +2182,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="TranslationInfo" render="Label" position="590,180" size="590,380" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
   </screen>
 
-  <!-- Sleep Timer -->
-
-  <screen  flags="wfNoBorder" name="SleepTimerEdit" position="fill" >
-    <panel name="PigTemplate"/>
-    <eLabel text="Sleep Timer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="pretext" position="570,110" size="290,26" font="Regular;22" />
-    <widget name="input" position="865,110" size="40,26" font="Regular;22" />
-    <widget name="aftertext" position="910,110" size="100,26" font="Regular;22" />
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="570,200" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="570,240" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="570,280" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="570,320" size="26,26" alphatest="on" />
-    <widget name="red_text" position="620,202" size="500,26" font="Regular;20" valign="center" />
-    <widget name="green_text" position="620,242" size="500,26" font="Regular;20" valign="center" />
-    <widget name="yellow_text" position="620,282" size="500,26" font="Regular;20" valign="center" />
-    <widget name="blue_text" position="620,322" size="500,26" font="Regular;20" valign="center" />
-    <widget name="current_status" position="570,410" size="400,26" font="Regular;22" valign="center" />
-  </screen>
-
   <!-- Virtual Keyboard -->
 
   <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
