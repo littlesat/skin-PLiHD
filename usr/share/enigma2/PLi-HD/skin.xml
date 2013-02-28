@@ -1905,12 +1905,15 @@
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
 textsize = (textsize[0] + 50, textsize[1] + 20)
 wsizex = textsize[0] + 60
 wsizey = textsize[1]
 lenlist = len(self.list)*25
+if (lenlist &gt; 125):
+	lenlist = 125
 if (64 &gt; wsizey):
 	wsizey = 64
 if self.type == self.TYPE_YESNO:
@@ -1925,7 +1928,7 @@ if self.type == self.TYPE_YESNO:
 	self[&quot;list&quot;].instance.move(ePoint(2, wsizey-lenlist-2))
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 	</applet>
   </screen>
 
