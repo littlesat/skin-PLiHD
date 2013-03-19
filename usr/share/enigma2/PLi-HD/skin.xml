@@ -3842,4 +3842,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="introduction" render="Label" position="590,685" size="610,23" zPosition="1" font="Regular;20" halign="center" transparent="1" />
   </screen>
 
+  <!-- StreamingChannelFromServer -->
+
+  <screen name="StreamingChannelFromServerScreen" position="fill" title="Select bouquets to convert" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="list" position="590,110" size="610,480" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget source="statusbar" render="Label" position="590,590" size="610,23" zPosition="1" font="Regular;20" halign="center"/>
+  </screen>
+
+  <screen name="ServerEditor" position="fill" title="FTP Server Editor" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4S"/>
+    <widget name="config" position="590,110" size="610,150" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+  </screen>
+
 </skin>
