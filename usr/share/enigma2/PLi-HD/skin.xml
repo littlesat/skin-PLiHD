@@ -1008,6 +1008,12 @@
     <widget name="servicename" position="0,45" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
   </screen>
 
+  <!-- VideoMode -->
+
+  <screen name="VideoMode" title="VideoMode" position="85,45" size="400,50" backgroundColor="transparent" flags="wfNoBorder">
+    <widget name="videomode" position="0,0" size="380,40" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+  </screen>
+
   <!-- PVR State -->
 
   <screen name="PVRState" position="128,115" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
