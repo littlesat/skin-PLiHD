@@ -3373,18 +3373,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="config" render="Listbox" position="610,110" size="565,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (15, 1), size = (48, 48), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
-				MultiContentEntryText(pos = (90, 9), size = (120, 35), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the Name (for text it is text= )
-				MultiContentEntryPixmapAlphaTest(pos = (220, 5), size = (40, 40), png = 2), # index 2 is the system pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (15, 2), size = (48, 38), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
+				MultiContentEntryText(pos = (90, 6), size = (120, 35), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the Name (for text it is text= )
+				MultiContentEntryPixmapAlphaTest(pos = (220, 2), size = (40, 40), png = 2), # index 2 is the system pixmap
 				MultiContentEntryText(pos = (290, 3), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the IP
-				MultiContentEntryText(pos = (290, 28), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the MAC
+				MultiContentEntryText(pos = (290, 23), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the MAC
 				],
 			"fonts": [gFont("Regular", 30),gFont("Regular", 18)],
-			"itemHeight": 50
+			"itemHeight": 45
 		}
 	</convert>
     </widget>
-    <widget name="statusbar" position="610,590" size="420,22" font="Regular;18" />
+    <widget name="statusbar" position="620,595" size="420,22" font="Regular;18" />
   </screen>
 
   <screen flags="wfNoBorder" name="xpowerHelp" position="fill" title="XPower Help">
