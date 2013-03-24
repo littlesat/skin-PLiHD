@@ -575,7 +575,7 @@
     <widget source="session.Event_Now" render="Label" position="430,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="60,200" size="570,345" font="Regular; 20" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="60,200" size="570,345" font="Regular; 20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
@@ -587,7 +587,7 @@
     <widget source="session.Event_Next" render="Label" position="1020,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,200" size="570,345" font="Regular; 20" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,200" size="570,345" font="Regular; 20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
