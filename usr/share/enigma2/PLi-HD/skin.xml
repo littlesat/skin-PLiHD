@@ -3226,9 +3226,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
     <widget name="titellabel" position="570,100" size="450,28" valign="center" font="Regular;22" foregroundColor="#ff0000" backgroundColor="black" transparent="1" />
     <widget name="sortlabel" position="570,128" size="450,28" font="Regular;17" foregroundColor="blue" backgroundColor="black" transparent="1" />
-    <widget name="detailslabel" position="740,153" size="500,200" zPosition="1" transparent="1" font="Regular;22" />
-    <widget name="contentlabel" position="570,375" size="670,225" zPosition="1" transparent="1" font="Regular;22"/>
-    <widget name="extralabel" position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" />
+    <widget name="detailslabel" position="740,153" size="500,200" zPosition="1" transparent="1" font="Regular;22" halign="block" />
+    <widget name="contentlabel" position="570,375" size="670,225" zPosition="1" transparent="1" font="Regular;22" halign="block" />
+    <widget name="extralabel" position="570,153" size="670,425" zPosition="1" transparent="1" font="Regular;22" halign="block" />
     <widget name="photolabel" position="570,153" size="670,425" alphatest="blend" backgroundColor="black" />
     <widget name="statusbar" position="85,460" size="480,20" font="Regular;16" zPosition="3" backgroundColor="black" transparent="1" />
     <widget name="poster" position="564,153" size="170,201" alphatest="blend" backgroundColor="black" />
