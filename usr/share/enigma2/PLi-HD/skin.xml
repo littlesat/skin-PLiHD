@@ -119,7 +119,7 @@
     <widget source="session.CurrentService" render="Label" position="1100,619" size="110,20" zPosition="6" font="Regular;19" halign="left" valign="center" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <ePixmap position="105,640" zPosition="20" size="48,48" pixmap="PLi-HD/infobar/play.png" alphatest="on" />
+    <ePixmap position="88,628" zPosition="20" size="48,48" pixmap="PLi-HD/infobar/play.png" alphatest="on" />
   </screen>
 
   <screen name="TopTemplate">
@@ -1029,15 +1029,15 @@
 
   <!-- PVR State -->
 
-  <screen name="PVRState" position="105,640" zPosition="10" size="60,100" backgroundColor="#340D0F10" flags="wfNoBorder" >
-    <widget name="state" position="0,0" size="60,100" font="Regular;34" halign="center" valign="top" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1" />
+  <screen name="PVRState" position="60,635" size="100,100" zPosition="10" backgroundColor="#340D0F10" flags="wfNoBorder" >
+    <widget name="state" position="0,0" size="100,100" font="Regular;34" halign="center" valign="top" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1" />
   </screen>
 
   <!-- Timeshift state -->
 
-  <screen name="TimeshiftState" position="105,640" zPosition="10" size="150,100" backgroundColor="#340D0F10" flags="wfNoBorder" >
-    <widget name="state" position="0,0" size="60,30" font="Regular;34" halign="center" valign="top" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="0,35" size="150,30" zPosition="6" font="Regular;25" halign="left" valign="center" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1">
+  <screen name="TimeshiftState" position="60,635" size="100,100" zPosition="10" backgroundColor="#340D0F10" flags="wfNoBorder" >
+    <widget name="state" position="0,0" size="100,30" font="Regular;34" halign="center" valign="top" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="0,35" size="100,30" zPosition="6" font="Regular;25" halign="center" valign="center" borderColor="black" borderWidth="1" backgroundColor="black" transparent="1">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
   </screen>
