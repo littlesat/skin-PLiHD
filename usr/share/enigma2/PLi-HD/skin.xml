@@ -2797,7 +2797,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" text="Goto :" />
     <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="1" transparent="1" />
     <widget name="tunerName"  position="5,204"  size="80,16" zPosition="1" font="Regular;16" halign="left" borderWidth="1" transparent="1" />
-
   </screen>
 
   <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
