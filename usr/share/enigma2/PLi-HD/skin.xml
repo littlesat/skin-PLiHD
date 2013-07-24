@@ -950,8 +950,8 @@
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="network" position="180,30" size="330,20" zPosition="2" font="Regular;20" transparent="1"/>
-    <widget name="transponder" position="180,55" size="330,20" zPosition="2" font="Regular;20" transparent="1"/>
+    <widget name="network" position="180,30" size="800,20" zPosition="2" font="Regular;20" transparent="1"/>
+    <widget name="transponder" position="180,55" size="800,20" zPosition="2" font="Regular;20" transparent="1"/>
     <widget name="scan_state" position="80,110" zPosition="2" size="500,20" font="Regular;18" />
     <widget name="pass" position="80,110" size="400,20" font="Regular;18" />
     <widget name="scan_progress" position="80,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
@@ -2791,11 +2791,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="Dish" flags="wfNoBorder" position="100,150" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent" >
     <widget name="Dishpixmap" position="0,0"  size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
-    <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;18" halign="right" borderWidth="2" transparent="1" />
-    <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="2" transparent="1" text="From :" />
-    <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="2" transparent="1" />
-    <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="2" transparent="1" text="Goto :" />
-    <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="2" transparent="1" />
+    <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
+    <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" text="From :" />
+    <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="1" transparent="1" />
+    <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" text="Goto :" />
+    <widget name="posGoto"    position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="1" transparent="1" />
   </screen>
 
   <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
