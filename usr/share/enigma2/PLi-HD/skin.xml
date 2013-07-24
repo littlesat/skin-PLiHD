@@ -2791,7 +2791,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="Dish" flags="wfNoBorder" position="100,150" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent" >
     <widget name="Dishpixmap" position="0,0"  size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
-    <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
+    <widget name="turnTime"   position="45,10"   size="80,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
     <eLabel name="From"       position="5,164"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" text="From :" />
     <widget name="posFrom"    position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  borderWidth="1" transparent="1" />
     <eLabel name="Goto"       position="5,184"  size="45,16" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" text="Goto :" />
