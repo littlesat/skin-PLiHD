@@ -210,25 +210,25 @@
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,645" size="35,25" />
   </screen>
 
-  <screen name="ButtonTemplate_1">
+  <screen name="ButtonTemplate_R">
     <panel name="ButtonRed"/>
     <widget name="key_red" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_2">
-    <panel name="ButtonTemplate_1"/>
+  <screen name="ButtonTemplate_RG">
+    <panel name="ButtonTemplate_R"/>
     <panel name="ButtonGreen"/>
     <widget name="key_green" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_3">
-    <panel name="ButtonTemplate_2"/>
+  <screen name="ButtonTemplate_RGY">
+    <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonYellow"/>
     <widget name="key_yellow" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_4">
-    <panel name="ButtonTemplate_3"/>
+  <screen name="ButtonTemplate_RGYB">
+    <panel name="ButtonTemplate_RGY"/>
     <panel name="ButtonBlue"/>
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
@@ -241,48 +241,48 @@
   </screen>
 
   <screen name="ButtonTemplate_RGB">
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonBlue"/>
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_1S">
+  <screen name="ButtonTemplate_RS">
     <panel name="ButtonRed"/>
    <widget source="key_red" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_2S">
-    <panel name="ButtonTemplate_1S"/>
+  <screen name="ButtonTemplate_RGS">
+    <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonGreen"/>
     <widget source="key_green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_3S">
-    <panel name="ButtonTemplate_2S"/>
+  <screen name="ButtonTemplate_RGYS">
+    <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonYellow"/>
     <widget source="key_yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate_4S">
-    <panel name="ButtonTemplate_3S"/>
+  <screen name="ButtonTemplate_RGYBS">
+    <panel name="ButtonTemplate_RGYS"/>
     <panel name="ButtonBlue"/>
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="ButtonTemplate_RYS">
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonYellow"/>
     <widget source="key_yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="ButtonTemplate_RBS">
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonBlue"/>
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="ButtonTemplate_RGBS">
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonBlue"/>
     <widget source="key_blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
@@ -304,48 +304,48 @@
     <widget source="key_green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate1">
+  <screen name="ButtonTemplateR">
     <panel name="ButtonRed"/>
     <widget name="red" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate2">
-    <panel name="ButtonTemplate1"/>
+  <screen name="ButtonTemplateRG">
+    <panel name="ButtonTemplateR"/>
     <panel name="ButtonGreen"/>
     <widget name="green" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate3">
-    <panel name="ButtonTemplate2"/>
+  <screen name="ButtonTemplateRGY">
+    <panel name="ButtonTemplateRG"/>
     <panel name="ButtonYellow"/>
     <widget name="yellow" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate4">
-    <panel name="ButtonTemplate3"/>
+  <screen name="ButtonTemplateRGYB">
+    <panel name="ButtonTemplateRGY"/>
     <panel name="ButtonBlue"/>
     <widget name="blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate1S">
+  <screen name="ButtonTemplateRS">
     <panel name="ButtonRed"/>
    <widget source="red" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate2S">
-    <panel name="ButtonTemplate1S"/>
+  <screen name="ButtonTemplateRGS">
+    <panel name="ButtonTemplateRS"/>
     <panel name="ButtonGreen"/>
     <widget source="green" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate3S">
-    <panel name="ButtonTemplate2S"/>
+  <screen name="ButtonTemplateRGYS">
+    <panel name="ButtonTemplateRGS"/>
     <panel name="ButtonYellow"/>
     <widget source="yellow" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
 
-  <screen name="ButtonTemplate4S">
-    <panel name="ButtonTemplate3S"/>
+  <screen name="ButtonTemplateRGYBS">
+    <panel name="ButtonTemplateRGYS"/>
     <panel name="ButtonBlue"/>
     <widget source="blue" render="Label" position="1010,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
   </screen>
@@ -636,7 +636,7 @@
 
   <screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
@@ -665,7 +665,7 @@
   <!-- Slim Channel Selection - I still not found were this is used -->
 
   <screen flags="wfNoBorder" name="SlimChannelSelection" position="85,85" size="610,550" title="Channel Selection" backgroundColor="transparent" >
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel position="0,0" size="610,550" backgroundColor="transpBlack" zPosition="-50" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="85,05" size="250,28" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
@@ -689,7 +689,7 @@
 
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" position="560,110" size="660,504" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -697,7 +697,7 @@
 
   <screen name="EPGSelection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
@@ -721,7 +721,7 @@
 
   <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
@@ -749,7 +749,7 @@
 
   <screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="date" position="570,90" size="620,24" transparent="1" font="Regular;20" valign="center" halign="center" />
     <widget name="list" position="570,165" size="620,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -771,7 +771,7 @@
 
   <screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="list" position="530,110" size="645,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="Service" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
@@ -786,7 +786,7 @@
 
   <screen name="EPGSearchSetup" title="EPGSearch Setup" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget source="help" render="Label" position="85,440" size="435,60" backgroundColor="background" transparent="1" font="Regular;20"/>
     <widget name="config" position="590,110" size="600,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -795,7 +795,7 @@
 
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
@@ -838,7 +838,7 @@
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <widget source="Event" render="Label" position="50,100" size="1180,22" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
@@ -897,7 +897,7 @@
 
   <screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="description" position="85,380" size="417,200" font="Regular;20" valign="top" />
@@ -962,7 +962,7 @@
 
   <screen name="RecordPathsSettings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <eLabel text="Recording paths" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -971,7 +971,7 @@
 
   <screen name="ScSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="entries" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
@@ -987,7 +987,7 @@
 
   <screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget source="CAidList_desc" render="Label" position="550,120" size="660,30" backgroundColor="background" transparent="1" font="Regular;24" />
     <eLabel position="550,159" size="660,2" backgroundColor="black" />
     <eLabel position="550,161" size="660,2" backgroundColor="grey" />
@@ -1039,7 +1039,7 @@
 
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"></widget>
     <widget source="session.Event_Now" render="Label" position="85,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
@@ -1113,7 +1113,7 @@
 
   <screen name="MovieSelection" title="Movie Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="session.CurrentService" render="PositionGauge" position="85,353" size="417,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:417,0">
       <convert type="ServicePosition">Gauge</convert>
@@ -1242,7 +1242,7 @@
 
   <screen name="MovieBrowserConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <eLabel text="Movie list configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="575,110" size="600,480" itemHeight="24" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -1266,20 +1266,20 @@
   <screen name="TimerEditList" position="fill" title="Timer Overview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="timerlist" position="530,110" size="690,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="loglist" position="530,110" size="690,275" scrollbarMode="showOnDemand" font="Regular;24" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="logentry" position="85,386" size="1135,225" font="Regular;24" />
   </screen>
 
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" position="590,370" size="600,250" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer1" position="85,365" size="485,260" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -1292,7 +1292,7 @@
 
   <screen name="PluginBrowser" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate2"/>
+    <panel name="ButtonTemplateRG"/>
     <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,110" size="630,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -1316,7 +1316,7 @@
 
   <screen name="ServiceInfo" position="fill" flags="wfNoBorder">
     <panel name="ServiceInfoSimple"/>
-    <panel name="ButtonTemplate4"/>
+    <panel name="ButtonTemplateRGYB"/>
     <widget source="session.CurrentService" render="Label" position="250,600" size="950,20" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="right">
         <convert type="ServiceInfo">HasHBBTV</convert>
     </widget>
@@ -1326,7 +1326,7 @@
 
   <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <widget source="introduction" render="Label" position="85,400" size="417,200" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
   </screen>
@@ -1338,7 +1338,7 @@
 
   <screen name="BackupSelection" title="Select files/folders to backup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget name="checkList" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1364,7 +1364,7 @@
 
   <screen name="IPKGMenu" title="Select IPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="filelist" position="590,110" size="600,300" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1372,7 +1372,7 @@
 
   <screen name="IPKGSource" title="IPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="text" position="85,400" size="1135,30" font="Regular;23" zPosition="3" transparent="1" />
   </screen>
 
@@ -1380,7 +1380,7 @@
 
   <screen name="PacketManager" title="IPKG upgrade" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget source="list" render="Listbox" position="590,110" size="600,468" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1407,7 +1407,7 @@
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="menu" render="Listbox" position="590,110" size="600,500" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -1432,7 +1432,7 @@
 
   <screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget source="list" render="Listbox" position="590,110" size="600,459" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"templates":
@@ -1458,7 +1458,7 @@
 
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget source="list" render="Listbox" position="590,110" size="600,450" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1476,7 +1476,7 @@
 
   <screen name="PluginManagerHelp" title="Plugin manager help" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="list" render="Listbox" position="590,110" size="600,450" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1494,7 +1494,7 @@
 
   <screen flags="wfNoBorder" name="PluginDetails" position="fill" title="Plugin Details">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="statuspic" position=" 710,635" size=" 48,48" alphatest="on" />
     <widget source="author" render="Label" position="590,110" size="570,30" zPosition="10" font="Regular;24" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="PLi-HD/buttons/sel.png" position=" 590,140" size="630,30" alphatest="on" />
@@ -1514,7 +1514,7 @@
 
   <screen name="RestoreMenu" title="Restore Backups" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1536,7 +1536,7 @@
 
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="list" render="Listbox" position="530,110" size="720,450" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="0">
 		<convert type="TemplatedMultiContent">
 			{"template": [
@@ -1552,7 +1552,7 @@
 
   <screen name="AdapterSetupConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <eLabel text="Network Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="menulist" position="530,110" size="690,280" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="description" render="Label" position="530,365" size="690,200" transparent="1" font="Regular;21" valign="center" halign="center" />
@@ -1588,7 +1588,7 @@
 
   <screen name="NameserverSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <eLabel text="Nameserver Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="690,450" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="530,590" size="690,25" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
@@ -1596,7 +1596,7 @@
 
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <eLabel text="Select Network Adapter" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="list" render="Listbox" position="530,110" size="690,280" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
@@ -1616,7 +1616,7 @@
 
   <screen name="NetworkAdapterTest" title="Network test" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
     <widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
@@ -1650,7 +1650,7 @@
 
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget source="list" render="Listbox" position="530,110" size="690,475" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -1671,7 +1671,7 @@
 
   <screen name="AutoMountManager" title="MountManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="config" render="Listbox" position="590,110" size="600,480" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1731,7 +1731,7 @@
 
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="HelpWindow" position="450,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
@@ -1740,7 +1740,7 @@
 
   <screen name="UserDialog" position="fill" title="UserDialog" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,645" size="35,25" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="590,590" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -1749,7 +1749,7 @@
 
   <screen name="ScanIP" position="fill" title="Scan IP" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget name="config" position="590,110" size="600,25" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1757,7 +1757,7 @@
 
   <screen name="WlanStatus" position="fill" title="Wireless Network State" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="LabelBSSID" render="Label" position="590,110" size="200,25" valign="left" font="Regular;20" transparent="1" foregroundColor="white" />
     <widget source="LabelESSID" render="Label" position="590,150" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
     <widget source="LabelQuality" render="Label" position="590,190" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="white" />
@@ -1779,7 +1779,7 @@
 
   <screen name="WlanScan" position="fill" title="Choose a Wireless Network" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget source="list" render="Listbox" position="570,110" size="630,350" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1801,7 +1801,7 @@
 
   <screen name="InputDeviceSelection" title="Select input device" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget source="list" render="Listbox" position="590,110" size="600,480" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
       <!--  device, description, devicepng, divpng  -->
@@ -1819,7 +1819,7 @@
 
   <screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center"/>
   </screen>
@@ -2001,7 +2001,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <ePixmap pixmap="skin_default/icons/scan-s.png" position="240,17" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
     <widget source="statusbar" render="Label" position="85,110" zPosition="10" size="400,60" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
     <widget source="tunerstatusbar" render="Label" position="85,170" zPosition="10" size="400,30" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
@@ -2039,7 +2039,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="PositionerSetup" title="Positioner setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="590,110" size="600,255" backgroundColor="secondBG" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" />
     <eLabel text="Frequency:" position="590,350" size="150,25" backgroundColor="secondBG" transparent="1" font="Regular;20" />
@@ -2066,7 +2066,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="PositionerSetupLog" position="fill" title="Positioner Setup Log" >
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" font="Console;16" position="590,110" size="600,340" />
   </screen>
 
@@ -2199,7 +2199,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Virtual KeyBoard" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <panel name="ButtonTemplate_3"/>
+    <panel name="ButtonTemplate_RGY"/>
     <eLabel text="Delete" render="Label" position="185,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <eLabel text="OK" render="Label" position="460,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <widget source="country" render="Label" position="735,643" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
@@ -2213,7 +2213,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <eLabel text="AC3 Lip Sync Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" font="Regular;22" transparent="1" />
     <widget name="PluginInfo" position="85,380" size="490,200" zPosition="4" font="Regular;18" foregroundColor="uncccccc" />
@@ -2244,7 +2244,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="Config" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="status" position="590,320" size="540,130" font="Regular;16" />
@@ -2253,7 +2253,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="BackupSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget name="checkList" position="590,110" size="540,350" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -2267,7 +2267,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="Edit Entry" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
@@ -2276,7 +2276,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="PartnerboxEntriesListConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="List of Entries" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="name" position="590,110" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="ip" position="710,110" size="150,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
@@ -2287,7 +2287,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3"/>
+    <panel name="ButtonTemplate_RGY"/>
     <eLabel text="Partnerbox Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
@@ -2308,7 +2308,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="RemoteTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="RemoteTimer Timerlist" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,490" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="timerlist" position="590,110" size="600,490" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -2316,7 +2316,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="RemoteTimerEPGList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="EPG Selection" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="epglist" position="590,110" size="600,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -2324,7 +2324,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="RemoteTimerChannelList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="Bouquet List" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="text" position="590,110" size="600,490" zPosition="1" font="Regular;26" valign="center" halign="center" />
     <widget name="channellist" position="590,110" size="600,490" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -2349,7 +2349,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="picshow" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="thn" position="242,365" size="260,250" alphatest="on" />
     <widget name="filelist" position="590,110" size="600,448" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -2358,7 +2358,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="Pic_Exif" title="Info" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <widget source="menu" render="Listbox" position="585,110" size="600,500" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [  MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
@@ -2371,7 +2371,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="Pic_Setup" title="Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="590,110" size="600,500" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -2388,14 +2388,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="VlcServerConfigScreen" position="fill">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <eLabel text="Edit VLC Server" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="590,110" size="600,504" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen flags="wfNoBorder" name="VlcServerListScreen" position="fill">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="Select a VLC-Server Profile" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="serverlabel" position="590,110" size="600,36" font="Regular;18" />
     <widget name="serverlist" position="590,146" size="600,308" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -2403,7 +2403,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="VlcMediaListScreen" position="fill" title="Select a VLC-Server Profile">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
     <widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="590,110" size="210,40" zPosition="1" alphatest="on" />
     <widget name="filelist_text" position="590,110" size="110,25" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
@@ -2418,7 +2418,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="MovieTagEditor" position="fill" title="Edit tags" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
@@ -2428,7 +2428,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
    <screen name="TagEditor" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="list" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -2445,7 +2445,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="LocationBox" position="fill" title="Select Location" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="text" position="590,110" size="540,26" font="Regular;22" />
     <widget name="target" position="590,140" size="540,26" valign="center" font="Regular;22" />
@@ -2470,7 +2470,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="ParentalControlSetup" position="fill" title="Parental control setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" enableWrapAround="1" position="590,110" size="600,490" transparent="1" />
   </screen>
 
@@ -2498,13 +2498,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="DVDBackupProgress" position="fill" title="DVD Backup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" position="590,110" size="560,400"  selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
   <screen name="DVDBackupScreen" position="fill"  title="DVD Backup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="590,110" size="560,125" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
@@ -2512,7 +2512,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="DVDToolbox" position="fill" title="DVD media toolbox" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3S"/>
+    <panel name="ButtonTemplate_RGYS"/>
     <widget source="info" render="Label" position="590,110" size="520,100" font="Regular;20" />
     <widget name="details" position="590,250" size="520,200" font="Regular;16" />
     <widget source="space_bar" render="Progress" position="580,460" size="540,26" borderWidth="1" backgroundColor="#254f7497" />
@@ -2521,7 +2521,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="ProjectSettings" position="fill" title="Collection settings" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,276" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2" />
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center" />
@@ -2548,7 +2548,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="TitleProperties" position="fill" title="Properties of current title" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget source="serviceinfo" render="Label" position="590,110" size="400,144" font="Regular;18" />
     <widget name="thumbnail" position="1010,110" size="180,144" alphatest="on" />
     <widget name="config" position="590,270" size="600,320" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
@@ -2556,7 +2556,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="TitleList" position="fill" title="DVD Tool" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget source="title_label" render="Label" position="600,110" size="540,38" font="Regular;18" transparent="1" />
     <widget source="error_label" render="Label" position="600,110" size="540,296" zPosition="3" font="Regular;20" transparent="1" />
 	<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="600,148" size="546,296" zPosition="3" transparent="1" >
@@ -2595,7 +2595,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="QuickbuttonSetup" position="fill" title="Quickbutton" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
@@ -2603,7 +2603,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="lab1" position="590,590" halign="center" size="600,28" zPosition="1" font="Regular;24" valign="top" transparent="1" />
   </screen>
@@ -2612,7 +2612,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="WebIfConfigScreen" title="Main Setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="590,110" size="600,500" font="Regular;22" backgroundColor="secondBG" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -2727,7 +2727,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <eLabel text="Delete" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <eLabel text="Rename" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
@@ -2888,7 +2888,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="Favoritescrn" position="fill" title="NetRadio Classic Favorites">
     <panel name="BasicTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="favoritemenu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="85,110" size="1100,500" transparent="1" />
   </screen>
 
@@ -2921,7 +2921,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
  <screen flags="wfNoBorder" name="TVChartsMain" position="fill" title="TV Charts">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,643" size="35,25" />
     <eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;22" halign="left" position="400,585" size="150,26" transparent="1" zPosition="1" />
     <widget name="info" font="Regular;22" position="85,400" size="417,155" transparent="1" />
@@ -2954,7 +2954,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="EPGImportSources" position="fill" title="DVD Backup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="list" position="590,110" size="600,510" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
@@ -2962,7 +2962,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,510" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <widget source="current_address" render="Label" position="85,375" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
     <widget source="fixed_address" render="Label" position="85,405" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
@@ -2987,14 +2987,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="CrossEPG_Setup" position="fill" title="CrossEPG Setup">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <widget name="information" position="85,300" size="417,300" halign="center" valign="center" font="Regular;22" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CrossEPG_Info" position="fill" title="CrossEPG Info">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <widget name="version" position="600,133" size="600,25" font="Regular;22" />
     <widget name="create" position="600,163" size="600,25" font="Regular;22" />
     <widget name="last_update" position="600,193" size="600,25" font="Regular;22" />
@@ -3010,13 +3010,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="CrossEPG_Extra" position="fill" title="CrossEPG Extra">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CrossEPG_Providers" position="fill" title="CrossEPG Providers">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3"/>
+    <panel name="ButtonTemplate_RGY"/>
     <widget source="list" render="Listbox" selectionPixmap="PLi-HD/buttons/sel.png" transparent="0" position="590,110" size="600,500" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -3032,7 +3032,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="CrossEPG_About" position="fill" title="About CrossEPG">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <widget name="about" position="560,143" size="503,360" font="Regular;16" />
     <widget name="rytec_pix" position="785,525" size="70,70" />
     <widget name="krkadoni_pix" position="785,600" size="70,22" />
@@ -3040,7 +3040,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="CrossEPG_Ordering" position="fill" title="Cross EPG - Providers start order">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
   </screen>
 
@@ -3071,7 +3071,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="MyTubePlayerMainScreen" position="fill" title="MyTubePlayer MainScreen" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3"/>
+    <panel name="ButtonTemplate_RGY"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="thumbnail" position="0,0" size="130,98" alphatest="on" />
     <panel name="KeyTextTemplateBlue"/>
@@ -3107,13 +3107,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="MyTubeSettingsScreen" position="fill" title="MyTube Player settings" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="520,110" size="740,510" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" transparent="1" />
   </screen>
 
   <screen name="MyTubeVideoInfoScreen" position="fill" title="MyTubePlayerMainScreen" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <widget alphatest="on" name="thumbnail" position="0,0" size="130,98" />
     <widget font="Regular;20" foregroundColor="foreground" halign="left" name="title" position="520,100" size="670,50" transparent="1" valign="center" zPosition="5" />
     <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel2.png" selectionDisabled="1" size="520,106" source="infolist" transparent="1" zPosition="6">
@@ -3175,13 +3175,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="MyTubeVideoHelpScreen" position="fill" title="MyTube help" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <widget name="detailtext" font="Regular;22" position="520,110" size="740,510" valign="top" transparent="1" />
   </screen>
 
   <screen name="MyTubeTasksScreen" position="fill" title="MyTube - Tasks" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_R"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
     <widget source="tasklist" render="Listbox" position="560,110" size="635,370" zPosition="2" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
@@ -3202,7 +3202,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="meteoViewer" position="fill" title="meteoViewer">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <ePixmap position="900,110" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/top.png" zPosition="4" alphatest="on" />
     <ePixmap position="900,550" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on" />
@@ -3220,7 +3220,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="meteoViewerCfg" position="fill" title="MeteoViewer Configuration">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,470" transparent="1" />
     <widget name="statusbar" position="590,585" size="600,25" font="Regular;20" backgroundColor="#31000000" />
   </screen>
@@ -3229,7 +3229,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="CSFD" position="fill" title="Filmová databáze CSFD" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" position="40,645" size="35,25" zPosition="3" alphatest="on" />
     <widget name="titellabel" position="570,100" size="450,28" valign="center" font="Regular;22" foregroundColor="#ff0000" backgroundColor="black" transparent="1" />
@@ -3375,7 +3375,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="xpower" flags="wfNoBorder" position="fill" title="XPower">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
     <widget source="config" render="Listbox" position="610,110" size="565,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand">
@@ -3397,7 +3397,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="xpowerHelp" position="fill" title="XPower Help">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="HelpScrollLabel" position="630,110" size="520,400" font="Regular;20" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="~/img/author.png" position="630,530" zPosition="10" size="25,25" transparent="1" alphatest="on" />
     <widget name="version" position="670,535" size="420,20" font="Regular;18" />
@@ -3406,7 +3406,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="xpowerEdit" position="fill" title="XPower Configuration PC">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="630,110" size="520,250" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
     <widget name="statusbar" position="610,300" size="420,22" font="Regular;18" />
@@ -3416,7 +3416,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="HddSleep" flags="wfNoBorder" position="fill" title="HddSleep Configuration">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="630,110" size="520,200" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="skin_default/div-h.png" position="600,320" zPosition="1" size="560,2" />
     <widget name="devices" position="610,335" size="200,25" font="Regular;20" />
@@ -3440,7 +3440,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="setPicon" position="fill" title="SetPicon" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
     <widget name="nowpicon" position="1030,110" zPosition="2" size="100,60" alphatest="on"/>
@@ -3463,7 +3463,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="590,110" size="540,300" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="statusbar" position="590,598" size="540,22" font="Regular;18" backgroundColor="black" />
   </screen>
@@ -3472,7 +3472,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SetupMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="590,110" size="600,125" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
     <widget name="slide" position="1170,510" size="18,100" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop" />
     <widget name="memory" position="590,590" size="600,25" zPosition="1" valign="center" halign="left" font="Regular;22" transparent="1"/>
@@ -3493,7 +3493,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="CacheFlushSetupMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="590,110" size="600,250" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
     <widget name="min_free_kb" position="590,475" size="600,25" font="Regular;18" zPosition="1" valign="center" transparent="1" />
     <widget name="slide" position="1170,510" size="18,100" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop" />
@@ -3559,7 +3559,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
    <screen name="MPHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonTemplate_YBS"/>
     <widget render="Label" source="title" position="85,380" size="450,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
     <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
@@ -3579,7 +3579,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
     <panel name="ForecaTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="Titel2" render="Label" position="80,110" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
     <widget source="Titel3" render="Label" position="80,110" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
@@ -3594,7 +3594,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="SatPanel" position="fill" title="Satelliet Beelden">
     <panel name="ForecaMlistTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
   </screen>
 
   <screen flags="wfNoBorder" name="SatPanelb" position="fill" title="Duitsland">
@@ -3614,7 +3614,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
     <panel name="ForecaTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="80,110" size="1120,500" transparent="1" />
   </screen>
 
@@ -3630,7 +3630,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="ShoutcastTemplate">
     <panel name="PigLessTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <panel name="OKTemplate"/>
     <widget name="cover" position="85,100" size="350,375" zPosition="2" halign="left" valign="center" alphatest="blend" />
   </screen>
@@ -3648,7 +3648,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen flags="wfNoBorder" name="SHOUTcastSetup" position="fill" title="SHOUTcast Setup" >
     <panel name="PigLessTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <panel name="OKTemplate"/>
     <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"  transparent="1" />
   </screen>
@@ -3713,39 +3713,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="AutoTimer" title="Auto Timer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,500" />
   </screen>
 
   <screen name="AutoTimerSettings" title="AutoTimer Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="590,110" size="600,450" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="help" render="Label" position="85,400" size="450,200" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
 
   <screen name="AutoTimerEditor" title="Edit AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,450" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="help" render="Label" position="85,400" size="450,200" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
 
   <screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,450" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="AutoTimerServiceEditor" title="Edit AutoTimer Services" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="AutoTimerImporter" title="Import AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="list" position="590,110" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -3776,7 +3776,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="AutoTimerHelp" position="fill" title="AutoTimerHelp" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_1S"/>
+    <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonTemplate_YBS"/>
     <widget render="Label" source="title" position="85,380" size="450,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
     <widget name="detailtext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
@@ -3810,32 +3810,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SystemToolsSc" position="fill" title="System Tools Main Menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_3"/>
+    <panel name="ButtonTemplate_RGY"/>
     <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="SystemToolsConfig" position="fill" title="System Tools Config Screen" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="590,110" size="650,466" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="SystemToolsInf" position="fill" title="System Tools Info Menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="SystemToolsSwap" position="fill" title="System Tools Swapfile Menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="entries" position="590,110" size="650,466" font="Regular;24" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="SystemToolsTextBox" position="fill" title="System Tools Text Box" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="text" position="510,110" size="760,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   <screen name="SystemToolsConsole" position="fill" title="System Tools Console" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
+    <panel name="ButtonTemplate_RG"/>
     <widget name="text" position="510,110" size="770,466" font="Console;19" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -3843,7 +3843,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="610,350" itemHeight="25" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
     <widget source="introduction" render="Label" position="590,590" size="610,23" zPosition="1" font="Regular;20" halign="center"/>
   </screen>
@@ -3851,7 +3851,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,630" size="1280,90" zPosition="-1" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
-    <panel name="ButtonTemplate_2S"/>
+    <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="590,635" size="610,50" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" backgroundColor="#20000000" zPosition="1"/>
     <widget source="introduction" render="Label" position="590,685" size="610,23" zPosition="1" font="Regular;20" halign="center" transparent="1" />
   </screen>
@@ -3860,14 +3860,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="StreamingChannelFromServerScreen" position="fill" title="Select bouquets to convert" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="list" position="590,110" size="610,480" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
     <widget source="statusbar" render="Label" position="590,590" size="610,23" zPosition="1" font="Regular;20" halign="center"/>
   </screen>
 
   <screen name="ServerEditor" position="fill" title="FTP Server Editor" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4S"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="590,110" size="610,150" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
