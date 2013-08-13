@@ -284,5 +284,132 @@
     <panel name="KeyInfoTemplate"/>
   </screen>
 
+<!-- Infobar Template -->
+
+  <screen name="InfoBarTemplate">
+    <widget source="session.CurrentService" render="Picon" position="60,635" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="221,573" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left" />
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="305,573" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,550" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;16" valign="center" halign="left">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,573" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="430,550" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="center" halign="right">
+      <convert type="CryptoInfo">VerboseInfo</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="220,642" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="305,642" size="620,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="940,642" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="220,672" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="305,672" size="620,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="940,672" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="right">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <ePixmap pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1020,588" size="40,21" zPosition="2" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1020,588" size="40,21" zPosition="3" alphatest="on">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1020,588" size="40,21" zPosition="4" alphatest="on">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">800,2000</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_txt_on.png" position="983,588" size="33,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="946,588" size="33,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_crypt_on.png" position="926,588" size="16,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_hbbtv_on.png" position="876,588" size="46,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_sub_on.png" position="839,588" size="33,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1180,593" size="20,20" zPosition="3" alphatest="on">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1100,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1100,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1120,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1140,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1160,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1100,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="A" foregroundColor="green" font="Regular;20" halign="left">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1120,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="B" foregroundColor="green" font="Regular;20" halign="left">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1140,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="C" foregroundColor="green" font="Regular;20" halign="left">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1160,590" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="D" foregroundColor="green" font="Regular;20" halign="left">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1100,675" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
+      <convert type="ServiceOrbitalPosition"/>
+    </widget>
+    <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
+  </screen>
+
 </skin>
 
