@@ -87,7 +87,7 @@
     </borderset>
   </windowstyle>
 
-  <include filename="/usr/share/enigma2/PLi-HD/skin_templates.xml"/>
+  <include filename="skin_templates.xml"/>
 
   <!-- Volume -->
 
