@@ -1957,4 +1957,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget position="0,0" size="0,0" name="RassLogo"/>
   </screen>
 
+  <!-- Unhandled key -->
+
+  <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
+  </screen>
+
 </skin>

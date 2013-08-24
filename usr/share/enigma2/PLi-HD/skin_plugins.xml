@@ -455,10 +455,6 @@
 
   </screen>
 
-  <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
-    <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
-  </screen>
-
   <!-- PermanentClock -->
 
   <screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
