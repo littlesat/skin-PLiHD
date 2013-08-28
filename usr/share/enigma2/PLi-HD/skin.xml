@@ -302,13 +302,22 @@
     <widget source="Event" render="Label" position="85,420" size="435,164" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="85,590" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="85,590" size="110,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="305,590" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="205,590" size="60,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel text=" - " position="273,590" size="15,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" />
+    <widget source="Event" render="Label" position="305,590" size="60,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="400,590" size="110,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
     </widget>
   </screen>
 
