@@ -1523,7 +1523,7 @@ if self.timerRunning:
 	titleheight = 20
 else:
 	titleheight = 0
-        self.setTitle("")
+	self.setTitle("")
 orgwidth = self.instance.size().width()
 orgheight = self.instance.size().height()
 orgpos = self.instance.position()
