@@ -1511,6 +1511,7 @@
   <!-- MessageBoxSimple -->
 
   <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
@@ -1518,6 +1519,11 @@
     <widget name="list" position="100,100" size="480,375" selectionPixmap="PLi-HD/buttons/sel.png"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
+if self.timerRunning:
+	titleheight = 20
+else:
+	titleheight = 0
+        self.setTitle("")
 orgwidth = self.instance.size().width()
 orgheight = self.instance.size().height()
 orgpos = self.instance.position()
@@ -1531,15 +1537,22 @@ if (lenlist &gt; 125):
 if (64 &gt; wsizey):
 	wsizey = 64
 if self.type == self.TYPE_YESNO:
-	wsizey += lenlist+10
+	wsizey += lenlist + 10
 if (280 &gt; wsizex):
 	wsizex = 280
-wsize = (wsizex, wsizey)
+wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
+self[&quot;text&quot;].instance.move(ePoint(65, 8 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
 if self.type == self.TYPE_YESNO:
 	listsize = (wsizex-4, lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(2, wsizey-lenlist-2))
+	self[&quot;list&quot;].instance.move(ePoint(2, wsizey - lenlist + titleheight - 2))
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
