@@ -573,7 +573,7 @@
 
   <screen name="ScSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RG"/>
+    <panel name="ButtonTemplate_RGB"/>
     <widget name="entries" position="530,110" size="690,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
   </screen>
 
