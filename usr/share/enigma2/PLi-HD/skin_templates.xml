@@ -147,7 +147,12 @@
     <widget name="key_blue" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
- <screen name="ButtonTemplate_YB">
+  <screen name="ButtonTemplate_Y">
+    <panel name="ButtonYellow"/>
+    <widget name="key_yellow" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+  </screen>
+
+  <screen name="ButtonTemplate_YB">
     <panel name="ButtonYellow"/>
     <widget name="key_yellow" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonBlue"/>
