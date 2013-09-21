@@ -631,7 +631,8 @@
   <!-- Timeshift state -->
 
   <screen name="TimeshiftState" position="0,45" zPosition="0" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-    <panel name="PlayerTemplate"/>                  
+    <panel name="PlayerTemplate"/>
+    <widget name="state" position="128,70" size="150,30" zPosition="3" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
   </screen>
 
   <!-- Radio Stuff -->
