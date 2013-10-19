@@ -344,7 +344,7 @@
     </widget>
   </screen>
 
-  <screen name="EventViewContextMenu" position="fill" title="Eventview menu" flags="wfNoBorder">
+  <screen name="EventViewContextMenu" position="fill" title="Event view menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="560,110" size="630,500" transparent="1" />
   </screen>
