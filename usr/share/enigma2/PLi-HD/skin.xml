@@ -557,7 +557,7 @@
     <widget name="scan_state" position="80,110" zPosition="2" size="500,20" font="Regular;18" />
     <widget name="pass" position="80,110" size="400,20" font="Regular;18" />
     <widget name="scan_progress" position="80,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-    <widget name="servicelist" position="80,170" size="400,265" selectionDisabled="1" />
+    <widget name="servicelist" position="80,170" size="400,450" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- RecordPathSettings -->
