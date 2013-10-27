@@ -535,30 +535,30 @@
 
   <!-- Service Scan -->
 
-  <screen name="ServiceScan" position="fill" flags="wfNoBorder">
+  <screen name="ServiceScan" title="Service Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
     <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="network" position="180,30" size="800,20" zPosition="2" font="Regular;20" transparent="1"/>
-    <widget name="transponder" position="180,55" size="800,20" zPosition="2" font="Regular;20" transparent="1"/>
-    <widget name="scan_state" position="80,110" zPosition="2" size="500,20" font="Regular;18" />
-    <widget name="pass" position="80,110" size="400,20" font="Regular;18" />
-    <widget name="scan_progress" position="80,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-    <widget name="servicelist" position="80,170" size="400,450" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="network" position="150,120" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
+    <widget name="transponder" position="150,155" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
+    <widget name="scan_state" position="80,230" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1" />
+    <widget name="pass" position="80,290" size="480,30" valign="center" font="Regular;22" transparent="1" />
+    <widget name="scan_progress" position="80,265" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="servicelist" position="580,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- RecordPathSettings -->
@@ -1638,9 +1638,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="200,17" size="64,64" zPosition="2" transparent="1" alphatest="on" />
-    <widget name="scan_state" position="85,110" zPosition="2" size="400,40" font="Regular;22" />
-    <widget name="scan_progress" position="85,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on" />
+    <widget name="scan_state" position="150,120" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1" />
+    <widget name="scan_progress" position="150,155" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
   </screen>
 
   <!-- Nim setup -->
