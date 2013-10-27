@@ -535,7 +535,7 @@
 
   <!-- Service Scan -->
 
-  <screen name="ServiceScan" title="Service Scan" position="fill" flags="wfNoBorder">
+  <screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
