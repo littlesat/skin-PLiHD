@@ -1708,31 +1708,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="140,100" size="1000,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<eLabel text="SNR:" position="145,110" size="100,35" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35" />
-	<widget source="Frontend" render="Label" position="910,110" size="225,35" halign="right" borderWidth="1" transparent="1" font="Regular;35">
+	<eLabel text="SNR:" position="145,100" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35" />
+	<widget source="Frontend" render="Label" position="910,100" size="225,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
 	
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="140,160" size="1000,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	<eLabel text="AGC:" position="145,170" size="100,35" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35" />
-	<widget source="Frontend" render="Label" position="910,170" size="225,35" halign="right" borderWidth="1" transparent="1" font="Regular;35">
+	<eLabel text="AGC:" position="145,160" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35" />
+	<widget source="Frontend" render="Label" position="910,160" size="225,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
 	
 	<eLabel text="SNR:" position="140,225" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18" />
-	<widget source="Frontend" render="Label" position="140,245" size="310,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
+	<widget source="Frontend" render="Label" position="140,245" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">SNRdB</convert>
 	</widget>
 
 	<eLabel text="AGC:" position="140,325" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18" />
-	<widget source="Frontend" render="Label" position="140,345" size="310,75" backgroundColor="darkgrey" transparent="1" font="Regular;72" halign="left">
+	<widget source="Frontend" render="Label" position="140,345" size="300,75" backgroundColor="darkgrey" transparent="1" font="Regular;72" halign="left">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
 	
 	<eLabel text="BER:" position="140,425" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18" />
-	<widget source="Frontend" render="Label" position="140,445" size="310,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
+	<widget source="Frontend" render="Label" position="140,445" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">BER</convert>
 	</widget>
 
@@ -1741,7 +1741,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<convert type="ConditionalShowHide" />
 	</widget>
 
-	<widget name="config" position="480,225" size="660,396" itemHeight="36" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+	<widget name="config" position="440,225" size="700,396" itemHeight="33" font="Regular;27" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0" />
 
 	<panel name="ButtonRed"/>
