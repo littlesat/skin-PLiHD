@@ -1791,15 +1791,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonGreen"/>
+    <panel name="ButtonTemplate_RG"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="460,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
 
-  <screen flags="wfNoBorder" name="AboutReleaseNotes" position="fill" title="Release Notes">
-    <panel name="PigTemplate"/>
-    <widget name="list" font="Regular;22" position="530,110" size="690,510" transparent="1" />
+  <screen name="CommitInfo" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <eLabel text="Latest Commits" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="85,125" size="1130,500" zPosition="2" halign="left" />
   </screen>
 
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
