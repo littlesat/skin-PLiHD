@@ -555,10 +555,10 @@
     </widget>
     <widget name="network" position="150,120" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
     <widget name="transponder" position="150,155" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
-    <widget name="scan_state" position="80,230" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1" />
+    <widget name="scan_state" position="80,230" zPosition="2" size="510,30" valign="center" font="Regular;20" transparent="1" />
     <widget name="pass" position="80,290" size="480,30" valign="center" font="Regular;22" transparent="1" />
     <widget name="scan_progress" position="80,265" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-    <widget name="servicelist" position="580,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="servicelist" position="610,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- RecordPathSettings -->
