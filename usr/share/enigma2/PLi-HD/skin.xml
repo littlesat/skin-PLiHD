@@ -1930,7 +1930,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="target" position="590,140" size="540,26" valign="center" font="Regular;22" />
     <widget name="filelist" position="590,170" zPosition="1" size="540,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
     <widget name="textbook" position="590,360" size="540,26" font="Regular;22" />
-    <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="booklist" position="595,390" size="535,225" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Parental Control -->
