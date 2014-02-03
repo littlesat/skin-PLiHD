@@ -290,6 +290,7 @@
 
   <screen name="EPGSelection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="530,110" size="690,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD/buttons/sel.png" />
@@ -342,11 +343,6 @@
     <widget source="session.Event_Next" render="Label" position="85,590" size="450,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
-  </screen>
-
-  <screen name="EventViewContextMenu" position="fill" title="Event view menu" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="560,110" size="630,500" transparent="1" />
   </screen>
 
   <screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
