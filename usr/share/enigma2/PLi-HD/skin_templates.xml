@@ -333,14 +333,16 @@
     <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <ePixmap pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1020,588" size="40,21" zPosition="2" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1020,588" size="40,21" zPosition="3" alphatest="on">
+      <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1020,588" size="40,21" zPosition="3" alphatest="on">
-      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1020,588" size="40,21" zPosition="4" alphatest="on">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">800,2000</convert>
+      <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_txt_on.png" position="983,588" size="33,21" zPosition="2" alphatest="on">
