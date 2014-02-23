@@ -1428,21 +1428,6 @@
     </widget>
   </screen>
 
-  <!-- Record Info Bar -->
-
-  <screen name="RecInfoBar" position="40,40" size="1280,30" zPosition="1"  backgroundColor="transparent" title="Records Info"  flags="wfNoBorder" >
-    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-    <widget name="chProv" position="50,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-    <widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-    <widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" borderColor="black" borderWidth="3" />
-    <widget name="chName" position="600,2" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-    <widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-    <widget name="recName" position="930,2" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="transparent" borderColor="black" borderWidth="3" />
-  </screen>
-
   <!-- SystemTools -->
 
   <screen name="SystemToolsSc" position="fill" title="System Tools Main Menu" flags="wfNoBorder">
