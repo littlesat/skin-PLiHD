@@ -8,82 +8,82 @@
   <!-- Head -->
 
   <output id="0">
-    <resolution bpp="32" xres="1280" yres="720"></resolution>
+    <resolution bpp="32" xres="1280" yres="720"/>
   </output>
 
   <fonts>
-    <font name="Regular" filename="nmsbd.ttf" scale="100"></font>
-    <font name="LCD" filename="lcd.ttf" scale="100"></font>
-    <font name="Console" filename="tuxtxt.ttf" scale="100"></font>
-    <font name="Fixed" filename="andale.ttf" scale="100"></font>
+    <font name="Regular" filename="nmsbd.ttf" scale="100"/>
+    <font name="LCD" filename="lcd.ttf" scale="100"/>
+    <font name="Console" filename="tuxtxt.ttf" scale="100"/>
+    <font name="Fixed" filename="andale.ttf" scale="100"/>
   </fonts>
 
   <!-- Colors -->
 
   <colors>
-    <color name="background" value="#00000000"></color>
-    <color name="black" value="#00000000"></color>
-    <color name="blue" value="#00879ce1"></color>
-    <color name="bluetransparent" value="#08001e4b"></color>
-    <color name="dark" value="#00242424"></color>
-    <color name="darkgrey" value="#00555556"></color>
-    <color name="foreground" value="#00f0f0f0"></color>
-    <color name="green" value="#0056c856"></color>
-    <color name="greentransparent" value="#08004c00"></color>
-    <color name="grey" value="#00aaaaaa"></color>
-    <color name="infobarBG" value="#41080808"></color>
-    <color name="listbox" value="#000f56a4"></color>
-    <color name="noTransBG" value="#00101214"></color>
-    <color name="orange" value="#00ffc000"></color>
-    <color name="rds_text_bg" value="#00003258"></color>
-    <color name="red" value="#00ff4a3c"></color>
-    <color name="redtransparent" value="#084c0000"></color>
-    <color name="rssviewtop" value="#00005050"></color>
-    <color name="secondBG" value="#18101214"></color>
-    <color name="secondFG" value="#00fcc000"></color>
-    <color name="selectedBG" value="#06303240"></color>
-    <color name="selectedFG" value="#00fcc000"></color>
-    <color name="transparent" value="#ff000000"></color>
-    <color name="transpBlack" value="#54111112"></color>
-    <color name="transpWhite" value="#70f0f0f0"></color>
-    <color name="un33333a" value="#0033333a"></color>
-    <color name="un40a0aa0" value="#040a0aa0"></color>
-    <color name="un4a00a0a" value="#04a00a0a"></color>
-    <color name="uncccccc" value="#00cccccc"></color>
-    <color name="white" value="#00f0f0f0"></color>
-    <color name="yellow" value="#00ffc000"></color>
-    <color name="yellowtransparent" value="#084b4b00"></color>
+    <color name="background" value="#00000000"/>
+    <color name="black" value="#00000000"/>
+    <color name="blue" value="#00879ce1"/>
+    <color name="bluetransparent" value="#08001e4b"/>
+    <color name="dark" value="#00242424"/>
+    <color name="darkgrey" value="#00555556"/>
+    <color name="foreground" value="#00f0f0f0"/>
+    <color name="green" value="#0056c856"/>
+    <color name="greentransparent" value="#08004c00"/>
+    <color name="grey" value="#00aaaaaa"/>
+    <color name="infobarBG" value="#41080808"/>
+    <color name="listbox" value="#000f56a4"/>
+    <color name="noTransBG" value="#00101214"/>
+    <color name="orange" value="#00ffc000"/>
+    <color name="rds_text_bg" value="#00003258"/>
+    <color name="red" value="#00ff4a3c"/>
+    <color name="redtransparent" value="#084c0000"/>
+    <color name="rssviewtop" value="#00005050"/>
+    <color name="secondBG" value="#18101214"/>
+    <color name="secondFG" value="#00fcc000"/>
+    <color name="selectedBG" value="#06303240"/>
+    <color name="selectedFG" value="#00fcc000"/>
+    <color name="transparent" value="#ff000000"/>
+    <color name="transpBlack" value="#54111112"/>
+    <color name="transpWhite" value="#70f0f0f0"/>
+    <color name="un33333a" value="#0033333a"/>
+    <color name="un40a0aa0" value="#040a0aa0"/>
+    <color name="un4a00a0a" value="#04a00a0a"/>
+    <color name="uncccccc" value="#00cccccc"/>
+    <color name="white" value="#00f0f0f0"/>
+    <color name="yellow" value="#00ffc000"/>
+    <color name="yellowtransparent" value="#084b4b00"/>
   </colors>
 
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">
-    <title offset="20,10" font="Regular;20"></title>
-    <color name="Background" color="background"></color>
-    <color name="LabelForeground" color="foreground"></color>
-    <color name="ListboxBackground" color="background"></color>
-    <color name="ListboxForeground" color="foreground"></color>
-    <color name="ListboxSelectedBackground" color="selectedBG"></color>
-    <color name="ListboxSelectedForeground" color="selectedFG"></color>
-    <color name="ListboxMarkedBackground" color="un40a0aa0"></color>
-    <color name="ListboxMarkedForeground" color="red"></color>
-    <color name="ListboxMarkedAndSelectedBackground" color="un4a00a0a"></color>
-    <color name="ListboxMarkedAndSelectedForeground" color="red"></color>
-    <color name="WindowTitleForeground" color="foreground"></color>
-    <color name="WindowTitleBackground" color="background"></color>
+    <title offset="20,10" font="Regular;20"/>
+    <color name="Background" color="background"/>
+    <color name="LabelForeground" color="foreground"/>
+    <color name="ListboxBackground" color="background"/>
+    <color name="ListboxForeground" color="foreground"/>
+    <color name="ListboxSelectedBackground" color="selectedBG"/>
+    <color name="ListboxSelectedForeground" color="selectedFG"/>
+    <color name="ListboxMarkedBackground" color="un40a0aa0"/>
+    <color name="ListboxMarkedForeground" color="red"/>
+    <color name="ListboxMarkedAndSelectedBackground" color="un4a00a0a"/>
+    <color name="ListboxMarkedAndSelectedForeground" color="red"/>
+    <color name="WindowTitleForeground" color="foreground"/>
+    <color name="WindowTitleBackground" color="background"/>
     <borderset name="bsWindow">
-      <pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"></pixmap>
-      <pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"></pixmap>
-      <pixmap filename="PLi-HD/window/left_edge.png" pos="bpLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/right_edge.png" pos="bpRight"></pixmap>
-      <pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"></pixmap>
-      <pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"></pixmap>
-      <pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"></pixmap>
+      <pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"/>
+      <pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"/>
+      <pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"/>
+      <pixmap filename="PLi-HD/window/left_edge.png" pos="bpLeft"/>
+      <pixmap filename="PLi-HD/window/right_edge.png" pos="bpRight"/>
+      <pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"/>
+      <pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"/>
+      <pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"/>
     </borderset>
     <borderset name="bsListboxEntry">
-      <pixmap filename="PLi-HD/border/line.png" pos="bpTop"></pixmap>
-      <pixmap filename="PLi-HD/border/line.png" pos="bpBottom"></pixmap>
+      <pixmap filename="PLi-HD/border/line.png" pos="bpTop"/>
+      <pixmap filename="PLi-HD/border/line.png" pos="bpBottom"/>
     </borderset>
   </windowstyle>
 
@@ -93,12 +93,12 @@
   <!-- Volume -->
 
   <screen name="Volume" title="Volume" position="80,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-    <widget name="Volume" pixmap="PLi-HD/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
-    <ePixmap pixmap="PLi-HD/infobar/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4"></ePixmap>
+    <widget name="Volume" pixmap="PLi-HD/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1"/>
+    <ePixmap pixmap="PLi-HD/infobar/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4"/>
   </screen>
 
   <screen name="Mute" title="Mute" position="center,45" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-    <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
+    <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
   </screen>
 
   <!-- JobView -->
@@ -213,13 +213,13 @@
 
   <screen name="DVDPlayer" title="InfoBar" position="0,45" size="1280,235" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
-    <widget name="chapterLabel" position="280,100" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"></widget>
-    <eLabel text="Audio:  " position="280,135" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left"></eLabel>
-    <widget name="audioLabel" position="370,135" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"></widget>
-    <eLabel text="Subtitle:  " position="280,170" size="90,35" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;20" valign="center" halign="left"></eLabel>
-    <widget name="subtitleLabel" position="370,170" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"></widget>
-    <widget name="anglePix" position="740,128" size="26,16" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"></widget>
-    <widget name="angleLabel" position="780,122" size="200,22" font="Regular;21" backgroundColor="black" zPosition="3" transparent="1"></widget>
+    <widget name="chapterLabel" position="280,100" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <eLabel text="Audio:  " position="280,135" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+    <widget name="audioLabel" position="370,135" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <eLabel text="Subtitle:  " position="280,170" size="90,35" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;20" valign="center" halign="left"/>
+    <widget name="subtitleLabel" position="370,170" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <widget name="anglePix" position="740,128" size="26,16" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"/>
+    <widget name="angleLabel" position="780,122" size="200,22" font="Regular;21" backgroundColor="black" zPosition="3" transparent="1"/>
   </screen>
 
   <screen name="ChapterZap" position="center,center" size="240,55" title="Chapter" flags="wfNoBorder">
@@ -611,15 +611,15 @@
   <!-- NumberZap -->
 
   <screen name="NumberZap" title="Channel" position="100,45" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="channel" render="Label" position="0,0" size="120,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
-    <widget source="number" render="Label" position="120,0" size="100,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
-    <widget source="servicename" render="Label" position="0,45" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+    <widget name="channel" position="0,0" size="120,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+    <widget name="number" position="120,0" size="100,60" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+    <widget name="servicename" position="0,45" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="2" valign="center" halign="left"/>
   </screen>
 
   <!-- VideoMode -->
 
   <screen name="VideoMode" title="VideoMode" position="85,45" size="400,50" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="videomode" position="0,0" size="380,40" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"></widget>
+    <widget name="videomode" position="0,0" size="380,40" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="left"/>
   </screen>
 
   <!-- PVR State -->
@@ -640,7 +640,7 @@
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"></widget>
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="630,305" transparent="1"/>
     <widget source="session.Event_Now" render="Label" position="85,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
@@ -661,7 +661,7 @@
   </screen>
 
   <screen name="RadioInfoBar" title="InfoBar" position="0,508" size="1280,220" backgroundColor="background" flags="wfNoBorder">
-    <ePixmap pixmap="PLi-HD/border/up_shadow.png" position="0,-2" size="1280,60" zPosition="-1" alphatest="off"></ePixmap>
+    <ePixmap pixmap="PLi-HD/border/up_shadow.png" position="0,-2" size="1280,60" zPosition="-1" alphatest="off"/>
     <widget source="session.CurrentService" render="Label" position="220,70" size="840,32" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -692,14 +692,14 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1105,84" size="60,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide"></convert>
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="220,105" size="840,8" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="85,60" size="100,60" zPosition="2" alphatest="on">
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
-      <convert type="ConditionalShowHide"></convert>
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="RdsDecoder" render="Label" position="85,5" size="1100,30" transparent="1" zPosition="5" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
       <convert type="RdsInfo">RadioText</convert>

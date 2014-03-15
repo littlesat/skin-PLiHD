@@ -19,7 +19,7 @@
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
-      <convert type="ConditionalShowHide"></convert>
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>

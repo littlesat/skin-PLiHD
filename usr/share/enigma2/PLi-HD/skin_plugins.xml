@@ -309,67 +309,67 @@
     <widget name="config" position="590,110" size="600,120" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
     <widget source="SensorTempText0" render="Label" position="590,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp0" render="Label" position="680,210" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText1" render="Label" position="590,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp1" render="Label" position="680,230" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText2" render="Label" position="590,250" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp2" render="Label" position="680,250" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText3" render="Label" position="590,270" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp3" render="Label" position="680,270" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText4" render="Label" position="590,290" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp4" render="Label" position="680,290" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText5" render="Label" position="590,310" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp5" render="Label" position="680,310" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText6" render="Label" position="590,330" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp6" render="Label" position="680,330" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorTempText7" render="Label" position="590,350" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorTemp7" render="Label" position="680,350" zPosition="1" size="100,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText0" render="Label" position="870,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan0" render="Label" position="960,210" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText1" render="Label" position="870,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan1" render="Label" position="960,230" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText2" render="Label" position="870,250" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan2" render="Label" position="960,250" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText3" render="Label" position="870,270" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan3" render="Label" position="960,270" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText4" render="Label" position="870,290" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan4" render="Label" position="960,290" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText5" render="Label" position="870,310" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan5" render="Label" position="960,310" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText6" render="Label" position="870,330" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan6" render="Label" position="960,330" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
     <widget source="SensorFanText7" render="Label" position="870,350" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" backgroundColor="secondBG" transparent="1" />
     <widget source="SensorFan7" render="Label" position="960,350" zPosition="1" size="150,20" font="Regular;19" halign="right">
-	<convert type="SensorToText"></convert>
+	<convert type="SensorToText"/>
     </widget>
   </screen>
 
@@ -444,7 +444,7 @@
   <!--GP2 - Where is this used??? -->
 
   <gstyle>
-    <gstyles filename="PLi-HD/window/separator.png#cached"></gstyles>
+    <gstyles filename="PLi-HD/window/separator.png#cached"/>
    </gstyle>
 
   <screen name="Dish" flags="wfNoBorder" position="100,150" size="130,202" title="Dish" zPosition="1" backgroundColor="transparent" >
