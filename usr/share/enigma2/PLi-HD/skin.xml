@@ -880,10 +880,17 @@
 
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="590,370" size="600,250" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="timer1" position="85,365" size="485,260" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="timer2" position="590,110" size="600,250" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="key_red" render="Pixmap" pixmap="PLi-HD/buttons/red.png" position="570,110" size="26,26" alphatest="on" />
+    <widget name="key_red" position="610,110" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget source="key_green" render="Pixmap" pixmap="PLi-HD/buttons/green.png" position="890,110" size="26,26" alphatest="on" />
+    <widget name="key_green" position="930,110" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="timer1" position="570,150" size="640,75" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget source="key_yellow" render="Pixmap" pixmap="PLi-HD/buttons/yellow.png" position="570,270" size="26,26" alphatest="on" />
+    <widget name="key_yellow" position="610,270" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget source="key_blue" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="890,270" size="26,26" alphatest="on" />
+    <widget name="key_blue" position="930,270" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="timer2" position="570,310" size="640,75" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="570,470" size="640,144" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="TimerSelection" position="fill" title="Timer selection" flags="wfNoBorder">
