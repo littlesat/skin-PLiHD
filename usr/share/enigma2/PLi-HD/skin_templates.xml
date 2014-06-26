@@ -312,7 +312,7 @@
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="170,588" size="20,20" zPosition="3" alphatest="on">
-      <convert type="ConditionalShowHide">Blink</convert>
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="430,550" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
