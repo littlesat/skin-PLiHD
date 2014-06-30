@@ -1633,8 +1633,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="introduction" position="530,500" size="700,30" font="Regular;24"/>
+    <widget name="config" position="530,110" size="690,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="introduction" position="530,590" size="700,30" font="Regular;24"/>
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
@@ -1652,11 +1652,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="NimSetup" title="Reception Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <panel name="ButtonGreen"/>
-    <eLabel text="Save" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Positioner setup -->
