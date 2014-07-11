@@ -634,6 +634,9 @@
     <panel name="PlayerTemplate"/>
     <widget name="state" position="128,70" size="150,30" zPosition="3" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left"/>
   </screen>
+  <screen name="TimeshiftLive" position="70,70" zPosition="2" size="300,30" backgroundColor="transparent" flags="wfNoBorder">
+    <eLabel position="0,0" size="300,30" text="Timeshift Live" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black"/>
+  </screen>
 
   <!-- Radio Stuff -->
 
