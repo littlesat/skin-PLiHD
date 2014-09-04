@@ -1306,7 +1306,6 @@
   <screen name="ShoutcastTemplate">
     <panel name="PigLessTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <panel name="OKTemplate"/>
     <widget name="cover" position="85,100" size="350,375" zPosition="2" halign="left" valign="center" alphatest="blend" />
   </screen>
 
