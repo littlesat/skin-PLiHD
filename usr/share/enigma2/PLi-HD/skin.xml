@@ -286,7 +286,7 @@
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="560,110" size="660,504" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="560,110" size="660,504" itemHeight="28" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- EPG Stuff -->
@@ -734,7 +734,7 @@
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="385,333" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
-      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+      <convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
     </widget>
     <widget name="waitingtext" position="530,110" size="690,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="chosenletter" position="530,110" size="690,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
@@ -760,7 +760,7 @@
     <widget source="Service" render="Label" position="255,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png,PLi-HD/icons/faz.png,PLi-HD/icons/fza.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
+    <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png,PLi-HD/icons/faz.png,PLi-HD/icons/fza.png,PLi-HD/icons/default.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="movie_off" pixmaps="PLi-HD/icons/ask.png,PLi-HD/icons/movielist.png,PLi-HD/icons/quit.png,PLi-HD/icons/pause.png,PLi-HD/icons/playlist.png,PLi-HD/icons/playlistquit.png,PLi-HD/icons/loop.png,PLi-HD/icons/rep.png" position="865,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
