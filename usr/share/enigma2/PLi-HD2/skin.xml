@@ -1704,6 +1704,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="list" font="Console;16" position="530,80" size="710,340" />
   </screen>
 
+  <!-- Select Sats Entry -->
+
+  <screen name="SelectSatsEntryScreen" position="fill" title="Select satellites" >
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="list" position="530,80" size="710,540" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget name="hint" position="530,640" size="710,30" font="Regular;23" halign="center"/>
+  </screen>
+
   <!-- Tuner Screen -->
 
   <screen name="TunerScreen" position="fill" title="Tune">
@@ -1814,7 +1823,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <eLabel text="About" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="530,125" size="710,500" zPosition="2" halign="center" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="530,125" size="710,575" zPosition="2" halign="center" />
   </screen>
 
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
@@ -2014,7 +2023,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <eLabel text="Memory" backgroundColor="secondBG" font="Regular;22" halign="left" position="1010,682" size="220,28" zPosition="1" transparent="1"/>
-    <widget name="AboutScrollLabel" font="Regular;22" position="635,80" size="580,515" zPosition="2" halign="center" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="530,80" size="710,575" zPosition="2" halign="center" />
   </screen>
   
   <!-- Memory Info -->
