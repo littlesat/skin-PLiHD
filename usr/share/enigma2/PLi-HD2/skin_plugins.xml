@@ -1139,15 +1139,15 @@
     <widget name="picon1p" position="920,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="picon2p" position="1030,320" zPosition="2" size="100,60" alphatest="on"/>
     <widget name="message" position="810,390" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
-    <widget name="path" position="590,430" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
-    <widget name="search" position="590,470" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <widget name="path" position="590,450" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
+    <widget name="search" position="590,510" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
   </screen>
 
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="530,80" size="710,300" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="statusbar" position="530,598" size="710,22" font="Regular;18" backgroundColor="black" />
+    <widget name="statusbar" position="530,645" size="710,22" font="Regular;18" halign="center" backgroundColor="black" />
   </screen>
 
   <!-- Clear Memory -->
