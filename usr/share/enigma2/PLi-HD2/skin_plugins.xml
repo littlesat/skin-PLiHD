@@ -1146,7 +1146,7 @@
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="config" position="530,80" size="710,300" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="530,80" size="710,450" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="statusbar" position="530,645" size="710,22" font="Regular;18" halign="center" backgroundColor="black" />
   </screen>
 
