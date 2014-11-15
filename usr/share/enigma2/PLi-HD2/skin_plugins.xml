@@ -1125,22 +1125,22 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
-    <widget name="nowpicon" position="1030,110" zPosition="2" size="100,60" alphatest="on"/>
+    <widget name="nowpicon" position="1030,110" zPosition="2" size="100,75" alphatest="on"/>
     <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" foregroundColor="white" />
     <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
     <widget name="reference" position="590,140" zPosition="2" size="430,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <widget name="orbital" position="590,170" zPosition="2" size="100,20" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <widget name="provider" position="590,200" zPosition="2" size="430,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
     <widget name="text" position="590,280" zPosition="2" size="540,25" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
-    <ePixmap pixmap="~/img/border.png" position="805,315" zPosition="1" size="110,70" />
-    <widget name="picon2l" position="590,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="picon1l" position="700,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="picon" position="810,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="picon1p" position="920,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="picon2p" position="1030,320" zPosition="2" size="100,60" alphatest="on"/>
-    <widget name="message" position="810,390" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
+    <ePixmap pixmap="~/img/border.png" position="805,315" zPosition="1" size="110,85" />
+    <widget name="picon2l" position="590,320" zPosition="2" size="100,75" alphatest="on"/>
+    <widget name="picon1l" position="700,320" zPosition="2" size="100,75" alphatest="on"/>
+    <widget name="picon" position="810,320" zPosition="2" size="100,75" alphatest="on"/>
+    <widget name="picon1p" position="920,320" zPosition="2" size="100,75" alphatest="on"/>
+    <widget name="picon2p" position="1030,320" zPosition="2" size="100,75" alphatest="on"/>
+    <widget name="message" position="810,405" zPosition="2" size="100,20" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
     <widget name="path" position="590,450" zPosition="2" size="540,22" valign="center" halign="center" font="Regular;18" foregroundColor="white" />
-    <widget name="search" position="590,510" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
+    <widget name="search" position="590,525" zPosition="2" size="200,22" valign="center" halign="left" font="Regular;18" foregroundColor="white" />
   </screen>
 
   <screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
