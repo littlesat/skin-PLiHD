@@ -1125,7 +1125,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
     <widget name="nowpicon" position="1030,110" zPosition="2" size="100,75" alphatest="on"/>
     <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" foregroundColor="white" />
     <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
