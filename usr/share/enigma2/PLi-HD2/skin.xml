@@ -52,6 +52,7 @@
     <color name="uncccccc" value="#00cccccc"/>
     <color name="white" value="#00f0f0f0"/>
     <color name="yellow" value="#00ffc000"/>
+    <color name="yellowsoft" value="#00ccc040"/>
     <color name="yellowtransparent" value="#084b4b00"/>
   </colors>
 
