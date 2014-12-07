@@ -36,7 +36,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="530,80" size="710,500" transparent="1" />
   </screen>
 
-  <screen name="RemotePlayer" flags="wfNoBorder" position="283,102" size="720,576" title="Partnerbox - RemotePlayer" backgroundColor="#FFFFFFFF">
+  <screen name="RemotePlayer" flags="wfNoBorder" position="283,180" size="720,576" title="Partnerbox - RemotePlayer" backgroundColor="#FFFFFFFF">
     <ePixmap position="41,388" zPosition="-1" size="630,130" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/>
     <widget name="ServiceName" zPosition="1" position="50,404" size="610,59" valign="center" halign="center" font="Regular;21" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" />
     <widget name="DateTime" zPosition="1" position="52,473" size="500,30" halign="left" font="Regular;16" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1" />
@@ -46,47 +46,47 @@
   <screen name="RemoteTimerBouquetList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose bouquet" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="text" position="530,80" size="710,510" zPosition="1" font="Regular;26" halign="center" valign="center" />
-    <widget name="bouquetlist" position="530,80" size="710,510" font="Regular;26"  zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="530,80" size="710,570" zPosition="1" font="Regular;26" halign="center" valign="center" />
+    <widget name="bouquetlist" position="530,80" size="710,570" font="Regular;26"  zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="RemoteTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="RemoteTimer Timerlist" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="text" position="530,80" size="710,490" zPosition="1" font="Regular;20" valign="center" halign="center" />
-    <widget name="timerlist" position="530,80" size="710,490" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="530,80" size="710,560" zPosition="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="timerlist" position="530,80" size="710,560" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="RemoteTimerEPGList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="EPG Selection" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="text" position="530,80" size="710,500" zPosition="1" font="Regular;20" valign="center" halign="center" />
-    <widget name="epglist" position="530,80" size="710,500" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="530,80" size="710,570" zPosition="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="epglist" position="530,80" size="710,570" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="RemoteTimerChannelList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <eLabel text="Bouquet List" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="text" position="530,80" size="710,490" zPosition="1" font="Regular;26" valign="center" halign="center" />
-    <widget name="channellist" position="530,80" size="710,490" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="530,80" size="710,560" zPosition="1" font="Regular;26" valign="center" halign="center" />
+    <widget name="channellist" position="530,80" size="710,560" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <screen name="RemoteTimerEventView" position="fill" title="Eventview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="channel" position="590,110" size="300,30" font="Regular;22" />
-    <widget name="datetime" position="900,110" size="150,30" font="Regular;22" />
-    <widget name="duration" position="1050,110" size="150,30" font="Regular;22" />
-    <widget name="epg_description" position="590,160" size="600,384" font="Regular;22" />
+    <widget name="channel" position="530,80" size="400,30" font="Regular;22" />
+    <widget name="datetime" position="950,80" size="150,30" font="Regular;22" />
+    <widget name="duration" position="1090,80" size="150,30" font="Regular;22" halign="right"/>
+    <widget name="epg_description" position="530,130" size="710,500" font="Regular;22" />
   </screen>
 
   <screen name="RemoteTimerEntry" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOkTemplate"/>
     <eLabel text="Timer entry" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="config" position="530,80" size="710,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="530,80" size="710,570" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   
     <!-- VLC Player -->
