@@ -1816,19 +1816,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
 
+  <!-- About -->
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RG"/>
+    <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
-
+  <!-- Memory Info -->
+  <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="lmemtext" font="Regular;16" position="570,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="lmemvalue" font="Regular;16" position="720,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemtext" font="Regular;16" position="970,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemvalue" font="Regular;16" position="1120,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pfree" position="815,232" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pused" position="815,489" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="slide" position="890,105" size="18,515" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
+    <widget name="info" position="85,400" size="420,150" font="Regular;20" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+  </screen>
+  <!-- Commit Info -->
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel text="Latest Commits" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="AboutScrollLabel" font="Regular;22" position="85,125" size="1130,500" zPosition="2" halign="left" />
   </screen>
-
+  <!-- Translation Info -->
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
     <panel name="PigTemplate"/>
     <eLabel text="Translation" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
