@@ -1832,10 +1832,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="lmemtext" font="Regular;20" position="530,85" size="170,575" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="lmemvalue" font="Regular;20" position="700,85" size="120,575" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemtext" font="Regular;20" position="950,85" size="170,575" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemvalue" font="Regular;20" position="1120,85" size="120,575" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="lmemtext"  font="Regular;20" position="530,85" size="290,575" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="lmemvalue" font="Regular;20" position="530,85" size="290,575" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemtext"  font="Regular;20" position="950,85" size="290,575" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemvalue" font="Regular;20" position="950,85" size="290,575" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
     <widget name="pfree" position="805,202" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
     <widget name="pused" position="805,525" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
     <widget name="slide" position="880,85" size="18,575" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
