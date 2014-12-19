@@ -1827,13 +1827,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="lmemtext" font="Regular;16" position="570,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="lmemvalue" font="Regular;16" position="720,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemtext" font="Regular;16" position="970,110" size="150,504" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemvalue" font="Regular;16" position="1120,110" size="100,504" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="pfree" position="815,232" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="pused" position="815,489" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="slide" position="890,105" size="18,515" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
+    <widget name="lmemtext" font="Regular;18" position="530,100" size="160,525" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="lmemvalue" font="Regular;18" position="690,100" size="110,525" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemtext" font="Regular;18" position="950,100" size="160,525" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="rmemvalue" font="Regular;18" position="1110,100" size="110,525" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pfree" position="795,217" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="pused" position="795,489" size="70,20" font="Regular;14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
+    <widget name="slide" position="870,100" size="18,520" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
     <widget name="info" position="85,400" size="420,150" font="Regular;20" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
   </screen>
   <!-- Commit Info -->
