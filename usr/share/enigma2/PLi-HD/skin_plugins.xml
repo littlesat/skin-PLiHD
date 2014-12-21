@@ -1264,8 +1264,8 @@
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="Titel2" render="Label" position="80,110" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget source="Titel3" render="Label" position="80,110" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
+    <widget source="Titel2" render="Label" position="80,110" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
+    <widget source="Titel3" render="Label" position="80,110" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
     <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="380,110" size="820,450" transparent="1" />
   </screen>
 
