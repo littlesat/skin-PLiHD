@@ -515,9 +515,9 @@
     <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Scan simple -->
@@ -529,9 +529,9 @@
     <widget name="footer" position="0,0" size="0,0" />
 
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Service Scan -->
@@ -991,7 +991,7 @@
     <widget name="package" position="520,70" size="740,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="status" position="530,170" size="710,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="slider" position="534,294" size="702,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="20,680" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
+    <widget name="activityslider" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1035,7 +1035,7 @@
     <widget source="package" render="Label" position="520,70" size="740,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="530,110" size="710,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="534,294" size="711,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="20,680" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
+    <widget name="activityslider" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
@@ -1526,7 +1526,7 @@
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="520,70" size="740,600" font="Regular;24" />
-    <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="140,683" size="220,26" transparent="1" zPosition="1" />
+    <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="140,688" size="220,26" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
@@ -1662,9 +1662,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="520,650" size="740,30" font="Regular;24"/>
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Save" position="460,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Save" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -1786,9 +1786,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0" />
 
 	<panel name="ButtonRed"/>
-	<eLabel text="Cancel" position="185,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+	<eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
 	<panel name="ButtonGreen"/>
-	<eLabel text="Scan" position="460,682" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+	<eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
