@@ -1007,7 +1007,7 @@
   <screen name="IPKGSource" title="IPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <widget name="text" position="40,380" size="1200,30" font="Regular;23" zPosition="3" transparent="1" />
+    <widget name="text" position="20,380" size="1240,30" font="Regular;23" zPosition="3" transparent="1" />
   </screen>
 
   <!-- Packet Manager -->
@@ -1033,8 +1033,8 @@
   <screen name="UpdatePlugin" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="package" render="Label" position="520,70" size="740,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
-    <widget source="status" render="Label" position="530,110" size="710,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
-    <widget name="slider" position="534,294" size="711,17" zPosition="2" transparent="1" />
+    <widget source="status" render="Label" position="520,110" size="740,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
+    <widget name="slider" position="524,294" size="731,17" zPosition="2" transparent="1" />
     <widget name="activityslider" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
   </screen>
 
