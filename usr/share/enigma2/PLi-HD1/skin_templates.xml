@@ -312,7 +312,7 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,583" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="160,598" size="20,20" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="140,598" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="490,560" size="630,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="center" halign="right">
