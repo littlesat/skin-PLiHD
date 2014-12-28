@@ -1800,10 +1800,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="MediaPlayer" title="MediaPlayer" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <eLabel position="40,62" size="595,26" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;22" halign="center" />
-    <widget name="filelist" position="40,90" size="595,391" backgroundColor="noTransBG" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <eLabel position="645,62" size="595,26" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;22" halign="center" />
-    <widget name="playlist" position="645,90" size="595,391" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <eLabel position="20,62" size="615,26" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;22" halign="center" />
+    <widget name="filelist" position="20,90" size="615,391" backgroundColor="noTransBG" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <eLabel position="645,62" size="615,26" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;22" halign="center" />
+    <widget name="playlist" position="645,90" size="615,391" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
 
     <widget name="title" position="255,505" size="725,40" backgroundColor="noTransBG" transparent="1" font="Regular;26" valign="top" />
     <eLabel position="244,545" size="745,2" backgroundColor="darkgrey" />
@@ -1817,17 +1817,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="year" position="355,645" size="250,25" backgroundColor="noTransBG" transparent="1" font="Regular;20" valign="top" />
     <widget name="genretext" position="605,645" size="100,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="genre" position="705,645" size="345,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="40,515" size="150,150" transparent="1" alphatest="blend" />
+    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="20,515" size="150,150" transparent="1" alphatest="blend" />
     
-    <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="160,689" size="645,16" backgroundColor="noTransBG" zPosition="13" alphatest="on" />
-    <widget name="PositionGauge" position="180,690" size="645,14" transparent="0" zPosition="12" pointer="PLi-HD/dvr/pointer.png:13,3" />
-    <widget source="session.CurrentService" render="Label" position="40,685" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="right">
+    <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="160,694" size="645,16" backgroundColor="noTransBG" zPosition="13" alphatest="on" />
+    <widget name="PositionGauge" position="180,695" size="645,14" transparent="0" zPosition="12" pointer="PLi-HD/dvr/pointer.png:13,3" />
+    <widget source="session.CurrentService" render="Label" position="40,690" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="825,685" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="825,690" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget name="repeat" position="1170,685" size="70,30" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend" />
+    <widget name="repeat" position="1190,688" size="70,30" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend" />
   </screen>
 
   <screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
@@ -1936,13 +1936,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="KeyMenuTemplate"/>
     <widget name="thn" position="242,365" size="260,250" alphatest="on" />
     <widget name="filelist" position="520,70" size="740,560" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="label" position="522,640" size="260,25" transparent="1" font="Regular;20" />
+    <widget name="label" position="522,650" size="260,25" transparent="1" font="Regular;20" />
   </screen>
 
   <screen name="Pic_Exif" title="Info" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
-    <widget source="menu" render="Listbox" position="520,70" size="740,560" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="menu" render="Listbox" position="520,70" size="740,595" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [  MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
 				MultiContentEntryText(pos = (260,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
@@ -1973,7 +1973,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <widget name="text" position="520,70" size="740,26" font="Regular;22" />
     <ePixmap pixmap="skin_default/vkey_text.png" position="525,140" size="720,40" zPosition="-4" alphatest="on" />
-    <widget name="input" position="530,150" size="710,26" font="Regular;20" valign="center"/>
+    <widget name="input" position="520,140" size="740,26" font="Regular;20" valign="center"/>
   </screen>
 
   <!-- Location Box -->
@@ -1983,10 +1983,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="text" position="520,70" size="740,26" font="Regular;22" />
-    <widget name="target" position="530,110" size="710,26" valign="center" font="Regular;22" />
-    <widget name="filelist" position="530,140" zPosition="1" size="710,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
-    <widget name="textbook" position="530,330" size="710,26" font="Regular;22" />
-    <widget name="booklist" position="535,360" size="705,275" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="target" position="520,100" size="740,26" valign="center" font="Regular;22" />
+    <widget name="filelist" position="520,130" zPosition="1" size="740,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
+    <widget name="textbook" position="520,320" size="740,26" font="Regular;22" />
+    <widget name="booklist" position="525,350" size="735,275" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Parental Control -->
@@ -2005,9 +2005,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="PinInput" position="fill" title="Change pin code" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="service" position="520,70" size="740,25" font="Regular;20" halign="center" />
-    <widget name="text" position="530,110" size="710,25" font="Regular;20" halign="center" />
-    <widget name="tries" position="530,140" size="710,25" font="Regular;20" halign="center" />
-    <widget name="input" position="530,170" size="710,40" font="Regular;50" halign="center" />
+    <widget name="text" position="520,100" size="740,25" font="Regular;20" halign="center" />
+    <widget name="tries" position="520,130" size="740,25" font="Regular;20" halign="center" />
+    <widget name="input" position="520,160" size="740,40" font="Regular;50" halign="center" />
   </screen>
 
   <screen name="PinInputPopup" position="center,center" size="710,160" title="Change pin code" flags="wfNoBorder">
@@ -2019,11 +2019,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <!-- PiP -->
 
-  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="2">
+  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,30" size="120,26" title="PiPZap" zPosition="2">
     <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
 
-  <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="2" >
+  <screen name="PiPSetup" position="240,260" size="800,200" backgroundColor="transparent" zPosition="2" flags="wfNoBorder" >
     <widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
 
