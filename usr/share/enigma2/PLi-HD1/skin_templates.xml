@@ -113,6 +113,10 @@
     <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="40,689" size="35,25" />
   </screen>
 
+  <screen name="KeyOkTemplate">
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,689" size="35,25" />
+  </screen>
+
   <screen name="KeyOneTemplate">
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,689" size="35,25" />
   </screen>
