@@ -498,7 +498,7 @@
   <screen name="CutListEditor" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel text="Cutlist editor" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget source="cutlist" render="Listbox" position="84,124" size="390,583" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="cutlist" render="Listbox" position="20,70" size="380,600" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
@@ -509,17 +509,17 @@
 				}
       </convert>
     </widget>
-    <widget name="Video" position="510,124" backgroundColor="transparent" size="696,377" zPosition="1" />
-    <widget name="SeekState" position="465,593" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center" />
-    <widget source="session.CurrentService" render="Label" position="470,510" size="790,30" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" valign="center" halign="center">
+    <widget name="Video" position="420,70" backgroundColor="transparent" size="840,473" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="420,550" size="840,30" font="Regular;25" backgroundColor="black" zPosition="1" transparent="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="470,550" size="790,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="420,600" size="840,30" font="Regular;25" backgroundColor="black" zPosition="1" transparent="1" valign="center" halign="center">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget name="Timeline" position="575,595" size="615,20" backgroundColor="#505555" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
-    <eLabel text="'OK' = Menu" position="970,689" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
-    <eLabel text="'o' = Mark" position="340,689" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
+    <widget name="SeekState" position="355,633" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center" />
+    <widget name="Timeline" position="460,635" size="760,20" backgroundColor="#505555" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
+    <eLabel text="'OK' = Menu" position="145,689" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
+    <eLabel text="'0' = Mark" position="420,689" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
   </screen>
 
   <!-- Classic NetRadio -->
@@ -611,8 +611,8 @@
     <panel name="ButtonTemplate_RGYB"/>   
 	<panel name="KeyInfoTemplate"/>
     <widget name="config" position="520,70" size="740,400" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <widget name="statusbar" position="590,600" size="470,20" font="Regular;18" />
-    <widget name="status" position="590,520" size="540,60" font="Regular;20" />
+    <widget name="statusbar" position="520,650" size="740,25" font="Regular;20" />
+    <widget name="status" position="520,520" size="740,60" font="Regular;20" />
   </screen>
   
   <!-- EPG Import Sources -->
@@ -620,7 +620,7 @@
   <screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget name="list" position="520,70" size="740,510" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="list" position="520,70" size="740,600" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
   
   <!-- EPG Import Log -->
@@ -628,7 +628,7 @@
   <screen name="EPGImportLog" position="fill" title="EPG Import Log" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RB"/>
-    <widget name="list" position="520,70" size="740,510" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="list" position="520,70" size="740,600" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 
   <!-- HDMI-CEC Setup -->
@@ -1206,7 +1206,7 @@
 
   <!-- BitrateViewer -->
 
-  <screen name="BitrateViewer" backgroundColor="transparent" position="880,340" size="340,190" title="Bitrate viewer" flags="wfNoBorder">
+  <screen name="BitrateViewer" backgroundColor="transparent" position="920,340" size="340,190" title="Bitrate viewer" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="PLi-HD/infobar/hd.png" position="0,0" size="340,190" zPosition="-1" />
     <eLabel text="Video" position="10,10" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
     <eLabel text="min" position="10,40" zPosition="1" size="80,26" font="Regular;22" transparent="1" foregroundColor="secondFG" />
