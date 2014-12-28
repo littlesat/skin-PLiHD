@@ -1414,7 +1414,7 @@
   <screen name="WlanScan" position="fill" title="Choose a Wireless Network" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <widget source="list" render="Listbox" position="570,80" size="630,350" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="list" render="Listbox" position="520,70" size="740,350" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
 		{"template": [
 				MultiContentEntryText(pos = (10, 2), size = (550, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -1428,7 +1428,7 @@
 		}
 	</convert>
     </widget>
-    <widget source="info" render="Label" position="570,590" size="635,25" font="Regular;22" halign="center" valign="center" transparent="1" />
+    <widget source="info" render="Label" position="520,650" size="740,25" font="Regular;22" halign="center" valign="center" transparent="1" />
   </screen>
 
   <!-- Input Device Configuration -->
@@ -1440,15 +1440,15 @@
       <convert type="TemplatedMultiContent">
       <!--  device, description, devicepng, divpng  -->
 	{"template": [
-  	      MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
-	      MultiContentEntryText(pos = (65, 6), size = (450, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+	      MultiContentEntryPixmapAlphaTest(pos = (10, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
+	      MultiContentEntryText(pos = (80, 6), size = (660, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
             ],
 	  "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
 	  "itemHeight": 70
 	}
       </convert>
     </widget>
-    <widget source="introduction" render="Label" position="520,650" size="740,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center"/>
+    <widget source="introduction" render="Label" position="520,650" size="740,25" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;22" halign="center"/>
   </screen>
 
   <screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
@@ -1471,9 +1471,9 @@
   <screen name="HarddiskSetup" title="Harddisk" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonRed"/>
-    <widget name="model" position="530,80" size="380,25" font="Regular;24" />
-    <widget name="capacity" position="530,140" size="380,25" font="Regular;24" />
-    <widget name="bus" position="530,170" size="380,25" font="Regular;24" />
+    <widget name="model" position="520,70" size="740,25" font="Regular;24" />
+    <widget name="capacity" position="520,140" size="740,25" font="Regular;24" />
+    <widget name="bus" position="520,170" size="740,25" font="Regular;24" />
     <widget name="initializetext" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
@@ -1482,43 +1482,43 @@
   <screen name="HelpMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Help..." position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="list" position="530,80" size="540,570" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="rc" position="1084,80" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
+    <widget name="list" position="520,70" size="570,600" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="rc" position="1106,70" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" />
     <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="long_key" position="1050,605" size="250,20" foregroundColor="yellow" font="Regular;16" halign="center" />
+    <widget name="long_key" position="1060,615" size="250,20" foregroundColor="yellow" font="Regular;16" halign="center" />
   </screen>
 
   <!-- PPanel -->
 
   <screen flags="wfNoBorder" name="ToplevelPPanel" position="fill" title="Toplevel PPanel">
     <panel name="PigTemplate"/>
-    <widget name="nodelist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="520,70" size="740,600" />
-    <widget name="helptext" position="20,380" size="480,260" valign="center" halign="left" font="Regular;20" />
+    <widget name="nodelist" position="520,70" size="740,600" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="helptext" position="20,380" size="480,260" font="Regular;20" valign="center" halign="left" />
   </screen>
 
   <screen flags="wfNoBorder" name="PPanel" position="fill" title="PPanel">
     <panel name="PigTemplate"/>
-    <widget name="nodelist" position="530,80" font="Regular;22" size="710,575" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="helptext" position="20,380" size="480,260" valign="center" halign="left" font="Regular;20" />
+    <widget name="nodelist" position="520,70" size="740,600" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="helptext" position="20,380" size="480,260" font="Regular;20" valign="center" halign="left" />
   </screen>
 
   <screen flags="wfNoBorder" name="File" position="fill" title="PPanel File">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="40,675" size="1200,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="progress" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="Tarball" position="fill" title="PPanel Entry">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="40,675" size="1200,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
+    <widget name="progress" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_YB"/>
-    <widget name="linelist" font="Fixed;16" position="40,80" size="1200,575" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
+    <widget name="linelist" font="Fixed;16" position="20,70" size="1240,600" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
   </screen>
 
   <!-- TextBox -->
@@ -1526,14 +1526,14 @@
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="520,70" size="740,600" font="Regular;24" />
-    <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="140,688" size="220,26" transparent="1" zPosition="1" />
+    <eLabel text="'Exit' = Leave message" position="140,688" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
 
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="580,70" size="680,500" font="Regular;22" />
+    <widget name="text" position="580,70" size="680,600" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="520,70" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="520,70" size="53,53" alphatest="on" />
     <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="520,70" size="53,53" alphatest="on" />
@@ -1542,7 +1542,7 @@
 
   <!-- MessageBoxSimple -->
 
-  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
+  <screen name="MessageBoxSimple" position="center,center" size="640,10" title="Message" flags="wfNoBorder">
     <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
