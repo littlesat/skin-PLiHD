@@ -855,7 +855,7 @@
   <screen name="MyTubeTasksScreen" position="fill" title="MyTube - Tasks" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget source="tasklist" render="Listbox" position="560,110" size="635,370" zPosition="2" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -1050,7 +1050,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget source="config" render="Listbox" position="530,80" size="710,585" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1115,7 +1115,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget name="nowpicon" position="1030,110" zPosition="2" size="100,75" alphatest="on"/>
     <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" foregroundColor="white" />
     <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
@@ -1242,7 +1242,7 @@
 
   <screen name="ForecaTemplate">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
+    <panel name="KeyOkTemplate"/>
   </screen>
 
   <screen name="ForecaMlistTemplate">
@@ -1253,11 +1253,12 @@
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
     <panel name="ForecaTemplate"/>
+    <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="Titel2" render="Label" position="40,80" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
-    <widget source="Titel3" render="Label" position="40,80" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
-    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="380,80" size="860,540" transparent="1" />
+    <widget source="Titel2" render="Label" position="40,360" zPosition="3" size="417,100" font="Regular;23" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
+    <widget source="Titel3" render="Label" position="40,360" zPosition="2" size="417,100" font="Regular;23" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff" />
+    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="530,80" size="710,540" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
