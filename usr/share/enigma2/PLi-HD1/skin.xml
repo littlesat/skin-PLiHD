@@ -991,7 +991,7 @@
     <widget name="package" position="520,70" size="740,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="status" position="530,170" size="710,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="slider" position="534,294" size="702,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
+    <widget name="activityslider" position="20,682" size="1240,4" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1018,10 +1018,10 @@
     <widget source="list" render="Listbox" position="520,70" size="740,572" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
 		{"template": [
-		MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-		MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-		MultiContentEntryPixmapAlphaTest(pos = (500,0), size = (48,48), png = 4), # index 5 is the status pixmap
-		MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (600,2), png = 5), # index 6 is the div pixmap
+		MultiContentEntryText(pos = (5,1), size = (650,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+		MultiContentEntryText(pos = (5,27), size = (650,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+		MultiContentEntryPixmapAlphaTest(pos = (662,0), size = (48,48), png = 4), # index 5 is the status pixmap
+		MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (740,2), png = 5), # index 6 is the div pixmap
 		],
 		"fonts": [gFont("Regular",22),gFont("Regular",18)],
 		"itemHeight": 52
@@ -1035,27 +1035,27 @@
     <widget source="package" render="Label" position="520,70" size="740,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="520,110" size="740,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="524,294" size="731,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="20,682" size="1240,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
+    <widget name="activityslider" position="20,682" size="1240,4" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2" />
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="ButtonTemplate_RS"/>
-    <widget source="menu" render="Listbox" position="520,70" size="740,550" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="menu" render="Listbox" position="520,70" size="740,600" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png">
       <convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (35,12),size = (590,40),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (35,12),size = (705,40),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
 				],
 			"fonts": [gFont("Regular",23)],
 			"itemHeight": 50
 			}
       </convert>
     </widget>
-    <widget source="menu" render="Listbox" position="20,380" size="480,160" backgroundColor="darkgrey" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="white" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="menu" render="Listbox" position="20,380" size="480,160" backgroundColor="darkgrey" zPosition="3" selectionDisabled="1" transparent="1" foregroundColor="white" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel2.png">
       <convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (0,0),size = (450,160),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (0,0),size = (480,160),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
 				],
 			"fonts": [gFont("Regular",20)],
 			"itemHeight": 160
@@ -1067,27 +1067,27 @@
   <screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <widget source="list" render="Listbox" position="520,70" size="740,572" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
+    <widget source="list" render="Listbox" position="520,70" size="740,550" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"templates":
-				{"default": (51,[
-				MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (500,0), size = (48,48), png = 5), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (600,2), png = 6), # index 6 is the div pixmap
+				{"default": (55,[
+				MultiContentEntryText(pos = (0,2),  size = (650,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,30), size = (650,22), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (662,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,53), size = (740,2), png = 6), # index 6 is the div pixmap
 				]),
-				"category": (40,[
-				MultiContentEntryText(pos = (5,0), size = (595,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5,22), size = (595,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (600,2), png = 3), # index 3 is the div pixmap
+				"category": (50,[
+				MultiContentEntryText(pos = (0,1), size = (700,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,28), size = (700,20), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (740,2), png = 3), # index 3 is the div pixmap
 				])
 				},
 				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
-				"itemHeight": 52
+				"itemHeight": 55
 				}
       </convert>
     </widget>
-    <widget source="status" render="Label" position="520,640" size="740,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" />
+    <widget source="status" render="Label" position="520,650" size="740,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" />
   </screen>
 
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="fill" flags="wfNoBorder">
@@ -1097,8 +1097,8 @@
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
-						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+						MultiContentEntryText(pos = (90,5),size = (650,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (90,33),size = (650,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
 					],
 				"fonts": [gFont("Regular",22),gFont("Regular",17)],
 				"itemHeight": 75
@@ -1114,8 +1114,8 @@
     <widget source="list" render="Listbox" position="520,70" size="740,525" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+						MultiContentEntryText(pos = (90,5),size = (650,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (90,33),size = (650,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
 						MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
 					],
 				"fonts": [gFont("Regular",22),gFont("Regular",17)],
