@@ -856,7 +856,7 @@
   <screen name="MyTubeTasksScreen" position="fill" title="MyTube - Tasks" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget source="tasklist" render="Listbox" position="560,110" size="635,370" zPosition="2" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="PLi-HD/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -1051,7 +1051,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget source="config" render="Listbox" position="610,110" size="565,450" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1116,7 +1116,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+    <panel name="KeyOkTemplate"/>
     <widget name="nowpicon" position="1030,110" zPosition="2" size="100,75" alphatest="on"/>
     <widget name="name" position="590,110" zPosition="2" size="300,25" valign="center" halign="left" font="Regular;22" foregroundColor="white" />
     <widget name="current" position="920,110" zPosition="2" size="100,20" valign="top" halign="right" font="Regular;16" foregroundColor="white" />
@@ -1243,7 +1243,7 @@
 
   <screen name="ForecaTemplate">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+    <panel name="KeyOkTemplate"/>
   </screen>
 
   <screen name="ForecaMlistTemplate">

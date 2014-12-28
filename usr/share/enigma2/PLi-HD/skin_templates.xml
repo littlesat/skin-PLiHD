@@ -112,6 +112,10 @@
     <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="40,645" size="35,25" />
   </screen>
 
+  <screen name="KeyOkTemplate">
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="40,645" size="35,25" />
+  </screen>
+
   <screen name="KeyOneTemplate">
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="40,645" size="35,25" />
   </screen>
@@ -122,6 +126,11 @@
 
   <screen name="KeyTextTemplateBlue">
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,645" size="35,25" />
+  </screen>
+
+  <screen name="KeyMenuInfoTemplate">
+    <panel name="KeyMenuTemplate"/>
+    <panel name="KeyInfoTemplate"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
@@ -288,11 +297,6 @@
   <screen name="CancelOKTemplate" >
     <panel name="CancelTemplate"/>
     <panel name="OKTemplate"/>
-  </screen>
-
-  <screen name="KeyMenuInfoTemplate">
-    <panel name="KeyMenuTemplate"/>
-    <panel name="KeyInfoTemplate"/>
   </screen>
 
 <!-- Infobar Template -->
