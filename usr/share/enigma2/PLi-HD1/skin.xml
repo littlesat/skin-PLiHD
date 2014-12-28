@@ -96,7 +96,7 @@
   <!-- Volume -->
 
   <screen name="Volume" title="Volume" position="2,245" size="15,215" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-    <widget name="Volume" pixmap="PLi-HD1/infobar/volumesliderthin.png" position="0,0" size="13,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
+    <widget name="Volume" pixmap="PLi-HD1/infobar/volumesliderthin.png" position="1,0" size="13,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
     <ePixmap pixmap="PLi-HD1/infobar/vol_box_thin.png" position="3,201" size="9,13" alphatest="on" zPosition="4"></ePixmap>
   </screen>
   
