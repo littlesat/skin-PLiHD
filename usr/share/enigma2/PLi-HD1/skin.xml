@@ -1533,10 +1533,10 @@
 
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="590,80" size="650,500" font="Regular;22" />
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="530,80" size="53,53" alphatest="on" />
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="530,80" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="530,80" size="53,53" alphatest="on" />
+    <widget name="text" position="580,70" size="680,500" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="520,70" size="53,53" alphatest="on" />
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="520,70" size="53,53" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="520,70" size="53,53" alphatest="on" />
     <widget name="list" position="20,375" size="480,200" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" />
   </screen>
 
