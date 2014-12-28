@@ -238,7 +238,7 @@
   <screen name="MultiRCSetup" position="fill" title="Multi RemoteControl" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,40" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="warning" position="590,150" size="600,220" font="Regular;20" halign="center"/>
+    <widget name="warning" position="520,150" size="740,220" font="Regular;20" halign="center"/>
   </screen>
 
   <!-- QuickButton -->
@@ -255,7 +255,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="lab1" position="590,590" halign="center" size="600,28" zPosition="1" font="Regular;24" valign="top" transparent="1" />
+    <widget name="lab1" position="520,650" halign="center" size="740,25" zPosition="1" font="Regular;22" valign="top" transparent="1" />
   </screen>
 
   <!-- WebInterface -->
@@ -438,7 +438,7 @@
     <gstyles filename="PLi-HD/window/separator.png#cached"/>
   </gstyle>
 
-  <screen name="Dish" flags="wfNoBorder" position="20,70" size="130,202" title="Dish" zPosition="1" backgroundColor="transparent" >
+  <screen name="Dish" flags="wfNoBorder" position="20,60" size="130,202" title="Dish" zPosition="1" backgroundColor="transparent" >
     <widget name="Dishpixmap" position="0,0"  size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
     <widget name="turnTime"   position="45,5"   size="80,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
     <widget name="From"       position="5,164"  size="45,18" zPosition="1" font="Regular;16" halign="left"  borderWidth="1" transparent="1" />
@@ -652,7 +652,7 @@
 			MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 			],
 			"fonts": [gFont("Regular", 22)],
-			"itemHeight": 38
+			"itemHeight": 40
 		}
 	</convert>
     </widget>
@@ -662,7 +662,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
     <widget name="information" position="20,300" size="480,300" halign="center" valign="center" font="Regular;22" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" position="520,70" size="740,600" transparent="1" />
+    <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;22" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CrossEPG_Info" position="fill" title="CrossEPG Info">
@@ -722,7 +722,7 @@
   <screen flags="wfNoBorder" name="AtmoLightAbout" position="fill" title="About AtmoLight">
     <panel name="PigTemplate"/>
 	<widget name="pluginInfo" position="520,70" size="740,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
-    <widget name="daemonInfo" position="590,200" size="600,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
+    <widget name="daemonInfo" position="520,200" size="740,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
   </screen>
 
   <screen flags="wfNoBorder" name="DeviceBrowser" position="fill" title="DeviceBrowser">
@@ -736,8 +736,8 @@
 
   <screen flags="wfNoBorder" name="AtmoLightSummary" position="fill" title="Setup">
     <panel name="PigTemplate"/>
-	<widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
-	<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
+	<widget name="SetupEntry" position="520,70" size="740,25" font="Regular;22" halign="left"/>
+	<widget name="SetupValue" position="520,70" size="740,25" font="Regular;22" halign="right"/>
   </screen>
 
   <!-- MyTube  -->
@@ -925,11 +925,11 @@
     <widget name="stars50" position="1050,72" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1" />
     <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1050,72" zPosition="1" size="210,21" transparent="1" alphatest="on" />
     <widget name="stars100" position="1050,72" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1" />
-    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_1.png" position="740,650" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_3.png" position="975,650" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="paget1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_left.png" position="775,650" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="paget3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_right.png" position="1010,650" size="35,25" zPosition="3" alphatest="on" />
-    <widget name="page" position="820,649" size="145,28" font="Regular;22" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1" />
+    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_1.png" position="740,652" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_3.png" position="975,652" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_left.png" position="775,652" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="paget3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_right.png" position="1010,652" size="35,25" zPosition="3" alphatest="on" />
+    <widget name="page" position="820,651" size="145,28" font="Regular;22" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1" />
     <widget name="tips_label" position="20,500" size="60,20" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
     <widget name="tips_detail" position="20,525" size="440,40" font="Regular;16" backgroundColor="black" halign="left" zPosition="3" transparent="1" />
     <widget name="tips_icon" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_help.png" position="20,523" alphatest="blend" size="35,25" backgroundColor="black" zPosition="3" />
@@ -939,13 +939,13 @@
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
     <widget name="label1" position="520,70" size="740,24" font="Regular;20" valign="center" />
-    <widget name="label2" position="530,104" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label3" position="530,128" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label4" position="530,152" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label5" position="530,176" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label6" position="530,200" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label7" position="530,224" size="710,24" font="Regular;20" valign="center" />
-    <widget name="label8" position="530,248" size="710,24" font="Regular;20" valign="center" />
+    <widget name="label2" position="520,94" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label3" position="520,118" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label4" position="520,142" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label5" position="520,166" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label6" position="520,190" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label7" position="520,214" size="740,24" font="Regular;20" valign="center" />
+    <widget name="label8" position="520,238" size="740,24" font="Regular;20" valign="center" />
   </screen>
 
   <screen name="CSFDVirtualKeyBoard" position="fill" title="Virtuální klávesnice pro CSFD" flags="wfNoBorder">
