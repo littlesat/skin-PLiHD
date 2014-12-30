@@ -539,27 +539,27 @@
   <screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="40,90" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="20,70" size="64,64" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="40,90" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="20,70" size="64,64" zPosition="2" transparent="1" alphatest="on">
     <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="40,90" size="64,64" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="20,70" size="64,64" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget name="network" position="110,90" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
-    <widget name="transponder" position="110,125" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
-    <widget name="scan_state" position="40,200" zPosition="2" size="550,30" valign="center" font="Regular;20" transparent="1" />
-    <widget name="pass" position="40,260" size="520,30" valign="center" font="Regular;22" transparent="1" />
-    <widget name="scan_progress" position="40,235" size="520,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-    <widget name="servicelist" position="610,80" size="640,570" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="network" position="90,70" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
+    <widget name="transponder" position="90,105" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
+    <widget name="scan_state" position="20,180" zPosition="2" size="540,30" valign="center" font="Regular;20" transparent="1" />
+    <widget name="pass" position="20,240" size="540,30" valign="center" font="Regular;22" transparent="1" />
+    <widget name="scan_progress" position="20,215" size="540,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="servicelist" position="580,70" size="680,600" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- RecordPathSettings -->
@@ -568,7 +568,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <eLabel text="Recording paths" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Softcam Setup -->
@@ -577,7 +577,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <widget name="config" position="520,70" size="740,100" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
-    <widget name="info" position="530,210" size="710,425" font="Fixed;18"/>
+    <widget name="info" position="520,210" size="740,425" font="Fixed;18"/>
   </screen>
 
   <!-- ChoiceBox -->
@@ -1982,11 +1982,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="text" position="520,70" size="740,26" font="Regular;22" />
-    <widget name="target" position="520,100" size="740,26" valign="center" font="Regular;22" />
-    <widget name="filelist" position="520,130" zPosition="1" size="740,180" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
-    <widget name="textbook" position="520,320" size="740,26" font="Regular;22" />
-    <widget name="booklist" position="525,350" size="735,275" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="text" position="520,70" size="740,25" font="Regular;22" />
+    <widget name="target" position="520,105" size="740,25" valign="center" font="Regular;22" />
+    <widget name="filelist" position="520,130" zPosition="1" size="740,207" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" selectionDisabled="1" />
+    <widget name="textbook" position="520,345" size="740,25" font="Regular;22" />
+    <widget name="booklist" position="525,375" size="735,300" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Parental Control -->
