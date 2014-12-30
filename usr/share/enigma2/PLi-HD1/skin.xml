@@ -119,19 +119,19 @@
     <widget source="cancelable" render="Pixmap" pixmap="PLi-HD/buttons/red.png" position="145,687" size="26,26" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide" />
     </widget>
-    <widget source="cancelable" render="FixedLabel" text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="2" transparent="1" font="Regular;24" halign="left" >
+    <widget source="cancelable" render="FixedLabel" text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="2" transparent="1" font="Regular;24" halign="left" >
 	<convert type="ConditionalShowHide" />
     </widget>
-    <widget source="finished" render="Pixmap" pixmap="PLi-HD/buttons/green.png" position="420,687" size="26,26" alphatest="on" zPosition="2">
+    <widget source="finished" render="Pixmap" pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide" />
     </widget>
-    <widget source="finished" render="FixedLabel" text="OK" position="460,687" size="220,28" backgroundColor="black" zPosition="2" transparent="1" font="Regular;24" halign="left" >
+    <widget source="finished" render="FixedLabel" text="OK" position="450,687" size="230,28" backgroundColor="black" zPosition="2" transparent="1" font="Regular;24" halign="left" >
 	<convert type="ConditionalShowHide" />
     </widget>
-    <widget source="backgroundable" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="695,687" size="26,26" alphatest="on" zPosition="2">
+    <widget source="backgroundable" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="705,687" size="26,26" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide" />
     </widget>
-    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="735,687" size="360,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" >
+    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="745,687" size="360,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" >
 	<convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -515,9 +515,9 @@
     <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Scan simple -->
@@ -529,9 +529,9 @@
     <widget name="footer" position="0,0" size="0,0" />
 
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Service Scan -->
@@ -907,14 +907,14 @@
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="key_red" position="520,70" size="26,26" render="Pixmap" pixmap="PLi-HD/buttons/red.png" alphatest="on" />
-    <widget name="key_red" position="560,70" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_red" position="560,70" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget source="key_green" position="900,70" size="26,26" render="Pixmap" pixmap="PLi-HD/buttons/green.png" alphatest="on" />
-    <widget name="key_green" position="940,70" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_green" position="940,70" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget name="timer1" position="520,110" size="740,75" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="key_yellow" position="520,260" size="26,26" render="Pixmap" pixmap="PLi-HD/buttons/yellow.png" alphatest="on" />
-    <widget name="key_yellow" position="560,260" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_yellow" position="560,260" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget source="key_blue" position="900,260" size="26,26" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" alphatest="on" />
-    <widget name="key_blue" position="940,260" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_blue" position="940,260" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget name="timer2" position="520,300" size="740,75" scrollbarMode="showNever" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="list" position="520,470" size="740,144" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -1474,7 +1474,7 @@
     <widget name="model" position="520,70" size="740,25" font="Regular;24" />
     <widget name="capacity" position="520,140" size="740,25" font="Regular;24" />
     <widget name="bus" position="520,170" size="740,25" font="Regular;24" />
-    <widget name="initializetext" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="initializetext" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Help -->
@@ -1526,7 +1526,7 @@
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="520,70" size="740,600" font="Regular;24" />
-    <eLabel text="'Exit' = Leave message" position="140,688" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+    <eLabel text="'Exit' = Leave message" position="145,689" size="230,28" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
@@ -1662,9 +1662,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="520,650" size="740,30" font="Regular;24"/>
     <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <panel name="ButtonGreen"/>
-    <eLabel text="Save" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Save" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -1786,9 +1786,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0" />
 
 	<panel name="ButtonRed"/>
-	<eLabel text="Cancel" position="185,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+	<eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
 	<panel name="ButtonGreen"/>
-	<eLabel text="Scan" position="460,687" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+	<eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
@@ -1877,9 +1877,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <eLabel text="Virtual KeyBoard" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <panel name="ButtonTemplate_RGY"/>
-    <eLabel text="Delete" render="Label" position="185,687" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
-    <eLabel text="OK" render="Label" position="460,687" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
-    <widget source="country" render="Label" position="735,687" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <eLabel text="Delete" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <eLabel text="OK" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="country" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <ePixmap pixmap="skin_default/vkey_text.png" position="618,140" size="542,52" zPosition="-4" alphatest="on" />
     <widget name="header" position="620,80" size="540,26" transparent="1" noWrap="1" font="Regular;22" valign="top"/>
     <widget name="text" position="620,150" size="536,34" transparent="1" noWrap="1" font="Regular;26" valign="center" halign="right" />
