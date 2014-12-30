@@ -251,7 +251,7 @@
     </widget>
     <widget source="ServiceEvent" render="Label" position="360,395" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText" />
+      <convert type="ClockToText">Format:%H:%M></convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="400,395" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
@@ -406,15 +406,15 @@
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="600,70" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right" valign="top">
+    <widget source="Event" render="Label" position="620,70" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="680,70" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" valign="top">
+    <widget source="Event" render="Label" position="700,70" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="770,70" size="490,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
+    <widget source="Event" render="Label" position="790,70" size="470,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="520,98" size="740,8" transparent="1" borderWidth="2" borderColor="#33333a">
