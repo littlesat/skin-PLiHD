@@ -66,7 +66,7 @@
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
     <color name="ListboxForeground" color="foreground"/>
-    <color name="ListboxSelectedBackground" color="selectedBG"/>
+    <color name="ListboxSelectedBackground" color="darkblue"/>
     <color name="ListboxSelectedForeground" color="selectedFG"/>
     <color name="ListboxMarkedBackground" color="un40a0aa0"/>
     <color name="ListboxMarkedForeground" color="red"/>
@@ -74,7 +74,7 @@
     <color name="ListboxMarkedAndSelectedForeground" color="red"/>
     <color name="WindowTitleForeground" color="foreground"/>
     <color name="WindowTitleBackground" color="background"/>
-    <borderset name="bsWindow">
+    <!--borderset name="bsWindow">
       <pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"/>
       <pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"/>
       <pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"/>
@@ -83,10 +83,12 @@
       <pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"/>
       <pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"/>
       <pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"/>
-    </borderset>
+    </borderset-->
     <borderset name="bsListboxEntry">
-      <pixmap filename="PLi-HD/border/line.png" pos="bpTop"/>
-      <pixmap filename="PLi-HD/border/line.png" pos="bpBottom"/>
+      <pixmap filename="PLi-HD1/border/line.png" pos="bpTop"/>
+      <pixmap filename="PLi-HD1/border/line.png" pos="bpBottom"/>
+      <pixmap filename="PLi-HD1/border/vline.png" pos="bpLeft"/>
+      <pixmap filename="PLi-HD/border/vline.png" pos="bpRight"/>
     </borderset>
   </windowstyle>
 
