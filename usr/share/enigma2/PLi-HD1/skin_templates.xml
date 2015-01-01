@@ -8,7 +8,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="infobarBG" position="120,56" size="1040,14" zPosition="0"/>
-    <ePixmap pixmap="PLi-HD/dvr/scale1024.png" position="128,61" size="1024,4" zPosition="1" />
+    <ePixmap pixmap="PLi-HD/dvr/scale1024.png" position="128,61" size="1024,4" zPosition="1"/>
     <widget source="session.CurrentService" render="PositionGauge" position="128,57" size="1024,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
@@ -31,9 +31,9 @@
   </screen>
 
   <screen name="TopTemplate">
-    <eLabel position="0,0" size="1280,58" backgroundColor="darkblue" />
+    <eLabel position="0,0" size="1280,58" backgroundColor="darkblue"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,58" size="1280,2" zPosition="2"/>
-    <widget source="Title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget source="Title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="global.CurrentTime" render="Label" position="1110,15" size="150,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
@@ -44,17 +44,17 @@
 
   <screen name="BasicTemplate">
     <panel name="TopTemplate"/>
-    <eLabel position="0,682" size="1280,38" backgroundColor="darkblue" />
-    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,680" size="1280,2" />
+    <eLabel position="0,682" size="1280,38" backgroundColor="darkblue"/>
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,680" size="1280,2"/>
   </screen>
 
   <screen name="TextTemplate">
-    <widget name="text" position="20,2" size="1240,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="text" position="20,2" size="1240,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
   </screen>
 
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
-    <widget source="session.VideoPicture" render="Pig" position="20,80" size="480,270" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.VideoPicture" render="Pig" position="20,80" size="480,270" backgroundColor="transparent" zPosition="1"/>
     <widget source="session.CurrentService" render="Label" position="20,60" size="480,20" zPosition="1" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -62,17 +62,17 @@
 
   <screen name="PigTemplate">
     <panel name="SelectionTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="20,645" size="120,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="20,645" size="120,34" alphatest="on"/>
   </screen>
 
   <screen name="PigLessTemplate">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/logos/pli.png" position="20,645" size="120,34" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/logos/pli.png" position="20,645" size="120,34" alphatest="on"/>
   </screen>
 
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
-    <widget source="title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget source="title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="menu" render="Listbox" position="520,70" size="740,600" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (50,9),size = (690,30),flags = RT_HALIGN_LEFT,text = 0) ],
@@ -86,208 +86,208 @@
   <!-- Button Templates -->
 
   <screen name="ButtonRed">
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="on"/>
   </screen>
 
   <screen name="ButtonGreen">
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="on"/>
   </screen>
 
   <screen name="ButtonYellow">
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="on"/>
   </screen>
 
   <screen name="ButtonBlue">
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="on" />
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="on"/>
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="55,689" size="35,25" />
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="55,689" size="35,25"/>
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="90,689" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="90,689" size="35,25"/>
   </screen>
 
   <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="20,689" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOkTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="20,689" size="35,25" />
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="20,689" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="408,689" size="35,25" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="408,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="990,689" size="35,25" />
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="990,689" size="35,25"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
     <panel name="ButtonRed"/>
-    <widget name="key_red" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_red" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RG">
     <panel name="ButtonTemplate_R"/>
     <panel name="ButtonGreen"/>
-    <widget name="key_green" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_green" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGY">
     <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYB">
     <panel name="ButtonTemplate_RGY"/>
-    <panel name="ButtonBlue" />
-    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonBlue"/>
+    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RB">
     <panel name="ButtonTemplate_R"/>
-    <panel name="ButtonBlue" />
-    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonBlue"/>
+    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_Y">
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_YB">
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGB">
     <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="key_blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RS">
     <panel name="ButtonRed"/>
-   <widget source="key_red" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+   <widget source="key_red" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonGreen"/>
-    <widget source="key_green" render="Label" position="470,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_green" render="Label" position="470,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYS">
     <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYBS">
     <panel name="ButtonTemplate_RGYS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RYS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RBS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGBS">
     <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_BS">
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_YBS">
     <panel name="ButtonTemplate_BS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_GYBS">
     <panel name="ButtonTemplate_YBS"/>
     <panel name="ButtonGreen"/>
-    <widget source="key_green" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="key_green" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateR">
     <panel name="ButtonRed"/>
-    <widget name="red" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="red" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRG">
     <panel name="ButtonTemplateR"/>
     <panel name="ButtonGreen"/>
-    <widget name="green" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="green" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGY">
     <panel name="ButtonTemplateRG"/>
     <panel name="ButtonYellow"/>
-    <widget name="yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="yellow" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYB">
     <panel name="ButtonTemplateRGY"/>
     <panel name="ButtonBlue"/>
-    <widget name="blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <widget name="blue" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRS">
     <panel name="ButtonRed"/>
-   <widget source="red" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+   <widget source="red" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGS">
     <panel name="ButtonTemplateRS"/>
     <panel name="ButtonGreen"/>
-    <widget source="green" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="green" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYS">
     <panel name="ButtonTemplateRGS"/>
     <panel name="ButtonYellow"/>
-    <widget source="yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="yellow" render="Label" position="745,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYBS">
     <panel name="ButtonTemplateRGYS"/>
     <panel name="ButtonBlue"/>
-    <widget source="blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
+    <widget source="blue" render="Label" position="1030,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="CancelTemplate">
     <panel name="ButtonRed"/>
-    <widget name="canceltext" position="165,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="canceltext" position="165,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="OKTemplate">
     <panel name="ButtonGreen"/>
-    <widget name="oktext" position="450,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="oktext" position="450,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="CancelOKTemplate" >
@@ -306,7 +306,7 @@
     <widget source="session.CurrentService" render="Picon" position="20,645" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="180,583" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left" />
+    <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="180,583" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left"/>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="265,583" size="540,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -349,37 +349,37 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1080,598" size="40,21" zPosition="3" alphatest="on">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1080,598" size="40,21" zPosition="3" alphatest="on">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1080,598" size="40,21" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">IsHD</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_txt_on.png" position="1043,598" size="33,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">HasTelext</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1006,598" size="33,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_crypt_on.png" position="986,598" size="16,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_hbbtv_on.png" position="936,598" size="46,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">HasHBBTV</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_sub_on.png" position="899,598" size="33,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide"/>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="1160,629" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
+    <widget render="VideoSize" source="session.CurrentService" position="1160,629" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1"/>
     <widget source="session.FrontendStatus" render="Label" position="1160,657" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
@@ -389,7 +389,7 @@
     <widget source="session.CurrentService" render="Label" position="1160,685" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
+    <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend"/>-->
   </screen>
 
 </skin>
