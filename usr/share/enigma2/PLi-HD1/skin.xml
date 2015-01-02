@@ -1928,8 +1928,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="520,70" size="740,200" scrollbarMode="showOnDemand"/>
-    <widget name="status" position="520,320" size="740,130" font="Regular;16"/>
-    <widget name="statusbar" position="520,450" size="740,20" font="Regular;18"/>
+    <widget name="status" position="520,330" size="740,140" font="Regular;18"/>
+    <widget name="statusbar" position="520,500" size="740,20" font="Regular;18"/>
   </screen>
 
   <!-- Picture-Player -->
