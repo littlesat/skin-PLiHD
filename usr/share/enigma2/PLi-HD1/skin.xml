@@ -1505,7 +1505,7 @@
   <screen name="HelpMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Help..." position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
-    <widget name="list" position="520,70" size="570,600" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="520,70" size="570,600" itemHeight="30" scrollbarMode="showOnDemand"/>
     <widget name="rc" position="1106,70" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
     <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
     <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
@@ -1809,10 +1809,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel position="645,62" size="615,26" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;22" halign="center"/>
     <widget name="playlist" position="645,90" size="615,391" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand"/>
 
-    <widget name="title" position="200,505" size="780,40" backgroundColor="noTransBG" transparent="1" font="Regular;26" valign="top"/>
+    <widget name="title" position="200,505" size="880,40" backgroundColor="noTransBG" transparent="1" font="Regular;26" valign="top"/>
     <eLabel position="180,545" size="920,2" backgroundColor="darkgrey"/>
     <widget name="titletext" position="200,555" size="100,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-    <widget name="currenttext" position="400,555" size="750,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
+    <widget name="currenttext" position="300,555" size="800,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="artisttext" position="200,585" size="100,25" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;20" valign="top"/>
     <widget name="artist" position="300,585" size="680,25" backgroundColor="noTransBG" transparent="1" font="Regular;20" valign="top"/>
     <widget name="albumtext" position="200,615" size="100,25" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;20" valign="top"/>
@@ -1928,8 +1928,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="520,70" size="740,200" scrollbarMode="showOnDemand"/>
-    <widget name="status" position="520,320" size="740,130" font="Regular;16"/>
-    <widget name="statusbar" position="520,450" size="740,20" font="Regular;18"/>
+    <widget name="status" position="520,330" size="740,140" font="Regular;18"/>
+    <widget name="statusbar" position="520,500" size="740,20" font="Regular;18"/>
   </screen>
 
   <!-- Picture-Player -->
@@ -1959,16 +1959,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="Pic_Setup" title="Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget name="config" position="520,70" size="740,600" itemHeight="29" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="520,70" size="740,600" itemHeight="30" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="Pic_Full_View" position="fill" title="Picture" flags="wfNoBorder">
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black"/>
     <widget name="pic" position="fill" zPosition="1" alphatest="on"/>
-    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="black" transparent="1"/>
-    <widget name="point" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on"/>
-    <widget name="play_icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
-    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
+    <eLabel position="15,15" size="30,25" zPosition="2" backgroundColor="black" transparent="1"/>
+    <widget name="point" position="17,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on"/>
+    <widget name="play_icon" position="20,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
+    <widget source="file" render="Label" position="60,15" size="600,25" zPosition="3" font="Regular;20" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
   </screen>
 
   <!-- Inputbox -->

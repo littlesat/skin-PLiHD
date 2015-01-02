@@ -282,12 +282,12 @@
 
   <screen name="CancelTemplate">
     <panel name="ButtonRed"/>
-    <widget name="canceltext" position="165,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
+    <widget name="canceltext" position="165,687" zPosition="2" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="OKTemplate">
     <panel name="ButtonGreen"/>
-    <widget name="oktext" position="450,687" zPosition="1" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
+    <widget name="oktext" position="450,687" zPosition="2" size="230,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="CancelOKTemplate" >
