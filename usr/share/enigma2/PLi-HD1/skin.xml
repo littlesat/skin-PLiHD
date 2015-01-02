@@ -1153,7 +1153,7 @@
     <panel name="ButtonTemplate_RGS"/>
     <widget name="statuspic" position="710,635" size=" 48,48" alphatest="on"/>
     <widget source="author" render="Label" position="590,80" size="570,30" zPosition="10" font="Regular;24" backgroundColor="background" transparent="1"/>
-    <ePixmap pixmap="PLi-HD1/buttons/selx.png" position="590,140" size="630,30" alphatest="on"/>
+    <!--ePixmap pixmap="PLi-HD/buttons/sel.png" position="590,140" size="630,30" alphatest="on"/-->
     <widget name="detailtext" position="590,175" size="630,260" font="Regular;20" backgroundColor="background" transparent="1"/>
     <widget name="screenshot" position="500,450" size="350,150" alphatest="on" halign="left"/>
     <widget name="divpic" position="0,0" size="0,0"/>
@@ -1346,7 +1346,7 @@
   <screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-    <widget source="config" render="Listbox" position="520,70" size="740,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/selx.png">
+    <widget source="config" render="Listbox" position="520,70" size="740,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80,4),size = (590,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
