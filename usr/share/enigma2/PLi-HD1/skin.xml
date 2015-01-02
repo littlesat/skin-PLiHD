@@ -241,7 +241,8 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand"
-            serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#c02020" backgroundColorMarkedSelected="#04202060"
+            serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565"
+            foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
     <widget source="ServiceEvent" render="Label" position="20,360" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" haligh="left">
       <convert type="EventName">Name</convert>
@@ -678,10 +679,10 @@
   <screen name="ChannelSelectionRadio" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="520,70" size="740,450" serviceNumberFont="Regular;24" serviceInfoFont="Regular;22" serviceItemHeight="30" serviceNameFont="Regular;22"
-            foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#902020"
-            backgroundColorMarkedSelected="#656565" transparent="1" scrollbarMode="showOnDemand">
-    </widget>
+    <widget name="list" position="520,70" size="740,450" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand"
+            serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565"
+            foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
+            colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
     <widget source="session.Event_Now" render="Label" position="20,80" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
