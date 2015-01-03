@@ -343,7 +343,7 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="200,625" size="900,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD2/infobar/pbar.png" position="200,625" size="900,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1060,588" size="40,21" zPosition="3" alphatest="on">
