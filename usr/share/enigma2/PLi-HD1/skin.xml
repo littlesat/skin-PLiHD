@@ -683,7 +683,7 @@
             serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565"
             foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
-    <widget source="session.Event_Now" render="Label" position="20,80" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
+    <widget source="session.Event_Now" render="Label" position="20,70" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="20,122" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -695,12 +695,12 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="360,122" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19">
     <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Default</convert>
+    <convert type="ClockToText">Format:%H:%M></convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="400,122" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,148" size="480,300" transparent="1" foregroundColor="grey" font="Regular; 20" halign="block">
+    <widget source="session.Event_Now" render="Label" position="20,148" size="480,300" transparent="1" foregroundColor="grey" font="Regular;20" halign="block">
     <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
