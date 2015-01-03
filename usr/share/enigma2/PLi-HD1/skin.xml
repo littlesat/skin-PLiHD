@@ -16,7 +16,7 @@
     <font name="LCD" filename="lcd.ttf" scale="100"/>
     <font name="Console" filename="tuxtxt.ttf" scale="100"/>
     <font name="Fixed" filename="andale.ttf" scale="100"/>
-    <alias name="ChoiceList" font="Regular" size="20" height="29" />
+    <alias name="ChoiceList" font="Regular" size="21" height="30" />
   </fonts>
 
   <!-- Colors -->
@@ -618,7 +618,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
-    <widget name="choosen" position="0,380" size="500,250" scrollbarMode="showOnDemand"/>
+    <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!--CI Config Menu -->
