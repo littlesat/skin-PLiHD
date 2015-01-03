@@ -709,7 +709,7 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="220,105" size="840,8" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD2/infobar/pbar.png" position="220,105" size="840,8" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="85,60" size="100,60" zPosition="2" alphatest="on">
