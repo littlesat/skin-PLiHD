@@ -175,7 +175,7 @@
     <widget source="session.Event_Now" render="Label" position="430,155" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,190" size="610,368" font="Regular; 20" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="20,190" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,125" size="610,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
@@ -187,7 +187,7 @@
     <widget source="session.Event_Next" render="Label" position="1060,155" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,190" size="610,368" font="Regular; 20" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,190" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
@@ -261,7 +261,7 @@
     <widget source="ServiceEvent" render="Label" position="400,395" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,425" size="480,210" transparent="1" font="Regular; 20" halign="block">
+    <widget source="ServiceEvent" render="Label" position="20,425" size="480,210" transparent="1" font="Regular;20" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="480,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
@@ -276,15 +276,15 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="15,34" size="570,340" transparent="1"/>
-    <widget source="ServiceEvent" render="Label" position="15,400" size="570,65" font="Regular; 19" backgroundColor="black" foregroundColor="foreground" zPosition="2" transparent="1">
+    <widget source="ServiceEvent" render="Label" position="15,400" size="570,65" font="Regular;19" backgroundColor="black" foregroundColor="foreground" zPosition="2" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="15,375" zPosition="2" size="60,25" font="Regular; 22" backgroundColor="black" halign="right" noWrap="1" foregroundColor="yellow" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="15,375" zPosition="2" size="60,25" font="Regular;22" backgroundColor="black" halign="right" noWrap="1" foregroundColor="yellow" transparent="1" >
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,375" zPosition="2" size="73,25" font="Regular; 22" backgroundColor="black" noWrap="1" foregroundColor="yellow" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="85,375" zPosition="2" size="73,25" font="Regular;22" backgroundColor="black" noWrap="1" foregroundColor="yellow" transparent="1" >
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
@@ -312,7 +312,7 @@
     <widget source="Event" render="Label" position="20,360" size="480,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="20,425" size="480,207" transparent="1" font="Regular; 20" halign="block">
+    <widget source="Event" render="Label" position="20,425" size="480,207" transparent="1" font="Regular;20" halign="block">
 	<convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="20,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
@@ -386,7 +386,7 @@
     <widget source="Service" render="Label" position="400,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="Event" render="Label" position="20,420" size="480,161" transparent="1" font="Regular; 20" halign="block">
+    <widget source="Event" render="Label" position="20,420" size="480,161" transparent="1" font="Regular;20" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
@@ -1753,7 +1753,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD1/infobar/bar_big.png" position="20,100" size="1240,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<eLabel text="SNR:" position="25,100" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35"/>
+	<eLabel text="SNR:" position="25,100" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular;35"/>
 	<widget source="Frontend" render="Label" position="1035,100" size="220,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
@@ -1761,7 +1761,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD1/infobar/bar_big.png" position="20,160" size="1240,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	<eLabel text="AGC:" position="25,160" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular; 35"/>
+	<eLabel text="AGC:" position="25,160" size="100,50" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular;35"/>
 	<widget source="Frontend" render="Label" position="1035,160" size="220,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
