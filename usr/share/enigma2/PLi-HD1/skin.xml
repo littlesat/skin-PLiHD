@@ -842,21 +842,21 @@
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [
-						MultiContentEntryText(pos = (5, 1),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (50, 1),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (60, 1),  size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (260, 1), size = (440, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (700, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (5,1),   size = (45,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+						MultiContentEntryText(pos = (50,1),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+						MultiContentEntryText(pos = (60,1),  size = (200,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (260,1), size = (440,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+						MultiContentEntryText(pos = (700,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (25, [
-						MultiContentEntryText(pos = (5, 1),   size = (45, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (50, 1),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (60, 1),  size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (260, 1), size = (440, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (700, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (5,1),   size = (45,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+						MultiContentEntryText(pos = (50,1),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+						MultiContentEntryText(pos = (60,1),  size = (200,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (260,1), size = (440,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+						MultiContentEntryText(pos = (700,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
-				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
+				"fonts": [gFont("Regular",20), gFont("Regular",16)],
 				"itemHeight": 25
 				}
       </convert>
@@ -1197,9 +1197,9 @@
     <widget source="list" render="Listbox" position="520,70" size="740,550" scrollbarMode="showOnDemand" selectionDisabled="0">
 		<convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (720, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (0,0), size = (720,26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 					],
-			"fonts": [gFont("Regular", 20),gFont("Regular", 20)],
+			"fonts": [gFont("Regular",20),gFont("Regular",20)],
 			"itemHeight": 25
 			}
 		</convert>
@@ -1440,13 +1440,13 @@
     <widget source="list" render="Listbox" position="520,70" size="740,350" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
-				MultiContentEntryText(pos = (10, 2), size = (550, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
-				MultiContentEntryText(pos = (10, 26), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-				MultiContentEntryText(pos = (200, 26), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
-				MultiContentEntryText(pos = (400, 2), size = (235, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
-				MultiContentEntryText(pos = (400, 26), size = (235, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
+				MultiContentEntryText(pos = (10,2), size = (550,25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+				MultiContentEntryText(pos = (10,26), size = (175,20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+				MultiContentEntryText(pos = (200,26), size = (175,20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
+				MultiContentEntryText(pos = (400,2), size = (235,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
+				MultiContentEntryText(pos = (400,26), size = (235,20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
 			],
-		"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+		"fonts": [gFont("Regular",22),gFont("Regular",18)],
 		"itemHeight": 50
 		}
 	</convert>
@@ -1463,10 +1463,10 @@
       <convert type="TemplatedMultiContent">
       <!--  device, description, devicepng, divpng  -->
 	{"template": [
-	      MultiContentEntryPixmapAlphaTest(pos = (10, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
-	      MultiContentEntryText(pos = (80, 6), size = (660, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+	      MultiContentEntryPixmapAlphaTest(pos = (10,8), size = (54,54), png = 2), # index 3 is the interface pixmap
+	      MultiContentEntryText(pos = (80,6), size = (660,54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
             ],
-	  "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+	  "fonts": [gFont("Regular",22),gFont("Regular",17)],
 	  "itemHeight": 70
 	}
       </convert>
@@ -1629,10 +1629,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="languages" render="Listbox" position="520,70" size="740,600" scrollbarMode="showOnDemand" >
       <convert type="TemplatedMultiContent">
 	{"template": [
-	      MultiContentEntryText(pos = (100, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-	      MultiContentEntryPixmap(pos = (20, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+	      MultiContentEntryText(pos = (100,10), size = (200,50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+	      MultiContentEntryPixmap(pos = (20,5), size = (60,40), png = 2), # index 2 is the pixmap
 	    ],
-	  "fonts": [gFont("Regular", 20)],
+	  "fonts": [gFont("Regular",20)],
 	  "itemHeight": 50
 	}
       </convert>
@@ -1657,10 +1657,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="nimlist" render="Listbox" position="520,70" size="740,600" scrollbarMode="showOnDemand" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
-		    MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-		    MultiContentEntryText(pos = (50, 28), size = (630, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+		    MultiContentEntryText(pos = (10,3), size = (670,30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+		    MultiContentEntryText(pos = (50,28), size = (630,50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 		  ],
-		  "fonts": [gFont("Regular", 20), gFont("Regular", 15)],
+		  "fonts": [gFont("Regular",20), gFont("Regular",15)],
 		  "itemHeight": 80
 	    }
 	  </convert>
