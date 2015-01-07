@@ -240,10 +240,10 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <!-- prepared: colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8" -->
     <widget name="list" position="520,70" size="740,600" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565"
             foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
+            colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
     <widget source="ServiceEvent" render="Label" position="20,360" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" haligh="left">
       <convert type="EventName">Name</convert>
