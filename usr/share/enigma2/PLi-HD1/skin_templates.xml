@@ -310,10 +310,10 @@
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="265,583" size="540,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,560" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;16" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,560" size="360,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="gray" font="Regular;16" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,583" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,583" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="140,598" size="20,20" zPosition="3" alphatest="on">
@@ -344,7 +344,7 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD1/infobar/pbar.png" position="180,635" size="940,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/infobar/pbar.png" position="180,635" size="940,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1080,598" size="40,21" zPosition="3" alphatest="on">
