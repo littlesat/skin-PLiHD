@@ -25,7 +25,7 @@
     <color name="background" value="#00000000"/>
     <color name="black" value="#00000000"/>
     <color name="blue" value="#00879ce1"/>
-    <color name="darkblue" value="#00000020"/>
+    <color name="darkblue" value="#00000028"/>
     <color name="bluetransparent" value="#08001e4b"/>
     <color name="dark" value="#00242424"/>
     <color name="darkgrey" value="#00555556"/>
@@ -166,28 +166,28 @@
     <widget source="session.FrontendStatus" render="Label" position="1208,40" size="50,16" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,125" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="20,115" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,155" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Now" render="Label" position="20,145" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="430,155" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Now" render="Label" position="430,145" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,190" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="20,180" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,125" size="610,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Next" render="Label" position="650,115" size="610,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNext</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,155" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Next" render="Label" position="650,145" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1060,155" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Next" render="Label" position="1060,145" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,190" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,180" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
@@ -240,6 +240,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
+    <!-- prepared: colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8" -->
     <widget name="list" position="520,70" size="740,600" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565"
             foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
@@ -711,8 +712,11 @@
     <widget source="session.CurrentService" render="Label" position="180,40" size="940,32" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="20,92" size="140,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top">
-      <convert type="ClockToText">ShortDate</convert>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,5" size="360,25" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="gray" font="Regular;16" valign="center" halign="left">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,30" size="140,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">
+      <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="180,90" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
@@ -743,11 +747,11 @@
     <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD1/infobar/pbar.png" position="180,75" size="940,8" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="20,10" size="100,60" zPosition="2" alphatest="on">
+    <widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="20,100" size="100,30" zPosition="2" alphatest="on">
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="RdsDecoder" render="Label" position="20,0" size="1240,30" transparent="1" zPosition="5" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
+    <widget source="RdsDecoder" render="Label" position="20,0" size="1240,30" transparent="1" zPosition="5" foregroundColor="green" font="LCD;30" valign="center" halign="center">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1200,64" size="20,20" zPosition="3" alphatest="on">
