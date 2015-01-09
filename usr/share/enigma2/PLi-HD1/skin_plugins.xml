@@ -1527,7 +1527,7 @@
 
  <!-- EPG Refresh  -->
 
-  <screen name="EPGRefreshConfiguration" position="fill" title="Configuration of EPGRefresh" flags="wfNoBorder">
+  <screen name="EPGRefreshConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
@@ -1541,13 +1541,13 @@
     <widget name="config" position="520,70" size="740,300" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
-  <screen name="EPGRefreshProfile" position="fill" title="Configuration of EPGRefresh" flags="wfNoBorder">
+  <screen name="EPGRefreshProfile" position="fill" title="EPGRefreshProfile" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
-  <screen name="EPGSaveLoadConfiguration" position="fill" title="Configuration of EPGRefresh" flags="wfNoBorder">
+  <screen name="EPGSaveLoadConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand" transparent="1"/>
@@ -1555,4 +1555,8 @@
     <widget source="help" render="Label" position="20,460" size="480,100" font="Regular;20" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
   </screen>
 
+  <screen name="ManualEPGlist" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="list" position="520,70" size="740,400" scrollbarMode="showOnDemand" transparent="1"/>
+  </screen>
 </skin>
