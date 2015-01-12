@@ -716,7 +716,7 @@
     <widget source="session.CurrentService" render="Label" position="180,40" size="920,32" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,5" size="360,25" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="gray" font="Regular;16" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,5" size="360,25" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;16" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="20,20" size="140,50" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" valign="center" halign="left">

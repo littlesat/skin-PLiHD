@@ -724,7 +724,7 @@
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="RdsDecoder" render="Label" position="40,0" size="1200,30" transparent="1" zPosition="5" backgroundColor="gray" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
+    <widget source="RdsDecoder" render="Label" position="40,0" size="1200,30" transparent="1" zPosition="5" backgroundColor="grey" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1220,65" size="20,20" zPosition="3" alphatest="on">
