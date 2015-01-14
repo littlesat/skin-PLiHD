@@ -21,7 +21,7 @@
     <widget name="ip" position="960,105" size="225,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="port" position="1185,105" size="150,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="type" position="1395,105" size="300,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="entrylist" position="780,165" size="1110,450" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
+    <widget name="entrylist" position="780,165" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
   </screen>
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
@@ -291,8 +291,8 @@
 
   <screen name="TempFanControl" position="fill" title="Fan Control" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="217,1030" size="39,39" alphatest="on"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="630,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="217,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" position="630,1030" size="39,39" alphatest="on"/>
     <widget source="red"  render="Label" position="247,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
     <widget source="green" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
     <widget name="config" position="780,105" size="1110,180" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
@@ -478,10 +478,10 @@
 
   <screen flags="wfNoBorder" name="MovieTagger" position="fill" title="Movie Tagger">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" alphatest="on" position="585,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" alphatest="on" position="1020,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" alphatest="on" position="585,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/yellow.png" alphatest="on" position="1020,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
     <widget name="buttonred" backgroundColor="secondBG" font="Regular;33" halign="left" position="225,1030" size="330,42" transparent="1" zPosition="1"/>
     <widget name="buttongreen" backgroundColor="secondBG" font="Regular;33" halign="left" position="652,1030" size="330,42" transparent="1" zPosition="1"/>
     <widget name="buttonyellow" backgroundColor="secondBG" font="Regular;33" halign="left" position="1087,1030" size="330,42" transparent="1" zPosition="1"/>
@@ -524,7 +524,7 @@
 
   <screen flags="wfNoBorder" name="AboutScreen" position="fill" title="NetRadio Classic v.2.2c-Tunisiasat">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
     <eLabel text="Exit" backgroundColor="secondBG" font="Regular;33" halign="left" position="214,967" size="330,42" transparent="1" zPosition="1"/>
 	<ePixmap position="142,630" zPosition="4" size="510,180" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ClassicNetRadio/icons/tunisiasat.jpg" transparent="1" alphatest="on"/>
     <widget name="text" font="Regular;36" position="780,100" size="1110,912" transparent="1"/>
@@ -532,7 +532,7 @@
 
   <screen flags="wfNoBorder" name="Menuscrn" position="fill" title="NetRadio Classic Menu">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
     <eLabel text="Exit" backgroundColor="secondBG" font="Regular;33" halign="left" position="214,967" size="330,39" transparent="1" zPosition="1"/>
 	<ePixmap position="142,630" zPosition="4" size="510,180" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ClassicNetRadio/icons/menu2.jpg" transparent="1" alphatest="on"/>
     <widget name="menu" font="Regular;36" position="780,100" size="1110,912" scrollbarMode="showOnDemand" transparent="1"/>
@@ -546,7 +546,7 @@
 
   <screen flags="wfNoBorder" name="playingscrn" position="fill" title="NetRadio Classic Playing">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
     <eLabel text="Exit" backgroundColor="secondBG" font="Regular;33" halign="left" position="214,967" size="330,39" foregroundColor="grey" transparent="1" zPosition="1"/>
     <widget name="titel" font="Regular;39" position="150,225" foregroundColor="yellow" valign="center" halign="center" size="1650,450" transparent="1"/>
     <eLabel text="Favorite" backgroundColor="secondBG" font="Regular;36" halign="right" position="1125,967" size="330,45" foregroundColor="grey" transparent="1" zPosition="1"/>
@@ -555,8 +555,8 @@
 
   <screen flags="wfNoBorder" name="StationsScreen" position="fill" title="Add to Favorites">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="172,1030" size="39,39"/>
     <eLabel text="Exit" backgroundColor="secondBG" font="Regular;33" halign="left" position="214,967" size="330,39" transparent="1" zPosition="1"/>
     <widget name="ButtonBluetext" backgroundColor="secondBG" font="Regular;33" halign="left" position="1522,1030" size="330,39" transparent="1" zPosition="1"/>
     <widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;36" position="135,165" size="1650,750" transparent="1"/>
@@ -564,7 +564,7 @@
 
   <screen flags="wfNoBorder" name="ConfigListScreen" position="fill" title="Add to Favorites">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" alphatest="on" position="1455,1030" size="39,39"/>
     <widget name="ButtonBluetext" backgroundColor="secondBG" font="Regular;33" halign="left" position="1522,1030" size="330,39" transparent="1" zPosition="1"/>
     <widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;33" position="780,100" size="1110,912" transparent="1"/>
   </screen>
@@ -584,8 +584,8 @@
 
   <screen flags="wfNoBorder" name="GoogleMapsConfigScreen" position="fill" title="GoogleMaps Setup">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="187,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" alphatest="on" position="615,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="187,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" alphatest="on" position="615,1030" size="39,39"/>
     <widget name="buttonred" backgroundColor="secondBG" font="Regular;33" halign="left" position="217,1030" size="345,42" transparent="1" zPosition="1"/>
     <widget name="buttongreen" backgroundColor="secondBG" font="Regular;33" halign="left" position="675,1030" size="345,42" transparent="1" zPosition="1"/>
     <widget name="config" scrollbarMode="showOnDemand" itemHeight="38" font="Regular;28" position="780,100" size="1110,912" transparent="1"/>
@@ -725,8 +725,8 @@
 
   <screen flags="wfNoBorder" name="DeviceBrowser" position="fill" title="DeviceBrowser">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" alphatest="on" position="187,1030" size="39,39"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" alphatest="on" position="615,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="187,1030" size="39,39"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" alphatest="on" position="615,1030" size="39,39"/>
     <widget name="key_r" backgroundColor="secondBG" font="Regular;33" halign="left" position="217,1030" size="345,42" transparent="1" zPosition="1"/>
     <widget name="key_g" backgroundColor="secondBG" font="Regular;33" halign="left" position="675,1030" size="345,42" transparent="1" zPosition="1"/>
     <widget name="filelist" itemHeight="38" font="Regular;28" position="780,100" size="1110,912" transparent="1" scrollbarMode="showOnDemand"/>
@@ -1205,7 +1205,7 @@
   <!-- BitrateViewer -->
 
   <screen name="BitrateViewer" backgroundColor="transparent" position="1380,510" size="510,285" title="Bitrate viewer" flags="wfNoBorder">
-    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/hd.png" position="0,0" size="510,285" zPosition="-1"/>
+    <ePixmap alphatest="off" pixmap="PLi-FullHD/infobar/hd.png" position="0,0" size="510,285" zPosition="-1"/>
     <eLabel text="Video" position="15,15" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
     <eLabel text="min" position="15,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
     <widget name="vmin" position="15,105" size="120,39" font="Regular;33" transparent="1"/>
@@ -1370,7 +1370,7 @@
       <convert type="StringList"/>
     </widget>
     <widget name="config" position="30,655" size="720,270" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="810,480" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="810,480" size="39,39" alphatest="on"/>
     <widget name="languagetext" position="877,486" size="165,36" font="Regular;27"/>
     <widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
     <widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
