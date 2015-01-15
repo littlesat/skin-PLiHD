@@ -961,16 +961,13 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplateRG"/>
     <eLabel text="Plugin browser" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="list" position="780,100" size="1110,912"
-            itemHeight="76" setItemNameFont="Regular;32" setItemDescrFont="Regular;22"
-            setNameXYH="150,8,38" setDescrXYH="150,42,25" setIconXYWH="15,8,150,60" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" itemHeight="76" setNameFont="Regular;32" setDescrFont="Regular;22" setName="8,38" setDescr="42,25" setPluginIcon="15,8,150,60" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="780,105" size="1110,75" zPosition="-1" transparent="1" font="Regular;32" valign="center" halign="center"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="76" setItemNameFont="Regular;32" setItemDescrFont="Regular;22"
-            setNameXYH="120, 8,38" setDescrXYH="120, 42,25"  setIconXYWH="15,0,90,76" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" itemHeight="76" setNameFont="Regular;32" setDescrFont="Regular;22" setName="8,38" setDescr="42,25"  setIcon="15,0,90,76" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
