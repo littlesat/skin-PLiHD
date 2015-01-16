@@ -1524,7 +1524,7 @@
   <screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Select HDD" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="hddlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
+    <widget name="hddlist" position="780,100" itemHeight="38" font="Regular;28" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Harddisk setup -->
