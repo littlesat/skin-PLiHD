@@ -20,7 +20,8 @@
     <alias name="FileList" font="Regular" size="28" height="38"/>
     <alias name="FileListMulti" font="Regular" size="28" height="38"/>
     <alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
-    <alias name="PluginBrowser1" font="Regular" size="22" height="76"/>
+    <alias name="PluginBrowser1" font="Regular" size="22"/>
+    <alias name="ServiceInfo" font="Regular" size="30" height="45"/>
   </fonts>
 
   <parameters>
@@ -38,6 +39,10 @@
     <parameter name="PluginBrowserDownloadName" value="120,8,38"/>
     <parameter name="PluginBrowserDownloadDescr" value="120,42,25"/>
     <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76"/>
+    <parameter name="ServiceInfo" value="0,0,450,50"/>
+    <parameter name="ServiceInfoLeft" value="0,0,450,45"/>
+    <parameter name="ServiceInfoRight" value="450,0,1000,45"/>
+
   </parameters>
 
   <!-- Colors -->
@@ -953,8 +958,8 @@
   <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="loglist" position="780,105" size="1110,412" scrollbarMode="showOnDemand" font="Regular;36"/>
-    <widget name="logentry" position="30,579" size="1860,337" font="Regular;36"/>
+    <widget name="loglist" position="780,105" size="1110,412" itemHeight="38" scrollbarMode="showOnDemand" font="Regular;32"/>
+    <widget name="logentry" position="30,579" size="1860,337" font="Regular;32"/>
   </screen>
 
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
@@ -1242,7 +1247,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
     <eLabel text="Network Configuration" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="menulist" position="780,105" size="1110,420" itemHeight="42" zPosition="10" scrollbarMode="showOnDemand"/>
+    <widget name="menulist" position="780,105" size="1110,420" itemHeight="38" font="Regular;28" zPosition="10" scrollbarMode="showOnDemand"/>
     <widget source="description" render="Label" position="780,547" size="1110,300" transparent="1" font="Regular;31" valign="center" halign="center"/>
     <widget source="IFtext" render="Label" position="1275,880" size="247,37" transparent="1" zPosition="10" font="Regular;31" halign="right"/>
     <widget source="IF" render="Label" position="1530,880" size="375,37" transparent="1" zPosition="10" font="Regular;31" halign="left"/>
@@ -1879,14 +1884,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="lmemtext"  font="Regular;30" position="780,127" size="450,862" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="lmemvalue" font="Regular;30" position="780,127" size="450,862" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
-    <widget name="rmemtext"  font="Regular;30" position="1440,127" size="450,862" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="rmemvalue" font="Regular;30" position="1440,127" size="450,862" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
-    <widget name="pfree" position="1207,303" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
-    <widget name="pused" position="1207,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
-    <widget name="slide" position="1320,127" size="27,862" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop"/>
+    <widget name="lmemtext"  font="Regular;30" position="780,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget name="lmemvalue" font="Regular;30" position="780,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
+    <widget name="rmemtext"  font="Regular;30" position="1440,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget name="rmemvalue" font="Regular;30" position="1440,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
+    <widget name="pfree" position="1214,303" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
+    <widget name="pused" position="1214,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
+    <widget name="slide" position="1327,105" size="20,900" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop"/>
     <widget name="info" position="30,600" size="720,225" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget name="params" rowsincolumn="26" />
   </screen>
    <!-- Commit Info -->
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
