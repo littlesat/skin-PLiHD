@@ -16,8 +16,29 @@
     <font name="LCD" filename="lcd.ttf" scale="100"/>
     <font name="Console" filename="tuxtxt.ttf" scale="100"/>
     <font name="Fixed" filename="andale.ttf" scale="100"/>
-    <alias name="ChoiceList" font="Regular" size="28" height="38"/>
+    <alias name="ChoiceList" font="Regular" size="30" height="42"/>
+    <alias name="FileList" font="Regular" size="28" height="38"/>
+    <alias name="FileListMulti" font="Regular" size="28" height="38"/>
+    <alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
+    <alias name="PluginBrowser1" font="Regular" size="22" height="76"/>
   </fonts>
+
+  <parameters>
+    <parameter name="FileListName" value="68,4,1000,34"/>
+    <parameter name="FileListIcon" value="7,4,52,37"/>
+    <parameter name="FileListMultiName" value="90,3,1000,32"/>
+    <parameter name="FileListMultiIcon" value="45, 4, 30, 30"/>
+    <parameter name="FileListMultiLock" value="2,0,36,36"/>
+    <parameter name="ChoicelistDash" value="0,4,1000,34"/>
+    <parameter name="ChoicelistName" value="68,4,1000,34"/>
+    <parameter name="ChoicelistIcon" value="7,4,52,37"/>
+    <parameter name="PluginBrowserName" value="180,8,38"/>
+    <parameter name="PluginBrowserDescr" value="180,42,25"/>
+    <parameter name="PluginBrowserIcon" value="15,8,150,60"/>
+    <parameter name="PluginBrowserDownloadName" value="120,8,38"/>
+    <parameter name="PluginBrowserDownloadDescr" value="120,42,25"/>
+    <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76"/>
+  </parameters>
 
   <!-- Colors -->
 
@@ -610,7 +631,7 @@
   <screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Hotkey -->
@@ -876,7 +897,7 @@
   <screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Channellist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="menu" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="menu" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Minute input -->
@@ -892,7 +913,7 @@
   <screen name="MovieContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Movielist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="menu" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="menu" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- MovieBrowserConfig -->
@@ -961,13 +982,13 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplateRG"/>
     <eLabel text="Plugin browser" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="76" setNameFont="Regular;32" setDescrFont="Regular;22" setName="8,38" setDescr="42,25" setPluginIcon="15,8,150,60" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="780,105" size="1110,75" zPosition="-1" transparent="1" font="Regular;32" valign="center" halign="center"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="76" setNameFont="Regular;32" setDescrFont="Regular;22" setName="8,38" setDescr="42,25"  setIcon="15,0,90,76" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
@@ -1006,7 +1027,7 @@
   <screen name="BackupSelection" title="Select files/folders to backup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <widget name="checkList" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" setLock="2,0,36,36" setIcon="45, 4, 30, 30" itemRect="90,3,1000,32" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="checkList" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Ipkg installer -->
@@ -1998,7 +2019,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="KeyMenuTemplate"/>
     <widget name="text" position="780,105" size="1110,37" font="Regular;33"/>
     <widget name="target" position="780,157" size="1110,37" valign="center" font="Regular;33"/>
-    <widget name="filelist" position="780,195" size="1110,310" itemHeight="38" font="Regular;28" setIcon="15, 4, 30, 30" itemRect="55,3,1000,32" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+    <widget name="filelist" position="780,195" size="1110,310" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1"/>
     <widget name="textbook" position="780,517" size="1110,37" font="Regular;33"/>
     <widget name="booklist" position="787,562" itemHeight="38" font="Regular;28" size="1102,450" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
