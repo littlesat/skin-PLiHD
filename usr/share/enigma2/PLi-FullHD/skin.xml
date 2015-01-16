@@ -45,6 +45,7 @@
     <parameter name="ServiceInfoRight" value="450,0,1000,45"/>
     <parameter name="SelectionListDescr" value="45, 3, 1000, 32"/>
     <parameter name="SelectionListLock" value="0, 2, 36, 36"/>
+    <parameter name="ConfigListSeperator" value="300"/>
   </parameters>
 
   <!-- Colors -->
