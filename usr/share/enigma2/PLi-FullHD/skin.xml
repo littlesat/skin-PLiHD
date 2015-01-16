@@ -23,6 +23,12 @@
     <alias name="PluginBrowser1" font="Regular" size="22"/>
     <alias name="ServiceInfo" font="Regular" size="30" height="45"/>
     <alias name="SelectionList" font="Regular" size="28" height="30"/>
+    <alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
+    <alias name="PartnerBoxEntryList1" font="Regular" size="25"/>
+    <alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
+    <alias name="PartnerBoxE2TimerMenu1" font="Regular" size="28"/>
+    <alias name="PartnerBoxBouquetList0" font="Regular" size="32" height="45"/>
+    <alias name="PartnerBoxBouquetList1" font="Regular" size="28"/>
   </fonts>
 
   <parameters>
@@ -33,6 +39,7 @@
     <parameter name="FileListMultiLock" value="2,0,36,36"/>
     <parameter name="ChoicelistDash" value="0,4,1000,34"/>
     <parameter name="ChoicelistName" value="68,4,1000,34"/>
+    <parameter name="ConfigListSeperator" value="300"/>
     <parameter name="ChoicelistIcon" value="7,4,52,37"/>
     <parameter name="PluginBrowserName" value="180,8,38"/>
     <parameter name="PluginBrowserDescr" value="180,42,25"/>
@@ -45,6 +52,18 @@
     <parameter name="ServiceInfoRight" value="450,0,1000,45"/>
     <parameter name="SelectionListDescr" value="45, 3, 1000, 32"/>
     <parameter name="SelectionListLock" value="0, 2, 36, 36"/>
+
+    <parameter name="PartnerBoxEntryListName" value="8, 4, 225, 30"/>
+    <parameter name="PartnerBoxEntryListIP"   value="180, 4, 225, 30"/>
+    <parameter name="PartnerBoxEntryListPort" value="405, 4, 150, 30"/>
+    <parameter name="PartnerBoxEntryListType" value="615, 4, 150, 30"/>
+    <parameter name="PartnerBoxE2TimerServicename" value="0, 0, 45"/>
+    <parameter name="PartnerBoxE2TimerName" value="0, 42, 30"/>
+    <parameter name="PartnerBoxE2TimerTime" value="0, 78, 225, 30"/>
+    <parameter name="PartnerBoxE2TimerState" value="225, 78, 225, 30"/>
+    <parameter name="PartnerBoxE2TimerIcon" value="735, 8, 60, 60"/>
+    <parameter name="PartnerBoxBouquetListName" value="0, 0, 45"/>
+
   </parameters>
 
   <!-- Colors -->
