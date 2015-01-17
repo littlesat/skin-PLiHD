@@ -11,7 +11,7 @@
   <screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="config" position="780,100" size="1110,912" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="PartnerboxEntriesListConfigScreen" position="fill" flags="wfNoBorder">
@@ -21,7 +21,7 @@
     <widget name="ip" position="960,105" size="225,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="port" position="1185,105" size="150,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="type" position="1395,105" size="300,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="entrylist" position="780,165" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
+    <widget name="entrylist" position="780,165" size="1110,450" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
   </screen>
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
@@ -31,7 +31,7 @@
   </screen>
 
   <screen name="RemotePlayer" flags="wfNoBorder" position="424,270" size="1080,864" title="Partnerbox - RemotePlayer" backgroundColor="#FFFFFFFF">
-    <ePixmap position="61,582" zPosition="-1" size="945,195" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/>
+    <!--ePixmap position="61,582" zPosition="-1" size="945,195" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Partnerbox/ExPlayer.png" alphatest="off" transparent="1"/-->
     <widget name="ServiceName" zPosition="1" position="75,606" size="915,88" valign="center" halign="center" font="Regular;31" foregroundColor="#F0F0F0" backgroundColor="#302C2C39"/>
     <widget name="DateTime" zPosition="1" position="78,709" size="750,45" halign="left" font="Regular;24" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1"/>
     <widget name="IP" zPosition="2" position="541,709" size="450,45" halign="right" font="Regular;24" foregroundColor="#F0F0F0" backgroundColor="#302C2C39" transparent="1"/>
@@ -40,7 +40,7 @@
   <screen name="RemoteTimerBouquetList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="780,100" size="1110,912" zPosition="1" halign="center" valign="center"/>
-    <widget name="bouquetlist" position="780,100" size="1110,900" zPosition="2" scrollbarMode="showOnDemand"/>
+    <widget name="bouquetlist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="RemoteTimer" position="fill" flags="wfNoBorder">
@@ -54,14 +54,14 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="text" position="780,100" size="1110,912" zPosition="1" font="Regular;28" valign="center" halign="center"/>
-    <widget name="epglist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" zPosition="2" scrollbarMode="showOnDemand"/>
+    <widget name="epglist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="RemoteTimerChannelList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="text" position="780,100" size="1110,912" zPosition="1" font="Regular;33" valign="center" halign="center"/>
-    <widget name="channellist" position="780,100" size="1110,912" itemHeight="112" font="Regular;33" zPosition="2" scrollbarMode="showOnDemand"/>
+    <widget name="channellist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="RemoteTimerEventView" position="fill" title="Eventview" flags="wfNoBorder">
