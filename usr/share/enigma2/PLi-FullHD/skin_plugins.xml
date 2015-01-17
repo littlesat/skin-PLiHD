@@ -11,7 +11,7 @@
   <screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,100" size="1110,912" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="PartnerboxEntriesListConfigScreen" position="fill" flags="wfNoBorder">
@@ -39,15 +39,15 @@
 
   <screen name="RemoteTimerBouquetList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="780,100" size="1110,912" zPosition="1" font="Regular;33" halign="center" valign="center"/>
-    <widget name="bouquetlist" position="780,100" size="1110,912" font="Regular;33"  zPosition="2" scrollbarMode="showOnDemand"/>
+    <widget name="text" position="780,100" size="1110,912" zPosition="1" halign="center" valign="center"/>
+    <widget name="bouquetlist" position="780,100" size="1110,900" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="RemoteTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="text" position="780,100" size="1110,912" zPosition="1" font="Regular;30" valign="center" halign="center"/>
-    <widget name="timerlist" position="780,100" size="1110,912" itemHeight="112" zPosition="2" scrollbarMode="showOnDemand"/>
+    <widget name="timerlist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="RemoteTimerEPGList" position="fill" flags="wfNoBorder">
