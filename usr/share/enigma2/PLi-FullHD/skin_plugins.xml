@@ -137,7 +137,7 @@
 
   <screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="30,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+    <widget name="frontend" pixmap="PLi-FullHD/icons/scan-c.png" position="30,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
     <widget name="scan_state" position="30,345" zPosition="2" size="720,45" valign="center" font="Regular;30" transparent="1"/>
     <widget name="scan_progress" position="30,397" size="720,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
   </screen>
@@ -437,7 +437,7 @@
   </gstyle>
 
   <screen name="Dish" flags="wfNoBorder" position="30,90" size="195,303" title="Dish" zPosition="1" backgroundColor="transparent" >
-    <widget name="Dishpixmap" position="0,0"  size="195,240" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on"/>
+    <widget name="Dishpixmap" position="0,0"  size="195,240" zPosition="-1" pixmap="PLi-FullHD/icons/dish.png" transparent="1" alphatest="on"/>
     <widget name="turnTime"   position="67,7"   size="120,30" zPosition="1" font="Regular;26" halign="right" borderWidth="1" transparent="1"/>
     <widget name="From"       position="7,246"  size="67,27" zPosition="1" font="Regular;24" halign="left"  borderWidth="1" transparent="1"/>
     <widget name="posFrom"    position="85,250" size="105,30" zPosition="1" font="Regular;28" halign="left"  borderWidth="1" transparent="1"/>
@@ -810,8 +810,8 @@
     <widget font="Regular;30" halign="left" name="published" position="127,615" size="300,36" transparent="1" valign="top" zPosition="10"/>
     <widget font="Regular;30" halign="right" name="views" position="367,615" size="390,36" transparent="1" valign="top" zPosition="10"/>
     <widget font="Regular;30" halign="left" name="tags" position="127,660" size="622,172" transparent="1" valign="top" zPosition="10"/>
-    <widget alphatest="on" name="starsbg" pixmap="PLi-HD/dvr/starsbar_empty.png" position="127,840" size="157,30" transparent="1" zPosition="5"/>
-    <widget name="stars" pixmap="PLi-HD/dvr/starsbar_filled.png" position="127,840" size="157,30" transparent="1" zPosition="6"/>
+    <widget alphatest="on" name="starsbg" pixmap="PLi-FullHD/dvr/starsbar_empty.png" position="127,840" size="157,30" transparent="1" zPosition="5"/>
+    <widget name="stars" pixmap="PLi-FullHD/dvr/starsbar_filled.png" position="127,840" size="157,30" transparent="1" zPosition="6"/>
     <widget font="Regular;30" halign="left" name="detailtext" position="780,225" size="1005,487" transparent="1" valign="top" zPosition="10"/>
   </screen>
 

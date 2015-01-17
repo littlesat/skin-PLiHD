@@ -33,6 +33,7 @@
     <alias name="PartnerBoxChannelList1" font="Regular" size="28"/>
     <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
     <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
+    <alias name="VirtualKeyboard" font="Regular" size="42" height="68"/>
   </fonts>
 
   <parameters>
@@ -56,6 +57,7 @@
     <parameter name="SelectionListDescr" value="45, 3, 1000, 32"/>
     <parameter name="SelectionListLock" value="0, 2, 36, 36"/>
     <parameter name="ConfigListSeperator" value="300"/>
+    <parameter name="VirtualKeyboard" value="68, 68"/>
 
     <parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38"/>
     <parameter name="PartnerBoxEntryListIP"   value="180, 2, 225, 38"/>
@@ -208,7 +210,7 @@
       <convert type="PliExtraInfo">All</convert>
     </widget>
     <eLabel name="snr" position="1593,33" size="75,24" borderWidth="1" borderColor="black" halign="left" transparent="1" zPosition="1" text="SNR" font="Regular;21"/>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/pbar_grey.png" backgroundColor="transpBlack" zPosition="1" position="1590,30" size="300,30" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" pixmap="PLi-FullHD/infobar/pbar_grey.png" backgroundColor="transpBlack" zPosition="1" position="1590,30" size="300,30" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1737,33" size="150,24" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;21">
@@ -601,17 +603,17 @@
   <screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="PLi-FullHD/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="PLi-FullHD/icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
     <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="PLi-FullHD/icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide"/>
@@ -638,7 +640,7 @@
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+    <widget name="frontend" pixmap="PLi-FullHD/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
     <widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1"/>
     <widget name="scan_progress" position="30,322" size="810,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
   </screen>
@@ -807,7 +809,7 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD1/infobar/pbar.png" position="270,112" size="1380,12" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-FullHD/infobar/pbar.png" position="270,112" size="1380,12" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="30,150" size="150,45" zPosition="2" alphatest="on">
@@ -825,7 +827,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="30,529" size="720,18" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:480,0">
+    <widget source="session.CurrentService" render="PositionGauge" position="30,529" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:480,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="37,499" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
@@ -1282,7 +1284,7 @@
     <widget source="IFtext" render="Label" position="1275,880" size="247,37" transparent="1" zPosition="10" font="Regular;31" halign="right"/>
     <widget source="IF" render="Label" position="1530,880" size="375,37" transparent="1" zPosition="10" font="Regular;31" halign="left"/>
     <widget source="Statustext" render="Label" position="742,880" size="300,37" transparent="1" zPosition="10" font="Regular;31" valign="center" halign="right"/>
-    <widget name="statuspic" position="1050,880" size="52,37" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on"/>
+    <widget name="statuspic" position="1050,880" size="52,37" transparent="1" zPosition="10" pixmaps="Pli-FullHD/icons/lock_on.png,Pli-FullHD/icons/lock_off.png" alphatest="on"/>
   </screen>
 
   <screen name="AdapterSetup" position="fill" flags="wfNoBorder">
@@ -1344,27 +1346,27 @@
     <widget name="Adapter" position="1006,690" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
     <widget name="AdapterInfo_Text" position="1530,690" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
     <widget name="AdapterInfo" position="1530,690" size="300,34" transparent="1" zPosition="2"/>
-    <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="1467,684" size="57,46" zPosition="2" alphatest="on"/>
+    <widget name="AdapterInfo_OK" pixmap="Pli-FullHD/icons/lock_on.png" position="1467,684" size="57,46" zPosition="2" alphatest="on"/>
     <widget name="Networktext" position="630,742" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;28" halign="left"/>
     <widget name="Network" position="1006,742" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
     <widget name="NetworkInfo" position="1530,742" size="300,34" transparent="1" zPosition="2"/>
     <widget name="NetworkInfo_Text" position="1530,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="NetworkInfo_Check" position="1467,736" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="NetworkInfo_Check" position="1467,736" size="57,46" zPosition="2" pixmaps="Pli-FullHD/icons/lock_on.png,Pli-FullHD/icons/lock_error.png" alphatest="on"/>
     <widget name="Dhcptext" position="630,795" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
     <widget name="Dhcp" position="1006,795" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
     <widget name="DhcpInfo_Text" position="1530,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
     <widget name="DhcpInfo" position="1530,795" size="300,34" transparent="1"/>
-    <widget name="DhcpInfo_Check" position="1467,789" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="DhcpInfo_Check" position="1467,789" size="57,46" zPosition="2" pixmaps="Pli-FullHD/icons/lock_on.png,Pli-FullHD/icons/lock_error.png" alphatest="on"/>
     <widget name="IPtext" position="630,847" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
     <widget name="IP" position="1006,847" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
     <widget name="IPInfo_Text" position="1530,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
     <widget name="IPInfo" position="1530,847" size="300,34" transparent="1" zPosition="2"/>
-    <widget name="IPInfo_Check" position="1467,841" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="IPInfo_Check" position="1467,841" size="57,46" zPosition="2" pixmaps="Pli-FullHD/icons/lock_on.png,Pli-FullHD/icons/lock_error.png" alphatest="on"/>
     <widget name="DNStext" position="630,900" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
     <widget name="DNS" position="1006,900" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
     <widget name="DNSInfo_Text" position="1530,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
     <widget name="DNSInfo" position="1530,900" size="300,34" transparent="1" zPosition="2" />
-    <widget name="DNSInfo_Check" position="1467,894" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="DNSInfo_Check" position="1467,894" size="57,46" zPosition="2" pixmaps="Pli-FullHD/icons/lock_on.png,Pli-FullHD/icons/lock_error.png" alphatest="on"/>
     <widget name="EditSettingsButton" position="1455,1030" size="39,39" transparent="1" zPosition="1" pixmaps="PLi-HD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
     <widget name="EditSettings_Text" position="1522,1032" size="300,39" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;28"/>
     <widget name="InfoText" position="885,120" size="945,450" zPosition="25" font="Regular;31"/>
@@ -1738,7 +1740,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <ePixmap pixmap="skin_default/icons/scan-s.png" position="360,25" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/icons/scan-s.png" position="360,25" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
     <widget source="statusbar" render="Label" position="30,105" size="720,90" zPosition="10" halign="left" valign="center" font="Regular;33" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
     <widget source="tunerstatusbar" render="Label" position="30,240" size="720,45" zPosition="10" halign="left" valign="center" font="Regular;33" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
     <widget name="config" position="30,315" size="720,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
@@ -1889,8 +1891,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,772" size="225,225" transparent="1" alphatest="blend"/>
     
-    <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="180,1041" size="967,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
-    <widget name="PositionGauge" position="210,1042" size="967,21" transparent="0" zPosition="12" pointer="PLi-HD/dvr/pointer.png:13,3"/>
+    <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="967,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
+    <widget name="PositionGauge" position="210,1042" size="967,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:13,3"/>
     <widget source="session.CurrentService" render="Label" position="0,1035" size="150,37" backgroundColor="noTransBG" transparent="1" font="Regular;33" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
@@ -1951,10 +1953,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel text="Delete" render="Label" position="247,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
     <eLabel text="OK" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
     <widget source="country" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
-    <ePixmap pixmap="skin_default/vkey_text.png" position="927,210" size="813,78" zPosition="-4" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/skin_default/vkey_text.png" position="927,235" size="816,78" zPosition="-4" alphatest="on"/>
     <widget name="header" position="930,120" size="810,39" transparent="1" noWrap="1" font="Regular;33" valign="top"/>
-    <widget name="text" position="930,225" size="804,51" transparent="1" noWrap="1" font="Regular;39" valign="center" halign="right"/>
-    <widget name="list" position="930,375" size="810,337" selectionDisabled="1" transparent="1"/>
+    <widget name="text" position="930,255" size="804,51" transparent="1" noWrap="1" font="Regular;38" valign="center" halign="right"/>
+    <widget name="list" position="930,375" size="816,343" selectionDisabled="1" transparent="1"/>
   </screen>
 
   <!-- AC3LipSyncSetup	-->
