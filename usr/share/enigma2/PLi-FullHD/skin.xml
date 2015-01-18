@@ -1082,7 +1082,7 @@
     <widget name="package" position="780,105" size="1110,42" backgroundColor="darkgrey" transparent="1" font="Regular;30"/>
     <widget name="status" position="795,255" size="1065,84" backgroundColor="darkgrey" transparent="1" font="Regular;30"/>
     <widget name="slider" position="801,441" size="1053,25" zPosition="2" transparent="1"/>
-    <widget name="activityslider" position="30,1023" size="1860,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2"/>
+    <widget name="activityslider" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1126,7 +1126,7 @@
     <widget source="package" render="Label" position="780,105" size="1110,42" backgroundColor="darkgrey" transparent="1" font="Regular;36"/>
     <widget source="status" render="Label" position="780,165" size="1110,84" backgroundColor="darkgrey" transparent="1" font="Regular;36"/>
     <widget name="slider" position="786,441" size="1096,25" zPosition="2" transparent="1"/>
-    <widget name="activityslider" position="30,1023" size="1860,6" pixmap="PLi-HD/window/slider100.png" transparent="1" zPosition="2"/>
+    <widget name="activityslider" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
@@ -1598,12 +1598,12 @@
 
   <screen flags="wfNoBorder" name="File" position="fill" title="PPanel File">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-HD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Tarball" position="fill" title="PPanel Entry">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-HD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
