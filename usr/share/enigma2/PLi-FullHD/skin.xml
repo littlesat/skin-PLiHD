@@ -16,7 +16,7 @@
     <font name="LCD" filename="lcd.ttf" scale="100"/>
     <font name="Console" filename="tuxtxt.ttf" scale="100"/>
     <font name="Fixed" filename="andale.ttf" scale="100"/>
-    <alias name="ChoiceList" font="Regular" size="30" height="42"/>
+    <alias name="ChoiceList" font="Regular" size="28" height="38"/>
     <alias name="FileList" font="Regular" size="28" height="38"/>
     <alias name="FileListMulti" font="Regular" size="28" height="38"/>
     <alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
@@ -45,9 +45,9 @@
     <parameter name="FileListMultiName" value="90,3,1000,32"/>
     <parameter name="FileListMultiIcon" value="45, 4, 30, 30"/>
     <parameter name="FileListMultiLock" value="2,0,36,36"/>
-    <parameter name="ChoicelistDash" value="0,4,1000,34"/>
-    <parameter name="ChoicelistName" value="68,4,1000,34"/>
-    <parameter name="ChoicelistIcon" value="7,4,52,37"/>
+    <parameter name="ChoicelistDash" value="0,0,1000,30"/>
+    <parameter name="ChoicelistName" value="68,0,1000,30"/>
+    <parameter name="ChoicelistIcon" value="7,0,52,38"/>
     <parameter name="PluginBrowserName" value="180,8,38"/>
     <parameter name="PluginBrowserDescr" value="180,42,25"/>
     <parameter name="PluginBrowserIcon" value="15,8,150,60"/>
@@ -61,7 +61,6 @@
     <parameter name="SelectionListLock" value="0, 2, 36, 36"/>
     <parameter name="ConfigListSeperator" value="300"/>
     <parameter name="VirtualKeyboard" value="68, 68"/>
-
     <parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38"/>
     <parameter name="PartnerBoxEntryListIP"   value="180, 2, 225, 38"/>
     <parameter name="PartnerBoxEntryListPort" value="405, 2, 150, 38"/>
@@ -681,7 +680,7 @@
   <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
     <widget name="choosen" position="0,570" size="750,360" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -938,7 +937,7 @@
 
   <screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Channellist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <eLabel text="Channellist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" halign="left"/>
     <widget name="menu" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -954,7 +953,7 @@
 
   <screen name="MovieContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Movielist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <eLabel text="Movielist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" halign="left"/>
     <widget name="menu" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
