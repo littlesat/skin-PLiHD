@@ -1698,14 +1698,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget source="languages" render="Listbox" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
+    <widget source="languages" render="Listbox" position="780,99" size="1110,918" scrollbarMode="showOnDemand" >
       <convert type="TemplatedMultiContent">
 	{"template": [
-	      MultiContentEntryText(pos = (150,15), size = (300,75), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-	      MultiContentEntryPixmap(pos = (30,7), size = (90,60), png = 2), # index 2 is the pixmap
+	      MultiContentEntryText(pos = (120,10), size = (300,40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+	      MultiContentEntryPixmap(pos = (20,6), size = (60,40), png = 2), # index 2 is the pixmap
 	    ],
-	  "fonts": [gFont("Regular",30)],
-	  "itemHeight": 75
+	  "fonts": [gFont("Regular",28)],
+	  "itemHeight": 51
 	}
       </convert>
     </widget>
@@ -1729,11 +1729,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="nimlist" render="Listbox" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
-		    MultiContentEntryText(pos = (15,4), size = (1005,45), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-		    MultiContentEntryText(pos = (75,42), size = (945,75), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+		    MultiContentEntryText(pos = (15,4), size = (1005,48), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+		    MultiContentEntryText(pos = (75,45), size = (945,60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 		  ],
-		  "fonts": [gFont("Regular",30), gFont("Regular",22)],
-		  "itemHeight": 120
+		  "fonts": [gFont("Regular",32), gFont("Regular",24)],
+		  "itemHeight": 110
 	    }
 	  </convert>
 	</widget>
@@ -1764,7 +1764,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyInfoTemplate"/>
-    <widget name="list" position="780,105" size="1110,382" backgroundColor="secondBG" transparent="1"/>
+    <widget name="list" position="780,105" size="1110,380" itemHeight="38" font="Regular;28" backgroundColor="secondBG" transparent="1"/>
     <eLabel text="Frequency:" position="780,525" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <widget name="frequency_value" position="1110,525" size="150,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <eLabel text="Polarisation:" position="780,570" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
@@ -1775,10 +1775,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="fec_value" position="1110,660" size="150,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <widget name="snr_db" position="1110,742" size="300,37" backgroundColor="secondBG" foregroundColor="white" transparent="1" font="Regular;30" halign="center"/>
     <eLabel text="SNR:" position="780,780" size="120,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
-    <widget name="snr_bar" position="1110,780" size="300,37" backgroundColor="secondBG" transparent="1" borderWidth="1"/>
+    <widget name="snr_bar" position="1110,783" size="300,26" backgroundColor="secondBG" transparent="1" borderWidth="1"/>
     <widget name="snr_percentage" position="1425,780" size="120,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <eLabel text="BER:" position="780,825" size="120,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
-    <widget name="ber_bar" position="1110,825" size="300,37" backgroundColor="secondBG" transparent="1" borderWidth="1"/>
+    <widget name="ber_bar" position="1110,828" size="300,26" backgroundColor="secondBG" transparent="1" borderWidth="1"/>
     <widget name="ber_value" position="1425,825" size="120,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <eLabel text="Lock:" position="780,870" size="120,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
     <widget name="lock_state" position="1110,870" size="300,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
@@ -1806,7 +1806,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="TunerScreen" position="fill" title="Tune">
     <panel name="PigTemplate"/>
-    <widget name="config" position="780,105" size="1110,525" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,532" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="780,705" size="1110,37" font="Regular;33"/>
   </screen>
 
@@ -2131,10 +2131,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="config" position="7,7" size="710,380" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
     <widget name="videofps" position="10,390" size="710,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
   </screen>
-  
-  <!-- QuickSubtitlesClearRests -->
-
+   <!-- QuickSubtitlesClearRests -->
   <screen name="QuickSubtitlesClearRests" position="20,30" size="724,204" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
     <widget name="config" position="7,7" size="710,190" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
+  </screen>
+
+  <!-- Common interface -->
+
+  <screen name="MMIDialog"  position="fill">
+    <widget name="title" position="780,105" size="430,25" font="Regular;23" />
+    <widget name="subtitle" position="780,130" size="430,25" font="Regular;23" />
+    <widget name="entries" position="780,165" size="430,150" scrollbarMode="showOnDemand" />
+    <widget name="bottom" position="780,225" size="430,25" font="Regular;23" />
+  </screen>
+  <!-- Common interface - selection -->
+  <screen name="CiSelection" position="fill" title="Common Interface">
+    <panel name="PigTemplate"/>
+    <widget name="text" position="780,105" size="1100,35" font="Regular;32" />
+    <widget name="entries" position="780,160" size="1100,190" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
   </screen>
 </skin>
