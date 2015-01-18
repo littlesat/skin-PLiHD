@@ -8,8 +8,8 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="infobarBG" position="180,84" size="1560,21" zPosition="0"/>
-    <ePixmap pixmap="PLi-FullHD/dvr/scale1024.png" position="192,91" size="1536,6" zPosition="1"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="192,85" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1024.png:1012,0">
+    <ePixmap pixmap="PLi-FullHD/dvr/scale1024.png" position="192,92" size="1536,6" zPosition="1"/>
+    <widget source="session.CurrentService" render="PositionGauge" position="192,84" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="192,46" size="135,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="left">
@@ -322,7 +322,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="210,897" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="705,840" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="705,840" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="270,978" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
