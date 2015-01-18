@@ -34,6 +34,9 @@
     <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
     <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
     <alias name="VirtualKeyboard" font="Regular" size="42" height="68"/>
+    <alias name="HelpMenuList" font="Regular" size="30" height="45"/>
+    <alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
+    <alias name="HelpMenuListExt1" font="Regular" size="28"/>
   </fonts>
 
   <parameters>
@@ -74,7 +77,9 @@
     <parameter name="PartnerBoxChannelListName" value="0, 0, 45"/>
     <parameter name="PartnerBoxChannelListTitle" value="0, 42, 30"/>
     <parameter name="PartnerBoxChannelListTime" value="0, 78, 225, 30"/>
-
+    <parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
+    <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
+    <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
   </parameters>
 
   <!-- Colors -->
@@ -456,7 +461,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget source="help" render="Label" position="30,570" size="720,108" backgroundColor="background" transparent="1" font="Regular;30"/>
-    <widget name="config" position="780,105" size="1110,675" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,675" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- GraphMultiEPG -->

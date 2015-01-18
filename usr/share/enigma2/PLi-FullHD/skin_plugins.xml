@@ -496,14 +496,14 @@
   <screen name="CutListEditor" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel text="Cutlist editor" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget source="cutlist" render="Listbox" position="30,105" size="570,900" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="cutlist" render="Listbox" position="30,100" size="570,912" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos=(10,2),size=(170,20),text = 1,backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(190,2),size=(80,20),text = 2,flags = RT_HALIGN_CENTER,backcolor = MultiContentTemplateColor(3))
+						MultiContentEntryText(pos=(15,3),size=(255,30),text = 1,backcolor = MultiContentTemplateColor(3)),
+						MultiContentEntryText(pos=(285,3),size=(120,30),text = 2,flags = RT_HALIGN_CENTER,backcolor = MultiContentTemplateColor(3))
 					],
-				 "fonts": [gFont("Regular",20)],
-				 "itemHeight": 25
+				 "fonts": [gFont("Regular",28)],
+				 "itemHeight": 38
 				}
       </convert>
     </widget>
@@ -515,7 +515,7 @@
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="SeekState" position="532,949" zPosition="1" size="150,37" halign="right" font="Regular;30" valign="center"/>
-    <widget name="Timeline" position="690,952" size="1140,30" backgroundColor="#505555" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black"/>
+    <widget name="Timeline" position="690,952" size="1140,30" backgroundColor="#505555" pointer="skin_default/position_arrow.png:4,8" foregroundColor="black"/>
     <eLabel text="'OK' = Menu" position="187,1033" size="345,39" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;30"/>
     <eLabel text="'0' = Mark" position="615,1033" size="345,39" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;30"/>
   </screen>
