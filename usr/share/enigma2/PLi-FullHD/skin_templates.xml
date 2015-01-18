@@ -316,8 +316,9 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,874" size="210,75" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="132,892" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
-      <convert type="ClockToText">Format::%S</convert>
+    <eLabel position="134,891" size="10,33" text=":" transparent="1" borderWidth="2" font="Regular;27" backgroundColor="secondBG" foregroundColor="foreground" valign="center" halign="center"/>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="144,892" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
+      <convert type="ClockToText">Format:%S</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="210,897" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide"/>

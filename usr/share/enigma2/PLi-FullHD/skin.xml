@@ -766,8 +766,7 @@
   </screen>
 
   <screen name="RadioInfoBar" title="InfoBar" position="0,795" size="1920,225" flags="wfNoBorder">
-    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,0" size="1920,3"/>
-    <!--ePixmap pixmap="PLi-HD/border/up_shadow.png" position="0,0" size="1920,48" zPosition="-1" alphatest="off"/-->
+    <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="0,0" size="1920,3"/>
     <widget source="RdsDecoder" render="Label" position="30,0" size="1860,45" transparent="1" zPosition="5" foregroundColor="blue" font="LCD;45" valign="center" halign="center">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
@@ -780,8 +779,9 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,30" size="210,75" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="132,48" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
-      <convert type="ClockToText">Format::%S</convert>
+    <eLabel position="134,47" size="10,33" text=":" transparent="1" borderWidth="2" font="Regular;27" backgroundColor="secondBG" foregroundColor="foreground" valign="center" halign="center"/>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="144,48" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
+      <convert type="ClockToText">Format:%S</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="270,135" size="105,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
       <convert type="EventTime">StartTime</convert>
