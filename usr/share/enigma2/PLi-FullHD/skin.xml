@@ -45,8 +45,8 @@
     <parameter name="FileListMultiName" value="90,3,1000,32"/>
     <parameter name="FileListMultiIcon" value="45, 4, 30, 30"/>
     <parameter name="FileListMultiLock" value="2,0,36,36"/>
-    <parameter name="ChoicelistDash" value="0,0,1000,30"/>
-    <parameter name="ChoicelistName" value="68,0,1000,30"/>
+    <parameter name="ChoicelistDash" value="0,3,1000,30"/>
+    <parameter name="ChoicelistName" value="68,3,1000,30"/>
     <parameter name="ChoicelistIcon" value="7,0,52,38"/>
     <parameter name="PluginBrowserName" value="180,8,38"/>
     <parameter name="PluginBrowserDescr" value="180,42,25"/>
