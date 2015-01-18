@@ -255,19 +255,19 @@
 
   <screen name="MoviePlayer" title="InfoBar" position="0,67" size="1920,150" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1617,105" size="49,31" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_dolby_on.png" position="1617,107" size="50,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1668,105" size="60,31" zPosition="4" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_hd.png" position="1668,107" size="60,32" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1668,105" size="60,31" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_16_9.png" position="1668,107" size="60,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1668,105" size="60,31" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_4_3.png" position="1668,107" size="60,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
@@ -827,7 +827,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="30,529" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:480,0">
+    <widget source="session.CurrentService" render="PositionGauge" position="30,530" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:720,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="37,499" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
@@ -1892,7 +1892,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,772" size="225,225" transparent="1" alphatest="blend"/>
     
     <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="967,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
-    <widget name="PositionGauge" position="210,1042" size="967,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:13,3"/>
+    <widget name="PositionGauge" position="210,1042" size="967,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:20,5"/>
     <widget source="session.CurrentService" render="Label" position="0,1035" size="150,37" backgroundColor="noTransBG" transparent="1" font="Regular;33" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
