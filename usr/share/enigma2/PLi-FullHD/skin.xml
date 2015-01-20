@@ -124,7 +124,7 @@
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">
-    <title offset="30,20" font="Regular;45"/>
+    <title offset="20,10" font="Regular;20"/>
     <color name="Background" color="background"/>
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
@@ -1935,8 +1935,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_R"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1042,1030" size="39,39" alphatest="on"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1455,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1030" size="34,34" alphatest="on"/>
     <eLabel text="Latest Commits" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget name="AboutScrollLabel" font="Regular;33" position="30,105" size="1860,900" zPosition="2" halign="left"/>
   </screen>
@@ -1955,9 +1955,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <eLabel text="Virtual KeyBoard" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <panel name="ButtonTemplate_RGY"/>
-    <eLabel text="Delete" render="Label" position="247,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
-    <eLabel text="OK" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
-    <widget source="country" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <eLabel text="Delete" render="Label" position="247,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <eLabel text="OK" render="Label" position="675,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <widget source="country" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
     <ePixmap pixmap="PLi-FullHD/skin_default/vkey_text.png" position="927,235" size="816,78" zPosition="-4" alphatest="on"/>
     <widget name="header" position="930,120" size="810,39" transparent="1" noWrap="1" font="Regular;33" valign="top"/>
     <widget name="text" position="930,255" size="804,51" transparent="1" noWrap="1" font="Regular;38" valign="center" halign="right"/>
@@ -1976,15 +1976,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <!-- AC3LipSync -->
 
-  <screen name="AC3LipSync" position="30,22" size="900,690" title="Audio Sync" zPosition="1" backgroundColor="#ff000000" flags="wfNoBorder">
-    <ePixmap pixmap="~/img/AudioSyncBG.png" zPosition="1" position="0,0" size="900,690" alphatest="on" transparent="1"/>
+  <!--screen name="AC3LipSync" position="30,22" size="900,690" title="Audio Sync" zPosition="1" backgroundColor="#ff000000" flags="wfNoBorder">
+    <ePixmap pixmap="~/img/AudioSyncBGHD.png" zPosition="1" position="0,0" size="900,690" alphatest="on" transparent="1"/>
     <widget name="ServiceInfoLabel" zPosition="4" position="30,22" size="165,30" font="Regular;21" backgroundColor="#232323" foregroundColor="#dddddd" transparent="1"/>
     <widget name="ServiceInfo" zPosition="4" position="210,22" size="285,30" font="Regular;21" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
-    <widget name="ChannelImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="30,64" zPosition="2" size="16,16" transparent="1" alphatest="on"/>
+    <widget name="ChannelImg" pixmaps="~/img/OptionButtonOffHD.png,~/img/OptionButtonOnHD.png" position="30,64" zPosition="2" size="16,16" transparent="1" alphatest="on"/>
     <widget name="ChannelLabel" zPosition="2" position="54,60" size="240,30" font="Regular;21" halign="left" valign="center" transparent="1" backgroundColor="#232323" foregroundColors="#ffffff,#fe6b1b"/>
-    <widget name="GlobalImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="330,64" zPosition="2" size="16,16" transparent="1" alphatest="on"/>
+    <widget name="GlobalImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOnHD.png" position="330,64" zPosition="2" size="16,16" transparent="1" alphatest="on"/>
     <widget name="GlobalLabel" zPosition="2" position="354,60" size="298,30" font="Regular;21" halign="left" valign="center" transparent="1" backgroundColor="#232323" foregroundColors="#ffffff,#fe6b1b"/>
-    <ePixmap pixmap="~/img/AudioSyncBarBGVert.png" zPosition="2" position="45,105" size="31,555" alphatest="on" transparent="1"/>
+    <ePixmap pixmap="~/img/AudioSyncBarBGVertHD.png" zPosition="2" position="45,105" size="31,555" alphatest="on" transparent="1"/>
     <widget name="AudioSliderBar" pixmap="~/img/AudioSyncBarVert.png" zPosition="3" position="45,105" size="31,555" transparent="1" orientation="orBottomToTop"/>
     <widget name="AudioSlider" zPosition="4" position="7,367" size="105,30" font="Regular;21" halign="center" valign="center" backgroundColor="#232323" foregroundColor="#eeeeee" transparent="1"/>
     <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="465,22" zPosition="5" size="30,30" transparent="1" alphatest="on"/>
@@ -1993,18 +1993,36 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="key_red" position="502,22" zPosition="4" size="127,30" font="Regular;21" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
     <widget name="key_green" position="660,22" zPosition="4" size="127,30" font="Regular;21" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
     <widget name="key_blue" position="660,60" zPosition="4" size="240,30" font="Regular;21" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
-  </screen>
+  </screen-->
 
+  <screen name="AC3LipSync" position="20,15" size="600,460" title="Audio Sync" zPosition="1" backgroundColor="#ff000000" flags="wfNoBorder">
+    <ePixmap pixmap="~/img/AudioSyncBG.png" zPosition="1" position="0,0" size="600,460" alphatest="on" transparent="1"/>
+    <widget name="ServiceInfoLabel" zPosition="4" position="20,15" size="110,22" font="Regular;20" backgroundColor="#232323" foregroundColor="#dddddd" transparent="1"/>
+    <widget name="ServiceInfo" zPosition="4" position="140,15" size="190,22" font="Regular;22" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
+    <widget name="ChannelImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="20,43" zPosition="2" size="11,11" transparent="1" alphatest="on"/>
+    <widget name="ChannelLabel" position="36,40" size="160,22" font="Regular;20" halign="left" valign="center" zPosition="2" transparent="1" backgroundColor="#232323" foregroundColors="#ffffff,#fe6b1b"/>
+    <widget name="GlobalImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="220,43" zPosition="2" size="11,11" transparent="1" alphatest="on"/>
+    <widget name="GlobalLabel" position="236,40" size="199,22" font="Regular;20" halign="left" valign="center" zPosition="2" transparent="1" backgroundColor="#232323" foregroundColors="#ffffff,#fe6b1b"/>
+    <ePixmap pixmap="~/img/AudioSyncBarBGVert.png" zPosition="2" position="30,70" size="21,370" alphatest="on" transparent="1"/>
+    <widget name="AudioSliderBar" pixmap="~/img/AudioSyncBarVert.png" zPosition="3" position="30,70" size="21,370" transparent="1" orientation="orBottomToTop"/>
+    <widget name="AudioSlider" zPosition="4" position="5,245" size="70,22" font="Regular;20" halign="center" valign="center" backgroundColor="#232323" foregroundColor="#eeeeee" transparent="1"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="310,15" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="415,15" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="415,40" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
+    <widget name="key_red" position="335,15" zPosition="4" size="85,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
+    <widget name="key_green" position="440,15" zPosition="4" size="85,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
+    <widget name="key_blue" position="440,40" zPosition="4" size="160,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
+  </screen>
   <!-- AutoBackup -->
 
-  <screen name="Config" position="fill" flags="wfNoBorder">
+  <!--screen name="Config" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="status" position="780,495" size="1110,210" font="Regular;27"/>
     <widget name="statusbar" position="780,750" size="1110,30" font="Regular;27"/>
-  </screen>
+  </screen-->
 
   <!-- Picture-Player -->
 
