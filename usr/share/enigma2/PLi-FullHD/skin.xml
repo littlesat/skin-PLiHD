@@ -856,7 +856,7 @@
     <widget name="chosenletter" position="780,100" size="1110,912" foregroundColor="yellow" font="Regular;112" halign="center" valign="center" transparent="1" zPosition="4"/>
     <widget name="list" position="780,108" size="1110,900" scrollbarMode="showOnDemand" itemHeights="100,75,45" fontSizesOriginal="36,26,24" fontSizesCompact="36,28" fontSizesMinimal="34,30"
             pbarShift="17" pbarHeight="20" pbarLargeWidth="72" spaceRight="3" columnsOriginal="270,300" columnsCompactDescription="240,220,240" compactColumn="300"
-            partIconeShiftMinimal="8" partIconeShiftCompact="2" partIconeShiftOriginal="3" iconsWidth="33" spaceIconeText="6" trashShift="5" dirShift="4"/>
+            partIconeShiftMinimal="8" partIconeShiftCompact="2" partIconeShiftOriginal="3" iconsWidth="33" spaceIconeText="6" trashShift="4" dirShift="3"/>
     <widget source="Service" render="Label" position="30,600" size="720,72" foregroundColor="secondFG" font="Regular;30" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
@@ -2013,8 +2013,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYS"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="thn" position="363,547" size="390,375" alphatest="on"/>
-    <widget name="filelist" position="780,105" size="1110,840" itemHeight="42" zPosition="3" scrollbarMode="showOnDemand"/>
-    <widget name="label" position="783,975" size="390,37" transparent="1" font="Regular;30"/>
+    <widget name="filelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" zPosition="3" scrollbarMode="showOnDemand"/>
+    <widget name="label" position="783,975" size="390,37" transparent="1" font="Regular;28"/>
   </screen>
 
   <screen name="Pic_Exif" title="Info" position="fill" flags="wfNoBorder">
