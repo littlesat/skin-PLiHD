@@ -102,31 +102,31 @@
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="PLi-FullHD/buttons/key_menu.png" alphatest="on" position="82,1033" size="52,37"/>
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="82,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="PLi-FullHD/buttons/key_info.png" alphatest="on" position="135,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="135,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="30,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="30,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyOkTemplate">
-    <ePixmap pixmap="PLi-FullHD/buttons/key_ok.png" alphatest="on" position="30,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="on" position="30,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="30,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="30,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-FullHD/buttons/key_text.png" alphatest="on" position="612,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="612,1033" size="52,38"/>
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-FullHD/buttons/key_text.png" alphatest="on" position="1485,1033" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="1485,1033" size="52,38"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
