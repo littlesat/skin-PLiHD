@@ -222,7 +222,7 @@
 		</convert>
 	</widget>
 	<ePixmap pixmap="skin_default/div-h.png" position="885,678" zPosition="10" size="840,3"/>
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="900,684" size="52,37" alphatest="on"/>
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="900,684" size="52,38" alphatest="on"/>
 	<widget source="hint" render="Label" position="960,687" size="810,33" font="Regular;27" halign="left"/>
 	<widget name="medium_label"  position="900,723" size="810,33" font="Regular;27" halign="left" foregroundColors="#FFFFFF,#FFFF00,#FF0000"/>
 	<widget source="space_bar_single" render="Progress" position="900,762" size="405,36" borderWidth="1" zPosition="2" backgroundColor="#254f7497"/>
@@ -574,7 +574,7 @@
  <screen flags="wfNoBorder" name="TVChartsMain" position="fill" title="TV Charts">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="97,1030" size="52,37"/>
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="97,1030" size="52,38"/>
     <eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;33" halign="left" position="600,877" size="225,39" transparent="1" zPosition="1"/>
     <widget name="info" font="Regular;33" position="30,600" size="720,232" transparent="1"/>
     <widget name="channellist" scrollbarMode="showOnDemand" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1"/>
@@ -879,7 +879,7 @@
     <ePixmap position="1350,825" size="27,15" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on"/>
     <ePixmap position="900,502" size="15,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/left.png" zPosition="4" alphatest="on"/>
     <ePixmap position="1785,502" size="15,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/right.png" zPosition="4" alphatest="on"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_tv.png" position="900,870" size="52,37" alphatest="on"/>
+    <ePixmap pixmap="skin_default/buttons/key_tv.png" position="900,870" size="52,38" alphatest="on"/>
     <eLabel text="- Synaptic" position="960,870" size="300,45" backgroundColor="secondBG" font="Regular;27" halign="left" transparent="1" zPosition="1"/>
     <widget name="frames" position="900,165" size="900,675" zPosition="1" alphatest="blend"/>
     <widget name="border" position="900,165" zPosition="2" size="900,675" alphatest="blend"/>
@@ -902,13 +902,13 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" position="30,1033" size="52,37" zPosition="3" alphatest="on"/>
+    <ePixmap pixmap="skin_default/buttons/key_text.png" position="30,1033" size="52,38" zPosition="3" alphatest="on"/>
     <widget name="titellabel" position="780,105" size="795,42" valign="center" font="Regular;33" foregroundColor="#ff0000" backgroundColor="black" transparent="1"/>
-    <widget name="sortlabel" position="780,147" size="795,42" font="Regular;25" foregroundColor="blue" backgroundColor="black" transparent="1"/>
-    <widget name="detailslabel" position="1050,184" size="840,337" zPosition="1" transparent="1" font="Regular;33" halign="block"/>
-    <widget name="contentlabel" position="780,555" size="1110,450" zPosition="1" transparent="1" font="Regular;33" halign="block"/>
-    <widget name="extralabel" position="780,184" size="1110,787" zPosition="1" transparent="1" font="Regular;33" halign="block"/>
-    <widget name="photolabel" position="780,184" size="1110,787" alphatest="blend" backgroundColor="black"/>
+    <widget name="sortlabel" position="780,147" size="795,42" font="Regular;28" foregroundColor="blue" backgroundColor="black" transparent="1"/>
+    <widget name="detailslabel" position="1050,184" size="840,342" zPosition="1" transparent="1" iTemHeigh="38" font="Regular;28" halign="block"/>
+    <widget name="contentlabel" position="780,555" size="1110,456" zPosition="1" transparent="1" iTemHeigh="38" font="Regular;28" halign="block"/>
+    <widget name="extralabel" position="780,184" size="1110,787" zPosition="1" iTemHeigh="38" transparent="1" font="Regular;33" halign="block"/>
+    <widget name="photolabel" position="780,184" size="1110,787" alphatest="blend" iTemHeigh="38" font="Regular;33" backgroundColor="black"/>
     <widget name="statusbar" position="30,660" size="720,60" font="Regular;24" zPosition="3" backgroundColor="black" transparent="1"/>
     <widget name="poster" position="771,184" size="255,301" alphatest="blend" backgroundColor="black"/>
     <widget name="menu" position="780,184" size="1110,684" zPosition="3" scrollbarMode="showOnDemand"/>
@@ -923,14 +923,14 @@
     <widget name="stars50" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1"/>
     <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1575,108" zPosition="1" size="315,31" transparent="1" alphatest="on"/>
     <widget name="stars100" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1"/>
-    <widget name="pageb1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_1.png" position="1110,978" size="52,37" zPosition="3" alphatest="on"/>
-    <widget name="pageb3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_3.png" position="1462,978" size="52,37" zPosition="3" alphatest="on"/>
-    <widget name="paget1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_left.png" position="1162,978" size="52,37" zPosition="3" alphatest="on"/>
-    <widget name="paget3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_right.png" position="1515,978" size="52,37" zPosition="3" alphatest="on"/>
+    <widget name="pageb1" pixmap="skin_default/buttons/key_1.png" position="1110,978" size="52,38" zPosition="3" alphatest="on"/>
+    <widget name="pageb3" pixmap="skin_default/buttons/key_3.png" position="1462,978" size="52,38" zPosition="3" alphatest="on"/>
+    <widget name="paget1" pixmap="skin_default/buttons/key_left.png" position="1162,978" size="52,38" zPosition="3" alphatest="on"/>
+    <widget name="paget3" pixmap="skin_default/buttons/key_right.png" position="1515,978" size="52,38" zPosition="3" alphatest="on"/>
     <widget name="page" position="1230,976" size="217,42" font="Regular;33" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1"/>
     <widget name="tips_label" position="30,750" size="90,30" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
     <widget name="tips_detail" position="30,787" size="660,60" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
-    <widget name="tips_icon" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/key_help.png" position="30,784" alphatest="blend" size="52,37" backgroundColor="black" zPosition="3"/>
+    <widget name="tips_icon" pixmap="skin_default/buttons/key_help.png" position="30,784" alphatest="blend" size="52,38" backgroundColor="black" zPosition="3"/>
   </screen>
 
   <screen name="CSFDAbout" position="fill" title="Informace o pluginu CSFD" flags="wfNoBorder">
@@ -959,12 +959,12 @@
   <screen name="CSFDSetup" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="config" position="780,142" size="1110,825" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,137" size="1110,836" font="Regular;28" iTemHeigh="38" scrollbarMode="showOnDemand"/>
     <widget name="info" position="780,975" size="1110,39" font="Regular;33" halign="center" foregroundColor="blue" transparent="1"/>
-    <widget name="tabbar"  position="780,105" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
-    <widget name="config0" position="784,105" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
-    <widget name="config1" position="942,105" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
-    <widget name="config2" position="1099,105" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
+    <widget name="tabbar"  position="780,100" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
+    <widget name="config0" position="784,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
+    <widget name="config1" position="942,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
+    <widget name="config2" position="1099,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
   </screen>
 
   <screen name="CSFDHistoryHD" position="fill" title="Historie změn v pluginu CSFD">
@@ -1374,8 +1374,8 @@
     <widget name="languagetext" position="877,486" size="165,36" font="Regular;27"/>
     <widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
     <widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
-    <widget name="HelpWindow" pixmap="PLi-HD/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="165,967" zPosition="1" size="52,37" transparent="1" alphatest="on" >
+    <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+    <widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="165,967" zPosition="1" size="52,38" transparent="1" alphatest="on" >
 	<convert type="ConditionalShowHide"/>
     </widget>
   </screen>
