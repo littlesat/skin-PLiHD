@@ -86,208 +86,208 @@
   <!-- Button Templates -->
 
   <screen name="ButtonRed">
-    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="187,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="192,1032" size="34,34" alphatest="on"/>
   </screen>
 
   <screen name="ButtonGreen">
-    <ePixmap pixmap="PLi-FullHD/buttons/green.png" position="615,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" position="628,1032" size="34,34" alphatest="on"/>
   </screen>
 
   <screen name="ButtonYellow">
-    <ePixmap pixmap="PLi-FullHD/buttons/yellow.png" position="1057,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="on"/>
   </screen>
 
   <screen name="ButtonBlue">
-    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" position="1485,1030" size="39,39" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" position="1500,1032" size="34,34" alphatest="on"/>
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="82,1033" size="52,38"/>
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="82,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="135,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="135,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="30,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="30,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyOkTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="on" position="30,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="on" position="30,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="30,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="30,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="612,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="619,1031" size="52,38"/>
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="1485,1033" size="52,38"/>
+    <ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="1500,1032" size="52,38"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
     <panel name="ButtonRed"/>
-    <widget name="key_red" position="247,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RG">
     <panel name="ButtonTemplate_R"/>
     <panel name="ButtonGreen"/>
-    <widget name="key_green" position="675,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGY">
     <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYB">
     <panel name="ButtonTemplate_RGY"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RB">
     <panel name="ButtonTemplate_R"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_Y">
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_YB">
     <panel name="ButtonYellow"/>
-    <widget name="key_yellow" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGB">
     <panel name="ButtonTemplate_RG"/>
     <panel name="ButtonBlue"/>
-    <widget name="key_blue" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RS">
     <panel name="ButtonRed"/>
-   <widget source="key_red" render="Label" position="247,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+   <widget source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonGreen"/>
-    <widget source="key_green" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYS">
     <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGYBS">
     <panel name="ButtonTemplate_RGYS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1545,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RYS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RBS">
     <panel name="ButtonTemplate_RS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1545,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_RGBS">
     <panel name="ButtonTemplate_RGS"/>
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1545,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_BS">
     <panel name="ButtonBlue"/>
-    <widget source="key_blue" render="Label" position="1545,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_YBS">
     <panel name="ButtonTemplate_BS"/>
     <panel name="ButtonYellow"/>
-    <widget source="key_yellow" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplate_GYBS">
     <panel name="ButtonTemplate_YBS"/>
     <panel name="ButtonGreen"/>
-    <widget source="key_green" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateR">
     <panel name="ButtonRed"/>
-    <widget name="red" position="247,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRG">
     <panel name="ButtonTemplateR"/>
     <panel name="ButtonGreen"/>
-    <widget name="green" position="675,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGY">
     <panel name="ButtonTemplateRG"/>
     <panel name="ButtonYellow"/>
-    <widget name="yellow" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYB">
     <panel name="ButtonTemplateRGY"/>
     <panel name="ButtonBlue"/>
-    <widget name="blue" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget name="blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRS">
     <panel name="ButtonRed"/>
-   <widget source="red" render="Label" position="247,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+   <widget source="red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGS">
     <panel name="ButtonTemplateRS"/>
     <panel name="ButtonGreen"/>
-    <widget source="green" render="Label" position="675,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYS">
     <panel name="ButtonTemplateRGS"/>
     <panel name="ButtonYellow"/>
-    <widget source="yellow" render="Label" position="1117,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="ButtonTemplateRGYBS">
     <panel name="ButtonTemplateRGYS"/>
     <panel name="ButtonBlue"/>
-    <widget source="blue" render="Label" position="1545,1030" size="345,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget source="blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="CancelTemplate">
     <panel name="ButtonRed"/>
-    <widget name="canceltext" position="247,1030" zPosition="2" size="345,42" font="Regular;36" halign="left" backgroundColor="background" transparent="1"/>
+    <widget name="canceltext" position="242,1030" zPosition="2" size="370,38" font="Regular;36" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="OKTemplate">
     <panel name="ButtonGreen"/>
-    <widget name="oktext" position="675,1030" zPosition="2" size="345,42" font="Regular;36" halign="left" backgroundColor="background" transparent="1"/>
+    <widget name="oktext" position="678,1030" zPosition="2" size="370,38" font="Regular;34" halign="left" backgroundColor="background" transparent="1"/>
   </screen>
 
   <screen name="CancelOKTemplate" >

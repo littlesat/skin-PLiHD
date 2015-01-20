@@ -181,22 +181,22 @@
     </widget>
     <widget source="job_status" render="Label" position="780,465" size="1110,39" font="Regular;34"/>
     <widget name="config" position="780,528" size="1110,36" itemHeight="38" font="Regular;28"/>
-    <widget source="cancelable" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="217,1030" size="39,39" alphatest="on" zPosition="2">
+    <widget source="cancelable" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="192,1030" size="34,34" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="cancelable" render="FixedLabel" text="Cancel" position="247,1030" size="345,42" backgroundColor="black" zPosition="2" transparent="1" font="Regular;36" halign="left" >
+    <widget source="cancelable" render="FixedLabel" text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left" >
 	<convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="finished" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="615,1030" size="39,39" alphatest="on" zPosition="2">
+    <widget source="finished" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="628,1030" size="34,34" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="finished" render="FixedLabel" text="OK" position="675,1030" size="345,42" backgroundColor="black" zPosition="2" transparent="1" font="Regular;36" halign="left" >
+    <widget source="finished" render="FixedLabel" text="OK" position="678,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left" >
 	<convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="backgroundable" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="1057,1030" size="39,39" alphatest="on" zPosition="2">
+    <widget source="backgroundable" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="1064,1030" size="34,34" alphatest="on" zPosition="2">
 	<convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1117,1030" size="540,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left" >
+    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1114,1030" size="540,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" >
 	<convert type="ConditionalShowHide"/>
     </widget>
   </screen>
@@ -897,16 +897,16 @@
   <screen flags="wfNoBorder" name="AudioSelection" position="fill" title="Audio">
     <panel name="PigTemplate"/>
     <widget name="config" position="900,105" size="990,180" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand"/>
-    <widget source="key_red" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="810,105" size="39,39" alphatest="on">
+    <widget source="key_red" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="810,110" size="34,34" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_green" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="810,150" size="39,39" alphatest="on">
+    <widget source="key_green" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="810,155" size="34,34" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_yellow" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" position="810,195" size="39,39" alphatest="on">
+    <widget source="key_yellow" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" position="810,200" size="34,34" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_blue" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="810,240" size="39,39" alphatest="on">
+    <widget source="key_blue" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="810,245" size="34,34" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="810,300" size="1080,562" zPosition="3" transparent="1" >
@@ -1001,17 +1001,17 @@
 
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget source="key_red" position="780,105" size="39,39" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" alphatest="on"/>
-    <widget name="key_red" position="840,105" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <widget source="key_green" position="1350,105" size="39,39" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" alphatest="on"/>
-    <widget name="key_green" position="1410,105" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget source="key_red" position="780,110" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" alphatest="on"/>
+    <widget name="key_red" position="840,110" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget source="key_green" position="1350,110" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" alphatest="on"/>
+    <widget name="key_green" position="1410,110" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget name="timer1" position="780,165" size="1110,150" itemHeight="75" rowSplit="40" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
-    <widget source="key_yellow" position="780,390" size="39,39" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" alphatest="on"/>
-    <widget name="key_yellow" position="840,390" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <widget source="key_blue" position="1350,390" size="39,39" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" alphatest="on"/>
-    <widget name="key_blue" position="1410,390" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <widget source="key_yellow" position="780,390" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" alphatest="on"/>
+    <widget name="key_yellow" position="840,390" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget source="key_blue" position="1350,390" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" alphatest="on"/>
+    <widget name="key_blue" position="1410,390" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget name="timer2" position="780,450" size="1110,150" itemHeight="75" rowSplit="40" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
-    <widget name="list" position="780,705" size="1110,152"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,705" size="1110,152" itemHeight="38" font="Regular;28" valign="center" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="TimerSelection" position="fill" title="Timer selection" flags="wfNoBorder">
@@ -1258,8 +1258,8 @@
       <convert type="StringList"/>
     </widget>
     <widget name="config" position="127,655" size="637,270" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="810,480" size="39,39" alphatest="on"/>
-    <widget name="languagetext" position="877,486" size="165,36" font="Regular;27"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" position="810,485" size="34,34" alphatest="on"/>
+    <widget name="languagetext" position="860,485" size="165,34" font="Regular;28"/>
     <widget name="wizard" pixmap="skin_default/wizard.png" position="811,120" size="165,261" zPosition="10" alphatest="on"/>
     <widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
   </screen>
@@ -1372,8 +1372,8 @@
     <widget name="DNSInfo_Text" position="1530,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
     <widget name="DNSInfo" position="1530,900" size="300,34" transparent="1" zPosition="2" />
     <widget name="DNSInfo_Check" position="1467,894" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-    <widget name="EditSettingsButton" position="1455,1030" size="39,39" transparent="1" zPosition="1" pixmaps="PLi-HD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
-    <widget name="EditSettings_Text" position="1522,1032" size="300,39" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;28"/>
+    <widget name="EditSettingsButton" position="1500,1030" size="34,34" transparent="1" zPosition="1" pixmaps="PLi-HD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
+    <widget name="EditSettings_Text" position="1550,1030" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;38"/>
     <widget name="InfoText" position="885,120" size="945,450" zPosition="25" font="Regular;31"/>
     <widget name="InfoTextBorder" position="780,123" size="1110,525"/>
   </screen>
