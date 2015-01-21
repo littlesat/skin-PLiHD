@@ -2018,16 +2018,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="key_green" position="440,15" zPosition="4" size="85,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
     <widget name="key_blue" position="440,40" zPosition="4" size="160,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
   </screen>
+
   <!-- AutoBackup -->
 
-  <!--screen name="Config" position="fill" flags="wfNoBorder">
+  <screen name="Config" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="status" position="780,495" size="1110,210" font="Regular;27"/>
     <widget name="statusbar" position="780,750" size="1110,30" font="Regular;27"/>
-  </screen-->
+  </screen>
 
   <!-- Picture-Player -->
 
