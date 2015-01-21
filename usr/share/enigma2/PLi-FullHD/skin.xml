@@ -446,7 +446,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
     <widget source="Service" render="Label" position="600,585" size="150,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
@@ -461,7 +461,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget source="help" render="Label" position="30,570" size="720,108" backgroundColor="background" transparent="1" font="Regular;30"/>
-    <widget name="config" position="780,105" size="1110,675" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,675" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- GraphMultiEPG -->
