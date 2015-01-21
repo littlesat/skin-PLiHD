@@ -427,7 +427,7 @@
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="date" position="780,97" size="1110,37" transparent="1" font="Regular;33" valign="center" halign="center"/>
     <widget name="list" position="780,202" size="1110,798" itemHeight="38" setEventItemFont="Regular;28" setEventTimeFont="Regular;22"
-            setColWidths="350,150" setColGap="30" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+            setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
     <widget source="Event" render="Label" position="30,562" size="720,450" backgroundColor="background" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
