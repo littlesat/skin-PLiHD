@@ -31,7 +31,7 @@
   </screen>
 
   <screen name="TopTemplate">
-    <eLabel position="0,0" size="1920,87" backgroundColor="darkblue"/>
+    <eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
     <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="0,87" size="1920,3" zPosition="2"/>
     <widget source="Title" render="Label" position="30,7" size="1860,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
@@ -44,7 +44,7 @@
 
   <screen name="BasicTemplate">
     <panel name="TopTemplate"/>
-    <eLabel position="0,1023" size="1920,57" backgroundColor="darkblue"/>
+    <eLabel position="0,1023" size="1920,57" backgroundColor="basictemplatecolor"/>
     <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="0,1020" size="1920,3"/>
   </screen>
 
