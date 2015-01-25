@@ -1546,4 +1546,12 @@
     <widget name="config" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
    </screen>
 
+  <!-- ModifyPLiFullHD -->
+
+  <screen name="ModifyPLiFullHD" position="fill" title="Modify PLi-FullHD - setup font and colors" backgroundColor="#31000000">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RG"/>
+    <widget name="config" position="780,105" size="1110,190" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand" />
+    <widget name="version" position="30,500" size="35,22" font="Regular;18" halign="left" transparent="1" />
+  </screen>
 </skin>
