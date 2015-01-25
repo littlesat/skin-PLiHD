@@ -132,7 +132,7 @@
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RS"/>
     <widget name="config" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="introduction" position="780,975" size="1110,37" font="Regular;30" halign="center"/>
+    <widget name="introduction" position="780,975" size="1110,34" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
@@ -253,7 +253,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="lab1" position="780,975" halign="center" size="1110,37" zPosition="1" font="Regular;33" valign="top" transparent="1"/>
+    <widget name="lab1" position="780,975" halign="center" size="1110,34" zPosition="1" font="Regular;30" valign="top" transparent="1"/>
   </screen>
 
   <!-- WebInterface -->
@@ -609,7 +609,7 @@
     <panel name="ButtonTemplate_RGYB"/>   
 	<panel name="KeyInfoTemplate"/>
     <widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="statusbar" position="780,975" size="1110,37" font="Regular;30"/>
+    <widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
     <widget name="status" position="780,780" size="1110,90" font="Regular;30"/>
   </screen>
   
@@ -893,7 +893,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="780,105" size="1110,705" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
-    <widget name="statusbar" position="885,877" size="900,37" font="Regular;30" backgroundColor="#31000000"/>
+    <widget name="statusbar" position="885,975" size="900,34" font="Regular;30" backgroundColor="#31000000"/>
   </screen>
 
   <!-- CSSF plugin -->
@@ -960,7 +960,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <widget name="config" position="780,137" size="1110,836" font="Regular;28" iTemHeigh="38" scrollbarMode="showOnDemand"/>
-    <widget name="info" position="780,975" size="1110,39" font="Regular;33" halign="center" foregroundColor="blue" transparent="1"/>
+    <widget name="info" position="780,975" size="1110,34" font="Regular;30" halign="center" foregroundColor="blue" transparent="1"/>
     <widget name="tabbar"  position="780,100" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
     <widget name="config0" position="784,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
     <widget name="config1" position="942,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
@@ -1063,7 +1063,7 @@
 		}
 	</convert>
     </widget>
-    <widget name="statusbar" position="30,570" size="720,37" font="Regular;30" halign="center"/>
+    <widget name="statusbar" position="30,570" size="720,34" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="xpowerHelp" position="fill" title="XPower Help" flags="wfNoBorder">
@@ -1072,7 +1072,7 @@
     <widget name="HelpScrollLabel" position="780,105" size="1110,600" font="Regular;30" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="~/img/author.png" position="780,828" zPosition="10" size="37,37"/>
     <widget name="version" position="840,832" size="630,30" font="Regular;27"/>
-    <widget name="statusbar" position="780,975" size="1110,33" font="Regular;27"/>
+    <widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
   </screen>
 
   <screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
@@ -1080,7 +1080,7 @@
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="885,148" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="statusbar" position="780,450" size="1110,33" font="Regular;27"/>
+    <widget name="statusbar" position="780,450" size="1110,34" font="Regular;30"/>
   </screen>
 
   <!-- HDD Sleep plugin -->
@@ -1089,7 +1089,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="810,105" size="1080,304" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="statusbar" position="1260,420" size="630,37" font="Regular;30"/>
+    <widget name="statusbar" position="1260,420" size="630,34" font="Regular;30"/>
     <widget name="devices" position="780,510" size="330,37" font="Regular;30"/>
     <widget name="mounted" position="1260,510" size="630,180" font="Regular;30"/>
     <ePixmap pixmap="~/author.png" position="280,980" zPosition="2" size="37,37"/>
@@ -1135,7 +1135,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="780,105" size="1110,675" itemHeight="38" font="Regular;28" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand"/>
-    <widget name="statusbar" position="780,975" size="1110,37" font="Regular;30" halign="center" backgroundColor="black"/>
+    <widget name="statusbar" position="780,975" size="1110,34" font="Regular;30" halign="center" backgroundColor="black"/>
   </screen>
 
   <!-- Clear Memory -->
@@ -1145,7 +1145,7 @@
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="780,105" size="1110,187" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
     <widget name="slide" position="1785,765" size="27,150" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop"/>
-    <widget name="memory" position="780,975" size="1110,37" zPosition="1" valign="center" halign="left" font="Regular;33" transparent="1"/>
+    <widget name="memory" position="780,975" size="1110,34" zPosition="1" valign="center" halign="left" font="Regular;30" transparent="1"/>
   </screen>
 
   <screen name="ClearMemInfoScreen" position="fill" flags="wfNoBorder">
@@ -1520,7 +1520,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <widget name="list" position="780,105" size="1110,720" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget source="statusbar" render="Label" position="780,975" size="1110,379" zPosition="1" font="Regular;33" halign="center"/>
+    <widget source="statusbar" render="Label" position="780,975" size="1110,34" zPosition="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="ServerEditor" position="fill" title="FTP Server Editor" flags="wfNoBorder">
