@@ -1636,7 +1636,7 @@
     <widget name="text" position="870,105" size="1020,900" font="Regular;33"/>
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="780,105" size="79,79" alphatest="on"/>
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="780,105" size="79,79" alphatest="on"/>
-    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="780,105" size="79,79" alphatest="on"/>
+    <widget name="InfoPixmap" pixmap="PLi-FullHD/icons/input_info.png" position="780,105" size="79,79" alphatest="on"/>
     <widget name="list" position="30,560" size="720,380" itemHeight="38" font="Regular;28"/>
   </screen>
 
@@ -1647,7 +1647,7 @@
     <widget name="text" position="100,12" size="780,0" font="Regular;32"/>
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="10,10" size="79,79" alphatest="on"/>
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="10,10" size="79,79" alphatest="on"/>
-    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="10,10" size="79,79" alphatest="on"/>
+    <widget name="InfoPixmap" pixmap="PLi-FullHD/icons/input_info.png" position="10,10" size="79,79" alphatest="on"/>
     <widget name="list" position="150,150" size="720,570" itemHeight="38" font="Regular;28"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
