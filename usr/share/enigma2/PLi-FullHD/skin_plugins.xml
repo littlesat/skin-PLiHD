@@ -367,8 +367,8 @@
   <screen name="ledManager" position="fill" title="LED Manager 0.2" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonGreen"/>
-    <widget name="config" position="780,105" size="1110,150" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget render="Label" source="ButtonGreentext" position="690,1030" size="607,42" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;36" halign="left"/>
+    <widget name="config" position="780,105" size="1110,152" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget render="Label" source="ButtonGreentext" position="678,1030" size="600,38" font="Regular;34" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" halign="left"/>
   </screen>
 
   <!-- DreamboxExplorer -->
@@ -377,10 +377,10 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <eLabel text="Delete" position="247,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <eLabel text="Rename" position="675,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <eLabel text="Move/Copy" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <eLabel text="Bookmarks" position="1545,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <eLabel text="Delete" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <eLabel text="Rename" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <eLabel text="Move/Copy" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <eLabel text="Bookmarks" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget name="filelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -401,8 +401,8 @@
     <panel name="ButtonYellow"/>
     <widget name="File" position="780,105" size="1110,150" font="Regular;30" halign="center" transparent="1" valign="center" zPosition="1"/>
     <widget name="SLto" position="780,270" size="1110,741" scrollbarMode="showOnDemand" zPosition="1"/>
-    <eLabel text="Set name" position="247,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <eLabel text="Make a softlink" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <eLabel text="Set name" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <eLabel text="Make a softlink" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="CPmaniger" position="fill" title="Select Copy/Move location..." flags="wfNoBorder">
@@ -411,8 +411,8 @@
     <panel name="ButtonYellow"/>
     <widget name="File" position="780,105" size="1110,150" font="Regular;30" halign="center" transparent="1" valign="center" zPosition="1"/>
     <widget name="CPto" position="780,270" size="1110,741" scrollbarMode="showOnDemand" zPosition="1"/>
-    <eLabel text="MOVE" position="247,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
-    <eLabel text="COPY" position="1117,1030" size="345,42" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+    <eLabel text="MOVE" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <eLabel text="COPY" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="MusicExplorer" position="fill" flags="wfNoBorder">
@@ -1088,23 +1088,22 @@
   <screen name="HddSleep" flags="wfNoBorder" position="fill" title="HddSleep Configuration">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="config" position="810,105" size="1080,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="skin_default/div-h.png" position="780,412" zPosition="1" size="1110,3"/>
+    <widget name="config" position="810,105" size="1080,304" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="statusbar" position="1260,420" size="630,37" font="Regular;30"/>
     <widget name="devices" position="780,510" size="330,37" font="Regular;30"/>
     <widget name="mounted" position="1260,510" size="630,180" font="Regular;30"/>
-    <ePixmap pixmap="~/author.png" position="270,969" zPosition="2" size="37,37"/>
-    <widget name="version" position="330,985" size="150,30" zPosition="2" foregroundColor="white" font="Regular;24"/>
+    <ePixmap pixmap="~/author.png" position="280,980" zPosition="2" size="37,37"/>
+    <widget name="version" position="330,983" size="150,30" zPosition="2" foregroundColor="white" font="Regular;24"/>
     <widget name="process" position="780,450" size="135,37" font="Regular;30"/>
-    <widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="960,456" size="22,24" zPosition="10" transparent="1"/>
-    <widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="960,456" size="22,24" zPosition="10" transparent="1"/>
-    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,109" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="1" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,147" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="2" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,184" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="3" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,222" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="4" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,259" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="5" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,297" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-    <widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,334" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
+    <widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
+    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,116" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="1" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,154" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="2" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,192" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="3" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,230" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="4" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,268" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="5" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,306" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,344" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
   </screen>
 
   <!-- SetPicon -->
