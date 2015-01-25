@@ -1271,17 +1271,17 @@
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
-    <widget source="list" render="Listbox" position="780,105" size="1110,825" scrollbarMode="showOnDemand" selectionDisabled="0">
+    <widget source="list" render="Listbox" position="780,100" size="1110,912" scrollbarMode="showOnDemand" selectionDisabled="0">
 		<convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (0,0), size = (1080,39), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 					],
-			"fonts": [gFont("Regular",30),gFont("Regular",30)],
-			"itemHeight": 37
+			"fonts": [gFont("Regular",28),gFont("Regular",30)],
+			"itemHeight": 38
 			}
 		</convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" zPosition="10" font="Regular;33" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget source="introduction" render="Label" position="30,560" size="720,34" zPosition="10" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
   </screen>
 
   <screen name="AdapterSetupConfiguration" position="fill" flags="wfNoBorder">
@@ -1325,7 +1325,7 @@
     <panel name="ButtonTemplate_RGYS"/>
     <eLabel text="Nameserver Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget name="config" position="780,105" size="1110,675"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="10" font="Regular;33" valign="center" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
@@ -1345,7 +1345,7 @@
 				}
 		</convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="10" font="Regular;33" valign="center" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
   <screen name="NetworkAdapterTest" title="Network test" position="fill" flags="wfNoBorder">
@@ -1400,7 +1400,7 @@
 		}
 	</convert>
     </widget>
-    <widget source="infotext" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="10" font="Regular;33" valign="center" halign="center"/>
+    <widget source="infotext" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
   <screen name="AutoMountManager" title="MountManager" position="fill" flags="wfNoBorder">
@@ -1418,7 +1418,7 @@
 				}
 			</convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;33" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
@@ -1435,7 +1435,7 @@
 				}
       </convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="background" transparent="1" font="Regular;33" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="background" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="AutoMountView" position="fill" flags="wfNoBorder">
@@ -1460,7 +1460,7 @@
 			}
 	</convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="10" font="Regular;33" valign="center" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
@@ -1469,7 +1469,7 @@
     <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="165,1032" size="52,38"/>
     <widget name="config" position="780,105" size="1110,412" itemHeight="38" font="Regular;28" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
     <widget name="HelpWindow" position="960,600" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;33" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="UserDialog" position="fill" title="UserDialog" flags="wfNoBorder">
@@ -1477,14 +1477,14 @@
     <panel name="ButtonTemplate_RS"/>
     <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="165,1032" size="52,38"/>
     <widget name="config" position="780,105" size="1110,412" itemHeight="38" font="Regular;28" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;33" halign="center"/>
     <widget name="HelpWindow" position="960,600" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="ScanIP" position="fill" title="Scan IP" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <widget name="config" position="780,105" size="1110,37" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,38" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- WirelessLan -->
@@ -1528,7 +1528,7 @@
 		}
 	</convert>
     </widget>
-    <widget source="info" render="Label" position="780,975" size="1110,37" font="Regular;33" halign="center" valign="center" transparent="1"/>
+    <widget source="info" render="Label" position="780,975" size="1110,34" font="Regular;30" halign="center" valign="center" transparent="1"/>
   </screen>
 
   <!-- Input Device Configuration -->
@@ -1548,14 +1548,14 @@
 	}
       </convert>
     </widget>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;33" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="780,975" size="1110,40" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;36" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <!-- Harddisk selection -->
@@ -1596,23 +1596,23 @@
   <screen flags="wfNoBorder" name="ToplevelPPanel" position="fill" title="Toplevel PPanel">
     <panel name="PigTemplate"/>
     <widget name="nodelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="helptext" position="30,570" size="720,390" font="Regular;30" valign="center" halign="left"/>
+    <widget name="helptext" position="30,560" size="720,390" font="Regular;30" valign="center" halign="left"/>
   </screen>
 
   <screen flags="wfNoBorder" name="PPanel" position="fill" title="PPanel">
     <panel name="PigTemplate"/>
     <widget name="nodelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="helptext" position="30,570" size="720,390" font="Regular;30" valign="center" halign="left"/>
+    <widget name="helptext" position="30,560" size="720,390" font="Regular;30" valign="center" halign="left"/>
   </screen>
 
   <screen flags="wfNoBorder" name="File" position="fill" title="PPanel File">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Tarball" position="fill" title="PPanel Entry">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,9" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
@@ -1637,7 +1637,7 @@
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="780,105" size="79,79" alphatest="on"/>
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="780,105" size="79,79" alphatest="on"/>
     <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="780,105" size="79,79" alphatest="on"/>
-    <widget name="list" position="30,562" size="720,380" itemHeight="38" font="Regular;28"/>
+    <widget name="list" position="30,560" size="720,380" itemHeight="38" font="Regular;28"/>
   </screen>
 
   <!-- MessageBoxSimple -->
@@ -1723,7 +1723,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel text="Choose your Skin" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget name="Preview" position="165,600" size="420,315" alphatest="on"/>
     <widget name="SkinList" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="780,975" size="1110,37" zPosition="1" transparent="1" font="Regular;33" halign="center"/>
+    <widget source="introduction" render="Label" position="780,975" size="1110,34" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
   </screen>
 
   <!-- Nim selection -->
@@ -1804,7 +1804,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" position="780,105" size="1110,810" scrollbarMode="showOnDemand"/>
-    <widget name="hint" position="780,975" size="1110,37" font="Regular;33" halign="center"/>
+    <widget name="hint" position="780,975" size="1110,34" font="Regular;30" halign="center"/>
   </screen>
 
   <!-- Tuner Screen -->
@@ -1812,7 +1812,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="TunerScreen" position="fill" title="Tune">
     <panel name="PigTemplate"/>
     <widget name="config" position="780,105" size="1110,532" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="introduction" position="780,705" size="1110,37" font="Regular;33"/>
+    <widget name="introduction" position="780,705" size="1110,34" font="Regular;30"/>
   </screen>
 
   <!-- Rotor Nim Selection -->
@@ -1919,7 +1919,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="AboutScrollLabel" font="Regular;33" position="780,100" size="1110,912" zPosition="2" halign="center"/>
+    <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" halign="center"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
@@ -1942,15 +1942,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="on"/>
     <ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1030" size="34,34" alphatest="on"/>
     <eLabel text="Latest Commits" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="AboutScrollLabel" font="Regular;33" position="30,105" size="1860,900" zPosition="2" halign="left"/>
+    <widget name="AboutScrollLabel" font="Regular;28" position="30,100" size="1860,912" zPosition="2" halign="left"/>
   </screen>
   <!-- Translation Info -->
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
     <eLabel text="Translation" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget source="TranslatorName" render="Label" position="780,105" size="1110,120" font="Regular;33" halign="center" backgroundColor="background" transparent="1"/>
-    <widget source="TranslationInfo" render="Label" position="780,270" size="1110,570" font="Regular;33" halign="center" backgroundColor="background" transparent="1"/>
+    <widget source="TranslatorName" render="Label" position="780,105" size="1110,120" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
+    <widget source="TranslationInfo" render="Label" position="780,270" size="1110,570" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
   </screen>
 
   <!-- Virtual Keyboard -->
@@ -2025,8 +2025,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="status" position="780,495" size="1110,210" font="Regular;27"/>
-    <widget name="statusbar" position="780,750" size="1110,30" font="Regular;27"/>
+    <widget name="status" position="780,495" size="1110,210" font="Regular;28"/>
+    <widget name="statusbar" position="780,750" size="1110,30" font="Regular;28"/>
   </screen>
 
   <!-- Picture-Player -->
@@ -2037,7 +2037,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="KeyMenuTemplate"/>
     <widget name="thn" position="363,547" size="390,375" alphatest="on"/>
     <widget name="filelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" zPosition="3" scrollbarMode="showOnDemand"/>
-    <widget name="label" position="783,975" size="390,37" transparent="1" font="Regular;28"/>
+    <widget name="label" position="783,975" size="390,34" transparent="1" font="Regular;30"/>
   </screen>
 
   <screen name="Pic_Exif" title="Info" position="fill" flags="wfNoBorder">
@@ -2065,7 +2065,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel position="22,22" size="45,37" zPosition="2" backgroundColor="black" transparent="1"/>
     <widget name="point" position="25,25" size="31,31" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on"/>
     <widget name="play_icon" position="30,30" size="24,24" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
-    <widget source="file" render="Label" position="90,22" size="900,37" zPosition="3" font="Regular;30" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
+    <widget source="file" render="Label" position="90,22" size="900,34" zPosition="3" font="Regular;30" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
   </screen>
 
   <!-- Inputbox -->
@@ -2074,7 +2074,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <widget name="text" position="780,105" size="1110,39" font="Regular;33"/>
     <ePixmap pixmap="skin_default/vkey_text.png" position="787,210" size="1080,60" zPosition="-4" alphatest="on"/>
-    <widget name="input" position="780,210" size="1110,39" font="Regular;30" valign="center"/>
+    <widget name="input" position="780,210" size="1110,34" font="Regular;30" valign="center"/>
   </screen>
 
   <!-- Location Box -->
@@ -2084,7 +2084,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="text" position="780,105" size="1110,37" font="Regular;33"/>
-    <widget name="target" position="780,157" size="1110,37" valign="center" font="Regular;33"/>
+    <widget name="target" position="780,150" size="1110,37" valign="center" font="Regular;33"/>
     <widget name="filelist" position="780,195" size="1110,310" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1"/>
     <widget name="textbook" position="780,517" size="1110,37" font="Regular;33"/>
     <widget name="booklist" position="787,562" itemHeight="38" font="Regular;28" size="1102,450" zPosition="2" scrollbarMode="showOnDemand"/>
