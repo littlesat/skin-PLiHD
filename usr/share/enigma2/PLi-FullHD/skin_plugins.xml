@@ -1052,9 +1052,9 @@
     <widget source="config" render="Listbox" position="780,105" size="1110,897" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (22,3), size = (72,57), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
+				MultiContentEntryPixmapAlphaTest(pos = (22,15), size = (48,38), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
 				MultiContentEntryText(pos = (135,9), size = (300,52), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the Name (for text it is text= )
-				MultiContentEntryPixmapAlphaTest(pos = (450,3), size = (60,60), png = 2), # index 2 is the system pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (450,14), size = (40,40), png = 2), # index 2 is the system pixmap
 				MultiContentEntryText(pos = (600,4), size = (375,30), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the IP
 				MultiContentEntryText(pos = (600,34), size = (375,30), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the MAC
 				],
@@ -1079,7 +1079,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="885,148" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="885,153" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
     <widget name="statusbar" position="780,450" size="1110,34" font="Regular;30"/>
   </screen>
 
