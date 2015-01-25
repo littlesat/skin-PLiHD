@@ -329,7 +329,7 @@
     <widget source="ServiceEvent" render="Label" position="30,637" size="720,315" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="30,967" size="720,39" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="30,975" size="720,34" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;30"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -380,19 +380,19 @@
     <widget source="Event" render="Label" position="30,637" size="720,310" transparent="1" font="Regular;30" halign="block">
 	<convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,967" size="330,37" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33">
+    <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30">
 	<convert type="EventTime">StartTime</convert>
 	<convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="202,967" size="120,37" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" halign="right">
+    <widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="right">
 	<convert type="EventTime">StartTime</convert>
 	<convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="330,967" size="120,37" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" halign="left">
+    <widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="left">
 	<convert type="EventTime">EndTime</convert>
 	<convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="532,967" size="165,37" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" halign="left">
+    <widget source="Event" render="Label" position="532,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="left">
 	<convert type="EventTime">Duration</convert>
 	<convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -416,7 +416,7 @@
     <widget source="session.Event_Now" render="Label" position="30,832" size="720,45" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;33" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="30,967" size="720,39" font="Regular;33" halign="left" foregroundColor="secondFG" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="30,975" size="720,34" font="Regular;30" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
   </screen>
@@ -869,10 +869,10 @@
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
 
-    <widget source="Service" render="Label" position="30,975" size="180,37" transparent="1" foregroundColor="grey" font="Regular;33">
+    <widget source="Service" render="Label" position="30,975" size="180,34" transparent="1" foregroundColor="grey" font="Regular;30">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="195,975" size="555,37" foregroundColor="grey" font="Regular;33" transparent="1" halign="right"/>
+    <widget name="freeDiskSpace" position="195,975" size="555,34" foregroundColor="grey" font="Regular;30" transparent="1" halign="right"/>
 
     <widget name="movie_sort" pixmaps="PLi-FullHD/icons/az.png,PLi-FullHD/icons/newtop.png,PLi-FullHD/icons/shuffle.png,PLi-FullHD/icons/za.png,PLi-FullHD/icons/oldtop.png,PLi-FullHD/icons/faz.png,PLi-FullHD/icons/fza.png,PLi-FullHD/icons/default.png" position="1282,57" zPosition="1" size="52,30" transparent="1" alphatest="on"/>
     <widget name="movie_off" pixmaps="PLi-FullHD/icons/ask.png,PLi-FullHD/icons/movielist.png,PLi-FullHD/icons/quit.png,PLi-FullHD/icons/pause.png,PLi-FullHD/icons/playlist.png,PLi-FullHD/icons/playlistquit.png,PLi-FullHD/icons/loop.png,PLi-FullHD/icons/rep.png" position="1335,57" zPosition="1" size="52,30" transparent="1" alphatest="on"/>
