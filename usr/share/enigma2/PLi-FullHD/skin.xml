@@ -307,7 +307,7 @@
     <widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="#656565"
             foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
-            colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="12"
+            picServiceEventProgressbar="PLi-FullHD/window/sprogress.png" progressbarHeight="12" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
     <widget source="ServiceEvent" render="Label" position="30,540" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" haligh="left">
       <convert type="EventName">Name</convert>
@@ -836,7 +836,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="30,530" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:720,0">
+    <widget source="session.CurrentService" render="PositionGauge" position="30,530" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:720,4">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="37,499" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
@@ -1091,7 +1091,7 @@
     <widget name="package" position="780,105" size="1110,42" backgroundColor="darkgrey" transparent="1" font="Regular;30"/>
     <widget name="status" position="795,255" size="1065,84" backgroundColor="darkgrey" transparent="1" font="Regular;30"/>
     <widget name="slider" position="801,441" size="1053,20" zPosition="2" transparent="1"/>
-    <widget name="activityslider" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
+    <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
   <!-- Choose upgrade source -->
@@ -1135,7 +1135,7 @@
     <widget source="package" render="Label" position="780,105" size="1110,42" backgroundColor="darkgrey" transparent="1" font="Regular;36"/>
     <widget source="status" render="Label" position="780,165" size="1110,84" backgroundColor="darkgrey" transparent="1" font="Regular;36"/>
     <widget name="slider" position="786,441" size="1096,20" zPosition="2" transparent="1"/>
-    <widget name="activityslider" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
+    <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
@@ -1607,12 +1607,12 @@
 
   <screen flags="wfNoBorder" name="File" position="fill" title="PPanel File">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Tarball" position="fill" title="PPanel Entry">
     <panel name="PigTemplate"/>
-    <widget name="progress" position="30,1023" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
+    <widget name="progress" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
