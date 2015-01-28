@@ -31,7 +31,7 @@
   </screen>
 
   <screen name="TopTemplate">
-    <eLabel position="0,0" size="1280,58" backgroundColor="darkblue"/>
+    <eLabel position="0,0" size="1280,58" backgroundColor="toptemplatecolor"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,58" size="1280,2" zPosition="2"/>
     <widget source="Title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="global.CurrentTime" render="Label" position="1110,15" size="150,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
@@ -44,7 +44,7 @@
 
   <screen name="BasicTemplate">
     <panel name="TopTemplate"/>
-    <eLabel position="0,682" size="1280,38" backgroundColor="darkblue"/>
+    <eLabel position="0,682" size="1280,38" backgroundColor="basictemplatecolor"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,680" size="1280,2"/>
   </screen>
 
@@ -58,6 +58,11 @@
     <widget source="session.CurrentService" render="Label" position="20,60" size="480,20" zPosition="1" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
+  </screen>
+
+  <screen name="PigVirtualTemplate">
+    <panel name="BasicTemplate"/>
+    <widget source="session.VideoPicture" render="Pig" position="1279,719" size="1,1" backgroundColor="transparent" zPosition="1"/>
   </screen>
 
   <screen name="PigTemplate">
