@@ -22,10 +22,12 @@
   <!-- Colors -->
 
   <colors>
+    <color name="toptemplatecolor" value="#00000030"/>
+    <color name="basictemplatecolor" value="#00000020"/>
+    <color name="selectorcolor" value="#00000030"/>
     <color name="background" value="#00000000"/>
     <color name="black" value="#00000000"/>
     <color name="blue" value="#00578cc0"/>
-    <color name="darkblue" value="#00000028"/>
     <color name="bluetransparent" value="#08001e4b"/>
     <color name="dark" value="#00242424"/>
     <color name="darkgrey" value="#00555556"/>
@@ -67,7 +69,7 @@
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
     <color name="ListboxForeground" color="foreground"/>
-    <color name="ListboxSelectedBackground" color="darkblue"/>
+    <color name="ListboxSelectedBackground" color="selectorcolor"/>
     <color name="ListboxSelectedForeground" color="selectedFG"/>
     <color name="ListboxMarkedBackground" color="un40a0aa0"/>
     <color name="ListboxMarkedForeground" color="red"/>
@@ -1867,7 +1869,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   </screen>
    <!-- Commit Info -->
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate"/>
+    <panel name="PigVirtualTemplate"/>
     <panel name="ButtonTemplate_R"/>
     <ePixmap pixmap="PLi-HD/buttons/left.png" position="695,687" size="26,26" alphatest="on"/>
     <ePixmap pixmap="PLi-HD/buttons/right.png" position="970,687" size="26,26" alphatest="on"/>
