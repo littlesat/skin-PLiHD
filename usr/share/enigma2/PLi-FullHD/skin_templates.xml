@@ -9,7 +9,7 @@
     </widget>
     <eLabel backgroundColor="infobarBG" position="185,83" size="1550,20" zPosition="0"/>
     <ePixmap pixmap="PLi-FullHD/dvr/scale1024.png" position="192,90" size="1536,6" zPosition="1"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="192,84" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1024.png:1518,4">
+    <widget source="session.CurrentService" render="PositionGauge" position="192,84" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1024.png:1536,4">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="192,46" size="135,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="left">
