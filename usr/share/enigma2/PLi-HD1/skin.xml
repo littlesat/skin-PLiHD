@@ -1078,9 +1078,9 @@
     <widget source="menu" render="Listbox" position="520,70" size="740,600" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (35,12),size = (705,40),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (50,10),size = (690,30),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
 				],
-			"fonts": [gFont("Regular",23)],
+			"fonts": [gFont("Regular",24)],
 			"itemHeight": 50
 			}
       </convert>
