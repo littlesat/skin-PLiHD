@@ -1540,7 +1540,7 @@
       <convert type="TemplatedMultiContent">
       <!--  device, description, devicepng, divpng  -->
 	{"template": [
-	      MultiContentEntryPixmapAlphaTest(pos = (15,12), size = (81,81), png = 2), # index 3 is the interface pixmap
+	      MultiContentEntryPixmapAlphaTest(pos = (15,29), size = (48,48), png = 2), # index 3 is the interface pixmap
 	      MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
             ],
 	  "fonts": [gFont("Regular",33),gFont("Regular",25)],
