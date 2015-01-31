@@ -377,7 +377,7 @@
     <widget source="Event" render="Label" position="30,540" size="720,75" foregroundColor="secondFG" font="Regular;33" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,637" size="720,310" transparent="1" font="Regular;30" halign="block">
+    <widget source="Event" render="Label" position="30,637" size="720,315" transparent="1" font="Regular;30" halign="block">
 	<convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30">
