@@ -239,7 +239,7 @@
     <widget source="session.Event_Now" render="Label" position="645,220" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,270" size="915,552" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="30,270" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="975,172" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -251,7 +251,7 @@
     <widget source="session.Event_Next" render="Label" position="1590,220" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="975,270" size="915,552" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="975,270" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
@@ -454,7 +454,7 @@
     <widget source="Service" render="Label" position="600,585" size="150,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="Event" render="Label" position="30,630" size="720,241" transparent="1" font="Regular;30" halign="block">
+    <widget source="Event" render="Label" position="30,637" size="720,350" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
