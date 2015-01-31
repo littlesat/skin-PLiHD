@@ -1551,6 +1551,6 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
     <widget name="config" position="780,105" size="1110,190" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand" />
-    <widget name="version" position="780,500" size="35,22" font="Regular;18" zPosition="1" halign="left" transparent="1" />
+    <widget name="version" position="780,500" size="60,22" font="Regular;18" zPosition="1" halign="left" transparent="1" />
   </screen>
 </skin>
