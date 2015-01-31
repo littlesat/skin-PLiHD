@@ -541,7 +541,7 @@
 
   <screen name="SelectBouquet" position="fill" title="Choose bouquet" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="menu" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="menu" position="780,100" size="1110,912" itemHeight="45" font="Regular;36" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Menus -->
