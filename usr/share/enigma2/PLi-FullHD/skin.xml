@@ -514,7 +514,7 @@
   </screen>
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate"/>
+    <panel name="PigVirtualTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
