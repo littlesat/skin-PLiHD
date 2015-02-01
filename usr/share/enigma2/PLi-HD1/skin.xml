@@ -254,7 +254,7 @@
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget source="ServiceEvent" render="Progress" position="100,400" size="240,12" pixmap="PLi-HD/window/progress.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" position="100,400" size="240,12" pixmap="PLi-HD1/window/progress.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="360,395" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19">
@@ -449,7 +449,7 @@
   </screen>
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate"/>
+    <panel name="PigVirtualTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
@@ -694,7 +694,7 @@
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD/window/progress.png" position="100,126" size="240,12" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="session.Event_Now" render="Progress" pixmap="PLi-HD1/window/progress.png" position="100,126" size="240,12" transparent="1" borderWidth="1" borderColor="grey">
     <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="360,122" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19">
