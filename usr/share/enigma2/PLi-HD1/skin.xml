@@ -315,7 +315,7 @@
     <widget source="Event" render="Label" position="20,360" size="480,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="20,425" size="480,207" transparent="1" font="Regular;20" halign="block">
+    <widget source="Event" render="Label" position="20,425" size="480,210" transparent="1" font="Regular;20" halign="block">
 	<convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="20,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
@@ -389,7 +389,7 @@
     <widget source="Service" render="Label" position="400,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="Event" render="Label" position="20,420" size="480,161" transparent="1" font="Regular;20" halign="block">
+    <widget source="Event" render="Label" position="20,425" size="480,210" transparent="1" font="Regular;20" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
