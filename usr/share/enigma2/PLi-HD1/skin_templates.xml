@@ -62,7 +62,7 @@
 
   <screen name="PigVirtualTemplate">
     <panel name="BasicTemplate"/>
-    <widget source="session.VideoPicture" render="Pig" position="1279,719" size="1,1" backgroundColor="transparent" zPosition="1"/>
+    <widget source="session.VideoPicture" render="Pig" position="0,680" size="2,1" zPosition="1"/>
   </screen>
 
   <screen name="PigTemplate">
