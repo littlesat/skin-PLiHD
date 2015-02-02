@@ -1120,7 +1120,7 @@
     <widget name="orbital" position="945,270" zPosition="2" size="150,37" valign="center" halign="left" font="Regular;30" foregroundColor="white"/>
     <widget name="provider" position="945,315" zPosition="2" size="645,37" valign="center" halign="left" font="Regular;30" foregroundColor="white"/>
     <widget name="text" position="945,420" zPosition="2" size="810,37" valign="center" halign="left" font="Regular;27" foregroundColor="white"/>
-    <ePixmap pixmap="~/img/border.png" position="1267,472" zPosition="1" size="165,127"/>
+    <ePixmap pixmap="~/img/borderhd.png" position="1267,472" zPosition="1" size="165,128"/>
     <widget name="picon2l" position="945,480" zPosition="2" size="150,112" alphatest="on"/>
     <widget name="picon1l" position="1110,480" zPosition="2" size="150,112" alphatest="on"/>
     <widget name="picon" position="1275,480" zPosition="2" size="150,112" alphatest="on"/>
