@@ -79,6 +79,7 @@
     <parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
     <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
     <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
+    <parameter name="AboutHddSplit" value="1"/>
   </parameters>
 
   <!-- Colors -->
@@ -1919,7 +1920,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" halign="center"/>
+    <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">

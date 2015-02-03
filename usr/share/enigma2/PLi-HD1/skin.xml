@@ -61,6 +61,10 @@
     <color name="yellowtransparent" value="#084b4b00"/>
   </colors>
 
+  <parameters>
+    <parameter name="AboutHddSplit" value="1"/>
+  </parameters>
+
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">
@@ -1852,7 +1856,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
-    <widget name="AboutScrollLabel" font="Regular;22" position="520,70" size="740,600" zPosition="2" halign="center"/>
+    <widget name="AboutScrollLabel" font="Regular;22" position="520,70" size="740,600" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
