@@ -306,8 +306,8 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
-            serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="#656565"
-            foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060"
+            serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="#656565" fieldMargins="15"
+            foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060" progressBarWidth="60"
             picServiceEventProgressbar="PLi-FullHD/window/sprogress.png" progressbarHeight="12" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
     <widget source="ServiceEvent" render="Label" position="30,540" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" haligh="left">
