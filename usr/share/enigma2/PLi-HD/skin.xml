@@ -18,6 +18,12 @@
     <font name="Fixed" filename="andale.ttf" scale="100"/>
   </fonts>
 
+  <!-- Parameters -->
+
+  <parameters>
+    <parameter name="AboutHddSplit" value="0"/>
+  </parameters>
+
   <!-- Colors -->
 
   <colors>
@@ -1821,7 +1827,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
