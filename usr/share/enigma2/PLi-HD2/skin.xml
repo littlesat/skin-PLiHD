@@ -19,6 +19,12 @@
     <alias name="ChoiceList" font="Regular" size="21" height="30" />
   </fonts>
 
+  <!-- Parameters -->
+
+  <parameters>
+    <parameter name="AboutHddSplit" value="0"/>
+  </parameters>
+
   <!-- Colors -->
 
   <colors>
@@ -1834,7 +1840,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="530,80" size="710,575" zPosition="2" halign="center" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="530,80" size="710,575" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
