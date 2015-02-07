@@ -1617,7 +1617,7 @@
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
-    <panel name="BasicTemplate"/>
+    <panel name="PigVirtualTemplate"/>
     <panel name="ButtonTemplate_YB"/>
     <widget name="linelist" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
   </screen>
