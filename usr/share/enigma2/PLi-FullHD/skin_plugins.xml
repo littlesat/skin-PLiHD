@@ -1245,7 +1245,7 @@
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" position="780,105" size="1110,858" itemHeight="38" font="Regular;28" transparent="1"/>
+    <widget name="Mlist" scrollbarMode="showOnDemand" position="780,105" size="1110,900" itemHeight="150" font="Regular;34" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
@@ -1254,15 +1254,15 @@
     <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuInfoTemplate"/>
     <panel name="KeyOkTemplate"/>
-    <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;34" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-    <widget source="Titel3" render="Label" position="30,600" zPosition="2" size="720,150" font="Regular;34" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-    <widget name="MainList" position="780,105" size="1110,810" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
+    <widget source="Titel3" render="Label" position="30,600" zPosition="2" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
+    <widget name="MainList" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" position="780,105" size="1110,765" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
@@ -1279,7 +1279,7 @@
   <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" itemHeight="38" font="Regular;28" position="780,105" size="1110,765" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" itemHeight="38" font="Regular;28" position="780,105" size="1110,900" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
