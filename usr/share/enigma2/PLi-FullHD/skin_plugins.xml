@@ -386,8 +386,8 @@
 
   <screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="30,600" size="1860,37" font="Regular;30" halign="Left" zPosition="1"/>
-    <widget name="input" position="30,660" size="1860,45" backgroundColor="#01080911" foregroundColor="#fcc000" font="Regular;36" halign="Left" zPosition="1"/>
+    <widget name="text" position="30,600" size="1860,37" font="Regular;30" halign="left" zPosition="1"/>
+    <widget name="input" position="30,660" size="1860,45" backgroundColor="#01080911" foregroundColor="#fcc000" font="Regular;36" halign="left" zPosition="1"/>
   </screen>
 
   <screen name="vEditor" position="fill" title="File-Explorer" flags="wfNoBorder">
