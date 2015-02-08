@@ -1063,7 +1063,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="30,570" size="720,300" zPosition="10" font="Regular;31" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
+    <widget source="introduction" render="Label" position="30,570" size="720,300" zPosition="10" font="Regular;30" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
   </screen>
 
   <screen name="BackupScreen" title="Backup is running" position="fill" flags="wfNoBorder">
@@ -1289,12 +1289,12 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
     <eLabel text="Network Configuration" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="menulist" position="780,105" size="1110,420" itemHeight="38" font="Regular;28" zPosition="10" scrollbarMode="showOnDemand"/>
+    <widget name="menulist" position="780,105" size="1110,456" itemHeight="38" font="Regular;28" zPosition="10" scrollbarMode="showOnDemand"/>
     <widget source="description" render="Label" position="780,547" size="1110,300" transparent="1" font="Regular;31" valign="center" halign="center"/>
-    <widget source="IFtext" render="Label" position="1275,880" size="247,37" transparent="1" zPosition="10" font="Regular;31" halign="right"/>
+    <widget source="IFtext" render="Label" position="1270,880" size="247,37" transparent="1" zPosition="10" font="Regular;31" halign="right"/>
     <widget source="IF" render="Label" position="1530,880" size="375,37" transparent="1" zPosition="10" font="Regular;31" halign="left"/>
-    <widget source="Statustext" render="Label" position="742,880" size="300,37" transparent="1" zPosition="10" font="Regular;31" valign="center" halign="right"/>
-    <widget name="statuspic" position="1050,880" size="52,37" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on"/>
+    <widget source="Statustext" render="Label" position="742,880" size="300,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="right"/>
+    <widget name="statuspic" position="1055,877" size="52,37" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on"/>
   </screen>
 
   <screen name="AdapterSetup" position="fill" flags="wfNoBorder">
@@ -1302,22 +1302,23 @@
     <panel name="ButtonTemplate_RBS"/>
     <panel name="KeyTextTemplate"/>
     <eLabel text="Network Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="config" position="780,105" size="1110,384"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget source="DNS1text" render="Label" position="1252,675" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left"/>
-    <widget source="DNS2text" render="Label" position="1252,720" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left"/>
-    <widget source="DNS1" render="Label" position="1485,675" size="345,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
-    <widget source="DNS2" render="Label" position="1485,720" size="345,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
-    <widget source="introduction" render="Label" position="600,619" size="1230,40" font="Regular;31" halign="center"/>
-    <widget source="IPtext" render="Label" position="600,675" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
-    <widget source="Netmasktext" render="Label" position="600,720" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
-    <widget source="Gatewaytext" render="Label" position="600,765" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
-    <widget source="IP" render="Label" position="840,675" size="300,37" zPosition="1" font="Regular;28"/>
-    <widget source="Mask" render="Label" position="840,720" size="300,37" zPosition="1" font="Regular;28"/>
-    <widget source="Gateway" render="Label" position="840,765" size="300,37" zPosition="1" font="Regular;28"/>
-    <widget source="Adaptertext" render="Label" position="600,825" size="405,37" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;30" halign="right"/>
-    <widget source="Adapter" render="Label" position="1020,825" size="600,37" transparent="1" zPosition="10" font="Regular;30" halign="left"/>
-    <widget source="introduction2" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="10" font="Regular;33" valign="center" halign="center"/>
-    <eLabel text="Virtual Keyboard" position="690,1032" size="450,39" backgroundColor="black" zPosition="1" transparent="1" font="Regular;30" halign="left"/>
+    <widget name="config" position="780,105" size="1110,418"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget source="introduction" render="Label" position="780,619" size="1110,40" font="Regular;33" halign="center"/>
+    <widget source="IPtext" render="Label" position="780,675" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
+    <widget source="Netmasktext" render="Label" position="780,720" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
+    <widget source="Gatewaytext" render="Label" position="780,765" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
+    <widget source="IP" render="Label" position="1020,675" size="300,37" zPosition="1" font="Regular;28"/>
+    <widget source="Mask" render="Label" position="1020,720" size="300,37" zPosition="1" font="Regular;28"/>
+    <widget source="Gateway" render="Label" position="1020,765" size="300,37" zPosition="1" font="Regular;28"/>
+    <widget source="DNS1text" render="Label" position="1400,675" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left"/>
+    <widget source="DNS2text" render="Label" position="1400,720" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left"/>
+    <widget source="DNS1" render="Label" position="1640,675" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
+    <widget source="DNS2" render="Label" position="1640,720" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left"/>
+
+    <widget source="Adaptertext" render="Label" position="780,825" size="400,34" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;30" halign="left"/>
+    <widget source="Adapter" render="Label" position="1020,825" size="600,34" transparent="1" zPosition="10" font="Regular;30" halign="left"/>
+    <widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
+    <eLabel text="Virtual Keyboard" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget name="HelpWindow" position="75,615" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
   </screen>
 
@@ -1325,7 +1326,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
     <eLabel text="Nameserver Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="config" position="780,105" size="1110,675"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,646"  itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
@@ -1352,44 +1353,51 @@
   <screen name="NetworkAdapterTest" title="Network test" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <widget name="Adaptertext" position="630,690" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
-    <widget name="Adapter" position="1006,690" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-    <widget name="AdapterInfo_Text" position="1530,690" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="AdapterInfo" position="1530,690" size="300,34" transparent="1" zPosition="2"/>
-    <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="1467,684" size="57,46" zPosition="2" alphatest="on"/>
-    <widget name="Networktext" position="630,742" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;28" halign="left"/>
-    <widget name="Network" position="1006,742" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-    <widget name="NetworkInfo" position="1530,742" size="300,34" transparent="1" zPosition="2"/>
-    <widget name="NetworkInfo_Text" position="1530,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="NetworkInfo_Check" position="1467,736" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-    <widget name="Dhcptext" position="630,795" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
-    <widget name="Dhcp" position="1006,795" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-    <widget name="DhcpInfo_Text" position="1530,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="DhcpInfo" position="1530,795" size="300,34" transparent="1"/>
-    <widget name="DhcpInfo_Check" position="1467,789" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-    <widget name="IPtext" position="630,847" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
-    <widget name="IP" position="1006,847" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-    <widget name="IPInfo_Text" position="1530,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="IPInfo" position="1530,847" size="300,34" transparent="1" zPosition="2"/>
-    <widget name="IPInfo_Check" position="1467,841" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-    <widget name="DNStext" position="630,900" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
-    <widget name="DNS" position="1006,900" size="459,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-    <widget name="DNSInfo_Text" position="1530,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31"/>
-    <widget name="DNSInfo" position="1530,900" size="300,34" transparent="1" zPosition="2" />
-    <widget name="DNSInfo_Check" position="1467,894" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-    <widget name="EditSettingsButton" position="1500,1030" size="34,34" transparent="1" zPosition="1" pixmaps="PLi-HD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
-    <widget name="EditSettings_Text" position="1550,1030" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;38"/>
-    <widget name="InfoText" position="885,120" size="945,450" zPosition="25" font="Regular;31"/>
-    <widget name="InfoTextBorder" position="780,123" size="1110,525"/>
+    <widget name="InfoText" position="780,105" size="1100,455" zPosition="25" font="Regular;31"/>
+    <widget name="InfoTextBorder" position="780,108" size="1110,525"/>
+
+    <widget name="Adaptertext" position="780,689" size="300,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
+    <widget name="Adapter" position="1180,689" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
+    <widget name="AdapterInfo_OK" position="1500,686" size="57,46" pixmap="skin_default/icons/lock_on.png" zPosition="2" alphatest="on"/>
+    <widget name="AdapterInfo_Text" position="1590,689" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
+    <widget name="AdapterInfo" position="1590,689" size="300,34" transparent="1" zPosition="2"/>
+
+    <widget name="Networktext" position="780,742" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;28" halign="left"/>
+    <widget name="Network" position="1180,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
+    <widget name="NetworkInfo_Check" position="1500,739" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="NetworkInfo_Text" position="1590,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
+    <widget name="NetworkInfo" position="1590,742" size="300,34" transparent="1" zPosition="2"/>
+
+    <widget name="Dhcptext" position="780,795" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
+    <widget name="Dhcp" position="1180,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
+    <widget name="DhcpInfo_Check" position="1500,792" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="DhcpInfo_Text" position="1590,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
+    <widget name="DhcpInfo" position="1590,795" size="300,34" transparent="1"/>
+
+    <widget name="IPtext" position="780,847" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
+    <widget name="IP" position="1180,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
+    <widget name="IPInfo_Check" position="1500,844" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="IPInfo_Text" position="1590,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
+    <widget name="IPInfo" position="1590,847" size="300,34" transparent="1" zPosition="2"/>
+
+    <widget name="DNStext" position="780,900" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
+    <widget name="DNS" position="1180,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
+    <widget name="DNSInfo_Check" position="1500,897" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+    <widget name="DNSInfo_Text" position="1590,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
+    <widget name="DNSInfo" position="1590,900" size="300,34" transparent="1" zPosition="2" />
+
+    <widget name="EditSettingsButton" position="1500,1032" size="34,34" transparent="1" zPosition="1" pixmaps="PLi-FullHD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
+    <widget name="EditSettings_Text" position="1550,1030" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;34" halign="left"/>
+
   </screen>
 
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget source="list" render="Listbox" position="780,105" size="1110,862" zPosition="10" scrollbarMode="showOnDemand">
+    <widget source="list" render="Listbox" position="780,105" size="1110,858" zPosition="10" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 		{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (72,72),png = 1),# index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryPixmapAlphaTest(pos = (2,15),size = (72,72),png = 1),# index 1 is the expandable/expanded/verticalline icon
 				MultiContentEntryText(pos = (75,6),size = (630,39),font=2,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the Hostname
 				MultiContentEntryText(pos = (210,7),size = (480,37),font=0,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the sharename
 				MultiContentEntryText(pos = (210,39),size = (480,25),font=1,flags = RT_HALIGN_LEFT,text = 4),# index 4 is the sharedescription
@@ -1412,7 +1420,7 @@
 				{"template": [
 						MultiContentEntryText(pos = (90,7),size = (870,42),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 2 is the Menu Titel
 						MultiContentEntryText(pos = (105,52),size = (855,30),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 3 is the Description
-						MultiContentEntryPixmapAlphaTest(pos = (15,9),size = (72,72),png = 3),# index 4 is the pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4 is the pixmap
 					],
 				"fonts": [gFont("Regular",33),gFont("Regular",23)],
 				"itemHeight": 90
@@ -1429,7 +1437,7 @@
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (120,6),size = (885,75),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (15,9),size = (72,72),png = 3),# index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4 is the status pixmap
 					],
 				"fonts": [gFont("Regular",30)],
 				"itemHeight": 90
@@ -1443,18 +1451,18 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
     <eLabel text="MountView" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget source="legend1" render="Label" position="780,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="Left"/>
+    <widget source="legend1" render="Label" position="780,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="left"/>
     <widget source="legend2" render="Label" position="1080,105" size="525,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="center"/>
-    <widget source="legend3" render="Label" position="1605,105" size="285,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="center"/>
+    <widget source="legend3" render="Label" position="1590,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="right"/>
     <widget source="config" render="Listbox" position="780,210" size="1110,750" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (22,1),size = (72,72),png = 0),# index 0 is the isMounted pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (22,15),size = (72,72),png = 0),# index 0 is the isMounted pixmap
 					MultiContentEntryText(pos = (150,15),size = (285,37),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
-					MultiContentEntryText(pos = (435,4),size = (345,30),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
-					MultiContentEntryText(pos = (435,34),size = (720,30),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
-					MultiContentEntryPixmapAlphaTest(pos = (915,13),size = (72,72),png = 4),# index 4 is the activepng pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (960,1),size = (72,72),png = 5),# index 4 is the mounttype pixmap
+					MultiContentEntryText(pos = (435,5),size = (345,30),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
+					MultiContentEntryText(pos = (435,35),size = (720,30),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
+					MultiContentEntryPixmapAlphaTest(pos = (950,25),size = (72,72),png = 4),# index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (995,15),size = (72,72),png = 5),# index 4 is the mounttype pixmap
 				],
 				"fonts": [gFont("Regular",37),gFont("Regular",27)],
 				"itemHeight": 75
