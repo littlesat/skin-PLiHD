@@ -83,6 +83,7 @@
     <parameter name="AboutHddSplit" value="1"/>
     <parameter name="DreamexplorerName" value="60, 0, 1200, 45"/>
     <parameter name="DreamexplorerIcon" value="15, 5, 35, 35"/>
+    <parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
   </parameters>
 
   <!-- Colors -->
@@ -2041,7 +2042,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="statusbar" position="780,750" size="1110,30" font="Regular;28"/>
   </screen>
 
-  <!-- Picture-Player -->
+  <!-- PicturePlayer -->
 
   <screen name="picshow" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -2075,8 +2076,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel position="0,0" zPosition="0" size="1920,1080" backgroundColor="black"/>
     <widget name="pic" position="fill" zPosition="1" alphatest="on"/>
     <eLabel position="22,22" size="45,37" zPosition="2" backgroundColor="black" transparent="1"/>
-    <widget name="point" position="25,25" size="31,31" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on"/>
-    <widget name="play_icon" position="30,30" size="24,24" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
+    <widget name="point" position="25,25" size="31,31" zPosition="3" pixmap="skin_default/icons/record.png" alphatest="on"/>
+    <widget name="play_icon" position="25,25" size="24,24" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
     <widget source="file" render="Label" position="90,22" size="900,34" zPosition="3" font="Regular;30" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
   </screen>
 

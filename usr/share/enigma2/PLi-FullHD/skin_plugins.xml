@@ -391,8 +391,8 @@
   </screen>
 
   <screen name="vEditor" position="fill" title="File-Explorer" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="filedata" position="780,100" size="1110,912" transparent="1" scrollbarMode="showOnDemand"/>
+    <panel name="PigVirtualTemplate"/>
+    <widget name="filedata" position="30,100" size="1860,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="SoftLinkScreen" position="fill" title="Make a softlink..." flags="wfNoBorder">
