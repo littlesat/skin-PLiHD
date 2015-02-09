@@ -426,6 +426,7 @@
   </screen>
 
   <screen name="PictureExplorerII" position="fill" title="Picture-Explorer" flags="wfNoBorder">
+    <widget source="session.VideoPicture" render="Pig" position="0,680" size="2,1" zPosition="1"/>
     <widget name="Picture" position="fill" zPosition="1"/>
     <widget name="State" position="0,687" size="1280,25"  font="Regular;20" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
   </screen>

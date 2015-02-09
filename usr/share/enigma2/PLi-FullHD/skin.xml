@@ -37,7 +37,7 @@
     <alias name="HelpMenuList" font="Regular" size="30" height="45"/>
     <alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
     <alias name="HelpMenuListExt1" font="Regular" size="28"/>
-    <alias name="Dreamexplorer" font="Regular" size="34" height="45"/>
+    <alias name="Dreamexplorer" font="Regular" size="28" height="38"/>
   </fonts>
 
   <parameters>
@@ -81,8 +81,8 @@
     <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
     <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
     <parameter name="AboutHddSplit" value="1"/>
-    <parameter name="DreamexplorerName" value="60, 0, 1200, 45"/>
-    <parameter name="DreamexplorerIcon" value="15, 5, 35, 35"/>
+    <parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
+    <parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
     <parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
   </parameters>
 
