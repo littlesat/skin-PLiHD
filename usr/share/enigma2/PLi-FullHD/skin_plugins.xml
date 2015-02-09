@@ -381,7 +381,7 @@
     <eLabel text="Rename" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <eLabel text="Move/Copy" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <eLabel text="Bookmarks" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="filelist" position="780,108" size="1110,900" scrollbarMode="showOnDemand"/>
+    <widget name="filelist" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
@@ -426,8 +426,9 @@
   </screen>
 
   <screen name="PictureExplorerII" position="fill" title="Picture-Explorer" flags="wfNoBorder">
-    <widget name="Picture" position="fill" zPosition="1"/>
-    <widget name="State" position="0,1030" size="1920,37"  font="Regular;30" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
+    <widget source="session.VideoPicture" render="Pig" position="0,1032" size="4,3" zPosition="1"/>
+    <widget name="Picture" position="fill" zPosition="8"/>
+    <widget name="State" position="0,1032" size="1920,40"  font="Regular;34" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" valign="center" transparent="0" zPosition="9"/>
   </screen>
 
   <!--GP2 - Where is this used??? -->
