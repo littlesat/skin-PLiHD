@@ -37,6 +37,7 @@
     <alias name="HelpMenuList" font="Regular" size="30" height="45"/>
     <alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
     <alias name="HelpMenuListExt1" font="Regular" size="28"/>
+    <alias name="Dreamexplorer" font="Regular" size="34" height="45"/>
   </fonts>
 
   <parameters>
@@ -80,6 +81,8 @@
     <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
     <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
     <parameter name="AboutHddSplit" value="1"/>
+    <parameter name="DreamexplorerName" value="60, 0, 1200, 45"/>
+    <parameter name="DreamexplorerIcon" value="15, 5, 35, 35"/>
   </parameters>
 
   <!-- Colors -->
@@ -710,7 +713,7 @@
 
   <screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="780,105" size="1110,871" font="Console;31"/>
+    <widget name="text" position="780,107" size="1110,910" font="Console;30"/>
   </screen>
 
   <!-- NumberZap -->
@@ -1951,14 +1954,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="on"/>
     <ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1030" size="34,34" alphatest="on"/>
     <eLabel text="Latest Commits" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="AboutScrollLabel" font="Regular;27" position="30,100" size="1860,912" zPosition="2" halign="left"/>
+    <widget name="AboutScrollLabel" font="Regular;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
   </screen>
   <!-- Translation Info -->
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
     <eLabel text="Translation" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget source="TranslatorName" render="Label" position="780,105" size="1110,120" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
+    <widget source="TranslatorName" render="Label" position="780,110" size="1110,120" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
     <widget source="TranslationInfo" render="Label" position="780,270" size="1110,570" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
   </screen>
 
