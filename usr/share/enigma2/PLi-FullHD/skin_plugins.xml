@@ -381,7 +381,7 @@
     <eLabel text="Rename" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <eLabel text="Move/Copy" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <eLabel text="Bookmarks" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="filelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="filelist" position="780,108" size="1110,900" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
