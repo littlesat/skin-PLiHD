@@ -1094,8 +1094,8 @@
   <screen name="Ipkg" title="Installing Software" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="package" position="780,110" size="1110,35" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget name="status" position="795,250" size="1095,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget name="slider" position="801,440" size="1089,20" zPosition="2" transparent="1"/>
+    <widget name="status" position="780,250" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
+    <widget name="slider" position="786,440" size="1104,20" zPosition="2" transparent="1"/>
     <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
@@ -1138,8 +1138,8 @@
   <screen name="UpdatePlugin" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="package" render="Label" position="780,110" size="1110,35" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget source="status" render="Label" position="795,250" size="1095,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget name="slider" position="801,440" size="1089,20" zPosition="2" transparent="1"/>
+    <widget source="status" render="Label" position="780,250" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
+    <widget name="slider" position="786,440" size="1104,20" zPosition="2" transparent="1"/>
     <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
 
