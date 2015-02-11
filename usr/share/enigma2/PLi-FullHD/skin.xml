@@ -1025,8 +1025,7 @@
 
   <screen name="TimerSelection" position="fill" title="Timer selection" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <!--widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/-->
-    <widget name="timerlist" position="780,100" size="1110,912" itemHeight="75" font="Regular;39" scrollbarMode="showOnDemand" rowSplit="40" setServiceNameFont="Regular;30" setFont="Regular;26" satPosLeft="250"/>
+    <widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
   </screen>
 
   <screen name="PluginBrowser" position="fill" flags="wfNoBorder">
