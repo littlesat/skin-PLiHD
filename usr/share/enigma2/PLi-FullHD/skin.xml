@@ -1125,7 +1125,7 @@
 		MultiContentEntryText(pos = (7,1), size = (975,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 		MultiContentEntryText(pos = (7,40), size = (975,36), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 		MultiContentEntryPixmapAlphaTest(pos = (993,0), size = (72,72), png = 4), # index 5 is the status pixmap
-		MultiContentEntryPixmapAlphaTest(pos = (0,73), size = (1110,3), png = 5), # index 6 is the div pixmap
+		MultiContentEntryPixmapAlphaTest(pos = (0,76), size = (1110,3), png = 5), # index 6 is the div pixmap
 		],
 		"fonts": [gFont("Regular",33),gFont("Regular",27)],
 		"itemHeight": 78
@@ -1177,13 +1177,13 @@
 				{"default": (82,[
 				MultiContentEntryText(pos = (0,3),  size = (975,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (0,45), size = (975,33), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (993,0), size = (72,72), png = 5), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,79), size = (1110,3), png = 6), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (1000,17), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,80), size = (1110,3), png = 6), # index 6 is the div pixmap
 				]),
 				"category": (75,[
 				MultiContentEntryText(pos = (0,1), size = (1050,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (0,42), size = (1050,30), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (0,72), size = (1110,3), png = 3), # index 3 is the div pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,73), size = (1110,3), png = 3), # index 3 is the div pixmap
 				])
 				},
 				"fonts": [gFont("Regular",33),gFont("Regular",27),gFont("Regular",24)],
@@ -1233,11 +1233,10 @@
   <screen name="PluginDetails" position="fill" title="Plugin Details" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <widget name="statuspic" position="1065,952" size="72,72" alphatest="on"/>
-    <widget source="author" render="Label" position="885,120" size="855,45" zPosition="10" font="Regular;36" backgroundColor="background" transparent="1"/>
-    <!--ePixmap pixmap="PLi-HD/buttons/sel.png" position="885,210" size="945,45" alphatest="on"/-->
-    <widget name="detailtext" position="885,262" size="945,390" font="Regular;30" backgroundColor="background" transparent="1"/>
-    <widget name="screenshot" position="750,675" size="525,225" alphatest="on" halign="left"/>
+    <widget name="statuspic" position="1306,952" size="48,48" alphatest="on"/>
+    <widget source="author" render="Label" position="780,105" size="1100,45" zPosition="10" font="Regular;28" backgroundColor="background" transparent="1"/>
+    <widget name="detailtext" position="780,200" size="1100,350" font="Regular;28" backgroundColor="background" transparent="1"/>
+    <widget name="screenshot" position="780,400" size="600,600" alphatest="on" halign="left"/>
     <widget name="divpic" position="0,0" size="0,0"/>
   </screen>
 
