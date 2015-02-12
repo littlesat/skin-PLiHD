@@ -391,7 +391,7 @@
   </screen>
 
   <screen name="vEditor" position="fill" title="File-Explorer" flags="wfNoBorder">
-    <panel name="PigVirtualTemplate"/>
+    <panel name="BasicTemplate"/>
     <widget name="filedata" position="30,100" size="1860,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -1536,15 +1536,29 @@
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
     <widget source="help" render="Label" position="30,570" size="720,240" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
    </screen>
 
   <screen name="EPGRefreshServiceEditor" position="fill" title="Edit Services to refresh" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget name="config" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
    </screen>
+
+  <screen name="EPGRefreshProfile" position="fill" title="EPGRefreshProfile" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGS"/>
+    <widget name="config" position="780,105" size="1110,400" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+  </screen>
+
+  <screen name="EPGSaveLoadConfiguration" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGS"/>
+    <widget name="config" position="780,105" size="1110,600" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget source="epgcachelocation" render="Label" position="30,570" size="720,90" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget source="help" render="Label" position="30,660" size="720,150" itemHeight="38" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+  </screen>
 
   <!-- ModifyPLiFullHD -->
 

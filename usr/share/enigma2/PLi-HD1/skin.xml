@@ -453,7 +453,7 @@
   </screen>
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-    <panel name="PigVirtualTemplate"/>
+    <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
@@ -1553,7 +1553,7 @@
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
-    <panel name="PigVirtualTemplate"/>
+    <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_YB"/>
     <widget name="linelist" font="Fixed;16" position="20,70" size="1240,600" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
   </screen>
@@ -1571,9 +1571,9 @@
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="580,70" size="680,600" font="Regular;22"/>
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="520,70" size="53,53" alphatest="on"/>
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="520,70" size="53,53" alphatest="on"/>
-    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="520,70" size="53,53" alphatest="on"/>
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="520,70" size="53,53" alphatest="blend"/>
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="520,70" size="53,53" alphatest="blend"/>
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="520,70" size="53,53" alphatest="blend"/>
     <widget name="list" position="20,375" size="480,200" font="Regular;22"/>
   </screen>
 
@@ -1582,9 +1582,9 @@
   <screen name="MessageBoxSimple" position="center,center" size="640,10" title="Message" flags="wfNoBorder">
     <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left"/>
     <widget name="text" position="65,8" size="520,0" font="Regular;22"/>
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
-    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
+    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="blend"/>
+    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="blend"/>
+    <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="blend"/>
     <widget name="list" position="100,100" size="480,375"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
@@ -1873,10 +1873,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   </screen>
    <!-- Commit Info -->
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
-    <panel name="PigVirtualTemplate"/>
+    <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_R"/>
-    <ePixmap pixmap="PLi-HD/buttons/left.png" position="695,687" size="26,26" alphatest="on"/>
-    <ePixmap pixmap="PLi-HD/buttons/right.png" position="970,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/left.png" position="695,687" size="26,26" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/buttons/right.png" position="970,687" size="26,26" alphatest="blend"/>
     <eLabel text="Latest Commits" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="1240,600" zPosition="2" halign="left"/>
   </screen>

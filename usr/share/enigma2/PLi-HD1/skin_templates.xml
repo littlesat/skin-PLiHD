@@ -60,11 +60,6 @@
     </widget>
   </screen>
 
-  <screen name="PigVirtualTemplate">
-    <panel name="BasicTemplate"/>
-    <widget source="session.VideoPicture" render="Pig" position="0,680" size="2,1" zPosition="1"/>
-  </screen>
-
   <screen name="PigTemplate">
     <panel name="SelectionTemplate"/>
     <ePixmap pixmap="PLi-HD/logos/pli.png" position="20,645" size="120,34" alphatest="on"/>
@@ -91,47 +86,47 @@
   <!-- Button Templates -->
 
   <screen name="ButtonRed">
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonGreen">
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonYellow">
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonBlue">
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="55,689" size="35,25"/>
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="blend" position="55,689" size="35,25"/>
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="90,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="90,689" size="35,25"/>
   </screen>
 
   <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOkTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="408,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="408,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="990,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="990,689" size="35,25"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
