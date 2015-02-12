@@ -430,21 +430,21 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="date" position="780,97" size="1110,37" transparent="1" font="Regular;33" valign="center" halign="center"/>
-    <widget name="list" position="780,202" size="1110,798" itemHeight="38" setEventItemFont="Regular;28" setEventTimeFont="Regular;22"
+    <widget name="date" position="780,100" size="1110,38" font="Regular;34" transparent="1" valign="center" halign="center"/>
+    <widget name="list" position="780,210" size="1110,798" itemHeight="38" setEventItemFont="Regular;28" setEventTimeFont="Regular;22"
             setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
     <widget source="Event" render="Label" position="30,562" size="720,450" backgroundColor="background" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="now_button" pixmap="PLi-HD/border/epg_off.png" position="780,135" zPosition="2" size="270,60" alphatest="blend"/>
-    <widget name="now_button_sel" pixmap="PLi-HD/border/epg_now_on.png" position="780,135" zPosition="3" size="270,60" alphatest="blend"/>
-    <widget name="now_text" position="780,140" size="200,40" backgroundColor="background" zPosition="4" transparent="1" text="NOW" font="Regular;28" valign="center" halign="center"/>
-    <widget name="next_button" pixmap="PLi-HD/border/epg_off.png" position="1192,135" zPosition="2" size="270,60" alphatest="blend"/>
-    <widget name="next_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="1192,135" zPosition="3" size="270,60" alphatest="blend"/>
-    <widget name="next_text" position="1192,140" size="200,40" backgroundColor="background" zPosition="4" transparent="1" text="NEXT" font="Regular;28" valign="center" halign="center"/>
-    <widget name="more_button" pixmap="PLi-HD/border/epg_off.png" position="1590,135" zPosition="2" size="270,60" alphatest="blend"/>
-    <widget name="more_button_sel" pixmap="PLi-HD/border/epg_next_on.png" position="1590,135" zPosition="3" size="270,60" alphatest="blend"/>
-    <widget name="more_text" position="1590,140" size="200,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;28" valign="center" halign="center"/>
+    <widget name="now_button" pixmap="PLi-FullHD/border/epg_off.png" position="810,145" zPosition="2" size="225,50" alphatest="blend"/>
+    <widget name="now_button_sel" pixmap="PLi-FullHD/border/epg_now_on.png" position="810,145" zPosition="3" size="225,50" alphatest="blend"/>
+    <widget name="now_text" position="810,150" size="225,50" backgroundColor="background" zPosition="4" transparent="1" text="NOW" font="Regular;26" valign="center" halign="center"/>
+    <widget name="next_button" pixmap="PLi-FullHD/border/epg_off.png" position="1222,145" zPosition="2" size="225,50" alphatest="blend"/>
+    <widget name="next_button_sel" pixmap="PLi-FullHD/border/epg_next_on.png" position="1222,145" zPosition="3" size="225,50" alphatest="blend"/>
+    <widget name="next_text" position="1222,150" size="225,50" backgroundColor="background" zPosition="4" transparent="1" text="NEXT" font="Regular;26" valign="center" halign="center"/>
+    <widget name="more_button" pixmap="PLi-FullHD/border/epg_off.png" position="1635,145" zPosition="2" size="225,50" alphatest="blend"/>
+    <widget name="more_button_sel" pixmap="PLi-FullHD/border/epg_next_on.png" position="1635,145" zPosition="3" size="225,50" alphatest="blend"/>
+    <widget name="more_text" position="1635,150" size="225,50" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;26" valign="center" halign="center"/>
   </screen>
 
   <!-- EPG Search -->
