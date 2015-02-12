@@ -1350,7 +1350,7 @@
     <widget name="thumbland" position="60,562" zPosition="2" size="150,60"/>
   </screen>
 
-  <!-- Trafficinfo -->	
+  <!-- Trafficinfo -->
 
   <screen name="TrafficInfoMain" position="fill" title="Verkehrsinformation">
     <panel name="PigTemplate"/>
