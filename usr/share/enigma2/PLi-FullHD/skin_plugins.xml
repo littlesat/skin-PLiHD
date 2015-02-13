@@ -1246,7 +1246,7 @@
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" position="780,105" size="1110,900" itemHeight="150" font="Regular;34" transparent="1"/>
+    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="150" font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
@@ -1271,7 +1271,7 @@
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
@@ -1288,7 +1288,7 @@
   <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" itemHeight="38" font="Regular;28" position="780,105" size="1110,900" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
