@@ -1246,7 +1246,9 @@
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="150" font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" position="780,105" size="1110,900" itemHeight="150" setPictScale="1" textPos="350,57,570,40"
+            foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor"
+            font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
@@ -1271,7 +1273,7 @@
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="Mlist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor" column="40" transparent="1" scrollbarMode="showOnDemand"/>
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
