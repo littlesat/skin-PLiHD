@@ -1247,7 +1247,9 @@
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,70" size="740,572" transparent="1"/>
+    <widget name="Mlist" position="520,70" size="740,600" font="Regular;20" setPictScale="1" itemHeight="150" textPos="350,65,570,30"
+            foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor"
+            transparent="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
@@ -1257,14 +1259,19 @@
     <panel name="KeyMenuInfoTemplate"/>
     <panel name="KeyOkTemplate"/>
     <widget source="Titel2" render="Label" position="20,400" zPosition="3" size="480,100" font="Regular;23" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-    <widget source="Titel3" render="Label" position="20,400" zPosition="2" size="480,100" font="Regular;23" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-    <widget name="MainList" position="520,70" size="740,540" scrollbarMode="showOnDemand" font="Regular;20" transparent="1"/>
+    <widget source="Titel3" render="Label" position="20,500" zPosition="2" size="480,100" font="Regular;23" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
+    <widget name="MainList" position="520,70" size="740,602" itemHeight="86" scrollbarMode="showOnDemand" font="Regular;20" transparent="1"/>
+  </screen>
+
+  <screen name="ForecaPreviewCache" position="center,center" size="76,76" flags="wfNoBorder" backgroundColor="#000000" >
+    <eLabel position="2,2" zPosition="1" size="72,72" font="Regular;18" backgroundColor="#40000000" />
+    <widget name="spinner" position="14,14" zPosition="4" size="48,48" alphatest="blend" />
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,70" size="740,510" transparent="1"/>
+    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="520,70" size="740,600" foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor" transparent="1"/>
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
