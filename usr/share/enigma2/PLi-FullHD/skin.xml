@@ -638,9 +638,9 @@
     </widget>
     <widget name="network" position="135,105" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
     <widget name="transponder" position="135,157" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
-    <widget name="scan_state" position="30,300" zPosition="2" size="810,80" valign="top" font="Regular;30" transparent="1"/>
-    <widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1"/>
     <widget name="scan_progress" position="30,270" size="810,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+    <widget name="scan_state" position="30,307" zPosition="2" size="810,70" valign="top" font="Regular;30" transparent="1"/>
+    <widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1"/>
     <widget name="servicelist" position="870,100" size="1020,912" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -1097,7 +1097,7 @@
   <screen name="Ipkg" title="Installing Software" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="package" position="780,110" size="1110,35" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget name="status" position="780,300" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
+    <widget name="status" position="780,163" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
     <widget name="slider" position="780,440" size="1110,20" zPosition="2" transparent="1"/>
     <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
@@ -1141,7 +1141,7 @@
   <screen name="UpdatePlugin" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="package" render="Label" position="780,110" size="1110,35" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
-    <widget source="status" render="Label" position="780,300" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
+    <widget source="status" render="Label" position="780,163" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
     <widget name="slider" position="780,440" size="1110,20" zPosition="2" transparent="1"/>
     <widget name="activityslider" position="30,1024" size="1860,6" pixmap="PLi-FullHD/window/slider100.png" transparent="1" zPosition="2"/>
   </screen>
@@ -1640,8 +1640,9 @@
 
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="780,100" size="1110,912" font="Regular;36"/>
-    <eLabel text="'Exit' = Leave message" position="217,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
+    <panel name="KeyExit"/>
+    <widget name="text" position="780,105" size="1110,910" font="Regular;32"/>
+    <eLabel text="Leave message" position="251,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
   </screen>
 
   <!-- MessageBox -->

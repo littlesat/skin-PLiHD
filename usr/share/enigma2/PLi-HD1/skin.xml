@@ -572,9 +572,9 @@
     </widget>
     <widget name="network" position="90,70" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1"/>
     <widget name="transponder" position="90,105" size="450,30" valign="center" zPosition="2" font="Regular;22" transparent="1"/>
-    <widget name="scan_state" position="20,200" zPosition="2" size="540,60" valign="top" font="Regular;20" transparent="1"/>
-    <widget name="pass" position="20,260" size="540,30" valign="center" font="Regular;22" transparent="1"/>
     <widget name="scan_progress" position="20,180" size="540,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+    <widget name="scan_state" position="20,205" zPosition="2" size="540,60" valign="top" font="Regular;20" transparent="1"/>
+    <widget name="pass" position="20,260" size="540,30" valign="center" font="Regular;22" transparent="1"/>
     <widget name="servicelist" position="580,70" size="680,600" selectionDisabled="1" scrollbarMode="showOnDemand"/>
   </screen>
 
