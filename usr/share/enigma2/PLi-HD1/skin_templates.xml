@@ -129,6 +129,10 @@
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="990,689" size="35,25"/>
   </screen>
 
+  <screen name="KeyExit">
+    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" position="120,689" size="35,25"/>
+  </screen>
+
   <screen name="ButtonTemplate_R">
     <panel name="ButtonRed"/>
     <widget name="key_red" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
