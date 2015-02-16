@@ -560,9 +560,9 @@
     </widget>
     <widget name="network" position="150,120" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
     <widget name="transponder" position="150,155" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
-    <widget name="scan_state" position="80,250" zPosition="2" size="510,60" valign="top" font="Regular;20" transparent="1" />
-    <widget name="pass" position="80,310" size="480,30" valign="center" font="Regular;22" transparent="1" />
     <widget name="scan_progress" position="80,230" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="scan_state" position="80,255" zPosition="2" size="510,60" valign="top" font="Regular;20" transparent="1" />
+    <widget name="pass" position="80,315" size="480,30" valign="center" font="Regular;22" transparent="1" />
     <widget name="servicelist" position="610,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1517,8 +1517,9 @@
 
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="590,110" size="600,500" font="Regular;24" />
-    <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <panel name="KeyExit"/>
+    <widget name="text" position="590,110" size="600,500" font="Regular;22" />
+    <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
