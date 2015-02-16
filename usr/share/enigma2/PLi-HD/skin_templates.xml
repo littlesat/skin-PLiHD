@@ -128,6 +128,10 @@
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,645" size="35,25" />
   </screen>
 
+  <screen name="KeyExit">
+    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" position="140,645" size="35,25"/>
+  </screen>
+
   <screen name="KeyMenuInfoTemplate">
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
