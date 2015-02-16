@@ -960,7 +960,7 @@
   <screen name="CSFDSetup" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="config" position="780,137" size="1110,836" font="Regular;28" iTemHeigh="38" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,137" size="1110,836" font="Regular;28" itemHeight="38" scrollbarMode="showOnDemand"/>
     <widget name="info" position="780,975" size="1110,34" font="Regular;30" halign="center" foregroundColor="blue" transparent="1"/>
     <widget name="tabbar"  position="780,100" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
     <widget name="config0" position="784,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
