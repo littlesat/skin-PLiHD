@@ -787,7 +787,7 @@
     </widget>
   </screen>
 
-  <screen name="MyTubePlayer" position="0,45" size="1280,100" backgroundColor="transparent" title="MoviePlayer" flags="wfNoBorder">
+  <screen name="MyTubePlayer" position="100,45" size="1080,100" backgroundColor="transparent" title="MoviePlayer" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
   </screen>
 

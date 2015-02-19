@@ -264,21 +264,21 @@
 
   <!-- Movie Player Infobar -->
 
-  <screen name="MoviePlayer" title="InfoBar" position="0,67" size="1920,150" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="black" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_dolby_on.png" position="1617,107" size="50,32" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_dolby_on.png" position="1467,107" size="50,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_hd.png" position="1668,107" size="60,32" zPosition="4" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_hd.png" position="1518,107" size="60,32" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_16_9.png" position="1668,107" size="60,32" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_16_9.png" position="1518,107" size="60,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_4_3.png" position="1668,107" size="60,32" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_format_4_3.png" position="1518,107" size="60,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
@@ -286,15 +286,15 @@
 
   <!-- DVD Player Infobar -->
 
-  <screen name="DVDPlayer" title="InfoBar" position="0,67" size="1920,352" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="DVDPlayer" title="InfoBar" position="150,67" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
-    <widget name="chapterLabel" position="420,150" size="570,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-    <eLabel text="Audio:  " position="420,202" size="135,52" backgroundColor="secondBG" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="left"/>
-    <widget name="audioLabel" position="555,202" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-    <eLabel text="Subtitle:  " position="420,255" size="135,52" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;30" valign="center" halign="left"/>
-    <widget name="subtitleLabel" position="555,255" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-    <widget name="anglePix" position="1110,192" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"/>
-    <widget name="angleLabel" position="1170,183" size="300,33" font="Regular;31" backgroundColor="black" zPosition="3" transparent="1"/>
+    <widget name="chapterLabel" position="270,150" size="570,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <eLabel text="Audio:  " position="270,202" size="135,52" backgroundColor="secondBG" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+    <widget name="audioLabel" position="405,202" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <eLabel text="Subtitle:  " position="270,255" size="135,52" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;30" valign="center" halign="left"/>
+    <widget name="subtitleLabel" position="405,255" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+    <widget name="anglePix" position="960,192" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"/>
+    <widget name="angleLabel" position="1020,183" size="300,33" font="Regular;31" backgroundColor="black" zPosition="3" transparent="1"/>
   </screen>
 
   <screen name="ChapterZap" position="center,center" size="360,82" title="Chapter" flags="wfNoBorder">
@@ -743,9 +743,9 @@
 
   <!-- Timeshift state -->
 
-  <screen name="TimeshiftState" position="0,67" zPosition="0" size="1920,150" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="TimeshiftState" position="150,67" zPosition="0" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
-    <widget name="state" position="192,105" size="225,45" zPosition="3" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
+    <widget name="state" position="42,105" size="225,45" zPosition="3" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
   </screen>
   <screen name="TimeshiftLive" position="105,105" zPosition="2" size="450,45" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel position="0,0" size="450,45" text="Timeshift Live" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black"/>
