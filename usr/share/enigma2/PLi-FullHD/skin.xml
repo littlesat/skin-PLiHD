@@ -264,7 +264,7 @@
 
   <!-- Movie Player Infobar -->
 
-  <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="black" flags="wfNoBorder">
+  <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_dolby_on.png" position="1467,107" size="50,32" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
