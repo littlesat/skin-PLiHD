@@ -530,8 +530,10 @@
     </widget>
     <widget name="SeekState" position="532,949" zPosition="1" size="150,37" halign="right" font="Regular;30" valign="center"/>
     <widget name="Timeline" position="690,952" size="1140,30" backgroundColor="#505555" pointer="PLi-FullHD/skin_default/position_arrow.png:4,11" foregroundColor="black"/>
-    <eLabel text="'OK' = Menu" position="187,1033" size="345,39" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;30"/>
-    <eLabel text="'0' = Mark" position="615,1033" size="345,39" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;30"/>
+    <ePixmap pixmap="skin_default/buttons/key_ok.png" position="183,1032" size="52,38" alphatest="blend"/>
+    <eLabel text="Menu" position="251,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" position="619,1032" size="52,38" alphatest="blend"/>
+    <eLabel text="Mark" position="687,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
   </screen>
 
   <!-- Classic NetRadio -->
