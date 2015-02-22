@@ -335,6 +335,10 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="NextEpgInfo" position="30,975" size="720,34" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;30"/>
+    <widget source="ServiceEvent" render="Label" position="780,26" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="ServiceName">TransponderInfo;InRootOnly</convert>
+    </widget>
+
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
