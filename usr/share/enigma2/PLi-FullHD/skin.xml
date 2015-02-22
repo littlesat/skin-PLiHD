@@ -603,8 +603,8 @@
 
   <screen name="ScanSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="header" position="30,7" size="1830,75"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="config" position="780,105" size="1110,787" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="header" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <widget name="config" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="0,0" size="0,0"/>
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
@@ -617,9 +617,8 @@
   <screen name="ScanSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="header" position="30,7" size="1830,75"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-    <widget name="config" position="780,105" size="1110,787" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,798" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="footer" position="0,0" size="0,0"/>
-
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <panel name="ButtonGreen"/>

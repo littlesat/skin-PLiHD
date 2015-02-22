@@ -538,7 +538,7 @@
   <screen name="ScanSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="header" position="20,5" size="1220,50"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
-    <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="0,0" size="0,0"/>
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
@@ -553,7 +553,6 @@
     <widget name="header" position="20,5" size="1220,50"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand"/>
     <widget name="footer" position="0,0" size="0,0"/>
-
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
     <panel name="ButtonGreen"/>
