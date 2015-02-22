@@ -92,6 +92,7 @@
     <color name="toptemplatecolor" value="#00000030"/>
     <color name="basictemplatecolor" value="#00000020"/>
     <color name="selectorcolor" value="#00000030"/>
+    <color name="transponderinfo" value="#000090f0"/>
     <color name="background" value="#00000000"/>
     <color name="black" value="#00000000"/>
     <color name="blue" value="#00578cc0"/>
@@ -314,7 +315,7 @@
             foregroundColorEventSelected="#f0f0f0" foregroundColorMarkedSelected="#f04000" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" itemsDistances="12"
             picServiceEventProgressbar="PLi-FullHD/window/sprogress.png" progressbarHeight="12" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey"
             colorFallbackItem="#c0c0c0" colorServiceDescriptionFallback="#ecb000" colorServiceSelectedFallback="#ecb000" colorServiceDescriptionSelectedFallback="#f0f0f0"/>
-    <widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="#0090f0" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
+    <widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="ServiceName">TransponderInfo;NoRoot</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="30,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
@@ -382,7 +383,10 @@
     <widget source="Service" render="Label" position="750,45" size="750,37" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;34" valign="center" halign="center">
 	<convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,560" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
+    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="ServiceName">TransponderInfo</convert>
+    </widget>
+    <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
@@ -414,21 +418,24 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
+    <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;30" halign="block"/>
+    <widget source="session.CurrentService" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="ServiceName">TransponderInfo</convert>
+    </widget>
     <widget name="channel"  position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
     <widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left"/>
     <widget name="duration" position="30,712" size="720,45" transparent="1" font="Regular;33" halign="left"/>
-    <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;30" halign="block"/>
-    <widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;33" halign="right">
+    <widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;32" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,772" size="720,45" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;33" halign="left">
+    <widget source="session.Event_Now" render="Label" position="30,772" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,832" size="720,45" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;33" halign="left">
+    <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="30,975" size="720,34" font="Regular;30" halign="left" foregroundColor="secondFG" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="30,975" size="720,35" font="Regular;30" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
   </screen>
