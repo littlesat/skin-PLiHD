@@ -2026,9 +2026,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <ePixmap pixmap="~/img/AudioSyncBarBGVert.png" zPosition="2" position="30,70" size="21,370" alphatest="on" transparent="1"/>
     <widget name="AudioSliderBar" pixmap="~/img/AudioSyncBarVert.png" zPosition="3" position="30,70" size="21,370" transparent="1" orientation="orBottomToTop"/>
     <widget name="AudioSlider" zPosition="4" position="5,245" size="70,22" font="Regular;20" halign="center" valign="center" backgroundColor="#232323" foregroundColor="#eeeeee" transparent="1"/>
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="310,15" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="415,15" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="415,40" zPosition="5" size="20,20" transparent="1" alphatest="on"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red30.png" position="310,15" zPosition="5" size="20,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green30.png" position="415,15" zPosition="5" size="20,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue30.png" position="415,40" zPosition="5" size="20,20" transparent="1" alphatest="blend"/>
     <widget name="key_red" position="335,15" zPosition="4" size="85,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
     <widget name="key_green" position="440,15" zPosition="4" size="85,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
     <widget name="key_blue" position="440,40" zPosition="4" size="160,22" font="Regular;20" valign="center" halign="left" backgroundColor="#232323" foregroundColor="#ffffff" transparent="1"/>
