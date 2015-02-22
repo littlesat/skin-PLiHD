@@ -438,7 +438,7 @@
   </gstyle>
 
   <screen name="Dish" flags="wfNoBorder" position="30,90" size="195,303" title="Dish" zPosition="1" backgroundColor="transparent" >
-    <widget name="Dishpixmap" position="0,0"  size="195,240" zPosition="-1" pixmap="PLi-FullHD/icons/dish.png" transparent="1" alphatest="on"/>
+    <widget name="Dishpixmap" position="0,0"  size="195,240" zPosition="-1" pixmap="PLi-FullHD/icons/dish.png" transparent="1" alphatest="blend"/>
     <widget name="turnTime"   position="67,7"   size="120,30" zPosition="1" font="Regular;26" halign="right" borderWidth="1" transparent="1"/>
     <widget name="From"       position="7,246"  size="67,27" zPosition="1" font="Regular;24" halign="left"  borderWidth="1" transparent="1"/>
     <widget name="posFrom"    position="85,245" size="105,32" zPosition="1" font="Regular;28" halign="left"  borderWidth="1" transparent="1"/>
@@ -449,9 +449,10 @@
   </screen>
 
   <screen name="Dishpip" flags="wfNoBorder" position="30,90" size="130,202" title="DishPiP" zPosition="1" backgroundColor="transparent" >
-    <widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
+    <widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="blend">
       <convert type="ConditionalShowHide"></convert>
     </widget>
+    <eLabel text="PiP" position="27,40" size="40,25" font="Regular;18" foregroundColor="#909090" backgroundColor="#909090" transparent="1" zPosition="1"/>
     <widget name="turnTime"   position="45,5"   size="80,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" transparent="1"/>
     <widget name="From"       position="5,164"  size="45,20" zPosition="1" font="Regular;18" halign="left"  borderWidth="1" transparent="1"/>
     <widget name="posFrom"    position="55,160" size="70,25" zPosition="1" font="Regular;22" halign="right"  borderWidth="1" transparent="1"/>
@@ -492,10 +493,10 @@
 
   <screen flags="wfNoBorder" name="MovieTagger" position="fill" title="Movie Tagger">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="on" position="192,1030" size="34,34"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/green.png" alphatest="on" position="628,1030" size="34,34"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/yellow.png" alphatest="on" position="1064,1030" size="34,34"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" alphatest="on" position="1500,1030" size="34,34"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/red.png" alphatest="blend" position="192,1030" size="34,34"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/green.png" alphatest="blend" position="628,1030" size="34,34"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/yellow.png" alphatest="blend" position="1064,1030" size="34,34"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/blue.png" alphatest="blend" position="1500,1030" size="34,34"/>
     <widget name="buttonred" backgroundColor="secondBG" font="Regular;34" halign="left" position="242,1030" size="370,38" transparent="1" zPosition="1"/>
     <widget name="buttongreen" backgroundColor="secondBG" font="Regular;34" halign="left" position="678,1030" size="370,38" transparent="1" zPosition="1"/>
     <widget name="buttonyellow" backgroundColor="secondBG" font="Regular;34" halign="left" position="1114,1030" size="370,38" transparent="1" zPosition="1"/>
