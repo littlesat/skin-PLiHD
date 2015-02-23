@@ -255,14 +255,14 @@
     <widget source="ServiceEvent" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="ServiceName">TransponderInfo;NoRoot</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,378" size="50,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="left">
+    <widget source="ServiceEvent" render="Label" position="20,378" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="left">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget source="ServiceEvent" render="Progress" position="90,383" size="360,12" pixmap="PLi-HD1/window/progress.png" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" position="90,383" size="340,12" pixmap="PLi-HD1/window/progress.png" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="450,378" size="50,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+    <widget source="ServiceEvent" render="Label" position="440,378" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default;NoSpace</convert>
     </widget>
@@ -323,7 +323,7 @@
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="ServiceName">TransponderInfo;NoRoot</convert>
     </widget>
-    <widget source="Event" render="Label" position="20,405" size="480,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
+    <widget source="Event" render="Label" position="20,405" size="480,25" foregroundColor="secondFG" font="Regular;22" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="20,435" size="480,207" transparent="1" font="Regular;20" halign="block">
