@@ -1586,12 +1586,23 @@
     <widget source="help" render="Label" position="30,660" size="720,150" itemHeight="38" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
   </screen>
 
+  <!-- BlindScan -->
+
+  <screen name="Blindscan" position="fill" title="Blind scan">
+    <panel name="BasicTemplate"/>
+    <panel name="ButtonTemplateRGY"/>
+    <widget name="rotorstatus" position="30,120" size="720,405" font="Regular;60" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center"/>
+    <widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="30,560" size="720,210" font="Regular;30" foregroundColor="foreground" halign="left"/>
+    <widget name="introduction" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center"/>
+  </screen>
+
   <!-- ModifyPLiFullHD -->
 
   <screen name="ModifyPLiFullHD" position="fill" title="Modify PLi-FullHD - setup font and colors" backgroundColor="#31000000">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
-    <widget name="config" position="780,105" size="1110,380" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand" />
-    <widget name="version" position="780,500" size="60,25" font="Regular;22" zPosition="1" halign="left" transparent="1" />
+    <widget name="config" position="780,105" size="1110,380" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+    <widget name="version" position="780,500" size="60,25" font="Regular;22" zPosition="1" halign="left" transparent="1"/>
   </screen>
 </skin>
