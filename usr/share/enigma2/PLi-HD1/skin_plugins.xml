@@ -1585,6 +1585,19 @@
     <widget name="list" position="520,70" size="740,400" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
+  <!-- BlindScan -->
+
+  <screen name="Blindscan" position="fill" title="Blind scan">
+    <panel name="BasicTemplate"/>
+    <panel name="ButtonTemplateRGY"/>
+    <widget name="rotorstatus" position="20,80" size="480,270" font="Regular;40" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center"/>
+    <widget name="config" position="520,70" size="740,540" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="20,400" size="480,175" font="Regular;20" foregroundColor="foreground" halign="left"/>
+    <widget name="introduction" position="520,650" size="740,25" font="Regular;20" foregroundColor="foreground" halign="center"/>
+  </screen>
+
+  <!-- ModifyPLiFullHD -->
+
   <screen name="ModifyPLiFullHD" position="fill" title="Modify PLi-FullHD - setup font and colors" backgroundColor="#31000000">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
