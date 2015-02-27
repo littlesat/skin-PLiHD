@@ -355,12 +355,12 @@
     <widget source="ServiceEvent" render="Label" position="22,600" size="855,97" font="Regular;28" backgroundColor="black" foregroundColor="foreground" zPosition="2" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="22,562" zPosition="2" size="90,37" font="Regular;33" backgroundColor="black" halign="right" noWrap="1" foregroundColor="yellow" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="22,562" zPosition="2" size="90,37" font="Regular;33" backgroundColor="black" halign="right" noWrap="1" foregroundColor="secondFG" transparent="1" >
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="127,562" zPosition="2" size="109,37" font="Regular;33" backgroundColor="black" noWrap="1" foregroundColor="yellow" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="127,562" zPosition="2" size="109,37" font="Regular;33" backgroundColor="black" noWrap="1" foregroundColor="secondFG" transparent="1" >
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
@@ -396,23 +396,23 @@
     <widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
 	<convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30">
+    <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
 	<convert type="EventTime">StartTime</convert>
 	<convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="right">
+    <widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
 	<convert type="EventTime">StartTime</convert>
 	<convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="left">
+    <widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
 	<convert type="EventTime">EndTime</convert>
 	<convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="left">
+    <widget source="Event" render="Label" position="520,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
 	<convert type="EventTime">Duration</convert>
 	<convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="590,975" size="160,34" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;30" halign="right">
+    <widget source="Event" render="Label" position="590,975" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
 	<convert type="EventTime">Duration</convert>
 	<convert type="ClockToText">AsLengthHours</convert>
     </widget>
@@ -498,19 +498,19 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget source="Event" render="Label" position="780,105" size="225,36" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" valign="top">
+    <widget source="Event" render="Label" position="780,105" size="225,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="930,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" halign="right" valign="top">
+    <widget source="Event" render="Label" position="930,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget source="Event" render="Label" position="1050,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" halign="left" valign="top">
+    <widget source="Event" render="Label" position="1050,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" halign="left" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="1185,105" size="705,36" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;33" valign="top">
+    <widget source="Event" render="Label" position="1185,105" size="705,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Progress" pixmap="PLi-FullHD/infobar/pbargmepg.png" position="780,147" size="1110,12" transparent="1" borderWidth="2" borderColor="#33333a">
@@ -541,7 +541,7 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget source="Event" render="Label" position="30,105" size="1860,37" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;34" valign="top">
+    <widget source="Event" render="Label" position="30,105" size="1860,37" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;34" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Date</convert>
     </widget>
