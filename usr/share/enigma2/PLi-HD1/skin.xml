@@ -268,7 +268,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default;NoSpace</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,405" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" haligh="left">
+    <widget source="ServiceEvent" render="Label" position="20,405" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="20,435" size="480,207" transparent="1" font="Regular;20" halign="block">
