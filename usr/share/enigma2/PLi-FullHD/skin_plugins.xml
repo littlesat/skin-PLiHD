@@ -930,7 +930,7 @@
     <widget name="poster" position="771,184" size="255,301" alphatest="blend" backgroundColor="black"/>
     <widget name="menu" position="780,210" size="1110,798" itemHeight="38" font="Regular;28" zPosition="3" scrollbarMode="showOnDemand" valign="center"/>
     <widget name="servicemenuTop" position="30,540" size="720,30" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;24" zPosition="4"/>
-    <widget name="servicemenu" position="30,570" size="720,380" itemHeight="38" font="Regular;28" zPosition="5" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+    <widget name="servicemenu" position="30,570" size="720,380" itemHeight="38" font="Regular;28" zPosition="5" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
     <widget name="ratinglabel" position="1575,141" size="315,33" halign="center" font="Regular;31" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
     <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1575,108" zPosition="0" size="315,31" transparent="1" alphatest="on"/>
     <widget name="stars" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1"/>
