@@ -919,6 +919,9 @@
   <screen name="PluginBrowser" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplateRG"/>
+    <ePixmap pixmap="skin_default/buttons/key_left.png" alphatest="blend" position="40,645" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_right.png" alphatest="blend" position="75,645" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="110,645" size="35,25"/>
     <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,110" size="630,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
