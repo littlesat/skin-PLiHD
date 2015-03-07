@@ -984,7 +984,7 @@
     <widget name="config2" position="1099,100" size="162,33" valign="center" transparent="1" zPosition="2" halign="center" font="Regular;27"/>
   </screen>
 
-  <screen name="CSFDHistoryHD" position="fill" title="Historie změn v pluginu CSFD">
+  <screen name="CSFDHistoryFullHD" position="fill" title="Historie změn v pluginu CSFD">
     <panel name="PigTemplate"/>
     <panel name="OKTemplate"/>
     <widget name="text" position="780,100" size="1110,912" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
