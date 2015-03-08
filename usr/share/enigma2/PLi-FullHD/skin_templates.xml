@@ -314,7 +314,7 @@
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="397,874" size="810,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,840" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,840" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,874" size="210,75" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
@@ -327,7 +327,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="210,897" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="705,840" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="705,840" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="270,978" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
