@@ -887,7 +887,7 @@
     <widget source="Service" render="Label" position="30,600" size="720,72" foregroundColor="secondFG" font="Regular;30" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="30,675" size="720,288"  font="Regular;31" valign="center">
+    <widget source="Service" render="Label" position="30,675" size="720,288"  font="Regular;31" valign="center" halign="block">
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
 
