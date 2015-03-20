@@ -318,7 +318,7 @@
             picServiceEventProgressbar="PLi-FullHD/window/sprogress.png" progressbarHeight="12" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey"
             colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
     <widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo;NoRoot</convert>
+      <convert type="TransponderInfo">NoRoot</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="30,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
       <convert type="EventTime">StartTime</convert>
@@ -388,7 +388,7 @@
 	<convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo</convert>
+      <convert type="TransponderInfo"></convert>
     </widget>
     <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
 	<convert type="EventName">Name</convert>
@@ -424,7 +424,7 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;30" halign="block"/>
     <widget source="session.CurrentService" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo</convert>
+      <convert type="TransponderInfo"></convert>
     </widget>
     <widget name="channel"  position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
     <widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left"/>

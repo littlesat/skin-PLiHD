@@ -255,7 +255,7 @@
             colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8"
             colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
     <widget source="ServiceEvent" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo;NoRoot</convert>
+      <convert type="TransponderInfo">NoRoot</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="20,378" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="left">
       <convert type="EventTime">StartTime</convert>
@@ -276,7 +276,7 @@
     </widget>
     <widget source="ServiceEvent" render="NextEpgInfo" position="20,650" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
     <widget source="ServiceEvent" render="Label" position="520,16" size="450,28" font="Regular;24" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo;InRootOnly</convert>
+      <convert type="TransponderInfo">InRootOnly</convert>
     </widget>
   </screen>
 
@@ -323,7 +323,7 @@
 	<convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo;NoRoot</convert>
+      <convert type="TransponderInfo">NoRoot</convert>
     </widget>
     <widget source="Event" render="Label" position="20,405" size="480,25" foregroundColor="secondFG" font="Regular;22" transparent="1">
 	<convert type="EventName">Name</convert>
@@ -359,7 +359,7 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="epg_description" position="520,70" size="740,600" transparent="1" font="Regular;22" halign="block"/>
     <widget source="session.CurrentService" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="ServiceName">TransponderInfo;NoRoot</convert>
+      <convert type="TransponderInfo">NoRoot</convert>
     </widget>
     <widget name="channel"  position="20,395" size="480,30" transparent="1" font="Regular;22" halign="left"/>
     <widget name="datetime" position="20,435" size="480,30" transparent="1" font="Regular;22" halign="left"/>
