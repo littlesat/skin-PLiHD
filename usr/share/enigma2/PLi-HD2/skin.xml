@@ -438,7 +438,8 @@
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="40,365" size="1200,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="40,390" size="1200,280" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventNamePadding="4" ServiceNamePadding="4" EntryBorderColor="#cccccc" />
+    <widget name="list" position="40,390" size="1200,280" itemHeight="50" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventNamePadding="4" ServiceNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,387" size="1,280" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,387" size="1,280" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,387" size="1,280" zPosition="1" />
@@ -458,7 +459,8 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget name="timeline_text" position="40,92" size="1200,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="40,122" size="1200,545" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc" />
+    <widget name="list" position="40,122" size="1200,545" itemHeight="50" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD2/window/timeline.png" position="0,119" size="1,551" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD2/window/timeline.png" position="0,119" size="1,551" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD2/window/timeline.png" position="0,119" size="1,551" zPosition="1" />
