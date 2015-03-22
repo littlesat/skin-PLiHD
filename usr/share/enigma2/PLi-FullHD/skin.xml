@@ -526,14 +526,16 @@
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="30,555" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
-    <widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventNamePadding="4" ServiceNamePadding="4" EntryBorderColor="#cccccc"/>
+    <widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc"
+            ServiceBorderVerWidth="3" EventBorderVerWidth="3"/>
     <widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline3" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline4" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline5" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
-    <widget name="timeline_now" pixmap="PLi-FullHD/window/timeline-now.png" position="6,593" size="28,422" zPosition="2" alphatest="on"/>
+    <widget name="timeline_now" pixmap="PLi-FullHD/window/timeline-now.png" position="6,593" size="28,422" zPosition="2" alphatest="blend"/>
   </screen>
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
@@ -546,14 +548,16 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget name="timeline_text" position="30,155" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
-    <widget name="list" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc"/>
+    <widget name="list" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventFontPadding="6" EventNamePadding="6" EntryBorderColor="#cccccc"
+            ServiceBorderVerWidth="3" EventBorderVerWidth="3"/>
     <widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline3" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline4" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline5" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
-    <widget name="timeline_now" pixmap="PLi-FullHD/window/timeline-now.png" position="6,193" size="28,826" zPosition="2" alphatest="on"/>
+    <widget name="timeline_now" pixmap="PLi-FullHD/window/timeline-now.png" position="6,193" size="28,826" zPosition="2" alphatest="blend"/>
   </screen>
 
   <screen name="GraphMultiEpgSetup" position="fill" title="Electronic Program Guide Setup" flags="wfNoBorder">
@@ -835,6 +839,9 @@
     <widget source="session.Event_Next" render="Label" position="1470,180" size="180,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;36" halign="right">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1830,97" size="60,25" font="Regular;20" backgroundColor="secondBG" zPosition="2" transparent="1" foregroundColor="foreground" valign="center" halign="center">
+      <convert type="EventName">Pdc</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1710,97" size="90,36" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
