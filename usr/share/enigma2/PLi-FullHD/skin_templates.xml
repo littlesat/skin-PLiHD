@@ -400,6 +400,9 @@
     <widget source="session.CurrentService" render="Label" position="1740,1027" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
+    <widget source="session.CurrentService" render="Label" position="1741,856" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="2" size="180,25" font="Regular;22" transparent="1">
+      <convert type="RotorPosition">TunerName</convert>
+    </widget>
     <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
   </screen>
 
