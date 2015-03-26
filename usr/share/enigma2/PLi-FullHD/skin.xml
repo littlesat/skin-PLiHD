@@ -1038,12 +1038,12 @@
     <widget name="key_red" position="840,110" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget source="key_green" position="1350,110" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" alphatest="on"/>
     <widget name="key_green" position="1410,110" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="timer1" position="780,165" size="1110,150" itemHeight="75" rowSplit="40" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
+    <widget name="timer1" position="780,165" size="1110,150" itemHeight="75" rowSplit="40" setEventNameFont="Regular;32" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
     <widget source="key_yellow" position="780,390" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" alphatest="on"/>
     <widget name="key_yellow" position="840,390" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget source="key_blue" position="1350,390" size="34,34" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" alphatest="on"/>
     <widget name="key_blue" position="1410,390" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="timer2" position="780,450" size="1110,150" itemHeight="75" rowSplit="40" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
+    <widget name="timer2" position="780,450" size="1110,150" itemHeight="75" rowSplit="40" setEventNameFont="Regular;32" setServiceNameFont="Regular;30" setFont="Regular;27" satPosLeft="250" scrollbarMode="showNever"/>
     <widget name="list" position="780,705" size="1110,152" itemHeight="38" font="Regular;28" valign="center" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -1834,7 +1834,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="PositionerSetupLog" position="fill" title="Positioner Setup Log" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" font="Console;30" position="780,105" size="1110,510"/>
+    <widget name="list" font="Console;30" position="780,107" size="1110,910"/>
   </screen>
 
   <!-- Select Sats Entry -->
