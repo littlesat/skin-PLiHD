@@ -528,7 +528,7 @@
     <widget name="timeline_text" position="30,555" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
     <widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
             EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc"
-            ServiceBorderVerWidth="3" EventBorderVerWidth="3"/>
+            ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
     <widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
     <widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
@@ -550,7 +550,7 @@
     <widget name="timeline_text" position="30,155" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
     <widget name="list" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
             EntryBackgroundColor="background" EventFontPadding="6" EventNamePadding="6" EntryBorderColor="#cccccc"
-            ServiceBorderVerWidth="3" EventBorderVerWidth="3"/>
+            ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
     <widget name="timeline0" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline1" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
     <widget name="timeline2" pixmap="PLi-FullHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
