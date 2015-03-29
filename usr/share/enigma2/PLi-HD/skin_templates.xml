@@ -382,8 +382,9 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.Event_Now" render="Label" position="795,592" size="40,18" font="Regular;16" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" valign="center" halign="center">
+    <widget source="session.Event_Now" render="Pixmap" pixmap="PLi-HD/infobar/ico_pdc.png" position="797,588" size="38,21" zPosition="2" alphatest="on">
       <convert type="EventName">Pdc</convert>
+      <convert type="ConditionalShowHide"/>
     </widget>
     <widget render="VideoSize" source="session.CurrentService" position="1100,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
     <widget source="session.FrontendStatus" render="Label" position="1100,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
