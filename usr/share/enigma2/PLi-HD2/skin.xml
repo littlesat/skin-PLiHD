@@ -354,12 +354,12 @@
     <widget source="session.Event_Now" render="Label" position="40,555" size="490,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;22" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="Event" render="Label" position="40,600" size="50,26" font="Regular;16" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
+    <!--widget source="Event" render="Label" position="40,600" size="50,26" font="Regular;16" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
       <convert type="EventName">Pdc</convert>
     </widget>
     <widget source="Event" render="Label" position="90,600" size="100,26" font="Regular;16" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
       <convert type="EventName">PdcTime</convert>
-    </widget>
+    </widget-->
     <widget source="session.Event_Next" render="Label" position="40,640" size="490,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
