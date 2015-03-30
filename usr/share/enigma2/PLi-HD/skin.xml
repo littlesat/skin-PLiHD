@@ -339,12 +339,12 @@
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget source="Event" render="Label" position="310,440" size="50,26" font="Regular;18" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
+    <!--widget source="Event" render="Label" position="310,440" size="50,26" font="Regular;18" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
       <convert type="EventName">Pdc</convert>
     </widget>
     <widget source="Event" render="Label" position="360,440" size="120,26" font="Regular;18" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
       <convert type="EventName">PdcTime</convert>
-    </widget>
+    </widget-->
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
