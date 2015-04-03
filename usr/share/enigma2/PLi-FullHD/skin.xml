@@ -2117,8 +2117,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="InputBox" position="fill" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="780,105" size="1110,39" font="Regular;33"/>
-    <ePixmap pixmap="skin_default/vkey_text.png" position="787,210" size="1080,60" zPosition="-4" alphatest="on"/>
-    <widget name="input" position="780,210" size="1110,34" font="Regular;30" valign="center"/>
+    <ePixmap pixmap="skin_default/vkey_text.png" position="927,210" size="816,78" zPosition="-4" alphatest="on"/>
+    <widget name="input" position="932,227" size="806,45" font="Regular;38" valign="center"/>
   </screen>
 
   <!-- Location Box -->
