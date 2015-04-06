@@ -38,6 +38,7 @@
     <alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
     <alias name="HelpMenuListExt1" font="Regular" size="28"/>
     <alias name="Dreamexplorer" font="Regular" size="28" height="38"/>
+    <alias name="PlayList" font="Regular" size="28" height="38"/>
   </fonts>
 
   <parameters>
@@ -58,32 +59,34 @@
     <parameter name="ServiceInfo" value="0,0,450,50"/>
     <parameter name="ServiceInfoLeft" value="0,0,450,45"/>
     <parameter name="ServiceInfoRight" value="450,0,1000,45"/>
-    <parameter name="SelectionListDescr" value="45, 3, 1000, 32"/>
-    <parameter name="SelectionListLock" value="0, 2, 36, 36"/>
+    <parameter name="SelectionListDescr" value="45,3,1000,32"/>
+    <parameter name="SelectionListLock" value="0,2,36,36"/>
     <parameter name="ConfigListSeperator" value="300"/>
-    <parameter name="VirtualKeyboard" value="68, 68"/>
-    <parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38"/>
-    <parameter name="PartnerBoxEntryListIP"   value="180, 2, 225, 38"/>
-    <parameter name="PartnerBoxEntryListPort" value="405, 2, 150, 38"/>
-    <parameter name="PartnerBoxEntryListType" value="615, 2, 150, 38"/>
-    <parameter name="PartnerBoxTimerServicename" value="0, 0, 45"/>
-    <parameter name="PartnerBoxTimerName" value="0, 42, 30"/>
-    <parameter name="PartnerBoxE1TimerTime" value="0, 78, 255, 30"/>
-    <parameter name="PartnerBoxE1TimerState" value="255, 78, 255, 30"/>
-    <parameter name="PartnerBoxE2TimerTime" value="0, 78, 225, 30"/>
-    <parameter name="PartnerBoxE2TimerState" value="225, 78, 225, 30"/>
-    <parameter name="PartnerBoxE2TimerIcon" value="735, 8, 60, 60"/>
-    <parameter name="PartnerBoxBouquetListName" value="0, 0, 45"/>
-    <parameter name="PartnerBoxChannelListName" value="0, 0, 45"/>
-    <parameter name="PartnerBoxChannelListTitle" value="0, 42, 30"/>
-    <parameter name="PartnerBoxChannelListTime" value="0, 78, 225, 30"/>
-    <parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
-    <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
-    <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
+    <parameter name="VirtualKeyboard" value="68,68"/>
+    <parameter name="PartnerBoxEntryListName" value="8,2,225,38"/>
+    <parameter name="PartnerBoxEntryListIP"   value="180,2,225,38"/>
+    <parameter name="PartnerBoxEntryListPort" value="405,2,150,38"/>
+    <parameter name="PartnerBoxEntryListType" value="615,2,150,38"/>
+    <parameter name="PartnerBoxTimerServicename" value="0,0,45"/>
+    <parameter name="PartnerBoxTimerName" value="0,42,30"/>
+    <parameter name="PartnerBoxE1TimerTime" value="0,78,255,30"/>
+    <parameter name="PartnerBoxE1TimerState" value="255,78,255,30"/>
+    <parameter name="PartnerBoxE2TimerTime" value="0,78,225,30"/>
+    <parameter name="PartnerBoxE2TimerState" value="225,78,225,30"/>
+    <parameter name="PartnerBoxE2TimerIcon" value="735,8,60,60"/>
+    <parameter name="PartnerBoxBouquetListName" value="0,0,45"/>
+    <parameter name="PartnerBoxChannelListName" value="0,0,45"/>
+    <parameter name="PartnerBoxChannelListTitle" value="0,42,30"/>
+    <parameter name="PartnerBoxChannelListTime" value="0,78,225,30"/>
+    <parameter name="HelpMenuListHlp" value="0,0,900,42"/>
+    <parameter name="HelpMenuListExtHlp0" value="0,0,900,39"/>
+    <parameter name="HelpMenuListExtHlp1" value="0,42,900,30"/>
     <parameter name="AboutHddSplit" value="1"/>
-    <parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
-    <parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
-    <parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
+    <parameter name="DreamexplorerName" value="62,0,1200,38"/>
+    <parameter name="DreamexplorerIcon" value="15,4,30,30"/>
+    <parameter name="PicturePlayerThumb" value="30,285,45,300,30,25"/>
+    <parameter name="PlayListName" value="38,2,1000,34"/>
+    <parameter name="PlayListIcon" value="7,7,24,24"/>
   </parameters>
 
   <!-- Colors -->
@@ -1927,9 +1930,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="MediaPlayer" title="MediaPlayer" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel position="30,93" size="922,39" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
-    <widget name="filelist" position="30,135" size="922,586" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
+    <widget name="filelist" position="30,135" size="922,608" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
     <eLabel position="967,93" size="922,39" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
-    <widget name="playlist" position="967,135" size="922,586" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand"/>
+    <widget name="playlist" position="967,135" size="922,608" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand"/>
 
     <widget name="title" position="300,757" size="1320,60" backgroundColor="noTransBG" transparent="1" font="Regular;39" valign="top"/>
     <eLabel position="270,817" size="1380,3" backgroundColor="darkgrey"/>
