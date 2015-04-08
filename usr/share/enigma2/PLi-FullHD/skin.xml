@@ -1946,7 +1946,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="year" position="350,967" size="375,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
     <widget name="genretext" position="825,967" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,772" size="225,225" transparent="1" alphatest="blend"/>
+    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,817" size="116,116" transparent="1" alphatest="blend"/>
     
     <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
     <widget name="PositionGauge" position="212,1042" size="836,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:20,5"/>
