@@ -1930,30 +1930,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="MediaPlayer" title="MediaPlayer" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <eLabel position="30,93" size="922,39" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
-    <widget name="filelist" position="30,135" size="922,608" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
+    <widget name="filelist" position="30,135" size="922,610" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
     <eLabel position="967,93" size="922,39" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
-    <widget name="playlist" position="967,135" size="922,608" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand"/>
+    <widget name="playlist" position="967,135" size="922,610" backgroundColor="noTransBG" selectionDisabled="1" scrollbarMode="showOnDemand"/>
 
-    <widget name="title" position="300,757" size="1320,60" backgroundColor="noTransBG" transparent="1" font="Regular;39" valign="top"/>
-    <eLabel position="270,817" size="1380,3" backgroundColor="darkgrey"/>
-    <widget name="titletext" position="300,832" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-    <widget name="currenttext" position="450,832" size="1200,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-    <widget name="artisttext" position="300,877" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
-    <widget name="artist" position="450,877" size="1020,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
-    <widget name="albumtext" position="300,922" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
-    <widget name="album" position="450,922" size="1020,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
-    <widget name="yeartext" position="300,967" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
-    <widget name="year" position="450,967" size="375,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
+    <widget name="title" position="200,765" size="1520,60" backgroundColor="noTransBG" transparent="1" font="Regular;39" valign="top" halign="center"/>
+    <eLabel position="190,817" size="1540,3" backgroundColor="darkgrey"/>
+    <widget name="titletext" position="200,832" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
+    <widget name="currenttext" position="350,832" size="1200,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
+    <widget name="artisttext" position="200,877" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
+    <widget name="artist" position="350,877" size="1020,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
+    <widget name="albumtext" position="200,922" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
+    <widget name="album" position="350,922" size="1020,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
+    <widget name="yeartext" position="200,967" size="150,37" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" font="Regular;30" valign="top"/>
+    <widget name="year" position="350,967" size="375,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
     <widget name="genretext" position="825,967" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,772" size="225,225" transparent="1" alphatest="blend"/>
     
-    <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="967,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
-    <widget name="PositionGauge" position="210,1042" size="967,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:20,5"/>
-    <widget source="session.CurrentService" render="Label" position="0,1035" size="150,37" backgroundColor="noTransBG" transparent="1" font="Regular;33" valign="center" halign="right">
+    <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
+    <widget name="PositionGauge" position="212,1042" size="836,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:20,5"/>
+    <widget source="session.CurrentService" render="Label" position="10,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1177,1035" size="150,37" backgroundColor="noTransBG" transparent="1" font="Regular;33" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="1100,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
     <widget name="repeat" position="1785,1032" size="105,45" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend"/>
