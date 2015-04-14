@@ -920,10 +920,10 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <ePixmap pixmap="skin_default/buttons/key_text.png" position="30,1031" size="52,38" zPosition="3" alphatest="on"/>
-    <widget name="titellabel" position="780,105" size="795,42" valign="center" font="Regular;33" foregroundColor="#ff0000" backgroundColor="black" transparent="1"/>
+    <widget name="titellabel" position="780,105" size="880,42" valign="center" font="Regular;33" foregroundColor="#ff0000" backgroundColor="black" transparent="1"/>
     <widget name="sortlabel" position="780,150" size="795,42" font="Regular;28" foregroundColor="blue" backgroundColor="black" transparent="1"/>
-    <widget name="detailslabel" position="1050,184" size="840,342" zPosition="1" transparent="1" itemHeight="38" font="Regular;28" halign="block"/>
-    <widget name="contentlabel" position="780,555" size="1110,456" zPosition="1" transparent="1" itemHeight="38" font="Regular;28" halign="block"/>
+    <widget name="detailslabel" position="1050,184" size="840,342" zPosition="1" transparent="1" itemHeight="38" font="Regular;30" halign="block"/>
+    <widget name="contentlabel" position="780,555" size="1110,456" zPosition="1" transparent="1" itemHeight="38" font="Regular;30" halign="block"/>
     <widget name="extralabel" position="780,184" size="1110,787" zPosition="1" itemHeight="38" transparent="1" font="Regular;32" halign="block"/>
     <widget name="photolabel" position="780,184" size="1110,787" alphatest="blend" itemHeight="38" font="Regular;32" backgroundColor="black"/>
     <widget name="statusbar" position="30,660" size="720,60" font="Regular;24" zPosition="3" backgroundColor="black" transparent="1"/>
@@ -931,7 +931,7 @@
     <widget name="menu" position="780,210" size="1110,798" itemHeight="38" font="Regular;28" zPosition="3" scrollbarMode="showOnDemand" valign="center"/>
     <widget name="servicemenuTop" position="30,540" size="720,30" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;24" zPosition="4"/>
     <widget name="servicemenu" position="30,570" size="720,380" itemHeight="38" font="Regular;28" zPosition="5" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-    <widget name="ratinglabel" position="1570,141" size="315,33" halign="right" font="Regular;31" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
+    <widget name="ratinglabel" position="1570,141" size="320,33" halign="right" font="Regular;31" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
     <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1680,108" zPosition="0" size="210,21" transparent="1" alphatest="on"/>
     <widget name="stars" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1"/>
     <widget name="starsbg0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_0.png" position="1680,108" zPosition="1" size="210,21" transparent="1" alphatest="on"/>
