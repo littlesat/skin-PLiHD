@@ -495,7 +495,7 @@
     <widget source="Service" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="Event" render="Label" position="30,637" size="720,350" transparent="1" font="Regular;30" halign="block">
+    <widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
