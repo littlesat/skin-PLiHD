@@ -257,6 +257,9 @@
     <widget source="ServiceEvent" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
     </widget>
+    <widget source="ServiceEvent" render="Label" position="402,350" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="right">
+       <convert type="ServiceOrbitalPosition"/>
+    </widget>
     <widget source="ServiceEvent" render="Label" position="20,378" size="60,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="left">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
@@ -325,6 +328,9 @@
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
     </widget>
+    <widget source="Service" render="Label" position="402,350" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="right">
+       <convert type="ServiceOrbitalPosition"/>
+    </widget>
     <widget source="Event" render="Label" position="20,405" size="480,25" foregroundColor="secondFG" font="Regular;22" transparent="1">
 	<convert type="EventName">Name</convert>
     </widget>
@@ -360,6 +366,9 @@
     <widget name="epg_description" position="520,70" size="740,600" transparent="1" font="Regular;22" halign="block"/>
     <widget source="session.CurrentService" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="402,350" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="right">
+       <convert type="ServiceOrbitalPosition"/>
     </widget>
     <widget name="channel"  position="20,395" size="480,30" transparent="1" font="Regular;22" halign="left"/>
     <widget name="datetime" position="20,435" size="480,30" transparent="1" font="Regular;22" halign="left"/>
@@ -412,10 +421,10 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
-    <widget source="Service" render="Label" position="400,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
+    <widget source="Service" render="Label" position="402,350" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="Event" render="Label" position="20,425" size="480,210" transparent="1" font="Regular;20" halign="block">
+    <widget source="Event" render="Label" position="20,435" size="480,207" transparent="1" font="Regular;20" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
