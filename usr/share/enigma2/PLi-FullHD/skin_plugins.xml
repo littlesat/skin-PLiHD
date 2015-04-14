@@ -931,15 +931,15 @@
     <widget name="menu" position="780,210" size="1110,798" itemHeight="38" font="Regular;28" zPosition="3" scrollbarMode="showOnDemand" valign="center"/>
     <widget name="servicemenuTop" position="30,540" size="720,30" halign="center" backgroundColor="black" foregroundColor="yellow" font="Regular;24" zPosition="4"/>
     <widget name="servicemenu" position="30,570" size="720,380" itemHeight="38" font="Regular;28" zPosition="5" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-    <widget name="ratinglabel" position="1575,141" size="315,33" halign="center" font="Regular;31" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
-    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1575,108" zPosition="0" size="315,31" transparent="1" alphatest="on"/>
-    <widget name="stars" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1"/>
-    <widget name="starsbg0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_0.png" position="1575,108" zPosition="1" size="315,31" transparent="1" alphatest="on"/>
-    <widget name="stars0" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_0.png" transparent="1"/>
-    <widget name="starsbg50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_50.png" position="1575,108" zPosition="1" size="315,31" transparent="1" alphatest="on"/>
-    <widget name="stars50" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1"/>
-    <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1575,108" zPosition="1" size="315,31" transparent="1" alphatest="on"/>
-    <widget name="stars100" position="1575,108" size="315,31" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1"/>
+    <widget name="ratinglabel" position="1570,141" size="315,33" halign="right" font="Regular;31" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
+    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty.png" position="1680,108" zPosition="0" size="210,21" transparent="1" alphatest="on"/>
+    <widget name="stars" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled.png" transparent="1"/>
+    <widget name="starsbg0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_0.png" position="1680,108" zPosition="1" size="210,21" transparent="1" alphatest="on"/>
+    <widget name="stars0" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_0.png" transparent="1"/>
+    <widget name="starsbg50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_50.png" position="1680,108" zPosition="1" size="210,21" transparent="1" alphatest="on"/>
+    <widget name="stars50" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1"/>
+    <widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1680,108" zPosition="1" size="210,21" transparent="1" alphatest="on"/>
+    <widget name="stars100" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1"/>
     <widget name="pageb1" pixmap="skin_default/buttons/key_1.png" position="1110,978" size="52,38" zPosition="3" alphatest="on"/>
     <widget name="pageb3" pixmap="skin_default/buttons/key_3.png" position="1462,978" size="52,38" zPosition="3" alphatest="on"/>
     <widget name="paget1" pixmap="skin_default/buttons/key_left.png" position="1162,978" size="52,38" zPosition="3" alphatest="on"/>
