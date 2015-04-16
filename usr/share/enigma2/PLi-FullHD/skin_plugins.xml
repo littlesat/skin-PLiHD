@@ -1606,4 +1606,12 @@
     <widget name="config" position="780,105" size="1110,760" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
     <widget name="info" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center"/>
   </screen>
+
+  <!-- AutoResolution -->
+
+  <screen name="ResolutionLabel" position="75,60" size="375,54" flags="wfNoBorder" >
+    <widget name="content" position="0,0" size="375,27" font="Regular;24" />
+    <widget name="restxt" position="0,27" size="375,27" font="Regular;24" />
+  </screen>
+
 </skin>
