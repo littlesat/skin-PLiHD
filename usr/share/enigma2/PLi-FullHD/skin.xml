@@ -317,7 +317,7 @@
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable" fieldMargins="15" nonplayableMargins="15"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" itemsDistances="12"
+            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
             picServiceEventProgressbar="PLi-FullHD/window/sprogress.png" progressbarHeight="12" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey"
             colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
     <widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
@@ -793,7 +793,7 @@
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="list" position="780,105" size="1110,675" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;32" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;30" serviceNameFont="Regular;32" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060"
+            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80"
             colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="12"
             colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
     <widget source="session.Event_Now" render="Label" position="30,105" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="center" valign="center">
