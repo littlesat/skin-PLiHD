@@ -2230,4 +2230,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="text" position="780,105" size="1100,35" font="Regular;32" />
     <widget name="entries" position="780,160" size="1100,190" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
   </screen>
+
+  <!-- Subservices Quickzap -->
+
+  <screen name="SubservicesQuickzap" position="c-384,c-15" size="768,300" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="675,0" zPosition="2" size="21,21" alphatest="on" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel text="Subservices" position="0,0" size="705,30" font="Regular;20" backgroundColor="toptemplatecolor" />
+    <widget name="CurrentSubserviceNumber" position="0,30" size="75,35" font="Regular;32" backgroundColor="toptemplatecolor"/>
+    <widget source="session.CurrentService" render="Label" position="75,30" size="630,35" font="Regular;32" backgroundColor="toptemplatecolor">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+
 </skin>
