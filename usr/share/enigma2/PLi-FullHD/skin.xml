@@ -137,7 +137,7 @@
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">
-    <title offset="20,10" font="Regular;20"/>
+    <title offset="40,5" font="Regular;32"/>
     <color name="Background" color="background"/>
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
