@@ -1614,4 +1614,18 @@
     <widget name="restxt" position="0,27" size="375,27" font="Regular;24" />
   </screen>
 
+ <!-- Remote timer  -->
+
+  <screen name="RemoteTimerSetup" position="fill" title="Timer entry" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RG"/>
+    <widget name="config" position="780,105" size="1110,765" itemHeight="40" font="Regular;33" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="RemoteTimerScreen" position="fill" title="Timer Overview" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
+    <widget name="text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+  </screen>
+
 </skin>
