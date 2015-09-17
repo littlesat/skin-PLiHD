@@ -1546,7 +1546,7 @@
   <screen name="StreamingChannelFromServerScreen" position="fill" title="Select bouquets to convert" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget name="list" position="780,105" size="1110,720" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" enableWrapAround="1"/>
     <widget source="statusbar" render="Label" position="780,975" size="1110,34" zPosition="1" font="Regular;30" halign="center"/>
   </screen>
 
