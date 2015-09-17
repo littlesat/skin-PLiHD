@@ -1627,5 +1627,18 @@
     <widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
     <widget name="text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
   </screen>
+ <!-- ## Het weer ## -->
+
+  <screen name="Weermenu" position="fill" title="Timer Overview" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+    <widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+  </screen>
+  <screen name="secondmenu" position="fill" title="Timer Overview" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+    <widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+    <widget name="Info" position="7,540" size="715,200" font="Regular;33" zPosition="2" foregroundColor="secondFG" valign="center" halign="center"/>
+  </screen>
 
 </skin>
