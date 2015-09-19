@@ -1641,4 +1641,23 @@
     <widget name="Info" position="7,540" size="715,200" font="Regular;33" zPosition="2" foregroundColor="secondFG" valign="center" halign="center"/>
   </screen>
 
+	<!-- ## PermanentClock ## -->
+
+--<screen name="PermanentClockMenu" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="list" position="780,135" size="1132,855" font="Regular;33" itemHeight="45" transparent="1" foregroundColor="grey"/>
+    <panel name="KeyExit"/>
+    <panel name="KeyOkTemplate"/>
+ </screen>
+ <screen name="PermanentClockScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+  <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
+   <convert type="ClockToText">Default</convert>
+  </widget>
+ </screen>
+ <screen name="PermanentClockPositioner" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+  <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
+   <convert type="ClockToText">Default</convert>
+  </widget>
+ </screen>
+
 </skin>
