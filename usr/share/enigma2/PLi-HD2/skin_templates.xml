@@ -128,6 +128,10 @@
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="970,684" size="35,25" />
   </screen>
 
+  <screen name="KeyExit">
+    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" position="140,684" size="35,25"/>
+  </screen>
+
   <screen name="KeyMenuInfoTemplate">
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
@@ -323,7 +327,7 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="200,642" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="285,642" size="640,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -334,7 +338,7 @@
     </widget>
     <widget source="session.Event_Next" render="Label" position="200,672" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="285,672" size="640,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -378,6 +382,10 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.Event_Now" render="Pixmap" pixmap="PLi-HD/infobar/ico_pdc.png" position="837,588" size="38,21" zPosition="2" alphatest="on">
+      <convert type="EventName">Pdc</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
     <widget render="VideoSize" source="session.CurrentService" position="1140,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
     <widget source="session.FrontendStatus" render="Label" position="1140,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
@@ -387,6 +395,9 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="1140,675" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition"/>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1140,555" borderWidth="1" borderColor="black" zPosition="2" size="180,20" font="Regular;15" transparent="1" backgroundColor="transpBlack">
+      <convert type="RotorPosition"/>
     </widget>
     <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
   </screen>

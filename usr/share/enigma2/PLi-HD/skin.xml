@@ -18,6 +18,12 @@
     <font name="Fixed" filename="andale.ttf" scale="100"/>
   </fonts>
 
+  <!-- Parameters -->
+
+  <parameters>
+    <parameter name="AboutHddSplit" value="0"/>
+  </parameters>
+
   <!-- Colors -->
 
   <colors>
@@ -333,6 +339,12 @@
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
+    <!--widget source="Event" render="Label" position="310,440" size="50,26" font="Regular;18" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
+      <convert type="EventName">Pdc</convert>
+    </widget>
+    <widget source="Event" render="Label" position="360,440" size="120,26" font="Regular;18" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
+      <convert type="EventName">PdcTime</convert>
+    </widget-->
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
@@ -428,7 +440,8 @@
       <convert type="EventName">SmallRating</convert>
     </widget>
     <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventNamePadding="4" ServiceNamePadding="4" EntryBorderColor="#cccccc" />
+    <widget name="list" position="50,380" size="1180,250" itemHeight="50" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventNamePadding="4" ServiceNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,377" size="1,250" zPosition="1" />
@@ -443,12 +456,9 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget source="Event" render="Label" position="50,100" size="1180,22" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <widget name="timeline_text" position="50,122" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,152" size="1180,478" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline_text" position="50,100" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="50,152" size="1180,478" itemHeight="50" transparent="1" scrollbarMode="showNever"
+            EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
@@ -554,9 +564,9 @@
     </widget>
     <widget name="network" position="150,120" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
     <widget name="transponder" position="150,155" size="410,30" valign="center" zPosition="2" font="Regular;22" transparent="1" />
-    <widget name="scan_state" position="80,230" zPosition="2" size="510,30" valign="center" font="Regular;20" transparent="1" />
-    <widget name="pass" position="80,290" size="480,30" valign="center" font="Regular;22" transparent="1" />
-    <widget name="scan_progress" position="80,265" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="scan_progress" position="80,230" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="scan_state" position="80,255" zPosition="2" size="510,60" valign="top" font="Regular;20" transparent="1" />
+    <widget name="pass" position="80,315" size="480,30" valign="center" font="Regular;22" transparent="1" />
     <widget name="servicelist" position="610,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -683,7 +693,7 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="220,120" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="305,120" size="570,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -694,7 +704,7 @@
     </widget>
     <widget source="session.Event_Next" render="Label" position="220,150" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="305,150" size="570,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -913,6 +923,9 @@
   <screen name="PluginBrowser" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplateRG"/>
+    <ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="40,645" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="75,645" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="110,645" size="35,25"/>
     <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="590,110" size="630,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
@@ -1511,8 +1524,9 @@
 
   <screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="590,110" size="600,500" font="Regular;24" />
-    <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <panel name="KeyExit"/>
+    <widget name="text" position="590,110" size="600,500" font="Regular;22" />
+    <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
@@ -1821,7 +1835,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">

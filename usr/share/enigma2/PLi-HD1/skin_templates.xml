@@ -7,31 +7,31 @@
     <widget source="session.CurrentService" render="Label" position="c-416,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <eLabel backgroundColor="infobarBG" position="120,56" size="1040,14" zPosition="0"/>
-    <ePixmap pixmap="PLi-HD/dvr/scale1024.png" position="128,61" size="1024,4" zPosition="1"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="128,57" size="1024,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1024.png:1012,0">
+    <eLabel backgroundColor="infobarBG" position="20,56" size="1040,14" zPosition="0"/>
+    <ePixmap pixmap="PLi-HD/dvr/scale1024.png" position="28,61" size="1024,4" zPosition="1"/>
+    <widget source="session.CurrentService" render="PositionGauge" position="28,57" size="1024,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="128,31" size="90,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="28,31" size="90,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1035,31" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="935,31" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1060,53" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="952,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="c-73,70" size="146,21" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <eLabel position="128,70" size="150,130" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left" text=">" zPosition="1"/>
+    <eLabel position="28,70" size="150,130" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left" text=">" zPosition="1"/>
   </screen>
 
   <screen name="TopTemplate">
-    <eLabel position="0,0" size="1280,58" backgroundColor="darkblue"/>
+    <eLabel position="0,0" size="1280,58" backgroundColor="toptemplatecolor"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,58" size="1280,2" zPosition="2"/>
     <widget source="Title" render="Label" position="20,5" size="1240,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="global.CurrentTime" render="Label" position="1110,15" size="150,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
@@ -44,7 +44,7 @@
 
   <screen name="BasicTemplate">
     <panel name="TopTemplate"/>
-    <eLabel position="0,682" size="1280,38" backgroundColor="darkblue"/>
+    <eLabel position="0,682" size="1280,38" backgroundColor="basictemplatecolor"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,680" size="1280,2"/>
   </screen>
 
@@ -86,47 +86,51 @@
   <!-- Button Templates -->
 
   <screen name="ButtonRed">
-    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonGreen">
-    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="410,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonYellow">
-    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/yellow.png" position="705,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonBlue">
-    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="on"/>
+    <ePixmap pixmap="PLi-HD/buttons/blue.png" position="990,687" size="26,26" alphatest="blend"/>
   </screen>
 
   <screen name="KeyMenuTemplate">
-     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="55,689" size="35,25"/>
+     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="blend" position="55,689" size="35,25"/>
   </screen>
 
   <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="90,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="90,689" size="35,25"/>
   </screen>
 
   <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOkTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_ok.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyOneTemplate">
-    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="20,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplate">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="408,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="408,689" size="35,25"/>
   </screen>
 
   <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="on" position="990,689" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="990,689" size="35,25"/>
+  </screen>
+
+  <screen name="KeyExit">
+    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" position="120,689" size="35,25"/>
   </screen>
 
   <screen name="ButtonTemplate_R">
@@ -327,7 +331,7 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="180,652" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="265,652" size="715,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -338,7 +342,7 @@
     </widget>
     <widget source="session.Event_Next" render="Label" position="180,682" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="left">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText">Default;Proportional</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="265,682" size="715,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
@@ -382,6 +386,10 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
+    <widget source="session.Event_Now" render="Pixmap" pixmap="PLi-HD/infobar/ico_pdc.png" position="837,598" size="38,21" zPosition="2" alphatest="on">
+      <convert type="EventName">Pdc</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
     <widget render="VideoSize" source="session.CurrentService" position="1160,629" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1"/>
     <widget source="session.FrontendStatus" render="Label" position="1160,657" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
@@ -391,6 +399,9 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="1160,685" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition"/>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1160,567" borderWidth="1" borderColor="black" zPosition="2" size="180,20" font="Regular;15" transparent="1" backgroundColor="transpBlack">
+      <convert type="RotorPosition"/>
     </widget>
     <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend"/>-->
   </screen>
