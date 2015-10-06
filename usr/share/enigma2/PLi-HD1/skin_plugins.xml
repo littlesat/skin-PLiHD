@@ -631,6 +631,14 @@
     <widget name="status" position="520,520" size="740,60" font="Regular;20"/>
   </screen>
   
+  <!-- EPG Import Profile -->
+  
+  <screen name="EPGImportProfile" position="fill" title="EPG Import Profile" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RG"/>
+    <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand"/>
+  </screen>  
+  
   <!-- EPG Import Sources -->
 
   <screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
