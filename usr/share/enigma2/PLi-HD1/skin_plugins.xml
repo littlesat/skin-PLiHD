@@ -625,7 +625,7 @@
   <screen name="EPGImportConfig" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>   
-	<panel name="KeyInfoTemplate"/>
+    <panel name="KeyMenuInfoTemplate"/>
     <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand"/>
     <widget name="statusbar" position="520,650" size="740,25" font="Regular;20"/>
     <widget name="status" position="520,520" size="740,60" font="Regular;20"/>
