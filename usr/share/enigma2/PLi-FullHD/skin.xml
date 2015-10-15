@@ -73,7 +73,8 @@
     <parameter name="PartnerBoxE1TimerState" value="255,78,255,30"/>
     <parameter name="PartnerBoxE2TimerTime" value="0,78,225,30"/>
     <parameter name="PartnerBoxE2TimerState" value="225,78,225,30"/>
-    <parameter name="PartnerBoxE2TimerIcon" value="735,8,60,60"/>
+    <parameter name="PartnerBoxE2TimerIcon" value="1050,8,20,20"/>
+    <parameter name="PartnerBoxE2TimerIconRepeat" value="1050,38,20,20"/>
     <parameter name="PartnerBoxBouquetListName" value="0,0,45"/>
     <parameter name="PartnerBoxChannelListName" value="0,0,45"/>
     <parameter name="PartnerBoxChannelListTitle" value="0,42,30"/>
