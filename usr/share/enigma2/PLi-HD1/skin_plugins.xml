@@ -1613,4 +1613,13 @@
     <widget name="config" position="520,70" size="740,400" zPosition="1" scrollbarMode="showOnDemand" />
     <widget name="info" position="520,650" size="740,25" font="Regular;20" foregroundColor="foreground" halign="center"/>
   </screen>
+
+  <!-- VFDControl  -->
+
+  <screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="config" position="520,70" size="740,250" scrollbarMode="showOnDemand"/>
+  </screen>
+
 </skin>

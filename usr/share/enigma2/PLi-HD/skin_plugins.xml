@@ -1558,4 +1558,12 @@
     <widget name="config" position="590,110" size="600,300" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" transparent="1" />
    </screen>
 
+    <!-- VFDControl  -->
+
+  <screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="config" position="590,110" size="600,250" scrollbarMode="showOnDemand"/>
+  </screen>
+
 </skin>
