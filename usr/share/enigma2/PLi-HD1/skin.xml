@@ -1271,7 +1271,6 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RBS"/>
     <panel name="KeyTextTemplate"/>
-    <eLabel text="Network Setup" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,256" itemHeight="32" scrollbarMode="showOnDemand"/>
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
@@ -1294,7 +1293,6 @@
   <screen name="NameserverSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <eLabel text="Nameserver Setup" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,450" itemHeight="28" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="520,650" size="740,25" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center"/>
   </screen>
@@ -1302,7 +1300,6 @@
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <eLabel text="Select Network Adapter" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="list" render="Listbox" position="520,70" size="740,280" zPosition="10" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
