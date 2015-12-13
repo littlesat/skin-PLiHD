@@ -1353,7 +1353,6 @@
   <screen name="AutoMountView" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-    <eLabel text="MountView" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="legend1" render="Label" position="590,80" size="130,75" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="Left" />
     <widget source="legend2" render="Label" position="720,80" size="345,75" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
     <widget source="legend3" render="Label" position="1065,80" size="130,75" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
