@@ -391,9 +391,6 @@
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="750,45" size="750,37" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;34" valign="center" halign="center">
-	<convert type="ServiceName">Name</convert>
-    </widget>
     <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo"></convert>
     </widget>
