@@ -1182,7 +1182,6 @@
   <screen name="AdapterSetupConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
-    <eLabel text="Network Configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="menulist" position="530,110" size="690,280" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="description" render="Label" position="530,365" size="690,200" transparent="1" font="Regular;21" valign="center" halign="center" />
     <widget source="IFtext" render="Label" position="800,587" size="165,25" transparent="1" zPosition="10" font="Regular;21" halign="right" />
