@@ -214,6 +214,10 @@
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4k.png" position="1012,70" size="40,21" zPosition="4" alphatest="on">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1012,70" size="40,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide"/>
