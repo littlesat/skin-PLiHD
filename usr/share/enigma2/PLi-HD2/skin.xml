@@ -207,10 +207,6 @@
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4k.png" position="1112,70" size="40,21" zPosition="4" alphatest="on">
-      <convert type="ServiceInfo">Is4K</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1112,70" size="40,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide" />
@@ -540,7 +536,6 @@
 
   <screen name="ScanSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="header" position="40,5" size="1200,50"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,80" size="710,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="footer" position="0,0" size="0,0" />
 
