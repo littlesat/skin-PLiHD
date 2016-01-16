@@ -395,7 +395,7 @@
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
     <widget source="session.FrontendInfo" render="Label" position="1160,600" size="110,20" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;20">
-      <convert type="FrontendInfo">STRING</convert>
+      <convert type="FrontendInfo">STRING,8,5</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1160,685" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition"/>
