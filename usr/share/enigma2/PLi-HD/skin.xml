@@ -1531,7 +1531,7 @@
     <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
   </screen>
 
-<!-- MessageBox -->
+  <!-- MessageBox -->
 
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
