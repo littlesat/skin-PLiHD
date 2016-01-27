@@ -1537,6 +1537,13 @@
     <eLabel text="Leave message" position="185,682" size="220,28" backgroundColor="secondBG" font="Regular;24" halign="left" transparent="1" zPosition="1" />
   </screen>
 
+  <screen name="TextBoxPigLess" title="Message" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <panel name="KeyExit"/>
+    <widget name="text" position="40,110" size="1200,500" font="Regular;24"/>
+    <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+  </screen>
+
   <!-- MessageBox -->
 
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
