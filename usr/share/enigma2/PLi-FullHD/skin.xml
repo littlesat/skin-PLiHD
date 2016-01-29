@@ -252,7 +252,7 @@
     <widget source="session.Event_Now" render="Label" position="645,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,260" size="915,480" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="30,260" size="915,490" font="Regular;30" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="975,162" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -264,7 +264,7 @@
     <widget source="session.Event_Next" render="Label" position="1590,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="975,260" size="915,480" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="975,260" size="915,490" font="Regular;30" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
 	<eLabel text="Streaming clients:" position="30,764" size="300,70" font="Regular;32" transparent="1" zPosition="1" foregroundColor="secondFG" backgroundColor="secondBG" halign="left" valign="top" noWrap="1" />
