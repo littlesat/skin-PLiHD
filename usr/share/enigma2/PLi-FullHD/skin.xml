@@ -2008,6 +2008,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="TranslationInfo" render="Label" position="780,270" size="1110,570" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
   </screen>
 
+  <!-- Streaming Clients Info -->
+
+  <screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="ScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0"/>
+  </screen>
+
   <!-- Virtual Keyboard -->
 
   <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
