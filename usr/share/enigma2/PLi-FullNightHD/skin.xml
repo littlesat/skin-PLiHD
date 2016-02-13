@@ -2,8 +2,8 @@
 <skin>
 	<!-- Skin: PLi-HD1, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
 	<!-- This skin include derived work from VU+NL, Milo and others -->
-	<!-- This skin is a Freeware. Everyone can modify and use it in other images.		-->
-	<!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!		-->
+	<!-- This skin is a Freeware. Everyone can modify and use it in other images. -->
+	<!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!! -->
 	<!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
 	<!-- Head -->
 
@@ -64,7 +64,7 @@
 		<parameter name="ConfigListSeperator" value="300"/>
 		<parameter name="VirtualKeyboard" value="68,68"/>
 		<parameter name="PartnerBoxEntryListName" value="8,2,225,38"/>
-		<parameter name="PartnerBoxEntryListIP"	 value="180,2,225,38"/>
+		<parameter name="PartnerBoxEntryListIP" value="180,2,225,38"/>
 		<parameter name="PartnerBoxEntryListPort" value="405,2,150,38"/>
 		<parameter name="PartnerBoxEntryListType" value="615,2,150,38"/>
 		<parameter name="PartnerBoxTimerServicename" value="0,0,45"/>
@@ -184,7 +184,7 @@
 
 	<!-- JobView -->
 
-	<screen name="JobView"	position="fill" title="Job View" flags="wfNoBorder">
+	<screen name="JobView" position="fill" title="Job View" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget source="job_name" render="Label" position="780,105" size="1110,52" font="Regular;37"/>
 		<widget source="job_task" render="Label" position="780,282" size="1110,45" font="Regular;36"/>
@@ -416,7 +416,7 @@
 		<widget source="session.CurrentService" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget name="channel"	position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
+		<widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
 		<widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left"/>
 		<widget name="duration" position="30,712" size="720,45" transparent="1" font="Regular;33" halign="left"/>
 		<widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;32" halign="right">
@@ -524,7 +524,7 @@
 		<widget name="timeline_text" position="30,555" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
 						EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc"
-						ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"	IconXPadding="6" IconYPadding="4"/>
+						ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
 		<widget name="timeline0" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline1" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline2" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
@@ -875,7 +875,7 @@
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="187,562" size="135,37" font="Regular;30" foregroundColor="grey" halign="center"	transparent="1">
+		<widget source="Service" render="Label" position="187,562" size="135,37" font="Regular;30" foregroundColor="grey" halign="center" transparent="1">
 			<convert type="ServiceTime">StartTime</convert>
 			<convert type="ClockToText">ShortDate</convert>
 		</widget>
@@ -891,7 +891,7 @@
 		<widget source="Service" render="Label" position="30,600" size="720,72" foregroundColor="secondFG" font="Regular;30" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,675" size="720,288"	font="Regular;31" valign="center" halign="block">
+		<widget source="Service" render="Label" position="30,675" size="720,288" font="Regular;31" valign="center" halign="block">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
 
@@ -944,18 +944,18 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (37, [
-						MultiContentEntryText(pos = (7,1),	 size = (67,37),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # key,
-						MultiContentEntryText(pos = (75,1),	size = (15,37),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # number,
-						MultiContentEntryText(pos = (90,1),	size = (300,37), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-						MultiContentEntryText(pos = (390,1), size = (660,37), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-						MultiContentEntryText(pos = (1050,6), size = (22,37),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (7,1), size = (67,37), font = 0, flags = RT_HALIGN_LEFT, text = 2), # key,
+						MultiContentEntryText(pos = (75,1), size = (15,37), font = 0, flags = RT_HALIGN_LEFT, text = 1), # number,
+						MultiContentEntryText(pos = (90,1), size = (300,37), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (390,1), size = (660,37), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (37, [
-						MultiContentEntryText(pos = (7,1),	 size = (67,37),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # key,
-						MultiContentEntryText(pos = (75,1),	size = (15,37),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # number,
-						MultiContentEntryText(pos = (90,1),	size = (300,37), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-						MultiContentEntryText(pos = (390,1), size = (660,37), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-						MultiContentEntryText(pos = (1050,6), size = (22,37),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (7,1), size = (67,37), font = 0, flags = RT_HALIGN_LEFT, text = 2), # key,
+						MultiContentEntryText(pos = (75,1), size = (15,37), font = 0, flags = RT_HALIGN_LEFT, text = 1), # number,
+						MultiContentEntryText(pos = (90,1), size = (300,37), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (390,1), size = (660,37), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
 				"fonts": [gFont("Regular",30), gFont("Regular",24)],
@@ -1198,7 +1198,7 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (82,[
-				MultiContentEntryText(pos = (0,3),	size = (975,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,3), size = (975,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (0,45), size = (975,33), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 				MultiContentEntryPixmapAlphaTest(pos = (1000,17), size = (48,48), png = 5), # index 5 is the status pixmap
 				MultiContentEntryPixmapAlphaTest(pos = (0,80), size = (1110,3), png = 6), # index 6 is the div pixmap
@@ -1325,7 +1325,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RBS"/>
 		<panel name="KeyTextTemplate"/>
-		<widget name="config" position="780,105" size="1110,418"	itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,418" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="780,619" size="1110,40" font="Regular;33" halign="center"/>
 		<widget source="IPtext" render="Label" position="780,675" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
 		<widget source="Netmasktext" render="Label" position="780,720" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left"/>
@@ -1348,7 +1348,7 @@
 	<screen name="NameserverSetup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYS"/>
-		<widget name="config" position="780,105" size="1110,646"	itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,646" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center"/>
 	</screen>
 
@@ -1567,7 +1567,7 @@
 		<panel name="ButtonTemplate_RGS"/>
 		<widget source="list" render="Listbox" position="780,105" size="1110,720" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-			<!--	device, description, devicepng, divpng	-->
+			<!-- device, description, devicepng, divpng -->
 	{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (15,29), size = (48,48), png = 2), # index 3 is the interface pixmap
 				MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
@@ -1961,9 +1961,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="MemoryInfo" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGB"/>
-		<widget name="lmemtext"	font="Regular;30" position="780,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+		<widget name="lmemtext" font="Regular;30" position="780,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="lmemvalue" font="Regular;30" position="780,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
-		<widget name="rmemtext"	font="Regular;30" position="1440,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
+		<widget name="rmemtext" font="Regular;30" position="1440,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="rmemvalue" font="Regular;30" position="1440,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1"/>
 		<widget name="pfree" position="1214,303" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
 		<widget name="pused" position="1214,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
@@ -2010,7 +2010,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="list" position="930,375" size="816,343" selectionDisabled="1" transparent="1"/>
 	</screen>
 
-	<!-- AC3LipSyncSetup	-->
+	<!-- AC3LipSyncSetup -->
 
 	<screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder" >
 		<panel name="PigTemplate"/>
@@ -2087,7 +2087,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="ButtonTemplate_RS"/>
 		<widget source="menu" render="Listbox" position="780,105" size="1110,892" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (7,10),size = (375,45),flags = RT_HALIGN_LEFT,text = 0),
+				{"template": [MultiContentEntryText(pos = (7,10),size = (375,45),flags = RT_HALIGN_LEFT,text = 0),
 				MultiContentEntryText(pos = (390,10),size = (645,45),flags = RT_HALIGN_LEFT,text = 1)],
 				"fonts": [gFont("Regular",30)],
 				"itemHeight": 52 }
@@ -2203,7 +2203,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- Common interface -->
 
-	<screen name="MMIDialog"	position="fill">
+	<screen name="MMIDialog" position="fill">
 		<panel name="PigTemplate"/>
 		<widget name="title" position="780,105" size="430,35" font="Regular;32" />
 		<widget name="subtitle" position="780,145" size="430,35" font="Regular;32" />
@@ -2248,34 +2248,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Standby -->
 
 	<screen name="Standby" position="fill" flags="wfNoBorder">
-		<widget source="session.TunerInfo" render="FixedLabel" text="A"	position="48,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A"	position="48,20" size="128,170" foregroundColor="yellow"	backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="48,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="48,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="176,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="176,20" size="128,170" foregroundColor="yellow"	backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="176,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="304,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="304,20" size="128,170" foregroundColor="yellow"	backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="304,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="432,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="432,20" size="128,170" foregroundColor="yellow"	backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="432,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="global.CurrentTime"		 render="Label" position="1360,20" size="512,170"	font="FdLcD;190" foregroundColor="yellow"	backgroundColor="#000000" halign="right" valign="center" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="1360,20" size="512,170" font="FdLcD;190" foregroundColor="yellow" backgroundColor="#000000" halign="right" valign="center" noWrap="1">
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="48,230"	size="1824,800" font="FdLcD;190" foregroundColor="#ffffff" backgroundColor="#222222" halign="left"	valign="top" noWrap="1">
+		<widget source="session.CurrentService" render="Label" position="48,230" size="1824,800" font="FdLcD;190" foregroundColor="#ffffff" backgroundColor="#222222" halign="left" valign="top" noWrap="1">
 			<convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
 		</widget>
 	</screen>

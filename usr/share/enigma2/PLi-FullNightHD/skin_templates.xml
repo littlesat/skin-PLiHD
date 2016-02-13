@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
-
 	<!-- Templates -->
-
 	<screen name="PlayerTemplate">
 		<widget source="session.CurrentService" render="Label" position="c-624,6" size="1248,74" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
@@ -395,7 +393,7 @@
 		<widget source="session.FrontendStatus" render="Label" position="1705,985" size="112,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Label" position="1705,900" size="190,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
+		<widget source="session.FrontendInfo" render="Label" position="1705,900" size="200,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
 			<convert type="FrontendInfo">STRING</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1705,1027" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28">
@@ -406,6 +404,5 @@
 		</widget>
 		<!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 	</screen>
-
-</skin>
+`</skin>
 
