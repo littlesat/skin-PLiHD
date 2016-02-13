@@ -365,6 +365,10 @@
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_format_4k.png" position="1586,901" size="60,32" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">Is4K</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_txt_on.png" position="1530,901" size="50,32" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
