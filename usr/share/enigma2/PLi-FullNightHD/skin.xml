@@ -317,12 +317,12 @@
 		<panel name="ButtonTemplate_RGYB"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
-						scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
-						picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" fieldMargins="15" nonplayableMargins="15"
-						progressBarWidth="60" progressPercentWidth="80" colorEventProgressbarBorder="darkgrey"
-						colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
-						foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
-						colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
+			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
+                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
+			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo">NoRoot</convert>
 		</widget>
@@ -355,12 +355,12 @@
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
-						scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
-						picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" fieldMargins="15" nonplayableMargins="15"
-						progressBarWidth="60" progressPercentWidth="80" colorEventProgressbarBorder="darkgrey"
-						colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
-						foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
-						colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
+			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
+                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
+			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 	</screen>
 
 	<!-- EPG Stuff -->
@@ -523,8 +523,8 @@
 		</widget>
 		<widget name="timeline_text" position="30,555" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
-						EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc"
-						ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
+			EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+			ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
 		<widget name="timeline0" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline1" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
 		<widget name="timeline2" pixmap="PLi-FullNightHD/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
@@ -545,8 +545,8 @@
 		</widget>
 		<widget name="timeline_text" position="30,155" size="1860,42" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="list" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
-						EntryBackgroundColor="background" EventFontPadding="6" EventNamePadding="6" EntryBorderColor="#cccccc"
-						ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
+			EntryBackgroundColor="background" EventFontPadding="6" EventNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+			ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
 		<widget name="timeline0" pixmap="PLi-FullNightHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
 		<widget name="timeline1" pixmap="PLi-FullNightHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
 		<widget name="timeline2" pixmap="PLi-FullNightHD/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
@@ -769,12 +769,12 @@
 		<panel name="BasicTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
-						scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
-						picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" fieldMargins="15" nonplayableMargins="15"
-						progressBarWidth="60" progressPercentWidth="80" colorEventProgressbarBorder="darkgrey"
-						colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
-						foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
-						colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
+			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
+                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
+			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 		<widget source="session.Event_Now" render="Label" position="30,105" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="center" valign="center">
 		<convert type="EventName">Name</convert>
 		</widget>
@@ -862,13 +862,13 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="30,530" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullNightHD/dvr/position_pointer1.png:720,4">
+		<widget source="session.CurrentService" render="PositionGauge" position="30,535" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullNightHD/dvr/position_pointer1.png:720,4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="37,499" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="37,494" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="502,499" size="240,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="right">
+		<widget source="session.CurrentService" render="Label" position="502,494" size="240,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
 		<widget source="Service" render="Label" position="30,562" size="120,36" foregroundColor="grey" font="Regular;30" halign="left" transparent="1">
@@ -894,7 +894,6 @@
 		<widget source="Service" render="Label" position="30,675" size="720,288" font="Regular;31" valign="center" halign="block">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
-
 		<widget source="Service" render="Label" position="30,975" size="180,34" transparent="1" foregroundColor="grey" font="Regular;30">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
