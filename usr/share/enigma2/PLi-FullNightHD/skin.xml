@@ -365,7 +365,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullNightHD/window/progress.png" transparent="1" borderWidth="1" borderColor="darkgrey">
+		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullNightHD/window/progress.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="660,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
@@ -538,7 +538,7 @@
 		<widget source="Event" render="Label" position="1185,105" size="705,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Progress" pixmap="PLi-FullNightHD/infobar/pbargmepg.png" position="780,147" size="1110,12" transparent="1" borderWidth="2" borderColor="#33333a">
+		<widget source="Event" render="Progress" pixmap="PLi-FullNightHD/infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;28" halign="block">
