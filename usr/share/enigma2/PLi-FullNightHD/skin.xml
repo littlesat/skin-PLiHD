@@ -354,8 +354,8 @@
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
 			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
 			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
-                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
-			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+                        progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
 			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
 			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
@@ -392,8 +392,8 @@
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
 			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
 			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
-                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
-			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+                        progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
 			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
 			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 	</screen>
@@ -800,29 +800,29 @@
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
 			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
 			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
-                        progressPercentWidth="80" colorEventProgressbarBorder="darkgrey" fieldMargins="15" nonplayableMargins="15"
-			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft"
+                        progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
 			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
 			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 		<widget source="session.Event_Now" render="Label" position="30,105" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="center" valign="center">
-		<convert type="EventName">Name</convert>
+			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="30,183" size="90,33" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText">Default</convert>
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="PLi-FullNightHD/window/progress.png" position="150,189" size="360,18" transparent="1" borderWidth="1" borderColor="grey">
-		<convert type="EventTime">Progress</convert>
+		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullNightHD/window/progress.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
+			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="540,183" size="90,33" transparent="1" foregroundColor="foreground" font="Regular;28">
-		<convert type="EventTime">EndTime</convert>
-		<convert type="ClockToText">Default;NoSpace</convert>
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default;NoSpace</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="600,183" size="150,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="30,222" size="720,450" transparent="1" foregroundColor="grey" font="Regular;30" halign="block">
-		<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
 
