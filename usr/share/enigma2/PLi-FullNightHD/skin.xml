@@ -891,6 +891,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<panel name="KeyMenuInfoTemplate"/>
+                <ePixmap pixmap="PLi-FullNightHD/dvr/scale1024.png" position="30,538" size="720,12" zPosition="1"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="30,535" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullNightHD/dvr/position_pointer1.png:720,4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>

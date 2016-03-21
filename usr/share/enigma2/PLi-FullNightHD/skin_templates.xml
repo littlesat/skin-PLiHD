@@ -5,8 +5,7 @@
 		<widget source="session.CurrentService" render="Label" position="c-624,6" size="1248,74" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel backgroundColor="infobarBG" position="35,83" size="1550,20" zPosition="0"/>
-		<ePixmap pixmap="PLi-FullNightHD/dvr/scale1024.png" position="42,90" size="1536,6" zPosition="1"/>
+		<ePixmap pixmap="PLi-FullNightHD/dvr/scale1024.png" position="42,87" size="1536,12" zPosition="1"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="42,84" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullNightHD/dvr/position_pointer1024.png:1536,4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
