@@ -363,14 +363,14 @@
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="30,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"/>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullNightHD/window/progress.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="660,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default;NoSpace</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="30,605" size="720,35" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;32" halign="left">
 			<convert type="EventName">Name</convert>
@@ -809,14 +809,14 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="30,183" size="90,33" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullNightHD/window/progress.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="540,183" size="90,33" transparent="1" foregroundColor="foreground" font="Regular;28">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default;NoSpace</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="600,183" size="150,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
@@ -846,7 +846,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="270,135" size="105,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default;Proportional</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="405,135" size="915,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;36" halign="left">
 			<convert type="EventName">Name</convert>
@@ -857,7 +857,7 @@
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="270,180" size="105,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;36" halign="left">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default;Proportional</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="405,180" size="915,45" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;36" halign="left">
 			<convert type="EventName">Name</convert>
