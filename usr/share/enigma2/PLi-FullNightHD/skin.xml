@@ -1318,11 +1318,11 @@
 	<screen name="RemoteControlTemplate">
 		<panel position="right" size="154,*">
 			<panel position="top" size="*,50"/>
-			<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="top" zPosition="10" size="154,500" alphatest="on"/>
-			<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-			<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-			<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-			<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+			<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="top" zPosition="10" size="154,500" alphatest="blend"/>
+			<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 		</panel>
 	</screen>
 	<screen name="WizardPictureLangTemplate">
@@ -1404,6 +1404,14 @@
 				</convert>
 			</widget>
 		</panel>
+	</screen>
+	<screen name="InstallWizardIpkgUpdater" position="fill" flags="wfNoBorder">
+		<panel name="WizardMarginsTemplate"/>
+		<panel position="top" size="*,100"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
+		<widget source="statusbar" render="Label" position="fill" zPosition="10" halign="center" valign="center" font="Regular;34" transparent="1"/>
 	</screen>
 
 	<!-- ImageWizard -->
