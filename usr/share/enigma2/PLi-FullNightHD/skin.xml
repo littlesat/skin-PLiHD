@@ -387,15 +387,7 @@
 	<!-- Simple channelselection -->
 
 	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<panel name="ButtonTemplate_RGYB"/>
-		<widget name="list" position="780,108" size="1110,900" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
-			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
-			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
-                        progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
-			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
-			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
-			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
+		<panel name="ChannelSelection"/>
 	</screen>
 
 	<!-- EPG Stuff -->

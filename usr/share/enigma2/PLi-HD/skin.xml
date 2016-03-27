@@ -296,9 +296,7 @@
   <!-- Simple channelselection -->
 
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="560,110" size="660,504" itemHeight="28" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <panel name="ChannelSelection"/>
   </screen>
 
   <!-- EPG Stuff -->

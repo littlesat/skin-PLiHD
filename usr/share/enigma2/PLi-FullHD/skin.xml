@@ -377,11 +377,7 @@
   <!-- Simple channelselection -->
 
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="780,105" size="1110,882" itemHeight="38" font="Regular;28" colorServiceDescription="yellow" transparent="1"
-            serviceNumberFont="Regular;36" scrollbarMode="showOnDemand" serviceInfoFont="Regular;33" serviceNameFont="Regular;36" serviceItemHeight="42"
-            foregroundColorServiceNotAvail="notavailable" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="notavailable"/>
+    <panel name="ChannelSelection"/>
   </screen>
 
   <!-- EPG Stuff -->
