@@ -461,15 +461,8 @@
 		<widget name="turnSpeed" position="75,98" size="50,16" zPosition="1" font="Regular;14" halign="right" borderWidth="1" transparent="1"/>
 	</screen>
 
-	<!-- PermanentClock -->
 
-	<screen name="PermanentClockScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;39" borderColor="black" valign="center" halign="center">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	</screen>
-
- <!-- AnalogClock -->
+	<!-- AnalogClock -->
 
 	<screen name="AnalogClockSetup" position="60,c-280" size="615,559" title="Setup AnalogClock" flags="wfNoBorder">
 		<widget name="config" position="15,15" size="585,494" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
