@@ -890,6 +890,7 @@
     <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="timerlist" position="530,110" size="690,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="description" position="85,390" size="435,226" transparent="1" font="Regular;20" halign="block"/>
   </screen>
 
   <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
