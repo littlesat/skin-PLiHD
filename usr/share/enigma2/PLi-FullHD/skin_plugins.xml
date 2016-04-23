@@ -1650,7 +1650,7 @@
     <panel name="KeyExit"/>
     <panel name="KeyOkTemplate"/>
   </screen>
-  <screen name="PermanentClockScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="PermanentClockNewScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
