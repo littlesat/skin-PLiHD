@@ -183,6 +183,12 @@
     <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
   </screen>
 
+  <!-- Buffer Indicator -->
+
+  <screen name="BufferIndicator" title="" position="c-150,45" size="300,53" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
+    <widget name="status" position="0,0" size="300,53" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="center"/>
+  </screen>
+
   <!-- JobView -->
 
   <screen name="JobView"  position="fill" title="Job View" flags="wfNoBorder">
