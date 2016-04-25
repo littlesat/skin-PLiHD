@@ -222,6 +222,35 @@
     <panel name="InfoBarTemplate"/>
   </screen>
 
+  <screen name="SecondInfoBarSimple" title="Second InfoBar" position="fill" flags="wfNoBorder">
+    <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
+    <widget source="session.Event_Now" render="Label" position="30,20" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
+      <convert type="EventName">NameNow</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="30,68" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="645,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="EventName">SmallRating</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular;30" halign="block" zPosition="1" transparent="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="975,20" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
+      <convert type="EventName">NameNext</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="975,68" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1590,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="EventName">SmallRating</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular;30" halign="block" zPosition="1" transparent="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <panel name="InfoBarTemplate"/>
+  </screen>
+  
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
     <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
     <widget source="session.CurrentService" render="Label" position="30,20" size="1440,135" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="top" halign="left">
