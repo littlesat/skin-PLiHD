@@ -69,7 +69,7 @@
 
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
-		<widget source="title" render="Label" position="30,7" size="1860,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<widget source="menu_path_compressed" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>
 		<widget source="menu" render="Listbox" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
