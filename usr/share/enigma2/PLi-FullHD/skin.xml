@@ -2296,6 +2296,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
  </screen>
 
+  <!-- MenuSort -->
+
+  <screen name="MenuSort" position="fill" title="Main menu" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget source="title" render="Label" position="780,100" size="1100,50" font="Regular;33"/>
+    <widget source="menu" render="Listbox" position="780,190" size="1110,805" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand">
+      <convert type="StringList"/>
+    </widget>
+  </screen>
+
 	<!-- Standby -->
 
 	<screen name="Standby" position="fill" flags="wfNoBorder">
