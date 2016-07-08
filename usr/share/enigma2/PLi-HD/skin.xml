@@ -525,6 +525,11 @@
     <panel name="MenuTemplate"/>
   </screen>
 
+  <screen flags="wfNoBorder" name="MenuSort" position="fill">
+    <panel name="MenuTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+  </screen>
+
   <screen flags="wfNoBorder" name="menu_setup" position="fill">
     <panel name="MenuTemplate"/>
   </screen>
