@@ -1878,6 +1878,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="menu_path"/>
 		<widget source="languages" render="Listbox" position="780,99" size="1110,918" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 	{"template": [
