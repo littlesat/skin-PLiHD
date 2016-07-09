@@ -449,7 +449,7 @@
 
 	<screen name="Dishpip" flags="wfNoBorder" position="30,90" size="130,202" title="DishPiP" zPosition="1" backgroundColor="transparent" >
 		<widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="blend">
-			<convert type="ConditionalShowHide"></convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<eLabel text="PiP" position="27,40" size="40,25" font="Regular;18" foregroundColor="#909090" backgroundColor="#909090" transparent="1" zPosition="1"/>
 		<widget name="turnTime" position="45,5" size="80,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" transparent="1"/>

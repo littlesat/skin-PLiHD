@@ -174,12 +174,12 @@
 	<!-- Volume -->
 
 	<screen name="Volume" title="Volume" position="0,360" size="30,330" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-		<widget name="Volume" pixmap="PLi-FullNightHD/infobar/volumeslider.png" position="0,3" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
-		<ePixmap pixmap="PLi-FullNightHD/infobar/vol_box.png" position="0,303" size="30,24" alphatest="on" zPosition="4"></ePixmap>
+		<widget name="Volume" pixmap="PLi-FullNightHD/infobar/volumeslider.png" position="0,3" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="PLi-FullNightHD/infobar/vol_box.png" position="0,303" size="30,24" alphatest="on" zPosition="4"/>
 	</screen>
 	
 	<screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-		<ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
+		<ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
 	</screen>
 
 	<!-- Buffer Indicator -->
@@ -399,7 +399,7 @@
 		<panel name="KeyInfoTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-			<convert type="TransponderInfo"></convert>
+			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
 	<convert type="EventName">Name</convert>
@@ -435,7 +435,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;30" halign="block"/>
 		<widget source="session.CurrentService" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-			<convert type="TransponderInfo"></convert>
+			<convert type="TransponderInfo"/>
 		</widget>
 		<widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
 		<widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left"/>
