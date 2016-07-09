@@ -732,6 +732,7 @@
 
 	<screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="menu_path"/>
 		<panel name="ButtonTemplate_RG"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 		<widget name="choosen" position="0,570" size="750,360" scrollbarMode="showOnDemand"/>
