@@ -1039,7 +1039,6 @@
     <ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="20,689" size="35,25"/>
     <ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="55,689" size="35,25"/>
     <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="90,689" size="35,25"/>
-    <eLabel text="Plugin browser" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="list" position="520,70" size="740,600" font="Regular;25" scrollbarMode="showOnDemand"/>
   </screen>
 
