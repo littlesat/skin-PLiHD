@@ -67,9 +67,13 @@
 		<ePixmap pixmap="PLi-FullNightHD/logos/pli.png" position="30,967" size="180,51" alphatest="on"/>
 	</screen>
 
+	<screen name="menu_path">
+		<widget source="menu_path_compressed" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>	
+	</screen>
+
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
-		<widget source="menu_path_compressed" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>
+		<panel name="menu_path"/>
 		<widget source="menu" render="Listbox" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
