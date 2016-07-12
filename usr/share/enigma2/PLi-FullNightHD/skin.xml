@@ -623,7 +623,6 @@
 
 	<screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<panel name="ButtonTemplate_RGS"/>
 		<!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="75,615" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
@@ -707,7 +706,6 @@
 	<screen name="RecordPathsSettings" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGS"/>
-		<eLabel text="Recording paths" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
@@ -715,7 +713,6 @@
 
 	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<panel name="ButtonTemplate_RGB"/>
 		<widget name="config" position="780,105" size="1110,150" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="780,315" size="1110,637" font="Fixed;27"/>
@@ -733,7 +730,6 @@
 
 	<screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<panel name="ButtonTemplate_RG"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 		<widget name="choosen" position="0,570" size="750,360" scrollbarMode="showOnDemand"/>
@@ -773,7 +769,6 @@
 	<!-- VideoMode -->
 
 	<screen name="VideoMode" title="VideoMode" position="127,67" size="600,75" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="menu_path"/>
 		<widget name="videomode" position="0,0" size="570,60" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left"/>
 	</screen>
 
@@ -1039,7 +1034,6 @@
 
 	<screen name="TimerEntry" position="fill" title="Timer entry" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<!--panel name="KeyMenuInfoTemplate"/-->
 		<panel name="CancelOKTemplate"/>
 		<panel name="ButtonTemplate_YB"/>
 		<widget name="config" position="780,105" size="1110,765" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
@@ -1082,7 +1076,6 @@
 
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<panel name="ButtonTemplateRG"/>
 		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
 		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
@@ -1092,7 +1085,6 @@
 
 	<screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<widget name="text" position="780,105" size="1110,75" zPosition="-1" transparent="1" font="Regular;32" valign="center" halign="center"/>
 		<widget name="list" position="780,100" size="1110,912" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
 	</screen>
@@ -1730,13 +1722,12 @@
 
 	<screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<eLabel text="Select HDD" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="hddlist" position="780,100" itemHeight="38" font="Regular;28" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- Harddisk setup -->
 
-	<screen name="HarddiskSetup" title="Harddisk" position="fill" flags="wfNoBorder">
+	<screen name="HarddiskSetup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonRed"/>
 		<widget name="model" position="780,105" size="1110,37" font="Regular;36"/>
@@ -1879,7 +1870,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<widget source="languages" render="Listbox" position="780,99" size="1110,918" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 	{"template": [
@@ -2275,7 +2265,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="ParentalControlSetup" position="fill" title="Parental control setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="menu_path"/>
 		<panel name="ButtonTemplate_RGS"/>
 		<widget name="config" position="780,105" size="1110,722" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
