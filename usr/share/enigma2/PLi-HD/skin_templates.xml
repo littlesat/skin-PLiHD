@@ -48,7 +48,7 @@
   </screen>
 
   <screen name="TextTemplate">
-    <widget name="text" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget name="text" position="85,370" size="417,253" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25"/>
   </screen>
 
   <screen name="SelectionTemplate">
