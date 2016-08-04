@@ -88,6 +88,7 @@
     <parameter name="PicturePlayerThumb" value="30,285,45,300,30,25"/>
     <parameter name="PlayListName" value="38,2,1000,34"/>
     <parameter name="PlayListIcon" value="7,7,24,24"/>
+    <parameter name="SHOUTcastListItem" value="30,27,35,96,35,33,60,32"/>
   </parameters>
 
   <!-- Colors -->
