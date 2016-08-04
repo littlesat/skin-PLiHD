@@ -41,56 +41,6 @@
     <alias name="PlayList" font="Regular" size="28" height="38"/>
   </fonts>
 
-  <parameters>
-    <parameter name="FileListName" value="68,4,1000,34"/>
-    <parameter name="FileListIcon" value="7,4,52,37"/>
-    <parameter name="FileListMultiName" value="90,3,1000,32"/>
-    <parameter name="FileListMultiIcon" value="45, 4, 30, 30"/>
-    <parameter name="FileListMultiLock" value="2,0,36,36"/>
-    <parameter name="ChoicelistDash" value="0,3,1000,30"/>
-    <parameter name="ChoicelistName" value="68,3,1000,30"/>
-    <parameter name="ChoicelistIcon" value="7,0,52,38"/>
-    <parameter name="PluginBrowserName" value="180,8,38"/>
-    <parameter name="PluginBrowserDescr" value="180,42,25"/>
-    <parameter name="PluginBrowserIcon" value="15,8,150,60"/>
-    <parameter name="PluginBrowserDownloadName" value="120,8,38"/>
-    <parameter name="PluginBrowserDownloadDescr" value="120,42,25"/>
-    <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76"/>
-    <parameter name="ServiceInfo" value="0,0,450,50"/>
-    <parameter name="ServiceInfoLeft" value="0,0,450,45"/>
-    <parameter name="ServiceInfoRight" value="450,0,1000,45"/>
-    <parameter name="SelectionListDescr" value="45,3,1000,32"/>
-    <parameter name="SelectionListLock" value="0,2,36,36"/>
-    <parameter name="ConfigListSeperator" value="300"/>
-    <parameter name="VirtualKeyboard" value="68,68"/>
-    <parameter name="PartnerBoxEntryListName" value="8,2,225,38"/>
-    <parameter name="PartnerBoxEntryListIP"   value="180,2,225,38"/>
-    <parameter name="PartnerBoxEntryListPort" value="405,2,150,38"/>
-    <parameter name="PartnerBoxEntryListType" value="615,2,150,38"/>
-    <parameter name="PartnerBoxTimerServicename" value="0,0,45"/>
-    <parameter name="PartnerBoxTimerName" value="0,42,30"/>
-    <parameter name="PartnerBoxE1TimerTime" value="0,78,255,30"/>
-    <parameter name="PartnerBoxE1TimerState" value="255,78,255,30"/>
-    <parameter name="PartnerBoxE2TimerTime" value="0,78,225,30"/>
-    <parameter name="PartnerBoxE2TimerState" value="225,78,225,30"/>
-    <parameter name="PartnerBoxE2TimerIcon" value="1050,8,20,20"/>
-    <parameter name="PartnerBoxE2TimerIconRepeat" value="1050,38,20,20"/>
-    <parameter name="PartnerBoxBouquetListName" value="0,0,45"/>
-    <parameter name="PartnerBoxChannelListName" value="0,0,45"/>
-    <parameter name="PartnerBoxChannelListTitle" value="0,42,30"/>
-    <parameter name="PartnerBoxChannelListTime" value="0,78,225,30"/>
-    <parameter name="HelpMenuListHlp" value="0,0,900,42"/>
-    <parameter name="HelpMenuListExtHlp0" value="0,0,900,39"/>
-    <parameter name="HelpMenuListExtHlp1" value="0,42,900,30"/>
-    <parameter name="AboutHddSplit" value="1"/>
-    <parameter name="DreamexplorerName" value="62,0,1200,38"/>
-    <parameter name="DreamexplorerIcon" value="15,4,30,30"/>
-    <parameter name="PicturePlayerThumb" value="30,285,45,300,30,25"/>
-    <parameter name="PlayListName" value="38,2,1000,34"/>
-    <parameter name="PlayListIcon" value="7,7,24,24"/>
-    <parameter name="SHOUTcastListItem" value="30,27,35,96,35,33,60,32"/>
-  </parameters>
-
   <!-- Colors -->
 
   <colors>
