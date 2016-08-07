@@ -1671,7 +1671,7 @@
 
  <!-- RefreshBouquet -->
 
-	<screen name="refreshBouquet" position="fill" title="Refresh Bouquet">
+	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="source_text" position="780,105" zPosition="2" size="310,45" itemHeight="38" font="Regular;32" valign="center" halign="left" foregroundColor="yellow" />
@@ -1694,9 +1694,9 @@
 	<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
 
-	<screen name="refreshBouquetDisplayServices" position="fill" title="Refresh Bouquet - founded">
+	<screen name="refreshBouquetDisplayServices" position="fill" title="RefreshBouquet - founded">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonTemplate_R"/>
-		<widget name="services" position="780,105" zPosition="2" size="1110,900" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" foregroundColor="white" />
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="services" position="780,105" zPosition="2" size="1110,912" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" foregroundColor="white" />
 	</screen>
 </skin>
