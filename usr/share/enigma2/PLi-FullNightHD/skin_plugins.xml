@@ -1699,4 +1699,14 @@
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="services" position="780,105" zPosition="2" size="1110,912" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" foregroundColor="white" />
 	</screen>
+
+	<screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="source" position="780,105" zPosition="2" size="540,45"  font="Regular;33" foregroundColor="white" />
+		<widget name="target" position="1340,105" zPosition="2" size="350,45"  font="Regular;33" foregroundColor="white" />
+		<widget name="sources" position="780,170" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+		<widget name="targets" position="1340,170" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+		<widget name="info" position="30,562" size="720,180"  itemHeight="45" font="Regular;32" foregroundColor="white" />
+	</screen>
 </skin>
