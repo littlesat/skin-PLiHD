@@ -1653,4 +1653,13 @@
     <widget name="services" position="520,70" zPosition="1" size="740,600" split="1" dividechar=":" colposition="330" itemHeight="25" font="Regular;22" />
   </screen>
 
+  <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="source" position="520,70" zPosition="2" size="360,30"  font="Regular;25" foregroundColor="white" />
+    <widget name="target" position="900,70" zPosition="2" size="360,30"  font="Regular;25" foregroundColor="white" />
+    <widget name="sources" position="520,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="targets" position="900,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="info" position="20,380" size="480,100"  itemHeight="25" font="Regular;22" foregroundColor="white" />
+  </screen>
 </skin>
