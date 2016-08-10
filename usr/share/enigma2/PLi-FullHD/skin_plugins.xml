@@ -1699,6 +1699,9 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="services" position="780,105" zPosition="2" size="1110,912" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" />
+    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
   </screen>
 
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
