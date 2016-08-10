@@ -1660,6 +1660,9 @@
     <widget name="target" position="900,70" zPosition="2" size="360,30"  font="Regular;25" foregroundColor="white" />
     <widget name="sources" position="520,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
     <widget name="targets" position="900,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
-    <widget name="info" position="20,380" size="480,100"  itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget name="info" position="20,440" size="480,100"  itemHeight="25" font="Regular;22" foregroundColor="white" />
   </screen>
 </skin>
