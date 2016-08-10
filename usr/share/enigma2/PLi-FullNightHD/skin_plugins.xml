@@ -1675,16 +1675,16 @@
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="source_text" position="780,105" zPosition="2" size="310,45" itemHeight="38" font="Regular;32" valign="center" halign="left" foregroundColor="yellow" />
-		<widget name="source_name" position="1100,105" zPosition="2" size="780,45" itemHeight="38" font="Regular;32" valign="center" halign="left" />
+		<widget name="source_name" position="1110,105" zPosition="2" size="780,45" itemHeight="38" font="Regular;32" valign="center" halign="left" />
 
 		<widget name="target_text" position="780,150" zPosition="2" size="310,45" itemHeight="38" font="Regular;32" valign="center" halign="left" foregroundColor="blue" />
-		<widget name="target_name" position="1100,150" zPosition="2" size="780,45" itemHeight="38" font="Regular;32" valign="center" halign="left" />
+		<widget name="target_name" position="1110,150" zPosition="2" size="780,45" itemHeight="38" font="Regular;32" valign="center" halign="left" />
 
-		<widget source="config" render="Listbox" position="780,250" size="1100,684" scrollbarMode="showOnDemand">
+		<widget source="config" render="Listbox" position="780,250" size="1110,684" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
-						MultiContentEntryText(pos = (0, 0), size = (1100, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (0, 0), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
 						],
 				"fonts": [gFont("Regular", 28)],
 				"itemHeight": 38
@@ -1704,9 +1704,12 @@
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="source" position="780,105" zPosition="2" size="540,45"  font="Regular;33" foregroundColor="white" />
-		<widget name="target" position="1340,105" zPosition="2" size="350,45"  font="Regular;33" foregroundColor="white" />
+		<widget name="target" position="1350,105" zPosition="2" size="350,45"  font="Regular;33" foregroundColor="white" />
 		<widget name="sources" position="780,170" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
-		<widget name="targets" position="1340,170" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
-		<widget name="info" position="30,562" size="720,180"  itemHeight="45" font="Regular;32" foregroundColor="white" />
+		<widget name="targets" position="1350,170" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"/>
+		</widget>
+		<widget name="info" position="30,700" size="720,180"  itemHeight="45" font="Regular;32" foregroundColor="white" />
 	</screen>
 </skin>
