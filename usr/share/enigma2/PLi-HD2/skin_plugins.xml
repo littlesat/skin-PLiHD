@@ -1601,15 +1601,25 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="services" position="530,80" zPosition="1" size="710,575" split="1" dividechar=":" colposition="320" itemHeight="25" font="Regular;20" />
+    <widget name="info" position="85,400" size="462,200"  itemHeight="25" font="Regular;20" foregroundColor="white" />
+  </screen>
+
+  <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22" />
+    <widget name="info" position="85,400" size="462,200"  itemHeight="25" font="Regular;20" foregroundColor="white" />
   </screen>
 
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="source" position="530,80" zPosition="2" size="345,30"  font="Regular;25" foregroundColor="white" />
-    <widget name="target" position="895,80" zPosition="2" size="345,30"  font="Regular;25" foregroundColor="white" />
-    <widget name="sources" position="530,120" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
-    <widget name="targets" position="895,120" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
-    <widget name="info" position="40,400" size="462,100"  itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="source" position="530,70" zPosition="2" size="345,30"  font="Regular;25" foregroundColor="white" />
+    <widget name="target" position="895,70" zPosition="2" size="345,30"  font="Regular;25" foregroundColor="white" />
+    <widget name="source_label" position="530,100" zPosition="2" size="345,20"  font="Regular;18" foregroundColor="yellow" />
+    <widget name="target_label" position="895,100" zPosition="2" size="345,20"  font="Regular;18" foregroundColor="blue" />
+    <widget name="sources" position="530,122" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="targets" position="895,122" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="info" position="40,400" size="462,200"  itemHeight="25" font="Regular;22" foregroundColor="white" />
   </screen>
 </skin>
