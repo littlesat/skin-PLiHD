@@ -1597,13 +1597,6 @@
     <widget name="info" position="530,650" size="710,25" font="Regular;21" foregroundColor="foreground" halign="center"/>
   </screen>
 
-  <screen name="refreshBouquetDisplayServices" position="fill" title="RefreshBouquet - founded">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
-    <widget name="services" position="530,80" zPosition="1" size="710,575" split="1" dividechar=":" colposition="320" itemHeight="25" font="Regular;20" />
-    <widget name="info" position="85,400" size="462,200"  itemHeight="25" font="Regular;20" foregroundColor="white" />
-  </screen>
-
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>

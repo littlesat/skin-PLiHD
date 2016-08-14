@@ -1694,17 +1694,10 @@
 	<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
 
-	<screen name="refreshBouquetDisplayServices" position="fill" title="RefreshBouquet - founded">
-		<panel name="PigTemplate"/>
-		<panel name="ButtonTemplate_RGYB"/>
-		<widget name="services" position="780,105" zPosition="2" size="1110,912" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" foregroundColor="white" />
-		<widget name="info" position="30,630" size="720,270" itemHeight="45" font="Regular;28" foregroundColor="white" />
-	</screen>
-
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
-		<widget name="services" position="780,105" zPosition="2" size="1110,912" split="1" dividechar=":" colposition="500" itemHeight="38" font="Regular;28" />
+		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28" />
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
