@@ -1684,7 +1684,7 @@
 	<convert type="TemplatedMultiContent">
 		{
                 "template": [
-			      MultiContentEntryText(pos = (0, 0), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
+			      MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
 			      ],
                 "fonts": [gFont("Regular", 28)],
                 "itemHeight": 38

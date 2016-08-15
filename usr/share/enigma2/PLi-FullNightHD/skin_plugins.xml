@@ -1684,7 +1684,7 @@
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
-						MultiContentEntryText(pos = (0, 0), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
 						],
 				"fonts": [gFont("Regular", 28)],
 				"itemHeight": 38
@@ -1697,7 +1697,7 @@
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
-		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28" />
+		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
