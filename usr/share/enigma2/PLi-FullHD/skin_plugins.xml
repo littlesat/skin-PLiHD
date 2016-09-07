@@ -1529,12 +1529,12 @@
   <screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget name="config" position="780,105" size="1110,525" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,608" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" zPosition="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,945" size="1920,135" zPosition="-1"/>
+    <ePixmap alphatest="off" pixmap="PLi-FullHD/infobar/bl80.png"  position="0,945" size="1920,135" zPosition="-1"/>
     <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="0,945" size="1920,3"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="780,952" size="1110,75" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="#20000000" zPosition="1"/>
