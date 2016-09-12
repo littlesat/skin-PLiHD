@@ -2282,13 +2282,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<!-- Common interface -->
-
 	<screen name="MMIDialog" position="fill">
 		<panel name="PigTemplate"/>
-		<widget name="title" position="780,105" size="430,35" font="Regular;32" />
-		<widget name="subtitle" position="780,145" size="430,35" font="Regular;32" />
-		<widget name="entries" position="780,185" size="430,150" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand" />
-		<widget name="bottom" position="780,225" size="430,35" font="Regular;32" />
+		<widget name="title" position="780,105" size="900,35" font="Regular;32" />
+		<widget name="subtitle" position="780,145" size="900,35" font="Regular;32" />
+		<widget name="entries" position="780,185" size="900,385" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand" />
+		<widget name="bottom" position="780,575" size="900,35" font="Regular;32" />
 	</screen>
 	<!-- Common interface - selection -->
 	<screen name="CiSelection" position="fill" title="Common Interface">
