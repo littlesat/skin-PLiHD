@@ -1811,6 +1811,12 @@
 		<panel name="PigTemplate"/>
 		<widget name="text" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
-	
+
+	<!-- ## YoutubeTV ##-->
+	<screen name="YoutubeTVSettings" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
 
 </skin>
