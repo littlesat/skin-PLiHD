@@ -1835,4 +1835,12 @@
 		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
 
+	<!-- ## LEDBrightness ## -->
+	<screen name="LEDBrightnessSetup" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="current_entry" position="7,530" size="715,475" font="Regular;33" foregroundColor="selectedFG" valign="center" halign="center"/>
+	</screen>
+
 </skin>
