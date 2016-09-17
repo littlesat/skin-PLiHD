@@ -1628,20 +1628,6 @@
 		<widget name="text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 
- <!-- Het weer -->
-
-	<screen name="Weermenu" position="fill" title="Het weer" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
-		<widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
-	</screen>
-	<screen name="secondmenu" position="fill" title="Het weer" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
-		<widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
-		<widget name="Info" position="7,540" size="715,200" font="Regular;33" zPosition="2" foregroundColor="secondFG" valign="center" halign="center"/>
-	</screen>
-
  <!-- PermanentClock -->
 
 	<screen name="PermanentClockMenu" position="fill" flags="wfNoBorder">
@@ -1718,4 +1704,32 @@
 		</widget>
 		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
 	</screen>
+
+	<!-- ## Het Weer ##-->
+	<screen name="weatherMenu" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="titles" position="22,15" size="1500,78" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<panel name="ButtonTemplate_RG"/>
+		<widget name="list" position="780,123" size="1132,874" font="Regular;35" itemHeight="50" foregroundColor="grey"/>
+		<widget name="mess1" position="5,530" size="150,475" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+	</screen>
+	<screen name="weatherMenuSub1" position="fill" flags="wfNoBorder" title="Weer info">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_R"/>
+		<widget name="titles" position="22,15" size="1500,78" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<widget name="list" position="780,123" size="1132,874" font="Regular;35" itemHeight="50" foregroundColor="grey"/>
+	</screen>
+	<screen name="favoritesscreen" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGY"/>
+		<widget name="favor" position="22,15" size="1500,78" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<widget name="plaatsn" position="735,120" size="1177,50" font="Regular;33" foregroundColor="secondFG" halign="center"/>
+		<widget name="list" position="755,175" size="1157,855" font="Regular;33" itemHeight="45" foregroundColor="grey"/>
+	</screen>
+	<screen name="View_Slideshow" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget name="pic" position="center,center" size="1080, 1005" zPosition="2" alphatest="on" />
+		<widget name="file" position="1,1" size="1, 1"  />
+	</screen>
+
 </skin>
