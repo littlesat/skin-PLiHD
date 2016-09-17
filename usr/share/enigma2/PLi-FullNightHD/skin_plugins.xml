@@ -1819,4 +1819,11 @@
 		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 
+	<!-- ## RemoteControl Code ## -->
+	<screen name="RemoteControlCode" position="fill" flags="wfNoBorder" title="Remote Control System Code Setting">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
 </skin>
