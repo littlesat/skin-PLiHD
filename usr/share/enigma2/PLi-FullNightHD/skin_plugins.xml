@@ -1843,4 +1843,16 @@
 		<widget name="current_entry" position="7,530" size="715,475" font="Regular;33" foregroundColor="selectedFG" valign="center" halign="center"/>
 	</screen>
 
+	<!-- ## History ZAP ## -->
+	<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonRed"/>
+		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonGreen"/>
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonBlue"/>
+		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
 </skin>
