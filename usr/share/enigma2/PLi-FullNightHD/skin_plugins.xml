@@ -1799,5 +1799,18 @@
 		<widget source="TextTest6" render="Label" position="907,435" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
 		<widget source="TextTest7" render="Label" position="907,480" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
 	</screen>
+
+ <!-- ## System time ##-->
+	<screen name="SystemTimeSetupScreen" position="fill" flags="wfNoBorder" title="Setup System Time">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="MyConsole" position="fill" flags="wfNoBorder" title="Command execution...">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
 	
+
 </skin>
