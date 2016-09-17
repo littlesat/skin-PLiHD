@@ -1630,12 +1630,12 @@
 
  <!-- Het weer -->
 
-	<screen name="Weermenu" position="fill" title="Timer Overview" flags="wfNoBorder">
+	<screen name="Weermenu" position="fill" title="Het weer" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 		<widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
-	<screen name="secondmenu" position="fill" title="Timer Overview" flags="wfNoBorder">
+	<screen name="secondmenu" position="fill" title="Het weer" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" Font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 		<widget name="Text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
