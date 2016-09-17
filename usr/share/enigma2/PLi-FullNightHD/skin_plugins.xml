@@ -1732,4 +1732,127 @@
 		<widget name="file" position="1,1" size="1, 1"  />
 	</screen>
 
+ <!-- ## FanControl 2 ##-->
+	<screen name="FanControl2SpezialSetup" position="fill" flags="wfNoBorder" title="Fan Control 2 - Setup">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="FanControl2Plugin" position="fill" flags="wfNoBorder" title="Fan Control 2">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonRed"/>
+		<widget source="red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<panel name="ButtonGreen"/>
+		<widget source="green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<panel name="ButtonYellow"/>
+		<widget source="yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<panel name="ButtonBlue"/>
+		<widget source="blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget source="Version" render="Label" position="200,800" size="800,50" font="Regular;36" foregroundColor="secondFG"/>
+		<widget name="config" position="780,123" size="1132,360" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
+		<widget source="introduction" render="Label" position="780,500" size="1132,45" font="Regular;31" halign="center" valign="center" foregroundColor="yellow" zPosition="10"/>
+		<widget source="TxtTemp" render="Label" position="780,622" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
+		<widget source="TxtZielRPM" render="Label" position="780,675" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
+		<widget source="TxtRPM" render="Label" position="780,727" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
+		<widget source="TxtVLT" render="Label" position="780,780" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
+		<widget source="TxtPWM" render="Label" position="780,847" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
+		<widget source="PixTemp" render="Progress" position="1110,637" size="562,7" borderWidth="1"/>
+		<widget source="PixZielRPM" render="Progress" position="1110,690" size="562,7" borderWidth="1"/>
+		<widget source="PixRPM" render="Progress" position="1110,742" size="562,7" borderWidth="1"/>
+		<widget source="PixVLT" render="Progress" position="1110,795" size="562,7" borderWidth="1"/>
+		<widget source="PixPWM" render="Progress" position="1110,862" size="562,7" borderWidth="1"/>
+		</screen>
+	<screen name="FanControl2Monitor" position="fill" flags="wfNoBorder" title="Fan Control 2 - Monitor">
+		<panel name="PigTemplate"/>
+		<widget source="TxtTemp0" render="Label" position="832,270" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp1" render="Label" position="832,315" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp2" render="Label" position="832,360" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp3" render="Label" position="832,405" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp4" render="Label" position="832,450" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp5" render="Label" position="832,495" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp6" render="Label" position="832,540" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtTemp7" render="Label" position="832,585" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtHDD" render="Label" position="757,630" size="450,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="TxtFan" render="Label" position="832,675" size="375,37" zPosition="1" font="Regular;33" halign="right" valign="center" foregroundColor="grey"/>
+		<widget name="TxtMinTemp" position="1230,225" size="75,37" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TxtFC2Temp" render="Label" position="1440,210" size="75,45" zPosition="1" font="Regular;37" halign="center" valign="center" foregroundColor="yellow"/>
+		<widget name="TxtMaxTemp" position="1650,225" size="75,37" zPosition="1" font="Regular;30" halign="right" valign="center" foregroundColor="grey"/>
+		<widget source="ProTemp0" render="Progress" position="1237,285" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp1" render="Progress" position="1237,330" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp2" render="Progress" position="1237,375" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp3" render="Progress" position="1237,420" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp4" render="Progress" position="1237,465" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp5" render="Progress" position="1237,510" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp6" render="Progress" position="1237,555" size="487,7" borderWidth="1"/>
+		<widget source="ProTemp7" render="Progress" position="1237,600" size="487,7" borderWidth="1"/>
+		<widget source="ProHDD" render="Progress" position="1237,645" size="487,7" borderWidth="1"/>
+		<widget source="ProFan" render="Progress" position="1237,690" size="487,7" borderWidth="1"/>
+	</screen>
+	<screen name="FanControl2Test" position="fill" flags="wfNoBorder" title="Fan Control 2 - Test">
+		<panel name="PigTemplate"/>
+		<widget source="TextTest1" render="Label" position="907,180" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest2" render="Label" position="907,225" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest3" render="Label" position="907,270" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest4" render="Label" position="907,345" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest5" render="Label" position="907,390" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest6" render="Label" position="907,435" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+		<widget source="TextTest7" render="Label" position="907,480" size="930,45" zPosition="10" font="Regular;30" halign="left" valign="center" foregroundColor="grey"/>
+	</screen>
+
+ <!-- ## System time ##-->
+	<screen name="SystemTimeSetupScreen" position="fill" flags="wfNoBorder" title="Setup System Time">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="MyConsole" position="fill" flags="wfNoBorder" title="Command execution...">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<!-- ## YoutubeTV ##-->
+	<screen name="YoutubeTVSettings" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+
+	<!-- ## RemoteControl Code ## -->
+	<screen name="RemoteControlCode" position="fill" flags="wfNoBorder" title="Remote Control System Code Setting">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<!-- ## NFSServer ## -->
+	<screen name="NFSServerSetup" position="fill" flags="wfNoBorder" title="NFS server setup">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplateRG"/>
+		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<!-- ## LEDBrightness ## -->
+	<screen name="LEDBrightnessSetup" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGS"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="current_entry" position="7,530" size="715,475" font="Regular;33" foregroundColor="selectedFG" valign="center" halign="center"/>
+	</screen>
+
+	<!-- ## History ZAP ## -->
+	<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonRed"/>
+		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonGreen"/>
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonBlue"/>
+		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
 </skin>
