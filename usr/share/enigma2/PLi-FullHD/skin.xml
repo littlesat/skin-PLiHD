@@ -2021,7 +2021,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <eLabel text="AC3 Lip Sync Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget name="config" scrollbarMode="showOnDemand" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1"/>
     <widget name="PluginInfo" position="30,570" size="720,300" zPosition="4" font="Regular;27" foregroundColor="uncccccc"/>
   </screen>
