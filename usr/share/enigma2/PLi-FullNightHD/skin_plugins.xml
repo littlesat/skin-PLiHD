@@ -1553,7 +1553,7 @@
 	<screen name="ServerEditor" position="fill" title="FTP Server Editor" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYBS"/>
-		<widget name="config" position="780,105" size="1110,225" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
  <!-- EPG Refresh	-->
