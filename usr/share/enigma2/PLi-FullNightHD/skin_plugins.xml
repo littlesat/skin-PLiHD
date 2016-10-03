@@ -1720,16 +1720,6 @@
 		<widget name="weerchat" position="780,123" size="1132,874" font="Regular;35" itemHeight="50" foregroundColor="grey"/>
 		<widget name="PAG" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
-
-<!--
-	<screen name="weertext" position="fill" flags="wfNoBorder" title="weerbericht">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<widget name="weerchat" position="755,120" size="1157,855" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<widget name="PAG" position="1762,1020" size="100,45" font="Regular;33"/>
-	</screen>-->
-	
-
 	<screen name="weatherMenuSub1" position="fill" flags="wfNoBorder" title="Weer info">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_R"/>
