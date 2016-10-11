@@ -1885,4 +1885,42 @@
 		<widget source="help" render="Label" position="7,600" size="715,120" font="Regular;30" foregroundColor="secondFG"/>
 	</screen>
 
+	<!-- ## TMBD ##-->
+	<screen name="TMBD" position="fill" flags="wfNoBorder">
+		<panel name="SelectionTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget name="title" position="7,570" size="715,45" font="RegularSmall;30" foregroundColor="secondFG" halign="center"/>
+		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="223,615" size="315,31" zPosition="2" alphatest="blend"/>
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="223,615" size="315,31" zPosition="3" transparent="1"/>
+		<widget name="ratinglabel" position="7,650" size="715,75" font="RegularSmall;30" foregroundColor="grey" halign="center"/>
+		<widget name="voteslabel" position="7,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
+		<widget name="statusbar" position="7,950" size="715,45" font="Regular;30" halign="center" valign="bottom"/>
+		<widget name="poster" position="750,120" size="165,270" alphatest="blend"/>
+		<widget name="detailslabel" position="920,120" size="995,45" font="Regular;30" halign="center" foregroundColor="secondFG"/>
+		<widget name="menu" position="920,170" size="995,405" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
+		<widget name="castlabel" position="735,580" size="1177,395" font="Regular;33" foregroundColor="grey"/>
+		<widget name="extralabel" position="920,120" size="995,455" font="Regular;30" foregroundColor="grey"/>
+	</screen>
+	<screen name="TMBDSettings" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RG"/>
+		<widget name="config" position="780,123" size="1132,874" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
+	</screen>	
+	<screen name="TmbdYTTrailerList" position="fill" flags="wfNoBorder" title="YTTrailer List">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="780,123" size="1132,874" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent" >
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(150,108), png=3), # Thumbnail
+					MultiContentEntryText(pos=(160,1), size=(800,100), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
+					"fonts": [gFont("Regular",30)],
+				"itemHeight": 108}
+			</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" size="150,108" /> # Thumbnail size in list
+		<eLabel text="'OK'= Play trailer" position="652,1030" size="330,39" font="RegularSmall;33" halign="left" zPosition="1"/>
+	</screen>
+
 </skin>
