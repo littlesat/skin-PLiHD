@@ -1862,4 +1862,27 @@
 		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
 
+	<!-- ## IMDB Plugin ## -->
+	<screen name="IMDB" position="fill" flags="wfNoBorder" title="Internet Movie Database Details Plugin">
+		<panel name="SelectionTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="223,570" size="315,31" zPosition="2" alphatest="blend"/>
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="223,570" size="315,31" zPosition="3" transparent="1"/>
+		<widget name="ratinglabel" position="7,615" size="765,75" font="Regular;30" foregroundColor="grey" halign="center"/>
+		<widget name="titellabel" position="7,695" size="765,100" font="Regular;30" foregroundColor="secondFG" halign="center"/>
+		<widget name="statusbar" position="7,900" size="765,110" font="Regular;27" halign="center" valign="bottom"/>
+		<widget name="poster" position="780,123" size="165,270" alphatest="blend"/>
+		<widget name="detailslabel" position="960,123" size="945,270" font="Regular;30" halign="center"/>
+		<widget name="menu" position="780,213" size="1132,765" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
+		<widget name="castlabel" position="780,397" size="1132,610" font="Regular;33" foregroundColor="grey"/>
+		<widget name="extralabel" position="735,123" size="1177,855" font="Regular;33" foregroundColor="grey"/>
+	</screen>
+	<screen name="IMDbSetup" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RG"/>
+		<widget name="config" position="780,123" size="1132,874" font="Regular;33" scrollbarMode="showOnDemand"/>
+		<widget source="help" render="Label" position="7,600" size="715,120" font="Regular;30" foregroundColor="secondFG"/>
+	</screen>
+
 </skin>
