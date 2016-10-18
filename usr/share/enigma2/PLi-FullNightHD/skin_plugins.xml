@@ -1975,8 +1975,8 @@
 		<widget name="label3" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<panel name="ButtonYellow"/>
 		<widget name="label2" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="MenuBPanel"/>
-		<panel name="InfoBPanel"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyOkTemplate"/>
 		<widget name="textpage" position="785,120" size="1127,855" font="Regular;33" foregroundColor="grey"/>
 		<widget name="pic1" position="0,550" size="200,150" alphatest="blend" zPosition="1"/>
@@ -1994,8 +1994,8 @@
 		<widget name="label3" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<panel name="ButtonYellow"/>
 		<widget name="label2" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="MenuBPanel"/>
-		<panel name="InfoBPanel"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyOkTemplate"/>
 		<widget name="textpage" position="785,120" size="1127,855" font="Regular;33" foregroundColor="grey"/>
 		<widget name="pic1" position="0,550" size="200,150" alphatest="blend" zPosition="1"/>
@@ -2013,8 +2013,8 @@
 		<widget name="label3" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<panel name="ButtonYellow"/>
 		<widget name="label2" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="MenuBPanel"/>
-		<panel name="InfoBPanel"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyOkTemplate"/>
 		<widget name="textpage" position="785,120" size="1127,855" font="Regular;33" foregroundColor="grey"/>
 		<widget name="pic1" position="0,550" size="200,150" alphatest="blend" zPosition="1"/>
