@@ -792,7 +792,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="infobar/pbar.png" position="330,160" size="1260,12" transparent="1" zPosition="2" borderWidth="2" borderColor="secondBG">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="icons/rass_logo.png" position="90,90" size="150,90" zPosition="2" alphatest="on">
+		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="90,90" size="150,90" zPosition="2" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
