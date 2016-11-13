@@ -48,7 +48,7 @@
   </screen>
 
   <screen name="TextTemplate">
-    <widget name="text" position="40,2" size="1220,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="text" position="40,370" size="462,299" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24"/>
   </screen>
 
   <screen name="SelectionTemplate">
@@ -386,11 +386,15 @@
       <convert type="EventName">Pdc</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/stream.png" position="812,588" size="21,21" zPosition="3" alphatest="on">
+      <convert type="ClientsStreaming"/>
+      <convert type="ConditionalShowHide"/>
+    </widget>
     <widget render="VideoSize" source="session.CurrentService" position="1140,619" size="110,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" transparent="1" zPosition="1" />
     <widget source="session.FrontendStatus" render="Label" position="1140,647" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <widget source="session.FrontendInfo" render="Label" position="1140,590" size="110,20" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;20">
+    <widget source="session.FrontendInfo" render="Label" position="1140,590" size="137,20" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;20">
       <convert type="FrontendInfo">STRING</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1140,675" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">

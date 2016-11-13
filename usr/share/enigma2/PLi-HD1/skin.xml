@@ -116,6 +116,12 @@
     <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
   </screen>
 
+  <!-- Buffer Indicator -->
+
+  <screen name="BufferIndicator" title="" position="c-100,30" size="200,36" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
+    <widget name="status" position="0,0" size="200,36" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" halign="center"/>
+  </screen>
+
   <!-- JobView -->
 
   <screen name="JobView"  position="fill" title="Job View" flags="wfNoBorder">
@@ -155,6 +161,35 @@
     <panel name="InfoBarTemplate"/>
   </screen>
 
+  <screen name="SecondInfoBarSimple" title="Second InfoBar" position="fill" flags="wfNoBorder">
+    <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
+    <widget source="session.Event_Now" render="Label" position="20,20" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+          <convert type="EventName">NameNow</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="20,52" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="430,52" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">SmallRating</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="20,85" size="610,432" font="Regular;20" halign="block" zPosition="1" transparent="1">
+          <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="650,20" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+          <convert type="EventName">NameNext</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="650,52" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1060,52" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">SmallRating</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="650,85" size="610,432" font="Regular;20" halign="block" zPosition="1" transparent="1">
+          <convert type="EventName">FullDescription</convert>
+    </widget>
+    <panel name="InfoBarTemplate"/>
+  </screen>
+
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
     <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
     <widget source="session.CurrentService" render="Label" position="20,20" size="960,90" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
@@ -175,6 +210,7 @@
     <widget source="session.FrontendStatus" render="Label" position="1208,40" size="50,16" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
+    <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1062, 80" size="200,20" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;18"/>
     <widget source="session.Event_Now" render="Label" position="20,115" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNow</convert>
     </widget>
@@ -187,7 +223,7 @@
     <widget source="session.Event_Now" render="Label" position="20,180" size="610,368" font="Regular;20" halign="block" zPosition="1" transparent="1">
           <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,115" size="610,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Next" render="Label" position="650,115" size="610,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,147" size="510,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
@@ -212,6 +248,10 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1012,70" size="40,21" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4k.png" position="1012,70" size="40,21" zPosition="4" alphatest="on">
+      <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1012,70" size="40,21" zPosition="2" alphatest="on">
@@ -309,9 +349,7 @@
   <!-- Simple channelselection -->
 
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
-    <widget name="list" position="520,70" size="740,588" itemHeight="28" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="28" foregroundColorServiceNotAvail="notavailable" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="notavailable"/>
+    <panel name="ChannelSelection"/>
   </screen>
 
   <!-- EPG Stuff -->
@@ -322,9 +360,6 @@
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="500,30" size="500,25" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="center">
-	<convert type="ServiceName">Name</convert>
-    </widget>
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
     </widget>
@@ -526,6 +561,11 @@
     <panel name="MenuTemplate"/>
   </screen>
 
+  <screen flags="wfNoBorder" name="MenuSort" position="fill">
+    <panel name="MenuTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+  </screen>
+
   <screen flags="wfNoBorder" name="menu_setup" position="fill">
     <panel name="MenuTemplate"/>
   </screen>
@@ -569,7 +609,6 @@
 
   <screen name="ScanSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="header" position="20,5" size="1220,50"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand"/>
     <widget name="footer" position="0,0" size="0,0"/>
     <panel name="ButtonRed"/>
@@ -960,10 +999,11 @@
   </screen>
 
   <screen name="TimerEditList" position="fill" title="Timer Overview" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
+    <panel name="SelectionTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="timerlist" position="520,70" size="740,600" font="Regular;26" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="20,378" size="480,299" transparent="1" font="Regular;20" halign="block"/>
   </screen>
 
   <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
@@ -999,7 +1039,6 @@
     <ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="20,689" size="35,25"/>
     <ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="55,689" size="35,25"/>
     <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="90,689" size="35,25"/>
-    <eLabel text="Plugin browser" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="list" position="520,70" size="740,600" font="Regular;25" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -1016,7 +1055,6 @@
 
   <screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Serviceinfo" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="infolist" position="520,70" size="740,600" selectionDisabled="1"/>
   </screen>
 
@@ -1259,7 +1297,6 @@
   <screen name="AdapterSetupConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RS"/>
-    <eLabel text="Network Configuration" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="menulist" position="520,70" size="740,280" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand"/>
     <widget source="description" render="Label" position="520,365" size="740,200" transparent="1" font="Regular;21" valign="center" halign="center"/>
     <widget source="IFtext" render="Label" position="850,587" size="165,25" transparent="1" zPosition="10" font="Regular;21" halign="right"/>
@@ -1272,7 +1309,6 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RBS"/>
     <panel name="KeyTextTemplate"/>
-    <eLabel text="Network Setup" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,256" itemHeight="32" scrollbarMode="showOnDemand"/>
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
@@ -1295,7 +1331,6 @@
   <screen name="NameserverSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <eLabel text="Nameserver Setup" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,450" itemHeight="28" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="520,650" size="740,25" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center"/>
   </screen>
@@ -1303,7 +1338,6 @@
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYS"/>
-    <eLabel text="Select Network Adapter" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="list" render="Listbox" position="520,70" size="740,280" zPosition="10" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -1413,7 +1447,6 @@
   <screen name="AutoMountView" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-    <eLabel text="MountView" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="legend1" render="Label" position="520,70" size="200,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="Left"/>
     <widget source="legend2" render="Label" position="720,70" size="350,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center"/>
     <widget source="legend3" render="Label" position="1070,70" size="190,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center"/>
@@ -1602,6 +1635,13 @@
     <eLabel text="Leave message" position="165,687" size="230,28" backgroundColor="secondBG" font="Regular;24" halign="left" transparent="1" zPosition="1"/>
   </screen>
 
+  <screen name="TextBoxPigLess" title="Message" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <panel name="KeyExit"/>
+    <widget name="text" position="20,110" size="1240,500" font="Regular;24"/>
+    <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+  </screen>
+
   <!-- MessageBox -->
 
   <screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
@@ -1693,7 +1733,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SkinSelector" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <eLabel text="Choose your Skin" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="Preview" position="110,400" size="280,210" alphatest="on"/>
     <widget name="SkinList" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="520,650" size="740,25" zPosition="1" transparent="1" font="Regular;22" halign="center"/>
@@ -1929,7 +1968,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Virtual KeyBoard" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <panel name="ButtonTemplate_RGY"/>
     <eLabel text="Delete" render="Label" position="165,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
     <eLabel text="OK" render="Label" position="450,687" size="230,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
@@ -1945,7 +1983,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RG"/>
-    <eLabel text="AC3 Lip Sync Setup" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" scrollbarMode="showOnDemand" position="520,70" size="740,600" font="Regular;22" transparent="1"/>
     <widget name="PluginInfo" position="20,380" size="480,200" zPosition="4" font="Regular;18" foregroundColor="uncccccc"/>
   </screen>

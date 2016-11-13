@@ -462,14 +462,6 @@
     <widget name="turnSpeed"  position="75,98" size="50,16" zPosition="1" font="Regular;14" halign="right" borderWidth="1" transparent="1"/>
   </screen>
 
-  <!-- PermanentClock -->
-
-  <screen name="PermanentClockScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-    <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;39" borderColor="black" valign="center" halign="center">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-  </screen>
-
  <!-- AnalogClock -->
 
   <screen name="AnalogClockSetup" position="60,c-280" size="615,559" title="Setup AnalogClock" flags="wfNoBorder">
@@ -1343,7 +1335,7 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="headertext" position="780,150" size="1110,34" zPosition="1" font="Regular;30" transparent="1"/>
     <widget name="statustext" position="780,510" size="1110,135" zPosition="1" font="Regular;30" halign="center" valign="center" transparent="0"/>
-    <widget name="list" position="780,210" size="1110,705" zPosition="2" font="Regular;30" scrollbarMode="showOnDemand" transparent="0"/>
+    <widget name="list" position="780,210" size="1110,770" zPosition="2" font="Regular;30" scrollbarMode="showOnDemand" transparent="0"/>
     <widget name="titel" position="30,727" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
     <widget name="station" position="30,802" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
     <widget name="console" position="30,802" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
@@ -1537,12 +1529,12 @@
   <screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <widget name="config" position="780,105" size="1110,525" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,608" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" zPosition="1" font="Regular;30" halign="center"/>
   </screen>
 
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,945" size="1920,135" zPosition="-1"/>
+    <ePixmap alphatest="off" pixmap="PLi-FullHD/infobar/bl80.png"  position="0,945" size="1920,135" zPosition="-1"/>
     <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="0,945" size="1920,3"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="config" position="780,952" size="1110,75" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="#20000000" zPosition="1"/>
@@ -1635,7 +1627,8 @@
     <widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
     <widget name="text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
   </screen>
- <!-- ## Het weer ## -->
+
+ <!-- Het weer -->
 
   <screen name="Weermenu" position="fill" title="Timer Overview" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -1649,23 +1642,81 @@
     <widget name="Info" position="7,540" size="715,200" font="Regular;33" zPosition="2" foregroundColor="secondFG" valign="center" halign="center"/>
   </screen>
 
-	<!-- ## PermanentClock ## -->
+ <!-- PermanentClock  -->
 
---<screen name="PermanentClockMenu" position="fill" flags="wfNoBorder">
+  <screen name="PermanentClockMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="list" position="780,135" size="1132,855" font="Regular;33" itemHeight="45" transparent="1" foregroundColor="grey"/>
     <panel name="KeyExit"/>
     <panel name="KeyOkTemplate"/>
- </screen>
- <screen name="PermanentClockScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
-  <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
-   <convert type="ClockToText">Default</convert>
-  </widget>
- </screen>
- <screen name="PermanentClockPositioner" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
-  <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
-   <convert type="ClockToText">Default</convert>
-  </widget>
- </screen>
+  </screen>
+  <screen name="PermanentClockNewScreen" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <screen name="PermanentClockPositioner" position="0,0" size="180,45" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="1,1" size="180,45" font="Regular;39" backgroundColor="transparent" foregroundColor="grey" transparent="1" zPosition="0" borderWidth="3" borderColor="black" valign="center" halign="center">
+     <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+
+ <!-- VFDControl  -->
+
+  <screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="config" position="780,105" size="1110,380" itemHeight="38" font="Regular;33" scrollbarMode="showOnDemand"/>
+  </screen>
+
+  <!-- RefreshBouquet -->
+
+  <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="source_text" position="780,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow" />
+    <widget name="source_name" position="1100,105" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left" />
+
+    <widget name="target_text" position="780,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue" />
+    <widget name="target_name" position="1100,150" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left" />
+
+    <widget source="config" render="Listbox" position="780,250" size="1110,684" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+		{
+                "template": [
+			      MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
+			      ],
+                "fonts": [gFont("Regular", 28)],
+                "itemHeight": 38
+		}
+	</convert>
+    </widget>
+    <widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
+  </screen>
+
+  <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28" />
+    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+  <widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
+  </screen>
+
+  <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="source" position="780,105" zPosition="2" size="540,45" font="Regular;33" foregroundColor="white" />
+    <widget name="target" position="1350,105" zPosition="2" size="350,45" font="Regular;33" foregroundColor="white" />
+    <widget name="source_label" position="780,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="yellow" />
+    <widget name="target_label" position="1350,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="blue" />
+    <widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+    <widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
+  </screen>
 
 </skin>

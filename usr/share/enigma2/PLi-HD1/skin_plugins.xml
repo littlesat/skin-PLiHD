@@ -465,7 +465,7 @@
 
   <!-- PermanentClock -->
 
-  <screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
+  <screen name="PermanentClockNewScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1612,5 +1612,63 @@
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ModifyPLiFullHD/png/helpsd.png" position="20,360" size="480,271" zPosition="2"/>
     <widget name="config" position="520,70" size="740,400" zPosition="1" scrollbarMode="showOnDemand" />
     <widget name="info" position="520,650" size="740,25" font="Regular;20" foregroundColor="foreground" halign="center"/>
+  </screen>
+
+  <!-- VFDControl  -->
+
+  <screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="config" position="520,70" size="740,250" scrollbarMode="showOnDemand"/>
+  </screen>
+
+  <!-- RefreshBouquet -->
+
+  <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="source_text" position="520,70" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow" />
+    <widget name="source_name" position="780,70" zPosition="1" size="480,25" font="Regular;22" valign="center" halign="left" />
+
+    <widget name="target_text" position="520,95" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
+    <widget name="target_name" position="780,95" zPosition="1" size="480,25" font="Regular;22" valign="center" halign="left" />
+
+    <widget source="config" render="Listbox" position="520,140" size="740,500" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+		{
+                "template": [
+			      MultiContentEntryText(pos = (0, 1), size = (740, 25), font=0, flags = RT_HALIGN_LEFT, text = 0),
+			      ],
+                "fonts": [gFont("Regular", 22)],
+                "itemHeight": 25
+		}
+	</convert>
+    </widget>
+    <widget name="info" position="520,650" size="740,25" font="Regular;22" foregroundColor="foreground" halign="center"/>
+  </screen>
+
+  <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet - founded">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="services" position="520,70" zPosition="1" size="740,600" itemHeight="25" font="Regular;22" />
+    <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget name="info" position="20,420" size="480,200" font="Regular;20" foregroundColor="white" />
+  </screen>
+
+  <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="source" position="520,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="white" />
+    <widget name="target" position="900,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="white" />
+    <widget name="source_label" position="520,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="yellow" />
+    <widget name="target_label" position="900,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="blue" />
+    <widget name="sources" position="520,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget name="targets" position="900,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="white" />
+    <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget name="info" position="20,420" size="480,200" font="Regular;20" foregroundColor="white" />
   </screen>
 </skin>
