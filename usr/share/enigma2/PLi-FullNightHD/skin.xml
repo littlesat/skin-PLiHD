@@ -748,14 +748,21 @@
 		<panel name="ButtonTemplate_RGYB"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="780,100" size="1132,595" serviceItemHeight="35" serviceNumberFont="Regular;31" serviceNameFont="Regular;32"
-				serviceInfoFont="Regular;28" progressBarWidth="70" fieldMargins="10" scrollbarMode="showOnDemand" zPosition="3" colorEventProgressbar="blue"
-				foregroundColorEvent="blue" foregroundColorEventSelected="yellow" foregroundColorServiceNotAvail="darkgrey"/>
+		<widget name="list" position="780,100" size="1132,595" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
+			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
+			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
+                        progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
+			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
+			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
+			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
 		<widget source="ServiceEvent" render="Label" position="780,715" size="1132,35" font="Regular;30" foregroundColor="secondFG" halign="center" noWrap="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
+		<widget source="session.CurrentService" render="Picon" position="35,680" size="115,70" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<widget source="session.Event_Now" render="Label" position="10,120" size="765,623" font="Regular;28" foregroundColor="grey">
-		<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
 
@@ -795,9 +802,6 @@
 		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="90,90" size="150,90" zPosition="2" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="session.CurrentService" render="Picon" position="35,112" size="115,70" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="2">
-			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="RdsDecoder" render="Label" position="1,1" size="1915,110" zPosition="2" foregroundColor="selectedFG" font="LCD;50" valign="center" halign="center">
 			<convert type="RdsInfo">RadioText</convert>
