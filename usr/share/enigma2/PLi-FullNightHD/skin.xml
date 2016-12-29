@@ -748,7 +748,112 @@
 		<panel name="ButtonTemplate_RGYB"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="780,100" size="1132,595" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
+		<widget source="session.CurrentService" render="Picon" position="30,907" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="260,820" size="150,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left"/>
+		<widget source="session.CurrentService" render="Label" borderWidth="2" position="387,820" size="774,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,785" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="left">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,820" size="210,75" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<eLabel position="134,837" size="10,33" text=":" transparent="1" borderWidth="2" font="Regular;27" backgroundColor="secondBG" foregroundColor="foreground" valign="center" halign="center"/>
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="144,837" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
+			<convert type="ClockToText">Format:%S</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullNightHD/buttons/rec.png" position="205,842" size="30,30" zPosition="3" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Label" borderWidth="2" position="695,785" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="right">
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="260,918" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="387,918" size="1072,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;36" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1430,918" size="210,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="right">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="260,963" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;36" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="387,963" size="1072,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;36" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="1430,963" size="210,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;36" halign="right">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" pixmap="PLi-FullNightHD/infobar/pbar.png" position="260,892" size="1380,12" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_format_4_3.png" position="1576,841" size="60,32" zPosition="3" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_format_16_9.png" position="1576,841" size="60,32" zPosition="3" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_format_hd.png" position="1576,841" size="60,32" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_format_4k.png" position="1576,841" size="60,32" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">Is4K</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_txt_on.png" position="1520,841" size="50,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_dolby_on.png" position="1465,841" size="50,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_crypt_on.png" position="1435,841" size="25,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_hbbtv_on.png" position="1360,841" size="70,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">HasHBBTV</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_sub_on.png" position="1304,841" size="50,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.Event_Now" render="Pixmap" pixmap="PLi-FullNightHD/infobar/ico_pdc.png" position="1240,841" size="58,32" zPosition="2" alphatest="on">
+			<convert type="EventName">Pdc</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullNightHD/buttons/stream.png" position="1204,842" size="30,30" zPosition="3" alphatest="on">
+			<convert type="ClientsStreaming"/>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget render="VideoSize" source="session.CurrentService" position="1705,883" size="165,30" backgroundColor="secondBG" font="Regular;28" foregroundColor="foreground" halign="left" transparent="1" zPosition="1"/>
+		<widget source="session.FrontendStatus" render="Label" position="1705,935" size="112,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28">
+			<convert type="FrontendInfo">SNRdB</convert>
+		</widget>
+		<widget source="session.FrontendInfo" render="Label" position="1705,840" size="200,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
+			<convert type="FrontendInfo">STRING</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1705,963" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28">
+			<convert type="ServiceOrbitalPosition"/>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1705,796" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
+			<convert type="RotorPosition"/>
+		</widget>
+		<widget name="list" position="780,100" size="1132,540" itemHeight="45" transparent="1" serviceNumberFont="Regular;34"
 			scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45"
 			picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="60"
                         progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15"
@@ -758,57 +863,20 @@
 		<widget source="ServiceEvent" render="Label" position="780,715" size="1132,35" font="Regular;30" foregroundColor="secondFG" halign="center" noWrap="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="35,680" size="115,70" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="2">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
 		<widget source="session.Event_Now" render="Label" position="10,120" size="765,623" font="Regular;28" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-	</screen>
-
-	<screen name="RadioInfoBar" title="InfoBar" position="0,750" size="1920,270" backgroundColor="background" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="330,105" size="1260,48" font="Regular;39" foregroundColor="grey" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="10,180" size="105,45" font="Regular;36" foregroundColor="foreground" halign="left">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="127,180" size="1570,45" font="Regular;36" foregroundColor="foreground" noWrap="1" halign="left">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="1720,180" size="180,45" font="Regular;34"  foregroundColor="foreground" halign="right">
-			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="10,225" size="105,45" font="Regular;36" foregroundColor="grey" halign="left">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="127,225" size="1570,45" font="Regular;36" foregroundColor="grey" noWrap="1" halign="left">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="1720,225" size="180,45" font="Regular;34" foregroundColor="grey" halign="right">
-			<convert type="EventTime">Duration</convert>
-			<convert type="ClockToText">InMinutes</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" position="1657,126" size="90,36" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="infobar/pbar.png" position="330,160" size="1260,12" transparent="1" zPosition="2" borderWidth="2" borderColor="secondBG">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="90,90" size="150,90" zPosition="2" alphatest="on">
+		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="90,840" size="150,90" zPosition="2" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="RdsDecoder" render="Label" position="1,1" size="1915,110" zPosition="2" foregroundColor="selectedFG" font="LCD;50" valign="center" halign="center">
+		<widget source="RdsDecoder" render="Label" position="1,660" size="1915,110" zPosition="2" foregroundColor="selectedFG" font="LCD;50" valign="center" halign="center">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1762,126" size="30,30" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+	</screen>
+
+	<screen name="RadioInfoBar" title="InfoBar" position="0,0" size="0,0" backgroundColor="background" flags="wfNoBorder">
+		<!--dummy screen to keep it backwards compatible with other skins-->
 	</screen>
 
 	<!-- Movie Selection -->
