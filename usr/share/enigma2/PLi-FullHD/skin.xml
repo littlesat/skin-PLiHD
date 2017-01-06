@@ -1986,6 +1986,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel text="Latest Commits" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <widget name="AboutScrollLabel" font="Regular;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
   </screen>
+   <!-- Troubleshoot -->
+  <screen name="Troubleshoot" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <panel name="ButtonTemplate_R"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="blend"/>
+    <ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1030" size="34,34" alphatest="blend"/>
+    <eLabel text="Latest Commits" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <widget name="AboutScrollLabel" font="Fixed;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
+  </screen>
   <!-- Translation Info -->
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
     <panel name="PigTemplate"/>
