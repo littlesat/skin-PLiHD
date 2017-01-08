@@ -2109,7 +2109,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	 <!-- Troubleshoot -->
 	<screen name="Troubleshoot" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="ButtonTemplate_R"/>
+		<panel name="ButtonTemplate_RG"/>
 		<ePixmap pixmap="PLi-FullNightHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="blend"/>
 		<ePixmap pixmap="PLi-FullNightHD/buttons/right.png" position="1500,1030" size="34,34" alphatest="blend"/>
 		<widget name="AboutScrollLabel" font="Fixed;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
