@@ -669,7 +669,6 @@
   <screen name="RecordPathsSettings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <eLabel text="Recording paths" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
@@ -1567,13 +1566,12 @@
 
   <screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Select HDD" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="hddlist" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Harddisk setup -->
 
-  <screen name="HarddiskSetup" title="Harddisk" position="fill" flags="wfNoBorder">
+  <screen name="HarddiskSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonRed"/>
     <widget name="model" position="520,70" size="740,25" font="Regular;24"/>
@@ -1929,7 +1927,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <eLabel text="About" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="AboutScrollLabel" font="Regular;22" position="520,70" size="740,600" zPosition="2" split="1" dividechar=":" colposition="0"/>
   </screen>
   <!-- Memory Info -->
@@ -1951,7 +1948,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_R"/>
     <ePixmap pixmap="PLi-HD/buttons/left.png" position="695,687" size="26,26" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/buttons/right.png" position="970,687" size="26,26" alphatest="blend"/>
-    <eLabel text="Latest Commits" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="1240,600" zPosition="2" halign="left"/>
   </screen>
    <!-- Troubleshoot -->
@@ -1966,7 +1962,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_R"/>
-    <eLabel text="Translation" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget source="TranslatorName" render="Label" position="520,70" size="740,80" font="Regular;22" halign="center" backgroundColor="background" transparent="1"/>
     <widget source="TranslationInfo" render="Label" position="520,180" size="740,380" font="Regular;22" halign="center" backgroundColor="background" transparent="1"/>
   </screen>
