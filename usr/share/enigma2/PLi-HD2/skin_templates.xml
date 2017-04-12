@@ -33,6 +33,7 @@
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,58" backgroundColor="dark" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,58" size="1280,2" zPosition="2"/>
+    <widget source="screen_path" render="Label" position="40,3" size="1200,14" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;13" valign="center" halign="left"/>
     <widget source="Title" render="Label" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1090,15" size="150,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
@@ -71,7 +72,6 @@
 
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
-    <widget source="title" render="Label" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="menu" render="Listbox" position="545,80" size="695,590" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (25,9),size = (565,30),flags = RT_HALIGN_LEFT,text = 0) ],

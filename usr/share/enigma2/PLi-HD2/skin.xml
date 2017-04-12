@@ -621,7 +621,6 @@
   <screen name="RecordPathsSettings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <eLabel text="Recording paths" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,80" size="710,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
@@ -1507,13 +1506,12 @@
 
   <screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Select HDD" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="hddlist" position="530,80" size="710,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Harddisk setup -->
 
-  <screen name="HarddiskSetup" title="Harddisk" position="fill" flags="wfNoBorder">
+  <screen name="HarddiskSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonRed"/>
     <widget name="model" position="530,80" size="380,25" font="Regular;24" />
@@ -1928,6 +1926,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <eLabel text="Translation" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="TranslatorName" render="Label" position="530,80" size="710,80" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
     <widget source="TranslationInfo" render="Label" position="530,180" size="710,380" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
+  </screen>
+
+      <!-- Streaming Clients Info -->
+
+  <screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="menu" position="530,80" size="710,200" zPosition="2" />
   </screen>
 
   <!-- Virtual Keyboard -->
