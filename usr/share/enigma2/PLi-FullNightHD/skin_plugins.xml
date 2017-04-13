@@ -2066,5 +2066,25 @@
 		<widget source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
 	</screen>
 
+<!-- HDMI Test  -->
+	<screen name="HdmiTest" position="fill" title="HdmiTest" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="config" position="780,105" size="1110,266" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="address" position="780,371" size="555,38" zPosition="1" font="Regular;30" foregroundColor="blue"/>
+		<widget name="sendto" position="1335,371" size="555,38" zPosition="1" font="Regular;30" foregroundColor="blue"/>
+		<ePixmap pixmap="PLi-FullNightHD/border/smallshadowline.png" position="780,410" size="1110,3" zPosition="2"/>
+		<widget name="ltx" position="780,415" size="60,38" zPosition="1" font="Regular;28" halign="left" foregroundColor="green"/>
+		<widget name="txtext" position="840,415" size="495,570" zPosition="1" font="Regular;28" halign="left"/>
+		<widget name="lrx" position="1335,415" size="60,38" zPosition="1" font="Regular;28" halign="left" foregroundColor="red"/>
+		<widget name="rxtext" position="1395,415" size="495,570" zPosition="1" font="Regular;28" halign="left"/>
+	</screen>
+	<screen name="HdmiTestInfoScreen" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="rxtext" position="780,100" size="1110,912" zPosition="1" font="Regular;28" halign="left"/>
+	</screen>
+
 
 </skin>
