@@ -1971,7 +1971,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGY"/>
-    <widget name="menu" position="520,70" size="740,200" zPosition="2" />
+    <widget name="menu" position="520,70" size="740,200" zPosition="1" />
+    <widget name="info" position="530,70" size="740,25" font="Regular;22" halign="center" transparent="1" zPosition="2"/>
   </screen>
 
   <!-- Virtual Keyboard -->
