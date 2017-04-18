@@ -1698,10 +1698,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <ePixmap pixmap="skin_default/icons/scan-s.png" position="240,17" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
-    <widget source="statusbar" render="Label" position="40,80" zPosition="10" size="462,60" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-    <widget source="tunerstatusbar" render="Label" position="40,170" zPosition="10" size="462,30" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-    <widget name="config" position="40,220" size="462,300" scrollbarMode="showOnDemand" />
+    <ePixmap pixmap="skin_default/icons/scan-s.png" position="40,110" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
+    <widget source="statusbar" render="Label" position="120,110" size="480,64" zPosition="10" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+    <widget source="tunerstatusbar" render="Label" position="40,180" size="480,30" zPosition="10" halign="left" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+    <widget name="config" position="40,230" size="480,300" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- FastScan -->
