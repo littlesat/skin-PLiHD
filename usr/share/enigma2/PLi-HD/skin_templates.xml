@@ -129,7 +129,7 @@
   </screen>
 
   <screen name="KeyExit">
-    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" position="140,645" size="35,25"/>
+    <ePixmap pixmap="PLi-HD/buttons/key_exit.png" alphatest="on" position="140,645" size="35,25"/>
   </screen>
 
   <screen name="KeyMenuInfoTemplate">
