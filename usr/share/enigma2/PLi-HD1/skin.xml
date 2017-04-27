@@ -1635,8 +1635,8 @@
   <screen name="TextBoxPigLess" title="Message" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="KeyExit"/>
-    <widget name="text" position="20,110" size="1240,500" font="Regular;24"/>
-    <eLabel text="Leave message" position="185,643" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+    <widget name="text" position="20,70" size="1240,600" font="Regular;22"/>
+    <eLabel text="Leave message" position="165,687" size="230,28" backgroundColor="secondBG" font="Regular;24" halign="left" transparent="1" zPosition="1" />
   </screen>
 
   <!-- MessageBox -->
