@@ -692,8 +692,7 @@
   <!-- SortbyChoiceBox -->
 
   <screen name="SortbyChoiceBox" title="" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="TextTemplate"/>
+    <panel name="ChoiceBox"/>
     <ePixmap pixmap="PLi-HD/icons/default.png" position="1225,75" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/newtop.png" position="1225,105" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/az.png" position="1225,135" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
@@ -702,14 +701,12 @@
     <ePixmap pixmap="PLi-HD/icons/oldtop.png" position="1225,225" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/za.png" position="1225,255" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/fza.png" position="1225,285" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
-    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- MovieoffChoiceBox -->
 
   <screen name="MovieoffChoiceBox" title="Sorting" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <panel name="TextTemplate"/>
+    <panel name="ChoiceBox"/>
     <ePixmap pixmap="PLi-HD/icons/ask.png" position="1225,75" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/movielist.png" position="1225,105" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/quit.png" position="1225,135" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
@@ -718,7 +715,6 @@
     <ePixmap pixmap="PLi-HD/icons/playlistquit.png" position="1225,225" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/loop.png" position="1225,255" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
     <ePixmap pixmap="PLi-HD/icons/rep.png" position="1225,285" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
-     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- Hotkey -->
