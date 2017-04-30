@@ -635,6 +635,34 @@
     <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <!-- SortbyChoiceBox -->
+
+  <screen name="SortbyChoiceBox" title="" position="fill" flags="wfNoBorder">
+    <panel name="ChoiceBox"/>
+    <ePixmap pixmap="PLi-HD/icons/default.png" position="1180,115" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/newtop.png" position="1180,140" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/az.png" position="1180,165" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/faz.png" position="1180,190" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/shuffle.png" position="1180,215" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/oldtop.png" position="1180,240" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/za.png" position="1180,265" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/fza.png" position="1180,290" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+  </screen>
+
+  <!-- MovieoffChoiceBox -->
+
+  <screen name="MovieoffChoiceBox" title="Sorting" position="fill" flags="wfNoBorder">
+    <panel name="ChoiceBox"/>
+    <ePixmap pixmap="PLi-HD/icons/ask.png" position="1180,115" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/movielist.png" position="1180,140" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/quit.png" position="1180,165" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/pause.png" position="1180,190" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/playlist.png" position="1180,215" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/playlistquit.png" position="1180,240" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/loop.png" position="1180,265" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+    <ePixmap pixmap="PLi-HD/icons/rep.png" position="1180,290" zPosition="2" size="35,20" transparent="1" alphatest="blend"/>
+  </screen>
+
   <!-- Hotkey -->
 
   <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
