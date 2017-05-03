@@ -9,7 +9,7 @@
 
 	<screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonTemplate_RGB"/>
+		<panel name="ButtonTemplate_RGYB"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
