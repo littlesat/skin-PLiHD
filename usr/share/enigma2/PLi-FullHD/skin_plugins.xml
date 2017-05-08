@@ -1453,7 +1453,7 @@
   <screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="ButtonTemplate_GYBS"/>
+    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" valign="bottom" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
   </screen>
 
