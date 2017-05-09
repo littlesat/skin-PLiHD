@@ -1797,7 +1797,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="NimSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Choose Tuner" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <panel name="KeyInfoTemplate"/>
     <widget source="nimlist" render="Listbox" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
