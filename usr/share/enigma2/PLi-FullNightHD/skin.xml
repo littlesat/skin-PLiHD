@@ -39,6 +39,8 @@
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
 		<alias name="Dreamexplorer" font="Regular" size="30" height="45"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
+		<alias name="FallbackReceiverList0" font="Regular" size="28" height="38"/>
+		<alias name="FallbackReceiverList1" font="Regular" size="28"/>
 	</fonts>
 
 	<!-- Colors -->
@@ -84,6 +86,11 @@
 		<color name="yellowsoft" value="#00CCAC68"/>
 		<color name="yellowtransparent" value="#084b4b00"/>
 	</colors>
+
+	<parameters>
+		<parameter name="FallbackReceiverListName" value="8,2,225,38"/>
+		<parameter name="FallbackReceiverListIP" value="300,2,225,38"/>
+	</parameters>
 
 	<!-- Window -->
 
