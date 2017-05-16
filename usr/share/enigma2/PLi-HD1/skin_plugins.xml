@@ -1672,4 +1672,22 @@
     </widget>
     <widget name="info" position="20,420" size="480,200" font="Regular;20" foregroundColor="white" />
   </screen>
+
+   <!-- Fallback Receiver -->
+
+  <screen name="FallbackReceivers" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="name" position="520,70" size="200,25" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget name="ip" position="780,70" size="200,25" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
+    <widget name="entrylist" position="520,110" size="740,400" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
+    <widget name="fallback" position="20,420" size="480,25" font="Regular;20" halign="left"/>
+  </screen>
+
+  <screen name="FallbackReceiverConfigScreen" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="config" scrollbarMode="showOnDemand" position="520,70" size="740,100" transparent="1"/>
+  </screen>
+
 </skin>
