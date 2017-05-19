@@ -1945,7 +1945,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RG"/>
     <ePixmap pixmap="PLi-HD/buttons/left.png" position="695,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="PLi-HD/buttons/right.png" position="970,682" size="26,26" alphatest="on" />
-    <widget name="AboutScrollLabel" font="Fixed;22" position="40,80" size="1200,575" zPosition="2" halign="left" />
+    <widget name="AboutScrollLabel" font="Fixed;18" position="40,80" size="1200,580" zPosition="2" halign="left" />
   </screen>
   <!-- Translation Info -->
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
