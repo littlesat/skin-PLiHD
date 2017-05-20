@@ -2101,10 +2101,12 @@
 		<widget name="entrylist" position="780,165" size="1110,456" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
 		<widget name="fallback" position="30,560" size="720,35" font="Regular;30" halign="left"/>
 	</screen>
-
 	<screen name="FallbackReceiverConfigScreen" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGB"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="NonModalMessageBoxDialog" position="center,center" size="710,160" backgroundColor="selectedBG" zPosition="2" flags="wfNoBorder">
+		<widget name="message" position="center,center" size="700,150" font="Regular;30" valign="center" halign="center"/>
 	</screen>
 </skin>

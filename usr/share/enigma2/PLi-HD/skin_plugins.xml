@@ -1621,11 +1621,12 @@
     <widget name="entrylist" position="590,140" size="600,400" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
     <widget name="fallback" position="85,380" size="450,25" font="Regular;20" halign="left"/>
   </screen>
-
   <screen name="FallbackReceiverConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGB"/>
     <widget name="config" scrollbarMode="showOnDemand" position="590,100" size="600,100" transparent="1"/>
   </screen>
-
+  <screen name="NonModalMessageBoxDialog" position="center,center" size="470,120" backgroundColor="#00303240" zPosition="2" flags="wfNoBorder">
+    <widget name="message" position="center,center" size="460,110" font="Regular;20" valign="center" halign="center"/>
+  </screen>
 </skin>
