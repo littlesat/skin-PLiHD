@@ -18,7 +18,7 @@
     <widget source="session.CurrentService" render="Label" position="1402,46" size="175,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="1590,79" size="30,30" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="1590,79" size="30,30" zPosition="3" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="center" halign="right">
@@ -324,7 +324,7 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="144,897" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
       <convert type="ClockToText">Format:%S</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="210,902" size="30,30" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="210,902" size="30,30" zPosition="3" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="705,845" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="right">
