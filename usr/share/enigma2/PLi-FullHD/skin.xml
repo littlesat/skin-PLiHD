@@ -132,9 +132,9 @@
 
   <!-- Volume -->
 
-  <screen name="Volume" title="Volume" position="5,360" size="20,330" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-    <widget name="Volume" pixmap="PLi-FullHD/infobar/volumeslider.png" position="2,3" size="16,300" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
-    <ePixmap pixmap="PLi-FullHD/infobar/vol_box.png" position="0,303" size="20,24" alphatest="on" zPosition="4"></ePixmap>
+  <screen name="Volume" title="Volume" position="5,360" size="20,328" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+    <widget name="Volume" pixmap="PLi-FullHD/infobar/volumeslider.png" position="2,2" size="15,300" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
+    <ePixmap pixmap="PLi-FullHD/infobar/vol_box.png" position="0,303" size="20,24" alphatest="blend" zPosition="4"></ePixmap>
   </screen>
   
   <screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
