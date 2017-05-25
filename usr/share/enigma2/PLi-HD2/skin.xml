@@ -1620,7 +1620,7 @@
 
   <!-- MessageBoxSimple -->
 
-  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" flags="wfNoBorder">
+  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message" zPosition="10" flags="wfNoBorder">
     <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
     <widget name="text" position="65,8" size="520,0" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
