@@ -332,13 +332,13 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default;NoSpace</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="30,605" size="720,35" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;32" halign="left">
+    <widget source="ServiceEvent" render="Label" position="30,605" size="720,35" transparent="1" foregroundColor="secondFG" font="Regular;32" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="30,975" size="720,34" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;30"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="30,975" size="720,34" transparent="1" foregroundColor="secondFG" font="Regular;30"/>
     <widget source="ServiceEvent" render="Label" position="780,26" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">InRootOnly</convert>
     </widget>
