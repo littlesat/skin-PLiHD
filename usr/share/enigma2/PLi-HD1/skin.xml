@@ -1036,8 +1036,8 @@
   <screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="loglist" position="520,70" size="740,275" scrollbarMode="showOnDemand" font="Regular;24"/>
-    <widget name="logentry" position="20,386" size="1240,225" font="Regular;24"/>
+    <widget name="loglist" position="520,70" size="740,575" scrollbarMode="showOnDemand" font="Regular;24"/>
+    <widget name="logentry" position="200,650" size="1040,25" font="Regular;24" halign="center"/>
   </screen>
 
   <screen name="TimerSanityConflict" position="fill" title="Timer sanity error" flags="wfNoBorder">
@@ -1088,7 +1088,7 @@
   <screen name="ServiceInfo" position="fill" flags="wfNoBorder">
     <panel name="ServiceInfoSimple"/>
     <panel name="ButtonTemplateRGYB"/>
-    <widget source="session.CurrentService" render="Label" position="520,650" size="740,25" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="top" halign="center">
+    <widget source="session.CurrentService" render="Label" position="200,650" size="1040,25" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="top" halign="center">
         <convert type="ServiceInfo">HasHBBTV</convert>
     </widget>
   </screen>
