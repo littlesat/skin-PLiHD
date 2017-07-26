@@ -60,12 +60,12 @@
 
 	<screen name="PigTemplate">
 		<panel name="SelectionTemplate"/>
-		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="PigLessTemplate">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="MenuTemplate">
