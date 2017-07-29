@@ -471,26 +471,6 @@
     </widget>
   </screen>
 
- <!-- AnalogClock -->
-
-  <screen name="AnalogClockSetup" position="80,center" size="410,373" title="Setup AnalogClock" flags="wfNoBorder">
-    <widget name="config" position="10,10" size="390,325" zPosition="1" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <ePixmap pixmap="PLi-HD/buttons/red20.png" position="45,346" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green20.png" position="245,346" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/blue20.png" position="385,350" size="10,10" alphatest="blend"/>
-    <widget name="key_red"   position="075,342" zPosition="2" size="125,28" valign="center" font="Regular;22" transparent="1" />
-    <widget name="key_green" position="275,342" zPosition="2" size="125,28" valign="center" font="Regular;22" transparent="1" />
-  </screen>
-
-  <screen name="AnalogClockColorsSetup" position="80,center" size="410,148" title="AnalogClock - setup colors" flags="wfNoBorder">
-    <widget name="config" position="10,10" size="390,100" zPosition="1" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
-    <ePixmap pixmap="PLi-HD/buttons/red20.png" position="45,121" size="20,20" alphatest="on" />
-    <ePixmap pixmap="PLi-HD/buttons/green20.png" position="245,121" size="20,20" alphatest="on" />
-    <widget name="key_red"   position="075,117" zPosition="2" size="125,28" valign="center" halign="left" font="Regular;22" transparent="1" />
-    <widget name="key_green" position="275,117" zPosition="2" size="125,28" valign="center" halign="left" font="Regular;22" transparent="1" />
-    <widget name="version" position="360,120" size="35,22" font="Regular;12" valign="bottom" halign="right" transparent="1" />
-  </screen>
-
   <!-- MovieTagger -->
 
   <screen flags="wfNoBorder" name="MovieTagger" position="fill" title="Movie Tagger">
