@@ -462,26 +462,6 @@
     <widget name="turnSpeed"  position="75,98" size="50,16" zPosition="1" font="Regular;14" halign="right" borderWidth="1" transparent="1"/>
   </screen>
 
- <!-- AnalogClock -->
-
-  <screen name="AnalogClockSetup" position="60,c-280" size="615,559" title="Setup AnalogClock" flags="wfNoBorder">
-    <widget name="config" position="15,15" size="585,494" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/red30.png" position="67,519" size="30,30" alphatest="blend"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/green30.png" position="367,519" size="30,30" alphatest="blend"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/blue30.png" position="580,528" size="15,15" alphatest="blend"/>
-    <widget name="key_red"   position="112,513" zPosition="2" size="187,42" valign="center" font="Regular;33" transparent="1"/>
-    <widget name="key_green" position="412,513" zPosition="2" size="187,42" valign="center" font="Regular;33" transparent="1"/>
-  </screen>
-
-  <screen name="AnalogClockColorsSetup" position="60,c-280" size="615,222" title="AnalogClock - setup colors" flags="wfNoBorder">
-    <widget name="config" position="15,15" size="585,152" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/red30.png" position="67,181" size="30,30" alphatest="blend"/>
-    <ePixmap pixmap="PLi-FullHD/buttons/green30.png" position="367,181" size="30,30" alphatest="blend"/>
-    <widget name="key_red"   position="112,175" zPosition="2" size="187,42" valign="center" halign="left" font="Regular;33" transparent="1"/>
-    <widget name="key_green" position="412,175" zPosition="2" size="187,42" valign="center" halign="left" font="Regular;33" transparent="1"/>
-    <widget name="version" position="540,180" size="52,33" font="Regular;18" valign="bottom" halign="right" transparent="1"/>
-  </screen>
-
   <!-- MovieTagger -->
 
   <screen flags="wfNoBorder" name="MovieTagger" position="fill" title="Movie Tagger">
