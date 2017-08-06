@@ -530,7 +530,7 @@
     </widget>
     <widget name="timeline_text" position="20,102" size="1240,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
     <widget name="list" position="20,132" size="1240,545" itemHeight="50" transparent="1" scrollbarMode="showNever"
-            EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc"/>
+            EntryBackgroundColor="background" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc"/>
     <widget name="timeline0" pixmap="PLi-HD1/window/timeline.png" position="0,129" size="1,551" zPosition="1"/>
     <widget name="timeline1" pixmap="PLi-HD1/window/timeline.png" position="0,129" size="1,551" zPosition="1"/>
     <widget name="timeline2" pixmap="PLi-HD1/window/timeline.png" position="0,129" size="1,551" zPosition="1"/>

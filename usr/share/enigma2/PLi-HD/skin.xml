@@ -494,7 +494,7 @@
     <panel name="KeyInfoTemplate"/>
     <widget name="timeline_text" position="50,100" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="50,152" size="1180,478" itemHeight="50" transparent="1" scrollbarMode="showNever"
-            EntryBackgroundColor="background" EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
+            EntryBackgroundColor="background" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline1" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
     <widget name="timeline2" pixmap="PLi-HD/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
