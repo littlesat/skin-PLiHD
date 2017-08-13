@@ -2263,7 +2263,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
  <screen name="OSD3DSetupScreen" position="fill" title="Select Location" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RG"/>
+    <panel name="ButtonRed"/>
+    <panel name="ButtonGreen"/>
+    <widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
     <widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
  </screen>
 
