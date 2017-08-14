@@ -544,7 +544,7 @@
     <widget name="timeline_now" pixmap="PLi-FullHD/window/timeline-now.png" position="6,593" size="28,422" zPosition="2" alphatest="blend"/>
   </screen>
 
-  <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
+  <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" backgroundColor="#000000" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
