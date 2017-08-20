@@ -56,7 +56,7 @@
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
     <widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1"/>
-    <widget source="session.CurrentService" render="Label" position="30,90" size="720,30" zPosition="1" foregroundColor="secondFG" font="Regular;28" borderColor="black" noWrap="1" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="30,90" size="720,32" zPosition="1" foregroundColor="secondFG" font="Regular;25" borderColor="black" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
@@ -311,7 +311,7 @@
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="270,880" size="150,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left"/>
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="397,880" size="810,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="397,880" size="810,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left" noWrap="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,845" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="left">
