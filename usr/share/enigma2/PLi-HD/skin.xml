@@ -672,6 +672,13 @@
     <widget name="choosen" position="45,380" size="462,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="YButtonTemplate_RGY"/>
+    <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="choosen" position="45,380" size="462,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
   <!--CI Config Menu -->
 
   <screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">

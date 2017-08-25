@@ -726,6 +726,13 @@
     <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
   </screen>
 
+  <screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGY"/>
+    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
+  </screen>
+
   <!--CI Config Menu -->
 
   <screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
