@@ -1745,4 +1745,27 @@
     <widget name="message" position="center,center" size="700,150" font="Regular;30" valign="center" halign="center"/>
   </screen>
 
+     <!-- ManagerAutofs  -->
+
+  <screen name="ManagerAutofsMasterSelection" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="TextTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="status" position="30,528" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
+    <widget name="statusbar" position="30,648" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
+    <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="text" position="780,980" size="1110,30" font="Regular;28" halign="left"/>
+    <widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="ManagerAutofsAutoEdit" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="text" position="30,980" size="1860,30" font="Regular;24" halign="right"/>
+    <widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+  </screen>
 </skin>

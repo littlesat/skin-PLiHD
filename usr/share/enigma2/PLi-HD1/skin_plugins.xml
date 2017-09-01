@@ -1671,4 +1671,28 @@
   <screen name="NonModalMessageBoxDialog" position="center,center" size="470,120" backgroundColor="#00000048" zPosition="2" flags="wfNoBorder">
     <widget name="message" position="center,center" size="460,110" font="Regular;20" valign="center" halign="center"/>
   </screen>
+
+   <!-- ManagerAutofs  -->
+
+  <screen name="ManagerAutofsMasterSelection" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="TextTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="status" position="20,400" size="480,100" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="statusbar" position="20,500" size="480,100" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="text" position="520,650" size="740,25" font="Regular;20" halign="left"/>
+    <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="ManagerAutofsAutoEdit" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="text" position="30,655" size="1220,20" font="Regular;16" halign="right"/>
+    <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
+  </screen>
 </skin>
