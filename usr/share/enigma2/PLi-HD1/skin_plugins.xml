@@ -1607,6 +1607,7 @@
 
   <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="source_text" position="520,70" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow" />
     <widget name="source_name" position="780,70" zPosition="1" size="480,25" font="Regular;22" valign="center" halign="left" />
@@ -1672,16 +1673,28 @@
     <widget name="message" position="center,center" size="460,110" font="Regular;20" valign="center" halign="center"/>
   </screen>
 
-   <!-- ManagerAutofs  -->
+  <!-- ManagerAutofs  -->
 
-  <screen name="ManagerAutofsMasterSelection" position="fill" flags="wfNoBorder">
+  <screen name="ManagerAutofsMasterSelection" position="fill">
     <panel name="PigTemplate"/>
-    <panel name="TextTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="status" position="20,400" size="480,100" zPosition="1" font="Regular;20" halign="left"/>
-    <widget name="statusbar" position="20,500" size="480,100" zPosition="1" font="Regular;20" halign="left"/>
-    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget source="list" render="Listbox" position="520,70" size="740,600" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+	{"templates":
+          {"default": (25,[
+			MultiContentEntryText(pos = (5, 4), size = (20, 25), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the status
+			MultiContentEntryText(pos = (50, 1), size = (250, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+			MultiContentEntryText(pos = (350, 1), size = (250, 25), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 1 is the autofile
+                          ])
+          },
+          "fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+          "itemHeight": 25
+	}
+	</convert>
+    </widget>
+    <widget name="status" position="520,655" size="740,20" zPosition="1" font="Regular;18" halign="left"/>
+    <widget name="statusbar" position="20,380" size="480,100" zPosition="1" font="Regular;20" halign="left"/>
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -1694,5 +1707,23 @@
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="text" position="30,655" size="1220,20" font="Regular;16" halign="right"/>
     <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="ManagerMultiAutofsAutoEdit" position="fill">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget source="list" render="Listbox" position="520,70" size="740,480" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+	{"templates":
+          {"default": (40,[
+                          MultiContentEntryText(pos = (5, 1), size = (730, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                          MultiContentEntryText(pos = (5, 24), size = (730, 14), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+                        ])
+          },
+          "fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+          "itemHeight": 40
+	}
+	</convert>
+    </widget>
+    <widget name="info" position="30,655" size="1220,20" font="Regular;16" halign="right"/>
   </screen>
 </skin>
