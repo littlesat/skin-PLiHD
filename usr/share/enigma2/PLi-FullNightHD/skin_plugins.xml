@@ -2095,7 +2095,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
-		<widget source="list" render="Listbox" position="780,105" size="1110,840" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="780,135" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (40,[
@@ -2109,6 +2109,8 @@
 				}
 			</convert>
 		</widget>
+		<widget name="mntpoint" position="880,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
+		<widget name="autofile" position="1360,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
 		<widget name="status" position="880,980" size="1140,30" zPosition="1" font="Regular;26" halign="left"/>
 		<widget name="statusbar" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
 	</screen>
