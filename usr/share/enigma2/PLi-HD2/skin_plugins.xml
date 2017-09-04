@@ -1672,4 +1672,9 @@
     </widget>
     <widget name="info" position="40,650" size="1200,20" font="Regular;16" halign="right"/>
   </screen>
+  <screen name="ManagerAutofsHelp" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_RGYB"/>
+    <widget name="HelpText" position="530,70" size="710,575" halign="left"/>
+  </screen>
 </skin>
