@@ -2129,7 +2129,7 @@
 	<screen name="ManagerMultiAutofsAutoEdit" position="fill">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
-		<widget source="list" render="Listbox" position="780,105" size="1110,480" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="780,105" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (60,[
@@ -2143,5 +2143,10 @@
 			</convert>
 		</widget>
 		<widget name="info" position="30,980" size="1860,30" font="Regular;24" halign="right"/>
+	</screen>
+	<screen name="ManagerAutofsHelp" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
+		<widget name="HelpText" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" halign="left"/>
 	</screen>
 </skin>
