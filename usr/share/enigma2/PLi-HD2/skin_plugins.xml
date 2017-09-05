@@ -1622,6 +1622,7 @@
   <screen name="ManagerAutofsMasterSelection" position="fill">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
+    <panel name="KeyOkTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget source="list" render="Listbox" position="530,87" size="710,575" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
@@ -1654,7 +1655,7 @@
     <widget name="text" position="50,650" size="1190,20" font="Regular;16" halign="right"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
-  <screen name="ManagerMultiAutofsAutoEdit" position="fill">
+  <screen name="ManagerAutofsMultiAutoEdit" position="fill">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget source="list" render="Listbox" position="530,70" size="710,480" scrollbarMode="showOnDemand">
@@ -1674,6 +1675,7 @@
   </screen>
   <screen name="ManagerAutofsHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="KeyOkTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="HelpText" position="530,70" size="710,575" halign="left"/>
   </screen>
