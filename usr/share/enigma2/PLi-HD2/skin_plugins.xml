@@ -1657,6 +1657,7 @@
   </screen>
   <screen name="ManagerAutofsMultiAutoEdit" position="fill">
     <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget source="list" render="Listbox" position="530,70" size="710,480" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">

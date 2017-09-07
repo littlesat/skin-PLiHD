@@ -2130,6 +2130,7 @@
 	<screen name="ManagerAutofsMultiAutoEdit" position="fill">
 		<panel name="PigTemplate"/>
 		<panel name="KeyOkTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
 		<widget source="list" render="Listbox" position="780,105" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
