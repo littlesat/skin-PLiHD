@@ -1752,7 +1752,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyOkTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget source="list" render="Listbox" position="780,135" size="1110,800" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
@@ -1774,13 +1774,13 @@
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget name="text" position="780,980" size="1110,30" font="Regular;28" halign="left"/>
     <widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
   </screen>
   <screen name="ManagerAutofsAutoEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget name="text" position="30,980" size="1860,30" font="Regular;24" halign="right"/>
     <widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
   </screen>
@@ -1788,7 +1788,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyOkTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget source="list" render="Listbox" position="780,105" size="1110,800" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":

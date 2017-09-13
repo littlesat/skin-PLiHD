@@ -1623,7 +1623,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyOkTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget source="list" render="Listbox" position="530,87" size="710,575" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
@@ -1645,20 +1645,20 @@
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget name="text" position="530,645" size="710,25" font="Regular;20" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
   <screen name="ManagerAutofsAutoEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget name="text" position="50,650" size="1190,20" font="Regular;16" halign="right"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
   <screen name="ManagerAutofsMultiAutoEdit" position="fill">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget source="list" render="Listbox" position="530,70" size="710,480" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
