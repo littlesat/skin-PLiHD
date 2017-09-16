@@ -721,7 +721,7 @@
 
   <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RG"/>
+    <panel name="ButtonTemplate_R"/>
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
   </screen>
