@@ -1769,8 +1769,9 @@
     </widget>
     <widget name="mntpoint" position="880,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
     <widget name="autofile" position="1360,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
-    <widget name="status" position="880,980" size="1140,30" zPosition="1" font="Regular;26" halign="left"/>
-    <widget name="statusbar" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
+    <widget name="text" position="880,980" size="1140,30" zPosition="1" font="Regular;28" halign="left"/>
+    <widget name="status" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
+    <widget name="statusbar" position="30,680" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -1802,7 +1803,7 @@
 	}
 	</convert>
     </widget>
-    <widget name="info" position="30,980" size="1860,30" font="Regular;24" halign="right"/>
+    <widget name="text" position="30,980" size="1860,30" font="Regular;24" halign="right"/>
   </screen>
   <screen name="ManagerAutofsHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>

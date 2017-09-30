@@ -1624,7 +1624,7 @@
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyOkTemplate"/>
     <panel name="ButtonTemplate_Hideable"/>
-    <widget source="list" render="Listbox" position="530,87" size="710,575" scrollbarMode="showOnDemand">
+    <widget source="list" render="Listbox" position="530,87" size="710,550" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
           {"default": (25,[
@@ -1640,8 +1640,9 @@
     </widget>
     <widget name="mntpoint" position="580,65" size="250,20" font="Regular;16" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
     <widget name="autofile" position="880,65" size="250,20" font="Regular;16" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
-    <widget name="status" position="580,650" size="620,20" zPosition="1" font="Regular;18" halign="left"/>
-    <widget name="statusbar" position="40,380" size="462,100" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="text" position="580,645" size="620,25" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="status" position="40,380" size="462,100" zPosition="1" font="Regular;18" halign="left"/>
+    <widget name="statusbar" position="40,480" size="462,100" zPosition="1" font="Regular;18" halign="left"/>
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -1672,7 +1673,7 @@
 	}
 	</convert>
     </widget>
-    <widget name="info" position="40,650" size="1200,20" font="Regular;16" halign="right"/>
+    <widget name="text" position="40,650" size="1200,20" font="Regular;16" halign="right"/>
   </screen>
   <screen name="ManagerAutofsHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
