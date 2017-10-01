@@ -1256,10 +1256,10 @@
     <panel name="KeyOkTemplate"/>
     <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
     <widget source="Titel3" render="Label" position="30,600" zPosition="2" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-    <widget name="MainList" position="780,109" size="1110,896" itemHeight="128" font0="Regular;26" font1="Regular;36" font2="Regular;24" font3="Regular;28"
+    <widget name="MainList" position="780,109" size="1110,896" itemHeight="128" font0="Regular;26" font1="Regular;36" font2="Regular;22" font3="Regular;28"
             setTime="40,49,90,30" setPict="155,24,70,70" setPictScale="1" setTemp="270,22,120,30" setTempUnits="270,68,120,30"
             setWindPict="410,43,42,42" setWindPictScale="1" setWind="470,22,150,30" setWindUnits="470,68,150,30"
-            text1Pos="615,15,500,35" text2Pos="615,50,500,35" text3Pos="615,80,500,35" scrollbarMode="showOnDemand" transparent="1"/>
+            text1Pos="615,15,500,35" text2Pos="615,50,500,25" text3Pos="615,75,500,25" text4Pos="615,100,500,25" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
   <screen name="ForecaPreviewCache" position="center,center" size="76,76" flags="wfNoBorder" backgroundColor="#000000" >
