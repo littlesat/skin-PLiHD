@@ -1254,7 +1254,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="530,80" size="710,572" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
+  <screen flags="wfNoBorder" name="ForecaPreview" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
@@ -1264,35 +1264,35 @@
     <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="530,80" size="710,540" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
+  <screen flags="wfNoBorder" name="CityPanel" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="530,80" size="710,510" transparent="1" />
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanel" position="fill" title="Satelliet Beelden">
+  <screen flags="wfNoBorder" name="SatPanel" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanelb" position="fill" title="Duitsland">
+  <screen flags="wfNoBorder" name="SatPanelb" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
+  <screen flags="wfNoBorder" name="SatPanelc" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="530,80" size="710,510" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
+  <screen flags="wfNoBorder" name="SatPaneld" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
+  <screen flags="wfNoBorder" name="PicSetup" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
