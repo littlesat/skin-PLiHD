@@ -1253,7 +1253,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1100,426" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
+  <screen flags="wfNoBorder" name="ForecaPreview" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <panel name="KeyMenuInfoTemplate"/>
@@ -1262,33 +1262,33 @@
     <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="380,110" size="820,450" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
+  <screen flags="wfNoBorder" name="CityPanel" position="fill">
     <panel name="ForecaTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanel" position="fill" title="Satelliet Beelden">
+  <screen flags="wfNoBorder" name="SatPanel" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanelb" position="fill" title="Duitsland">
+  <screen flags="wfNoBorder" name="SatPanelb" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
+  <screen flags="wfNoBorder" name="SatPanelc" position="fill">
     <panel name="ForecaTemplate"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
   </screen>
 
-  <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
+  <screen flags="wfNoBorder" name="SatPaneld" position="fill">
     <panel name="ForecaMlistTemplate"/>
     <panel name="ButtonTemplate_BS"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
+  <screen flags="wfNoBorder" name="PicSetup" position="fill">
     <panel name="ForecaTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" font="Regular;20" position="80,110" size="1120,500" transparent="1" />

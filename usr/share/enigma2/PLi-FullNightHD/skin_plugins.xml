@@ -1247,7 +1247,7 @@
 						font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
+	<screen flags="wfNoBorder" name="ForecaPreview" position="fill">
 		<panel name="ForecaTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGYBS"/>
@@ -1266,35 +1266,35 @@
 		<widget name="spinner" position="14,14" zPosition="4" size="48,48" alphatest="blend" />
 	</screen>
 
-	<screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
+	<screen flags="wfNoBorder" name="CityPanel" position="fill">
 		<panel name="ForecaTemplate"/>
 		<panel name="PigTemplate"/>
 		<widget name="Mlist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor" column="40" transparent="1" scrollbarMode="showOnDemand"/>
 		<panel name="ButtonTemplate_GYBS"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SatPanel" position="fill" title="Satelliet Beelden">
+	<screen flags="wfNoBorder" name="SatPanel" position="fill">
 		<panel name="ForecaMlistTemplate"/>
 		<panel name="ButtonTemplate_RGYBS"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SatPanelb" position="fill" title="Duitsland">
+	<screen flags="wfNoBorder" name="SatPanelb" position="fill">
 		<panel name="ForecaMlistTemplate"/>
 		<panel name="ButtonTemplate_BS"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
+	<screen flags="wfNoBorder" name="SatPanelc" position="fill">
 		<panel name="ForecaTemplate"/>
 		<panel name="PigTemplate"/>
 		<widget name="Mlist" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
+	<screen flags="wfNoBorder" name="SatPaneld" position="fill">
 		<panel name="ForecaMlistTemplate"/>
 		<panel name="ButtonTemplate_BS"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="PicSetup" position="fill" title="SlideShow Settings">
+	<screen flags="wfNoBorder" name="PicSetup" position="fill">
 		<panel name="ForecaTemplate"/>
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RGS"/>
