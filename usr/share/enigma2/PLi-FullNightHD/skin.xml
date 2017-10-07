@@ -336,7 +336,7 @@
 		<widget source="ServiceEvent" render="Label" position="30,645" size="720,213" transparent="1" font="Regular;30" halign="block">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="30,867" size="720,140" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;30" NumberOfItems="3"/>
+		<widget source="ServiceEvent" render="NextEpgInfo" position="30,867" size="720,140" transparent="1" timeColor="foreground" foregroundColor="secondFG" noLabel="1" noWrap="1" font="Regular;30" NumberOfItems="4"/>
 		<widget source="ServiceEvent" render="Label" position="780,26" size="700,40" font="Regular;34" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo">InRootOnly</convert>
 		</widget>
