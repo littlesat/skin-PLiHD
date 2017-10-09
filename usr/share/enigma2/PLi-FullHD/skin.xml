@@ -778,8 +778,8 @@
   <!-- Console -->
 
   <screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="text" position="780,107" size="1110,910" font="Console;30"/>
+    <panel name="BasicTemplate"/>
+    <widget name="text" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- NumberZap -->
