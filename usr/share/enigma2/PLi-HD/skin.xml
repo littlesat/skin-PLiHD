@@ -835,7 +835,7 @@
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="165,366" size="90,25" font="Regular;20" foregroundColor="grey" halign="center"  transparent="1">
+    <widget source="Service" render="Label" position="165,366" size="105,25" font="Regular;20" foregroundColor="grey" halign="center"  transparent="1">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
@@ -843,7 +843,7 @@
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget name="freeDiskSpace" position="175,600" size="325,25" foregroundColor="grey" font="Regular;20" transparent="1" halign="right"/>
-    <widget source="Service" render="Label" position="255,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
+    <widget source="Service" render="Label" position="255,366" size="245,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
     <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png,PLi-HD/icons/faz.png,PLi-HD/icons/fza.png,PLi-HD/icons/default.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
