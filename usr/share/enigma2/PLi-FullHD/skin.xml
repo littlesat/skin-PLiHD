@@ -711,6 +711,7 @@
   <screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
+    <panel name="ButtonTemplate_Hideable"/>
     <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
   </screen>
 
