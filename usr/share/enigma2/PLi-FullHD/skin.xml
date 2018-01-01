@@ -137,7 +137,7 @@
     <widget name="Volume" pixmap="PLi-FullHD/infobar/volumeslider.png" position="2,2" size="15,300" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
     <ePixmap pixmap="PLi-FullHD/infobar/vol_box.png" position="0,303" size="20,24" alphatest="blend" zPosition="4"></ePixmap>
   </screen>
-  
+
   <screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
   </screen>
@@ -215,7 +215,7 @@
     </widget>
     <panel name="InfoBarTemplate"/>
   </screen>
-  
+
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
     <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
     <widget source="session.CurrentService" render="Label" position="30,20" size="1440,135" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="top" halign="left">
@@ -930,7 +930,7 @@
     <widget source="Service" render="Label" position="382,562" size="367,37" zPosition="1" foregroundColor="grey" font="Regular;30" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-  
+
     <widget name="waitingtext" position="780,100" size="1110,912" font="Regular;33" halign="center" valign="center" zPosition="4"/>
     <widget name="chosenletter" position="780,100" size="1110,912" foregroundColor="yellow" font="Regular;112" halign="center" valign="center" transparent="1" zPosition="4"/>
     <widget name="list" position="780,108" size="1110,900" scrollbarMode="showOnDemand" itemHeights="100,75,45" fontSizesOriginal="36,26,24" fontSizesCompact="36,28" fontSizesMinimal="34,30"
@@ -1920,7 +1920,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="1552,150" size="330,75" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;52">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
-	
+
 	<widget source="Frontend" render="Progress" pixmap="PLi-FullHD/infobar/bar_big.png" position="30,240" size="1860,75" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
@@ -1928,7 +1928,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="1552,240" size="330,75" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;52">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="SNR:" position="30,360" size="180,30" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;27"/>
 	<widget source="Frontend" render="Label" position="30,390" size="450,112" font="Regular;108" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">SNRdB</convert>
@@ -1938,7 +1938,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="30,570" size="450,112" backgroundColor="darkgrey" transparent="1" font="Regular;108" halign="left">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="BER:" position="30,720" size="180,30" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;27"/>
 	<widget source="Frontend" render="Label" position="30,750" size="450,112" font="Regular;108" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">BER</convert>
@@ -1985,7 +1985,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="genretext" position="825,967" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,817" size="116,116" transparent="1" alphatest="blend"/>
-    
+
     <ePixmap pixmap="PLi-FullHD/dvr/mpslider.png" position="180,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
     <widget name="PositionGauge" position="212,1042" size="836,21" transparent="0" zPosition="12" pointer="PLi-FullHD/dvr/pointer.png:20,5"/>
     <widget source="session.CurrentService" render="Label" position="10,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="right">
@@ -2104,8 +2104,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,304" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="status" position="780,495" size="1110,266" font="Regular;28"/>
-    <widget name="statusbar" position="780,780" size="1110,35" font="Regular;32"/>
+    <widget name="statusbar" position="780,495" size="1110,35" font="Regular;32"/>
+    <widget name="status" position="780,540" size="1110,266" font="Console;20"/>
   </screen>
 
   <!-- PicturePlayer -->
@@ -2219,16 +2219,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="UnhandledKey" title="UnhandledKey" position="1856,10" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
   </screen>
-    
+
   <!-- QuitMainloopScreen -->
-  
+
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
     <ePixmap pixmap="../logo/logo-white-square.png" position="c-200,c-220" size="400,318" scale="1" alphatest="blend"/>
     <widget name="text" position="c-885,c+113" size="1770,150" font="Regular;30" halign="center"/>
   </screen>
 
   <!-- QuickSubtitlesConfigMenu -->
-   
+
   <screen name="QuickSubtitlesConfigMenu" position="20,30" size="724,462" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
     <widget name="config" position="7,7" size="710,418" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
     <widget name="videofps" position="10,428" size="710,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>

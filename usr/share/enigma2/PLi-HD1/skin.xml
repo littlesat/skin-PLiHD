@@ -111,7 +111,7 @@
     <widget name="Volume" pixmap="PLi-HD1/infobar/volumesliderthin.png" position="1,0" size="13,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
     <ePixmap pixmap="PLi-HD1/infobar/vol_box_thin.png" position="3,201" size="9,13" alphatest="on" zPosition="4"></ePixmap>
   </screen>
-  
+
   <screen name="Mute" title="Mute" position="center,10" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
   </screen>
@@ -902,7 +902,7 @@
     <widget source="Service" render="Label" position="255,375" size="245,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-  
+
     <widget name="waitingtext" position="520,70" size="740,600" font="Regular;22" halign="center" valign="center" zPosition="4"/>
     <widget name="chosenletter" position="520,70" size="740,600" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4"/>
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand" itemHeights="75,50,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20"/>
@@ -1880,7 +1880,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="1035,100" size="220,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
-	
+
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD1/infobar/bar_big.png" position="20,160" size="1240,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
@@ -1888,7 +1888,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="1035,160" size="220,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="SNR:" position="20,240" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18"/>
 	<widget source="Frontend" render="Label" position="20,260" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">SNRdB</convert>
@@ -1898,7 +1898,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="20,380" size="300,75" backgroundColor="darkgrey" transparent="1" font="Regular;72" halign="left">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="BER:" position="20,480" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18"/>
 	<widget source="Frontend" render="Label" position="20,500" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">BER</convert>
@@ -1945,7 +1945,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="genretext" position="550,645" size="100,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="genre" position="650,645" size="345,25" font="Regular;20" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
     <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="20,545" size="116,116" transparent="1" alphatest="blend"/>
-    
+
     <ePixmap pixmap="PLi-HD/dvr/mpslider.png" position="120,694" size="600,16" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
     <widget name="PositionGauge" position="142,695" size="556,14" transparent="0" zPosition="12" pointer="PLi-HD/dvr/pointer.png:13,3"/>
     <widget source="session.CurrentService" render="Label" position="5,690" size="100,25" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="right">
@@ -2063,8 +2063,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="520,70" size="740,200" scrollbarMode="showOnDemand"/>
-    <widget name="status" position="520,330" size="740,140" font="Regular;18"/>
-    <widget name="statusbar" position="520,500" size="740,20" font="Regular;18"/>
+    <widget name="statusbar" position="520,330" size="740,20" font="Regular;18"/>
+    <widget name="status" position="520,355" size="740,140" font="Console;16"/>
   </screen>
 
   <!-- Picture-Player -->
@@ -2179,9 +2179,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="UnhandledKey" title="UnhandledKey" position="1226,7" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
   </screen>
-    
+
   <!-- QuitMainloopScreen -->
-  
+
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
     <ePixmap pixmap="PLi-HD/logos/pli.png" position="c-60,c-34" size="120,34" alphatest="on"/>
     <widget name="text" position="c-590,c+10" size="1180,100" font="Regular;22" halign="center"/>
