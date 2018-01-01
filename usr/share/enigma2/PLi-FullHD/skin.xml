@@ -2105,7 +2105,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,304" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
     <widget name="statusbar" position="780,495" size="1110,35" font="Regular;32"/>
-    <widget name="status" position="780,540" size="1110,266" font="Console;20"/>
+    <widget name="status" position="780,540" size="1110,410" font="Console;20"/>
   </screen>
 
   <!-- PicturePlayer -->
