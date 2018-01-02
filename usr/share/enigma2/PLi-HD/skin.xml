@@ -1827,7 +1827,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="910,100" size="225,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
-	
+
 	<widget source="Frontend" render="Progress" pixmap="PLi-HD/infobar/bar_big.png" position="140,160" size="1000,50" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
@@ -1835,7 +1835,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="910,160" size="225,50" halign="right" valign="center" borderWidth="1" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="SNR:" position="140,225" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18" />
 	<widget source="Frontend" render="Label" position="140,245" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">SNRdB</convert>
@@ -1845,7 +1845,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget source="Frontend" render="Label" position="140,345" size="300,75" backgroundColor="darkgrey" transparent="1" font="Regular;72" halign="left">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
-	
+
 	<eLabel text="BER:" position="140,425" size="120,20" backgroundColor="darkgrey" transparent="1" zPosition="5" font="Regular;18" />
 	<widget source="Frontend" render="Label" position="140,445" size="300,75" font="Regular;72" halign="left" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">BER</convert>
@@ -2010,8 +2010,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="590,110" size="540,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="status" position="590,320" size="540,130" font="Regular;16" />
-    <widget name="statusbar" position="590,450" size="470,20" font="Regular;18" />
+    <widget name="statusbar" position="590,320" size="470,20" font="Regular;18" />
+    <widget name="status" position="590,345" size="540,130" font="Console;16" />
   </screen>
 
   <screen name="BackupSelection" position="fill" flags="wfNoBorder">
