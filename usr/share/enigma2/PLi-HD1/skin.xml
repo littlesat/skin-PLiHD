@@ -1807,6 +1807,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+	<widget name="description" position="85,380" size="417,200" font="Regular;20" valign="top" />
   </screen>
 
   <!-- Positioner setup -->
