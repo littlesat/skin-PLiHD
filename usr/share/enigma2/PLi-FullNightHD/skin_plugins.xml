@@ -2204,6 +2204,7 @@
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="fill">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RG"/>
+		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="fill">
 		<panel name="PigTemplate"/>
