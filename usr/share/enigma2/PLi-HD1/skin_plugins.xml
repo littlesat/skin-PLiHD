@@ -1513,7 +1513,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="520,70" size="740,350" itemHeight="25" zPosition="1" scrollbarMode="showOnDemand"/>
-    <widget source="introduction" render="Label" position="520,650" size="740,23" zPosition="1" font="Regular;20" halign="center"/>
+    <widget source="introduction" render="Label" position="20,380" size="480,160" zPosition="1" font="Regular;20"/>
   </screen>
 
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
