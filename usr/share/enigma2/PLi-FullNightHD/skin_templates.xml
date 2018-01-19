@@ -182,12 +182,12 @@
 	</screen>
 
 	<screen name="CancelTemplate">
-		<panel name="ButtonRed"/>
+		<ePixmap pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
 		<widget name="canceltext" position="242,1030" zPosition="2" size="370,38" font="Regular;36" halign="left" backgroundColor="background" transparent="1"/>
 	</screen>
 
 	<screen name="OKTemplate">
-		<panel name="ButtonGreen"/>
+		<ePixmap pixmap="PLi-FullNightHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend"/>
 		<widget name="oktext" position="678,1030" zPosition="2" size="370,38" font="Regular;34" halign="left" backgroundColor="background" transparent="1"/>
 	</screen>
 

@@ -190,12 +190,12 @@
 	</screen>
 
   <screen name="CancelTemplate">
-    <panel name="ButtonRed"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="145,643" size="26,26" alphatest="on"/>
     <widget name="canceltext" position="185,643" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
   </screen>
 
   <screen name="OKTemplate">
-    <panel name="ButtonGreen"/>
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="420,643" size="26,26" alphatest="on"/>
     <widget name="oktext" position="460,643" zPosition="1" size="220,28" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
   </screen>
 
