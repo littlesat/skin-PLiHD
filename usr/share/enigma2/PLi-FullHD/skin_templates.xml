@@ -206,17 +206,6 @@
 
   <!-- Hideable buttons -->
 
-  <screen name="ButtonTemplate_Hideable">
-    <widget name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="h_red" pixmap="PLi-FullHD/buttons/red.png" zPosition="1" position="192,1032" size="34,34" alphatest="blend"/>
-    <widget name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="h_green" pixmap="PLi-FullHD/buttons/green.png" zPosition="1" position="628,1032" size="34,34" alphatest="blend"/>
-    <widget name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="h_yellow" pixmap="PLi-FullHD/buttons/yellow.png" zPosition="1" position="1064,1032" size="34,34" alphatest="blend"/>
-    <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget name="h_blue" pixmap="PLi-FullHD/buttons/blue.png" zPosition="1" position="1500,1032" size="34,34" alphatest="blend"/>
-  </screen>
-
   <screen name="KeyPrevNextTemplate_Hideable">
     <widget name="h_prev" pixmap="skin_default/buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38"/>
     <widget name="h_next" pixmap="skin_default/buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1031" size="52,38"/>
