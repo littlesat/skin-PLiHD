@@ -588,10 +588,6 @@
     <widget name="header" position="20,5" size="1220,50"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="0,0" size="0,0"/>
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <!-- Scan simple -->
@@ -600,10 +596,6 @@
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,525" scrollbarMode="showOnDemand"/>
     <widget name="footer" position="0,0" size="0,0"/>
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <panel name="ButtonGreen"/>
-    <eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <!-- Service Scan -->
@@ -639,10 +631,6 @@
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="520,650" size="740,25" font="Regular;22" halign="center"/>
-    <panel name="ButtonRed"/>
-    <eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <panel name="ButtonGreen"/>
-    <eLabel text="Save" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -1555,7 +1543,6 @@
 
   <screen name="HarddiskSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonRed"/>
     <widget name="model" position="520,70" size="740,25" font="Regular;24"/>
     <widget name="capacity" position="520,140" size="740,25" font="Regular;24"/>
     <widget name="bus" position="520,170" size="740,25" font="Regular;24"/>
@@ -1852,10 +1839,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget name="config" position="300,240" size="960,429" itemHeight="33" font="Regular;27" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0"/>
 
-	<panel name="ButtonRed"/>
-	<eLabel text="Cancel" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-	<panel name="ButtonGreen"/>
-	<eLabel text="Scan" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
   </screen>
 
   <screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">

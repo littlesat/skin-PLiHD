@@ -586,10 +586,6 @@
 		<widget name="header" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="config" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="introduction" position="0,0" size="0,0"/>
-		<panel name="ButtonRed"/>
-		<eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="ButtonGreen"/>
-		<eLabel text="Scan" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<!-- Scan simple -->
@@ -598,10 +594,6 @@
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,798" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="footer" position="0,0" size="0,0"/>
-		<panel name="ButtonRed"/>
-		<eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="ButtonGreen"/>
-		<eLabel text="Scan" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<!-- Service Scan -->
@@ -637,10 +629,6 @@
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="introduction" position="780,975" size="1110,37" font="Regular;33" halign="center"/>
-		<panel name="ButtonRed"/>
-		<eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<panel name="ButtonGreen"/>
-		<eLabel text="Save" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -1717,7 +1705,6 @@
 
 	<screen name="HarddiskSetup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonRed"/>
 		<widget name="model" position="780,105" size="1110,37" font="Regular;36"/>
 		<widget name="capacity" position="780,210" size="1110,37" font="Regular;36"/>
 		<widget name="bus" position="780,255" size="1110,37" font="Regular;36"/>
@@ -2014,10 +2001,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<widget name="config" position="450,360" size="1440,643" itemHeight="49" font="Regular;40" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0"/>
 
-	<panel name="ButtonRed"/>
-	<eLabel text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-	<panel name="ButtonGreen"/>
-	<eLabel text="Scan" position="678,1030" size="345,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
@@ -2338,10 +2321,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
  <screen name="OSD3DSetupScreen" position="fill" title="Select Location" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonRed"/>
-		<panel name="ButtonGreen"/>
-		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
  </screen>
 
@@ -2352,7 +2331,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
  </screen>
 
-	<!-- Standby -->
+       <!-- Standby -->
 
 	<screen name="Standby" position="fill" flags="wfNoBorder">
 		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="48,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
