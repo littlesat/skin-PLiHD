@@ -2331,38 +2331,4 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
  </screen>
 
-       <!-- Standby -->
-
-	<screen name="Standby" position="fill" flags="wfNoBorder">
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="48,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="48,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="176,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="176,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="304,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="304,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="432,20" size="128,170" foregroundColor="#aaaaaa" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="432,20" size="128,170" foregroundColor="yellow" backgroundColor="#000000" font="FdLcD;190" valign="center" halign="left" >
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">8</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1360,20" size="512,170" font="FdLcD;190" foregroundColor="yellow" backgroundColor="#000000" halign="right" valign="center" noWrap="1">
-			<convert type="ClockToText"/>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="48,230" size="1824,800" font="FdLcD;190" foregroundColor="#ffffff" backgroundColor="#222222" halign="left" valign="top" noWrap="1">
-			<convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
-		</widget>
-	</screen>
 </skin>
