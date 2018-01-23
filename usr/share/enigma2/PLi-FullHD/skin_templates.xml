@@ -87,49 +87,49 @@
   <!-- Button Templates -->
 
   <screen name="ButtonRed">
-    <widget conditional="key_red" objecttypes="StaticText" source="key_red" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend">
+    <widget conditional="key_red" objectTypes="StaticText" source="key_red" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap conditional="key_red" objecttypes="Button,Label" pixmap="PLi-FullHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
+    <ePixmap conditional="key_red" objectTypes="Button,Label" pixmap="PLi-FullHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonGreen">
-    <widget conditional="key_green" objecttypes="StaticText" source="key_green" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend">
+    <widget conditional="key_green" objectTypes="StaticText" source="key_green" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap conditional="key_green" objecttypes="Button,Label" pixmap="PLi-FullHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend"/>
+    <ePixmap conditional="key_green" objectTypes="Button,Label" pixmap="PLi-FullHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonYellow">
-    <widget conditional="key_yellow" objecttypes="StaticText" source="key_yellow" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend">
+    <widget conditional="key_yellow" objectTypes="StaticText" source="key_yellow" render="Pixmap" pixmap="PLi-FullHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap conditional="key_yellow" objecttypes="Button,Label" pixmap="PLi-FullHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend"/>
+    <ePixmap conditional="key_yellow" objectTypes="Button,Label" pixmap="PLi-FullHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonBlue">
-    <widget conditional="key_blue" objecttypes="StaticText" source="key_blue" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend">
+    <widget conditional="key_blue" objectTypes="StaticText" source="key_blue" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap conditional="key_blue" objecttypes="Button,Label" pixmap="PLi-FullHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend"/>
+    <ePixmap conditional="key_blue" objectTypes="Button,Label" pixmap="PLi-FullHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend"/>
   </screen>
 
   <screen name="ButtonTemplate">
     <panel name="ButtonRed"/>
-    <widget conditional="key_red" objecttypes="Label,Button" name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget conditional="key_red" objecttypes="StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <widget conditional="key_red" objectTypes="Label,Button" name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget conditional="key_red" objectTypes="StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
 
     <panel name="ButtonGreen"/>
-    <widget conditional="key_green" objecttypes="Label,Button" name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget conditional="key_green" objecttypes="StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <widget conditional="key_green" objectTypes="Label,Button" name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget conditional="key_green" objectTypes="StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
 
     <panel name="ButtonYellow"/>
-    <widget conditional="key_yellow" objecttypes="Label,Button" name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget conditional="key_yellow" objecttypes="StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <widget conditional="key_yellow" objectTypes="Label,Button" name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget conditional="key_yellow" objectTypes="StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
 
     <panel name="ButtonBlue"/>
-    <widget conditional="key_blue" objecttypes="Label,Button" name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-    <widget conditional="key_blue" objecttypes="StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+    <widget conditional="key_blue" objectTypes="Label,Button" name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <widget conditional="key_blue" objectTypes="StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
   </screen>
 
   <screen name="KeyMenuTemplate">
