@@ -2196,7 +2196,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.FrontendInfo" render="Label" position="450,50" size="1000,100" halign="left" font="Regular;50">
 			<convert type="FrontendInfo">STRING,24,0</convert>
 		</widget>
-		<eLabel text="Current Time:" position="50,150" size="400,100" font="Regular;50""/>
+		<eLabel text="Current Time:" position="50,150" size="400,100" font="Regular;50"/>
 		<widget source="global.CurrentTime" render="Label" position="450,150" size="512,100" font="Regular;50" halign="left">
 			<convert type="ClockToText">Format:%F %H:%M</convert>
 		</widget>
