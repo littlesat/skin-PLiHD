@@ -1581,7 +1581,6 @@
     <widget name="model" position="780,105" size="1110,37" font="Regular;36"/>
     <widget name="capacity" position="780,210" size="1110,37" font="Regular;36"/>
     <widget name="bus" position="780,255" size="1110,37" font="Regular;36"/>
-    <widget name="initializetext" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
   </screen>
 
   <!-- Help -->
