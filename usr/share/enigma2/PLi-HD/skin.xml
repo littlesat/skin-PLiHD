@@ -612,6 +612,12 @@
     <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+  <!-- SelectImage -->
+
+  <screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
+    <panel name="ChoiceBox"/>
+  </screen>
+
   <!-- SortbyChoiceBox -->
 
   <screen name="SortbyChoiceBox" title="" position="fill" flags="wfNoBorder">
