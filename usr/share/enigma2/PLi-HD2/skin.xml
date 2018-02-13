@@ -841,6 +841,15 @@
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
 
+  <!-- MovieSelectionFileManagerList -->
+
+  <screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="text" position="40,380" size="462,50" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="files" position="530,80" size="710,570" scrollbarMode="showOnDemand"/>
+  </screen>
+
   <!-- NumercalTextInputHelpDialog -->
 
   <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">

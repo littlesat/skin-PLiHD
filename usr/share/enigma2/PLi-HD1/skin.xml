@@ -16,7 +16,8 @@
     <font name="LCD" filename="lcd.ttf" scale="100"/>
     <font name="Console" filename="tuxtxt.ttf" scale="100"/>
     <font name="Fixed" filename="andale.ttf" scale="100"/>
-    <alias name="ChoiceList" font="Regular" size="21" height="30" />
+    <alias name="ChoiceList" font="Regular" size="21" height="30"/>
+    <alias name="SelectionList" font="Regular" size="22" height="30"/>
   </fonts>
 
   <!-- Colors -->
@@ -66,6 +67,8 @@
 
   <parameters>
     <parameter name="AboutHddSplit" value="1"/>
+    <parameter name="SelectionListDescr" value="34,2,700,30"/>
+    <parameter name="SelectionListLock" value="4,1,25,24"/>
   </parameters>
 
   <!-- Window -->
@@ -896,6 +899,15 @@
     <widget name="movie_sort" pixmaps="PLi-HD/icons/az.png,PLi-HD/icons/newtop.png,PLi-HD/icons/shuffle.png,PLi-HD/icons/za.png,PLi-HD/icons/oldtop.png,PLi-HD/icons/faz.png,PLi-HD/icons/fza.png,PLi-HD/icons/default.png" position="855,38" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="movie_off" pixmaps="PLi-HD/icons/ask.png,PLi-HD/icons/movielist.png,PLi-HD/icons/quit.png,PLi-HD/icons/pause.png,PLi-HD/icons/playlist.png,PLi-HD/icons/playlistquit.png,PLi-HD/icons/loop.png,PLi-HD/icons/rep.png" position="890,38" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="DescriptionBorder" position="0,0" size="0,0"/>
+  </screen>
+
+  <!-- MovieSelectionFileManagerList -->
+
+  <screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="text" position="20,380" size="480,50" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="files" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- NumercalTextInputHelpDialog -->
