@@ -906,8 +906,8 @@
   <screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="text" position="20,380" size="480,50" zPosition="1" font="Regular;20" halign="left"/>
-    <widget name="files" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="20,380" size="480,50" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="fconfigiles" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- NumercalTextInputHelpDialog -->
