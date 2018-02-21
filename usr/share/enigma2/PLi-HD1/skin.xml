@@ -926,6 +926,7 @@
       <convert type="ClockToText">Format:%a %d.%m.%Y, %H:%M</convert>
     </widget>
   </screen>
+
   <!-- NumercalTextInputHelpDialog -->
 
   <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
