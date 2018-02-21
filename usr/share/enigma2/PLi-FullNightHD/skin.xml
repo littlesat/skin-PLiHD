@@ -950,10 +950,27 @@
 	<!-- MovieSelectionFileManagerList -->
 
 	<screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
+		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="description" position="30,560" size="720,120" zPosition="1" font="Regular;30" halign="left"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="30,540" size="720,80" zPosition="1" font="Regular;30" halign="left"/>
+		<widget name="config" position="780,100" size="1110,874" itemHeight="38" scrollbarMode="showOnDemand"/>
+
+		<widget source="Service" render="Label" position="30,658" size="720,70" foregroundColor="secondFG" font="Regular;30" transparent="1">
+			<convert type="MovieInfo">ShortDescription</convert>
+		</widget>
+		<widget source="Service" render="Label" position="30,733" size="720,280"  font="Regular;30" valign="center" halign="block">
+			<convert type="MovieInfo">MetaDescription</convert>
+		</widget>
+		<widget source="Service" render="Label" position="825,980" size="1070,35" transparent="1" foregroundColor="grey" font="Regular;30">
+			<convert type="MovieInfo">RecordServiceName</convert>
+		</widget>
+		<widget source="Service" render="Label" position="825,980" size="1070,35" transparent="1" font="Regular;30" foregroundColor="grey" halign="center">
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget source="Service" render="Label" position="825,980" size="1070,35" transparent="1" font="Regular;30" foregroundColor="grey" halign="right">
+			<convert type="ServiceTime">StartTime</convert>
+			<convert type="ClockToText">Format:%a %d.%m.%Y, %H:%M</convert>
+		</widget>
 	</screen>
 
 	<!-- NumercalTextInputHelpDialog -->
