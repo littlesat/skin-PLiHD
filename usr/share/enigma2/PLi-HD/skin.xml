@@ -834,10 +834,10 @@
   <screen name="MovieSelectionFileManagerList" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="description" position="85,370" size="425,50" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="description" position="85,370" size="425,46" zPosition="1" font="Regular;20" halign="left"/>
     <widget name="config" position="530,110" size="690,480" scrollbarMode="showOnDemand"/>
-
-    <widget source="Service" render="Label" position="85,430" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
+    <widget name="size" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right"/>
+    <widget source="Service" render="Label" position="85,438" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="85,487" size="425,138"  font="Regular;20" valign="center" halign="block">
