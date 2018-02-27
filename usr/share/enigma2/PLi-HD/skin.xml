@@ -836,7 +836,8 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="description" position="85,370" size="425,46" zPosition="1" font="Regular;20" halign="left"/>
     <widget name="config" position="530,110" size="690,480" scrollbarMode="showOnDemand"/>
-    <widget name="size" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right"/>
+    <widget name="size" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right" transparent="1"/>
+    <widget name="number" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" transparent="1"/>
     <widget source="Service" render="Label" position="85,438" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>

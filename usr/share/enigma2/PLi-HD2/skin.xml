@@ -848,7 +848,8 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="description" position="40,370" size="462,46" zPosition="1" font="Regular;20" halign="left"/>
     <widget name="config" position="530,80" size="710,570" scrollbarMode="showOnDemand"/>
-    <widget name="size" position="40,416" size="462,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right"/>
+    <widget name="size" position="40,416" size="462,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right" transparent="1"/>
+    <widget name="number" position="40,416" size="462,22" zPosition="1" foregroundColor="green" font="Regular;18" transparent="1"/>
     <widget source="Service" render="Label" position="40,438" size="462,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
