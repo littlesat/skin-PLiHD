@@ -2004,7 +2004,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget source="country" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
     <ePixmap pixmap="PLi-FullHD/skin_default/vkey_text.png" position="927,235" size="816,78" zPosition="-4" alphatest="on"/>
     <widget name="header" position="930,120" size="810,39" transparent="1" noWrap="1" font="Regular;33" valign="top"/>
     <widget name="text" position="930,255" size="804,51" transparent="1" noWrap="1" font="Regular;38" valign="center" halign="right"/>
