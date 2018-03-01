@@ -1583,6 +1583,33 @@
     <widget name="files" position="590,110" size="600,475" scrollbarMode="showOnDemand"/>
   </screen>
 
+  <!-- MovieManager -->
+
+  <screen name="MovieManager" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="description" position="85,370" size="425,46" zPosition="1" font="Regular;20" halign="left"/>
+    <widget name="config" position="530,110" size="690,480" scrollbarMode="showOnDemand"/>
+    <widget name="size" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" halign="right" transparent="1"/>
+    <widget name="number" position="85,416" size="425,22" zPosition="1" foregroundColor="green" font="Regular;18" transparent="1"/>
+    <widget source="Service" render="Label" position="85,438" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
+      <convert type="MovieInfo">ShortDescription</convert>
+    </widget>
+    <widget source="Service" render="Label" position="85,487" size="425,138"  font="Regular;20" valign="center" halign="block">
+      <convert type="MovieInfo">MetaDescription</convert>
+    </widget>
+    <widget source="Service" render="Label" position="555,600" size="665,25" transparent="1" foregroundColor="grey" font="Regular;21">
+      <convert type="MovieInfo">RecordServiceName</convert>
+    </widget>
+    <widget source="Service" render="Label" position="555,600" size="665,25" transparent="1" font="Regular;21" foregroundColor="grey" halign="center">
+      <convert type="MovieInfo">FileSize</convert>
+    </widget>
+    <widget source="Service" render="Label" position="555,600" size="665,25" transparent="1" font="Regular;21" foregroundColor="grey" halign="right">
+      <convert type="ServiceTime">StartTime</convert>
+      <convert type="ClockToText">Format:%a %d.%m.%Y, %H:%M</convert>
+    </widget>
+  </screen>
+
   <!-- AutoBouquetsMaker (ABM) -->
 
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="fill">
