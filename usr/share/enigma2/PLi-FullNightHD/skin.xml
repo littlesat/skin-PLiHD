@@ -724,8 +724,8 @@
 	<!-- Console -->
 
 	<screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
+		<panel name="PigTemplate"/>
+		<widget name="text" position="30,540" size="1860,500" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- NumberZap -->
