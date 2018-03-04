@@ -1764,9 +1764,9 @@
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="title" position="7,570" size="715,45" font="RegularSmall;30" foregroundColor="secondFG" halign="center"/>
-		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="223,615" size="315,31" zPosition="2" alphatest="blend"/>
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="223,615" size="315,31" zPosition="3" transparent="1"/>
-		<widget name="ratinglabel" position="7,650" size="715,75" font="RegularSmall;30" foregroundColor="grey" halign="center"/>
+		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="265,640" size="315,31" zPosition="2" />
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="265,640"  size="315,31" transparent="1" zPosition="3" />
+		<widget name="ratinglabel" position="7,675" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
 		<widget name="voteslabel" position="7,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
 		<widget name="statusbar" position="7,950" size="715,45" font="Regular;30" halign="center" valign="bottom"/>
 		<widget name="poster" position="750,120" size="165,270" alphatest="blend"/>
