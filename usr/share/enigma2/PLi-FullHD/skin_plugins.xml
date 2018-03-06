@@ -1610,7 +1610,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="config" position="780,105" size="1110,266" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-    <widget name="help" position="30,630" size="720,35" font="Regular;28" foregroundColor="darkgrey" />
+    <widget name="help" position="30,600" size="720,99" font="Regular;28" foregroundColor="darkgrey" />
     <widget name="address" position="780,371" size="555,38" zPosition="1" font="Regular;30" foregroundColor="blue"/>
     <widget name="sendto" position="1335,371" size="555,38" zPosition="1" font="Regular;30" foregroundColor="blue"/>
     <ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="780,410" size="1110,3" zPosition="2"/>
