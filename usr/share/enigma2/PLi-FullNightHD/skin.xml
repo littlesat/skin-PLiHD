@@ -2000,7 +2000,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<widget name="config" position="450,360" size="1440,643" itemHeight="49" font="Regular;40" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	<widget name="introduction" position="0,0" size="0,0" zPosition="0"/>
-
 	</screen>
 
 	<screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
@@ -2063,7 +2062,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="info" position="30,600" size="720,225" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="params" rowsincolumn="26" />
 	</screen>
-	 <!-- Commit Info -->
+	<!-- Commit Info -->
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="PLi-FullNightHD/buttons/left.png" position="1064,1030" size="34,34" alphatest="blend"/>
@@ -2156,7 +2155,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="config" position="780,105" size="1110,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="statusbar" position="780,495" size="1110,30" font="Regular;28"/>
+		<widget name="statusbar" position="780,495" size="1110,35" font="Regular;32"/>
 		<widget name="status" position="780,540" size="1110,410" font="Console;20"/>
 	</screen>
 
@@ -2281,7 +2280,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="videofps" position="10,428" size="710,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
 	</screen>
 
-	 <!-- QuickSubtitlesClearRests -->
+	<!-- QuickSubtitlesClearRests -->
 	<screen name="QuickSubtitlesClearRests" position="20,30" size="724,204" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
 		<widget name="config" position="7,7" size="710,190" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
 	</screen>
@@ -2328,7 +2327,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="config" position="780,100" size="1110,855" itemHeight="45" font="Regular;33" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
-    <!-- Standby -->
+	<!-- Standby -->
 
 	<screen name="Standby" position="fill" flags="wfNoBorder">
 		<eLabel text="Tuners in Use:" position="50,50" size="400,100" font="Regular;50"/>
