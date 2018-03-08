@@ -1007,7 +1007,6 @@
 
 	<screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<eLabel text="Channellist menu" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="menu" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 
