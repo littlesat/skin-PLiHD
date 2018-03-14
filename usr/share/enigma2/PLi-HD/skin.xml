@@ -518,6 +518,8 @@
 
   <screen flags="wfNoBorder" name="MenuSort" position="fill">
     <panel name="MenuTemplate"/>
+    <ePixmap pixmap="skin_default/buttons/key_prev.png" zPosition="1" alphatest="blend" position="40,645" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_next.png" zPosition="1" alphatest="blend" position="75,645" size="35,25"/>
   </screen>
 
   <screen flags="wfNoBorder" name="menu_setup" position="fill">
