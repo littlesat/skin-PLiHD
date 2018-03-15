@@ -883,8 +883,8 @@
     <widget name="paget3" pixmap="skin_default/buttons/key_right.png" position="1515,978" size="52,38" zPosition="3" alphatest="on"/>
     <widget name="page" position="1230,976" size="217,42" font="Regular;33" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1"/>
     <widget name="tips_label" position="30,750" size="90,30" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
-    <widget name="tips_detail" position="30,787" size="660,60" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
-    <widget name="tips_icon" pixmap="skin_default/buttons/key_help.png" position="30,784" alphatest="blend" size="52,38" backgroundColor="black" zPosition="3"/>
+    <widget name="tips_detail" position="30,787" size="720,56" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
+    <widget name="tips_icon" pixmap="skin_default/buttons/key_help.png" position="30,784" alphatest="off" size="48,36" backgroundColor="black" zPosition="3"/>
   </screen>
 
   <screen name="CSFDAbout" position="fill" title="Informace o pluginu CSFD" flags="wfNoBorder">
