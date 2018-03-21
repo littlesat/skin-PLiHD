@@ -1981,6 +1981,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyOkTemplate"/>
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget source="list" render="Listbox" position="780,135" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
@@ -2044,6 +2045,7 @@
 	<screen name="MovieManager" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget name="description" position="30,550" size="720,64" zPosition="1" font="Regular;28" halign="block"/>
 		<widget name="config" position="780,100" size="1110,874" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget name="size" position="30,630" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
