@@ -70,7 +70,7 @@
 		<panel name="CancelOKTemplate"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
-	
+
 		<!-- VLC Player -->
 
 	<screen flags="wfNoBorder" name="VlcServerConfigScreen" position="fill">
@@ -567,7 +567,7 @@
 	</screen>
 
 	<!-- EPG Import Configuration -->
-	
+
 	<screen name="EPGImportConfig" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
@@ -575,21 +575,21 @@
 		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
 		<widget name="status" position="780,780" size="1110,90" font="Regular;30"/>
 	</screen>
-	
+
 	<!-- EPG Import Profile -->
-	
+
 	<screen name="EPGImportProfile" position="fill" title="EPG Import Profile" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
-	
+
 	<!-- EPG Import Sources -->
 
 	<screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
-	
+
 	<!-- EPG Import Log -->
 
 	<screen name="EPGImportLog" position="fill" title="EPG Import Log" flags="wfNoBorder">
@@ -1501,7 +1501,7 @@
 		<widget name="restxt" position="0,27" size="375,27" font="Regular;24" />
 	</screen>
 
- <!-- Remote timer -->
+	<!-- Remote timer -->
 
 	<screen name="RemoteTimerSetup" position="fill" title="Timer entry" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -1513,7 +1513,7 @@
 		<widget name="text" position="7,568" size="715,390" zPosition="2" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 
- <!-- PermanentClock -->
+	<!-- PermanentClock -->
 
 	<screen name="PermanentClockMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -1532,14 +1532,14 @@
 		</widget>
 	</screen>
 
- <!-- VFDControl -->
+	<!-- VFDControl -->
 
 	<screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,380" itemHeight="38" font="Regular;33" scrollbarMode="showOnDemand"/>
 	</screen>
 
- <!-- RefreshBouquet -->
+	<!-- RefreshBouquet -->
 
 	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
@@ -1561,7 +1561,7 @@
 				}
 			</convert>
 		</widget>
-	<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
+		<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
 
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
@@ -1587,7 +1587,7 @@
 		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
 	</screen>
 
-	<!-- ## Het Weer ##-->
+	<!-- Het Weer -->
 	<screen name="weatherMenu" position="fill" flags="wfNoBorder" title="Weer info">
 		<panel name="PigTemplate"/>
 		<widget name="titles" position="22,15" size="1500,78" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
@@ -1776,7 +1776,7 @@
 	<screen name="TMBDSettings" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,123" size="1132,874" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
-	</screen>	
+	</screen>
 	<screen name="TmbdYTTrailerList" position="fill" flags="wfNoBorder" title="YTTrailer List">
 		<panel name="PigTemplate"/>
 		<widget source="list" render="Listbox" position="780,123" size="1132,874" scrollbarMode="showOnDemand">
@@ -1974,7 +1974,7 @@
 		<widget name="message" position="center,center" size="700,150" font="Regular;30" valign="center" halign="center"/>
 	</screen>
 
-	<!-- ManagerAutofs  -->
+	<!-- ManagerAutofs -->
 	<screen name="ManagerAutofsMasterSelection" position="fill">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
@@ -2122,7 +2122,7 @@
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="fill">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>		
+		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>
 	</screen>
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_KeepBouquets" position="fill">
 		<panel name="PigTemplate"/>
@@ -2142,4 +2142,5 @@
 		<panel name="PigTemplate"/>
 		<widget name="about" position="840,214" size="754,540" font="Regular;24"/>
 	</screen>
+
 </skin>
