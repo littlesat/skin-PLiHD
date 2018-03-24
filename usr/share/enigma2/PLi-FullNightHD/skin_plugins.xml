@@ -1321,9 +1321,7 @@
 		<widget name="config" position="30,655" size="720,266" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
 		<widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="165,967" zPosition="1" size="52,38" transparent="1" alphatest="on" >
-	<convert type="ConditionalShowHide"/>
-		</widget>
+		<panel name="VKeyIconPanel"/>
 	</screen>
 
 	<screen name="AutoTimer" title="Auto Timer" position="fill" flags="wfNoBorder">
