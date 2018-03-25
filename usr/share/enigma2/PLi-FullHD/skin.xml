@@ -94,6 +94,11 @@
 		<parameter name="FallbackReceiverListIP" value="300,2,225,38"/>
 	</parameters>
 
+        <switchpixmap>
+		<pixmap name="menu_on" filename="PLi-FullHD/icons/menu_on.png" />
+		<pixmap name="menu_off" filename="PLi-FullHD/icons/menu_off.png" />
+	</switchpixmap>
+
 	<!-- Window -->
 
 	<windowstyle id="0" type="skinned">
