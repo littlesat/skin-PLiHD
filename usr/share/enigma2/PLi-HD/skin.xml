@@ -62,6 +62,11 @@
     <color name="yellowtransparent" value="#084b4b00"/>
   </colors>
 
+  <switchpixmap>
+    <pixmap name="menu_on" filename="PLi-HD/icons/menu_on.png" />
+    <pixmap name="menu_off" filename="PLi-HD/icons/menu_off.png" />
+  </switchpixmap>
+
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">

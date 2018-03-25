@@ -71,6 +71,11 @@
     <parameter name="SelectionListLock" value="4,1,25,24"/>
   </parameters>
 
+  <switchpixmap>
+    <pixmap name="menu_on" filename="PLi-HD/icons/menu_on.png" />
+    <pixmap name="menu_off" filename="PLi-HD/icons/menu_off.png" />
+  </switchpixmap>
+
   <!-- Window -->
 
   <windowstyle id="0" type="skinned">
