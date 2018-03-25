@@ -93,8 +93,8 @@
 	</parameters>
 
         <switchpixmap>
-		<pixmap name="menu_on" filename="PLi-FullHD/icons/menu_on.png" />
-		<pixmap name="menu_off" filename="PLi-FullHD/icons/menu_off.png" />
+		<pixmap name="menu_on" filename="PLi-FullNightHD/icons/menu_on.png" />
+		<pixmap name="menu_off" filename="PLi-FullNightHD/icons/menu_off.png" />
 	</switchpixmap>
 
 	<!-- Window -->
