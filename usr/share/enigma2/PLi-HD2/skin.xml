@@ -64,8 +64,8 @@
   </colors>
 
   <switchpixmap>
-    <pixmap name="menu_on" filename="PLi-HD/icons/menu_on.png"/>
-    <pixmap name="menu_off" filename="PLi-HD/icons/menu_off.png"/>
+    <pixmap name="menu_on" filename="skin_default/icons/menu_on.png"/>
+    <pixmap name="menu_off" filename="skin_default/icons/menu_off.png"/>
   </switchpixmap>
 
   <!-- Window -->
