@@ -356,10 +356,6 @@
   <screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <eLabel text="Delete" position="185,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <eLabel text="Rename" position="460,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <eLabel text="Move/Copy" position="735,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <eLabel text="Bookmarks" position="1010,643" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <widget name="filelist" position="530,110" size="665,494" selectionPixmap="PLi-HD/buttons/sel.png" scrollbarMode="showOnDemand" />
   </screen>
 

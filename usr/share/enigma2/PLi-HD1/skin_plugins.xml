@@ -377,10 +377,6 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <eLabel text="Delete" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <eLabel text="Rename" position="450,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <eLabel text="Move/Copy" position="745,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
-    <eLabel text="Bookmarks" position="1030,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
     <widget name="filelist" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
