@@ -369,22 +369,14 @@
 
 	<screen name="SoftLinkScreen" position="fill" title="Make a softlink..." flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonRed"/>
-		<panel name="ButtonYellow"/>
 		<widget name="File" position="780,105" size="1110,150" font="Regular;30" halign="center" transparent="1" valign="center" zPosition="1"/>
 		<widget name="SLto" position="780,270" size="1110,741" scrollbarMode="showOnDemand" zPosition="1"/>
-		<eLabel text="Set name" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<eLabel text="Make a softlink" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="CPmaniger" position="fill" title="Select Copy/Move location..." flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonRed"/>
-		<panel name="ButtonYellow"/>
 		<widget name="File" position="780,105" size="1110,150" font="Regular;30" halign="center" transparent="1" valign="center" zPosition="1"/>
 		<widget name="CPto" position="780,270" size="1110,741" scrollbarMode="showOnDemand" zPosition="1"/>
-		<eLabel text="MOVE" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<eLabel text="COPY" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="MusicExplorer" position="fill" flags="wfNoBorder">
