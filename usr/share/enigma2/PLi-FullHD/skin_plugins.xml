@@ -1293,6 +1293,7 @@
 
 	<screen name="AutoTimerWizard" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="VKeyIconPanel"/>
 		<eLabel text="Welcome..." position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
 		<widget name="text" position="780,105" size="830,495" font="Regular;32"/>
@@ -1309,7 +1310,6 @@
 		<widget name="config" position="30,655" size="720,266" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
 		<widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<panel name="VKeyIconPanel"/>
 	</screen>
 
 	<screen name="AutoTimer" title="Auto Timer" position="fill" flags="wfNoBorder">
