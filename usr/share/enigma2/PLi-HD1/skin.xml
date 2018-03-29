@@ -586,6 +586,7 @@
 
   <screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="VKeyIconPanel"/>
     <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget name="description" position="20,380" size="480,200" font="Regular;20" valign="top"/>
@@ -1459,7 +1460,7 @@
 
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,688" size="35,25"/>
+    <panel name="VKeyIconPanel"/>
     <widget name="config" position="520,70" size="740,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
     <widget name="HelpWindow" position="640,400" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
     <widget source="introduction" render="Label" position="520,650" size="740,25" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;22" halign="center"/>
@@ -1467,7 +1468,7 @@
 
   <screen name="UserDialog" position="fill" title="UserDialog" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="VKeyIcon" pixmap="PLi-HD/buttons/key_text.png" alphatest="on" zPosition="1" position="110,688" size="35,25"/>
+    <panel name="VKeyIconPanel"/>
     <widget name="config" position="520,70" size="740,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
     <widget source="introduction" render="Label" position="520,650" size="740,25" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;22" halign="center"/>
     <widget name="HelpWindow" position="640,400" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
