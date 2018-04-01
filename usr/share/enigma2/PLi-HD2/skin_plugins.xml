@@ -1538,11 +1538,13 @@
   </screen>
   <screen name="ManagerAutofsMasterEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="VKeyIconPanel"/>
     <widget name="text" position="530,645" size="710,25" font="Regular;20" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
   <screen name="ManagerAutofsAutoEdit" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="VKeyIconPanel"/>
     <widget name="text" position="50,650" size="1190,20" font="Regular;16" halign="right"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
