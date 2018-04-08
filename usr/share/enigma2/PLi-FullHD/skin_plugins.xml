@@ -818,11 +818,11 @@
 	<screen flags="wfNoBorder" name="meteoViewer" position="fill" title="meteoViewer">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<ePixmap position="1350,165" size="27,15" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/top.png" zPosition="4" alphatest="on"/>
-		<ePixmap position="1350,825" size="27,15" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on"/>
-		<ePixmap position="900,502" size="15,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/left.png" zPosition="4" alphatest="on"/>
-		<ePixmap position="1785,502" size="15,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/right.png" zPosition="4" alphatest="on"/>
-		<ePixmap pixmap="skin_default/buttons/key_tv.png" position="900,870" size="52,38" alphatest="on"/>
+		<ePixmap position="1341,164" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/top.png" zPosition="4" alphatest="on"/>
+		<ePixmap position="1341,831" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on"/>
+		<ePixmap position="899,494" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/left.png" zPosition="4" alphatest="on"/>
+		<ePixmap position="1791,494" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/right.png" zPosition="4" alphatest="on"/>
+		<ePixmap pixmap="skin_default/buttons/key_tv.png" position="900,867" size="52,38" alphatest="on"/>
 		<eLabel text="- Synaptic" position="960,870" size="300,45" backgroundColor="secondBG" font="Regular;27" halign="left" transparent="1" zPosition="1"/>
 		<widget name="frames" position="900,165" size="900,675" zPosition="1" alphatest="blend"/>
 		<widget name="border" position="900,165" zPosition="2" size="900,675" alphatest="blend"/>
