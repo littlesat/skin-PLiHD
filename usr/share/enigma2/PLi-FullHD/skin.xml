@@ -331,7 +331,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullHD/window/progress.png" transparent="1" borderWidth="1" borderColor="grey">
+		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="PLi-FullHD/window/progress.png" transparent="1" borderWidth="1" borderColor="darkgrey">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="660,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
