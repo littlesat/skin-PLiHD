@@ -1434,8 +1434,8 @@
 		<widget name="DNSInfo_Text" position="1590,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="DNSInfo" position="1590,900" size="300,34" transparent="1" zPosition="2" />
 
-		<widget name="EditSettingsButton" position="1500,1032" size="34,34" transparent="1" zPosition="1" pixmaps="PLi-FullHD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
-		<widget name="EditSettings_Text" position="1550,1030" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;34" halign="left"/>
+		<widget name="EditSettingsButton" position="1500,1034" size="34,34" transparent="1" zPosition="1" pixmaps="PLi-FullHD/buttons/grey.png,PLi-FullHD/buttons/blue.png" alphatest="on"/>
+		<widget name="EditSettings_Text" position="1550,1032" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;34" halign="left"/>
 
 	</screen>
 
@@ -1950,7 +1950,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="1100,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="left">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget name="repeat" position="1785,1032" size="105,45" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend"/>
+		<widget name="repeat" position="1785,1034" size="105,45" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend"/>
 	</screen>
 
 	<screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder"/>
@@ -1977,15 +1977,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Commit Info -->
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1032" size="34,34" alphatest="blend"/>
-		<ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1032" size="34,34" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1034" size="34,34" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1034" size="34,34" alphatest="blend"/>
 		<widget name="AboutScrollLabel" font="Regular;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
 	</screen>
 	<!-- Troubleshoot -->
 	<screen name="Troubleshoot" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1032" size="34,34" alphatest="blend"/>
-		<ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1032" size="34,34" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullHD/buttons/left.png" position="1064,1034" size="34,34" alphatest="blend"/>
+		<ePixmap pixmap="PLi-FullHD/buttons/right.png" position="1500,1034" size="34,34" alphatest="blend"/>
 		<widget name="AboutScrollLabel" font="Fixed;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
 	</screen>
 	<!-- Translation Info -->
