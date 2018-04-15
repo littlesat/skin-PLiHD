@@ -46,10 +46,10 @@
 	<!-- Colors -->
 
 	<colors>
-		<color name="toptemplatecolor" value="#00000030"/>
-		<color name="basictemplatecolor" value="#00000020"/>
-		<color name="selectorcolor" value="#00000030"/>
-		<color name="transponderinfo" value="#000090f0"/>
+		<color name="toptemplatecolor" value="#00000014"/>
+		<color name="basictemplatecolor" value="#00000010"/>
+		<color name="selectorcolor" value="#00000020"/>
+		<color name="transponderinfo" value="#00808080"/>
 		<color name="background" value="#00000000"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#00578cc0"/>
@@ -71,9 +71,9 @@
 		<color name="redtransparent" value="#084c0000"/>
 		<color name="rssviewtop" value="#00005050"/>
 		<color name="secondBG" value="#18101214"/>
-		<color name="secondFG" value="#00fcc000"/>
+		<color name="secondFG" value="#00c8aa40"/>
 		<color name="selectedBG" value="#06303240"/>
-		<color name="selectedFG" value="#00fcc000"/>
+		<color name="selectedFG" value="#00c8aa40"/>
 		<color name="transparent" value="#ff000000"/>
 		<color name="transpBlack" value="#54111112"/>
 		<color name="transpDark" value="#54242424"/>
@@ -84,7 +84,7 @@
 		<color name="un808888" value="#00808888"/>
 		<color name="uncccccc" value="#00cccccc"/>
 		<color name="white" value="#00f0f0f0"/>
-		<color name="yellow" value="#00ffc000"/>
+		<color name="yellow" value="#00c8aa40"/>
 		<color name="yellowsoft" value="#00ccc040"/>
 		<color name="yellowtransparent" value="#084b4b00"/>
 	</colors>
@@ -103,7 +103,7 @@
 	<!-- Window -->
 
 	<windowstyle id="0" type="skinned">
-		<title offset="40,5" font="Regular;32"/>
+		<title offset="25,6" font="Regular;28"/>
 		<color name="Background" color="background"/>
 		<color name="LabelForeground" color="foreground"/>
 		<color name="ListboxBackground" color="background"/>
