@@ -93,6 +93,7 @@
 		<parameter name="FallbackReceiverListName" value="8,2,225,38"/>
 		<parameter name="FallbackReceiverListIP" value="300,2,225,38"/>
                 <parameter name="ConfigListSlider" value="22,0"/>
+		<parameter name="ChoicelistName" value="68,3,1000,31"/>
 	</parameters>
 
         <switchpixmap>
