@@ -1709,7 +1709,7 @@
   <screen name="ManagerAutofsRemoveBackupFiles" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="20,380" size="480,100" zPosition="1" font="Regular;18" halign="left"/>
-    <widget name="files" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- MovieManager -->
