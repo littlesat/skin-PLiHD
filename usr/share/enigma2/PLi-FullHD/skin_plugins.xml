@@ -398,7 +398,7 @@
 	<!--GP2 - Where is this used??? -->
 
 	<gstyle>
-		<gstyles filename="PLi-HD/window/separator.png#cached"/>
+		<gstyles filename="PLi-FullHD/window/separator.png#cached"/>
 	</gstyle>
 
 	<screen name="Dish" flags="wfNoBorder" position="30,90" size="195,303" title="Dish" zPosition="1" backgroundColor="transparent" >

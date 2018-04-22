@@ -118,14 +118,14 @@
 		<color name="WindowTitleForeground" color="foreground"/>
 		<color name="WindowTitleBackground" color="background"/>
 		<borderset name="bsWindow">
-			<pixmap filename="PLi-HD/window/top_left_corner.png" pos="bpTopLeft"/>
-			<pixmap filename="PLi-HD/window/top_edge.png" pos="bpTop"/>
-			<pixmap filename="PLi-HD/window/top_right_corner.png" pos="bpTopRight"/>
-			<pixmap filename="PLi-HD/window/left_edge.png" pos="bpLeft"/>
-			<pixmap filename="PLi-HD/window/right_edge.png" pos="bpRight"/>
-			<pixmap filename="PLi-HD/window/bottom_left_corner.png" pos="bpBottomLeft"/>
-			<pixmap filename="PLi-HD/window/bottom_edge.png" pos="bpBottom"/>
-			<pixmap filename="PLi-HD/window/bottom_right_corner.png" pos="bpBottomRight"/>
+			<pixmap filename="PLi-FullHD/window/top_left_corner.png" pos="bpTopLeft"/>
+			<pixmap filename="PLi-FullHD/window/top_edge.png" pos="bpTop"/>
+			<pixmap filename="PLi-FullHD/window/top_right_corner.png" pos="bpTopRight"/>
+			<pixmap filename="PLi-FullHD/window/left_edge.png" pos="bpLeft"/>
+			<pixmap filename="PLi-FullHD/window/right_edge.png" pos="bpRight"/>
+			<pixmap filename="PLi-FullHD/window/bottom_left_corner.png" pos="bpBottomLeft"/>
+			<pixmap filename="PLi-FullHD/window/bottom_edge.png" pos="bpBottom"/>
+			<pixmap filename="PLi-FullHD/window/bottom_right_corner.png" pos="bpBottomRight"/>
 		</borderset>
 		<borderset name="bsListboxEntry">
 			<pixmap filename="PLi-FullHD/border/line.png" pos="bpTop"/>
@@ -146,7 +146,7 @@
 	</screen>
 
 	<screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-		<ePixmap pixmap="PLi-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
+		<ePixmap pixmap="PLi-FullHD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
 	</screen>
 
 	<!-- Buffer Indicator -->
@@ -307,7 +307,7 @@
 	</screen>
 
 	<screen name="ChapterZap" position="center,center" size="360,82" title="Chapter" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="360,82" zPosition="-1"/>
+		<ePixmap alphatest="off" pixmap="PLi-FullHD/infobar/bl80.png" position="0,0" size="360,82" zPosition="-1"/>
 		<widget name="chapter" position="30,22" size="180,39" font="Regular;34" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1"/>
 		<widget name="number" position="210,22" size="120,39" halign="right" font="Regular;34" zPosition="1" transparent="1"/>
 	</screen>
@@ -869,7 +869,7 @@
 		<widget source="session.Event_Now" render="Label" position="1830,97" size="60,25" font="Regular;20" backgroundColor="secondBG" zPosition="2" transparent="1" foregroundColor="foreground" valign="center" halign="center">
 			<convert type="EventName">Pdc</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1710,97" size="90,36" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-FullHD/infobar/ico_dolby_on.png" position="1710,97" size="90,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1030,7 +1030,7 @@
 	<!-- Minute input -->
 
 	<screen name="MinuteInput" position="center,center" size="360,82" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="360,82" zPosition="-1"/>
+		<ePixmap alphatest="off" pixmap="PLi-FullHD/infobar/bl80.png" position="0,0" size="360,82" zPosition="-1"/>
 		<eLabel text="Seek" position="30,22" size="150,37" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1" font="Regular;34"/>
 		<widget name="minutes" transparent="1" position="180,22" size="150,37" halign="right" font="Regular;34" zPosition="1"/>
 	</screen>
@@ -1952,7 +1952,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="1100,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="left">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget name="repeat" position="1785,1034" size="105,45" zPosition="10" pixmaps="PLi-HD/buttons/repeat-off.png,PLi-HD/buttons/repeat-on.png" alphatest="blend"/>
+		<widget name="repeat" position="1785,1034" size="105,45" zPosition="10" pixmaps="PLi-FullHD/buttons/repeat-off.png,PLi-FullHD/buttons/repeat-on.png" alphatest="blend"/>
 	</screen>
 
 	<screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder"/>
@@ -2158,7 +2158,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Unhandled key -->
 
 	<screen name="UnhandledKey" title="UnhandledKey" position="1856,10" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
-		<widget name="UnhandledKeyPixmap" pixmap="PLi-HD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
+		<widget name="UnhandledKeyPixmap" pixmap="PLi-FullHD/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
 	</screen>
 
 	<!-- QuitMainloopScreen -->

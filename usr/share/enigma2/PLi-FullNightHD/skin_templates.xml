@@ -370,7 +370,7 @@
 		<widget source="session.CurrentService" render="Label" position="1705,856" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
 			<convert type="RotorPosition"/>
 		</widget>
-		<!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
+		<!--<ePixmap pixmap="PLi-FullHD/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 	</screen>
 `</skin>
 
