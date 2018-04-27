@@ -838,7 +838,7 @@
 
   <!-- NumercalTextInputHelpDialog -->
 
-  <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
+  <screen name="NumericalTextInputHelpDialog" position="center,450" size="559,144" backgroundColor="background" zPosition="2" flags="wfNoBorder">
     <eLabel position="0,0" size="559,144" backgroundColor="yellowtransparent" zPosition="-1" />
     <eLabel backgroundColor="yellowtransparent" position="2,37" size="554,1" zPosition="4" />
     <eLabel backgroundColor="yellowtransparent" position="2,72" size="554,1" zPosition="4" />
