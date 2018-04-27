@@ -838,20 +838,25 @@
 
   <!-- NumercalTextInputHelpDialog -->
 
-  <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
-    <eLabel position="0,0" size="514,164" backgroundColor="yellowtransparent" zPosition="-1" />
-    <widget name="key1" position="2,2" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key2" position="172,2" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key3" position="342,2" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key4" position="2,42" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key5" position="172,42" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key6" position="342,42" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key7" position="2,82" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key8" position="172,82" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key9" position="342,82" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="help1" position="2,122" size="140,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key0" position="142,122" size="230,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="help2" position="372,122" size="140,40" font="Regular;20" valign="center" halign="center" />
+  <screen name="NumericalTextInputHelpDialog" position="center,450" size="559,144" backgroundColor="background" zPosition="2" flags="wfNoBorder">
+    <eLabel position="0,0" size="559,144" backgroundColor="yellowtransparent" zPosition="-1" />
+    <eLabel backgroundColor="yellowtransparent" position="2,37" size="554,1" zPosition="4" />
+    <eLabel backgroundColor="yellowtransparent" position="2,72" size="554,1" zPosition="4" />
+    <eLabel backgroundColor="yellowtransparent" position="2,107" size="554,1" zPosition="4" />
+    <eLabel backgroundColor="yellowtransparent" position="187,2" size="1,139" zPosition="4" />
+    <eLabel backgroundColor="yellowtransparent" position="372,3" size="1,139" zPosition="4" />
+    <widget name="key1" position="2,2" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key2" position="187,2" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key3" position="372,2" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key4" position="2,37" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key5" position="187,37" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key6" position="372,37" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key7" position="2,72" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key8" position="187,72" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key9" position="372,72" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="help1" position="2,107" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="key0" position="187,107" size="185,35" font="Regular; 16" valign="center" halign="center" />
+    <widget name="help2" position="372,107" size="185,35" font="Regular; 16" valign="center" halign="center" />
   </screen>
 
   <!-- Audio and subtitle selection -->
