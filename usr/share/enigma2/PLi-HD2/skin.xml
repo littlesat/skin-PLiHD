@@ -861,9 +861,9 @@
     <widget name="key7" position="2,82" size="170,40" font="Regular;20" valign="center" halign="center" />
     <widget name="key8" position="172,82" size="170,40" font="Regular;20" valign="center" halign="center" />
     <widget name="key9" position="342,82" size="170,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="help1" position="2,122" size="140,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="key0" position="142,122" size="230,40" font="Regular;20" valign="center" halign="center" />
-    <widget name="help2" position="372,122" size="140,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="help1" position="2,122" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key0" position="172,122" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="help2" position="342,122" size="170,40" font="Regular;20" valign="center" halign="center" />
   </screen>
 
   <!-- Audio and subtitle selection -->
