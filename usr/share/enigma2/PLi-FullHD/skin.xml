@@ -976,6 +976,11 @@
 		<widget name="help1" position="3,183" size="210,60" font="Regular;30" valign="center" halign="center"/>
 		<widget name="key0" position="213,183" size="345,60" font="Regular;30" valign="center" halign="center"/>
 		<widget name="help2" position="558,183" size="210,60" font="Regular;30" valign="center" halign="center"/>
+		<eLabel backgroundColor="yellowtransparent" position="3,63" size="765,1" zPosition="1"/>
+		<eLabel backgroundColor="yellowtransparent" position="3,123" size="765,1" zPosition="1"/>
+		<eLabel backgroundColor="yellowtransparent" position="3,183" size="765,1" zPosition="1"/>
+		<eLabel backgroundColor="yellowtransparent" position="255,3" size="1,240" zPosition="1"/>
+		<eLabel backgroundColor="yellowtransparent" position="510,3" size="1,240" zPosition="1"/>
 	</screen>
 
 	<!-- Audio and subtitle selection -->
