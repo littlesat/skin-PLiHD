@@ -843,7 +843,7 @@
 	<screen name="CSFD" position="fill" title="Filmová databáze CSFD" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="30,1031" size="52,38" zPosition="3" alphatest="on"/>
+		<ePixmap pixmap="skin_default/buttons/key_text.png" position="30,1032" size="52,38" zPosition="3" alphatest="on"/>
 		<widget name="titellabel" position="780,105" size="880,42" valign="center" font="Regular;33" foregroundColor="#ff0000" backgroundColor="black" transparent="1"/>
 		<widget name="sortlabel" position="780,150" size="795,42" font="Regular;28" foregroundColor="blue" backgroundColor="black" transparent="1"/>
 		<widget name="detailslabel" position="1050,184" size="840,342" zPosition="1" transparent="1" itemHeight="38" font="Regular;30" halign="block"/>
@@ -897,8 +897,9 @@
 		<eLabel text="Změna jazyka" position="1117,1030" size="345,37" font="Regular;36" backgroundColor="#31000000" transparent="1"/>
 	</screen>
 
-	<screen name="CSFDSetup" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
+	<screen name="CSFDSetupFullHD" position="fill" title="CSFD - Nastavení" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="config" position="780,137" size="1110,836" font="Regular;28" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="780,975" size="1110,34" font="Regular;30" halign="center" foregroundColor="blue" transparent="1"/>
 		<widget name="tabbar" position="780,100" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
