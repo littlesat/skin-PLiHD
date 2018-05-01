@@ -1572,8 +1572,8 @@
   </screen>
   <screen name="ModifyPLiFullHDFontInfo" position="fill" title="Modify PLi-FullHD - font info table">
     <panel name="PigTemplate"/>
-    <widget name="fontname" position="620,70" size="150,25" font="Regular;22" foregroundColor="foreground" halign="left"/>
-    <widget name="info" position="770,70" size="560,25" font="Regular;22" foregroundColor="foreground" halign="left"/>
+    <widget name="config" position="520,70" size="740,25" zPosition="1"/>
+    <widget name="info" position="620,110" size="640,21" font="Regular;18" foregroundColor="foreground" halign="left"/>
     <widget name="fontsinfo" position="620,150" size="640,460" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand"/>
   </screen>
 
