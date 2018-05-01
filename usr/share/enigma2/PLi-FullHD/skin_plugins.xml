@@ -1560,6 +1560,7 @@
 
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
+		<panel name="KeyChannelTemplate"/>
 		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28" />
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
@@ -1569,6 +1570,7 @@
 
 	<screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
+		<panel name="KeyChannelTemplate"/>
 		<widget name="source" position="780,105" zPosition="2" size="540,45" font="Regular;33" foregroundColor="white" />
 		<widget name="target" position="1350,105" zPosition="2" size="350,45" font="Regular;33" foregroundColor="white" />
 		<widget name="source_label" position="780,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="yellow" />
@@ -1706,6 +1708,7 @@
 	<!-- MovieManager -->
 	<screen name="MovieManager" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
+		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget name="description" position="30,550" size="720,64" zPosition="1" font="Regular;28" halign="block"/>
