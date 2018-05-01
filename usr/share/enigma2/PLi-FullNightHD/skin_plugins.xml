@@ -897,8 +897,9 @@
 		<eLabel text="Změna jazyka" position="1117,1030" size="345,37" font="Regular;36" backgroundColor="#31000000" transparent="1"/>
 	</screen>
 
-	<screen name="CSFDSetup" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
+	<screen name="CSFDSetupFullHD" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
+		<panel name="BCPigTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="config" position="780,137" size="1110,836" font="Regular;28" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="780,975" size="1110,34" font="Regular;30" halign="center" foregroundColor="blue" transparent="1"/>
 		<widget name="tabbar" position="780,100" size="480,37" alphatest="on" zPosition="1" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup1.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup2.png,/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/setup3.png"/>
