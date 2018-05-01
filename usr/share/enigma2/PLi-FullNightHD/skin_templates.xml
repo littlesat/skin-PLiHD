@@ -63,6 +63,21 @@
 		<panel name="SelectionTemplate"/>
 		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
 	</screen>
+	<!-- backward compatibility PigTemplate panel -->
+	<screen name="BCPigTemplate">
+		<panel name="TopTemplate"/>
+		<ePixmap pixmap="PLi-FullNightHD/border/smallshadowline.png" position="0,1020" size="1920,3"/>
+		<widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1"/>
+		<widget source="session.CurrentService" render="Label" position="30,125" size="720,30" zPosition="1" foregroundColor="white" transparent="1" font="Regular;28"
+		borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<panel name="ButtonRed"/>
+		<panel name="ButtonGreen"/>
+		<panel name="ButtonYellow"/>
+		<panel name="ButtonBlue"/>
+		<ePixmap pixmap="../logo/logo-white.png" position="30,967" size="283,51" scale="1" zPosition="1" alphatest="blend"/>
+	</screen>
 
 	<screen name="PigLessTemplate">
 		<panel name="BasicTemplate"/>
