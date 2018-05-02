@@ -169,7 +169,10 @@
 		<panel name="ButtonGreen"/>
 		<panel name="ButtonYellow"/>
 		<panel name="ButtonBlue"/>
-		<panel name="KeyMenuAutoTemplate"/>
+	</screen>
+
+	<screen name="KeyBooleanTemplate">
+		¨<panel name="KeyMenuAutoTemplate"/>
 		<panel name="KeyInfoAutoTemplate"/>
 		<panel name="VKeyIconPanel"/>
 	</screen>

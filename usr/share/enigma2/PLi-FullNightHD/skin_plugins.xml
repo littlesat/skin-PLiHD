@@ -898,7 +898,7 @@
 	</screen>
 
 	<screen name="CSFDSetupFullHD" position="0,0" size="1920,1080" title="CSFD - Nastavení" flags="wfNoBorder">
-		<panel name="BCPigTemplate"/>
+		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="config" position="780,137" size="1110,836" font="Regular;28" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="780,975" size="1110,34" font="Regular;30" halign="center" foregroundColor="blue" transparent="1"/>
