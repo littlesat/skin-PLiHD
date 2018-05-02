@@ -1574,7 +1574,16 @@
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,25" zPosition="1"/>
     <widget name="info" position="620,110" size="640,21" font="Regular;18" foregroundColor="foreground" halign="left"/>
-    <widget name="fontsinfo" position="620,150" size="640,460" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand"/>
+    <widget name="fontsinfo" position="620,150" size="640,460" font="Regular;20" zPosition="1"/>
+  </screen>
+
+  <!-- FontInfo -->
+
+  <screen name="FontInfo" position="fill" title="FontInfo">
+    <panel name="PigTemplate"/>
+    <widget name="config" position="520,70" size="740,25" zPosition="1"/>
+    <widget name="info" position="620,110" size="640,21" font="Regular;18" foregroundColor="foreground" halign="left"/>
+    <widget name="fontsinfo" position="620,150" size="640,460" font="Regular;20" zPosition="1"/>
   </screen>
 
   <!-- VFDControl  -->
