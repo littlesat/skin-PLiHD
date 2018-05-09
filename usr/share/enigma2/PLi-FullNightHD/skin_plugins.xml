@@ -1572,7 +1572,7 @@
 				}
 			</convert>
 		</widget>
-		<widget name="info" position="580,975" size="1300,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
+		<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
 
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
