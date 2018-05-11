@@ -984,7 +984,6 @@
 
   <screen name="MovieContextMenu" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Movielist menu" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="menu" position="520,70" size="740,600" itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand"/>
   </screen>
 
