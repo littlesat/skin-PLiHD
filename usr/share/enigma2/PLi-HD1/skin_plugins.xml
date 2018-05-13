@@ -10,13 +10,12 @@
 
   <screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGB"/>
     <widget name="config" scrollbarMode="showOnDemand" position="520,70" size="740,600" transparent="1"/>
   </screen>
 
   <screen name="PartnerboxEntriesListConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
+    <panel name="KeyPrevNextTemplate_Hideable"/>
     <widget name="name" position="520,70" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="ip" position="640,70" size="150,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
     <widget name="port" position="790,70" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
@@ -26,7 +25,6 @@
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGY"/>
     <widget name="config" scrollbarMode="showOnDemand" position="520,70" size="740,600" transparent="1"/>
   </screen>
 
