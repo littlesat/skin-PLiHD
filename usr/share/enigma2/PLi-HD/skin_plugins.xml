@@ -1473,6 +1473,7 @@
 
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22" />
     <widget name="info" position="85,380" size="417,175" font="Regular;20" foregroundColor="white" />
   </screen>
