@@ -1579,6 +1579,7 @@
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyChannelTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
