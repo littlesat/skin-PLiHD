@@ -393,7 +393,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;30" halign="block"/>
-		<widget source="session.CurrentService" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
@@ -448,8 +448,8 @@
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32"
 						setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
 						backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget source="Service" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
-			<convert type="ServiceOrbitalPosition"/>
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
 			<convert type="EventName">FullDescription</convert>
