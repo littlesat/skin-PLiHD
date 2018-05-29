@@ -321,10 +321,10 @@
     <widget source="ServiceEvent" render="Label" position="20,405" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,435" size="480,207" transparent="1" font="Regular;20" halign="block">
+    <widget source="ServiceEvent" render="Label" position="20,435" size="480,184" transparent="1" font="Regular;20" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="20,650" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="20,623" size="480,46" transparent="1" foregroundColor="secondFG" noWrap="1" NumberOfItems="2" timeColor="grey" numOfSpaces="2" noLabel="1" font="Regular;20"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
