@@ -990,6 +990,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyOkTemplate"/>
+		<panel name="KeyPrevNextTemplate_Hideable"/>
 		<widget source="config" render="Listbox" position="780,105" size="1110,897" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1349,7 +1350,7 @@
 	<screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" valign="bottom" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="AutoTimerPreview" title="Preview AutoTimer" position="fill" flags="wfNoBorder">
