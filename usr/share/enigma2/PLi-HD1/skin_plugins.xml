@@ -1039,9 +1039,9 @@
 
   <screen name="xpower" position="fill" title="XPower" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyOkTemplate"/>
+    <panel name="KeyPrevNextTemplate_Hideable"/>
     <widget source="config" render="Listbox" position="520,70" size="740,598" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{"template": [
@@ -1061,7 +1061,6 @@
 
   <screen name="xpowerHelp" position="fill" title="XPower Help" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
     <widget name="HelpScrollLabel" position="520,70" size="740,400" font="Regular;20" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="~/img/author.png" position="520,552" zPosition="10" size="25,25"/>
     <widget name="version" position="560,555" size="420,20" font="Regular;18"/>
@@ -1070,7 +1069,6 @@
 
   <screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="520,70" size="740,250" scrollbarMode="showOnDemand"/>
     <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="590,99" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
     <widget name="statusbar" position="520,300" size="740,22" font="Regular;18"/>
