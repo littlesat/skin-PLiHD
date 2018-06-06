@@ -446,7 +446,7 @@
 		<widget source="Event" render="Label" position="100,902" size="150,45" font="Regular;24" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
 			<convert type="EventName">PdcTime</convert>
 		</widget-->
-		<widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2"/>
+		<widget source="Service" render="NextEpgInfo" position="30,910" size="720,96" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="3" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2"/>
 	</screen>
 
 	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
