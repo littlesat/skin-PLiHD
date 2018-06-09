@@ -2282,9 +2282,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- QuickSubtitlesConfigMenu -->
 
-	<screen name="QuickSubtitlesConfigMenu" position="20,30" size="724,462" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
-		<widget name="config" position="7,7" size="710,418" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
-		<widget name="videofps" position="10,428" size="710,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
+	<screen name="QuickSubtitlesConfigMenu" position="20,30" size="924,462" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
+		<widget name="config" position="7,7" size="910,418" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
+		<widget name="videofps" position="10,428" size="910,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
 	</screen>
 
 	<!-- QuickSubtitlesClearRests -->
