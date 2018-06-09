@@ -1932,6 +1932,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="MediaPlayer" title="MediaPlayer" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="KeyChannelTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<eLabel position="30,93" size="922,39" backgroundColor="grey" zPosition="5" text="F i l e l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
 		<widget name="filelist" position="30,135" size="922,610" backgroundColor="noTransBG" scrollbarMode="showOnDemand"/>
 		<eLabel position="967,93" size="922,39" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;33" halign="center"/>
