@@ -1642,7 +1642,7 @@
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo"></convert>
     </widget>
-    <widget name="info" position="20,420" size="480,200" font="Regular;20" foregroundColor="white" />
+    <widget name="info" position="20,400" size="480,230" font="Regular;20" foregroundColor="white" valign="center"/>
   </screen>
 
    <!-- Fallback Receiver -->

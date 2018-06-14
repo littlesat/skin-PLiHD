@@ -1487,7 +1487,7 @@
     <widget name="target_label" position="910,130" zPosition="2" size="305,20" font="Regular;18" foregroundColor="blue" />
     <widget name="sources" position="590,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="white" />
     <widget name="targets" position="910,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="white" />
-    <widget name="info" position="85,380" size="417,175" font="Regular;22" foregroundColor="white" />
+    <widget name="info" position="85,360" size="417,231" font="Regular;18" foregroundColor="white" valign="center"/>
   </screen>
 
    <!-- Fallback Receiver -->

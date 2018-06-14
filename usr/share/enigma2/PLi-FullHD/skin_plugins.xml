@@ -1596,10 +1596,10 @@
 		<widget name="target_label" position="1350,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="blue" />
 		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
 		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
-		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
+		<widget source="Service" render="Label" position="30,525" size="720,32" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
-		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
+		<widget name="info" position="30,600" size="720,320" font="Regular;28" foregroundColor="white" halign="block" valign="center"/>
 	</screen>
 
 	<!-- Het weer -->
