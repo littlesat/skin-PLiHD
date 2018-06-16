@@ -1513,6 +1513,7 @@
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyOkTemplate"/>
+    <panel name="KeyPrevNextTemplate_Hideable"/>
     <widget source="list" render="Listbox" position="590,123" size="600,475" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
