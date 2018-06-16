@@ -673,6 +673,16 @@
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
   </screen>
 
+  <!-- Extensions menu -->
+
+  <screen name="ExtensionsList" title="" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="TextTemplate"/>
+    <ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="20,689" size="35,25"/>
+    <ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="55,689" size="35,25"/>
+    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+  </screen>
+
   <!-- SelectImage -->
 
   <screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
