@@ -21,7 +21,7 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-FullHD/buttons/rec.png" position="1590,79" size="30,30" zPosition="3" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="center" halign="right">
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;25" valign="center" halign="right">
 			<convert type="ClockToText">Format:%-H:%M</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="c-109,105" size="219,31" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;30" borderWidth="2" valign="top" halign="center">
