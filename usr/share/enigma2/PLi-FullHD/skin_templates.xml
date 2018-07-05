@@ -12,6 +12,9 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="42,84" size="1536,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1024.png:1536,4">
 		<convert type="ServicePosition">Gauge</convert>
 		</widget>
+		<widget source="session.CurrentService" render="Label" position="42,4" size="175,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;25" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
 		<widget source="session.CurrentService" render="Label" position="42,46" size="135,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
