@@ -194,6 +194,10 @@
 		 <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="blend" position="82,1031" size="52,38"/>
 	</screen>
 
+	<screen name="KeyVideoTemplate">
+		 <ePixmap pixmap="skin_default/buttons/key_video.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+
 	<screen name="KeyInfoTemplate">
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38"/>
 	</screen>
