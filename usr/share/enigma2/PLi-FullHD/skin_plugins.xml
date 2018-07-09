@@ -1845,6 +1845,7 @@
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="list_left" position="30,95" size="925,912" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="PLi-FullHD/border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="2"/>
 		<widget name="list_right" position="965,95" size="925,912" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="FilebrowserConfigScreen" position="fill" title="">
