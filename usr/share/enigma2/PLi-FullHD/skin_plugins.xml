@@ -1349,7 +1349,7 @@
 
 	<screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
