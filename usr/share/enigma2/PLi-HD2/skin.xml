@@ -880,6 +880,7 @@
 
   <screen flags="wfNoBorder" name="AudioSelection" position="fill" title="Audio">
     <panel name="PigTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <widget name="config" position="620,80" size="620,120" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png"/>
     <widget source="key_red" render="Pixmap" pixmap="PLi-HD/buttons/red.png" position="570,80" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide" />
