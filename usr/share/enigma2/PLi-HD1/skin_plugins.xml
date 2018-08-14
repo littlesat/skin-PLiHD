@@ -1384,46 +1384,44 @@
 
   <screen name="AutoTimerSettings" title="AutoTimer Settings" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGS"/>
+    <panel name="VKeyIconPanel"/>
+    <widget name="HelpWindow" position="center,480" size="60,0"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
     <widget source="help" render="Label" position="20,400" size="480,200" backgroundColor="background" transparent="1" font="Regular;20"/>
   </screen>
 
   <screen name="AutoTimerEditor" title="Edit AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYBS"/>
+    <panel name="VKeyIconPanel"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
     <widget source="help" render="Label" position="20,400" size="480,200" backgroundColor="background" transparent="1" font="Regular;20"/>
   </screen>
 
   <screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYBS"/>
+    <panel name="VKeyIconPanel"/>
+    <widget name="HelpWindow" position="center,300" size="60,0"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
   </screen>
 
   <screen name="AutoTimerServiceEditor" title="Edit AutoTimer Services" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="AutoTimerImporter" title="Import AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RGS"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <panel name="ButtonTemplate_RGYBS"/>
     <widget name="entries" position="520,70" size="740,600" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="AutoTimerPreview" title="Preview AutoTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RYS"/>
     <widget source="timerlist" render="Listbox" position="520,70" size="740,595" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -1441,8 +1439,6 @@
 
   <screen name="AutoTimerHelp" position="fill" title="AutoTimerHelp" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RS"/>
-    <panel name="ButtonTemplate_YBS"/>
     <widget render="Label" source="title" position="20,380" size="480,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1"/>
     <widget name="detailtext" font="Regular;22" position="520,70" size="740,600" transparent="1"/>
   </screen>
