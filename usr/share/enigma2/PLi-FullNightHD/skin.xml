@@ -16,6 +16,7 @@
 		<font name="LCD" filename="lcd.ttf" scale="100"/>
 		<font name="Console" filename="tuxtxt.ttf" scale="100"/>
 		<font name="Fixed" filename="andale.ttf" scale="100"/>
+		<font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
 		<alias name="FileList" font="Regular" size="28" height="38"/>
 		<alias name="FileListMulti" font="Regular" size="28" height="38"/>
@@ -33,7 +34,7 @@
 		<alias name="PartnerBoxChannelList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
 		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
-		<alias name="VirtualKeyboard" font="Regular" size="42" height="68"/>
+		<alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68" />
 		<alias name="HelpMenuList" font="Regular" size="30" height="45"/>
 		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
@@ -92,6 +93,8 @@
 		<parameter name="FallbackReceiverListIP" value="300,2,225,38"/>
 		<parameter name="ConfigListSlider" value="22,3"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
+		<parameter name="VirtualKeyBoard" value="68,68" />
+		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
 	</parameters>
 
         <switchpixmap>
@@ -2114,12 +2117,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- Virtual Keyboard -->
 
-	<screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<ePixmap pixmap="PLi-FullNightHD/skin_default/vkey_text.png" position="927,235" size="816,78" zPosition="-4" alphatest="on"/>
-		<widget name="header" position="930,120" size="810,39" transparent="1" noWrap="1" font="Regular;33" valign="top"/>
-		<widget name="text" position="930,255" size="804,51" transparent="1" noWrap="1" font="Regular;38" valign="center" halign="right"/>
-		<widget name="list" position="930,375" size="816,343" selectionDisabled="1" transparent="1"/>
+	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="980,495" zPosition="99">
+		<widget name="prompt" position="14,10" size="952,25" font="Regular;20" noWrap="1" transparent="1" />
+		<ePixmap pixmap="buttons/vkey_text.png" position="10,45" size="960,50" alphatest="blend" zPosition="-4" />
+		<widget name="text" position="14,48" size="952,46" font="Regular;40" halign="right" noWrap="1" transparent="1" />
+		<widget name="list" position="14,105" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
+		<widget name="locale" position="14,460" size="800,25" font="Regular;20" transparent="1" />
+		<widget name="mode" position="892,460" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
+		<widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 	</screen>
 
 	<!-- AC3LipSyncSetup -->
