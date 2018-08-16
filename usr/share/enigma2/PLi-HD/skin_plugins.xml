@@ -1459,10 +1459,8 @@
     <panel name="KeyMenuTemplate"/>
     <widget name="source_text" position="590,110" zPosition="2" size="200,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow" />
     <widget name="source_name" position="800,110" zPosition="2" size="410,25" font="Regular;22" valign="center" halign="left" />
-
     <widget name="target_text" position="590,135" zPosition="2" size="200,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
     <widget name="target_name" position="800,135" zPosition="2" size="410,25" font="Regular;22" valign="center" halign="left" />
-
     <widget source="config" render="Listbox" position="590,180" size="630,400" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{
@@ -1476,14 +1474,12 @@
     </widget>
     <widget name="info" position="590,595" size="610,25" font="Regular;22" foregroundColor="foreground" halign="center"/>
   </screen>
-
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22" />
     <widget name="info" position="85,380" size="417,175" font="Regular;20" foregroundColor="white" />
   </screen>
-
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <widget name="source" position="590,100" zPosition="2" size="305,30" font="Regular;25" foregroundColor="white" />
@@ -1493,6 +1489,11 @@
     <widget name="sources" position="590,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="white" />
     <widget name="targets" position="910,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="white" />
     <widget name="info" position="85,360" size="417,231" font="Regular;18" foregroundColor="white" valign="center"/>
+  </screen>
+  <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="text" position="85,380" size="450,100" zPosition="1" font="Regular;18" halign="left"/>
+    <widget name="config" position="590,110" size="600,475" scrollbarMode="showOnDemand"/>
   </screen>
 
    <!-- Fallback Receiver -->
