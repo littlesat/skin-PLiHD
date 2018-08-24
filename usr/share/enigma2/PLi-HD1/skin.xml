@@ -945,7 +945,7 @@
   <screen flags="wfNoBorder" name="AudioSelection" position="fill" title="Audio">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="config" position="600,70" size="660,150" itemHeight="30" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="600,70" size="660,120" itemHeight="30" scrollbarMode="showOnDemand"/>
     <widget source="key_red" render="Pixmap" pixmap="PLi-HD/buttons/red.png" position="540,70" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
@@ -958,7 +958,7 @@
     <widget source="key_blue" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="540,160" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="540,235" size="720,375" zPosition="3" transparent="1" >
+    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="540,200" size="720,375" zPosition="3" transparent="1" >
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [
