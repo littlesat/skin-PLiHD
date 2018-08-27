@@ -2117,7 +2117,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- Virtual Keyboard -->
 
-	<screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="center,center" size="980,495" zPosition="99">
+	<screen name="VirtualKeyBoard" title="Virtual keyboard" position="center,center" size="980,495" zPosition="99">
 		<widget name="prompt" position="14,10" size="952,25" font="Regular;20" noWrap="1" transparent="1" />
 		<ePixmap pixmap="buttons/vkey_text.png" position="10,45" size="960,50" alphatest="blend" zPosition="-4" />
 		<widget name="text" position="14,48" size="952,46" font="Regular;40" halign="right" noWrap="1" transparent="1" />
