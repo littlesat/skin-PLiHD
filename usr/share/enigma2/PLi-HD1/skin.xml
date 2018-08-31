@@ -403,7 +403,7 @@
   <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="epg_eventname" position="520,70" size="740,600" transparent="1" font="Regular;22" halign="left"/>
+    <widget name="epg_eventname" position="520,70" size="740,30" transparent="1" font="Regular;22" halign="left"/>
     <widget name="FullDescription" position="520,114" size="740,600" transparent="1" font="Regular;22" halign="block"/>
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
