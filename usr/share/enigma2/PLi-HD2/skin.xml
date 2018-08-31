@@ -382,7 +382,8 @@
     <widget name="channel"  position="40,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="40,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="40,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="530,80" size="710,575" transparent="1" font="Regular;22" halign="block"/>
+    <widget name="epg_eventname" position="530,80" size="710,30" transparent="1" font="Regular;22" halign="left" />
+    <widget name="FullDescription" position="530,122" size="710,575" transparent="1" font="Regular;22" halign="block" />
     <widget source="session.Event_Now" render="Label" position="110,475" size="190,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
