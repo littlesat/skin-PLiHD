@@ -2032,9 +2032,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
 		<panel name="PigTemplate"/>
-		<widget name="prompt" position="860,180" size="952,35" font="Regular;30" noWrap="1" transparent="1" />
-		<ePixmap pixmap="buttons/vkey_text.png" position="856,236" size="960,60" alphatest="blend" zPosition="-4" />
-		<widget name="text" position="860,243" size="952,46" font="Regular;40" halign="right" noWrap="1" transparent="1" />
+		<widget name="prompt" position="860,180" size="952,30" font="Regular;30" noWrap="1" transparent="1" />
+		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="960,70" alphatest="blend" zPosition="-4" />
+		<widget name="text" position="860,240" size="952,47" font="Regular;40" halign="right" noWrap="1" transparent="1" />
 		<widget name="list" position="860,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
 		<widget name="locale" position="860,660" size="800,25" font="Regular;20" transparent="1" />
 		<widget name="mode" position="1752,660" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
