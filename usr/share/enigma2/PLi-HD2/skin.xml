@@ -1918,13 +1918,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <!-- Virtual Keyboard -->
 
-  <screen name="VirtualKeyBoard" title="Virtual keyboard" position="center,center" size="660,375" zPosition="99">
-    <widget name="prompt" position="15,8" size="630,25" font="Regular;20" noWrap="1" transparent="1" />
-    <ePixmap pixmap="buttons/vkey_text.png" position="10,35" size="640,60" alphatest="on" zPosition="-4" />
-    <widget name="text" position="15,44" size="630,47" font="Regular;40" halign="right" noWrap="1" transparent="1" />
-    <widget name="list" position="15,100" size="630,225" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
-    <widget name="locale" position="15,340" size="570,25" font="Regular;20" transparent="1" />
-    <widget name="mode" position="585,340" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
+  <screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
+    <panel name="PigTemplate"/>
+    <widget name="prompt" position="580,110" size="630,25" font="Regular;20" noWrap="1" transparent="1" />
+    <ePixmap pixmap="skin_default/vkey_text.png" position="575,140" size="640,50" alphatest="on" zPosition="-4" />
+    <widget name="text" position="580,150" size="630,33" font="Regular;28" halign="right" noWrap="1" transparent="1" />
+    <widget name="list" position="580,200" size="630,225" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
+    <widget name="locale" position="580,440" size="570,25" font="Regular;20" transparent="1" />
+    <widget name="mode" position="1150,440" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
     <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
   </screen>
 
