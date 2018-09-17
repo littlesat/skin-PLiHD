@@ -402,7 +402,7 @@
 		<gstyles filename="PLi-FullHD/window/separator.png#cached"/>
 	</gstyle>
 
-	<screen name="Dish" flags="wfNoBorder" position="30,90" size="195,303" title="Dish" zPosition="1" backgroundColor="transparent" >
+	<screen name="Dish" flags="wfNoBorder" position="30,90" size="195,325" title="Dish" zPosition="1" backgroundColor="transparent" >
 		<widget name="Dishpixmap" position="0,0" size="195,240" zPosition="-1" pixmap="PLi-FullHD/icons/dish.png" transparent="1" alphatest="blend"/>
 		<widget name="turnTime" position="67,7" size="120,30" zPosition="1" font="Regular;26" halign="right" borderWidth="1" transparent="1"/>
 		<widget name="From" position="7,246" size="67,27" zPosition="1" font="Regular;24" halign="left" borderWidth="1" transparent="1"/>
@@ -411,6 +411,9 @@
 		<widget name="posGoto" position="85,275" size="105,32" zPosition="1" font="Regular;28" halign="left" borderWidth="1" transparent="1"/>
 		<widget name="tunerName" position="5,216" size="150,20" zPosition="1" font="Regular;18" halign="left" borderWidth="1" transparent="1"/>
 		<widget name="turnSpeed" position="112,147" size="75,24" zPosition="1" font="Regular;22" halign="right" borderWidth="1" transparent="1"/>
+		<widget source="session.FrontendStatus" render="Progress" position="0,305" zPosition="1" size="190,20" halign="center" borderWidth="1" transparent="1">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
 	</screen>
 
 	<screen name="Dishpip" flags="wfNoBorder" position="30,90" size="130,202" title="DishPiP" zPosition="1" backgroundColor="transparent" >
