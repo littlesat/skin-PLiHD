@@ -2055,12 +2055,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
 		<widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,817" size="116,116" transparent="1" alphatest="blend"/>
 
-		<ePixmap pixmap="PLi-FullNightHD/dvr/mpslider.png" position="180,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
-		<widget name="PositionGauge" position="212,1042" size="836,21" transparent="0" zPosition="12" pointer="PLi-FullNightHD/dvr/pointer.png:20,5"/>
-		<widget source="session.CurrentService" render="Label" position="10,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="right">
+		<ePixmap pixmap="PLi-FullNightHD/dvr/mpslider.png" position="380,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
+		<widget name="PositionGauge" position="412,1042" size="836,21" transparent="0" zPosition="12" pointer="PLi-FullNightHD/dvr/pointer.png:20,5"/>
+		<widget source="session.CurrentService" render="Label" position="210,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="right">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1100,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1300,1035" size="150,35" backgroundColor="noTransBG" transparent="1" zPosition="2" font="Regular;30" valign="center" halign="left">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<widget name="repeat" position="1785,1032" size="105,45" zPosition="10" pixmaps="PLi-FullHD/buttons/repeat-off.png,PLi-FullHD/buttons/repeat-on.png" alphatest="blend"/>
