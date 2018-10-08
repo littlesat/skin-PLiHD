@@ -17,6 +17,8 @@
     <font name="Console" filename="tuxtxt.ttf" scale="100"/>
     <font name="Fixed" filename="andale.ttf" scale="100"/>
     <font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
+    <alias name="ChoiceList" font="Regular" size="21" height="30"/>
+    <alias name="TextNormal" font="Regular" size="21" height="30"/>
     <alias name="VirtualKeyBoard" font="DejaVuSans" size="28" height="45" />
   </fonts>
 
