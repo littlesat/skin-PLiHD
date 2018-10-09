@@ -169,24 +169,6 @@
 		</widget>
 		<widget source="job_status" render="Label" position="780,465" size="1110,39" font="Regular;34"/>
 		<widget name="config" position="780,528" size="1110,36" itemHeight="38" font="Regular;28"/>
-		<widget source="cancelable" render="Pixmap" pixmap="PLi-FullHD/buttons/red.png" position="192,1030" size="34,34" alphatest="on" zPosition="2">
-	<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left" >
-	<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="Pixmap" pixmap="PLi-FullHD/buttons/green.png" position="628,1030" size="34,34" alphatest="on" zPosition="2">
-	<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="678,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left" >
-	<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="PLi-FullHD/buttons/blue.png" position="1064,1030" size="34,34" alphatest="on" zPosition="2">
-	<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="1114,1030" size="540,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" >
-	<convert type="ConditionalShowHide"/>
-		</widget>
 	</screen>
 
 	<!-- InfoBars -->
