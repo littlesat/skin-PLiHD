@@ -202,6 +202,10 @@
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38"/>
 	</screen>
 
+	<screen name="KeyPrevNextTemplate">
+		<ePixmap pixmap="skin_default/buttons/key_prevnext.png" alphatest="blend" position="135,1031" size="52,38"/>
+	</screen>
+
 	<screen name="KeyZeroTemplate">
 		<ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="30,1031" size="52,38"/>
 	</screen>
