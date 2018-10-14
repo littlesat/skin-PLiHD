@@ -1514,9 +1514,9 @@
 
 	<!-- AutoResolution -->
 
-	<screen name="ResolutionLabel" position="75,60" size="375,54" flags="wfNoBorder" >
-		<widget name="content" position="0,0" size="375,27" font="Regular;24" />
-		<widget name="restxt" position="0,27" size="375,27" font="Regular;24" />
+	<screen name="ResolutionLabel" position="75,60" size="375,54" flags="wfNoBorder">
+		<widget name="content" position="0,0" size="375,27" font="Regular;24"/>
+		<widget name="restxt" position="0,27" size="375,27" font="Regular;24"/>
 	</screen>
 
 	<!-- Remote timer -->
@@ -1562,11 +1562,11 @@
 	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="source_text" position="780,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow" />
-		<widget name="source_name" position="1110,105" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left" />
+		<widget name="source_text" position="780,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
+		<widget name="source_name" position="1110,105" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left"/>
 
-		<widget name="target_text" position="780,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue" />
-		<widget name="target_name" position="1110,150" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left" />
+		<widget name="target_text" position="780,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue"/>
+		<widget name="target_name" position="1110,150" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left"/>
 
 		<widget source="config" render="Listbox" position="780,250" size="1110,684" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
@@ -1579,7 +1579,7 @@
 				}
 			</convert>
 		</widget>
-		<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="foreground" halign="center"/>
+		<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="grey" halign="center"/>
 	</screen>
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
@@ -1589,25 +1589,26 @@
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
-		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="white" />
+		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="grey"/>
 	</screen>
 	<screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyChannelTemplate"/>
-		<widget name="source" position="780,105" zPosition="2" size="540,45" font="Regular;33" foregroundColor="white" />
-		<widget name="target" position="1350,105" zPosition="2" size="350,45" font="Regular;33" foregroundColor="white" />
-		<widget name="source_label" position="780,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="yellow" />
-		<widget name="target_label" position="1350,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="blue" />
-		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
-		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="white" />
+		<panel name="KeyMenuTemplate"/>
+		<widget name="source" position="780,105" zPosition="2" size="540,45" font="Regular;33" foregroundColor="foreground"/>
+		<widget name="target" position="1350,105" zPosition="2" size="350,45" font="Regular;33" foregroundColor="foreground"/>
+		<widget name="source_label" position="780,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="yellow"/>
+		<widget name="target_label" position="1350,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="blue"/>
+		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground"/>
+		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground"/>
 		<widget source="Service" render="Label" position="30,525" size="720,32" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
-		<widget name="info" position="30,600" size="720,320" font="Regular;28" foregroundColor="white" halign="block" valign="center"/>
+		<widget name="info" position="30,600" size="720,320" font="Regular;28" foregroundColor="grey" halign="block" valign="center"/>
 	</screen>
 	<screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
+		<widget name="text" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left" foregroundColor="grey"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
