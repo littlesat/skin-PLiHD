@@ -1589,7 +1589,7 @@
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
-		<widget name="info" position="30,630" size="720,270" font="Regular;28" foregroundColor="grey"/>
+		<widget name="info" position="30,600" size="720,270" font="Regular;28" foregroundColor="grey" halign="block"/>
 	</screen>
 	<screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
@@ -1605,11 +1605,11 @@
 		<widget source="Service" render="Label" position="30,525" size="720,32" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
-		<widget name="info" position="30,600" size="720,320" font="Regular;28" foregroundColor="grey" halign="block" valign="center"/>
+		<widget name="info" position="30,600" size="720,320" font="Regular;28" foregroundColor="grey" halign="block"/>
 	</screen>
 	<screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left" foregroundColor="grey"/>
+		<widget name="text" position="30,600" size="720,150" zPosition="1" font="Regular;26" foregroundColor="grey" halign="block"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
