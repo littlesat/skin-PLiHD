@@ -1478,7 +1478,7 @@
 		}
 	</convert>
     </widget>
-    <widget name="info" position="530,650" size="710,25" font="Regular;21" foregroundColor="grey" halign="center"/>
+    <widget name="info" position="530,650" size="710,25" font="Regular;21" foregroundColor="foreground" halign="center"/>
   </screen>
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
@@ -1498,7 +1498,7 @@
   </screen>
   <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="40,380" size="462,100" zPosition="1" font="Regular;18" halign="left"/>
+    <widget name="text" position="40,380" size="462,100" zPosition="1" font="Regular;18" foregroundColor="foreground" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
 
