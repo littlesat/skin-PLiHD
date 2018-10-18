@@ -1075,9 +1075,9 @@
 
 	<screen name="TimerEditList" position="fill" title="Timer Overview" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="KeyInfoTemplate"/>
+		<panel name="KeyBooleanTemplate"/>
 		<widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
-		<widget name="description" position="30,528" size="720,481" transparent="1" font="Regular;30" halign="block"/>
+		<widget name="description" position="30,528" size="720,420" transparent="1" font="Regular;30" halign="block"/>
 	</screen>
 
 	<screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
