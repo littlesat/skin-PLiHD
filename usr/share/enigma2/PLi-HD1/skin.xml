@@ -19,6 +19,7 @@
     <font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
     <alias name="ChoiceList" font="Regular" size="21" height="30"/>
     <alias name="TextNormal" font="Regular" size="21" height="30"/>
+    <alias name="ChoiceBoxDescription" font="Regular" size="18" height="21"/>
     <alias name="SelectionList" font="Regular" size="22" height="30"/>
     <font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
     <alias name="VirtualKeyBoard" font="DejaVuSans" size="28" height="45" />
@@ -678,6 +679,7 @@
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="20,439" size="480,115" zPosition="1" font="Regular;20"/>
   </screen>
 
   <!-- Extensions menu -->
