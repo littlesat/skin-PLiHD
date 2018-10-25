@@ -753,6 +753,11 @@
 		<widget name="text" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
 	</screen>
 
+	<screen name="Console_Pig" title="Command execution" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="825,100" size="1035,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand"/>
+	</screen>
+
 	<!-- NumberZap -->
 
 	<screen name="NumberZap" title="Channel" position="150,67" size="651,163" backgroundColor="transparent" flags="wfNoBorder">
