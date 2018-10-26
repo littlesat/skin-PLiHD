@@ -2007,9 +2007,10 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (40,[
-					MultiContentEntryText(pos = (10, 8), size = (20, 40), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the status
+					MultiContentEntryText(pos = (10, 8), size = (20, 40), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is e/d status
 					MultiContentEntryText(pos = (100, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-					MultiContentEntryText(pos = (580, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 1 is the autofile
+					MultiContentEntryText(pos = (580, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the autofile
+					MultiContentEntryText(pos = (30, 4), size = (30, 40), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is mount status
 						])
 				},
 				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
