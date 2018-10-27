@@ -625,7 +625,7 @@
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
     <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="description" position="85,432" size="417,125" zPosition="1" font="Regular;22"/>
+    <widget name="description" position="85,420" size="417,161" zPosition="1" font="Regular;20"/>
   </screen>
 
   <!-- Extensions menu -->
