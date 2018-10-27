@@ -699,7 +699,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="TextTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
-		<widget name="description" position="30,613" size="720,160" zPosition="1" font="Regular;28"/>
+		<widget name="description" position="30,613" size="720,256" zPosition="1" font="Regular;28"/>
 	</screen>
 
 	<!-- Extensions Menu -->
