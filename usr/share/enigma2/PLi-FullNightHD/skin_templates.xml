@@ -121,22 +121,22 @@
 	<!-- Button Text Templates -->
 	<screen name="ButtonTextRed">
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="ButtonTextGreen">
 		<widget objectTypes="key_green,Label,Button" name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="ButtonTextYellow">
 		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<screen name="ButtonTextBlue">
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
-		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 
 	<!-- Individual Button Templates -->
