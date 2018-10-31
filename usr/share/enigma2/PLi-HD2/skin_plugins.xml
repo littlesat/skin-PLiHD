@@ -1502,23 +1502,6 @@
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
 
-  <!-- Fallback Receiver -->
-
-  <screen name="FallbackReceivers" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="name" position="530,70" size="200,25" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="ip" position="790,70" size="200,25" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-    <widget name="entrylist" position="520,110" size="710,400" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
-    <widget name="fallback" position="40,380" size="462,25" font="Regular;20" halign="left"/>
-  </screen>
-  <screen name="FallbackReceiverConfigScreen" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget name="config" scrollbarMode="showOnDemand" position="530,70" size="710,100" transparent="1"/>
-  </screen>
-  <screen name="NonModalMessageBoxDialog" position="center,center" size="470,120" backgroundColor="#00303240" zPosition="2" flags="wfNoBorder">
-    <widget name="message" position="center,center" size="460,110" font="Regular;20" valign="center" halign="center"/>
-  </screen>
-
   <!-- ManagerAutofs  -->
 
   <screen name="ManagerAutofsMasterSelection" position="fill">
@@ -1588,6 +1571,9 @@
     <panel name="PigTemplate"/>
     <widget name="text" position="40,380" size="462,100" zPosition="1" font="Regular;18" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
+  </screen>
+  <screen name="NonModalMessageBoxDialog" position="center,center" size="470,120" backgroundColor="#00303240" zPosition="2" flags="wfNoBorder">
+    <widget name="message" position="center,center" size="460,110" font="Regular;20" valign="center" halign="center"/>
   </screen>
 
   <!-- MovieManager -->
