@@ -908,7 +908,7 @@
 
     <widget name="waitingtext" position="520,70" size="740,600" font="Regular;22" halign="center" valign="center" zPosition="4"/>
     <widget name="chosenletter" position="520,70" size="740,600" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4"/>
-    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand" itemHeights="75,50,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20"/>
+    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand" itemHeights="75,50,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" columnsCompactDescription="145,165,160"/>
 
     <widget source="Service" render="Label" position="20,400" size="480,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
