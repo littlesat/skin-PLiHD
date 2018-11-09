@@ -1629,8 +1629,8 @@
     <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyPrevNextTemplate"/>
-    <widget name="source" position="520,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground"/>
-    <widget name="target" position="900,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground"/>
+    <widget name="source" position="520,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground" backgroundColor="#00151505"/>
+    <widget name="target" position="900,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground" backgroundColor="#00101025"/>
     <widget name="source_label" position="520,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="yellow"/>
     <widget name="target_label" position="900,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="blue"/>
     <widget name="sources" position="520,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="foreground"/>
