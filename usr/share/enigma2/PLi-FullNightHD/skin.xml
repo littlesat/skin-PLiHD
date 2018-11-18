@@ -1817,8 +1817,8 @@ textsize = (textsize[0] + 76, textsize[1] + 30)
 wsizex = textsize[0] + 90
 wsizey = textsize[1]
 lenlist = len(self.list)*38
-if (lenlist &gt; 190):
-	lenlist = 190
+if (lenlist &gt; 380):
+	lenlist = 380
 if (96 &gt; wsizey):
 	wsizey = 96
 if self.type == self.TYPE_YESNO:
