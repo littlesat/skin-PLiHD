@@ -22,7 +22,7 @@
     <widget name="ip" position="650,80" size="150,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="port" position="800,80" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="type" position="940,80" size="200,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="entrylist" position="530,130" size="710,300" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
+    <widget name="entrylist" position="530,130" size="710,500" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
