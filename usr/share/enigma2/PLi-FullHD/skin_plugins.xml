@@ -19,7 +19,7 @@
 		<widget name="ip" position="960,105" size="225,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="port" position="1185,105" size="150,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="type" position="1395,105" size="300,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
-		<widget name="entrylist" position="780,165" size="1110,450" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
+		<widget name="entrylist" position="780,165" size="1110,836" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
 	</screen>
 
 	<screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">
