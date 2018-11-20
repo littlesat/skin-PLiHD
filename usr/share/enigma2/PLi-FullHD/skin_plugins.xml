@@ -1859,4 +1859,61 @@
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
+
+	<!-- BluetoothSetup -->
+	<screen name="BluetoothSetupScreen" position="fill" title="BluetoothSetup">
+		<panel name="PigTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget source="deviceList" render="Listbox" position="780,105" size="1110,770" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template":
+				[
+					MultiContentEntryText(pos = (80, 0), size = (580, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
+					MultiContentEntryText(pos = (80, 40), size = (180, 20), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is type
+					MultiContentEntryText(pos = (280, 40), size = (200, 20), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2), # index 2 is status
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # index 3 is bt_icon
+				],
+				"fonts": [gFont("Regular", 32), gFont("Regular", 28) ,gFont("Regular", 22), gFont("Regular", 16)],
+				"itemHeight": 70
+				}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="780,943" size="1110,64" font="Regular;28" halign="center" valign="center"/>
+	</screen>
+	<screen name="BluetoothSetupConfig" position="fill" title="Bluetooth Setup Options">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="BluetoothDiscoveryScreen" position="fill" title="Bluetooth Scan">
+		<panel name="PigTemplate"/>
+		<widget source="deviceList" render="Listbox"  position="780,105" size="1110,770" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template":
+				[
+					MultiContentEntryText(pos = (80, 0), size = (490, 70), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 1), # index 1 is bt_icon
+				],
+				"fonts": [gFont("Regular", 40), gFont("Regular", 28) ,gFont("Regular", 22), gFont("Regular", 16)],
+				"itemHeight": 70
+				}
+				</convert>
+			</widget>
+		<widget source="description" render="Label" position="780,943" size="1110,64" font="Regular;28" halign="center" valign="center"/>
+	</screen>
+	<screen name="BluetoothRCUSetup" position="fill" title="Vu+ Bluetooth RCU Setup">
+		<panel name="PigTemplate"/>
+		<widget source="deviceList" render="Listbox"  position="780,105" size="1110,770" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template":
+				[
+					MultiContentEntryText(pos = (80, 0), size = (490, 70), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 1), # index 1 is bt_icon
+				],
+				"fonts": [gFont("Regular", 40), gFont("Regular", 28) ,gFont("Regular", 22), gFont("Regular", 16)],
+				"itemHeight": 70
+				}
+				</convert>
+			</widget>
+		<widget source="description" render="Label" position="780,943" size="1110,64" font="Regular;28" halign="center" valign="center"/>
+	</screen>
 </skin>
