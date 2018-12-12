@@ -1009,7 +1009,7 @@
 
   <screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="infolist" position="530,80" size="710,500" selectionDisabled="1" />
+    <widget name="infolist" position="530,80" size="710,500" selectionDisabled="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <screen name="ServiceInfo" position="fill" flags="wfNoBorder">
