@@ -1651,7 +1651,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="NimSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget source="nimlist" render="Listbox" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" >
+    <widget source="nimlist" render="Listbox" position="530,110" size="690,480" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel2.png" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
 		    MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
