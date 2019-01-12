@@ -1581,6 +1581,7 @@
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="list" position="100,100" size="480,375" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget name="autoresize" position="0,0" size="0,0" noWrap="1"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
@@ -1604,6 +1605,11 @@ if self.type == self.TYPE_YESNO:
 	wsizey += lenlist + 10
 if (280 &gt; wsizex):
 	wsizex = 280
+listwidth = self.getListWidth() + 10
+if (listwidth &gt; 580):
+	listwidth = 580
+if (listwidth &gt; wsizex):
+	wsizex = listwidth
 wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
 self[&quot;text&quot;].instance.move(ePoint(65, 8 + titleheight))
