@@ -454,7 +454,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="Event" render="Label" position="520,145" size="710,185" backgroundColor="background" transparent="1" font="Regular;20">
-      <convert type="EventName">ExtendedDescription</convert>
+      <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="520,335" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
       <convert type="EventName">Genre</convert>
