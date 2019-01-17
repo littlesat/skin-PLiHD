@@ -349,30 +349,30 @@
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
-	<convert type="EventName">Name</convert>
+			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
-	<convert type="EventName">FullDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
-	<convert type="EventTime">StartTime</convert>
-	<convert type="ClockToText">ShortDate</convert>
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">ShortDate</convert>
 		</widget>
 		<widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-	<convert type="EventTime">StartTime</convert>
-	<convert type="ClockToText">Format:%H:%M</convert>
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-	<convert type="EventTime">EndTime</convert>
-	<convert type="ClockToText">Format:- %H:%M</convert>
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<widget source="Event" render="Label" position="520,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-	<convert type="EventTime">Duration</convert>
-	<convert type="ClockToText">InMinutes</convert>
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<widget source="Event" render="Label" position="590,975" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-	<convert type="EventTime">Duration</convert>
-	<convert type="ClockToText">AsLengthHours</convert>
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
 	</screen>
 
