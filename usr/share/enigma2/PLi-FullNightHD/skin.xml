@@ -379,7 +379,7 @@
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="epg_eventname" position="780,100" size="1110,38" transparent="1" font="Regular;30" halign="left" foregroundColor="foreground"/>
+		<widget name="epg_eventname" position="780,100" size="1110,70" transparent="1" font="Regular;30" halign="left" foregroundColor="foreground"/>
 		<widget name="FullDescription" position="780,176" size="1110,836" transparent="1" font="Regular;30" halign="block"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
