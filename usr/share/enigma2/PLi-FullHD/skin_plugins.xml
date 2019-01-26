@@ -1584,7 +1584,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28"/>
+		<widget name="services" position="780,105" zPosition="2" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
@@ -1599,8 +1599,8 @@
 		<widget name="target" position="1350,105" zPosition="2" size="540,38" font="Regular;33" foregroundColor="foreground" backgroundColor="#00101025"/>
 		<widget name="source_label" position="780,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="yellow"/>
 		<widget name="target_label" position="1350,145" zPosition="2" size="540,25" font="Regular;23" foregroundColor="blue"/>
-		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground"/>
-		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground"/>
+		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
+		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="30,525" size="720,32" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
