@@ -1477,7 +1477,7 @@
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22"/>
+    <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand"/>
     <widget name="info" position="85,380" size="417,175" font="Regular;20" foregroundColor="foreground"/>
   </screen>
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
@@ -1486,8 +1486,8 @@
     <widget name="target" position="910,100" zPosition="2" size="305,30" font="Regular;25" foregroundColor="foreground"/>
     <widget name="source_label" position="590,130" zPosition="2" size="305,20" font="Regular;18" foregroundColor="yellow"/>
     <widget name="target_label" position="910,130" zPosition="2" size="305,20" font="Regular;18" foregroundColor="blue"/>
-    <widget name="sources" position="590,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="foreground"/>
-    <widget name="targets" position="910,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="foreground"/>
+    <widget name="sources" position="590,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
+    <widget name="targets" position="910,150" zPosition="2" size="305,475" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
     <widget name="info" position="85,360" size="417,231" font="Regular;18" foregroundColor="foreground" valign="center"/>
   </screen>
   <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
