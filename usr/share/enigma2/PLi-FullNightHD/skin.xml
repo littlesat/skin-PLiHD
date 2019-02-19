@@ -2315,14 +2315,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PigTemplate"/>
 		<widget name="title" position="780,105" size="900,35" font="Regular;32" />
 		<widget name="subtitle" position="780,145" size="900,35" font="Regular;32" />
-		<widget name="entries" position="780,185" size="900,385" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand" />
-		<widget name="bottom" position="780,575" size="900,35" font="Regular;32" />
+		<widget name="entries" position="780,185" size="900,780" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand" />
+		<widget name="bottom" position="780,980" size="900,35" font="Regular;32" />
 	</screen>
 	<!-- Common interface - selection -->
 	<screen name="CiSelection" position="fill" title="Common Interface">
 		<panel name="PigTemplate"/>
 		<widget name="text" position="780,105" size="1100,35" font="Regular;32" />
-		<widget name="entries" position="780,160" size="1100,570" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+		<widget name="entries" position="780,160" size="1100,840" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
 	</screen>
 
 	<!-- Subservices Quickzap -->
