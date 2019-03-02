@@ -1498,7 +1498,8 @@
   </screen>
   <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="text" position="40,380" size="462,100" zPosition="1" font="Regular;18" foregroundColor="foreground" halign="left"/>
+    <panel name="KeyMenuTemplate"/>
+    <widget name="text" position="40,380" size="462,147" zPosition="1" font="Regular;18" foregroundColor="foreground" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
 
