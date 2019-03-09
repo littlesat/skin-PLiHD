@@ -712,15 +712,17 @@
 
   <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="520,70" size="740,570" scrollbarMode="showOnDemand"/>
     <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="520,650" size="740,21" zPosition="1" font="Regular;18" halign="center"/>
   </screen>
 
   <screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyPrevNextTemplate_Hideable"/>
-    <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+    <widget name="list" position="520,70" size="740,570" scrollbarMode="showOnDemand"/>
     <widget name="choosen" position="0,380" size="500,240" scrollbarMode="showOnDemand"/>
+    <widget name="description" position="520,650" size="740,21" zPosition="1" font="Regular;18" halign="center"/>
   </screen>
 
   <!--CI Config Menu -->

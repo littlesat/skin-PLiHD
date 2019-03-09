@@ -658,15 +658,17 @@
 
   <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="530,110" size="690,480" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="choosen" position="45,380" size="462,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="description" position="530,600" size="690,20" zPosition="1" font="Regular;16" halign="center"/>
   </screen>
 
   <screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyPrevNextTemplate_Hideable"/>
-    <widget name="list" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="list" position="530,110" size="690,480" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="choosen" position="45,380" size="462,200" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="description" position="530,600" size="690,20" zPosition="1" font="Regular;16" halign="center"/>
   </screen>
 
   <!--CI Config Menu -->
