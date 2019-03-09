@@ -698,19 +698,19 @@
 		<ePixmap pixmap="PLi-FullHD/icons/rep.png" position="1838,374" zPosition="2" size="52,30" transparent="1" alphatest="blend"/>
 	</screen>
 
-	<!-- Hotkey -->
-
 	<screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,100" size="1110,874" scrollbarMode="showOnDemand"/>
 		<widget name="choosen" position="0,570" size="750,360" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center"/>
 	</screen>
 
 	<screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyPrevNextTemplate_Hideable"/>
-		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,100" size="1110,874" scrollbarMode="showOnDemand"/>
 		<widget name="choosen" position="0,570" size="750,360" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center"/>
 	</screen>
 
 	<!--CI Config Menu -->
