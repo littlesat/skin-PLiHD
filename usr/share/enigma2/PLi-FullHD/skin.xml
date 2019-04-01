@@ -400,12 +400,6 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
-		<widget source="Event" render="Label" position="500,565" size="250,30" font="Regular;25" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="blue" valign="center" halign="right">
-			<convert type="EventName">PdcTime</convert>
-		</widget>
-		<widget source="Event" render="Label" position="30,565" size="250,30" font="Regular;26" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="#009000" valign="center" halign="left">
-			<convert type="EventName">ID</convert>
-		</widget>
 	</screen>
 
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
