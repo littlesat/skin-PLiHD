@@ -400,6 +400,12 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
+		<widget source="Event" render="Label" position="500,565" size="250,30" font="Regular;25" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="blue" valign="center" halign="right">
+			<convert type="EventName">PdcTime</convert>
+		</widget>
+		<widget source="Event" render="Label" position="30,565" size="250,30" font="Regular;26" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="#009000" valign="center" halign="left">
+			<convert type="EventName">ID</convert>
+		</widget>
 	</screen>
 
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
@@ -2030,10 +2036,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
 		<panel name="PigTemplate"/>
-		<widget name="prompt" position="860,180" size="952,35" font="Regular;30" noWrap="1" transparent="1" />
-		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="960,70" alphatest="blend" zPosition="-4" />
-		<widget name="text" position="860,240" size="952,47" font="Regular;40" halign="right" noWrap="1" transparent="1" />
-		<widget name="list" position="860,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
+		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="82,1032" size="52,38"/>
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<widget name="prompt" position="860,180" size="968,35" font="Regular;30" noWrap="1" transparent="1"/>
+		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4" />
+		<widget name="text" position="860,240" size="968,47" font="Regular;40" halign="right" noWrap="1" transparent="1" />
+		<widget name="list" position="860,305" size="968,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
 		<widget name="locale" position="860,660" size="800,25" font="Regular;20" transparent="1" />
 		<widget name="mode" position="1752,660" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
 		<widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
