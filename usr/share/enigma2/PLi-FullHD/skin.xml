@@ -95,7 +95,7 @@
 	<parameters>
                 <parameter name="ConfigListSlider" value="22,0"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
-		<parameter name="VirtualKeyBoard" value="68,71" /><!-- moved text 3px down. Original value is 68 /-->
+		<parameter name="VirtualKeyBoard" value="69,71" /><!-- moved text 3px down. Original value is 68 /-->
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
 	</parameters>
 
