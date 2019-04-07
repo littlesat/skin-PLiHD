@@ -1590,7 +1590,7 @@
 		<widget source="Service" render="Label" position="30,652" size="720,245" transparent="1" font="Regular;30" halign="block">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="Service" render="NextEpgInfo" position="30,910" size="720,96" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="1" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2"/>
+		<widget source="Service" render="NextEpgInfo" position="30,910" size="720,96" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="1" foregroundColor="secondFG" numOfSpaces="2"/>
 	</screen>
 	<screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
