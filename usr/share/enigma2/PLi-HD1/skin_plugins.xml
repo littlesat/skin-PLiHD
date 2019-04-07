@@ -1612,53 +1612,47 @@
 		}
 	</convert>
     </widget>
-    <widget name="info" position="20,400" size="480,200" font="Regular;20" foregroundColor="grey" halign="block"/>
+    <widget name="info" position="20,390" size="480,230" font="Regular;20" foregroundColor="grey" halign="block"/>
+  </screen>
+  <screen name="refreshBouquetEpgTemplate">
+    <widget source="TransponderInfo" render="Label" position="20,350" size="480,21" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget source="Service" render="Label" position="20,390" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Service" render="Label" position="20,420" size="480,184" transparent="1" font="Regular;20" halign="block">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="Service" render="NextEpgInfo" position="20,607" size="480,46" transparent="1" foregroundColor="secondFG" noWrap="1" NumberOfItems="1" timeColor="grey" numOfSpaces="2" noLabel="1" font="Regular;20"/>
   </screen>
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet - founded">
     <panel name="PigTemplate"/>
     <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
+    <panel name="refreshBouquetEpgTemplate"/>
     <widget name="services" position="520,70" zPosition="1" size="740,600" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand"/>
-    <widget source="Service" render="Label" position="20,360" size="482,20" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="TransponderInfo"></convert>
-    </widget>
-    <widget name="info" position="20,400" size="480,200" font="Regular;20" foregroundColor="grey" halign="block"/>
+    <widget name="info" position="20,390" size="480,230" font="Regular;20" foregroundColor="grey" halign="block"/>
   </screen>
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyPrevNextTemplate"/>
+    <panel name="refreshBouquetEpgTemplate"/>
     <widget name="source" position="520,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground" backgroundColor="#00151505"/>
     <widget name="target" position="900,70" zPosition="2" size="360,30" font="Regular;25" foregroundColor="foreground" backgroundColor="#00101025"/>
     <widget name="source_label" position="520,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="yellow"/>
     <widget name="target_label" position="900,100" zPosition="2" size="360,20" font="Regular;18" foregroundColor="blue"/>
     <widget name="sources" position="520,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
     <widget name="targets" position="900,120" zPosition="2" size="360,550" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
-    <widget source="Service" render="Label" position="20,360" size="482,20" foregroundColor="transponderinfo" font="Regular;18" valign="center" halign="left" transparent="1" zPosition="1">
-      <convert type="TransponderInfo"></convert>
-    </widget>
-    <widget name="info" position="20,400" size="480,230" font="Regular;20" foregroundColor="grey" halign="block"/>
+    <widget name="info" position="20,390" size="480,230" font="Regular;20" foregroundColor="grey" halign="block"/>
   </screen>
   <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="text" position="20,400" size="480,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="block"/>
+    <widget name="text" position="20,390" size="480,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="block"/>
     <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
-  </screen>
-  <screen name="refreshBouquetEPG" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate"/>
-      <panel name="KeyOkTemplate"/>
-      <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
-        <convert type="TransponderInfo">NoRoot</convert>
-      </widget>
-      <widget source="Service" render="Label" position="20,405" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
-        <convert type="EventName">Name</convert>
-      </widget>
-      <widget source="Service" render="Label" position="20,435" size="480,184" transparent="1" font="Regular;20" halign="block">
-        <convert type="EventName">FullDescription</convert>
-      </widget>
-      <widget source="Service" render="NextEpgInfo" position="20,623" size="480,46" transparent="1" foregroundColor="secondFG" noWrap="1" NumberOfItems="2" timeColor="grey" numOfSpaces="2" noLabel="1" font="Regular;20"/>
   </screen>
 
   <!-- ManagerAutofs  -->
