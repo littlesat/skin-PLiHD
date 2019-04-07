@@ -1597,22 +1597,22 @@
   <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="source_text" position="520,70" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow"/>
-    <widget name="source_name" position="780,70" zPosition="1" size="480,25" font="Regular;22" valign="center" halign="left"/>
-    <widget name="target_text" position="520,95" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
-    <widget name="target_name" position="780,95" zPosition="1" size="480,25" font="Regular;22" valign="center" halign="left"/>
+    <widget name="source_text" position="570,70" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow"/>
+    <widget name="source_name" position="830,70" zPosition="1" size="430,25" font="Regular;22" valign="center" halign="left"/>
+    <widget name="target_text" position="570,95" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
+    <widget name="target_name" position="830,95" zPosition="1" size="430,25" font="Regular;22" valign="center" halign="left"/>
     <widget source="config" render="Listbox" position="520,140" size="740,500" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 		{
                 "template": [
-			      MultiContentEntryText(pos = (0, 1), size = (740, 25), font=0, flags = RT_HALIGN_LEFT, text = 0),
+			      MultiContentEntryText(pos = (50, 1), size = (690, 25), font=0, flags = RT_HALIGN_LEFT, text = 0),
 			      ],
                 "fonts": [gFont("Regular", 22)],
                 "itemHeight": 25
 		}
 	</convert>
     </widget>
-    <widget name="info" position="520,650" size="740,25" font="Regular;22" foregroundColor="grey" halign="center"/>
+    <widget name="info" position="20,400" size="480,200" font="Regular;20" foregroundColor="grey" halign="block"/>
   </screen>
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet - founded">
     <panel name="PigTemplate"/>

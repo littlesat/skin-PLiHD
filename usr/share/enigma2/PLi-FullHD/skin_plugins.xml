@@ -1579,7 +1579,7 @@
 				}
 			</convert>
 		</widget>
-		<widget name="info" position="830,975" size="1050,38" font="Regular;32" foregroundColor="grey" halign="center"/>
+		<widget name="info" position="30,600" size="720,270" font="Regular;28" foregroundColor="grey" halign="block"/>
 	</screen>
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
