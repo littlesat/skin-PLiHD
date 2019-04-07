@@ -1562,24 +1562,25 @@
 	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="source_text" position="780,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
-		<widget name="source_name" position="1110,105" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left"/>
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<widget name="source_text" position="830,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
+		<widget name="source_name" position="1160,105" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left" />
 
-		<widget name="target_text" position="780,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue"/>
-		<widget name="target_name" position="1110,150" zPosition="2" size="780,45" font="Regular;32" valign="center" halign="left"/>
+		<widget name="target_text" position="830,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue"/>
+		<widget name="target_name" position="1160,150" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left"/>
 
 		<widget source="config" render="Listbox" position="780,250" size="1110,684" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
-						MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (50, 4), size = (1060, 38), font=0, flags = RT_HALIGN_LEFT, text = 0),
 						],
 				"fonts": [gFont("Regular", 28)],
 				"itemHeight": 38
 				}
 			</convert>
 		</widget>
-		<widget name="info" position="780,975" size="1100,38" font="Regular;32" foregroundColor="grey" halign="center"/>
+		<widget name="info" position="830,975" size="1050,38" font="Regular;32" foregroundColor="grey" halign="center"/>
 	</screen>
 	<screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
