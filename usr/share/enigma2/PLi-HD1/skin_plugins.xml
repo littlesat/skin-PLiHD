@@ -1646,6 +1646,20 @@
     <widget name="text" position="20,400" size="480,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="block"/>
     <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
   </screen>
+  <screen name="refreshBouquetEPG" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+      <panel name="KeyOkTemplate"/>
+      <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
+        <convert type="TransponderInfo">NoRoot</convert>
+      </widget>
+      <widget source="Service" render="Label" position="20,405" size="480,25" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+        <convert type="EventName">Name</convert>
+      </widget>
+      <widget source="Service" render="Label" position="20,435" size="480,184" transparent="1" font="Regular;20" halign="block">
+        <convert type="EventName">FullDescription</convert>
+      </widget>
+      <widget source="Service" render="NextEpgInfo" position="20,623" size="480,46" transparent="1" foregroundColor="secondFG" noWrap="1" NumberOfItems="2" timeColor="grey" numOfSpaces="2" noLabel="1" font="Regular;20"/>
+  </screen>
 
   <!-- ManagerAutofs  -->
 
