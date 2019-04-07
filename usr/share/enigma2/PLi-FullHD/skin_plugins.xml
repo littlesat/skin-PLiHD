@@ -1568,7 +1568,7 @@
 		<widget name="target_text" position="830,150" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="blue"/>
 		<widget name="target_name" position="1160,150" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left"/>
 
-		<widget source="config" render="Listbox" position="780,250" size="1110,684" scrollbarMode="showOnDemand">
+		<widget source="config" render="Listbox" position="780,250" size="1110,760" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
