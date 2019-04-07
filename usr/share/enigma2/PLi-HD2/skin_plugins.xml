@@ -1478,28 +1478,42 @@
 		}
 	</convert>
     </widget>
-    <widget name="info" position="530,650" size="710,25" font="Regular;21" foregroundColor="foreground" halign="center"/>
+    <widget name="info" position="40,380" size="462,207" font="Regular;20" foregroundColor="grey"/>
+  </screen>
+  <screen name="refreshBouquetEpgTemplate">
+    <widget source="TransponderInfo" render="Label" position="40,355" size="462,20" foregroundColor="foreground" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="TransponderInfo"></convert>
+    </widget>
+    <widget source="Service" render="Label" position="40,390" size="462,23" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;20" haligh="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Service" render="Label" position="40,425" size="462,168" transparent="1" font="Regular; 18">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="Service" render="NextEpgInfo" position="40,600" size="462,23" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;20"/>
   </screen>
   <screen name="refreshBouquetCopyServices" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="services" position="590,110" zPosition="1" size="630,506" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand"/>
-    <widget name="info" position="40,400" size="462,200" font="Regular;20" foregroundColor="foreground"/>
+    <panel name="refreshBouquetEpgTemplate"/>
+    <widget name="services" position="590,70" zPosition="1" size="630,575" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand"/>
+    <widget name="info" position="40,390" size="462,231" font="Regular;18" foregroundColor="grey"/>
   </screen>
   <screen name="refreshBouquetManualSelection" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
+    <panel name="refreshBouquetEpgTemplate"/>
     <widget name="source" position="530,70" zPosition="2" size="345,30" font="Regular;25" foregroundColor="foreground"/>
     <widget name="target" position="895,70" zPosition="2" size="345,30" font="Regular;25" foregroundColor="foreground"/>
     <widget name="source_label" position="530,100" zPosition="2" size="345,20" font="Regular;18" foregroundColor="yellow"/>
     <widget name="target_label" position="895,100" zPosition="2" size="345,20" font="Regular;18" foregroundColor="blue"/>
     <widget name="sources" position="530,122" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
     <widget name="targets" position="895,122" zPosition="2" size="345,550" itemHeight="25" font="Regular;22" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
-    <widget name="info" position="40,400" size="462,231" font="Regular;18" foregroundColor="foreground" valign="center"/>
+    <widget name="info" position="40,380" size="462,231" font="Regular;18" foregroundColor="grey" valign="center"/>
   </screen>
   <screen name="refreshBouquetRbbManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="text" position="40,380" size="462,147" zPosition="1" font="Regular;18" foregroundColor="foreground" halign="left"/>
+    <widget name="text" position="40,380" size="462,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="left"/>
     <widget name="config" position="530,70" size="710,575" scrollbarMode="showOnDemand"/>
   </screen>
 
