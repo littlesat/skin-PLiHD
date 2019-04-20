@@ -1585,7 +1585,7 @@
 		<widget name="info" position="30,577" size="720,376" font="Regular;28" foregroundColor="grey" valign="center" halign="block"/>
 	</screen>
 	<screen name="refreshBouquetEpgTemplate">
-		<widget source="TransponderInfo" render="Label" position="30,525" size="720,32" foregroundColor="foreground" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
+		<widget source="TransponderInfo" render="Label" position="30,525" size="720,32" foregroundColor="transponderinfo" font="Regular;28" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
 		<widget source="Service" render="Label" position="30,577" size="720,32" transparent="1" foregroundColor="secondFG" font="Regular;28" halign="left">

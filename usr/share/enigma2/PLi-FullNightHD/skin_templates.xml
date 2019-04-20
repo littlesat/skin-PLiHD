@@ -43,6 +43,7 @@
 	<screen name="BasicTemplate">
 		<panel name="TopTemplate"/>
 		<panel name="ButtonTemplate"/>
+		<eLabel position="0,1022" size="1920,58" backgroundColor="basictemplatecolor"/>
 		<ePixmap pixmap="PLi-FullNightHD/border/smallshadowline.png" position="0,1020" size="1920,3"/>
 	</screen>
 
@@ -91,31 +92,31 @@
 
 	<!-- Button Graphic Templates -->
 	<screen name="ButtonGraphicRed">
-		<widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend">
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap objectTypes="key_red,Button,Label" pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+		<ePixmap objectTypes="key_red,Button,Label" pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="ButtonGraphicGreen">
-		<widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="PLi-FullNightHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend">
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="PLi-FullNightHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap objectTypes="key_green,Button,Label" pixmap="PLi-FullNightHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend"/>
+		<ePixmap objectTypes="key_green,Button,Label" pixmap="PLi-FullNightHD/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="ButtonGraphicYellow">
-		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="PLi-FullNightHD/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend">
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="PLi-FullNightHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="PLi-FullNightHD/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend"/>
+		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="PLi-FullNightHD/buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="ButtonGraphicBlue">
-		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="PLi-FullNightHD/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend">
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="PLi-FullNightHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap objectTypes="key_blue,Button,Label" pixmap="PLi-FullNightHD/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend"/>
+		<ePixmap objectTypes="key_blue,Button,Label" pixmap="PLi-FullNightHD/buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend"/>
 	</screen>
 
 	<!-- Button Text Templates -->

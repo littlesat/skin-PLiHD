@@ -50,8 +50,9 @@
 
 	<colors>
 		<color name="toptemplatecolor" value="#000D0F16"/>
-		<color name="basictemplatecolor" value="#00000020"/>
-		<color name="selectorcolor" value="#00000030"/>
+		<color name="basictemplatecolor" value="#00000000"/>
+		<color name="selectorcolor" value="#06303240"/>
+		<color name="transponderinfo" value="#00f0f0f0"/>
 		<color name="background" value="#00000000"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#00879ce1"/>
@@ -112,7 +113,7 @@
 		<color name="LabelForeground" color="foreground"/>
 		<color name="ListboxBackground" color="background"/>
 		<color name="ListboxForeground" color="foreground"/>
-		<color name="ListboxSelectedBackground" color="selectedBG"/>
+		<color name="ListboxSelectedBackground" color="selectorcolor"/>
 		<color name="ListboxSelectedForeground" color="selectedFG"/>
 		<color name="ListboxMarkedBackground" color="un40a0aa0"/>
 		<color name="ListboxMarkedForeground" color="red"/>
@@ -309,7 +310,7 @@
 			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
 			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
 			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
-		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="30,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
@@ -345,7 +346,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
-		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
@@ -381,7 +382,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<widget name="epg_eventname" position="780,100" size="1110,70" transparent="1" font="Regular;30" halign="left" foregroundColor="foreground"/>
 		<widget name="FullDescription" position="780,176" size="1110,836" transparent="1" font="Regular;30" halign="block"/>
-		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
@@ -436,7 +437,7 @@
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32"
 						setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
 						backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="foreground" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
 		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
@@ -888,7 +889,7 @@
 			colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0"
 			foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft"
 			colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft"/>
-		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" font="Regular;30" foregroundColor="secondFG" halign="center" noWrap="1" zPosition="1">
+		<widget source="ServiceEvent" render="Label" position="30,528" size="720,30" font="Regular;30" foregroundColor="transponderinfo" halign="center" noWrap="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="30,120" size="765,623" font="Regular;28" foregroundColor="grey">
