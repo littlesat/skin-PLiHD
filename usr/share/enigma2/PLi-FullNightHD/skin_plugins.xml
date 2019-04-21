@@ -1430,6 +1430,10 @@
 	<screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap alphatest="blend" pixmap="PLi-FullNightHD/infobar/bl80.png" position="0,945" size="1920,135" zPosition="-1"/>
 		<ePixmap pixmap="PLi-FullNightHD/border/smallshadowline.png" position="0,945" size="1920,3"/>
+		<widget source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+		<ePixmap pixmap="PLi-FullNightHD/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
+		<widget source="key_green" render="Label" position="242,962" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+		<ePixmap pixmap="PLi-FullNightHD/buttons/green.png" position="192,964" size="34,34" zPosition="1" alphatest="blend"/>
 		<widget name="config" position="780,952" size="1110,76" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="black" zPosition="1"/>
 		<widget source="introduction" render="Label" position="780,1035" size="1110,34" zPosition="1" font="Regular;30" halign="center" transparent="1"/>
 	</screen>

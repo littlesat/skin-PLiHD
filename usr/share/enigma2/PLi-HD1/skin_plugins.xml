@@ -1494,8 +1494,12 @@
   </screen>
 
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,630" size="1280,90" zPosition="-1"/>
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2"/>
+    <ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png"  position="0,630" size="1280,90" zPosition="-1"/>
+    <widget source="key_red" render="Label" position="165,687" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
+    <ePixmap pixmap="PLi-HD/buttons/red.png" position="125,687" size="26,26" zPosition="1" alphatest="blend"/>
+    <widget source="key_green" render="Label" position="165,637" size="230,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
+    <ePixmap pixmap="PLi-HD/buttons/green.png" position="125,637" size="26,26" zPosition="1" alphatest="blend"/>
     <widget name="config" position="520,635" size="740,50" scrollbarMode="showOnDemand" backgroundColor="#20000000" zPosition="1"/>
     <widget source="introduction" render="Label" position="520,690" size="740,23" zPosition="1" font="Regular;20" halign="center" transparent="1"/>
   </screen>
