@@ -224,6 +224,16 @@
 		<ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
+	<screen name="KeyHelpLTemplate">
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="30,1032" size="52,38"/>
+	</screen>
+	<screen name="KeyHelpMTemplate">
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="82,1032" size="52,38"/>
+	</screen>
+	<screen name="KeyHelpRTemplate">
+		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+	</screen>
+
 	<screen name="KeyTextTemplate">
 		<ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="619,1032" size="52,38"/>
 	</screen>
