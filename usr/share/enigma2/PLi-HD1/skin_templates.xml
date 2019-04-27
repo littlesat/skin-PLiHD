@@ -150,6 +150,16 @@
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="blend" position="20,689" size="35,25"/>
   </screen>
 
+  <screen name="KeyHelpLTemplate">
+    <ePixmap pixmap="PLi-HD/buttons/key_help.png" alphatest="blend" position="20,689" size="35,25"/>
+    </screen>
+  <screen name="KeyHelpMTemplate">
+    <ePixmap pixmap="PLi-HD/buttons/key_help.png" alphatest="blend" position="55,689" size="35,25"/>
+  </screen>
+  <screen name="KeyHelpRTemplate">
+    <ePixmap pixmap="PLi-HD/buttons/key_help.png" alphatest="blend" position="90,689" size="35,25"/>
+  </screen>
+
   <screen name="KeyTextTemplate">
     <ePixmap pixmap="PLi-HD/buttons/key_text.png" alphatest="blend" position="408,689" size="35,25"/>
   </screen>
