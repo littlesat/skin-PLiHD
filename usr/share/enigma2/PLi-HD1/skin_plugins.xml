@@ -1658,6 +1658,11 @@
     <widget name="text" position="20,390" size="480,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="block"/>
     <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
   </screen>
+  <screen name="refreshBouquetManageDeletedBouquets" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <widget name="text" position="20,390" size="480,147" zPosition="1" font="Regular;18" foregroundColor="grey" halign="block"/>
+    <widget name="config" position="520,70" size="740,575" scrollbarMode="showOnDemand"/>
+  </screen>
 
   <!-- ManagerAutofs  -->
 

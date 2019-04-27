@@ -1631,6 +1631,11 @@
 		<widget name="text" position="30,577" size="720,376" zPosition="1" font="Regular;28" valign="center" halign="block" foregroundColor="grey"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
+	<screen name="refreshBouquetManageDeletedBouquets" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="30,577" size="720,376" zPosition="1" font="Regular;28" valign="center" halign="block" foregroundColor="grey"/>
+		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+	</screen>
 
 	<!-- Het weer -->
 
