@@ -1221,10 +1221,8 @@
 
    <screen name="MPHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_RS"/>
-    <panel name="ButtonTemplate_YBS"/>
-    <widget render="Label" source="title" position="20,380" size="480,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1"/>
-    <widget name="detailtext" font="Regular;22" position="520,70" size="740,600" transparent="1"/>
+    <widget render="Label" source="title" position="520,70" size="740,50" zPosition="5" halign="left" font="Regular;22" transparent="1"/>
+    <widget name="detailtext" font="Regular;21" position="520,120" size="740,552" transparent="1"/>
   </screen>
 
   <!-- Foreca Weather forecast -->
@@ -1439,8 +1437,8 @@
 
   <screen name="AutoTimerHelp" position="fill" title="AutoTimerHelp" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget render="Label" source="title" position="20,380" size="480,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1"/>
-    <widget name="detailtext" font="Regular;22" position="520,70" size="740,600" transparent="1"/>
+    <widget render="Label" source="title" position="520,70" size="740,50" zPosition="5" halign="left" font="Regular;22" transparent="1"/>
+    <widget name="detailtext" font="Regular;21" position="520,120" size="740,552" transparent="1"/>
   </screen>
 
   <!-- dont saw this screen, may be later -->
