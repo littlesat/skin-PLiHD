@@ -1515,10 +1515,11 @@
     <widget name="config" position="520,70" size="740,150" scrollbarMode="showOnDemand"/>
   </screen>
 
- <!-- EPG Refresh  -->
+  <!-- EPG Refresh  -->
 
   <screen name="EPGRefreshConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
+    <panel name="KeyHelpMTemplate"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand" transparent="1"/>
     <widget source="help" render="Label" position="20,380" size="480,160" font="Regular;20" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
@@ -1599,6 +1600,7 @@
   <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
+    <panel name="KeyHelpRTemplate"/>
     <widget name="source_text" position="570,70" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow"/>
     <widget name="source_name" position="830,70" zPosition="1" size="430,25" font="Regular;22" valign="center" halign="left"/>
     <widget name="target_text" position="570,95" zPosition="1" size="250,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
@@ -1664,6 +1666,7 @@
     <panel name="KeyOkTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyPrevNextTemplate_Hideable"/>
+    <panel name="KeyHelpRTemplate"/>
     <widget source="list" render="Listbox" position="520,87" size="740,550" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"templates":
@@ -1735,7 +1738,9 @@
 
   <screen name="MovieManager" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
+    <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
+    <panel name="KeyHelpRTemplate"/>
     <widget source="session.CurrentService" render="PositionGauge" position="20,353" size="480,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:480,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>

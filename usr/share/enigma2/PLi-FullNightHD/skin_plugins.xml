@@ -1451,10 +1451,11 @@
 		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
- <!-- EPG Refresh	-->
+	<!-- EPG Refresh -->
 
 	<screen name="EPGRefreshConfiguration" position="fill" title="Configuration of EPGRefresh" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="KeyHelpMTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" position="30,570" size="720,240" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
@@ -1568,7 +1569,7 @@
 	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<panel name="KeyHelpRTemplate"/>
 		<widget name="source_text" position="830,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
 		<widget name="source_name" position="1160,105" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left" />
 
@@ -2006,7 +2007,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyOkTemplate"/>
 		<panel name="KeyPrevNextTemplate_Hideable"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<panel name="KeyHelpRTemplate"/>
 		<widget source="list" render="Listbox" position="780,135" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
@@ -2079,7 +2080,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<panel name="KeyHelpRTemplate"/>
 		<ePixmap pixmap="PLi-FullNightHD/dvr/scale1024.png" position="30,538" size="720,12" zPosition="1"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="30,535" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullNightHD/dvr/position_pointer1.png:720,4">
 			<convert type="ServicePosition">Gauge</convert>

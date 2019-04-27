@@ -1451,10 +1451,11 @@
 		<widget name="config" position="780,105" size="1110,225" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
- <!-- EPG Refresh	-->
+	<!-- EPGRefresh -->
 
 	<screen name="EPGRefreshConfiguration" position="fill" title="Configuration of EPGRefresh" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="KeyHelpMTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" position="30,570" size="720,240" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
@@ -1567,7 +1568,7 @@
 	<screen name="refreshBouquet" position="fill" title="RefreshBouquet">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<panel name="KeyHelpRTemplate"/>
 		<widget name="source_text" position="830,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
 		<widget name="source_name" position="1160,105" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left" />
 
@@ -1683,7 +1684,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyOkTemplate"/>
 		<panel name="KeyPrevNextTemplate_Hideable"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<panel name="KeyHelpRTemplate"/>
 		<widget source="list" render="Listbox" position="780,135" size="1110,800" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
@@ -1766,6 +1767,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyHelpRTemplate"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="30,530" size="720,18" transparent="1" zPosition="4" pointer="PLi-FullHD/dvr/position_pointer1.png:720,4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
@@ -1775,7 +1777,6 @@
 		<widget source="session.CurrentService" render="Label" position="502,499" size="240,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget name="description" position="30,560" size="720,64" zPosition="1" font="Regular;28" foregroundColor="grey" halign="block"/>
 		<widget name="size" position="30,635" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
 		<widget name="number" position="30,635" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
