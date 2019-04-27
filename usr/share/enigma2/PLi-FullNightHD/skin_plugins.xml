@@ -1162,8 +1162,8 @@
 
 	 <screen name="MPHelp" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget render="Label" source="title" position="30,570" size="720,75" zPosition="5" valign="center" halign="left" font="Regular;31" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1"/>
-		<widget name="detailtext" font="Regular;33" position="780,100" size="1110,912" transparent="1"/>
+		<widget render="Label" source="title" position="780,105" size="1110,75" zPosition="1" halign="left" font="Regular;32"/>
+		<widget name="detailtext" font="Regular;30" position="780,205" size="1110,805" transparent="1"/>
 	</screen>
 
 	<!-- Foreca Weather forecast -->
@@ -1379,8 +1379,8 @@
 
 	<screen name="AutoTimerHelp" position="fill" title="AutoTimerHelp" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget render="Label" source="title" position="30,570" size="720,75" zPosition="5" valign="center" halign="left" font="Regular;31" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1"/>
-		<widget name="detailtext" font="Regular;33" position="780,100" size="1110,912" transparent="1"/>
+		<widget render="Label" source="title" position="780,105" size="1110,75" zPosition="1" halign="left" font="Regular;32"/>
+		<widget name="detailtext" font="Regular;30" position="780,205" size="1110,805" transparent="1"/>
 	</screen>
 
 	<!-- dont saw this screen, may be later - lcd? -->

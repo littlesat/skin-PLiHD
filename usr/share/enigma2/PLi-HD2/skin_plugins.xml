@@ -1170,8 +1170,8 @@
 
    <screen name="MPHelp" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget render="Label" source="title" position="40,380" size="462,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-    <widget name="detailtext" font="Regular;22" position="530,80" size="710,500" transparent="1" />
+    <widget render="Label" source="title" position="530,80" size="710,50" zPosition="1" halign="left" font="Regular;22"/>
+    <widget name="detailtext" font="Regular;21" position="530,130" size="710,528" transparent="1" />
   </screen>
 
   <!-- Foreca Weather forecast -->
@@ -1369,8 +1369,8 @@
 
   <screen name="AutoTimerHelp" position="fill" title="AutoTimerHelp" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget render="Label" source="title" position="40,380" size="462,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-    <widget name="detailtext" font="Regular;22" position="530,80" size="710,570" transparent="1" />
+    <widget render="Label" source="title" position="530,80" size="710,50" zPosition="1" halign="left" font="Regular;22"/>
+    <widget name="detailtext" font="Regular;21" position="530,130" size="710,528" transparent="1" />
   </screen>
 
   <!-- dont saw this screen, may be later -->
