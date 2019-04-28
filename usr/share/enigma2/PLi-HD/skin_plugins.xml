@@ -1457,6 +1457,7 @@
   <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
     <panel name="PigTemplate"/>
     <panel name="KeyMenuTemplate"/>
+    <panel name="KeyPrevNextTemplate_Hideable"/>
     <widget name="source_text" position="590,110" zPosition="2" size="200,25" font="Regular;22" valign="center" halign="left" foregroundColor="yellow"/>
     <widget name="source_name" position="800,110" zPosition="2" size="410,25" font="Regular;22" valign="center" halign="left"/>
     <widget name="target_text" position="590,135" zPosition="2" size="200,25" font="Regular;22" valign="center" halign="left"  foregroundColor="blue"/>
