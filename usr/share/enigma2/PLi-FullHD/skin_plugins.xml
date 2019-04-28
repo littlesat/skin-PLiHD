@@ -1569,6 +1569,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyHelpRTemplate"/>
+		<panel name="KeyPrevNextTemplate_Hideable"/>
 		<widget name="source_text" position="830,105" zPosition="2" size="310,45" font="Regular;32" valign="center" halign="left" foregroundColor="yellow"/>
 		<widget name="source_name" position="1160,105" zPosition="2" size="730,45" font="Regular;32" valign="center" halign="left" />
 
