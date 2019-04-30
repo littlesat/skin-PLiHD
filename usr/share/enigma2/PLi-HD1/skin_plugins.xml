@@ -1746,7 +1746,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
-    <panel name="KeyHelpRTemplate"/>
+    <panel name="KeyInfoTemplate"/>
     <widget source="session.CurrentService" render="PositionGauge" position="20,353" size="480,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1.png:480,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
