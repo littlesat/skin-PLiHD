@@ -42,8 +42,6 @@
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
 		<alias name="Dreamexplorer" font="Regular" size="28" height="38"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
-		<alias name="FallbackReceiverList0" font="Regular" size="28" height="38"/>
-		<alias name="FallbackReceiverList1" font="Regular" size="28"/>
 	</fonts>
 
 	<!-- Colors -->
