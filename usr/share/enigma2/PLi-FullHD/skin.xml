@@ -2035,6 +2035,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
 		<widget name="text" position="868,240" size="954,47" font="Regular;40" halign="right" noWrap="1" transparent="1"/>
 		<widget name="list" position="868,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1"/>
+		<ePixmap pixmap="PLi-FullHD/border/vsmallshadowline.png" position="1820,305" size="2,342" zPosition="2"/>
+		<ePixmap pixmap="PLi-FullHD/border/smallshadowline.png" position="868,645" size="952,2" zPosition="2"/>
 		<widget name="locale" position="868,660" size="800,25" font="Regular;20" transparent="1"/>
 		<widget name="mode" position="1746,660" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center"/>
 		<widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1"/>
