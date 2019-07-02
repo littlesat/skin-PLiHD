@@ -1787,6 +1787,7 @@
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="780,105" size="80,80" alphatest="blend"/>
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="780,105" size="80,80" alphatest="blend"/>
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="780,105" size="80,80" alphatest="blend"/>
+		<widget name="WarningPixmap" pixmap="skin_default/icons/input_warning.png" position="780,105" size="80,80" alphatest="blend"/>
 		<widget name="list" position="30,560" size="720,380" itemHeight="38" font="Regular;28"/>
 	</screen>
 
@@ -1798,6 +1799,7 @@
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend"/>
+		<widget name="WarningPixmap" pixmap="skin_default/icons/input_warning.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="list" position="150,150" size="720,570" itemHeight="38" font="Regular;28"/>
 		<widget name="autoresize" position="0,0" size="0,0" font="Regular;28" noWrap="1"/>
 	<applet type="onLayoutFinish">
