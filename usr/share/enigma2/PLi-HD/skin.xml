@@ -1899,7 +1899,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
     <panel name="PigTemplate"/>
     <widget name="prompt" position="560,110" size="630,25" font="Regular;20" noWrap="1" transparent="1" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="555,140" size="640,50" alphatest="on" zPosition="-4" />
+    <ePixmap pixmap="skin_default/buttons/vkey_text.png" position="555,140" size="640,50" alphatest="on" zPosition="-4" />
     <widget name="text" position="560,150" size="630,33" font="Regular;28" halign="right" noWrap="1" transparent="1" />
     <widget name="list" position="560,200" size="630,225" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1" />
     <widget name="locale" position="560,440" size="570,25" font="Regular;20" transparent="1" />
@@ -1992,7 +1992,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="InputBox" position="fill" title="Input" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="590,110" size="532,26" font="Regular;22" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="585,140" size="542,40" zPosition="-4" alphatest="on" />
+    <ePixmap pixmap="skin_default/buttons/vkey_text.png" position="585,140" size="542,40" zPosition="-4" alphatest="on" />
     <widget name="input" position="590,150" size="532,26" font="Regular;20" valign="center"/>
   </screen>
 
