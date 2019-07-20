@@ -96,8 +96,8 @@
   <screen flags="wfNoBorder" name="VlcMediaListScreen" position="fill" title="Select a VLC-Server Profile">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="590,110" size="210,40" zPosition="1" alphatest="on"/>
-    <widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="590,110" size="210,40" zPosition="1" alphatest="on"/>
+    <widget name="filelist_button_sel" pixmap="epg_now.png" position="590,110" size="210,40" zPosition="1" alphatest="on"/>
+    <widget name="playlist_button_sel" pixmap="epg_next.png" position="590,110" size="210,40" zPosition="1" alphatest="on"/>
     <widget name="filelist_text" position="590,110" size="110,25" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center"/>
     <widget name="playlist_text" position="690,110" size="110,25" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center"/>
     <widget name="server_name" position="840,110" size="200,25" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left"/>
@@ -135,9 +135,9 @@
 
   <screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="20,120" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
+    <widget name="frontend" pixmap="icons/scan-c.png" position="20,120" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
     <widget name="scan_state" position="20,230" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1"/>
-    <widget name="scan_progress" position="20,265" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+    <widget name="scan_progress" position="20,265" size="480,15" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
   </screen>
 
   <!-- DVD Backup -->
@@ -169,7 +169,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="520,70" size="740,276" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="skin_default/div-h.png" position="590,410" zPosition="1" size="600,2"/>
+    <ePixmap pixmap="div-h.png" position="590,410" zPosition="1" size="600,2"/>
     <widget source="info" render="Label" position="600,420" size="600,80" font="Regular;18" halign="center" valign="center"/>
   </screen>
 
@@ -219,8 +219,8 @@
 			}
 		</convert>
 	</widget>
-	<ePixmap pixmap="skin_default/div-h.png" position="590,452" zPosition="10" size="560,2"/>
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="600,456" size="35,25" alphatest="on"/>
+	<ePixmap pixmap="div-h.png" position="590,452" zPosition="10" size="560,2"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="600,456" size="35,25" alphatest="on"/>
 	<widget source="hint" render="Label" position="640,458" size="540,22" font="Regular;18" halign="left"/>
 	<widget name="medium_label"  position="600,482" size="540,22" font="Regular;18" halign="left" foregroundColors="#FFFFFF,#FFFF00,#FF0000"/>
 	<widget source="space_bar_single" render="Progress" position="600,508" size="270,24" borderWidth="1" zPosition="2" backgroundColor="#254f7497"/>
@@ -498,7 +498,7 @@
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="SeekState" position="355,633" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
-    <widget name="Timeline" position="460,635" size="760,20" backgroundColor="#505555" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black"/>
+    <widget name="Timeline" position="460,635" size="760,20" backgroundColor="#505555" pointer="position_arrow.png:3,5" foregroundColor="black"/>
     <ePixmap pixmap="PLi-HD/buttons/key_ok.png" position="120,689" size="35,25"/>
     <eLabel text="Menu" position="165,687" size="230,28" backgroundColor="secondBG" font="Regular;24" halign="left" transparent="1" zPosition="1"/>
     <ePixmap pixmap="PLi-HD/buttons/key_0.png" position="410,689" size="35,25"/>
@@ -559,7 +559,7 @@
  <screen flags="wfNoBorder" name="TVChartsMain" position="fill" title="TV Charts">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,687" size="35,25"/>
+    <ePixmap pixmap="buttons/key_info.png" alphatest="on" position="65,687" size="35,25"/>
     <eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;22" halign="left" position="400,585" size="150,26" transparent="1" zPosition="1"/>
     <widget name="info" font="Regular;22" position="20,400" size="480,155" transparent="1"/>
     <widget name="channellist" scrollbarMode="showOnDemand" font="Regular;22" position="520,70" size="740,600" transparent="1"/>
@@ -1070,7 +1070,7 @@
   <screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,250" scrollbarMode="showOnDemand"/>
-    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="590,99" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="0" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="590,99" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
     <widget name="statusbar" position="520,300" size="740,22" font="Regular;18"/>
   </screen>
 
@@ -1080,22 +1080,22 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <widget name="config" position="540,70" size="720,200" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="skin_default/div-h.png" position="520,275" zPosition="1" size="740,2"/>
+    <ePixmap pixmap="div-h.png" position="520,275" zPosition="1" size="740,2"/>
     <widget name="statusbar" position="840,280" size="420,25" font="Regular;20"/>
     <widget name="devices" position="520,340" size="220,25" font="Regular;20"/>
     <widget name="mounted" position="840,340" size="420,120" font="Regular;20"/>
     <ePixmap pixmap="~/author.png" position="180,646" zPosition="2" size="25,25"/>
     <widget name="version" position="220,657" size="100,20" zPosition="2" foregroundColor="white" font="Regular;16"/>
     <widget name="process" position="520,300" size="90,25" font="Regular;20"/>
-    <widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="640,304" size="15,16" zPosition="10" transparent="1"/>
-    <widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="640,304" size="15,16" zPosition="10" transparent="1"/>
-    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="520,73" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="1" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="520,98" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="2" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="520,123" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="3" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="520,148" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="4" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="520,173" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="5" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="520,198" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="520,223" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="daemon0" alphatest="on" pixmap="buttons/button_green_off.png" position="640,304" size="15,16" zPosition="10" transparent="1"/>
+    <widget name="daemon1" alphatest="on" pixmap="buttons/button_green.png" position="640,304" size="15,16" zPosition="10" transparent="1"/>
+    <widget name="0" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="520,73" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="1" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="520,98" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="2" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="520,123" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="3" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="520,148" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="4" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="520,173" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="5" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="520,198" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="6" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="520,223" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
   </screen>
 
   <!-- SetPicon -->
@@ -1369,8 +1369,8 @@
     <widget name="config" position="20,437" size="480,180" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
     <ePixmap pixmap="PLi-HD/buttons/red.png" position="540,320" size="26,26" alphatest="on"/>
     <widget name="languagetext" position="585,324" size="110,24" font="Regular;18"/>
-    <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on"/>
-    <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
+    <widget name="wizard" pixmap="wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on"/>
+    <widget name="rc" position="1082,99" size="154,500" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
     <widget name="HelpWindow" pixmap="PLi-HD/buttons/key_text.png" position="540,440" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
   </screen>
 

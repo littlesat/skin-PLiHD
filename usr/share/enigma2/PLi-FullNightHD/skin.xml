@@ -97,8 +97,8 @@
 	</parameters>
 
         <switchpixmap>
-		<pixmap name="menu_on" filename="skin_default/icons/menu_on.png"/>
-		<pixmap name="menu_off" filename="skin_default/icons/menu_off.png"/>
+		<pixmap name="menu_on" filename="icons/menu_on.png"/>
+		<pixmap name="menu_off" filename="icons/menu_off.png"/>
 	</switchpixmap>
 
 	<!-- Window -->
@@ -284,7 +284,7 @@
 		<widget name="audioLabel" position="405,202" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
 		<eLabel text="Subtitle:	" position="270,255" size="135,52" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;30" valign="center" halign="left"/>
 		<widget name="subtitleLabel" position="405,255" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-		<widget name="anglePix" position="960,192" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"/>
+		<widget name="anglePix" position="960,192" size="39,24" pixmap="icons/icon_view.png" zPosition="3" alphatest="on"/>
 		<widget name="angleLabel" position="1020,183" size="300,33" font="Regular;31" backgroundColor="black" zPosition="3" transparent="1"/>
 	</screen>
 
@@ -539,8 +539,8 @@
 
 	<screen flags="wfNoBorder" name="MenuSort" position="fill">
 		<panel name="MenuTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
 	</screen>
 
 	<screen flags="wfNoBorder" name="menu_setup" position="fill">
@@ -564,7 +564,7 @@
 	<screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="VKeyIconPanel"/>
-		<!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="75,615" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
+		<!--widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="75,615" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>
 	</screen>
@@ -589,24 +589,24 @@
 
 	<screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
 		<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="network" position="135,105" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
 		<widget name="transponder" position="135,157" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
-		<widget name="scan_progress" position="30,270" size="810,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="30,270" size="810,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
 		<widget name="scan_state" position="30,307" zPosition="2" size="810,70" valign="top" font="Regular;30" transparent="1"/>
 		<widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1"/>
 		<widget name="servicelist" position="870,100" size="1020,912" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand"/>
@@ -622,9 +622,9 @@
 
 	<screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+		<widget name="frontend" pixmap="icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1"/>
-		<widget name="scan_progress" position="30,322" size="810,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="30,322" size="810,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
 	</screen>
 
 	<!-- RecordPathSettings -->
@@ -656,8 +656,8 @@
 	<screen name="ExtensionsList" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="TextTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 
@@ -891,7 +891,7 @@
 		<widget source="session.Event_Now" render="Label" position="30,120" size="765,623" font="Regular;28" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="30,575" size="150,90" zPosition="2" alphatest="on">
+		<widget source="RdsDecoder" render="Pixmap" pixmap="icons/rass_logo.png" position="30,575" size="150,90" zPosition="2" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1094,9 +1094,9 @@
 
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 
@@ -1317,11 +1317,11 @@
 	<screen name="RemoteControlTemplate">
 		<panel position="right" size="154,*">
 			<panel position="top" size="*,50"/>
-			<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="top" zPosition="10" size="154,500" alphatest="blend"/>
-			<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
-			<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
-			<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
-			<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="rc" pixmaps="rc.png,rcold.png" position="top" zPosition="10" size="154,500" alphatest="blend"/>
+			<widget name="arrowdown" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowdown2" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
+			<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 		</panel>
 	</screen>
 	<screen name="WizardPictureLangTemplate">
@@ -1425,8 +1425,8 @@
 		<widget name="config" position="127,655" size="637,270" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="buttons/red.png" position="810,485" size="34,34" alphatest="on"/>
 		<widget name="languagetext" position="860,485" size="165,34" font="Regular;28"/>
-		<widget name="wizard" pixmap="skin_default/wizard.png" position="811,120" size="165,261" zPosition="10" alphatest="on"/>
-		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
+		<widget name="wizard" pixmap="wizard.png" position="811,120" size="165,261" zPosition="10" alphatest="on"/>
+		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
 	</screen>
 
 	<screen name="SoftwareManagerInfo" title="SoftwareManager information" position="fill" flags="wfNoBorder">
@@ -1451,7 +1451,7 @@
 		<widget source="IFtext" render="Label" position="1270,880" size="247,37" transparent="1" zPosition="10" font="Regular;31" halign="right"/>
 		<widget source="IF" render="Label" position="1530,880" size="375,37" transparent="1" zPosition="10" font="Regular;31" halign="left"/>
 		<widget source="Statustext" render="Label" position="742,880" size="300,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="right"/>
-		<widget name="statuspic" position="1055,877" size="52,37" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on"/>
+		<widget name="statuspic" position="1055,877" size="52,37" transparent="1" zPosition="10" pixmaps="icons/lock_on.png,icons/lock_off.png" alphatest="on"/>
 	</screen>
 
 	<screen name="AdapterSetup" position="fill" flags="wfNoBorder">
@@ -1508,31 +1508,31 @@
 
 		<widget name="Adaptertext" position="780,689" size="300,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
 		<widget name="Adapter" position="1180,689" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-		<widget name="AdapterInfo_OK" position="1500,686" size="57,46" pixmap="skin_default/icons/lock_on.png" zPosition="2" alphatest="on"/>
+		<widget name="AdapterInfo_OK" position="1500,686" size="57,46" pixmap="icons/lock_on.png" zPosition="2" alphatest="on"/>
 		<widget name="AdapterInfo_Text" position="1590,689" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="AdapterInfo" position="1590,689" size="300,34" transparent="1" zPosition="2"/>
 
 		<widget name="Networktext" position="780,742" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;28" halign="left"/>
 		<widget name="Network" position="1180,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-		<widget name="NetworkInfo_Check" position="1500,739" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="NetworkInfo_Check" position="1500,739" size="57,46" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
 		<widget name="NetworkInfo_Text" position="1590,742" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="NetworkInfo" position="1590,742" size="300,34" transparent="1" zPosition="2"/>
 
 		<widget name="Dhcptext" position="780,795" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
 		<widget name="Dhcp" position="1180,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-		<widget name="DhcpInfo_Check" position="1500,792" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="DhcpInfo_Check" position="1500,792" size="57,46" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
 		<widget name="DhcpInfo_Text" position="1590,795" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="DhcpInfo" position="1590,795" size="300,34" transparent="1"/>
 
 		<widget name="IPtext" position="780,847" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
 		<widget name="IP" position="1180,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-		<widget name="IPInfo_Check" position="1500,844" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="IPInfo_Check" position="1500,844" size="57,46" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
 		<widget name="IPInfo_Text" position="1590,847" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="IPInfo" position="1590,847" size="300,34" transparent="1" zPosition="2"/>
 
 		<widget name="DNStext" position="780,900" size="375,34" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;31" halign="left"/>
 		<widget name="DNS" position="1180,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
-		<widget name="DNSInfo_Check" position="1500,897" size="57,46" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="DNSInfo_Check" position="1500,897" size="57,46" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
 		<widget name="DNSInfo_Text" position="1590,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
 		<widget name="DNSInfo" position="1590,900" size="300,34" transparent="1" zPosition="2" />
 
@@ -1658,7 +1658,7 @@
 		<widget source="IFtext" render="Label" position="1200,880" size="247,37" zPosition="10" font="Regular;31" halign="right" transparent="1"/>
 		<widget source="IF" render="Label" position="1455,880" size="375,37" zPosition="10" font="Regular;31" halign="left" transparent="1"/>
 		<widget source="Statustext" render="Label" position="742,880" size="300,37" zPosition="10" font="Regular;31" halign="right" transparent="1"/>
-		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="1050,888" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="1050,888" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 	</screen>
 
 	<screen name="WlanScan" position="fill" title="Choose a Wireless Network" flags="wfNoBorder" >
@@ -1726,11 +1726,11 @@
 	<screen name="HelpMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="list" position="780,100" size="855,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="rc" position="1659,105" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
-		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
+		<widget name="rc" position="1659,105" size="231,750" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
+		<widget name="arrowdown" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
+		<widget name="arrowdown2" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
+		<widget name="arrowup" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
+		<widget name="arrowup2" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
 		<widget name="long_key" position="1590,922" size="375,30" foregroundColor="yellow" font="Regular;24" halign="center"/>
 	</screen>
 
@@ -1784,10 +1784,10 @@
 	<screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="text" position="870,105" size="1020,900" font="Regular;33"/>
-		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="780,105" size="80,80" alphatest="blend"/>
-		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="780,105" size="80,80" alphatest="blend"/>
-		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="780,105" size="80,80" alphatest="blend"/>
-		<widget name="WarningPixmap" pixmap="skin_default/icons/input_warning.png" position="780,105" size="80,80" alphatest="blend"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="780,105" size="80,80" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="780,105" size="80,80" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="780,105" size="80,80" alphatest="blend"/>
+		<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="780,105" size="80,80" alphatest="blend"/>
 		<widget name="list" position="30,560" size="720,380" itemHeight="38" font="Regular;28"/>
 	</screen>
 
@@ -1796,10 +1796,10 @@
 	<screen name="MessageBoxSimple" position="center,center" size="960,15" title="Message" zPosition="10" flags="wfNoBorder">
 		<widget source="Title" render="Label" position="3,3" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28" valign="center" halign="left"/>
 		<widget name="text" position="100,12" size="780,0" font="Regular;32"/>
-		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend"/>
-		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend"/>
-		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend"/>
-		<widget name="WarningPixmap" pixmap="skin_default/icons/input_warning.png" position="10,10" size="80,80" alphatest="blend"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="10,10" size="80,80" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="10,10" size="80,80" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="10,10" size="80,80" alphatest="blend"/>
+		<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="list" position="150,150" size="720,570" itemHeight="38" font="Regular;28"/>
 		<widget name="autoresize" position="0,0" size="0,0" font="Regular;28" noWrap="1"/>
 	<applet type="onLayoutFinish">
@@ -1905,7 +1905,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="AutoDiseqc" title="Auto DiseqC" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="skin_default/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+		<ePixmap pixmap="icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget source="statusbar" render="Label" position="150,105" size="600,96" zPosition="10" halign="left" valign="center" font="Regular;33" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 		<widget source="tunerstatusbar" render="Label" position="30,240" size="720,45" zPosition="10" halign="left" valign="center" font="Regular;33" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 		<widget name="config" position="30,315" size="720,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
@@ -2048,7 +2048,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="year" position="350,967" size="375,37" backgroundColor="noTransBG" transparent="1" font="Regular;30" valign="top"/>
 		<widget name="genretext" position="825,967" size="150,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
 		<widget name="genre" position="975,967" size="517,37" font="Regular;30" backgroundColor="noTransBG" transparent="1" foregroundColor="darkgrey" valign="top"/>
-		<widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="30,817" size="116,116" transparent="1" alphatest="blend"/>
+		<widget name="coverArt" pixmap="no_coverArt.png" position="30,817" size="116,116" transparent="1" alphatest="blend"/>
 
 		<ePixmap pixmap="dvr/mpslider.png" position="380,1041" size="900,24" backgroundColor="noTransBG" zPosition="13" alphatest="on"/>
 		<widget name="PositionGauge" position="412,1042" size="836,21" transparent="0" zPosition="12" pointer="dvr/pointer.png:20,5"/>
@@ -2115,9 +2115,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
 		<panel name="PigTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="82,1031" size="52,38"/>
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="30,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="82,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
 		<widget name="prompt" position="868,180" size="954,35" font="Regular;30" noWrap="1" transparent="1"/>
 		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
 		<widget name="text" position="868,240" size="954,47" font="Regular;40" halign="right" noWrap="1" transparent="1"/>
@@ -2215,8 +2215,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="Pic_Full_View" position="fill" title="Picture" flags="wfNoBorder">
 		<widget name="pic" position="fill" zPosition="1" alphatest="on"/>
 		<eLabel position="22,22" size="45,37" zPosition="2" backgroundColor="black" transparent="1"/>
-		<widget name="point" position="25,25" size="31,31" zPosition="3" pixmap="skin_default/icons/record.png" alphatest="on"/>
-		<widget name="play_icon" position="25,25" size="24,24" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on"/>
+		<widget name="point" position="25,25" size="31,31" zPosition="3" pixmap="icons/record.png" alphatest="on"/>
+		<widget name="play_icon" position="25,25" size="24,24" zPosition="3" pixmap="icons/ico_mp_play.png" alphatest="on"/>
 		<widget source="file" render="Label" position="90,22" size="900,34" zPosition="3" font="Regular;30" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2"/>
 	</screen>
 
@@ -2225,7 +2225,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="InputBox" position="fill" title="Input" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="text" position="780,105" size="1110,39" font="Regular;33"/>
-		<ePixmap pixmap="skin_default/vkey_text.png" position="927,210" size="816,78" zPosition="-4" alphatest="on"/>
+		<ePixmap pixmap="buttons/vkey_text.png" position="927,210" size="816,78" zPosition="-4" alphatest="on"/>
 		<widget name="input" position="932,227" size="806,45" font="Regular;38" valign="center"/>
 	</screen>
 
@@ -2330,7 +2330,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Subservices Quickzap -->
 
 	<screen name="SubservicesQuickzap" position="c-384,c-15" size="768,300" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="675,0" zPosition="2" size="21,21" alphatest="on" >
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="675,0" zPosition="2" size="21,21" alphatest="on" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<eLabel text="Subservices" position="0,0" size="705,30" font="Regular;20" backgroundColor="toptemplatecolor" />
