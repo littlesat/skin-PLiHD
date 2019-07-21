@@ -89,8 +89,8 @@
 
 	<screen flags="wfNoBorder" name="VlcMediaListScreen" position="fill" title="Select a VLC-Server Profile">
 		<panel name="PigTemplate"/>
-		<widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="885,165" size="315,60" zPosition="1" alphatest="on"/>
-		<widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="885,165" size="315,60" zPosition="1" alphatest="on"/>
+		<widget name="filelist_button_sel" pixmap="epg_now.png" position="885,165" size="315,60" zPosition="1" alphatest="on"/>
+		<widget name="playlist_button_sel" pixmap="epg_next.png" position="885,165" size="315,60" zPosition="1" alphatest="on"/>
 		<widget name="filelist_text" position="885,165" size="165,37" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;27" valign="center" halign="center"/>
 		<widget name="playlist_text" position="1035,165" size="165,37" backgroundColor="secondBG" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;27" valign="center" halign="center"/>
 		<widget name="server_name" position="1260,165" size="300,37" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;33" valign="center" halign="left"/>
@@ -125,9 +125,9 @@
 
 	<screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="780,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+		<widget name="frontend" pixmap="icons/scan-c.png" position="780,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="780,345" zPosition="2" size="720,45" valign="center" font="Regular;30" transparent="1"/>
-		<widget name="scan_progress" position="780,397" size="720,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="780,397" size="720,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
 	</screen>
 
 	<!-- DVD Backup -->
@@ -155,7 +155,7 @@
 	<screen name="ProjectSettings" position="fill" title="Collection settings" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,414" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="skin_default/div-h.png" position="885,615" zPosition="1" size="900,3"/>
+		<ePixmap pixmap="div-h.png" position="885,615" zPosition="1" size="900,3"/>
 		<widget source="info" render="Label" position="900,630" size="900,120" font="Regular;27" halign="center" valign="center"/>
 	</screen>
 
@@ -203,8 +203,8 @@
 			}
 		</convert>
 	</widget>
-	<ePixmap pixmap="skin_default/div-h.png" position="885,678" zPosition="10" size="840,3"/>
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="900,684" size="52,38" alphatest="on"/>
+	<ePixmap pixmap="div-h.png" position="885,678" zPosition="10" size="840,3"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="900,684" size="52,38" alphatest="on"/>
 	<widget source="hint" render="Label" position="960,687" size="810,33" font="Regular;27" halign="left"/>
 	<widget name="medium_label" position="900,723" size="810,33" font="Regular;27" halign="left" foregroundColors="#FFFFFF,#FFFF00,#FF0000"/>
 	<widget source="space_bar_single" render="Progress" position="900,762" size="405,36" borderWidth="1" zPosition="2" backgroundColor="#254f7497"/>
@@ -414,7 +414,7 @@
 	</screen>
 
 	<screen name="Dishpip" flags="wfNoBorder" position="30,90" size="130,202" title="DishPiP" zPosition="1" backgroundColor="transparent" >
-		<widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="blend">
+		<widget source="Dishpixmap" render="Pixmap" pixmap="icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<eLabel text="PiP" position="27,40" size="40,25" font="Regular;18" foregroundColor="#909090" backgroundColor="#909090" transparent="1" zPosition="1"/>
@@ -468,10 +468,10 @@
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="SeekState" position="532,949" zPosition="1" size="150,37" halign="right" font="Regular;30" valign="center"/>
-		<widget name="Timeline" position="690,952" size="1140,30" backgroundColor="#505555" pointer="skin_default/position_arrow.png:4,11" foregroundColor="black"/>
-		<ePixmap pixmap="skin_default/buttons/key_ok.png" position="183,1032" size="52,38" alphatest="blend"/>
+		<widget name="Timeline" position="690,952" size="1140,30" backgroundColor="#505555" pointer="position_arrow.png:4,11" foregroundColor="black"/>
+		<ePixmap pixmap="buttons/key_ok.png" position="183,1032" size="52,38" alphatest="blend"/>
 		<eLabel text="Menu" position="251,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="skin_default/buttons/key_0.png" position="619,1032" size="52,38" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_0.png" position="619,1032" size="52,38" alphatest="blend"/>
 		<eLabel text="Mark" position="687,1030" size="370,38" backgroundColor="secondBG" font="Regular;34" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 
@@ -527,7 +527,7 @@
 
  <screen flags="wfNoBorder" name="TVChartsMain" position="fill" title="TV Charts">
 		<panel name="PigTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="97,1030" size="52,38"/>
+		<ePixmap pixmap="buttons/key_info.png" alphatest="on" position="97,1030" size="52,38"/>
 		<eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;33" halign="left" position="600,877" size="225,39" transparent="1" zPosition="1"/>
 		<widget name="info" font="Regular;33" position="30,600" size="720,232" transparent="1"/>
 		<widget name="channellist" scrollbarMode="showOnDemand" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1"/>
@@ -823,7 +823,7 @@
 		<ePixmap position="1341,831" size="18,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/bottom.png" zPosition="4" alphatest="on"/>
 		<ePixmap position="899,494" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/left.png" zPosition="4" alphatest="on"/>
 		<ePixmap position="1791,494" size="10,18" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MeteoViewer/pictures/right.png" zPosition="4" alphatest="on"/>
-		<ePixmap pixmap="skin_default/buttons/key_tv.png" position="900,867" size="52,38" alphatest="on"/>
+		<ePixmap pixmap="buttons/key_tv.png" position="900,867" size="52,38" alphatest="on"/>
 		<eLabel text="- Synaptic" position="960,870" size="300,45" backgroundColor="secondBG" font="Regular;27" halign="left" transparent="1" zPosition="1"/>
 		<widget name="frames" position="900,165" size="900,675" zPosition="1" alphatest="blend"/>
 		<widget name="border" position="900,165" zPosition="2" size="900,675" alphatest="blend"/>
@@ -844,7 +844,7 @@
 	<screen name="CSFD" position="fill" title="Filmová databáze CSFD" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="30,1031" size="52,38" zPosition="3" alphatest="on"/>
+		<ePixmap pixmap="buttons/key_text.png" position="30,1031" size="52,38" zPosition="3" alphatest="on"/>
 		<widget name="titellabel" position="780,105" size="880,42" valign="center" font="Regular;33" foregroundColor="#ff0000" backgroundColor="black" transparent="1"/>
 		<widget name="sortlabel" position="780,150" size="795,42" font="Regular;28" foregroundColor="blue" backgroundColor="black" transparent="1"/>
 		<widget name="detailslabel" position="1050,184" size="840,342" zPosition="1" transparent="1" itemHeight="38" font="Regular;30" halign="block"/>
@@ -865,14 +865,14 @@
 		<widget name="stars50" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_50.png" transparent="1"/>
 		<widget name="starsbg100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_empty_100.png" position="1680,108" zPosition="1" size="210,21" transparent="1" alphatest="on"/>
 		<widget name="stars100" position="1680,108" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFD/icons/starsbar_filled_100.png" transparent="1"/>
-		<widget name="pageb1" pixmap="skin_default/buttons/key_1.png" position="1110,978" size="52,38" zPosition="3" alphatest="on"/>
-		<widget name="pageb3" pixmap="skin_default/buttons/key_3.png" position="1462,978" size="52,38" zPosition="3" alphatest="on"/>
-		<widget name="paget1" pixmap="skin_default/buttons/key_left.png" position="1162,978" size="52,38" zPosition="3" alphatest="on"/>
-		<widget name="paget3" pixmap="skin_default/buttons/key_right.png" position="1515,978" size="52,38" zPosition="3" alphatest="on"/>
+		<widget name="pageb1" pixmap="buttons/key_1.png" position="1110,978" size="52,38" zPosition="3" alphatest="on"/>
+		<widget name="pageb3" pixmap="buttons/key_3.png" position="1462,978" size="52,38" zPosition="3" alphatest="on"/>
+		<widget name="paget1" pixmap="buttons/key_left.png" position="1162,978" size="52,38" zPosition="3" alphatest="on"/>
+		<widget name="paget3" pixmap="buttons/key_right.png" position="1515,978" size="52,38" zPosition="3" alphatest="on"/>
 		<widget name="page" position="1230,976" size="217,42" font="Regular;33" foregroundColor="yellow" valign="center" halign="center" zPosition="2" transparent="1"/>
 		<widget name="tips_label" position="30,750" size="90,30" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
 		<widget name="tips_detail" position="30,787" size="720,56" font="Regular;24" backgroundColor="black" halign="left" zPosition="3" transparent="1"/>
-		<widget name="tips_icon" pixmap="skin_default/buttons/key_help.png" position="30,784" alphatest="off" size="48,36" backgroundColor="black" zPosition="3"/>
+		<widget name="tips_icon" pixmap="buttons/key_help.png" position="30,784" alphatest="off" size="48,36" backgroundColor="black" zPosition="3"/>
 	</screen>
 
 	<screen name="CSFDAbout" position="fill" title="Informace o pluginu CSFD" flags="wfNoBorder">
@@ -1019,7 +1019,7 @@
 	<screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="885,153" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="0" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="885,153" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 		<widget name="statusbar" position="780,450" size="1110,34" font="Regular;30"/>
 	</screen>
 
@@ -1034,15 +1034,15 @@
 		<ePixmap pixmap="~/author.png" position="280,980" zPosition="2" size="37,37"/>
 		<widget name="version" position="330,983" size="150,30" zPosition="2" foregroundColor="white" font="Regular;24"/>
 		<widget name="process" position="780,450" size="135,37" font="Regular;30"/>
-		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
-		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
-		<widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,116" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="1" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,154" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="2" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,192" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="3" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,230" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="4" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,268" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="5" pixmaps="skin_default/buttons/button_blue_off.png,skin_default/buttons/button_blue.png" position="780,306" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
-		<widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,344" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="daemon0" alphatest="on" pixmap="buttons/button_green_off.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
+		<widget name="daemon1" alphatest="on" pixmap="buttons/button_green.png" position="960,460" size="22,24" zPosition="10" transparent="1"/>
+		<widget name="0" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="780,116" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="1" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="780,154" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="2" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="780,192" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="3" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="780,230" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="4" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="780,268" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="5" pixmaps="buttons/button_blue_off.png,buttons/button_blue.png" position="780,306" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
+		<widget name="6" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="780,344" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 	</screen>
 
 	<!-- SetPicon -->
@@ -1298,7 +1298,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="VKeyIconPanel"/>
 		<eLabel text="Welcome..." position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
+		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
 		<widget name="text" position="780,105" size="830,495" font="Regular;32"/>
 		<ePixmap pixmap="buttons/red.png" position="815,485" size="34,34" alphatest="on"/>
 		<widget name="languagetext" position="877,486" size="165,38" font="Regular;34"/>
@@ -1312,8 +1312,8 @@
 			</convert>
 		</widget>
 		<widget name="config" position="30,655" size="720,266" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
-		<widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
-		<widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="wizard" pixmap="wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 
 	<screen name="AutoTimer" title="Auto Timer" position="fill" flags="wfNoBorder">

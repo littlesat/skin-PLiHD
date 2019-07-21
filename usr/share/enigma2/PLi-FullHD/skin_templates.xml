@@ -91,7 +91,7 @@
 	<!-- VKeyIconPanel -->
 	<!--This conditionally shows "Text" to indicate that the virtual keyboard can be activated by pressing the "Subtitle/Text" button-->
 	<screen name="VKeyIconPanel">
-		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" zPosition="10" alphatest="blend" position="30,1032" size="52,38">
+		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" zPosition="10" alphatest="blend" position="30,1032" size="52,38">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
@@ -182,69 +182,69 @@
 	</screen>
 
 	<screen name="KeyMenuAutoTemplate"><!-- show with Components.Sources.Boolean -->
-		<widget source="key_menu" conditional="key_menu" render="Pixmap" pixmap="skin_default/buttons/key_menu.png" alphatest="blend" position="82,1032" size="52,38">
+		<widget source="key_menu" conditional="key_menu" render="Pixmap" pixmap="buttons/key_menu.png" alphatest="blend" position="82,1032" size="52,38">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
 
 	<screen name="KeyInfoAutoTemplate"><!-- show with Components.Sources.Boolean -->
-		<widget source="key_info" conditional="key_info" render="Pixmap" pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38">
+		<widget source="key_info" conditional="key_info" render="Pixmap" pixmap="buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
 
 	<screen name="KeyChannelTemplate">
-		 <ePixmap pixmap="skin_default/buttons/key_channel.png" alphatest="blend" position="30,1032" size="52,38"/>
+		 <ePixmap pixmap="buttons/key_channel.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyVideoTemplate">
-		 <ePixmap pixmap="skin_default/buttons/key_video.png" alphatest="blend" position="30,1032" size="52,38"/>
+		 <ePixmap pixmap="buttons/key_video.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyMenuTemplate">
-		 <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="blend" position="82,1032" size="52,38"/>
+		 <ePixmap pixmap="buttons/key_menu.png" alphatest="blend" position="82,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyInfoTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyPrevNextTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_prevnext.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prevnext.png" alphatest="blend" position="135,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyZeroTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="30,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyOkTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_ok.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyOneTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="blend" position="30,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_1.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyHelpLTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="30,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="30,1032" size="52,38"/>
 	</screen>
 	<screen name="KeyHelpMTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="82,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="82,1032" size="52,38"/>
 	</screen>
 	<screen name="KeyHelpRTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyTextTemplate">
-		<ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="619,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="619,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyTextTemplateBlue">
-		<ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="1500,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="1500,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyExit">
-		<ePixmap pixmap="skin_default/buttons/key_exit.png" alphatest="blend" position="183,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_exit.png" alphatest="blend" position="183,1032" size="52,38"/>
 	</screen>
 
 	<screen name="CancelTemplate">
@@ -283,15 +283,15 @@
 		<panel name="PigTemplate"/>
 		<panel name="ConfigTemplate"/>
 		<panel name="DescriptionTemplate"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="3,310" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="3,310" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
 	</screen>
 
 <!-- Hideable buttons -->
 
 	<screen name="KeyPrevNextTemplate_Hideable">
-		<widget name="h_prev" pixmap="skin_default/buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1032" size="52,38"/>
-		<widget name="h_next" pixmap="skin_default/buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1032" size="52,38"/>
+		<widget name="h_prev" pixmap="buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1032" size="52,38"/>
+		<widget name="h_next" pixmap="buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1032" size="52,38"/>
 	</screen>
 
 <!-- Infobar Template -->
