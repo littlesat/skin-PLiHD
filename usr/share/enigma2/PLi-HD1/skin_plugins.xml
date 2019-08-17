@@ -1877,13 +1877,6 @@
 	</screen>
 
 	<!-- File Commander -->
-	<screen name="FileCommanderSetup" position="60,120" size="1800,900" title="">
-		<widget name="config" position="15,15" size="1770,825" scrollbarMode="showOnDemand"/>
-		<widget name="key_red" position="96,855" size="390,38" transparent="1" font="Regular;30"/>
-		<widget name="key_green" position="539,855" size="390,38"  transparent="1" font="Regular;30"/>
-		<ePixmap position="45,855" size="390,38" zPosition="0" pixmap="buttons/red.png" transparent="1" alphatest="on"/>
-		<ePixmap position="488,855" size="390,38" zPosition="0" pixmap="buttons/green.png" transparent="1" alphatest="on"/>
-	</screen>
 	<screen name="FileCommanderScreen" position="60,120" size="1800,900" title="">
 		<widget name="list_left_head1" position="15,15" size="855,63" font="Regular;27" foregroundColor="#00fff000"/>
 		<widget source="list_left_head2" render="Listbox" position="15,84" size="855,30" foregroundColor="#00fff000" selectionDisabled="1" transparent="1" >
