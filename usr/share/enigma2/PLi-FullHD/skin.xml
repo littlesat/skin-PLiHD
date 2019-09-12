@@ -25,7 +25,7 @@
 		<alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
 		<alias name="ServiceInfo" font="Regular" size="30" height="45"/>
-		<alias name="SelectionList" font="Regular" size="28" height="30"/>
+		<alias name="SelectionList" font="Regular" size="30" height="45"/>
 		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
 		<alias name="PartnerBoxEntryList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
@@ -91,13 +91,13 @@
 	</colors>
 
 	<parameters>
-                <parameter name="ConfigListSlider" value="22,0"/>
+        <parameter name="ConfigListSlider" value="22,0"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
 		<parameter name="VirtualKeyBoard" value="68,68"/>
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
 	</parameters>
 
-        <switchpixmap>
+    <switchpixmap>
 		<pixmap name="menu_on" filename="icons/menu_on.png"/>
 		<pixmap name="menu_off" filename="icons/menu_off.png"/>
 	</switchpixmap>

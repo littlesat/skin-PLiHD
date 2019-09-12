@@ -25,7 +25,7 @@
 		<alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
 		<alias name="ServiceInfo" font="Regular" size="30" height="45"/>
-		<alias name="SelectionList" font="Regular" size="28" height="30"/>
+		<alias name="SelectionList" font="Regular" size="30" height="45"/>
 		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
 		<alias name="PartnerBoxEntryList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
