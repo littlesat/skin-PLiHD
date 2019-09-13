@@ -2102,4 +2102,42 @@
 		<ePixmap position="15,795" size="210,60" pixmap="buttons/red.png" transparent="1" alphatest="on" />
 		<panel name="FileCommanderButtons"/>
 	</screen>
+
+	<!-- YouTube by Taapat	-->
+	<screen name="YouTubeMain" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
+		<widget name="text" position="30,560" size="720,210" font="Regular;36" halign="center" zPosition="1"/>
+		<widget source="list" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
+			<convert type="TemplatedMultiContent" >
+				{"template": [
+				MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(150,108), png=2), # Thumbnail
+				MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+				MultiContentEntryText(pos=(180, 75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+				MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+				],
+				"fonts": [gFont("Regular",30), gFont("Regular",24)],
+				"itemHeight": 108
+				}
+			</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" size="150,108" /> # Thumbnail size in list
+	</screen>
+
+	<screen name="YouTubeSearch" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="config" position="780,100" size="1110,45" itemHeight="45" font="Regular;30" halign="center" zPosition="1"/> <!-- Search box -->
+		<widget source="list" render="Listbox" transparent="0" position="780,150" size="1110,712" scrollbarMode="showOnDemand" >
+			<convert type="TemplatedMultiContent" >
+				{"template": [
+				MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
+				],
+				"fonts": [gFont("Regular",30)],
+				"itemHeight": 45
+				}
+			</convert>
+		</widget>
+		<widget name="HelpWindow" position="30,710" size="1,1" transparent="1" zPosition="3" alphatest="on"/>
+	</screen>
 </skin>
