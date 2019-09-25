@@ -1309,7 +1309,6 @@
 
   <screen name="AdapterSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="KeyTextTemplate"/>
     <widget name="config" position="520,70" size="740,256" itemHeight="32" scrollbarMode="showOnDemand"/>
     <widget source="DNS1text" render="Label" position="835,450" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;21" valign="left" halign="left"/>
@@ -1325,7 +1324,6 @@
     <widget source="Adaptertext" render="Label" position="400,550" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right"/>
     <widget source="Adapter" render="Label" position="680,550" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left"/>
     <widget source="introduction2" render="Label" position="520,650" size="740,25" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center"/>
-    <eLabel text="Virtual Keyboard" position="460,688" size="300,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     <widget name="HelpWindow" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
   </screen>
 
