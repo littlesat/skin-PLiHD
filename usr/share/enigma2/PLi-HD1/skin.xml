@@ -1696,7 +1696,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder" >
     <panel name="PigTemplate"/>
-    <panel name="CancelOKTemplate"/>
     <widget name="config" scrollbarMode="showOnDemand" position="520,70" font="Regular;22" size="740,600" transparent="1"/>
   </screen>
 
