@@ -42,6 +42,9 @@
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
 		<alias name="Dreamexplorer" font="Regular" size="30" height="45"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
+		<alias name="AutotimerList" font="Regular" size="22" height="25"/>
+		<alias name="AutotimerListExt0" font="Regular" size="28"/>
+		<alias name="AutotimerListExt1" font="Regular" size="22" height="95"/>
 	</fonts>
 
 	<!-- Colors -->
