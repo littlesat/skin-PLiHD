@@ -96,6 +96,8 @@
 	<parameters>
         <parameter name="ConfigListSlider" value="22,0"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
+		<parameter name="ExpandableListIcon" value="0,0,55,38"/>
+		<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
 		<parameter name="VirtualKeyBoard" value="68,68"/>
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
 		<parameter name="AutotimerListIcon" value="2,3,24,25"/>
