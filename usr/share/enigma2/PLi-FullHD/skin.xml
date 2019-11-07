@@ -26,6 +26,7 @@
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
 		<alias name="ServiceInfo" font="Regular" size="30" height="45"/>
 		<alias name="SelectionList" font="Regular" size="30" height="45"/>
+		<alias name="ImsSelectionList" font="Regular" size="28" height="30"/>
 		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
 		<alias name="PartnerBoxEntryList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
@@ -101,6 +102,8 @@
 		<parameter name="AutotimerListIcon" value="2,3,24,25"/>
 		<parameter name="AutotimerListRectypeicon" value="30,7,24,25"/>
 		<parameter name="AutotimerListIcons" value="*skin_default/icons/lock_on.png,*skin_default/icons/lock_off.png,*skin_default/icons/timer_rec.png,*skin_default/icons/timer_zap.png"/>
+		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
+		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
 	</parameters>
 
     <switchpixmap>

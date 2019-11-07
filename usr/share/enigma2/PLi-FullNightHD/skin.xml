@@ -26,6 +26,7 @@
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
 		<alias name="ServiceInfo" font="Regular" size="30" height="45"/>
 		<alias name="SelectionList" font="Regular" size="30" height="45"/>
+		<alias name="ImsSelectionList" font="Regular" size="28" height="30"/>
 		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
 		<alias name="PartnerBoxEntryList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
@@ -97,6 +98,8 @@
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
 		<parameter name="VirtualKeyBoard" value="69,68" />
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
+		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
 	</parameters>
 
         <switchpixmap>
