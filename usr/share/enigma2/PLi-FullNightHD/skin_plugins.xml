@@ -1513,10 +1513,11 @@
 	</screen>
 	<screen name="FontInfoTestLength" position="fill" title="FontInfo - test">
 		<panel name="PigTemplate"/>
+		<panel name="VKeyIconPanel"/>
 		<widget name="config" position="780,105" size="1110,228" itemHeight="38" font="Regular;28"/>
 		<widget name="text" position="890,400" size="900,200" font="Regular;30" zPosition="1" backgroundColor="#00404040"/>
 		<widget name="size" position="890,620" size="900,35" font="Regular;30" zPosition="1"/>
-		<widget name="HelpWindow" position="center,750" size="0,0"/>
+		<widget name="HelpWindow" position="center,750" size="80,0"/>
 	</screen>
 
 	<!-- AutoResolution -->
