@@ -86,7 +86,7 @@
 	<!-- VKeyIconPanel -->
 	<!--This conditionally shows "Text" to indicate that the virtual keyboard can be activated by pressing the "Subtitle/Text" button-->
 	<screen name="VKeyIconPanel">
-		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" alphatest="blend" position="30,1032" size="52,38">
+		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" zPosition="10" alphatest="blend" position="30,1032" size="52,38">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
