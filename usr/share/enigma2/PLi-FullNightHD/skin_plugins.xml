@@ -1800,9 +1800,9 @@
 		<widget name="statusbar" position="7,900" size="765,110" font="Regular;27" halign="center" valign="bottom"/>
 		<widget name="poster" position="780,123" size="165,270" alphatest="blend"/>
 		<widget name="detailslabel" position="960,123" size="945,270" font="Regular;30" halign="center"/>
-		<widget name="menu" position="780,213" size="1132,765" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
-		<widget name="castlabel" position="780,397" size="1132,610" font="Regular;33" foregroundColor="grey"/>
-		<widget name="extralabel" position="735,123" size="1177,855" font="Regular;33" foregroundColor="grey"/>
+		<widget name="menu" position="780,213" size="1132,765" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
+		<widget name="castlabel" position="780,397" size="1132,610" font="Regular;30" foregroundColor="grey"/>
+		<widget name="extralabel" position="780,123" size="1132,850" font="Regular;30" foregroundColor="grey"/>
 	</screen>
 	<screen name="IMDbSetup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
