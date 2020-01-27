@@ -1039,16 +1039,16 @@
     <widget name="checkList" position="530,80" size="710,575" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <!-- Ipkg installer -->
+  <!-- Opkg installer -->
 
-  <screen name="IpkgInstaller" position="fill" flags="wfNoBorder">
+  <screen name="OpkgInstaller" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Install extensions" position="40,5" size="1200,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="list" position="530,80" size="710,540" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget source="introduction" render="Label" position="530,640" size="710,27" backgroundColor="background" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
   </screen>
 
-  <screen name="Ipkg" title="Installing Software" position="fill" flags="wfNoBorder">
+  <screen name="Opkg" title="Installing Software" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="package" position="530,80" size="710,28" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
     <widget name="status" position="530,170" size="710,56" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
@@ -1058,21 +1058,21 @@
 
   <!-- Choose upgrade source -->
 
-  <screen name="IPKGMenu" title="Select IPKG source" position="fill" flags="wfNoBorder">
+  <screen name="OPKGMenu" title="Select OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="filelist" position="530,80" size="710,300" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Edit upgrade source -->
 
-  <screen name="IPKGSource" title="IPKG source" position="fill" flags="wfNoBorder">
+  <screen name="OPKGSource" title="OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="40,380" size="1200,30" font="Regular;23" zPosition="3" transparent="1" />
   </screen>
 
   <!-- Packet Manager -->
 
-  <screen name="PacketManager" title="IPKG upgrade" position="fill" flags="wfNoBorder">
+  <screen name="PacketManager" title="OPKG upgrade" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="list" render="Listbox" position="530,80" size="710,572" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
