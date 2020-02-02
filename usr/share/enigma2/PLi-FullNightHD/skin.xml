@@ -1882,8 +1882,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Skin Selector -->
 
 	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
-		<panel name="DescriptionTemplate"/>
-		<widget name="preview" position="165,680" size="420,315" alphatest="on"/>
+		<panel name="PigTemplate"/>
+		<widget name="preview" position="165,600" size="420,315" alphatest="on"/>
 		<widget source="skins" render="Listbox" position="780,100" size="1110,900" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 		{"template": [
