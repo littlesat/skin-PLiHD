@@ -1616,7 +1616,7 @@
 		<widget name="sources" position="780,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
 		<widget name="targets" position="1350,175" zPosition="2" size="540,836" itemHeight="38" font="Regular;28" foregroundColor="foreground" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="30,577" size="720,376" transparent="1" font="Regular;28" foregroundColor="grey" valign="center" halign="block"/>
-		<widget source="session.CurrentService" render="Label" position="30,992" size="720,25" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;23" valign="center" halign="right">
+		<widget source="session.CurrentService" render="Label" position="30,987" size="720,25" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;23" valign="center" halign="right">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 	</screen>
@@ -1630,7 +1630,7 @@
 			<convert type="TransponderInfo"></convert>
 		</widget>
 		<widget name="info" position="30,577" size="720,376" font="Regular;28" foregroundColor="grey" valign="center" halign="block"/>
-		<widget source="session.CurrentService" render="Label" position="30,992" size="720,25" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;23" valign="center" halign="right">
+		<widget source="session.CurrentService" render="Label" position="30,987" size="720,25" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;23" valign="center" halign="right">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 	</screen>
