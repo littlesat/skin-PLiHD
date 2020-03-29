@@ -1792,14 +1792,16 @@
 			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
 		<widget name="description" position="30,560" size="720,64" zPosition="1" font="Regular;28" foregroundColor="grey" halign="block"/>
-		<widget name="size" position="30,635" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
-		<widget name="number" position="30,635" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
-		<widget source="Service" render="Label" position="30,680" size="720,64" foregroundColor="secondFG" font="Regular;28" transparent="1">
+
+		<widget source="Service" render="Label" position="30,650" size="720,64" foregroundColor="secondFG" font="Regular;28" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,755" size="720,256" font="Regular;28" valign="center" halign="block">
+		<widget source="Service" render="Label" position="30,725" size="720,256" font="Regular;28" halign="block">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
+		<widget name="number" position="30,982" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
+		<widget name="size" position="30,982" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
+
 		<widget name="config" position="780,100" size="1110,874" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="825,980" size="1040,35" transparent="1" foregroundColor="grey" font="Regular;30">
 			<convert type="MovieInfo">RecordServiceName</convert>
