@@ -1095,10 +1095,13 @@
 	</screen>
 
 	<screen name="TimerEditList" position="fill" title="Timer Overview" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
+		<panel name="PigTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="timerlist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
-		<widget name="description" position="30,545" size="720,455" transparent="1" font="Regular;30" halign="block"/>
+		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
+			<convert type="TransponderInfo"></convert>
+		</widget>
+		<widget name="description" position="30,570" size="720,385" transparent="1" font="Regular;30" halign="block"/>
 	</screen>
 
 	<screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">
