@@ -16,7 +16,7 @@
 		<font name="LCD" filename="lcd.ttf" scale="100"/>
 		<font name="Console" filename="tuxtxt.ttf" scale="100"/>
 		<font name="Fixed" filename="andale.ttf" scale="100"/>
-		<font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
+		<font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100"/>
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
 		<alias name="TextNormal" font="Regular" size="28" height="38"/>
 		<alias name="ChoiceBoxDescription" font="Regular" size="22" height="25"/>
@@ -37,7 +37,7 @@
 		<alias name="PartnerBoxChannelList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
 		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
-		<alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68" />
+		<alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68"/>
 		<alias name="HelpMenuList" font="Regular" size="30" height="45"/>
 		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
@@ -98,13 +98,13 @@
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
 		<parameter name="ExpandableListIcon" value="0,0,55,38"/>
 		<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
-		<parameter name="VirtualKeyBoard" value="69,68" />
-		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+		<parameter name="VirtualKeyBoard" value="69,68"/>
+		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
 		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
 		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
 	</parameters>
 
-        <switchpixmap>
+	<switchpixmap>
 		<pixmap name="menu_on" filename="icons/menu_on.png"/>
 		<pixmap name="menu_off" filename="icons/menu_off.png"/>
 	</switchpixmap>
@@ -349,7 +349,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
@@ -1373,10 +1373,10 @@
 		<panel name="WizardMarginsTemplate"/>
 		<panel name="WizardPictureLangTemplate"/>
 		<panel name="RemoteControlTemplate"/>
-		<panel position="left" size="10,*" />
-		<panel position="right" size="10,*" />
+		<panel position="left" size="10,*"/>
+		<panel position="right" size="10,*"/>
 		<panel position="fill">
-			<widget name="text" position="top" size="*,400" font="Regular;34" valign="center" />
+			<widget name="text" position="top" size="*,400" font="Regular;34" valign="center"/>
 			<panel position="fill">
 				<panel position="left" size="150,*">
 					<widget name="portpic" position="top" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
@@ -1543,7 +1543,7 @@
 		<widget name="DNS" position="1180,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;31" halign="center"/>
 		<widget name="DNSInfo_Check" position="1500,897" size="57,46" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
 		<widget name="DNSInfo_Text" position="1590,900" size="300,34" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;31" halign="right"/>
-		<widget name="DNSInfo" position="1590,900" size="300,34" transparent="1" zPosition="2" />
+		<widget name="DNSInfo" position="1590,900" size="300,34" transparent="1" zPosition="2"/>
 
 		<widget name="EditSettingsButton" position="1500,1032" size="34,34" transparent="1" zPosition="1" pixmaps="buttons/grey.png,buttons/blue.png" alphatest="on"/>
 		<widget name="EditSettings_Text" position="1550,1030" size="370,38" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;34" halign="left"/>
@@ -2088,7 +2088,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="pused" position="1214,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1"/>
 		<widget name="slide" position="1327,105" size="20,900" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop"/>
 		<widget name="info" position="30,600" size="720,225" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
-		<widget name="params" rowsincolumn="26" />
+		<widget name="params" rowsincolumn="26"/>
 	</screen>
 	<!-- Commit Info -->
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
@@ -2115,7 +2115,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="menu" font="Regular;28" itemHeight="38" position="780,100" size="1110,912" zPosition="1" />
+		<widget name="menu" font="Regular;28" itemHeight="38" position="780,100" size="1110,912" zPosition="1"/>
 		<widget name="info" position="780,100" size="1110,38" font="Regular;28" halign="center" transparent="1" zPosition="2"/>
 	</screen>
 
@@ -2311,28 +2311,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- QuickSubtitlesConfigMenu -->
 
 	<screen name="QuickSubtitlesConfigMenu" position="20,30" size="924,462" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
-		<widget name="config" position="7,7" size="910,418" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
+		<widget name="config" position="7,7" size="910,418" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center"/>
 		<widget name="videofps" position="10,428" size="910,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
 	</screen>
 
 	<!-- QuickSubtitlesClearRests -->
 	<screen name="QuickSubtitlesClearRests" position="20,30" size="724,204" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
-		<widget name="config" position="7,7" size="710,190" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center" />
+		<widget name="config" position="7,7" size="710,190" itemHeight="38" font="Regular;28" zPosition="1" transparent="1" valign="center"/>
 	</screen>
 
 	<!-- Common interface -->
 	<screen name="MMIDialog" position="fill">
 		<panel name="PigTemplate"/>
-		<widget name="title" position="780,105" size="900,35" font="Regular;32" />
-		<widget name="subtitle" position="780,145" size="900,35" font="Regular;32" />
-		<widget name="entries" position="780,185" size="900,780" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand" />
-		<widget name="bottom" position="780,980" size="900,35" font="Regular;32" />
+		<widget name="title" position="780,105" size="900,35" font="Regular;32"/>
+		<widget name="subtitle" position="780,145" size="900,35" font="Regular;32"/>
+		<widget name="entries" position="780,185" size="900,780" itemHeight="35" font="Regular;32" scrollbarMode="showOnDemand"/>
+		<widget name="bottom" position="780,980" size="900,35" font="Regular;32"/>
 	</screen>
 	<!-- Common interface - selection -->
 	<screen name="CiSelection" position="fill" title="Common Interface">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="780,105" size="1100,35" font="Regular;32" />
-		<widget name="entries" position="780,160" size="1100,840" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+		<widget name="text" position="780,105" size="1100,35" font="Regular;32"/>
+		<widget name="entries" position="780,160" size="1100,840" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- Subservices Quickzap -->
@@ -2341,7 +2341,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="675,0" zPosition="2" size="21,21" alphatest="on" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel text="Subservices" position="0,0" size="705,30" font="Regular;20" backgroundColor="toptemplatecolor" />
+		<eLabel text="Subservices" position="0,0" size="705,30" font="Regular;20" backgroundColor="toptemplatecolor"/>
 		<widget name="CurrentSubserviceNumber" position="0,30" size="75,35" font="Regular;32" backgroundColor="toptemplatecolor"/>
 		<widget source="session.CurrentService" render="Label" position="75,30" size="630,35" font="Regular;32" backgroundColor="toptemplatecolor">
 			<convert type="ServiceName">Name</convert>
