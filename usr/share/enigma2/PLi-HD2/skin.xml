@@ -1039,7 +1039,7 @@
     <widget name="checkList" position="530,80" size="710,575" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
-  <!-- Ipkg installer -->
+  <!-- Opkg installer -->
 
   <screen name="OpkgInstaller" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
@@ -1058,21 +1058,21 @@
 
   <!-- Choose upgrade source -->
 
-  <screen name="OPKGMenu" title="Select IPKG source" position="fill" flags="wfNoBorder">
+  <screen name="OPKGMenu" title="Select OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="filelist" position="530,80" size="710,300" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
   <!-- Edit upgrade source -->
 
-  <screen name="OPKGSource" title="IPKG source" position="fill" flags="wfNoBorder">
+  <screen name="OPKGSource" title="OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="text" position="40,380" size="1200,30" font="Regular;23" zPosition="3" transparent="1" />
   </screen>
 
   <!-- Packet Manager -->
 
-  <screen name="PacketManager" title="IPKG upgrade" position="fill" flags="wfNoBorder">
+  <screen name="PacketManager" title="OPKG upgrade" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget source="list" render="Listbox" position="530,80" size="710,572" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png">
 	<convert type="TemplatedMultiContent">
