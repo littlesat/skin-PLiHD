@@ -1982,30 +1982,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="status_bar" position="30,600" size="720,37" font="Regular;30" foregroundColor="yellow" halign="center"/>
 	</screen>
 
-	<!-- Positioner Setup Log -->
+	<!-- Positioner Setup - Log -->
 
 	<screen name="PositionerSetupLog" position="fill" title="Positioner Setup Log" >
 		<panel name="PigTemplate"/>
 		<widget name="list" font="Console;30" position="780,107" size="1110,910"/>
 	</screen>
 
-	<!-- Select Sats Entry -->
+	<!-- Positioner Setup - Select Sats Entry -->
 
 	<screen name="SelectSatsEntryScreen" position="fill" title="Select satellites" >
 		<panel name="PigTemplate"/>
 		<widget name="list" position="780,105" size="1110,810" scrollbarMode="showOnDemand"/>
-		<widget name="hint" position="780,975" size="1110,34" font="Regular;30" halign="center"/>
+		<widget name="hint" position="780,975" size="1110,35" font="Regular;30" halign="center"/>
+
 	</screen>
 
-	<!-- Tuner Screen -->
+	<!-- Positioner Setup - Tuner Screen -->
 
 	<screen name="TunerScreen" position="fill" title="Tune">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,532" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="780,705" size="1110,34" font="Regular;30"/>
+		<widget name="config" position="780,105" size="1110,760" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="introduction" position="780,975" size="1110,35" font="Regular;30" halign="center"/>
 	</screen>
 
-	<!-- Rotor Nim Selection -->
+	<!-- Positioner Setup - Rotor Nim Selection -->
 
 	<screen name="RotorNimSelection" position="fill" title="select Slot">
 		<panel name="PigTemplate"/>
