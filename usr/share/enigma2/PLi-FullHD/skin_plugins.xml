@@ -1902,7 +1902,7 @@
 	<screen name="FilebrowserScreen" position="fill" title="File Browser">
 		<panel name="BasicTemplate"/>
 		<panel name="KeyChannelTemplate"/>
-		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="list_left" position="30,95" size="925,912" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="2"/>
 		<widget name="list_right" position="965,95" size="925,912" scrollbarMode="showOnDemand"/>
@@ -1910,6 +1910,10 @@
 	<screen name="FilebrowserConfigScreen" position="fill" title="">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="FilebrowserScreenInfo" position="fill" title="Info" flags="wfNoBorder" backgroundColor="selectorcolor">
+		<widget name="path" position="30,25" size="1880,30" font="Regular;26" backgroundColor="selectorcolor"/>
+		<widget name="size" position="30,65" size="1880,30" font="Regular;26" backgroundColor="selectorcolor"/>
 	</screen>
 
 	<!-- BluetoothSetup -->
