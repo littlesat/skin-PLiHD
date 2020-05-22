@@ -1715,6 +1715,23 @@
 		<widget name="about" position="560,143" size="503,360" font="Regular;16" />
 	</screen>
 
+        <!-- FileBrowser -->
+	<screen name="FilebrowserScreen" position="fill" title="File Browser">
+		<panel name="BasicTemplate"/>
+                <panel name="KeyChannelTemplate"/>
+                <panel name="KeyMenuInfoTemplate"/>
+		<widget name="list_left" position="40,110" size="605,506" scrollbarMode="showOnDemand"/>
+		<widget name="list_right" position="655,110" size="605,506" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="FilebrowserConfigScreen" position="fill" title="">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="560,110" size="600,500" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="FilebrowserScreenInfo" position="fill" title="Info" flags="wfNoBorder" backgroundColor="selectorcolor">
+		<widget name="path" position="40,23" size="1200,28" font="Regular;24" backgroundColor="selectorcolor"/>
+		<widget name="size" position="40,59" size="1200,28" font="Regular;24" backgroundColor="selectorcolor"/>
+	</screen>
+
 	<!-- YouTube by Taapat	-->
 	<screen name="YouTubeMain" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
