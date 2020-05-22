@@ -1868,7 +1868,7 @@
         <!-- FileBrowser -->
 	<screen name="FilebrowserScreen" position="fill" title="File Browser">
 		<panel name="BasicTemplate"/>
-                <panel name="KeyMenuTemplate"/>
+                <panel name="KeyMenuInfoTemplate"/>
 		<widget name="list_left" position="20,70" size="615,600" scrollbarMode="showOnDemand"/>
 		<widget name="list_right" position="645,70" size="615,600" scrollbarMode="showOnDemand"/>
 	</screen>
