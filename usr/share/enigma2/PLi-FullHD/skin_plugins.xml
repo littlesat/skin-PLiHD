@@ -1992,8 +1992,8 @@
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 
-		<widget name="list_left_head1" position="30,15" size="925,30" font="Regular;26" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_right_head1" position="965,15" size="925,30" font="Regular;26" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_left_head1" position="30,15" size="915,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_right_head1" position="965,15" size="915,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 
 		<widget name="sort_left" position="30,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 		<widget name="sort_right" position="965,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" transparent="1" zPosition="1"/>
