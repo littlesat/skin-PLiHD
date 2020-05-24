@@ -106,9 +106,9 @@
 		<parameter name="AutotimerListIcons" value="*skin_default/icons/lock_on.png,*skin_default/icons/lock_off.png,*skin_default/icons/timer_rec.png,*skin_default/icons/timer_zap.png"/>
 		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
 		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
-		<parameter name="FcFileListIcon" value="10,4,32,30"/>
+		<parameter name="FcFileListIcon" value="10,4,30,30"/>
 		<parameter name="FcFileListMultiIcon" value="45,4,30,30"/>
-		<parameter name="FcFileListMultiLock" value="2,0,36,36"/>
+		<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
 		<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
 		<parameter name="FcFileListName" value="68,4,1000,34"/>
 	</parameters>
