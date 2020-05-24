@@ -2007,7 +2007,7 @@
 		<widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (30, 0), size = (130, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 16), # index 16 is the size and scaled divided size
 					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 					],
@@ -2021,7 +2021,7 @@
 		<widget source="list_right_head2" render="Listbox" position="965,990" size="925,30" selectionDisabled="1" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (30, 0), size = (130, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 16), # index 16 is the size and scaled divided size
 					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 					],
