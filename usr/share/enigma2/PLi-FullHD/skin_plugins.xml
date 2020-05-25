@@ -2077,15 +2077,15 @@
 	</screen>
 	<screen name="TaskListScreen" position="fill" title="Task list" >
 		<panel name="BasicTemplate"/>
-		<widget source="tasklist" render="Listbox" position="15,105" size="1905,900" zPosition="7" scrollbarMode="showOnDemand">
+		<widget source="tasklist" render="Listbox" position="30,105" size="1860,900" zPosition="7" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (8, 2), size = (1013, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
-					MultiContentEntryText(pos = (8, 38), size = (225, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
-					MultiContentEntryProgress(pos = (240, 38), size = (585, 30), percent = -3), # progress
-					MultiContentEntryText(pos = (840, 38), size = (150, 36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
+					MultiContentEntryText(pos = (10, 4), size = (1840, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
+					MultiContentEntryText(pos = (10, 40), size = (225, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
+					MultiContentEntryProgress(pos = (240, 40), size = (1380, 26), percent = -3), # progress
+					MultiContentEntryText(pos = (1700, 40), size = (150, 36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
 				],
-				"fonts": [gFont("Regular", 33),gFont("Regular", 27)],
+				"fonts": [gFont("Regular", 31),gFont("Regular", 27)],
 				"itemHeight": 75
 				}
 			</convert>
