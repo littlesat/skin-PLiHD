@@ -2038,9 +2038,9 @@
 		<panel name="PigTemplate"/>
 		<panel name="VKeyIconPanel"/>
 		<widget name="HelpWindow" position="center,350" size="80,0"/>
-		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<!--widget name="help" position="30,540" size="720,72" font="Regular;28" halign="left" valign="center"/-->
-		<widget name="description" position="30,650" size="720,108" font="Regular;28" halign="left" zPosition="2"/>
+		<widget name="description" position="30,570" size="720,300" font="Regular;30" halign="left" valign="top"/>
 	</screen>
 	<screen name="FileCommanderScreenFileSelect" position="fill">
 		<panel name="FileCommanderScreen"/>
@@ -2093,10 +2093,10 @@
 		<widget source="tasklist" render="Listbox" position="30,105" size="1860,900" zPosition="7" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 4), size = (1840, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
-					MultiContentEntryText(pos = (10, 40), size = (225, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
-					MultiContentEntryProgress(pos = (240, 40), size = (1380, 26), percent = -3), # progress
-					MultiContentEntryText(pos = (1700, 40), size = (150, 36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
+					MultiContentEntryText(pos = (30, 4), size = (1800, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
+					MultiContentEntryText(pos = (30, 40), size = (245, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
+					MultiContentEntryProgress(pos = (260, 44), size = (1340, 20), percent = -3), # progress
+					MultiContentEntryText(pos = (1680, 40), size = (150, 36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
 				],
 				"fonts": [gFont("Regular", 31),gFont("Regular", 27)],
 				"itemHeight": 75
