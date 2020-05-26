@@ -1974,12 +1974,8 @@
 	</screen>
 
 	<!-- File Commander -->
-	<screen name="FileCommanderButtons">
-		<panel name="ButtonTemplate"/>
-		<eLabel position="0,1022" size="1920,58" backgroundColor="basictemplatecolor"/>
-		<ePixmap pixmap="border/smallshadowline.png" position="0,1021" size="1920,1"/>
-	</screen>
-	<screen name="FileCommanderScreen" position="fill" title="">
+
+	<screen name="FileCommanderScreen" position="fill">
 		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="2"/>
 		<widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
@@ -1988,7 +1984,9 @@
 		<widget source="global.CurrentTime" render="Label" position="1440,52" size="450,37" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<panel name="FileCommanderButtons"/>
+		<panel name="ButtonTemplate"/>
+		<eLabel position="0,1022" size="1920,58" backgroundColor="basictemplatecolor"/>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,1021" size="1920,1"/>
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 
@@ -1997,12 +1995,12 @@
 
 		<widget name="sort_left" position="30,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
 		<widget name="sort_right" position="965,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="2"/>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="1"/>
 
 		<widget name="list_left" position="30,100" size="925,874" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="2"/>
+		<ePixmap pixmap="border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="1"/>
 		<widget name="list_right" position="965,100" size="925,874" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="border/smallshadowline.png" position="0,988" size="1920,1" zPosition="2"/>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,988" size="1920,1" zPosition="1"/>
 
 		<widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -2044,7 +2042,7 @@
 		<!--widget name="help" position="30,540" size="720,72" font="Regular;28" halign="left" valign="center"/-->
 		<widget name="description" position="30,650" size="720,108" font="Regular;28" halign="left" zPosition="2"/>
 	</screen>
-	<screen name="FileCommanderScreenFileSelect" position="fill" title="">
+	<screen name="FileCommanderScreenFileSelect" position="fill">
 		<panel name="FileCommanderScreen"/>
 	</screen>
 	<screen name="FileCommanderFileStatInfo" position="fill" title="File/Directory Status Information">
@@ -2067,18 +2065,18 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="ArchiverMenuScreen" position="fill" title="">
+	<screen name="ArchiverMenuScreen" position="fill">
 		<panel name="PigTemplate"/>
 		<widget name="list_left_head" position="790,105" size="1110,70" font="Regular;30"/>
 		<widget name="list_left" position="780,200" size="1110,190" scrollbarMode="showOnDemand"/>
 		<widget name="unpacking" position="780,400" size="1110,38" scrollbarMode="showOnDemand"/>
 	</screen>
-	<screen name="ArchiverInfoScreen" position="fill" title="">
+	<screen name="ArchiverInfoScreen" position="fill">
 		<panel name="BasicTemplate"/>
 		<widget name="list_left_head" position="40,105" size="1860,35" font="Regular;30"/>
 		<widget name="list_left" position="30,170" size="1860,836" scrollbarMode="showOnDemand"/>
 	</screen>
-	<screen name="vEditorScreen" position="fill" title="">
+	<screen name="vEditorScreen" position="fill">
 		<panel name="BasicTemplate"/>
 		<widget name="list_head" position="30,100" size="1860,32" zPosition="1" font="Regular;28" halign="center"/>
 		<widget name="filedata"  scrollbarMode="showOnDemand" position="15,140" size="1890,874" itemHeight="38" font="Regular;28"/>
