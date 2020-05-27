@@ -1974,7 +1974,6 @@
 	</screen>
 
 	<!-- File Commander -->
-
 	<screen name="FileCommanderScreen" position="fill">
 		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="2"/>
@@ -2006,8 +2005,8 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
-					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 16), # index 16 is the size and scaled divided size
-					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the size and scaled divided size
+					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 15), # index 15 is the modification time
 					],
 					"fonts": [gFont("Regular", 26)],
 					"itemHeight": 30,
@@ -2020,8 +2019,8 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
-					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 16), # index 16 is the size and scaled divided size
-					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the size and scaled divided size
+					MultiContentEntryText(pos = (300, 0), size = (600, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 15), # index 15 is the modification time
 					],
 					"fonts": [gFont("Regular", 26)],
 					"itemHeight": 30,
@@ -2044,6 +2043,31 @@
 	</screen>
 	<screen name="FileCommanderScreenFileSelect" position="fill">
 		<panel name="FileCommanderScreen"/>
+		<widget source="list_left_head3" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (30, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 are a sizes
+					MultiContentEntryText(pos = (350, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is nr
+					],
+					"fonts": [gFont("Regular", 26)],
+					"itemHeight": 30,
+					"selectionEnabled": False
+				}
+			</convert>
+		</widget>
+
+		<widget source="list_right_head3" render="Listbox" position="965,990" size="925,30" selectionDisabled="1" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (30, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 are a sizes
+					MultiContentEntryText(pos = (350, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is nr
+					],
+					"fonts": [gFont("Regular", 26)],
+					"itemHeight": 30,
+					"selectionEnabled": False
+				}
+			</convert>
+		</widget>
 	</screen>
 	<screen name="FileCommanderFileStatInfo" position="fill" title="File/Directory Status Information">
 		<panel name="PigTemplate"/>
