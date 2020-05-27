@@ -2043,31 +2043,8 @@
 	</screen>
 	<screen name="FileCommanderScreenFileSelect" position="fill">
 		<panel name="FileCommanderScreen"/>
-		<widget source="list_left_head3" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (30, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 are a sizes
-					MultiContentEntryText(pos = (350, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is nr
-					],
-					"fonts": [gFont("Regular", 26)],
-					"itemHeight": 30,
-					"selectionEnabled": False
-				}
-			</convert>
-		</widget>
-
-		<widget source="list_right_head3" render="Listbox" position="965,990" size="925,30" selectionDisabled="1" transparent="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (30, 0), size = (300, 30), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 are a sizes
-					MultiContentEntryText(pos = (350, 0), size = (600, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is nr
-					],
-					"fonts": [gFont("Regular", 26)],
-					"itemHeight": 30,
-					"selectionEnabled": False
-				}
-			</convert>
-		</widget>
+		<widget name="list_left_head3" position="30,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_right_head3" position="965,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#00ccff60" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="FileCommanderFileStatInfo" position="fill" title="File/Directory Status Information">
 		<panel name="PigTemplate"/>
