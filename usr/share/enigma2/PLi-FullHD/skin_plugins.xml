@@ -2046,25 +2046,25 @@
 		<widget name="list_left_head3" position="30,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 		<widget name="list_right_head3" position="965,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="FileCommanderFileStatInfo" position="fill" title="File/Directory Status Information">
-		<panel name="PigTemplate"/>
-		<panel name="CancelTemplate"/>
-		<widget name="filename" position="780,105" size="1110,70" font="Regular;30"/>
-		<widget source="list" render="Listbox" position="780,200" size="1110,570" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					# 0	100	200	300	400	500
-					# |	|	|	|	|	|
-					# 00000000 1111111111111
-					MultiContentEntryText(pos = (0, 0), size = (300, 38), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a label
-					MultiContentEntryText(pos = (338, 0), size = (450, 38), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the information
-					],
-					"fonts": [gFont("Regular", 30)],
-					"itemHeight": 38,
-					"selectionEnabled": False
-				}
-			</convert>
-		</widget>
+	<screen name="FileCommanderFileStatInfo" position="center,center" size="840,503" flags="wfNoBorder">
+			<eLabel position="center,center" size="840,503" backgroundColor="grey"/>
+			<eLabel position="center,center" size="838,501" backgroundColor="toptemplatecolor" zPosition="1"/>
+			<widget name="filename" position="20,10" size="800,64" font="Regular;28" valign="center" halign="center" backgroundColor="toptemplatecolor" zPosition="2"/>
+			<widget source="list" render="Listbox" position="1,100" size="838,384" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="toptemplatecolor" zPosition="2">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+						# 0   100 200 300 400 500
+						# |   |   |   |   |   |
+						# 00000000 1111111111111
+						MultiContentEntryText(pos = (30, 0), size = (350, 32), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a label
+						MultiContentEntryText(pos = (370, 0), size = (420, 32), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the information
+						],
+						"fonts": [gFont("Regular", 28)],
+						"itemHeight": 32,
+						"selectionEnabled": False
+					}
+				</convert>
+			</widget>
 	</screen>
 	<screen name="ArchiverMenuScreen" position="fill">
 		<panel name="PigTemplate"/>
