@@ -2044,7 +2044,7 @@
 	<screen name="FileCommanderScreenFileSelect" position="fill">
 		<panel name="FileCommanderScreen"/>
 		<widget name="list_left_head3" position="30,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_right_head3" position="965,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#00ccff60" transparent="1" zPosition="1"/>
+		<widget name="list_right_head3" position="965,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="FileCommanderFileStatInfo" position="fill" title="File/Directory Status Information">
 		<panel name="PigTemplate"/>
