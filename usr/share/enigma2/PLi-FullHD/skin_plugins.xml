@@ -1989,13 +1989,13 @@
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 
-		<widget name="list_left_head1" position="30,15" size="915,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_right_head1" position="965,15" size="915,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_left_head4" position="30,60" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
-		<widget name="list_right_head4" position="965,60" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
+		<widget name="list_left_head1" position="35,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_right_head1" position="970,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_left_head4" position="35,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
+		<widget name="list_right_head4" position="970,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
 
-		<widget name="sort_left" position="30,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
-		<widget name="sort_right" position="965,60" size="925,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
+		<widget name="sort_left" position="35,60" size="920,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
+		<widget name="sort_right" position="970,60" size="920,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="1"/>
 
 		<widget name="list_left" position="30,100" size="925,874" scrollbarMode="showOnDemand"/>
