@@ -2084,12 +2084,13 @@
 		<widget name="list_head" position="30,100" size="1860,32" zPosition="1" font="Regular;28" halign="center"/>
 		<widget name="filedata"  scrollbarMode="showOnDemand" position="15,140" size="1890,874" itemHeight="38" font="Regular;28"/>
 		### Do not remove it and set same font and x-size as "input" in "InputBoxWide" screen !###
-		<widget name="InputBoxWide_input" position="0,0" size="1580,0" noWrap="1" font="Regular;25"/>
+		<widget name="InputBoxWide_input" position="0,0" size="1560,0" noWrap="1" font="Regular;25"/>
 		###
 	</screen>
 	<screen name="InputBoxWide" position="center,center" size="1600,120" title="Input">
-		<widget name="text" position="10,10" size="1580,25" noWrap="1" font="Regular;22"/>
-		<widget name="input" position="10,60" size="1580,28" noWrap="1" font="Regular;25"/>
+		<widget name="text" position="20,20" size="1560,25" noWrap="1" font="Regular;22"/>
+		<widget name="input" position="20,70" size="1560,28" noWrap="1" font="Regular;25"/>
+	</screen>
 	</screen>
 	<screen name="TaskListScreen" position="fill" title="Task list">
 		<panel name="BasicTemplate"/>
