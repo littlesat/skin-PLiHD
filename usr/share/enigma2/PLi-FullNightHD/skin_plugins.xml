@@ -2397,7 +2397,6 @@
 		<widget name="text" position="20,20" size="1560,25" noWrap="1" font="Regular;22"/>
 		<widget name="input" position="20,70" size="1560,28" noWrap="1" font="Regular;25"/>
 	</screen>
-	</screen>
 	<screen name="TaskListScreen" position="fill" title="Task list">
 		<panel name="BasicTemplate"/>
 		<widget source="tasklist" render="Listbox" position="30,105" size="1860,900" zPosition="7" scrollbarMode="showOnDemand">
