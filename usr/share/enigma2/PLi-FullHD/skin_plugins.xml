@@ -2033,13 +2033,13 @@
 	</screen>
 	<screen name="FileCommanderContextMenu" position="fill">
 		<panel name="PigTemplate"/>
-		<widget name="menu" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="menu" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey"/>
 	</screen>
 	<screen name="FileCommanderSetup" position="fill">
 		<panel name="PigTemplate"/>
 		<panel name="VKeyIconPanel"/>
 		<widget name="HelpWindow" position="center,350" size="80,0"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey"/>
 		<!--widget name="help" position="30,540" size="720,72" font="Regular;28" halign="left" valign="center"/-->
 		<widget name="description" position="30,570" size="720,300" font="Regular;30" halign="left" valign="top"/>
 	</screen>
