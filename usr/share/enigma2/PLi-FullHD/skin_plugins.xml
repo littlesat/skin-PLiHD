@@ -1991,16 +1991,16 @@
 
 		<widget name="list_left_head1" position="35,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 		<widget name="list_right_head1" position="970,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_left_free" position="35,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
-		<widget name="list_right_free" position="970,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
+		<widget name="list_left_free" position="35,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1"/>
+		<widget name="list_right_free" position="970,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1"/>
 
 		<widget name="sort_left" position="35,60" size="920,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
 		<widget name="sort_right" position="970,60" size="920,23" halign="center" font="Regular;23" backgroundColor="secondBG" foregroundColor="transponderinfo" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="1"/>
 
-		<widget name="list_left" position="30,100" size="925,874" scrollbarMode="showOnDemand"/>
+		<widget name="list_left" position="30,100" size="925,874" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey"/>
 		<ePixmap pixmap="border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="1"/>
-		<widget name="list_right" position="965,100" size="925,874" scrollbarMode="showOnDemand"/>
+		<widget name="list_right" position="965,100" size="925,874" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,988" size="1920,1" zPosition="1"/>
 
 		<widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
