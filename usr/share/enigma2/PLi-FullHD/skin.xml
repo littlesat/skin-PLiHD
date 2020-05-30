@@ -46,6 +46,7 @@
 		<alias name="AutotimerList" font="Regular" size="22" height="25"/>
 		<alias name="AutotimerListExt0" font="Regular" size="28"/>
 		<alias name="AutotimerListExt1" font="Regular" size="22" height="95"/>
+		<alias name="FcZipArchiver" font="Fixed" size="26" height="45"/>
 	</fonts>
 
 	<!-- Colors -->
