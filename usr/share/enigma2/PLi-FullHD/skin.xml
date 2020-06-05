@@ -177,13 +177,13 @@
 
 	<screen name="JobView" position="fill" title="Job View" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget source="job_name" render="Label" position="780,105" size="1110,52" font="Regular;37"/>
-		<widget source="job_task" render="Label" position="780,282" size="1110,45" font="Regular;36"/>
-		<widget source="job_progress" render="Progress" position="780,390" size="1110,54" borderWidth="2" backgroundColor="#254f7497"/>
-		<widget source="job_progress" render="Label" position="780,393" size="1110,48" font="Regular;42" foregroundColor="#000000" zPosition="2" halign="center" transparent="1"	>
-	<convert type="ProgressToText"/>
+		<widget source="job_name" render="Label" position="780,105" size="1110,70" font="Regular;30"/>
+		<widget source="job_task" render="Label" position="780,300" size="1110,35" font="Regular;30"/>
+		<widget source="job_status" render="Label" position="780,390" size="1110,35" font="Regular;30"/>
+		<widget source="job_progress" render="Progress" position="780,440" size="1110,54" borderWidth="2" backgroundColor="#254f7497"/>
+		<widget source="job_progress" render="Label" position="780,443" size="1110,48" font="Regular;42" foregroundColor="#000000" zPosition="2" halign="center" transparent="1">
+			<convert type="ProgressToText"/>
 		</widget>
-		<widget source="job_status" render="Label" position="780,465" size="1110,39" font="Regular;34"/>
 		<widget name="config" position="780,528" size="1110,36" itemHeight="38" font="Regular;28"/>
 	</screen>
 
@@ -1138,9 +1138,9 @@
 
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
-		<ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="135,1031" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="134,1032" size="52,38"/>
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 
@@ -2161,7 +2161,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PigTemplate"/>
 		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="30,1032" size="52,38"/>
 		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="82,1032" size="52,38"/>
-		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="134,1032" size="52,38"/>
 		<widget name="prompt" position="868,180" size="954,35" font="Regular;30" noWrap="1" transparent="1"/>
 		<ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
 		<widget name="text" position="868,240" size="954,47" font="Regular;40" halign="right" noWrap="1" transparent="1"/>

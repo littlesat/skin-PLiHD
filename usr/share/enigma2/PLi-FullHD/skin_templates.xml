@@ -188,7 +188,7 @@
 	</screen>
 
 	<screen name="KeyInfoAutoTemplate"><!-- show with Components.Sources.Boolean -->
-		<widget source="key_info" conditional="key_info" render="Pixmap" pixmap="buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38">
+		<widget source="key_info" conditional="key_info" render="Pixmap" pixmap="buttons/key_info.png" alphatest="blend" position="134,1032" size="52,38">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
@@ -206,11 +206,11 @@
 	</screen>
 
 	<screen name="KeyInfoTemplate">
-		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="134,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyPrevNextTemplate">
-		<ePixmap pixmap="buttons/key_prevnext.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_prevnext.png" alphatest="blend" position="134,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyZeroTemplate">
@@ -232,7 +232,7 @@
 		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="82,1032" size="52,38"/>
 	</screen>
 	<screen name="KeyHelpRTemplate">
-		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1032" size="52,38"/>
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="134,1032" size="52,38"/>
 	</screen>
 
 	<screen name="KeyTextTemplate">
