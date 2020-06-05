@@ -1846,7 +1846,7 @@ if (listwidth &gt; 1280):
 if (listwidth &gt; wsizex):
 	wsizex = listwidth
 wsize = (wsizex, wsizey + titleheight)
-self.instance.resize(eSi"ze(*wsize))
+self.instance.resize(eSize(*wsize))
 self[&quot;text&quot;].instance.move(ePoint(97, 12 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 self[&quot;ErrorPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
