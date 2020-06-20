@@ -415,12 +415,6 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
-		<widget source="Event" render="Label" position="500,565" size="250,30" font="Regular;25" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="blue" valign="center" halign="right">
-			<convert type="EventName">PdcTime</convert>
-		</widget>
-		<widget source="Event" render="Label" position="30,565" size="250,30" font="Regular;26" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="#009000" valign="center" halign="left">
-			<convert type="EventName">ID</convert>
-		</widget>
 	</screen>
 
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
@@ -1924,18 +1918,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
 		<widget name="preview" position="165,660" size="420,315" alphatest="on"/>
-		<widget source="skins" render="Listbox" position="780,105" size="1110,900" enableWrapAround="1" scrollbarMode="showOnDemand">
+		<widget source="skins" render="Listbox" position="780,105" size="1110,912" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
-					MultiContentEntryText(pos = (15, 0), size = (725, 45), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
+					MultiContentEntryText(pos = (15, 0), size = (725, 38), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
 				],
-				"fonts": [gFont("Regular",38)],
-				"itemHeight": 45
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
 				}
 			</convert>
 		</widget>
-		<widget source="description" render="Label" position="30,570" size="720,300" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
+		<widget source="description" render="Label" position="30,570" size="720,105" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
 	</screen>
 
 	<!-- Nim selection -->
