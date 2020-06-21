@@ -1646,9 +1646,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SkinSelector" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <widget name="Preview" position="154,380" size="280,210" alphatest="on"/>
-    <widget name="SkinList" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget source="introduction" render="Label" position="590,590" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center"/>
+      <widget name="preview" position="153,380" size="280,210" alphatest="on"/>
+      <widget source="skins" render="Listbox" position="530,110" size="690,500" enableWrapAround="1" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+	{
+          "template": [
+            MultiContentEntryText(pos = (10, 1), size = (670, 20), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
+          ],
+          "fonts": [gFont("Regular",20)],
+          "itemHeight": 25
+	}
+	</convert>
+      </widget>
+    <widget source="description" render="Label" position="85,600" size="417,21" zPosition="1" transparent="1" font="Regular;18" halign="center"/>
   </screen>
 
   <!-- Nim selection -->
