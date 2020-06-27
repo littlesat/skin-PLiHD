@@ -1917,4 +1917,25 @@
 		<widget name="HelpWindow" position="30,420" size="1,1" transparent="1" zPosition="3" alphatest="on"/> <!-- Text keypad -->
 	</screen>
 
+	<!-- ZapHistoryBrowser -->
+
+	<screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="520,70" size="740,600" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+			{
+				"template":[
+						MultiContentEntryText(pos=(5,3), size=(730,23), font=0, flags=RT_HALIGN_LEFT, text=0),
+						MultiContentEntryText(pos=(35,26), size=(700,21), font=1, flags=RT_HALIGN_LEFT, text=1),
+				],
+				"fonts": [gFont("Regular",20), gFont("Regular",18)],
+				"itemHeight": 50
+			}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="ZapHistoryConfigurator" position="fill">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
+	</screen>
 </skin>
