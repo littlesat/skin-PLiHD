@@ -2482,4 +2482,25 @@
 		<widget source="File" render="Label" position="7,568" size="715,396" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 
+	<!-- ZapHistoryBrowser -->
+
+	<screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="780,105" size="1110,910" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+			{
+				"template":[
+						MultiContentEntryText(pos=(10,2), size=(1090,35), font=0, flags=RT_HALIGN_LEFT, text=0),
+						MultiContentEntryText(pos=(50,38), size=(1050,30), font=1, flags=RT_HALIGN_LEFT, text=1),
+				],
+				"fonts": [gFont("Regular",30), gFont("Regular",26)],
+				"itemHeight": 70
+			}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="ZapHistoryConfigurator" position="fill">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+	</screen>
 </skin>

@@ -2175,5 +2175,49 @@
 				scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
 		<widget source="File" render="Label" position="7,568" size="715,396" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
-	
+
+	<!-- ZapHistoryBrowser -->
+
+	<!-- example for no full screen - started on x=1000 -->
+	<!--screen name="ZapHistoryBrowser" position="1000,center" size="840,660">
+		<ePixmap pixmap="skin_fallback_1080/buttons/red.png" position="0,0" size="210,60" transparent="1" alphatest="on"/>
+		<ePixmap pixmap="skin_fallback_1080/buttons/green.png" position="210,0" size="210,60" transparent="1" alphatest="on"/>
+		<ePixmap pixmap="skin_fallback_1080/buttons/yellow.png" position="420,0" size="210,60" transparent="1" alphatest="on"/>
+		<ePixmap pixmap="skin_fallback_1080/buttons/blue.png" position="630,0" size="210,60" transparent="1" alphatest="on"/>
+		<widget name="key_red" position="0,0" zPosition="1" size="210,60" font="Regular;30" valign="center" halign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget name="key_green" position="210,0" zPosition="1" size="210,60" font="Regular;30" valign="center" halign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget name="key_yellow" position="420,0" zPosition="1" size="210,60" font="Regular;30" valign="center" halign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget name="key_blue" position="630,0" zPosition="1" size="210,60" font="Regular;30" valign="center" halign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget source="list" render="Listbox" position="0,60" size="840,560" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+			{
+				"template":[
+						MultiContentEntryText(pos=(3,2), size=(554,35), font=0, flags=RT_HALIGN_LEFT, text=0),
+						MultiContentEntryText(pos=(33,40), size=(524,30), font=1, flags=RT_HALIGN_LEFT, text=1),
+				],
+				"fonts": [gFont("Regular",30), gFont("Regular",26)],
+				"itemHeight": 70
+			}
+			</convert>
+		</widget>
+	</screen-->
+	<screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="780,105" size="1110,910" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+			{
+				"template":[
+						MultiContentEntryText(pos=(10,2), size=(1090,35), font=0, flags=RT_HALIGN_LEFT, text=0),
+						MultiContentEntryText(pos=(50,38), size=(1050,30), font=1, flags=RT_HALIGN_LEFT, text=1),
+				],
+				"fonts": [gFont("Regular",30), gFont("Regular",26)],
+				"itemHeight": 70
+			}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="ZapHistoryConfigurator" position="fill">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+	</screen>
 </skin>
