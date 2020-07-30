@@ -1981,8 +1981,8 @@
 	<!-- Transcoding Setup -->
 	<screen name="TranscodingSetup" position="fill" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="PigTemplate"/>
-		<widget name="content" render="Label" position="780,110" size="1000,75" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
-		<widget name="config" position="780,160" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="content" render="Label" position="780,110" size="1000,90" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,205" size="1132,755" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- HDMI Test  -->
