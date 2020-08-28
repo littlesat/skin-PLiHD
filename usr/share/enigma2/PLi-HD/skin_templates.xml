@@ -33,7 +33,7 @@
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="dark" />
     <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" zPosition="2"/>
-    <widget source="screen_path" render="Label" position="85,30" size="1085,14" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;12" valign="center" halign="left"/>
+    <widget source="ScreenPath" render="Label" position="85,30" size="1085,14" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;12" valign="center" halign="left"/>
     <widget source="Title" render="Label" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1070,30" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>

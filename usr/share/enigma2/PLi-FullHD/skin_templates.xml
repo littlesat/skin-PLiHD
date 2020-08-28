@@ -36,7 +36,7 @@
 	<screen name="TopTemplate">
 		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,1" zPosition="2"/>
-		<widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>
+		<widget source="ScreenPath" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>
 		<widget source="Title" render="Label" position="30,7" size="1860,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
 			<convert type="ClockToText">Format:%-H:%M</convert>
