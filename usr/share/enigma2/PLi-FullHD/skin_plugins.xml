@@ -1988,8 +1988,10 @@
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 
-		<widget name="list_left_head1" position="35,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
-		<widget name="list_right_head1" position="970,15" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_left_head1" position="35,10" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_right_head1" position="970,10" size="920,30" font="Regular;26" noWrap="1" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_left_filename" position="35,40" size="925,21" font="Regular;18" noWrap="1" foregroundColor="transponderinfo" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget name="list_right_filename" position="970,40" size="925,21" font="Regular;18" noWrap="1" foregroundColor="transponderinfo" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 		<widget name="list_left_free" position="35,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1"/>
 		<widget name="list_right_free" position="970,62" size="300,25" font="Regular;22" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1"/>
 
