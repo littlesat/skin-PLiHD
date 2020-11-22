@@ -591,8 +591,9 @@
 	<screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget source="current_address" render="Label" position="30,562" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
-		<widget source="fixed_address" render="Label" position="30,607" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
+		<widget source="current_address" render="Label" position="30,562" size="720,40" zPosition="1" font="Regular;30" halign="left" valign="center"/>
+		<widget source="fixed_address" render="Label" position="30,607" size="720,40" zPosition="1" font="Regular;30" halign="left" valign="center"/>
+		<widget source="description" render="Label" position="30,690" size="720,210" zPosition="1" font="Regular;30" halign="left"/>
 	</screen>
 
 	<!-- Cross EPG -->

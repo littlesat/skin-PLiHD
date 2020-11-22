@@ -628,8 +628,9 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
-    <widget source="current_address" render="Label" position="20,375" size="480,30" zPosition="10" font="Regular;21" halign="left" valign="center"/>
-    <widget source="fixed_address" render="Label" position="20,405" size="480,30" zPosition="10" font="Regular;21" halign="left" valign="center"/>
+    <widget source="current_address" render="Label" position="20,375" size="480,25" zPosition="10" font="Regular;21" halign="left" valign="center"/>
+    <widget source="fixed_address" render="Label" position="20,405" size="480,25" zPosition="10" font="Regular;21" halign="left" valign="center"/>
+    <widget source="description" render="Label" position="20,450" size="480,120" zPosition="1" font="Regular;21" halign="left"/>
   </screen>
 
   <!-- Cross EPG -->
