@@ -586,16 +586,6 @@
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
-	<!-- HDMI-CEC Setup -->
-
-	<screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget source="current_address" render="Label" position="30,562" size="720,40" zPosition="1" font="Regular;30" halign="left" valign="center"/>
-		<widget source="fixed_address" render="Label" position="30,607" size="720,40" zPosition="1" font="Regular;30" halign="left" valign="center"/>
-		<widget source="description" render="Label" position="30,690" size="720,210" zPosition="1" font="Regular;30" halign="left"/>
-	</screen>
-
 	<!-- Cross EPG -->
 
 	<screen flags="wfNoBorder" name="CrossEPG_Menu" position="fill" title="CrossEPG Menu">
