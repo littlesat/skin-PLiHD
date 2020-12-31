@@ -998,7 +998,6 @@
 
   <screen name="MovieBrowserConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <eLabel text="Movie list configuration" position="20,5" size="1220,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="25" font="Regular;20" transparent="1" scrollbarMode="showOnDemand"/>
     <widget name="description" position="20,378" size="480,92" transparent="1" font="Regular;20" halign="left"/>
   </screen>
