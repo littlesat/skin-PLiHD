@@ -228,20 +228,33 @@
 		<widget source="session.CurrentService" render="Label" position="30,20" size="1440,135" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="top" halign="left">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
-		<eLabel name="snr" position="1593,28" size="75,24" borderWidth="1" borderColor="black" halign="left" transparent="1" zPosition="1" text="SNR" font="Regular;21"/>
+		<widget source="session.FrontendStatus" render="FixedLabel" text="SNR" position="1593,28" size="75,24" borderWidth="1" borderColor="black" transparent="1" zPosition="2" font="Regular;21">
+			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1590,25" size="300,30" pixmap="infobar/pbar_grey.png" backgroundColor="transpBlack" zPosition="1" borderWidth="1" borderColor="grey">
 			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1737,28" size="150,24" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;21">
+		<widget source="session.FrontendStatus" render="Label" position="1737,28" size="150,24" borderWidth="1" borderColor="black" zPosition="2" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;21">
 			<convert type="FrontendInfo">SNR</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel name="agc" position="1593,55" size="60,24" borderWidth="1" borderColor="black" halign="left" transparent="1" zPosition="1" text="AGC" font="Regular;21"/>
+		<widget source="session.FrontendStatus" render="FixedLabel" text="AGC" position="1593,55" size="60,24" borderWidth="1" borderColor="black" transparent="1" zPosition="2" font="Regular;21">
+			<convert type="FrontendInfo">AGC</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1653,55" size="75,24" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;21">
 			<convert type="FrontendInfo">AGC</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel name="ber" position="1752,55" size="60,24" borderWidth="1" borderColor="black" halign="left" transparent="1" zPosition="1" text="BER" font="Regular;21"/>
+		<widget source="session.FrontendStatus" render="FixedLabel" text="BER" position="1752,55" size="60,24" borderWidth="1" borderColor="black" halign="left" transparent="1" zPosition="1" font="Regular;21">
+			<convert type="FrontendInfo">BER</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1812,55" size="75,24" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;21">
 			<convert type="FrontendInfo">BER</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1593, 110" size="300,28" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;25"/>
 		<widget source="session.Event_Now" render="Label" position="30,162" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">

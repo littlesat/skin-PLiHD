@@ -395,11 +395,12 @@
 		<widget render="VideoSize" source="session.CurrentService" position="1740,943" size="165,30" backgroundColor="secondBG" font="Regular;28" foregroundColor="foreground" halign="left" transparent="1" zPosition="1"/>
 		<widget source="session.FrontendStatus" render="Label" position="1740,985" size="112,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28">
 			<convert type="FrontendInfo">SNRdB</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="session.FrontendInfo" render="Label" position="1740,900" size="165,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
 			<convert type="FrontendInfo">STRING,8,5</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1740,1027" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28">
+		<widget source="session.CurrentService" render="Label" position="1740,1027" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1740,856" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
