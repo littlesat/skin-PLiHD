@@ -1552,7 +1552,7 @@
   <screen name="ModifyPLiFullHD" position="fill" title="Modify PLi-FullHD - setup font and colors">
     <panel name="PigTemplate"/>
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ModifyPLiFullHD/png/helpsd.png" position="20,360" size="480,271" zPosition="2"/>
-    <widget name="config" position="520,70" size="740,450" zPosition="1" scrollbarMode="showOnDemand" />
+    <widget name="config" position="520,70" size="740,550" zPosition="1" scrollbarMode="showOnDemand" />
     <widget name="info" position="520,650" size="740,25" font="Regular;20" foregroundColor="foreground" halign="center"/>
   </screen>
   <screen name="ModifyPLiFullHDFontInfo" position="fill" title="Modify PLi-FullHD - font info table">
