@@ -422,12 +422,18 @@
     </widget>
   </screen>
 
-  <!-- EPG Search Setup -->
-
   <screen name="EPGSearchSetup" title="EPGSearch Setup" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
-    <widget source="help" render="Label" position="40,380" size="462,72" backgroundColor="background" transparent="1" font="Regular;20"/>
+    <widget source="help" render="Label" position="40,380" size="462,120" backgroundColor="background" transparent="1" font="Regular;20"/>
     <widget name="config" position="530,80" size="710,450" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+  </screen>
+
+  <screen name="EPGSearchHistory" title="EPGSearch - History" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <widget source="help" render="Label" position="40,380" size="462,216" backgroundColor="background" transparent="1" font="Regular;20"/>
+    <widget source="history" render="Listbox" position="530,80" size="710,570" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" >
+      <convert type="StringList"/>
+    </widget>
   </screen>
 
   <!-- GraphMultiEPG -->
