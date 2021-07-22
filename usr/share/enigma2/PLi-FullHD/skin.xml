@@ -2041,14 +2041,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="nimlist" position="795,105" size="1110,150"/>
 	</screen>
 
-	<!-- Positioner Setup - ONID/TSID Screen -->
-
-	<screen name="ONIDTSIDScreen" position="fill" title="Tune">
-		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,760" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="780,975" size="1110,35" font="Regular;30" halign="center"/>
-	</screen>
-
 	<!-- Satfinder -->
 
 	<screen name="Satfinder" title="Satfinder" position="fill" flags="wfNoBorder">
