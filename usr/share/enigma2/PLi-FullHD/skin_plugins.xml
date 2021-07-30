@@ -976,6 +976,22 @@
 		<widget name="infomovie" position="0,27" size="144,63" font="FdLcD;15"/>
 	</screen>
 
+	<!-- CSFD Lite -->
+
+	<screen name="CSFDLite" position="fill" title="CSFD Lite" >
+		<panel name="PigTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="titlelabel" position="780,108" size="761,37" font="Regular;32" valign="center" foregroundColor="#f0b400" transparent="1"/>
+		<widget name="starsbg" position="1570,108" size="320,32" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFDLite/starsbar_empty_FullHD.png" zPosition="0" transparent="1" alphatest="on"/>
+		<widget name="stars" position="1570,108" size="320,32" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CSFDLite/starsbar_filled_FullHD.png" transparent="1"/>
+		<widget name="ratinglabel" position="1570,145" size="320,35" halign="right" font="Regular;30" foregroundColor="#f0b400" backgroundColor="black" transparent="1"/>
+		<widget name="detailslabel" position="780,184" size="1110,836" zPosition="1" transparent="1" itemHeight="38" font="Regular;30" halign="block"/>
+		<widget name="extralabel" position="780,184" size="1110,798" zPosition="1" itemHeight="38" transparent="1" font="Regular;32" halign="block"/>
+		<widget name="menu" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="statusbar" position="30,540" size="720,23" font="Regular;20" foregroundColor="#7a7a52" />
+		<widget name="poster" position="20,580" size="321,380" alphatest="blend" backgroundColor="black"/>
+	</screen>
+
 	<!-- XPower plugin -->
 
 	<screen name="xpower" position="fill" title="XPower" flags="wfNoBorder">
