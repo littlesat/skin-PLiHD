@@ -2095,11 +2095,11 @@
 		</widget>
 		<widget name="description" position="30,560" size="720,64" zPosition="1" foregroundColor="grey" font="Regular;28" halign="block"/>
 
-		<widget source="Service" render="Label" position="30,680" size="720,64" foregroundColor="secondFG" font="Regular;28" transparent="1">
-			<convert type="MovieInfo">ShortDescription</convert>
+		<widget source="Service" render="Label" position="30,640" size="720,32" foregroundColor="secondFG" font="Regular;28" transparent="1">
+			<convert type="MovieInfo">Name</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,725" size="720,256" font="Regular;28" halign="block">
-			<convert type="MovieInfo">MetaDescription</convert>
+		<widget source="Service" render="Label" position="30,683" size="720,288" font="Regular;28" halign="block">
+			<convert type="MovieInfo">FullDescription</convert>
 		</widget>
 		<widget name="number" position="30,982" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
 		<widget name="size" position="30,982" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
