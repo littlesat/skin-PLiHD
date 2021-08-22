@@ -958,10 +958,10 @@
 		<widget name="list" position="780,108" size="1110,900" scrollbarMode="showOnDemand" itemHeights="100,75,45" fontSizesOriginal="36,26,24" fontSizesCompact="36,28" fontSizesMinimal="34,30"
             pbarShift="12" pbarHeight="22" pbarLargeWidth="72" spaceRight="3" columnsOriginal="270,300" columnsCompactDescription="240,220,240" compactColumn="300"
             treeDescription="250" partIconeShiftMinimal="8" partIconeShiftCompact="5" partIconeShiftOriginal="5" iconsWidth="33" spaceIconeText="6" trashShift="4" dirShift="3"/>
-		<widget source="Service" render="Label" position="30,600" size="720,35" foregroundColor="secondFG" font="Regular;30" transparent="1">
+		<widget source="Service" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;30" transparent="1">
 			<convert type="MovieInfo">Name</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,640" size="720,315" font="Regular;30" transparent="1" halign="block">
+		<widget source="Service" render="Label" position="30,650" size="720,315" font="Regular;30" transparent="1" halign="block">
 			<convert type="MovieInfo">FullDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="30,975" size="180,34" transparent="1" foregroundColor="grey" font="Regular;30">
