@@ -11,7 +11,7 @@
   <screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="PLi-HD/buttons/key_text.png" position="65,643" zPosition="10" size="35,25" transparent="1" alphatest="on" />
+    <panel name="VKeyIconPanel"/>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
   </screen>
 
@@ -22,7 +22,7 @@
     <widget name="ip" position="710,110" size="150,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="port" position="860,110" size="100,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget name="type" position="1000,110" size="200,24" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="entrylist" position="590,160" size="600,475" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
+    <widget name="entrylist" position="590,160" size="600,450" scrollbarMode="showOnDemand" backgroundColor="secondBG" selectionPixmap="PLi-HD/buttons/sel.png" transparent="1" />
   </screen>
 
   <screen name="PartnerboxSetup" position="fill" flags="wfNoBorder">

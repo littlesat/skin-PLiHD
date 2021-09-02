@@ -9,6 +9,8 @@
 
 	<screen name="PartnerboxEntryConfigScreen" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="VKeyIconPanel"/>
+		<widget name="HelpWindow" position="center,650" size="80,0"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
