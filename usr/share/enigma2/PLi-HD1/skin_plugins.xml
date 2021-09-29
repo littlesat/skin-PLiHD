@@ -1878,7 +1878,7 @@
 	<screen name="YouTubeMain" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="text" position="85,400" size="1110,25" font="Regular;20" halign="Left" zPosition="1" />
+		<widget name="text" position="85,400" size="417,25" font="Regular;20" halign="center" zPosition="1" />
 		<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,500" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
