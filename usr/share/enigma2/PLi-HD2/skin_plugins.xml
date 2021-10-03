@@ -1728,7 +1728,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="text" position="85,400" size="417,25" font="Regular;20" halign="center" zPosition="1" />
-		<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,500" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,504" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(100,72), png=2), # Thumbnail
@@ -1743,16 +1743,15 @@
 		</widget>
 		<widget name="thumbnail" position="0,0" size="100,72" /> # Thumbnail size in list
 	</screen>
-
 	<screen name="YouTubeSearch" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="config" position="590,110" size="600,35" itemHeight="30" font="Regular;22" halign="center" zPosition="1"/> <!-- Search box -->
 		<widget source="list" render="Listbox" transparent="0" position="590,150" size="600,500" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
-				{"template": [MultiContentEntryText(pos=(10,1), size=(580,30), font=0, flags=RT_HALIGN_LEFT, text=0)],
+				{"template": [MultiContentEntryText(pos=(10,1), size=(580,25), font=0, flags=RT_HALIGN_LEFT, text=0)],
 				"fonts": [gFont("Regular",20)],
-				"itemHeight": 30}
+				"itemHeight": 25}
 			</convert>
 		</widget>
 		<widget name="HelpWindow" position="30,420" size="1,1" transparent="1" zPosition="3" alphatest="on"/> <!-- Text keypad -->
