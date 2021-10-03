@@ -1791,8 +1791,8 @@
 	<screen name="IMDB" position="fill" flags="wfNoBorder" title="Internet Movie Database Details Plugin">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="223,570" size="315,31" zPosition="2" alphatest="blend"/>
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="223,570" size="315,31" zPosition="3" transparent="1"/>
+		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty_HD.png" position="223,570" size="315,31" zPosition="2" alphatest="blend"/>
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled_HD.png" position="223,570" size="315,31" zPosition="3" transparent="1"/>
 		<widget name="ratinglabel" position="7,615" size="765,75" font="Regular;30" foregroundColor="grey" halign="center"/>
 		<widget name="titellabel" position="7,695" size="765,100" font="Regular;30" foregroundColor="secondFG" halign="center"/>
 		<widget name="statusbar" position="7,900" size="765,110" font="Regular;27" halign="center" valign="bottom"/>
