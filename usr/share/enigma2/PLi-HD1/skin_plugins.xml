@@ -1882,7 +1882,7 @@
 		<widget source="list" render="Listbox" transparent="0" position="590,110" size="630,504" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(100,72), png=2), # Thumbnail
+					MultiContentEntryPixmapAlphaTest(pos=(0,0), flags=BT_SCALE, size=(100,72), png=2), # Thumbnail
 					MultiContentEntryText(pos=(110,1), size=(500,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
 					MultiContentEntryText(pos=(120,50), size=(220,22), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
 					MultiContentEntryText(pos=(390,50), size=(220,22), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
