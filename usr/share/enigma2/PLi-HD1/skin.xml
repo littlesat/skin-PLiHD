@@ -585,7 +585,7 @@
     <panel name="VKeyIconPanel"/>
     <!--widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
-    <widget name="description" position="20,380" size="480,200" font="Regular;20" valign="top"/>
+    <widget name="description" position="20,380" size="480,230" font="Regular;20" valign="top"/>
   </screen>
 
   <!-- Scan setup -->

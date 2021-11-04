@@ -633,7 +633,7 @@
 		<panel name="VKeyIconPanel"/>
 		<widget name="HelpWindow" position="center,650" size="80,0"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;30" valign="top"/>
+		<widget name="description" position="30,570" size="720,385" font="Regular;30" valign="top"/>
 	</screen>
 
 	<!-- Scan setup -->
