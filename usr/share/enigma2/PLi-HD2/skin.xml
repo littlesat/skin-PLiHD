@@ -560,6 +560,7 @@
     <panel name="PigTemplate"/>
     <widget name="config" position="530,80" size="710,525" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
+    <widget name="description" position="40,380" size="462,200" font="Regular;20" valign="top" />
   </screen>
 
   <!-- Scan simple -->
