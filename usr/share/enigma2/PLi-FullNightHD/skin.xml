@@ -611,7 +611,7 @@
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="introduction" position="0,0" size="0,0"/>
-		<widget name="description" position="30,613" size="720,256" zPosition="1" font="Regular;28"/>
+		<widget name="description" position="30,570" size="720,385" font="Regular;30" valign="top"/>
 	</screen>
 
 	<!-- Scan simple -->
