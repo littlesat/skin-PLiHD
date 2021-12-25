@@ -942,15 +942,15 @@
 		<widget source="session.CurrentService" render="Label" position="502,499" size="240,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,562" size="120,36" foregroundColor="grey" font="Regular;30" halign="left" transparent="1">
+		<widget source="Service" render="Label" position="30,562" size="120,36" font="Regular;30" foregroundColor="grey" halign="left" transparent="1">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="187,562" size="160,37" font="Regular;30" foregroundColor="grey" halign="center" transparent="1">
+		<widget source="Service" render="Label" position="175,562" size="182,37" font="Regular;30" foregroundColor="grey" halign="center" transparent="1">
 			<convert type="ServiceTime">StartTime</convert>
-			<convert type="ClockToText">ShortDate</convert>
+			<convert type="ClockToText">Format:%a %e/%m/%y</convert>
 		</widget>
-		<widget source="Service" render="Label" position="382,562" size="367,37" zPosition="1" foregroundColor="grey" font="Regular;30" halign="right">
+		<widget source="Service" render="Label" position="382,562" size="368,37" font="Regular;30" foregroundColor="grey" halign="right" zPosition="1">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
 
