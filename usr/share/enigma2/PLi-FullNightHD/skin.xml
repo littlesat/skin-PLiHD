@@ -1940,10 +1940,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<convert type="TemplatedMultiContent">
 			{"template": [
 				MultiContentEntryText(pos = (15,4), size = (1005,48), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (75,45), size = (945,60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (75,45), size = (945,90), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 			],
 			"fonts": [gFont("Regular",32), gFont("Regular",24)],
-			"itemHeight": 110
+			"itemHeight": 140
 			}
 		</convert>
 	</widget>
