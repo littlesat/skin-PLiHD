@@ -75,6 +75,8 @@
   <screen name="RemoteTimerEntry" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
+    <panel name="VKeyIconPanel"/>
+    <widget name="HelpWindow" position="center,480" size="60,0"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="25" scrollbarMode="showOnDemand"/>
   </screen>
   
