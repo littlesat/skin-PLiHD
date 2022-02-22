@@ -72,6 +72,8 @@
   <screen name="RemoteTimerEntry" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="CancelOKTemplate"/>
+    <widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <panel name="VKeyIconPanel"/>
     <widget name="config" position="530,80" size="710,570" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
   
