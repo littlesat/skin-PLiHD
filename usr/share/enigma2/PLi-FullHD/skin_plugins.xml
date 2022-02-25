@@ -1836,8 +1836,7 @@
 		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="30,613" size="720,256" zPosition="1" foregroundColor="grey" font="Regular;28"/>
 	</screen>
-	</screen>
-		<screen name="MovieManagerNonModalMessageBoxDialog" position="center,center" size="710,160" backgroundColor="#00707070" zPosition="2" flags="wfNoBorder">
+	<screen name="MovieManagerNonModalMessageBoxDialog" position="center,center" size="710,160" backgroundColor="#00707070" zPosition="2" flags="wfNoBorder">
 		<widget name="message" position="center,center" size="706,156" font="Regular;30" valign="center" halign="center"/>
 	</screen>
 
