@@ -1817,8 +1817,12 @@
 		<widget source="Service" render="Label" position="825,980" size="1040,35" transparent="1" foregroundColor="grey" font="Regular;30">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825,980" size="1040,35" transparent="1" font="Regular;30" foregroundColor="grey" halign="center">
+		<widget source="Service" render="Label" position="1240,980" size="200,35" transparent="1" font="Regular;30" foregroundColor="grey" halign="right">
 			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1480,980" size="80,35" transparent="1" font="Regular;30" foregroundColor="darkgrey" halign="left">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
 		<widget source="Service" render="Label" position="825,980" size="1040,35" transparent="1" font="Regular;30" foregroundColor="grey" halign="right">
 			<convert type="ServiceTime">StartTime</convert>
