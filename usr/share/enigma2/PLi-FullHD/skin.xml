@@ -1366,8 +1366,8 @@
 	<screen name="WizardMarginsTemplate">
 		<panel position="left" size="10%,*"/>
 		<panel position="right" size="8%,*"/>
-		<panel position="top" size="8%,*"/>
-		<panel position="bottom" size="10%,*"/>
+		<panel position="top" size="*,8%"/>
+		<panel position="bottom" size="*,10%"/>
 	</screen>
 
 	<!-- Start Wizard -->
