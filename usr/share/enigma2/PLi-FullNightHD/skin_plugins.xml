@@ -76,6 +76,12 @@
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
+	<screen name="PartnerboxAutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+	</screen>
+
 		<!-- VLC Player -->
 
 	<screen flags="wfNoBorder" name="VlcServerConfigScreen" position="fill">
