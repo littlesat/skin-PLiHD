@@ -47,6 +47,8 @@
 		<alias name="AutotimerListExt0" font="Regular" size="28"/>
 		<alias name="AutotimerListExt1" font="Regular" size="22" height="95"/>
 		<alias name="FcZipArchiver" font="Fixed" size="26" height="45"/>
+		<alias name="AutomaticVolumeAdjustment0" font="Regular" size="28"/>
+		<alias name="AutomaticVolumeAdjustment1" font="Regular" size="28"/>
 	</fonts>
 
 	<!-- Colors -->
@@ -108,6 +110,8 @@
 		<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
 		<parameter name="FcFileListMultiName" value="90,2,1000,32"/>
 		<parameter name="FcFileListName" value="68,2,1000,34"/>
+		<parameter name="AutomaticVolumeAdjustmentEntryList0" value="20,2,980,35"/>
+		<parameter name="AutomaticVolumeAdjustmentEntryList1" value="1000,2,80,35"/>
 	</parameters>
 
 	<switchpixmap>
