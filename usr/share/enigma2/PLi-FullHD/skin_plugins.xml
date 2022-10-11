@@ -2256,7 +2256,7 @@
 		<panel name="PigTemplate"/>
 		<widget source="name" render="Label" position="800,105" size="660,35" zPosition="2" font="Regular;30" foregroundColor="secondFG"/>
 		<widget source="adjustvalue" render="Label" position="1460,105" size="400,35" zPosition="2" font="Regular;30" foregroundColor="secondFG" halign="right"/>
-		<widget name="entrylist" position="780,150" size="1110,362" itemHeight="38" scrollbarMode="showOnDemand"/>
+		<widget name="entrylist" position="780,150" size="1110,836" itemHeight="38" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="AutomaticVolumeAdjustmentEntryConfigScreen" position="fill">
 		<panel name="PigTemplate"/>
