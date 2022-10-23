@@ -1001,6 +1001,9 @@
 		<widget name="statusbar" position="30,540" size="720,23" font="Regular;20" foregroundColor="#7a7a52" />
 		<widget name="poster" position="20,580" size="321,380" alphatest="blend" backgroundColor="black"/>
 	</screen>
+	<screen name="CSFDLiteConfigScreen" position="fill" title="CSFD Lite" >
+		<panel name="Setup"/>
+	</screen>
 
 	<!-- XPower plugin -->
 
