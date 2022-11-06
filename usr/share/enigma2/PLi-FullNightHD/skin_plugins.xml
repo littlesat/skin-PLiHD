@@ -2400,6 +2400,7 @@
 	</screen>
 	<screen name="vEditorScreen" position="fill">
 		<panel name="BasicTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<widget name="list_head" position="30,100" size="1860,32" zPosition="1" font="Regular;28" halign="center"/>
 		<widget name="filedata"  scrollbarMode="showOnDemand" position="15,140" size="1890,874" itemHeight="38" font="Regular;28"/>
 		### Do not remove it and set same font and x-size as "input" in "InputBoxWide" screen !###
