@@ -2288,10 +2288,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyChannelTemplate"/>
-		<widget name="text" position="780,105" size="1110,37" font="Regular;33"/>
-		<widget name="target" position="780,150" size="1110,37" valign="center" font="Regular;33"/>
-		<widget name="filelist" position="780,195" size="1110,310" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1"/>
-		<widget name="textbook" position="780,517" size="1110,37" font="Regular;33"/>
+		<widget name="text" position="780,105" size="1110,38" font="Regular;33"/>
+		<widget name="target" position="780,150" size="1110,38" valign="center" font="Regular;33"/>
+		<widget name="filelist" position="780,197" size="1110,304" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+		<widget name="textbook" position="780,517" size="1110,38" font="Regular;33"/>
 		<widget name="booklist" position="787,562" itemHeight="38" font="Regular;28" size="1102,456" zPosition="2" scrollbarMode="showOnDemand"/>
 	</screen>
 
