@@ -104,8 +104,8 @@
 		<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
 		<parameter name="VirtualKeyBoard" value="68,68"/>
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
-		<parameter name="AutotimerListIcon" value="2,3,24,25"/>
-		<parameter name="AutotimerListRectypeicon" value="30,7,24,25"/>
+		<parameter name="AutotimerListIcon" value="4,5,24,25"/>
+		<parameter name="AutotimerListRectypeicon" value="34,8,24,25"/>
 		<parameter name="AutotimerListIcons" value="*icons/small/lock_on.png,*icons/small/lock_off.png,*icons/small/timer_rec.png,*icons/small/timer_zap.png"/>
 		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
 		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
