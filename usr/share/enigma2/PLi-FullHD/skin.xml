@@ -106,7 +106,7 @@
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
 		<parameter name="AutotimerListIcon" value="2,3,24,25"/>
 		<parameter name="AutotimerListRectypeicon" value="30,7,24,25"/>
-		<parameter name="AutotimerListIcons" value="*skin_default/icons/lock_on.png,*skin_default/icons/lock_off.png,*skin_default/icons/timer_rec.png,*skin_default/icons/timer_zap.png"/>
+		<parameter name="AutotimerListIcons" value="*icons/small/lock_on.png,*icons/small/lock_off.png,*icons/small/timer_rec.png,*icons/small/timer_zap.png"/>
 		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
 		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
 		<parameter name="FcFileListIcon" value="10,4,30,30"/>
