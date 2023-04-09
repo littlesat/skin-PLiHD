@@ -1824,12 +1824,12 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="title" position="7,570" size="715,45" font="RegularSmall;30" foregroundColor="secondFG" halign="center"/>
-		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="265,640" size="315,31" zPosition="2" />
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="265,640"  size="315,31" transparent="1" zPosition="3" />
-		<widget name="ratinglabel" position="7,675" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
-		<widget name="voteslabel" position="7,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
-		<widget name="statusbar" position="7,950" size="715,45" font="Regular;30" halign="center" valign="bottom"/>
+		<widget name="title" position="7,570" size="715,70" font="Regular;30" foregroundColor="secondFG" halign="center"/>
+		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="265,650" size="210,21" zPosition="2" />
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="265,650"  size="210,21" transparent="1" zPosition="3" />
+		<widget name="ratinglabel" position="7,685" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
+		<widget name="voteslabel" position="7,720" size="715,36" font="Regular;30" foregroundColor="grey" halign="center"/>
+		<widget name="statusbar" position="7,950" size="715,70" font="Regular;30" halign="center" valign="bottom"/>
 		<widget name="poster" position="750,120" size="165,270" alphatest="blend"/>
 		<widget name="detailslabel" position="920,120" size="995,45" font="Regular;30" halign="center" foregroundColor="secondFG"/>
 		<widget name="menu" position="920,170" size="995,405" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
@@ -1852,7 +1852,7 @@
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="0,0" size="150,108" /> # Thumbnail size in list
-		<eLabel text="'OK'= Play trailer" position="652,1030" size="330,39" font="RegularSmall;33" halign="left" zPosition="1"/>
+		<eLabel text="'OK'= Play trailer" position="652,1030" size="330,39" font="Regular;33" halign="left" zPosition="1"/>
 	</screen>
 
 	<!-- ## WikiPedia# -->
