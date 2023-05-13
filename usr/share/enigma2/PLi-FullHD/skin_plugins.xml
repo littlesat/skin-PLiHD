@@ -1498,6 +1498,11 @@
 		<widget source="help" render="Label" position="30,660" size="720,150" itemHeight="38" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
 	</screen>
 
+	<screen name="ManualEPGlist" position="fill" title="Select options" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="list" position="780,105" size="1110,152" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+	</screen>
+
 	<!-- BlindScan -->
 
 	<screen name="Blindscan" position="fill" title="Blind scan">
