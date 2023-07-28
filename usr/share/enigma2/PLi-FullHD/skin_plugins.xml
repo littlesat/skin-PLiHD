@@ -1857,6 +1857,28 @@
 		<widget name="message" position="center,center" size="706,156" font="Regular;30" valign="center" halign="center"/>
 	</screen>
 
+	<!-- IMDb Plugin -->
+	<screen name="IMDB" position="fill" flags="wfNoBorder" title="Internet Movie Database Details Plugin">
+		<panel name="SelectionTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty_HD.png" position="223,570" size="315,31" zPosition="2" alphatest="blend"/>
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled_HD.png" position="223,570" size="315,31" zPosition="3" transparent="1"/>
+		<widget name="ratinglabel" position="7,615" size="765,70" font="Regular;30" foregroundColor="grey" halign="center"/>
+		<widget name="titellabel" position="7,695" size="765,105" font="Regular;30" foregroundColor="secondFG" halign="center"/>
+		<widget name="statusbar" position="7,819" size="765,93" font="Regular;27" halign="center" valign="bottom"/>
+		<widget name="poster" position="780,100" size="165,270" alphatest="blend"/>
+		<widget name="detailslabel" position="960,100" size="930,270" font="Regular;30" halign="center"/>
+		<widget name="menu" position="780,202" size="1110,810" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1"/>
+		<widget name="castlabel" position="780,382" size="1110,630" font="Regular;30" foregroundColor="grey"/>
+		<widget name="extralabel" position="780,100" size="1110,912" font="Regular;30" foregroundColor="grey"/>
+	</screen>
+	<screen name="IMDbSetup" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="HelpWindow" position="center,450" size="80,0"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="help" position="30,570" size="720,385" font="Regular;28" valign="top"/>
+	</screen>
+
 	<!-- AutoBouquetsMaker (ABM) -->
 	<screen flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="fill">
 		<panel name="PigTemplate"/>
