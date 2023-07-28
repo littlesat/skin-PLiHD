@@ -1858,7 +1858,7 @@
 	</screen>
 
 	<!-- IMDb Plugin -->
-	<screen name="IMDB" position="fill" flags="wfNoBorder" title="Internet Movie Database Details Plugin">
+	<screen name="IMDB" position="fill" flags="wfNoBorder" title="Internet Movie Database Plugin">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty_HD.png" position="223,570" size="315,31" zPosition="2" alphatest="blend"/>
