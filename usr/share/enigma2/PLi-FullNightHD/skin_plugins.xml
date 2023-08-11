@@ -2468,33 +2468,35 @@
 	</screen>
 
 	<!-- LCD4linux -->
+
 	<screen name="LCDdisplayConfig" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="ButtonTemplate"/>
-		<widget name="config" position="7,123" size="840,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
-				scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
-		<widget source="introduction" render="Label" position="960,120" size="955,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="center"/>
-		<widget source="LibUSB" render="Label" position="960,170" size="955,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="center"/>
-		<widget source="About" render="Label" position="960,220" size="440,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="left"/>
-		<widget source="Version" render="Label" position="1405,220" size="500,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="right"/>
-		<widget source="LCD1text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-		<widget source="LCD2text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-		<widget source="LCD3text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-			<widget name="LCD1" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
-			<widget name="LCD2" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
-			<widget name="LCD3" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="config" position="923,123" size="996,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+		<widget source="introduction" render="Label" position="590,983" size="1330,30" zPosition="2" font="Regular;27" foregroundColor="secondFG" halign="center"/>
+		<widget source="LibUSB" render="Label" position="150,700" size="715,35" zPosition="2" font="Regular;27" foregroundColor="red" halign="center"/>
+		<widget source="About" render="Label" position="0,943" size="360,30" zPosition="2" font="Regular;27" foregroundColor="darkgrey" halign="center"/>
+		<widget source="Version" render="Label" position="0,903" size="360,30" zPosition="2" font="Regular;27" foregroundColor="darkgrey" halign="center"/>
+		<widget source="LCD1text" render="Label" position="150,205" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget source="LCD2text" render="Label" position="150,240" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget source="LCD3text" render="Label" position="150,275" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget name="LCD1" position="0,123" size="922,540" zPosition="5" transparent="1" alphatest="on"/>
+		<widget name="LCD2" position="0,123" size="922,540" zPosition="4" transparent="1" alphatest="on"/>
+		<widget name="LCD3" position="0,123" size="922,540" zPosition="3" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="LCDdisplayMenu" position="fill" flags="wfNoBorder" title="LCD4linux - Config">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="780,120" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
-				scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
 	</screen>
 	<screen name="LCDdisplayFile" position="fill" flags="wfNoBorder" title="Select File/Dir...">
 		<panel name="BasicTemplate"/>
-		<eLabel text="Select" position="425,1023" size="400,45" font="buttons;33" foregroundColor="buttongreen" backgroundColor="secondBG" transparent="1" halign="left"/>
+		<ePixmap pixmap="buttons/green.png" position="628,1032" size="34,34" alphatest="blend"/>
+		<eLabel text="Select" position="678,1030" size="400,45" font="Regular;34" foregroundColor="foreground" transparent="1" halign="left"/>
 		<widget name="LCDfile" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
-				scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
-		<widget source="File" render="Label" position="7,568" size="715,396" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+		<widget source="File" render="Label" position="7,983" size="1890,30" font="Regular;27" foregroundColor="secondFG" halign="center"/>
 	</screen>
 
 	<!-- ZapHistoryBrowser -->
