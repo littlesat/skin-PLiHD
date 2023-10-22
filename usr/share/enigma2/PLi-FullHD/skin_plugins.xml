@@ -1253,31 +1253,29 @@
 
 	<screen name="ShoutcastTemplate">
 		<panel name="PigLessTemplate"/>
-		<panel name="OKTemplate"/>
-		<widget name="cover" position="60,150" size="592,562" zPosition="2" halign="left" valign="center" alphatest="blend"/>
+		<widget name="cover" position="60,140" size="592,562" zPosition="2"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SHOUTcastWidget" position="fill" title="SHOUTcast">
+	<screen name="SHOUTcastWidget" title="SHOUTcast" position="fill" flags="wfNoBorder">
 		<panel name="ShoutcastTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="headertext" position="780,150" size="1110,34" zPosition="1" font="Regular;30" transparent="1"/>
 		<widget name="statustext" position="780,510" size="1110,135" zPosition="1" font="Regular;30" halign="center" valign="center" transparent="0"/>
-		<widget name="list" position="780,210" size="1110,770" zPosition="2" font="Regular;30" scrollbarMode="showOnDemand" transparent="0"/>
-		<widget name="titel" position="30,727" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
-		<widget name="station" position="30,802" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
-		<widget name="console" position="30,802" size="720,60" zPosition="1" font="Regular;27" transparent="1"/>
+		<widget name="list" position="780,210" size="1110,727" zPosition="2" scrollbarMode="showOnDemand" transparent="0"/>
+		<widget name="titel" position="30,715" size="720,93" zPosition="1" font="Regular;27" transparent="1"/>
+		<widget name="station" position="30,815" size="720,62" zPosition="1" font="Regular;27" foregroundColor="secondFG" transparent="1"/>
+		<widget name="console" position="30,883" size="720,62" zPosition="1" font="Regular;27" foregroundColor="red" transparent="1"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SHOUTcastSetup" position="fill" title="SHOUTcast Setup" >
+	<screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigLessTemplate"/>
-		<panel name="OKTemplate"/>
-		<widget name="config" position="780,150" size="870,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"	transparent="1"/>
+		<widget name="config" position="780,150" size="870,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"    transparent="1"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="fill" title="Select record path for streamripper">
-		<panel name="ShoutcastTemplate"/>
-		<widget name="target" position="780,150" size="810,33" valign="center" font="Regular;33"/>
-		<widget name="filelist" position="780,210" size="1110,705" zPosition="1" scrollbarMode="showOnDemand"/>
+	<screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="fill" flags="wfNoBorder">
+		<panel name="PigLessTemplate"/>
+		<widget name="target" position="780,150" size="1070,38" valign="center" font="Regular;33"/>
+		<widget name="filelist" position="780,210" size="1110,725" zPosition="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- unwetterZentrale -->
