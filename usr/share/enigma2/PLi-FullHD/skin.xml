@@ -116,6 +116,7 @@
 		<parameter name="FcFileListName" value="68,2,1000,34"/>
 		<parameter name="AutomaticVolumeAdjustmentEntryList0" value="20,2,980,35"/>
 		<parameter name="AutomaticVolumeAdjustmentEntryList1" value="1000,2,80,35"/>
+		<parameter name="ConfigListSeperator" value="500"/>
 	</parameters>
 
 	<switchpixmap>
