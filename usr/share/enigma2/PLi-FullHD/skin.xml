@@ -447,7 +447,11 @@
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left"/>
-		<widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left"/>
+		<widget name="datetime" position="30,652" size="180,45" transparent="1" font="Regular;33" halign="left"/>
+		<widget source="Event" render="Label" position="210,652" size="120,45" transparent="1" font="Regular;33" halign="left">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format: - %H:%M</convert>
+		</widget>
 		<widget name="duration" position="30,712" size="720,45" transparent="1" font="Regular;33" halign="left"/>
 		<widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;32" halign="right">
 			<convert type="EventTime">Remaining</convert>
