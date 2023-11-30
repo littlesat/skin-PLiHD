@@ -789,10 +789,11 @@
 		<widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center"/>
 	</screen>
 
-	<!--CI Config Menu -->
+  <!--CI Config Menu -->
 
 	<screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<panel name="KeyMenuTemplate"/>
 		<widget source="CAidList_desc" render="Label" position="825,180" size="990,45" backgroundColor="background" transparent="1" font="Regular;36"/>
 		<eLabel position="825,238" size="990,3" backgroundColor="black"/>
 		<eLabel position="825,241" size="990,3" backgroundColor="grey"/>
@@ -803,25 +804,31 @@
 		<widget name="ServiceList" position="885,472" size="900,532" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="1" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceList_info" render="Label" position="825,472" size="990,532" backgroundColor="background" zPosition="2" transparent="1" font="Regular;33"/>
 	</screen>
+	<screen name="easyCIconfigMenu" title="CI assignment" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="ServiceList_desc" render="Label" position="780,105" size="1110,38" backgroundColor="background" font="Regular;28"/>
+		<widget name="ServiceList" position="780,160" size="1110,418" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="1" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="ServiceList_info" render="Label" position="780,600" size="1110,416" backgroundColor="background" zPosition="2" transparent="1" font="Regular;28"/>
+	</screen>
 	<screen name="CIselectMainMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="CiList" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="CiList" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!--screen name="CAidSelect" title="Select CAId's" position="fill" flags="wfNoBorder">
+	<screen name="CAidSelect" title="Select CAId's" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="780,874" size="1110,38" font="Regular;28" halign="center" transparent="1" zPosition="10"/>
+		<widget name="list" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget source="introduction" render="Label" position="780,980" size="1110,38" font="Regular;28" halign="center" zPosition="2"/>
 	</screen>
 	<screen name="myProviderSelection" title="Select provider to add..." position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,874" itemHeight="45" font="Regular;38" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="780,874" size="1110,38" font="Regular;28" halign="center" transparent="1" zPosition="10"/>
+		<widget name="list" position="780,105" size="1110,874" itemHeight="45" font="Regular;38" scrollbarMode="showOnDemand"/>
+		<widget source="introduction" render="Label" position="780,980" size="1110,38" font="Regular;28" halign="center" zPosition="2"/>
 	</screen>
 	<screen name="myChannelSelection" title="Select service to add..." position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,874" itemHeight="45" font="Regular;38" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="780,874" size="1110,38" font="Regular;28" halign="center" transparent="1" zPosition="10"/>
-	</screen-->
+		<widget name="list" position="780,105" size="1110,874" itemHeight="45" font="Regular;38" scrollbarMode="showOnDemand"/>
+		<widget source="introduction" render="Label" position="780,980" size="1110,38" font="Regular;28" halign="center" zPosition="2"/>
+	</screen>
 
 	<!-- Console -->
 
