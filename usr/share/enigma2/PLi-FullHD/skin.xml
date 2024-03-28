@@ -82,6 +82,7 @@
 		<color name="secondFG" value="#00c8aa40"/>
 		<color name="selectedBG" value="#06303240"/>
 		<color name="selectedFG" value="#00c8aa40"/>
+		<color name="selectedFGEvent" value="#00f0f0f0"/>
 		<color name="transparent" value="#ff000000"/>
 		<color name="transpBlack" value="#54111112"/>
 		<color name="transpDark" value="#54242424"/>
@@ -337,9 +338,9 @@
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable" fieldMargins="15" nonplayableMargins="15"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
+            foregroundColorEventSelected="selectedFGEvent" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
             picServiceEventProgressbar="window/progress.png" progressbarHeight="13" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" progressbarBorderWidth="1"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="selectedFGEvent"/>
 		<widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
@@ -878,9 +879,9 @@
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="780,105" size="1110,675" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;32" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;30" serviceNameFont="Regular;32" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80"
+            foregroundColorEventSelected="selectedFGEvent" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80"
             colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="12"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="selectedFGEvent"/>
 		<widget source="session.Event_Now" render="Label" position="30,105" size="720,63" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="center" valign="center">
 		<convert type="EventName">Name</convert>
 		</widget>

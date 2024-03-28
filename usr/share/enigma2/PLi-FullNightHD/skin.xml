@@ -80,6 +80,7 @@
 		<color name="rssviewtop" value="#00005050"/>
 		<color name="secondBG" value="#18101214"/>
 		<color name="secondFG" value="#00F9C731"/>
+		<color name="selectedFGEvent" value="#00CCAC68"/>
 		<color name="selectedBG" value="#06303240"/>
 		<color name="selectedFG" value="#00fcc000"/>
 		<color name="transparent" value="#ff000000"/>
