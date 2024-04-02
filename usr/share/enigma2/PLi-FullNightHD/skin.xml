@@ -2010,7 +2010,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 		<widget name="list" position="780,105" size="1110,380" itemHeight="38" font="Regular;28" backgroundColor="secondBG" transparent="1"/>
 		<eLabel text="Frequency:" position="795,570" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
 		<widget name="frequency_value" position="1110,570" size="150,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
-		<eLabel text="Symbolrate:" position="795,615" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
+		<eLabel text="Symbol rate:" position="795,615" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
 		<widget name="symbolrate_value" position="1110,615" size="150,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
 		<eLabel text="FEC:" position="795,660" size="330,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
 		<widget name="fec_value" position="1110,660" size="150,37" backgroundColor="secondBG" transparent="1" font="Regular;30"/>
