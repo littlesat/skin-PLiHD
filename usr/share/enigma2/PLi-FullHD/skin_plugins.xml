@@ -840,6 +840,13 @@
 		<widget name="statusbar" position="885,975" size="900,34" font="Regular;30" backgroundColor="#31000000"/>
 	</screen>
 
+	<!-- CzechMeteo -->
+
+	<screen flags="wfNoBorder" name="czechMeteo" position="fill" title="Czech Meteo">
+		<panel name="meteoViewer"/>
+		<widget name="description" position="30,560" size="720,232" font="Regular;25" foregroundColor="foreground" halign="left"/>
+	</screen>
+
 	<!-- CSSF plugin -->
 
 	<screen name="CSFD" position="fill" title="Filmová databáze CSFD" flags="wfNoBorder">
