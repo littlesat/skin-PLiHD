@@ -1045,6 +1045,7 @@
 
 	<screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<widget name="HelpWindow" position="center,580" size="80,0"/>
 		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="0" pixmaps="buttons/button_green_off.png,buttons/button_green.png" position="885,153" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 		<widget name="statusbar" position="780,450" size="1110,34" font="Regular;30"/>
