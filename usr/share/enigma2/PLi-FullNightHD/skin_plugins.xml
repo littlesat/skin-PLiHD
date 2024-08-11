@@ -1038,6 +1038,7 @@
 
 	<screen name="xpowerHelp" position="fill" title="XPower Help" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
+		<widget name="HelpWindow" position="center,580" size="80,0"/>
 		<widget name="HelpScrollLabel" position="780,105" size="1110,600" font="Regular;30" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="~/img/author.png" position="780,828" zPosition="10" size="37,37"/>
 		<widget name="version" position="840,832" size="630,30" font="Regular;27"/>
