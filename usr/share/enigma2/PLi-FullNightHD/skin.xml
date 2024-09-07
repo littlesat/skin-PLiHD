@@ -1139,6 +1139,9 @@
 		<widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"></convert>
 		</widget>
+		<widget source="Service" render="Label" position="600,525" size="150,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" halign="right">
+			<convert type="ServiceOrbitalPosition"/>
+		</widget>
 		<widget name="description" position="30,570" size="720,385" transparent="1" font="Regular;30" halign="block"/>
 	</screen>
 
