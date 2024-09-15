@@ -838,7 +838,7 @@
 	<screen flags="wfNoBorder" name="meteoViewerCfg" position="fill" title="MeteoViewer Configuration">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,105" size="1110,705" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget name="statusbar" position="885,975" size="900,34" font="Regular;30" backgroundColor="#31000000"/>
+		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30" backgroundColor="background" halign="center"/>
 	</screen>
 
 	<!-- CzechMeteo -->
