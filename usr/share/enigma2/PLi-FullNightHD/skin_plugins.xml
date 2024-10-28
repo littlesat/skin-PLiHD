@@ -2544,4 +2544,60 @@
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
+
+	<!-- M3UIPTV -->
+	<screen name="M3UIPTVManagerConfig" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="DescriptionTemplate"/>
+		<widget conditional="progress" source="progress" render="Progress" position="30,542" size="720,18" backgroundColor="background" foregroundColor="blue" zPosition="11" borderWidth="0" borderColor="grey" cornerRadius="5"/>
+		<widget source="list" render="Listbox" position="780,105" size="1110,900" transparent="1" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (60,0), size = (1035,60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1) ],
+					"fonts": [gFont("Regular",36)],
+					"itemHeight": 60
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<screen name="M3UIPTVVoDMovies" position="fill" flags="wfNoBorder">
+		<panel name="M3UIPTVManagerConfig"/>
+	</screen>
+
+	<screen name="CatchupPlayer" position="150,67" size="1620,150" backgroundColor="secondBG" flags="wfNoBorder">
+		<widget source="session.CurrentService" render="Label" position="center,6" size="1248,74" backgroundColor="secondBG" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">NameOnly</convert>
+		</widget>
+		<widget source="progress" render="Progress" backgroundColor="un33333a" pixmap="dvr/position_pointer1024.png" foregroundColor="#00489AC3" position="center,84" zPosition="4" size="1536,16" transparent="1"/>
+		<widget name="time_elapsed" position="42,44" size="150,37" backgroundColor="secondBG" foregroundColor="foreground" font="Regular;33" valign="center" halign="left" zPosition="50"/>
+		<widget name="time_remaining" position="e-42-150,44" size="150,37" backgroundColor="secondBG" foregroundColor="foreground" font="Regular;33" valign="center" halign="right" zPosition="50"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1590,79" size="30,30" zPosition="3" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="secondBG" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="center" halign="right">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="c-109,105" size="219,31" zPosition="2" backgroundColor="secondBG" foregroundColor="foreground" font="Regular;30" borderWidth="2" valign="top" halign="center">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+		<widget name="statusicon" position="42,110" size="25,25" pixmaps="icons/mp_play.png,icons/mp_pause.png,icons/mp_stop.png,icons/mp_forward.png,icons/mp_backward.png,icons/mp_slow.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="72,105" size="110,40" font="Regular;30" backgroundColor="secondBG" borderWidth="3" borderColor="black" transparent="1" zPosition="5"/>
+		
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" position="1467,107" size="50,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_hd.png" position="1518,107" size="60,32" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_16_9.png" position="1518,107" size="60,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_4_3.png" position="1518,107" size="60,32" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
 </skin>
