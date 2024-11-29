@@ -1800,16 +1800,63 @@
 
 	<!-- Help -->
 
-	<screen name="HelpMenu" position="fill" flags="wfNoBorder">
+	<screen name="HelpMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="855,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="rc" position="1659,105" size="231,750" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
-		<widget name="arrowdown" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowdown2" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowup" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="arrowup2" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11" alphatest="on"/>
-		<widget name="long_key" position="1590,922" size="375,30" foregroundColor="yellow" font="Regular;24" halign="center"/>
+		<widget name="longshift_key0" conditional="longshift_key1" position="30,550" size="720,30" foregroundColor="yellow" font="Regular;24" halign="center"/>
+		<widget name="longshift_key1" conditional="longshift_key1" position="30,580" size="720,30" foregroundColor="yellow" font="Regular;24" halign="center"/>
+		<panel position="1659,105" size="231,750">
+			<panel name="RcPanel"/>
+		</panel>
+		<widget source="list" conditional="indicatorU0" render="Listbox" position="780,100" size="855,912" transparent="0" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+					{
+					"templates": {
+						# Simple help with no headings ("flat")
+						# data[1:] = [helpText]
+						"default": [
+						57,  # itemHeight
+						[
+						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=1, text=1),
+						]
+						],
+						# Simple help with headings
+						# data[1:] = [heading, None]  # For heading entries
+						# data[1:] = [None, helpText]  # For help entries
+						"default+headings": [  # data[1:] = [helpText]
+						57,  # itemHeight
+						[
+						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=0, text=1),
+						MultiContentEntryText(pos=(30, 6), size=(1070, 57), font=1, text=2),
+						]
+						],
+						# Extended help with no headings
+						# data[1:] = [helpText, extendedHelpText]
+						"extended": [
+						86,  # itemHeight
+						[
+						MultiContentEntryText(pos=(0, 0), size=(1100, 45), font=2, text=1),
+						MultiContentEntryText(pos=(0, 60), size=(1100, 40), color=0x009e9fa4, font=3, text=2),
+						],
+						],
+						# Extended help with headings
+						# data[1:] = [heading, None, None]  # For heading entries
+						# data[1:] = [None, helpText, extendedHelpText]  # For help entries
+						"extended+headings": [
+						86,  # itemHeight
+						[
+						MultiContentEntryText(pos=(0, 14), size=(1100, 48), font=0, text=1),
+						MultiContentEntryText(pos=(30, 0), size=(1070, 45), font=2, text=2),
+						MultiContentEntryText(pos=(30, 45), size=(1070, 40), color=0x009e9fa4, font=3, text=3),
+						],
+						],
+					},
+					"fonts": [gFont("Regular", 39), gFont("Regular", 36), gFont("Regular", 38), gFont("Regular", 38)],
+					"itemHeight": 57
+					}
+			</convert>
+		</widget>
 	</screen>
+
 
 	<!-- PPanel -->
 
