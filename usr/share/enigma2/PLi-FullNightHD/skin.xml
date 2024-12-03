@@ -1405,7 +1405,11 @@
 		<panel position="top" size="*,50"/>
 		<panel position="top" size="*,50">
 			<ePixmap pixmap="buttons/red.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
-			<widget name="languagetext" position="fill" font="Regular;34"/>
+			<widget name="backtext" position="left" size="350,*" font="Regular;34"/>
+			<ePixmap pixmap="buttons/yellow.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
+			<widget name="languagetext" position="left" size="350,*" font="Regular;34"/>
+			<ePixmap pixmap="buttons/blue.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
+			<widget name="nexttext" position="left" size="350,*" font="Regular;34"/>
 		</panel>
 	</screen>
 	<!-- it's the same screen... -->
