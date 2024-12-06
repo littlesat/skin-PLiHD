@@ -1234,9 +1234,9 @@
   </screen>
 
   <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="fill" flags="wfNoBorder">
-    <panel name="PigLessTemplate"/>
+    <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="520,110" size="710,400" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
   <screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="fill" flags="wfNoBorder">

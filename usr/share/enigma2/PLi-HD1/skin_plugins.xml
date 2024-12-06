@@ -1290,31 +1290,29 @@
   <screen name="ShoutcastTemplate">
     <panel name="PigLessTemplate"/>
     <panel name="ButtonTemplate_RGYBS"/>
-    <panel name="OKTemplate"/>
-    <widget name="cover" position="40,100" size="395,375" zPosition="2" halign="left" valign="center" alphatest="blend"/>
+    <widget name="cover" position="40,90" size="395,375" zPosition="2" halign="left" valign="center"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SHOUTcastWidget" position="fill" title="SHOUTcast">
+  <screen name="SHOUTcastWidget" title="SHOUTcast" position="fill" flags="wfNoBorder">
     <panel name="ShoutcastTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="headertext" position="520,100" size="740,23" zPosition="1" font="Regular;20" transparent="1"/>
     <widget name="statustext" position="520,340" size="740,90" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="0"/>
-    <widget name="list" position="520,140" size="740,470" zPosition="2" font="Regular;20" scrollbarMode="showOnDemand" transparent="0"/>
-    <widget name="titel" position="20,485" size="480,40" zPosition="1" font="Regular;18" transparent="1"/>
-    <widget name="station" position="20,535" size="480,40" zPosition="1" font="Regular;18" transparent="1"/>
-    <widget name="console" position="20,535" size="480,40" zPosition="1" font="Regular;18" transparent="1"/>
+    <widget name="list" position="520,140" size="740,485" zPosition="2" font="Regular;20" scrollbarMode="showOnDemand" transparent="0"/>
+    <widget name="titel" position="20,475" size="480,66" zPosition="1" font="Regular;18" transparent="1"/>
+    <widget name="station" position="20,542" size="480,44" zPosition="1" font="Regular;18" foregroundColor="secondFG" transparent="1"/>
+    <widget name="console" position="20,587" size="480,44" zPosition="1" font="Regular;18" foregroundColor="red" transparent="1"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SHOUTcastSetup" position="fill" title="SHOUTcast Setup" >
-    <panel name="PigLessTemplate"/>
+  <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RGS"/>
-    <panel name="OKTemplate"/>
-    <widget name="config" position="520,100" size="580,400" scrollbarMode="showOnDemand"  transparent="1"/>
+    <widget name="config" position="520,70" size="740,400" scrollbarMode="showOnDemand" transparent="1"/>
   </screen>
 
-  <screen flags="wfNoBorder" name="SHOUTcastStreamripperRecordingPath" position="fill" title="Select record path for streamripper">
+  <screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="fill" flags="wfNoBorder">
     <panel name="ShoutcastTemplate"/>
-    <widget name="target" position="520,100" size="540,22" valign="center" font="Regular;22"/>
+    <widget name="target" position="520,100" size="720,25" valign="center" font="Regular;22"/>
     <widget name="filelist" position="520,140" size="740,470" zPosition="1" scrollbarMode="showOnDemand"/>
   </screen>
 
