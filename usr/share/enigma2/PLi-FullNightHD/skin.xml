@@ -1404,12 +1404,21 @@
 	<screen name="WizardPictureLangTemplate">
 		<panel position="top" size="*,50"/>
 		<panel position="top" size="*,50">
-			<ePixmap pixmap="buttons/red.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
+			<eLabel text="&lt;&lt;&lt;" position="left" zPosition="0" size="75,34" transparent="1" alphatest="blend" font="Regular;34"/>
+			<ePixmap pixmap="buttons/red.png" position="left" zPosition="0" size="34,34" transparent="1" alphatest="blend"/>
+			<panel position="left" size="16,*"/>
 			<widget name="backtext" position="left" size="350,*" font="Regular;34"/>
-			<ePixmap pixmap="buttons/yellow.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
 			<widget name="languagetext" position="left" size="350,*" font="Regular;34"/>
-			<ePixmap pixmap="buttons/blue.png" position="left" zPosition="0" size="50,34" transparent="1" alphatest="blend"/>
-			<widget name="nexttext" position="left" size="350,*" font="Regular;34"/>
+			<eLabel text="&gt;&gt;&gt;" position="right" zPosition="0" size="75,34" transparent="1" alphatest="blend" font="Regular;34" halign="right"/>
+			<ePixmap pixmap="buttons/blue.png" position="right" zPosition="0" size="34,34" transparent="1" alphatest="blend"/>
+			<panel position="right" size="16,*"/>
+			<widget name="nexttext" position="right" size="350,*" font="Regular;34" halign="right"/>
+		</panel>
+		<panel position="bottom" size="*,50"/>
+		<panel position="bottom" size="*,50">
+			<ePixmap pixmap="buttons/yellow.png" position="left" zPosition="0" size="34,34" transparent="1" alphatest="blend"/>
+			<panel position="left" size="16,*"/>
+			<widget name="languagetext" position="left" size="350,*" font="Regular;34"/>
 		</panel>
 	</screen>
 	<!-- it's the same screen... -->
