@@ -291,7 +291,7 @@
   <!-- Simple channelselection -->
 
   <screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-    <panel name="ChannelSelection"/>
+    <panel name="ChannelSelectionTemplate"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
