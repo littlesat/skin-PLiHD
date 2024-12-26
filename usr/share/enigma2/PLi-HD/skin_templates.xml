@@ -302,5 +302,33 @@
     <!--<ePixmap pixmap="PLi-HD/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
   </screen>
 
+<!-- ChannelSelection Template -->
+
+  <screen name="ChannelSelectionTemplate" title="Channel Selection" position="fill" flags="wfNoBorder">
+    <panel name="SelectionTemplate"/>
+    <widget name="list" position="530,110" size="690,510" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD/buttons/sel.png" colorServiceDescriptionFallback="yellowsoft" colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft" />
+    <widget source="ServiceEvent" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
+      <convert type="ServiceOrbitalPosition"/>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="85,360" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="85,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText" />
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="350,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText" />
+    </widget>
+    <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD/window/progress.png" position="155,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="85,420" size="435,160" transparent="1" font="Regular; 20">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="85,590" size="435,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
+  </screen>
+
 </skin>
 
