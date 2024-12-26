@@ -333,38 +333,15 @@
 
 	<!-- Channel,EPG,EventInfo -->
 
-	<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
+	<screen name="ChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
+		<panel name="ChannelSelectionTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="list" position="780,108" size="1110,900" itemHeight="45" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand"
-            serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" foregroundColorServiceNotAvail="notavailable" fieldMargins="15" nonplayableMargins="15"
-            foregroundColorEventSelected="selectedFGEvent" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060" progressBarWidth="60" progressPercentWidth="80" itemsDistances="12"
-            picServiceEventProgressbar="window/progress.png" progressbarHeight="13" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" progressbarBorderWidth="1"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="selectedFGEvent"/>
-		<widget source="ServiceEvent" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="left" transparent="1" zPosition="1">
-			<convert type="TransponderInfo"/>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="600,525" size="150,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" halign="right">
-			<convert type="ServiceOrbitalPosition"/>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="30,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"/>
-		</widget>
-		<widget source="ServiceEvent" render="Progress" position="120,573" size="540,15" pixmap="window/progress.png" transparent="1" borderWidth="1" borderColor="darkgrey">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="660,565" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default;NoSpace</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="30,605" size="720,35" transparent="1" foregroundColor="secondFG" font="Regular;32" halign="left">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="30,650" size="720,245" transparent="1" font="Regular;30" halign="block">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="30,910" size="720,96" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="3" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2"/>
+	</screen>
+
+	<!-- Simple channelselection -->
+
+	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
+		<panel name="ChannelSelectionTemplate"/>
 	</screen>
 
 	<!-- Slim Channel Selection - I still not found were this is used -->
@@ -387,12 +364,6 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-	</screen>
-
-	<!-- Simple channelselection -->
-
-	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
-		<panel name="ChannelSelection"/>
 	</screen>
 
 	<!-- EPG Stuff -->
