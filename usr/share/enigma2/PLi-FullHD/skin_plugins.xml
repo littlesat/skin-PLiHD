@@ -46,6 +46,7 @@
 		<panel name="PigTemplate"/>
 		<widget name="text" position="780,100" size="1110,912" zPosition="1" font="Regular;30" valign="center" halign="center"/>
 		<widget name="timerlist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="30,570" size="720,385" font="Regular;30" halign="block"/>
 	</screen>
 
 	<screen name="RemoteTimerEPGList" position="fill" flags="wfNoBorder">

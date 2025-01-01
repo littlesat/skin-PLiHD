@@ -29,7 +29,7 @@
 		<alias name="ImsSelectionList" font="Regular" size="28" height="30"/>
 		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38"/>
 		<alias name="PartnerBoxEntryList1" font="Regular" size="28"/>
-		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114"/>
+		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="28" height="114"/>
 		<alias name="PartnerBoxE2TimerMenu1" font="Regular" size="28"/>
 		<alias name="PartnerBoxBouquetList0" font="Regular" size="32" height="45"/>
 		<alias name="PartnerBoxBouquetList1" font="Regular" size="28"/>
@@ -111,6 +111,10 @@
 		<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
 		<parameter name="FcFileListMultiName" value="90,2,1000,32"/>
 		<parameter name="FcFileListName" value="68,2,1000,34"/>
+		<parameter name="PartnerBoxE2TimerIcon" value="4,6,30,30"/>
+		<parameter name="PartnerBoxTimerName" value="40,4,35"/>
+		<parameter name="PartnerBoxTimerServicename" value="4,40,35"/>
+		<parameter name="PartnerBoxE2TimerTime" value="4,73,300,35"/>
 		<parameter name="AutomaticVolumeAdjustmentEntryList0" value="20,2,980,35"/>
 		<parameter name="AutomaticVolumeAdjustmentEntryList1" value="1000,2,80,35"/>
 	</parameters>
