@@ -1799,49 +1799,49 @@
 		<widget source="list" conditional="indicatorU0" render="Listbox" position="780,100" size="855,912" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 					{
-					"templates": {
-						# Simple help with no headings ("flat")
-						# data[1:] = [helpText]
-						"default": [
-						57,  # itemHeight
-						[
-						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=1, text=1),
-						]
-						],
-						# Simple help with headings
-						# data[1:] = [heading, None]  # For heading entries
-						# data[1:] = [None, helpText]  # For help entries
-						"default+headings": [  # data[1:] = [helpText]
-						57,  # itemHeight
-						[
-						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=0, text=1),
-						MultiContentEntryText(pos=(30, 6), size=(1070, 57), font=1, text=2),
-						]
-						],
-						# Extended help with no headings
-						# data[1:] = [helpText, extendedHelpText]
-						"extended": [
-						86,  # itemHeight
-						[
-						MultiContentEntryText(pos=(0, 0), size=(1100, 45), font=2, text=1),
-						MultiContentEntryText(pos=(0, 60), size=(1100, 40), color=0x009e9fa4, font=3, text=2),
-						],
-						],
-						# Extended help with headings
-						# data[1:] = [heading, None, None]  # For heading entries
-						# data[1:] = [None, helpText, extendedHelpText]  # For help entries
-						"extended+headings": [
-						86,  # itemHeight
-						[
-						MultiContentEntryText(pos=(0, 14), size=(1100, 48), font=0, text=1),
-						MultiContentEntryText(pos=(30, 0), size=(1070, 45), font=2, text=2),
-						MultiContentEntryText(pos=(30, 45), size=(1070, 40), color=0x009e9fa4, font=3, text=3),
-						],
-						],
-					},
-					"fonts": [gFont("Regular", 39), gFont("Regular", 36), gFont("Regular", 38), gFont("Regular", 38)],
-					"itemHeight": 57
-					}
+				  "templates": {
+				    # Simple help with no headings ("flat")
+				    # data[1:] = [helpText]
+				    "default": [
+				      57,  # itemHeight
+				      [
+						MultiContentEntryText(pos=(5, 0), size=(845, 57), font=1, text=1, flags=RT_VALIGN_CENTER),
+				      ]
+				    ],
+				    # Simple help with headings
+				    # data[1:] = [heading, None]  # For heading entries
+				    # data[1:] = [None, helpText]  # For help entries
+				    "default+headings": [  # data[1:] = [helpText]
+				      57,  # itemHeight
+				      [
+						MultiContentEntryText(pos=(5, 0), size=(845, 57), font=0, text=1, flags=RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(30, 0), size=(820, 57), font=1, text=2, flags=RT_VALIGN_CENTER),
+				      ]
+				    ],
+				    # Extended help with no headings
+				    # data[1:] = [helpText, extendedHelpText]
+				    "extended": [
+				      91,  # itemHeight
+				      [
+						MultiContentEntryText(pos=(5, 0), size=(845, 38), font=2, text=1),
+						MultiContentEntryText(pos=(5, 38), size=(845, 53), color=0x009e9fa4, font=3, text=2, flags=RT_WRAP),
+				      ],
+				    ],
+				    # Extended help with headings
+				    # data[1:] = [heading, None, None]  # For heading entries
+				    # data[1:] = [None, helpText, extendedHelpText]  # For help entries
+				    "extended+headings": [
+				      91,  # itemHeight
+				      [
+						MultiContentEntryText(pos=(5, 20), size=(845, 48), font=0, text=1),
+						MultiContentEntryText(pos=(30, 0), size=(820, 38), font=2, text=2),
+						MultiContentEntryText(pos=(30, 38), size=(820, 53), color=0x009e9fa4, font=3, text=3, flags=RT_WRAP),
+				      ],
+				    ],
+				  },
+				  "fonts": [gFont("Regular", 39), gFont("Regular", 36), gFont("Regular", 35), gFont("Regular", 23)],
+				  "itemHeight": 57
+				}
 			</convert>
 		</widget>
 	</screen>
