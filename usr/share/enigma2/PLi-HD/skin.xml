@@ -1178,6 +1178,47 @@
     <widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
   </screen>
 
+	<!-- Extra margin for wizard, never know how bad the TV is... -->
+	<screen name="WizardMarginsTemplate">
+		<panel position="left" size="10%,*"/>
+		<panel position="right" size="8%,*"/>
+		<panel position="top" size="8%,*"/>
+		<panel position="bottom" size="10%,*"/>
+	</screen>
+	<!-- Start Wizard -->
+	<screen name="RemoteControlTemplate">
+		<panel position="right" size="154,*">
+			<panel position="top" size="*,50"/>
+			<panel position="top" size="154,500">
+				<panel name="RcPanel"/>
+			</panel>
+		</panel>
+	</screen>
+	<screen name="WizardPictureLangTemplate">
+		<panel position="top" size="*,50"/>
+		<panel position="top" size="*,50">
+			<eLabel text="&lt;&lt;&lt;" position="left" zPosition="0" size="46,30" transparent="1" alphatest="blend" font="Regular;22"/>
+			<ePixmap pixmap="buttons/red.png" position="left" zPosition="0" size="30,30" transparent="1" alphatest="blend"/>
+			<panel position="left" size="10,*"/>
+			<widget name="backtext" position="left" size="200,*" font="Regular;22"/>
+			<widget name="languagetext" position="left" size="200,*" font="Regular;22"/>
+			<eLabel text="&gt;&gt;&gt;" position="right" zPosition="0" size="46,30" transparent="1" alphatest="blend" font="Regular;22" halign="right"/>
+			<ePixmap pixmap="buttons/blue.png" position="right" zPosition="0" size="30,30" transparent="1" alphatest="blend"/>
+			<panel position="right" size="10,*"/>
+			<widget name="nexttext" position="right" size="200,*" font="Regular;22" halign="right"/>
+		</panel>
+		<panel position="bottom" size="*,50"/>
+		<panel position="bottom" size="*,50">
+			<ePixmap pixmap="buttons/yellow.png" position="left" zPosition="0" size="30,30" transparent="1" alphatest="blend"/>
+			<panel position="left" size="10,*"/>
+			<widget name="languagetext" position="left" size="200,*" font="Regular;22"/>
+		</panel>
+	</screen>
+	<!-- it's the same screen... -->
+	<screen name="StartWizard" position="fill" flags="wfNoBorder">
+		<panel name="DefaultWizard"/>
+	</screen>
+
   <!-- ImageWizard -->
 
   <screen name="ImageWizard" position="fill" flags="wfNoBorder">
@@ -1478,15 +1519,63 @@
 
   <!-- Help -->
 
-  <screen name="HelpMenu" position="fill" flags="wfNoBorder">
+  <screen name="HelpMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PigTemplate"/>
-    <widget name="list" position="550,110" size="500,490" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
-    <widget name="rc" position="1064,110" size="154,500" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on" />
-    <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="long_key" position="1016,605" size="250,20" foregroundColor="yellow" font="Regular;16" halign="center" />
+    <widget name="list" conditional="arrowdown"  position="550,110" size="500,510" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand"/><!-- belongs to old HelpMenu -->
+    <widget name="long_key" conditional="long_key" position="1016,605" size="250,20" foregroundColor="yellow" font="Regular;16" halign="center"/><!-- belongs to old HelpMenu -->
+    <widget name="longshift_key0" conditional="longshift_key1" position="20,380" size="480,30" foregroundColor="yellow" font="Regular;20" halign="center"/>
+    <widget name="longshift_key1" conditional="longshift_key1" position="20,410" size="480,30" foregroundColor="yellow" font="Regular;20" halign="center"/>
+    <panel position="1064,110" size="154,500">
+      <panel name="RcPanel"/>
+    </panel>
+    <widget source="list" conditional="indicatorU0" render="Listbox" position="550,110" size="500,510" transparent="0" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+		{
+		"templates": {
+			# Simple help with no headings ("flat")
+			# data[1:] = [helpText]
+			"default": [
+				30,  # itemHeight
+				[
+				MultiContentEntryText(pos=(5, 0), size=(460, 30), font=1, text=1, flags=RT_VALIGN_CENTER),
+				]
+			],
+			# Simple help with headings
+			# data[1:] = [heading, None]  # For heading entries
+			# data[1:] = [None, helpText]  # For help entries
+			"default+headings": [  # data[1:] = [helpText]
+				30,  # itemHeight
+				[
+				MultiContentEntryText(pos=(5, 0), size=(460, 30), font=0, text=1, flags=RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=(30, 0), size=(440, 30), font=1, text=2, flags=RT_VALIGN_CENTER),
+				]
+			],
+			# Extended help with no headings
+			# data[1:] = [helpText, extendedHelpText]
+			"extended": [
+				55,  # itemHeight
+				[
+				MultiContentEntryText(pos=(5, 0), size=(460, 38), font=2, text=1),
+				MultiContentEntryText(pos=(5, 38), size=(460, 53), color=0x009e9fa4, font=3, text=2, flags=RT_WRAP),
+				],
+			],
+			# Extended help with headings
+			# data[1:] = [heading, None, None]  # For heading entries
+			# data[1:] = [None, helpText, extendedHelpText]  # For help entries
+			"extended+headings": [
+				55,  # itemHeight
+				[
+				MultiContentEntryText(pos=(5, 20), size=(460, 48), font=0, text=1),
+				MultiContentEntryText(pos=(30, 0), size=(440, 38), font=2, text=2),
+				MultiContentEntryText(pos=(30, 38), size=(440, 53), color=0x009e9fa4, font=3, text=3, flags=RT_WRAP),
+				],
+			],
+		},
+		"fonts": [gFont("Regular", 24), gFont("Regular", 22), gFont("Regular", 22), gFont("Regular", 18)],
+		"itemHeight": 30
+		}
+      </convert>
+    </widget>
   </screen>
 
   <!-- PPanel -->
