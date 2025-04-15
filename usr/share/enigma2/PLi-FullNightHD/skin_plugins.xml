@@ -871,7 +871,7 @@
 		<widget name="slide" position="1422,935" zPosition="5" borderWidth="1" size="450,9" backgroundColor="background"/>
 		<ePixmap pixmap="buttons/key_tv.png" position="740,970" size="52,38" alphatest="on"/>
 		<eLabel text="- Synaptic" position="802,972" size="300,45" backgroundColor="secondBG" font="Regular;27" halign="left" transparent="1" zPosition="1"/>
-		<widget name="description" position="30,560" size="720,290" font="Regular;25" foregroundColor="foreground" halign="left"/>
+		<widget name="description" position="30,560" size="672,290" font="Regular;25" foregroundColor="foreground" halign="left"/>
 	</screen>
 
 	<!-- CSSF plugin -->
