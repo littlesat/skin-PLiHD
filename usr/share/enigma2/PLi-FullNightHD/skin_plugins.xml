@@ -864,6 +864,7 @@
 		<widget name="frames" position="732,105" size="1160,800" zPosition="1" alphatest="blend"/>
 		<widget name="border" position="732,105" zPosition="2" size="1160,800" alphatest="blend"/>
 		<widget name="mer" position="732,105" zPosition="3" size="1160,800" alphatest="blend"/>
+		<widget name="home" position="732,105" zPosition="3" size="1160,800" alphatest="blend"/>
 
 		<widget name="download" position="922,929" zPosition="8" borderWidth="1" size="112,18" backgroundColor="background"/>
 
