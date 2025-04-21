@@ -16,7 +16,7 @@
 
 	<screen name="PartnerboxEntriesListConfigScreen" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyMenuInfoTemplate"/>
 		<panel name="KeyPrevNextTemplate_Hideable"/>
 		<widget name="name" position="780,105" size="150,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
 		<widget name="ip" position="960,105" size="225,36" font="Regular;30" halign="left" backgroundColor="secondBG" transparent="1"/>
