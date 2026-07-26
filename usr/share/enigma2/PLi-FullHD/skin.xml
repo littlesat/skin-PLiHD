@@ -2321,8 +2321,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 
 	<screen name="ArchiveList" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="message" position="780,105" size="1110,912" font="Regular;28" halign="center" valign="center" transparent="1"/>
+		<widget name="list" position="790,105" size="1100,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="message" position="780,105" size="1110,912" font="Regular;28" halign="center" valign="top" transparent="1"/>
+		<widget name="preview" position="50,540" size="720,512" itemHeight="32" font="Regular;28"/>
 	</screen>
 
 	<!-- PicturePlayer -->
