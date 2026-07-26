@@ -2092,6 +2092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
     <panel name="PigTemplate"/>
     <widget name="list" position="520,70" size="740,600" scrollbarMode="showOnDemand"/>
     <widget name="message" position="520,70" size="740,600" font="Regular;28" halign="center" valign="center" transparent="1"/>
+    <widget name="preview" position="20,380" size="480,200" itemHeight="20" font="Regular;18"/>
   </screen>
 
   <!-- Picture-Player -->
