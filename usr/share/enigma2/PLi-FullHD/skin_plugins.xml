@@ -1763,8 +1763,9 @@
 				{"templates":
 				{"default": (40,[
 					MultiContentEntryText(pos = (10, 8), size = (20, 40), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is e/d status
-					MultiContentEntryText(pos = (100, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-					MultiContentEntryText(pos = (580, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the autofile
+					MultiContentEntryText(pos = (100, 4), size = (400, 40), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is displayed mountpoint
+					MultiContentEntryText(pos = (580, 4), size = (350, 40), font=0, flags = RT_HALIGN_LEFT, text = 2),
+					MultiContentEntryText(pos = (960, 4), size = (130, 40), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is map type
 					MultiContentEntryText(pos = (30, 4), size = (30, 40), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is mount status
 						])
 				},
@@ -1774,7 +1775,8 @@
 			</convert>
 		</widget>
 		<widget name="mntpoint" position="880,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
-		<widget name="autofile" position="1360,100" size="400,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
+		<widget name="autofile" position="1360,100" size="350,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
+		<widget name="maptype" position="1740,100" size="130,25" font="Regular;23" halign="left" foregroundColor="#00b0b0b0" zPosition="1"/>
 		<widget name="text" position="880,980" size="1140,32" zPosition="1" font="Regular;28" halign="left"/>
 		<widget name="status" position="30,560" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
 		<widget name="statusbar" position="30,680" size="720,120" zPosition="1" font="Regular;26" halign="left"/>
