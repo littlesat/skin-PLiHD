@@ -415,6 +415,7 @@
 
   <screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate"/>
+    <panel name="KeyChannelTemplate"/>
     <panel name="KeyMenuTemplate"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
     <widget source="Service" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">

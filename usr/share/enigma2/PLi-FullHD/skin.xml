@@ -475,6 +475,7 @@
 
 	<screen name="EPGSearch" title="EPG Search" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
+		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32"
             setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
