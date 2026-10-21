@@ -122,6 +122,7 @@
 		<parameter name="PartnerBoxTimerName" value="40,4,35"/>
 		<parameter name="PartnerBoxTimerServicename" value="4,40,35"/>
 		<parameter name="PartnerBoxE2TimerTime" value="4,73,300,35"/>
+		<parameter name="PartnerBoxE2TimerState" value="225,75,220,32"/>
 	</parameters>
 
 	<switchpixmap>
