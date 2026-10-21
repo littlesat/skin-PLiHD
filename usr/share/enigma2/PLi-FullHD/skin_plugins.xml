@@ -84,7 +84,8 @@
 		<panel name="KeyInfoTemplate"/>
 		<widget name="entries" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
-		<!-- VLC Player -->
+
+	<!-- VLC Player -->
 
 	<screen flags="wfNoBorder" name="VlcServerConfigScreen" position="fill">
 		<panel name="PigTemplate"/>
