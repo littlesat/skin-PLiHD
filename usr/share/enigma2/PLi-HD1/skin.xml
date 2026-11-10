@@ -979,7 +979,7 @@
   <screen name="MovieBrowserConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="config" position="520,70" size="740,600" itemHeight="25" font="Regular;20" transparent="1" scrollbarMode="showOnDemand"/>
-    <widget name="description" position="20,378" size="480,92" transparent="1" font="Regular;20" halign="left"/>
+    <widget name="description" position="20,378" size="480,184" transparent="1" font="Regular;20" halign="left"/>
   </screen>
 
   <!-- Bouquet Selector -->
